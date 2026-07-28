@@ -1,1 +1,213 @@
+/* ============================================================
+   WMFC — "The Record" brand system v3
+   Every page inherits from this file. Edit here, not in pages.
+   ============================================================ */
 
+:root{
+  /* Color — one anchor rule: oxblood is the only color */
+  --ox:#6E1F2C;      /* Oxblood — rules, fills, key numbers, links */
+  --oxd:#521622;     /* Oxblood dark — hover */
+  --oxt:#F5EAEC;     /* Oxblood tint — correction boxes */
+  --ink:#1A1A1C;     /* Ink — text, footer ground */
+  --ink2:#44444A;    /* Body text */
+  --ink3:#6E6E76;    /* Muted — LEGIBILITY FLOOR, never lighter */
+  --bg:#FFFFFF;
+  --bg2:#F6F6F4;     /* Stone — alternating sections, tracks */
+  --line:#E2E2DE;    /* Rule */
+  --lined:#C9C9C3;   /* Rule dark */
+  --f:Georgia,"Times New Roman",serif;
+  --s:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--s);font-size:16px;line-height:1.55}
+.w{max-width:1060px;margin:0 auto;padding:0 28px}
+.w-narrow{max-width:820px;margin:0 auto;padding:0 28px}
+a{color:var(--ox);text-decoration:none}
+a:hover{text-decoration:underline}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+img{max-width:100%}
+
+/* Signature: 5px oxblood rule. Never thicker, never a gradient. */
+.rule{height:5px;background:var(--ox)}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-block;font-family:inherit;font-size:14px;font-weight:650;padding:12px 22px;
+  background:var(--ox);color:#fff;border:none;cursor:pointer;letter-spacing:.01em;text-align:center}
+.btn:hover{background:var(--oxd);text-decoration:none;color:#fff}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--lined)}
+.btn.ghost:hover{background:var(--bg2);border-color:var(--ink3);color:var(--ink)}
+
+/* ---------- Masthead — lockup rule: monogram never alone ---------- */
+header{border-bottom:1px solid var(--line);background:var(--bg)}
+header .w{display:flex;align-items:center;gap:14px;height:70px}
+.wm{font-family:var(--f);font-size:19px;font-weight:700;white-space:nowrap;color:var(--ink)}
+.wm:hover{text-decoration:none}
+.wm .f{color:var(--ox);font-style:italic}
+.wmsub{font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink3);margin-right:auto;white-space:nowrap}
+header nav{display:flex;gap:24px;font-size:13.5px;font-weight:600}
+header nav a{color:var(--ink2)}
+header nav a:hover{color:var(--ox);text-decoration:none}
+header nav a[aria-current="page"]{color:var(--ox)}
+header .btn{padding:9px 16px;font-size:13px}
+
+/* ---------- Hero ---------- */
+.hero{padding:72px 0 0;border-bottom:1px solid var(--line)}
+.hero.short{padding:60px 0 52px}
+.kick{font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--ox);margin-bottom:20px}
+h1{font-family:var(--f);font-size:clamp(34px,5.4vw,58px);font-weight:700;line-height:1.05;
+  letter-spacing:-.015em;margin:0 0 22px;max-width:19ch}
+h1 .f{color:var(--ox);font-style:italic}
+.lede{font-size:18.5px;line-height:1.62;color:var(--ink2);max-width:58ch;margin:0 0 30px}
+.lede b{color:var(--ink);font-weight:650}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:52px}
+.fine{font-size:13px;color:var(--ink3);margin-top:14px}
+
+/* ---------- Stat strip ---------- */
+.strip{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
+.strip>div{padding:28px 22px 32px;border-right:1px solid var(--line)}
+.strip>div:last-child{border-right:none}
+.strip .n{font-family:var(--f);font-size:52px;font-weight:700;letter-spacing:-.02em;line-height:1;
+  font-variant-numeric:tabular-nums}
+.strip .n.hot{color:var(--ox)}
+.strip .l{font-size:13px;color:var(--ink2);margin-top:10px;line-height:1.45;font-weight:500}
+
+/* ---------- Sections ---------- */
+section{padding:60px 0;border-bottom:1px solid var(--line)}
+section.gray{background:var(--bg2)}
+h2{font-family:var(--f);font-size:32px;font-weight:700;letter-spacing:-.012em;margin:0 0 8px;line-height:1.1}
+h3{font-family:var(--f);font-size:21px;font-weight:700;margin:30px 0 10px}
+.sub{font-size:15px;color:var(--ink3);margin:0 0 30px;max-width:62ch}
+p{margin:0 0 14px;color:var(--ink2);max-width:66ch}
+p b,li b{color:var(--ink);font-weight:650}
+ul{margin:0 0 15px;padding-left:19px;color:var(--ink2)}
+li{margin-bottom:8px;max-width:64ch}
+
+/* ---------- Cards: top-borders, never shadows, zero radius ---------- */
+.card{background:var(--bg);border:1px solid var(--line);border-top:4px solid var(--ox)}
+.card .hd{padding:16px 22px;border-bottom:1px solid var(--line);display:flex;
+  justify-content:space-between;align-items:baseline;gap:12px}
+.card .hd b{font-family:var(--f);font-size:20px;font-weight:700}
+.card .hd span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);font-weight:650}
+
+/* ---------- Data rows ---------- */
+.row{display:grid;grid-template-columns:180px 1fr 52px;gap:14px;align-items:center;
+  padding:12px 22px;font-size:13.5px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:none}
+.row .lab{color:var(--ink2);font-weight:550}
+.track{height:13px;background:var(--bg2);border:1px solid var(--line)}
+.fill{height:100%;background:var(--ox);width:0;transition:width .75s cubic-bezier(.2,.8,.2,1)}
+.fill.mut{background:var(--lined)}
+.row .v{font-family:var(--f);font-weight:700;font-size:18px;text-align:right;font-variant-numeric:tabular-nums}
+
+/* ---------- Ruled column block (Field Notes) ---------- */
+.cols3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line);background:var(--bg)}
+.col{padding:26px;border-right:1px solid var(--line);display:flex;flex-direction:column}
+.col:last-child{border-right:none}
+.col .k{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ox);margin-bottom:12px}
+.col h3{font-family:var(--f);font-size:20px;font-weight:700;line-height:1.26;margin:0 0 9px}
+.col p{font-size:14px;color:var(--ink2);margin:0 0 14px;flex:1;max-width:none}
+.col .d{font-size:11.5px;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
+
+/* ---------- Grid of bordered panels ---------- */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.panel-b{background:var(--bg);border:1px solid var(--line);padding:24px;border-top:3px solid var(--lined)}
+.panel-b .n{font-family:var(--f);font-size:19px;font-weight:700;margin-bottom:8px}
+.panel-b p{font-size:14px;margin:0;max-width:none}
+
+/* ---------- Correction box — signature asset ---------- */
+.corr{background:var(--oxt);border-left:4px solid var(--ox);padding:18px 24px;margin:20px 0;font-size:14px}
+.corr b.h{font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--ox);
+  display:block;margin-bottom:6px}
+.corr p{margin:0 0 8px;color:var(--ink);max-width:none}
+.corr p:last-child{margin:0}
+.note{background:var(--bg2);border:1px solid var(--line);border-left:4px solid var(--lined);padding:18px 22px;margin:20px 0}
+.note b.h{font-size:11px;font-weight:700;letter-spacing:.13em;text-transform:uppercase;color:var(--ink3);
+  display:block;margin-bottom:8px}
+.note p{max-width:none;margin:0}
+
+/* ---------- Tables ---------- */
+.tw{border:1px solid var(--line);margin:18px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;padding:11px 14px;font-size:11px;font-weight:700;text-transform:uppercase;
+  letter-spacing:.06em;color:var(--ink3);background:var(--bg2);border-bottom:1px solid var(--line)}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--ink2)}
+tr:last-child td{border-bottom:none}
+td.b{font-weight:650;color:var(--ink)}
+tr.ex{cursor:pointer}
+tr.ex:hover td{background:var(--bg2)}
+tr.ex:focus{outline:2px solid var(--oxt);outline-offset:-2px}
+.dt td{background:var(--bg2);font-size:13.5px;padding:0 14px 15px}
+.dt .in{border-left:3px solid var(--ox);padding-left:14px}
+.dte{font-size:12.5px;color:var(--ink3)}
+
+/* ---------- Category pills ---------- */
+.pill{display:inline-block;padding:3px 9px;font-size:10.5px;font-weight:700;white-space:nowrap;
+  letter-spacing:.03em;text-transform:uppercase}
+.p1{background:var(--ox);color:#fff}
+.p2{background:none;color:var(--ox);border:1px solid var(--ox)}
+.p3{background:var(--bg2);color:var(--ink2);border:1px solid var(--lined)}
+.p0{background:none;color:var(--ink3);border:1px dashed var(--lined)}
+
+/* ---------- Controls ---------- */
+.ctrl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.ctrl input,.ctrl select{font-family:inherit;font-size:14px;padding:10px 12px;
+  border:1px solid var(--lined);background:#fff;color:var(--ink)}
+.ctrl input{flex:1;min-width:200px}
+
+/* ---------- Membership tiers ---------- */
+.tier{background:var(--bg);border:1px solid var(--line);padding:28px;display:flex;flex-direction:column}
+.tier.hl{border-color:var(--ox);border-top:4px solid var(--ox)}
+.tier .nm{font-weight:700;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink3)}
+.tier.hl .nm{color:var(--ox)}
+.tier .pr{font-family:var(--f);font-size:40px;font-weight:700;letter-spacing:-.015em;margin:10px 0 2px;line-height:1.05}
+.tier .pr span{font-family:var(--s);font-size:13px;font-weight:500;color:var(--ink3);letter-spacing:0}
+.tier ul{margin:14px 0 22px;padding-left:16px;font-size:13.5px;flex:1}
+
+/* ---------- Signup form ---------- */
+.signup{display:flex;gap:8px;flex-wrap:wrap;max-width:520px;margin:0 0 10px}
+.signup input[type=email]{flex:1;min-width:220px;font-family:inherit;font-size:15px;
+  padding:13px 14px;border:1px solid var(--lined);background:#fff}
+.signup input[type=email]:focus{outline:2px solid var(--ox);outline-offset:-1px}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:#ABABB1;font-size:13.5px}
+footer .rule{background:var(--ox)}
+footer .w{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;padding-top:40px;padding-bottom:56px}
+footer .fwm{font-family:var(--f);font-size:18px;color:#fff;margin-bottom:9px;font-weight:700}
+footer .fwm .f{color:#C86A78;font-style:italic}
+footer p{margin:0;max-width:38ch;color:#ABABB1}
+footer a{color:#D8D8DC;display:block;margin-bottom:7px}
+footer .h{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:#74747A;margin-bottom:11px}
+
+/* ---------- Responsive ---------- */
+@media(max-width:860px){
+  .strip{grid-template-columns:1fr 1fr}
+  .strip>div:nth-child(2n){border-right:none}
+  .grid3,.grid2,.cols3{grid-template-columns:1fr}
+  .col{border-right:none;border-bottom:1px solid var(--line)}
+  .col:last-child{border-bottom:none}
+  header nav,.wmsub{display:none}
+  .wm{margin-right:auto}
+  footer .w{grid-template-columns:1fr}
+  .row{grid-template-columns:130px 1fr 44px}
+}
+
+/* ---------- Motion: data animates, decoration never does ---------- */
+@media(prefers-reduced-motion:reduce){
+  .fill{transition:none}
+}
+
+/* ---------- Print: already document-native ---------- */
+@media print{
+  header nav,.ctrl,.btn,.signup{display:none!important}
+  body{font-size:11pt}
+  section,.hero{page-break-inside:avoid}
+  .dt{display:table-row!important}
+  details>summary{pointer-events:none}
+  a{color:var(--ink)}
+}
