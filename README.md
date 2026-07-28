@@ -147,3 +147,4 @@ Then open the localhost URL it prints. The homepage, method and about pages work
 - Nothing here locks you in. Static HTML on GitHub — portable to any host, any time.
 - The site prints cleanly. The brand system is document-native by design, so what a member sees on screen is what a dean prints.
 - Every published number links to its source. Keep it that way; it is the whole basis of the thing.
+
