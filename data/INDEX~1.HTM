@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Data &amp; Downloads — When Money Follows the Child</title>
+<meta name="description" content="Every coded row, with sources and check dates. Download the WMFC datasets as CSV or JSON, with citation guidance.">
+<link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/data/">
+<meta property="og:site_name" content="When Money Follows the Child">
+<meta property="og:title" content="Data &amp; Downloads">
+<meta property="og:description" content="Research that cannot be checked is not research. Every coded row, free, with sources and check dates.">
+<meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/data/">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/wmfc.css">
+</head><body>
+
+<div class="rule"></div>
+<header><div class="w">
+  <a class="wm" href="/">WM<span class="f">F</span>C</a>
+  <span class="wmsub">When Money Follows the Child</span>
+  <nav><a href="/research/">Readiness Index</a><a href="/atlas/">Atlas</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
+  <a class="btn" href="/#join">Become a member</a>
+</div></header>
+
+<div class="hero short"><div class="w-narrow" style="padding:0">
+  <div class="kick">Data</div>
+  <h1>Research that cannot be checked is not <span class="f">research</span>.</h1>
+  <p class="lede">Every coded row, every source, every check date — free, open, and citable. No login, no paywall, no request form.</p>
+</div></div>
+
+<section><div class="w-narrow" style="padding:0">
+
+  <h2>The Readiness Index — 2026 Baseline</h2>
+  <p>31 higher-education institutions across 9 states, coded for whether their education units offer anything built for the portable-funding sector. Includes the coding scheme, the four competing explanations, and the nine research gaps.</p>
+  <p style="margin-bottom:22px">
+    <a class="btn" id="csvScan" href="#">Download CSV</a>
+    <a class="btn ghost" href="/data/scan-2026.json" download>Download JSON</a>
+    <a class="btn ghost" href="/research/">View on the site</a>
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th>Field</th><th>What it holds</th></tr></thead>
+    <tbody>
+      <tr><td class="b">name</td><td>Institution, as it names itself</td></tr>
+      <tr><td class="b">state</td><td>US state</td></tr>
+      <tr><td class="b">tier</td><td>Coded category — Tier 1 built for the sector, Tier 2 names it, Tier 3 incidental, Tier 0 nothing found</td></tr>
+      <tr><td class="b">checked</td><td>The date a human read the live institutional page. Not a publication date.</td></tr>
+      <tr><td class="b">evidence</td><td>What was found and what it means, including caveats</td></tr>
+      <tr><td class="b">source</td><td>Live URL for the claim</td></tr>
+    </tbody>
+  </table></div>
+
+  <h2 style="margin-top:44px">The Portable-Funding Atlas — 2026 Baseline</h2>
+  <p>175 countries in the data spine. Four coded to WMFC standard — the Netherlands, Sweden, Chile and the United Kingdom (England) — and 171 honest blanks. Coverage grows by editing this one file.</p>
+  <p style="margin-bottom:22px">
+    <a class="btn" id="csvWorld" href="#">Download CSV</a>
+    <a class="btn ghost" href="/data/world-choice-2026.json" download>Download JSON</a>
+    <a class="btn ghost" href="/atlas/">View the Atlas</a>
+  </p>
+  <div class="tw"><table>
+    <thead><tr><th>Field</th><th>What it holds</th></tr></thead>
+    <tbody>
+      <tr><td class="b">name</td><td>Country name</td></tr>
+      <tr><td class="b">tier</td><td><b>Coverage depth, not a policy judgment.</b> 1 = coded, 2 = shortlisted, 3 = not yet coded. Unrelated to the Readiness Index tiers above.</td></tr>
+      <tr><td class="b">since</td><td>Year portable funding began, where coded</td></tr>
+      <tr><td class="b">mechanism</td><td>How the money moves — voucher, constitutional equal funding, academies, and so on</td></tr>
+      <tr><td class="b">findings</td><td>Workforce and institution findings, each with source and check date</td></tr>
+      <tr><td class="b">code_label</td><td>The coded observation in one phrase</td></tr>
+    </tbody>
+  </table></div>
+
+  <div class="note">
+    <b class="h">Two tier systems, two meanings</b>
+    <p>The Readiness Index codes <b>institutions</b> by what they have built. The Atlas codes <b>countries</b> by how far our research has got. They share the word "tier" and nothing else. We are renaming the Atlas scale to <i>Coded / Shortlisted / Not yet coded</i> to remove the ambiguity.</p>
+  </div>
+
+  <h2>How to cite</h2>
+  <p>Cite the edition and the date you accessed it — the datasets are living documents and we date every row for exactly this reason.</p>
+  <div class="tw"><table><tbody>
+    <tr><td style="padding:16px 18px;color:var(--ink)">When Money Follows the Child. <i>The WMFC Readiness Index, 2026 Baseline.</i> whenmoneyfollowsthechild.org. Accessed [date].</td></tr>
+    <tr><td style="padding:16px 18px;color:var(--ink)">When Money Follows the Child. <i>The Portable-Funding Atlas, 2026 Baseline.</i> whenmoneyfollowsthechild.org. Accessed [date].</td></tr>
+  </tbody></table></div>
+
+  <h2>Terms</h2>
+  <ul>
+    <li><b>Free to use, including commercially.</b> Attribution appreciated, not demanded.</li>
+    <li><b>Please carry the caveats.</b> If you cite a Tier 0 row, cite it as "nothing found," not "nothing exists" — the distinction is the point.</li>
+    <li><b>Tell us when we're wrong.</b> Corrections are published on the <a href="/method/#corrections">Method page</a>, never absorbed silently. <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a></li>
+  </ul>
+
+  <div class="corr">
+    <b class="h">A note on the raw files</b>
+    <p>The JSON links above open the machine-readable files directly — useful if you're pulling them into code, dense if you're reading. The CSV buttons give you a spreadsheet instead, and the site pages give you the same data laid out for humans.</p>
+  </div>
+
+</div></section>
+
+<footer>
+  <div class="rule"></div>
+  <div class="w">
+    <div>
+      <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
+      <p>Independent, nonpartisan research on how postsecondary institutions respond as K-12 education funding becomes portable.</p>
+      <p style="margin-top:10px"><a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a></p>
+    </div>
+    <div><div class="h">Research</div>
+      <a href="/research/">Readiness Index</a>
+      <a href="/atlas/">Portable-Funding Atlas</a>
+      <a href="/research/international-precedents/">International Precedents</a>
+      <a href="/data/">Data &amp; downloads</a>
+    </div>
+    <div><div class="h">About</div>
+      <a href="/method/">Method</a>
+      <a href="/about/#independence">Funding &amp; independence</a>
+      <a href="/about/#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/wmfc.js"></script>
+<script>
+(function(){
+"use strict";
+function dl(name, rows){
+  var q=function(v){return '"'+String(v==null?"":v).replace(/<[^>]+>/g,"").replace(/"/g,'""')+'"';};
+  var cols=Object.keys(rows[0]);
+  var csv=cols.join(",")+"\n"+rows.map(function(r){return cols.map(function(c){return q(r[c]);}).join(",");}).join("\n");
+  var b=new Blob([csv],{type:"text/csv"}),u=URL.createObjectURL(b),a=document.createElement("a");
+  a.href=u;a.download=name;a.click();setTimeout(function(){URL.revokeObjectURL(u);},400);
+}
+document.getElementById("csvScan").onclick=function(e){
+  e.preventDefault();
+  fetch("/data/scan-2026.json").then(function(r){return r.json();}).then(function(d){
+    dl("wmfc-readiness-index-2026.csv", d.institutions.map(function(r){
+      return {institution:r.name,state:r.state,category:r.tier,checked:r.checked,evidence:r.evidence,source:r.source};
+    }));
+  });
+};
+document.getElementById("csvWorld").onclick=function(e){
+  e.preventDefault();
+  fetch("/data/world-choice-2026.json").then(function(r){return r.json();}).then(function(d){
+    var rows=Object.keys(d).map(function(iso){
+      var c=d[iso];
+      return {iso:iso,country:c.name||"",coverage:c.tier===1?"Coded":c.tier===2?"Shortlisted":"Not yet coded",
+              since:c.since||"",mechanism:c.mechanism||"",coded_observation:c.code_label||"",
+              summary:(c.summary||"").replace(/<[^>]+>/g,""),
+              findings:(c.findings||[]).map(function(f){return (f.t||"")+" [Source: "+(f.src||"")+", checked "+(f.checked||"")+"]";}).join(" | ")};
+    });
+    dl("wmfc-portable-funding-atlas-2026.csv", rows);
+  });
+};
+})();
+</script>
+</body></html>
