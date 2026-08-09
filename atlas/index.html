@@ -21,7 +21,7 @@
   --s:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 
   /* Map depth scale — a single-hue coverage ramp, NOT a good/bad ramp.
-     Tier 1 = full oxblood; Tier 2 = muted oxblood tint; Tier 3 = stone (the absence). */
+     Coded = full oxblood; Shortlisted = muted oxblood tint; Not yet coded = stone (the absence). */
   --t1:#6E1F2C;
   --t2:#B98A92;      /* desaturated oxblood tint — reads as "partial", still the one hue */
   --t3:#ECECE8;      /* stone, the empty track */
@@ -226,7 +226,7 @@ footer .inner{
 <div class="masthead">
   <div class="masthead-inner">
     <span class="lock"><span class="mg">WM<span class="f">F</span>C</span><span class="sb">When Money Follows the Child</span></span>
-    <nav class="sitenav"><a href="/research/">Readiness Index</a><a href="/atlas/">Atlas</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
+    <nav class="sitenav"><a href="/research/">Readiness Index</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
     <span class="masthead-meta">The Portable-Funding Atlas · Baseline · July 2026</span>
   </div>
 </div>
@@ -426,7 +426,7 @@ footer .inner{
       <button data-tier="3" aria-pressed="false"><span class="sw t3"></span>Not yet coded <span class="count" id="ct3"></span></button>
     </div>
 
-    <p class="map-note"><b>Coverage depth, not Readiness Index categories.</b> The shading here records how far <i>our</i> research has got in each country. It is unrelated to the <a href="/research/">Readiness Index</a> categories, which code individual institutions. Read the four coded countries in full: <a href="/research/international-precedents/">International Precedents</a>.<br><br>
+    <p class="map-note"><b>Coverage depth, not Readiness Index categories.</b> The shading here records how far <i>our</i> research has got in each country. It is unrelated to the <a href="/research/">Readiness Index</a> categories, which code individual institutions. The four European and Chilean equilibrium cases are written up in full in <a href="/research/international-precedents/">International Precedents</a>; the Americas were coded in August 2026 and live in the panel only.<br><br>
       Shading encodes <b>how deeply WMFC has researched a country</b> — a fact about our coverage, not a judgment about the country's policy. It is deliberately not a "more choice / less choice" scale, and uses one hue only. The stone countries are the empty track: the absence read against the coded ones. England is recorded under the United Kingdom. Equirectangular projection; geometry simplified for file size.
     </p>
   </div>
@@ -442,9 +442,9 @@ footer .inner{
 
 <div class="coverage">
   <div class="coverage-inner">
-    <div class="cov-stat"><div class="n ox" id="statCoded">4</div><div class="l">Countries fully coded<br>(coded · workforce lens)</div></div>
+    <div class="cov-stat"><div class="n ox" id="statCoded">29</div><div class="l">Countries fully coded<br>(coded · workforce lens)</div></div>
     <div class="cov-stat"><div class="n" id="statTotal">175</div><div class="l">Countries on the map<br>(clickable, ISO-coded)</div></div>
-    <div class="cov-stat"><div class="n zero" id="statPending">171</div><div class="l">Not yet coded<br>(honest blanks, for now)</div></div>
+    <div class="cov-stat"><div class="n zero" id="statPending">146</div><div class="l">Not yet coded<br>(honest blanks, for now)</div></div>
     <div class="cov-stat"><div class="n">1</div><div class="l">Data spine<br>(one file grows all of it)</div></div>
   </div>
 </div>
@@ -453,7 +453,8 @@ footer .inner{
   <div class="inner">
     <h2>How to read this atlas</h2>
     <p><b>This is a baseline, not a finished map.</b> It ships mostly empty on purpose. A country shaded stone means "no WMFC entry yet" — <b>absence of evidence, not evidence of absence</b>. The map's value is that it shows its own coverage honestly rather than papering over the gaps with thin summaries. The empty track beside the coded countries is the finding.</p>
-    <p>Every coded finding carries a source and the month it was checked. The four Tier-1 entries are drawn from the WMFC International Precedents brief and read through one lens only: <b>supply and workforce</b> — who is allowed to operate, and who is trained to staff it. The coded observations describe observable policy behavior, so either side of the choice debate can cite the same country.</p>
+    <p>Every coded finding carries a source and the month it was checked, and every entry is read through one lens only: <b>supply and workforce</b> — who is allowed to operate, and who is trained and paid to staff it. The coded observations describe observable policy behavior, so either side of the choice debate can cite the same country.</p>
+    <p style="margin-top:10px"><b>New in August 2026: North and South America.</b> Every country in both continents has been read and classified — 26 coded, 6 shortlisted with a stated reason for each. Coding a country is not the same as finding portability in it: Cuba, Mexico, Brazil, Uruguay, Costa Rica, El Salvador, Panama and Venezuela are coded entries recording that public money does <i>not</i> follow the child. A null that has been checked is a finding; a blank is not.</p>
     <p>The durable asset here is the data spine, not the picture. Each country is one record — coded observation, founding year, mechanism, sourced findings, checked dates — so the map, the country briefs, and a future downloadable dataset all read from the same file. Coverage grows by adding records, never by rebuilding the map.</p>
   </div>
 </div>
@@ -499,7 +500,18 @@ function renderCountry(iso){
   let html='<div class="panel-head">';
   html+='<span class="panel-tier '+tierClass+'">'+tierLabel+'</span>';
   html+='<h2 class="panel-country">'+esc(d.name)+'</h2>';
-  if(d.tier===1){ html+='<div class="panel-since">Money has followed the child since <b>'+d.since+'</b> · ≈'+(2026-d.since)+' years</div>'; }
+  /* `since` is only meaningful where public money actually reaches non-state schools.
+     A coded country with no portable-funding mechanism carries since:null and gets the
+     honest line instead — coding a country is not the same as finding portability in it. */
+  if(d.tier===1){
+    if(d.since){
+      html+='<div class="panel-since">Money has followed the child since <b>'+d.since+'</b> · ≈'+(2026-d.since)+' years</div>';
+    } else if(d.mech_type && d.mech_type!=='none'){
+      html+='<div class="panel-since">Public money reaches non-state schools · start year not established</div>';
+    } else {
+      html+='<div class="panel-since">No portable-funding mechanism identified</div>';
+    }
+  }
   html+='</div><div class="panel-body">';
   if(d.tier===1){
     html+='<div class="panel-mech">'+esc(d.mechanism)+'</div>';
@@ -511,7 +523,14 @@ function renderCountry(iso){
     html+='<div class="empty">';
     html+='<p class="big">No WMFC entry yet.</p>';
     html+='<p class="method"><b>Absence of evidence, not evidence of absence.</b> This country is on the map and in the data spine, but its portable-funding history hasn\'t been coded to WMFC\'s standard — sourced, checked, and read through the workforce lens. We\'d rather show the blank than fill it with a guess.</p>';
-    if(d.tier===2){ html+='<p class="method queued"><b>Queued for the next tier.</b> A shortlisted case where a documented portable-funding history exists and coding is planned.</p>'; }
+    if(d.tier===2){
+      html+='<p class="method queued"><b>Queued for the next tier.</b> ';
+      /* Where we can say exactly why a country is shortlisted rather than coded, say it.
+         A named reason is accountable; "coding is planned" is not. */
+      html+= d.shortlist_reason ? rich(d.shortlist_reason)
+           : 'A shortlisted case where a documented portable-funding history exists and coding is planned.';
+      html+='</p>';
+    }
     html+='<p class="cta">Know this system well? Corrections and sources are published, not absorbed — info@whenmoneyfollowsthechild.org</p>';
     html+='</div>';
   }
@@ -564,6 +583,7 @@ fetch('/data/world-choice-2026.json')
       <a href="/research/">Readiness Index</a>
       <a href="/atlas/">Portable-Funding Atlas</a>
       <a href="/research/international-precedents/">International Precedents</a>
+      <a href="/notes/">Field Notes</a>
       <a href="/data/">Data &amp; downloads</a>
     </div>
     <div><div class="h">About</div>

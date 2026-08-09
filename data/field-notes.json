@@ -1,0 +1,204 @@
+{
+  "edition": "2026",
+  "updated": "2026-08-08",
+  "note": "Source of truth for Field Notes. Add an entry here, then run tools/build-notes.py to regenerate /notes/ and each permalink page.",
+  "notes": [
+    {
+      "n": "07",
+      "slug": "07",
+      "tag": "The seam",
+      "date": "August 2026",
+      "iso": "2026-08-08",
+      "title": "In much of the Americas, the money follows the teacher",
+      "standfirst": "Coding North and South America turned up a mechanism the school-choice literature barely names: public money paid not per pupil, but against a private school's teaching payroll. Five systems in this hemisphere work that way.",
+      "body": [
+        "The Atlas now codes every country in North and South America. The expected finding was a spread from Chile's voucher to Cuba's monopoly, and that spread is there. The unexpected finding is what sits in the middle.",
+        "<b>Argentina</b> subsidises private schools as a percentage of teachers' salary costs. Fee-free schools run by non-profit entities can receive up to 100%; fee-charging schools are banded at 80%, 60% or 40%. To be paid, a school submits its teaching payroll — staff, posts, hours, salaries — to the education authority. Just over 70% of private schools receive it, covering about 22% of all Argentine students.",
+        "<b>Ecuador</b> runs <i>fiscomisional</i> schools: religious schools holding a government agreement, subsidised specifically to pay teacher salaries. <b>Belize</b> funds denominational and community grant-aided schools — about 62% of all institutions — through direct payment of teachers' salaries, and from 2024 covers 100% of salaries, pensions and benefits for 879 grant-aided secondary and tertiary staff. <b>Trinidad and Tobago</b> has paid salaries at denominational schools since the Concordat of 1960, sixty-six years, while the denominations retain ownership, management and a right to request a teacher's removal on moral or religious grounds. <b>French Guiana</b>, as a French département, sits under the 1959 Loi Debré, where schools under contract teach the national programme and the state pays their teachers.",
+        "<b>Five systems, one mechanism, and it is not a voucher.</b> The unit of funding is a teaching post, not a pupil.",
+        "That distinction is not cosmetic, and it cuts directly at the question this organisation exists to ask. A voucher moves money and leaves the labour market to sort itself out — which is how the United States arrived at 750,000 children in microschools and 34% of teachers feeling prepared to teach in one. A payroll subsidy puts the workforce inside the funding formula. The state that writes the cheque for the teacher holds a lever on who may teach, whoever owns the school.",
+        "We are not claiming the payroll model performs better. Nobody has run that comparison, which is the point. The demand-side literature measures what families do with vouchers in exhaustive detail; there is no comparable body of work on what happens to teacher supply, preparation and credentialing under salary-side subsidy, despite Trinidad having run one for sixty-six years and Belize for longer.",
+        "<b>Two more things the region gave up.</b> <b>Bolivia</b> kept church-run schools and nationalised teacher preparation outright — Law 070 of 2010 made the State solely responsible for producing new teachers, and the Catholic training institute Sedes Sapientiae was closed. <b>Guyana</b> went the other way in 1976, taking close to 696 church and private schools into state control, and the stated justification was a staffing question: the churches had held major influence over who taught in their schools. Both countries legislated about who is permitted to make and place teachers. Neither measured what happened next.",
+        "<b>The limit.</b> Six countries — Honduras, Nicaragua, the Bahamas, Suriname, Greenland and the Falkland Islands — are shortlisted rather than coded, each with a stated reason on its panel. Suriname is the one to watch: it inherited the Dutch <i>bijzonder onderwijs</i> model, which would make it a direct sibling of the Netherlands entry, and no Surinamese source was located in this pass."
+      ],
+      "sources": [
+        {"label": "The Portable-Funding Atlas — Americas, coded August 2026", "url": "/atlas/"},
+        {"label": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America", "url": "https://publications.iadb.org/publications/english/document/Private-Schooling-in-Latin-America-Trends-and-Public-Policies.pdf"},
+        {"label": "Notre Dame Education Law Project — Latin America country reports", "url": "https://educationalpluralism.nd.edu/about/international-education/research-reports/"},
+        {"label": "Concordat Watch — text of the 1960 Trinidad and Tobago Concordat", "url": "https://www.concordatwatch.eu/showtopic.php?org_id=911&kb_header_id=40771"}
+      ]
+    },
+    {
+      "n": "06",
+      "slug": "06",
+      "tag": "Institutions",
+      "date": "August 2026",
+      "iso": "2026-08-08",
+      "title": "Florida built a second door, and we walked past it",
+      "standfirst": "A 2021 law let Florida colleges sponsor charter schools. Four institutions now do. We had coded one of them \"nothing found\" — because we read its course roster and stopped.",
+      "body": [
+        "Florida is the state this Index covers most heavily, and the state whose headline finding is the starkest: the most portable education money in America, and not one education-school program built for the sector it funds. That finding still stands.",
+        "What we missed is that a second pathway opened alongside it. A 2021 statutory change let Florida College System institutions sponsor charter schools within their service areas, and state universities sponsor them statewide. Four Florida institutions are now approved sponsors: <b>Tallahassee State College</b>, first approved in January 2023, which went on to open the first college-sponsored charter school in the state; <b>Miami Dade College</b>, whose board approved its first six charter applications in February 2026; <b>Pasco-Hernando State College</b>, which issued its first charter to a school that had spent a decade under the Pasco County school board; and the <b>University of West Florida</b>.",
+        "Miami Dade College went furthest. It does not merely sponsor — it powers the Florida Charter Institute, whose authorizing division reviews applications and conducts oversight on behalf of other higher-education authorizers, Pasco-Hernando among them. One college now runs the apparatus the others use.",
+        "<b>Every one of these moves happens outside the college of education.</b> That is the same pattern the Index found in Michigan, in Arizona and in Indiana, and it is the pattern the Index was built to catch.",
+        "<b>Which makes our error the point of this note.</b> We coded the University of West Florida Tier 0 — nothing found — on the strength of its School of Education roster, which contains nothing built for the sector. UWF is listed as an approved sponsor in the Florida Department of Education's own directory, and its trustees approved it as authorizer of a Somerset Academy charter school. We made the catalog-scan mistake that this Index exists to correct, in our best-covered state.",
+        "The row is recoded and <a href=\"/method/#corrections\">Correction 02</a> is permanent. The method has changed too: for every state, the official sponsor or authorizer registry is now checked before any institution can be coded Tier 0. That one change is what surfaced Miami Dade and Pasco-Hernando.",
+        "<b>The limit worth carrying.</b> Twenty-five Florida state colleges are not sponsors and their education units remain unscanned. A college can build a program without ever holding a charter, so the coverage gap has narrowed and changed shape rather than closed. And for Miami Dade and Pasco-Hernando, this note codes the authorizing move only — neither education unit has been enumerated to our standard, and we make no claim about their teaching programs in either direction."
+      ],
+      "sources": [
+        {"label": "FLDOE — Directory of Charter School Sponsoring Entities", "url": "https://web01.fldoe.org/CSA/PostToWeb/CharterSchoolSponsoringEntities"},
+        {"label": "Florida Charter Institute — HEI Authorizers", "url": "https://flcharterinstitute.org/authorize/hei/"},
+        {"label": "WMFC Method — Correction 02", "url": "/method/#corrections"}
+      ]
+    },
+    {
+      "n": "05",
+      "slug": "05",
+      "tag": "Institutions",
+      "date": "August 2026",
+      "iso": "2026-08-08",
+      "title": "The program that was built and stopped",
+      "standfirst": "Every other null in the Index records an institution that never built for this sector. Nova Southeastern built one and no longer offers it — documented in the university's own archive.",
+      "body": [
+        "The WMFC Readiness Index codes 14 institutions Tier 0 — nothing found. Until now every one of them meant the same thing: this education unit has not built anything for the portable-funding sector. Nova Southeastern University means something different.",
+        "NSUWorks, NSU's own institutional repository, holds a Program Overview titled <i>NSU Master's Degree in Charter School Education/Leadership</i>, attributed to the Fischler Graduate School of Education and Human Services and indexed under keywords including <i>charter school</i>, <i>Miami-Dade</i>, <i>specialization</i> and <i>modified core</i>. It is a real program document, deposited by the university.",
+        "The current master's roster of the Abraham S. Fischler College of Education &amp; School of Criminal Justice was read in full on 8 August 2026. It offers Applied Behavior Analysis, Child Protection, Criminal Justice, Developmental Disabilities, Education, Educational Leadership and Leadership. There is no charter or choice-sector program.",
+        "<b>What we cannot say.</b> The repository dates the document only approximately — 2002, deposited 2016 — and holds no discontinuation record. We can document that the program existed and that it is now absent. We cannot say when it ended, and no one should cite a year. We had published this as an unproven suspicion since July; it is now proven in one direction and still open in the other.",
+        "<b>Why the distinction matters.</b> The Index offers four competing explanations for why education colleges have built so little. Every one of them is a theory about non-construction. A program that was built and did not survive is a different event, and it points at questions none of the four currently ask: who bought it, how many, and what stopped."
+      ],
+      "sources": [
+        {
+          "label": "NSUWorks — NSU Master's Degree in Charter School Education/Leadership",
+          "url": "https://nsuworks.nova.edu/abe_pgcoursecatalogs/237/"
+        },
+        {
+          "label": "Current NSU master's roster, read 8 August 2026",
+          "url": "https://education.nova.edu/degrees/masters/index.html"
+        }
+      ]
+    },
+    {
+      "n": "04",
+      "slug": "04",
+      "tag": "Institutions",
+      "date": "August 2026",
+      "iso": "2026-08-08",
+      "title": "Eight authorizers, one program",
+      "standfirst": "Michigan is the deepest university-charter ecosystem in the country. All eight public university authorizers are now coded. Between them they hold well over 200 schools and exactly one preparation program.",
+      "body": [
+        "The working hypothesis was simple and testable: universities build for this sector when they hold schools in it. Michigan was the place to test it, because Michigan universities have chartered schools since 1994 and eight of them still do.",
+        "Six were unexamined until this edition — Oakland, Saginaw Valley State, Northern Michigan, Eastern Michigan, Ferris State and Lake Superior State. All six are now coded. None has built a preparation program for the sector. Central Michigan's Charter School Leadership M.A. remains the only one in a scan of 39 institutions.",
+        "<b>The result is not that nothing happens.</b> Three of the six reach the education college directly, and each does it in a different way. <b>Oakland University</b> houses its Office of Public School Academies <i>inside</i> the School of Education and Human Services and states the reason plainly — the placement exists &ldquo;marshalling the strength of its programs and faculty to increase the proficiency and expertise of Academy teachers and administrators.&rdquo; Its leadership degrees still prepare principals and deans of students, with no charter or choice content. <b>Saginaw Valley State</b> gives teachers and administrators of its 17 academies 50–75% tuition remission to complete a College of Education program — a change in the price of the standard degree, not in its contents. <b>Northern Michigan</b> describes its nine academies as providing &ldquo;hands-on classroom experience for NMU's hundreds of elementary and secondary education majors&rdquo; — the charter schools are practicum sites feeding conventional licensure.",
+        "Proximity, subsidy and access were each present. None produced a program.",
+        "<b>The hypothesis does not survive in its simple form.</b> Scale does not rescue it either: Grand Valley State holds 78 schools and more than 34,000 students, more than Central Michigan, and has built no degree. Holding schools, holding many schools, and holding them inside the education college were all insufficient.",
+        "That leaves a sharper question than the one we started with. Michigan is complete and the answer is no. The open problem is no longer whether the Central Michigan pattern repeats — it does not — but why it happened once."
+      ],
+      "sources": [
+        {
+          "label": "Oakland University — Office of Public School Academies",
+          "url": "https://www.oakland.edu/psa/about-us/"
+        },
+        {
+          "label": "Saginaw Valley State University — PSA Teacher/Administrator Scholarships",
+          "url": "https://www.svsu.edu/supo/opportunities/psateacherleaderscholarships/"
+        },
+        {
+          "label": "Northern Michigan University — Charter Schools, School Information",
+          "url": "https://nmu.edu/charterschools/school-information"
+        },
+        {
+          "label": "Eastern Michigan University — Charter Schools Office",
+          "url": "https://www.emich.edu/charter-schools/index.php"
+        },
+        {
+          "label": "Ferris State University — About the Charter Schools Office",
+          "url": "https://www.ferris.edu/administration/academicaffairs/charterschools/about.htm"
+        },
+        {
+          "label": "Lake Superior State University — Charter Schools",
+          "url": "https://www.lssu.edu/charter-schools/"
+        }
+      ]
+    },
+    {
+      "n": "03",
+      "slug": "03",
+      "tag": "The seam",
+      "date": "July 2026",
+      "iso": "2026-07-26",
+      "title": "Nobody owns the workforce question",
+      "standfirst": "Demand is measured. Policy adoption is measured. Preparation quality is measured. Whether the workforce exists to staff what policy enables falls between every organization in the field.",
+      "body": [
+        "The organizations working in this space each measure their own side of the ledger, and measure it well. EdChoice counts families, programs and fiscal effects. ExcelinEd tracks policy adoption across some forty areas. NCTQ measures the quality of teacher preparation. NACSA tracks authorizers. AACTE represents and advocates for the preparation pipeline.",
+        "Put those five together and one question still has no owner: as public money becomes portable, does the educator workforce exist to staff what the policy has enabled?",
+        "It is nobody's failure. Each organization is doing its own job, and the question sits outside all of their remits — it requires demand-side data from one, policy data from another, and institution-level observation that none of them collects. It falls in the seam.",
+        "WMFC exists to occupy that seam. This is not a criticism of the field; it is the reason there is room for another instrument in it."
+      ],
+      "sources": [
+        {
+          "label": "EdChoice — Surfing the Pipeline (McShane, 2023)",
+          "url": "https://www.edchoice.org/wp-content/uploads/2023/10/Surfing-the-Pipeline.pdf"
+        },
+        {
+          "label": "The WMFC Readiness Index — research gaps",
+          "url": "/research/"
+        }
+      ]
+    },
+    {
+      "n": "02",
+      "slug": "02",
+      "tag": "Institutions",
+      "date": "July 2026",
+      "iso": "2026-07-26",
+      "title": "Where universities engage, they operate",
+      "standfirst": "Most confirmed university entries into the choice sector took the form of running or authorizing a school rather than building a degree. A catalog scan would miss all of them.",
+      "body": [
+        "The obvious way to ask whether education colleges have responded to portable funding is to search their course catalogs. It is also the way to get the wrong answer.",
+        "Across the states examined, the confirmed university entries into this sector are overwhelmingly <i>operating</i> moves — running a school, or holding the charter for one. Arizona State operates schools. Indiana University East engages through its region's charter environment. Florida's universities hold lab-school charter authority, and both UF and FSU run lab schools. Michigan's eight public university authorizers hold hundreds of schools between them.",
+        "None of that appears in a course listing. An institution can be deeply committed to this sector, in public, at scale, for thirty years, and register as a null in any catalog-based scan.",
+        "This is the methodological difference the Readiness Index is built around: <b>operating and authorizing moves are coded, not just programs.</b> Both are institutional responses. Counting only one of them produces a picture that is not merely incomplete but backwards — it makes the most engaged institutions look like the least."
+      ],
+      "sources": [
+        {
+          "label": "The WMFC Readiness Index — coded scan",
+          "url": "/research/"
+        },
+        {
+          "label": "WMFC Method — coding scheme",
+          "url": "/method/"
+        }
+      ]
+    },
+    {
+      "n": "01",
+      "slug": "01",
+      "tag": "Workforce",
+      "date": "July 2026",
+      "iso": "2026-07-26",
+      "title": "The 53-point preparedness cliff",
+      "standfirst": "87% of teachers feel prepared to teach in a district school. 34% feel prepared for a microschool — the sector now serving more than 750,000 children.",
+      "body": [
+        "Teachers were asked how prepared they felt to teach in each kind of school. The answers fall in a straight line away from the model their preparation was built around:",
+        "<b>Public district 87% · Private 74% · Charter 67% · Religious 49% · Microschools 34%.</b>",
+        "The gap between the first and the last is 53 points. It is not a gap between good schools and bad ones; it is a gap between the setting preparation programs are designed for and the setting growing fastest.",
+        "Two things make the number worse than it looks. More than 70% of the people running microschools are current or former licensed teachers — these are not outsiders to the profession, they are its own graduates reporting that their training did not cover where they went. And the figure has not moved since 2023.",
+        "The data is EdChoice's own. That matters: the organization that most consistently documents the demand side published the clearest available statement of the supply-side problem, and the field has not yet answered it."
+      ],
+      "sources": [
+        {
+          "label": "EdChoice teacher survey data, as reported in the WMFC Readiness Index",
+          "url": "/research/"
+        },
+        {
+          "label": "EdChoice — Surfing the Pipeline (McShane, 2023)",
+          "url": "https://www.edchoice.org/wp-content/uploads/2023/10/Surfing-the-Pipeline.pdf"
+        },
+        {
+          "label": "National Microschooling Center — sector size",
+          "url": "/data/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,1 +1,1879 @@
-{"AFG": {"name": "Afghanistan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "AGO": {"name": "Angola", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ALB": {"name": "Albania", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ARE": {"name": "United Arab Emirates", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ARG": {"name": "Argentina", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ARM": {"name": "Armenia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ATF": {"name": "French Southern and Antarctic Lands", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "AUS": {"name": "Australia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "AUT": {"name": "Austria", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "AZE": {"name": "Azerbaijan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BDI": {"name": "Burundi", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BEL": {"name": "Belgium", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BEN": {"name": "Benin", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BFA": {"name": "Burkina Faso", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BGD": {"name": "Bangladesh", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BGR": {"name": "Bulgaria", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BHS": {"name": "The Bahamas", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BIH": {"name": "Bosnia and Herzegovina", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BLR": {"name": "Belarus", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BLZ": {"name": "Belize", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BOL": {"name": "Bolivia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BRA": {"name": "Brazil", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BRN": {"name": "Brunei", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BTN": {"name": "Bhutan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "BWA": {"name": "Botswana", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CAF": {"name": "Central African Republic", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CAN": {"name": "Canada", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CHE": {"name": "Switzerland", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CHL": {"tier": 1, "since": 1981, "mechanism": "Nationwide voucher, later centralized admissions", "mech_type": "voucher", "summary": "The longest-running universal voucher, introduced in 1981 on a Chicago-school design. About 91% of enrollment sat under a voucher scheme by 2018, with for-profit operation permitted for nearly 30 years — the most complete arc from deregulation to re-regulation anywhere.", "findings": [{"t": "The 2015 Ley de Inclusión banned profit-taking in publicly funded schools (two-thirds of voucher schools were for-profit), ended copayments, and replaced school-side selection with a centralized lottery — forcing a restructuring of who may operate.", "src": "Review of Education (Bellei)", "checked": "Jul 2026"}, {"t": "The widely cited verdict: unregulated choice produced flat scores and widening rich–poor gaps; only added regulation began to deliver gains. Segregation moved on fee rules, not choice itself.", "src": "FutureEd, Georgetown", "checked": "Jul 2026"}], "code": "re-regulating", "code_label": "Re-regulating the provider side", "name": "Chile"}, "CHN": {"name": "China", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CIV": {"name": "Ivory Coast", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CMR": {"name": "Cameroon", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "COD": {"name": "Democratic Republic of the Congo", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "COG": {"name": "Republic of the Congo", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "COL": {"name": "Colombia", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CRI": {"name": "Costa Rica", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CUB": {"name": "Cuba", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CYP": {"name": "Cyprus", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CZE": {"name": "Czech Republic", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "DEU": {"name": "Germany", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "DJI": {"name": "Djibouti", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "DNK": {"name": "Denmark", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "DOM": {"name": "Dominican Republic", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "DZA": {"name": "Algeria", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ECU": {"name": "Ecuador", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "EGY": {"name": "Egypt", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ERI": {"name": "Eritrea", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ESP": {"name": "Spain", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "EST": {"name": "Estonia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ETH": {"name": "Ethiopia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "FIN": {"name": "Finland", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "FJI": {"name": "Fiji", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "FLK": {"name": "Falkland Islands", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "FRA": {"name": "France", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GAB": {"name": "Gabon", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GBR": {"tier": 1, "since": 2010, "mechanism": "Academies + school-led teacher training", "mech_type": "charter", "summary": "England (coded under GBR) is the case that speaks to WMFC's exact institutional question. From 2010 the government deliberately moved initial teacher training away from universities toward schools — treating university-led training as 'the problem' — via School Direct and a target of at least 50% school-led places.", "findings": [{"t": "Relocating credentialing off the university campus suppressed supply: School Direct ran at ~45% of places filled in an early year, projected to yield thousands fewer teachers, as university places were capped faster than school routes filled.", "src": "BBC News / The Conversation", "checked": "Jul 2026"}, {"t": "The transferable lesson: decentralizing credentialing does not automatically create throughput, and can reduce it unless deliberately resourced.", "src": "Journal of Education for Teaching", "checked": "Jul 2026"}], "code": "supply-constrained", "code_label": "Credentialing moved, throughput fell", "name": "United Kingdom"}, "GEO": {"name": "Georgia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GHA": {"name": "Ghana", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GIN": {"name": "Guinea", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GMB": {"name": "Gambia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GNB": {"name": "Guinea Bissau", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GNQ": {"name": "Equatorial Guinea", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GRC": {"name": "Greece", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GRL": {"name": "Greenland", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GTM": {"name": "Guatemala", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GUF": {"name": "French Guiana", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "GUY": {"name": "Guyana", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "HND": {"name": "Honduras", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "HRV": {"name": "Croatia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "HTI": {"name": "Haiti", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "HUN": {"name": "Hungary", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "IDN": {"name": "Indonesia", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "IND": {"name": "India", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "IRL": {"name": "Ireland", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "IRN": {"name": "Iran", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "IRQ": {"name": "Iraq", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ISL": {"name": "Iceland", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ISR": {"name": "Israel", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ITA": {"name": "Italy", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "JAM": {"name": "Jamaica", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "JOR": {"name": "Jordan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "JPN": {"name": "Japan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "KAZ": {"name": "Kazakhstan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "KEN": {"name": "Kenya", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "KGZ": {"name": "Kyrgyzstan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "KHM": {"name": "Cambodia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "KOR": {"name": "South Korea", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "CS-KM": {"name": "Kosovo", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "KWT": {"name": "Kuwait", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LAO": {"name": "Laos", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LBN": {"name": "Lebanon", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LBR": {"name": "Liberia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LBY": {"name": "Libya", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LKA": {"name": "Sri Lanka", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LSO": {"name": "Lesotho", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LTU": {"name": "Lithuania", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LUX": {"name": "Luxembourg", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "LVA": {"name": "Latvia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MAR": {"name": "Morocco", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MDA": {"name": "Moldova", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MDG": {"name": "Madagascar", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MEX": {"name": "Mexico", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MKD": {"name": "Macedonia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MLI": {"name": "Mali", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MMR": {"name": "Myanmar", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MNE": {"name": "Montenegro", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MNG": {"name": "Mongolia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MOZ": {"name": "Mozambique", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MRT": {"name": "Mauritania", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MWI": {"name": "Malawi", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "MYS": {"name": "Malaysia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NAM": {"name": "Namibia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NCL": {"name": "New Caledonia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NER": {"name": "Niger", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NGA": {"name": "Nigeria", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NIC": {"name": "Nicaragua", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NLD": {"tier": 1, "since": 1917, "mechanism": "Constitutional equal funding (Article 23)", "mech_type": "constitutional", "summary": "After the century-long <em>Schoolstrijd</em>, the 1917 constitutional settlement funded privately governed schools on equal terms with state schools, subject to central inspection. Roughly 70% of Dutch schools are now run by private boards, all funded equally.", "findings": [{"t": "A century of the most pluralistic provider system in the world did not immunize the teaching workforce: the Netherlands entered a structural teacher shortage (<em>lerarentekort</em>) flagged since 2011, driven partly by workload and teachers' reported lack of autonomy.", "src": "researchgate.net / AOb", "checked": "Jul 2026"}, {"t": "Freedom to establish is inseparable from an obligation to be inspected — portability here is anchored by a strong central Inspectorate, not a free market.", "src": "onderwijsinspectie.nl", "checked": "Jul 2026"}], "code": "separable", "code_label": "Portability ≠ workforce sufficiency", "name": "Netherlands"}, "NOR": {"name": "Norway", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NPL": {"name": "Nepal", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "NZL": {"name": "New Zealand", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "OMN": {"name": "Oman", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PAK": {"name": "Pakistan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PAN": {"name": "Panama", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PER": {"name": "Peru", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PHL": {"name": "Philippines", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PNG": {"name": "Papua New Guinea", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "POL": {"name": "Poland", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PRI": {"name": "Puerto Rico", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PRK": {"name": "North Korea", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PRT": {"name": "Portugal", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PRY": {"name": "Paraguay", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "QAT": {"name": "Qatar", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ROU": {"name": "Romania", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "RUS": {"name": "Russia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "RWA": {"name": "Rwanda", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ESH": {"name": "Western Sahara", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SAU": {"name": "Saudi Arabia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SDN": {"name": "Sudan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SSD": {"name": "South Sudan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SEN": {"name": "Senegal", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SLB": {"name": "Solomon Islands", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SLE": {"name": "Sierra Leone", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SLV": {"name": "El Salvador", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SOM": {"name": "Somalia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SRB": {"name": "Republic of Serbia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SUR": {"name": "Suriname", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SVK": {"name": "Slovakia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SVN": {"name": "Slovenia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SWE": {"tier": 1, "since": 1992, "mechanism": "Universal voucher, for-profit free schools (friskolor)", "mech_type": "voucher", "summary": "A 1992 reform let independent 'free schools' — including for-profit chains, some stock-market-listed — open with light requirements, charge no tuition, follow the national curriculum, and draw equal per-student funding. Free schools now enroll roughly 18% of students.", "findings": [{"t": "The incentive structure reached teachers' own professional judgment: researchers and center-right politicians debate a documented grade-inflation pattern as a competitive response to enrollment-based funding.", "src": "Institute of Economic Affairs", "checked": "Jul 2026"}, {"t": "By 2025 the government's own inquiry proposed barring new operators from extracting profit for five years and giving municipal schools more per-student funding for their duty to staff places for every child.", "src": "The Local Sweden", "checked": "Jul 2026"}], "code": "re-regulating", "code_label": "Re-regulating the provider side", "name": "Sweden"}, "SWZ": {"name": "Swaziland", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "SYR": {"name": "Syria", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TCD": {"name": "Chad", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TGO": {"name": "Togo", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "THA": {"name": "Thailand", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TJK": {"name": "Tajikistan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TKM": {"name": "Turkmenistan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TLS": {"name": "East Timor", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TTO": {"name": "Trinidad and Tobago", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TUN": {"name": "Tunisia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TUR": {"name": "Turkey", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TWN": {"name": "Taiwan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "TZA": {"name": "United Republic of Tanzania", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "UGA": {"name": "Uganda", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "UKR": {"name": "Ukraine", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "URY": {"name": "Uruguay", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "USA": {"name": "United States of America", "tier": 2, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "UZB": {"name": "Uzbekistan", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "VEN": {"name": "Venezuela", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "VNM": {"name": "Vietnam", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "VUT": {"name": "Vanuatu", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "PSE": {"name": "West Bank", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "YEM": {"name": "Yemen", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ZAF": {"name": "South Africa", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ZMB": {"name": "Zambia", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}, "ZWE": {"name": "Zimbabwe", "tier": 3, "mech_type": "unknown", "summary": "", "findings": [], "code": null}}
+{
+ "AFG": {
+  "name": "Afghanistan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "AGO": {
+  "name": "Angola",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ALB": {
+  "name": "Albania",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ARE": {
+  "name": "United Arab Emirates",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ARG": {
+  "name": "Argentina",
+  "tier": 1,
+  "mech_type": "salary-subsidy",
+  "summary": "Argentina funds the teacher, not the child. State subsidies to private schools are calculated and paid against the school's teaching payroll, which makes this the clearest salary-side mechanism in the Americas and a direct test of whether funding the workforce produces a different result from funding the pupil.",
+  "findings": [
+   {
+    "t": "<b>The mechanism.</b> Subsidies are paid as a proportion of teachers' salary costs. Fee-free schools run by non-profit entities may receive up to 100%; fee-charging schools are banded — category A 80%, B 60%, C 40% of teacher salary costs. To be paid, a school submits its teaching payroll, listing staff, posts, hours and salaries, to the education authority.",
+    "src": "Chequeado; Argentinos por la Educación",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Just over 70% of private schools receive state subsidies. About 22% of all students attend subsidized private-management schools, rising to 39% in the City of Buenos Aires, 29% in Córdoba and 26% in Buenos Aires province.",
+    "src": "Chequeado; Infobae",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "For every 100 pesos the state spends on a public-school student it spends about 55 on a subsidized private-school student (2021).",
+    "src": "Infobae",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Why this is the case to watch.</b> Every other system in this Atlas moves money with the pupil and leaves the labour market to sort itself out. Argentina attaches public money directly to teaching posts in non-state schools — the workforce question is inside the funding formula rather than downstream of it.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "since": null,
+  "mechanism": "State subsidy of private-school teacher salaries",
+  "code_label": "The money follows the teacher, not the child"
+ },
+ "ARM": {
+  "name": "Armenia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ATF": {
+  "name": "French Southern and Antarctic Lands",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "AUS": {
+  "name": "Australia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "AUT": {
+  "name": "Austria",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "AZE": {
+  "name": "Azerbaijan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BDI": {
+  "name": "Burundi",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BEL": {
+  "name": "Belgium",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BEN": {
+  "name": "Benin",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BFA": {
+  "name": "Burkina Faso",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BGD": {
+  "name": "Bangladesh",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BGR": {
+  "name": "Bulgaria",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BHS": {
+  "name": "The Bahamas",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null,
+  "shortlist_reason": "The anglophone Caribbean grant-aided pattern is likely to apply, but no Bahamian source establishing it was located in this pass. Shortlisted rather than coded by regional analogy — assuming the pattern is exactly the error this Atlas is meant to avoid."
+ },
+ "BIH": {
+  "name": "Bosnia and Herzegovina",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BLR": {
+  "name": "Belarus",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BLZ": {
+  "name": "Belize",
+  "tier": 1,
+  "mech_type": "grant-aided",
+  "summary": "Belize runs one of the most thoroughly pluralistic systems in the hemisphere and almost nobody outside it knows. Denominational and community grant-aided schools are about 62% of all institutions; directly state-managed schools are about 20%. The churches own and manage; the government pays the staff.",
+  "findings": [
+   {
+    "t": "<b>The mechanism is a payroll, not a voucher.</b> Grant-aided schools are owned by a religious denomination or community group and funded by government through school service grants or direct payment of teachers' salaries.",
+    "src": "UNESCO Education Profiles — Belize; Notre Dame Education Law Project, country report",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "From 2024 the government committed to 100% of salaries, full pensions and service benefits for 879 teachers and lecturers at grant-aided secondary and tertiary institutions. The 728 teachers at 30 grant-aided secondary schools are 50.7% of all secondary teachers in the country.",
+    "src": "Breaking Belize News; Love FM Belize",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Why it matters to the workforce question.</b> Where the state pays the teacher directly, the state holds the workforce lever whoever owns the school. Belize is the clearest case in the Americas of provider pluralism with centralized staffing finance.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "since": null,
+  "mechanism": "Church–state grant-aided schools; the state pays the teachers",
+  "code_label": "The state pays the teachers, the church runs the schools"
+ },
+ "BOL": {
+  "name": "Bolivia",
+  "tier": 1,
+  "mech_type": "convenio",
+  "summary": "Bolivia funds church-run provision through longstanding convenio agreements and then did something no other country in this Atlas has done so explicitly: it nationalized teacher preparation. Law 070 of 2010 made the State solely responsible for training new teachers.",
+  "findings": [
+   {
+    "t": "Written agreements between government and the Catholic Church formalize church provision in education, with limited state financial support; in many remote areas Catholic-run schools are the only schooling available.",
+    "src": "US State Department religious freedom reporting; Agenzia Fides",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The credentialing move.</b> Law 070 (2010) nationalized teacher training, through which the State assumes sole responsibility for producing new teachers for a secular state. The Catholic teacher-training institute Sedes Sapientiae was closed; the Bolivian Episcopal Conference has pursued the case internationally.",
+    "src": "Agenzia Fides",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Why this is the sharpest case in the Atlas for WMFC's question.</b> Bolivia kept provider pluralism at the school level and eliminated it at the preparation level. England moved teacher training away from universities and supply fell; Bolivia moved it to the state outright. Both are experiments in who is permitted to make teachers — and both were run without anyone measuring the workforce consequence.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "training-nationalized",
+  "since": null,
+  "mechanism": "Church–state convenio schools; teacher training nationalized",
+  "code_label": "Schools plural, teacher training nationalized"
+ },
+ "BRA": {
+  "name": "Brazil",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Brazil's main basic-education funding mechanism, FUNDEB, distributes resources according to enrolment in public schools. Private basic schools receive no subsidy. The country's best-known choice-adjacent programme, PROUNI, operates at higher education and works through tax exemption rather than portability.",
+  "findings": [
+   {
+    "t": "FUNDEB resources are distributed by the number of students enrolled annually in public schools maintained by each government entity, with a federal top-up to a minimum per-student value. The formula is per-pupil but not portable — it does not follow a child into a private school.",
+    "src": "OECD, Education in Brazil; Brazilian constitutional framework",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Brazil does not subsidize private basic-education schools.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The instructive contrast.</b> PROUNI grants tax exemptions to private higher-education institutions in exchange for scholarships. Brazil has therefore built a large portable-ish mechanism at university level and none at school level — the reverse of the American sequence.",
+    "src": "PROUNI programme documentation",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "public-only",
+  "since": null,
+  "mechanism": "FUNDEB funds public enrolment only",
+  "code_label": "Per-pupil funding that is not portable"
+ },
+ "BRN": {
+  "name": "Brunei",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BTN": {
+  "name": "Bhutan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "BWA": {
+  "name": "Botswana",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "CAF": {
+  "name": "Central African Republic",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "CAN": {
+  "name": "Canada",
+  "tier": 1,
+  "mech_type": "charter",
+  "summary": "Canada has no national school-choice policy and never has. Education is a provincial power, and one province went considerably further than the rest. Alberta passed charter legislation in 1994 — still the only Canadian province with charter schools — and funds students in independent schools at 70% of the public per-pupil rate, the highest level in the country. The federal government has no role in any of it.",
+  "findings": [
+   {
+    "t": "Alberta's charter legislation passed in 1994; the first three schools opened in 1995. Charter schools cannot charge tuition and receive the same per-pupil funding as other public schools. As of 2022–23 roughly 11,000 students were enrolled, about 1.4% of the province's students — three decades of availability at very small scale.",
+    "src": "The Canadian Encyclopedia; CBC News",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Alberta funds independent-school students at 70% of the public rate, the highest in Canada, and has moved to partially fund independent school construction — a provincial first.",
+    "src": "CBC News",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The workforce finding.</b> Alberta's Teaching Quality Standard is the basis of certification for all Alberta teachers and applies across all of the province's publicly funded school authorities, including its charter school divisions. Alberta diversified who may operate a school without changing who may teach in one. Provider pluralism, single credential.",
+    "src": "Alberta.ca — Professional Practice Standards",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "subnational",
+  "since": 1994,
+  "mechanism": "Provincial charter and independent-school funding",
+  "code_label": "Portability is provincial, not national"
+ },
+ "CHE": {
+  "name": "Switzerland",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "CHL": {
+  "tier": 1,
+  "since": 1981,
+  "mechanism": "Nationwide voucher, later centralized admissions",
+  "mech_type": "voucher",
+  "summary": "The longest-running universal voucher, introduced in 1981 on a Chicago-school design. About 91% of enrollment sat under a voucher scheme by 2018, with for-profit operation permitted for nearly 30 years — the most complete arc from deregulation to re-regulation anywhere.",
+  "findings": [
+   {
+    "t": "The 2015 Ley de Inclusión banned profit-taking in publicly funded schools (two-thirds of voucher schools were for-profit), ended copayments, and replaced school-side selection with a centralized lottery — forcing a restructuring of who may operate.",
+    "src": "Review of Education (Bellei)",
+    "checked": "Jul 2026"
+   },
+   {
+    "t": "The widely cited verdict: unregulated choice produced flat scores and widening rich–poor gaps; only added regulation began to deliver gains. Segregation moved on fee rules, not choice itself.",
+    "src": "FutureEd, Georgetown",
+    "checked": "Jul 2026"
+   }
+  ],
+  "code": "re-regulating",
+  "code_label": "Re-regulating the provider side",
+  "name": "Chile"
+ },
+ "CHN": {
+  "name": "China",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "CIV": {
+  "name": "Ivory Coast",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "CMR": {
+  "name": "Cameroon",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "COD": {
+  "name": "Democratic Republic of the Congo",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "COG": {
+  "name": "Republic of the Congo",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "COL": {
+  "name": "Colombia",
+  "tier": 1,
+  "mech_type": "voucher",
+  "summary": "Colombia ran the most rigorously evaluated voucher programme ever built and then stopped running it. PACES was established in late 1991, reached more than 125,000 pupils, allocated places by lottery where demand exceeded supply, and was wound up by the late 1990s. What replaced it — concession schools and subsidies to non-profit private schools — is quieter and still in place.",
+  "findings": [
+   {
+    "t": "PACES vouchers covered roughly half the cost of private secondary schooling for children in the two lowest socioeconomic strata, and were allocated by lottery when oversubscribed. Lottery winners were about 15 percentage points more likely to attend private school, completed more schooling, and scored about 0.2 standard deviations higher; secondary completion rose 15–20%.",
+    "src": "J-PAL; Angrist, Bettinger, Bloom, King & Kremer",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The supply side is where it failed.</b> Low-quality for-profit schools were created to capture voucher revenue, prompting restrictions on which schools could participate. Many established private schools declined to take part — just under half of private schools in the ten largest cities accepted vouchers in 1993. Voucher value was not indexed and eroded with inflation, and payments to schools were delayed. Colombian scholarship describes the programme as <i>una experiencia fallida</i>.",
+    "src": "Bettinger, Lessons from Private-School Vouchers in Colombia; Colombian programme literature",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Colombia today subsidizes non-profit private schools, religious and secular, and funds <i>concesionadas</i> — non-profit secular charter-type schools operating with public money.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The lesson for the workforce question.</b> Demand-side money produced entry by providers who could not sustain quality, and non-entry by providers who could. Nobody in the PACES literature asks where the teachers for the new schools were to come from — which is precisely the seam.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "discontinued",
+  "since": 1991,
+  "mechanism": "PACES vouchers (1991–98), then concession schools and subsidies",
+  "code_label": "The best-measured voucher, discontinued"
+ },
+ "CRI": {
+  "name": "Costa Rica",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Costa Rica made education free and compulsory in 1869, among the earliest anywhere, and built a strong state system around that commitment. Private schools operate and charge fees; public money does not follow students into them.",
+  "findings": [
+   {
+    "t": "Preschool and basic education are free and compulsory, a constitutional commitment dating to 1869. The system's identity is built on universal state provision rather than provider choice.",
+    "src": "Education in Costa Rica — country overview",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Limit.</b> Costa Rica does not appear in the IDB's regional classification of subsidized private-school categories, and no national subsidy mechanism was identified in this pass. Coded as no portability found, not as no portability possible.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "state-provision",
+  "since": null,
+  "mechanism": "Free compulsory state provision since 1869",
+  "code_label": "Universal state provision, no portability found"
+ },
+ "CUB": {
+  "name": "Cuba",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Cuba nationalized all schools in 1961 and has maintained the most complete state monopoly in the hemisphere since. There are no faith schools, no charter schools and no semi-private academies. Recent regulation has reaffirmed the prohibition on private education businesses.",
+  "findings": [
+   {
+    "t": "Schools were nationalized in 1961; regulatory updates have reaffirmed the prohibition on private education enterprises, keeping the state monopoly intact.",
+    "src": "Right to Education country review — Cuba; Independent Institute",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The value of the case.</b> Cuba is the region's zero point. Any claim that portable funding is inevitable, or that provider pluralism follows automatically from demand, has to account for a system that has held the opposite line for sixty-five years.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "state-monopoly",
+  "since": null,
+  "mechanism": "State monopoly; private education prohibited",
+  "code_label": "The hemisphere's zero point"
+ },
+ "CYP": {
+  "name": "Cyprus",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "CZE": {
+  "name": "Czech Republic",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "DEU": {
+  "name": "Germany",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "DJI": {
+  "name": "Djibouti",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "DNK": {
+  "name": "Denmark",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "DOM": {
+  "name": "Dominican Republic",
+  "tier": 1,
+  "mech_type": "subsidy",
+  "summary": "The Dominican Republic subsidizes private schools — for-profit and non-profit, religious and secular. Private enrolment has been stable at about 26%, one of the larger private shares in the region.",
+  "findings": [
+   {
+    "t": "Private for-profit and non-profit schools, religious and secular, receive government subsidies; a parallel non-subsidized private sector operates alongside them.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Private enrolment has been stagnant at about 26% over the decade to 2014 — a large sector that is not growing, in contrast to Chile, Colombia, Argentina, Brazil and Peru.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "subsidized-stable",
+  "since": null,
+  "mechanism": "Subsidies to private schools, religious and secular",
+  "code_label": "Large subsidized sector, flat share"
+ },
+ "DZA": {
+  "name": "Algeria",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ECU": {
+  "name": "Ecuador",
+  "tier": 1,
+  "mech_type": "salary-subsidy",
+  "summary": "Ecuador operates a distinct category: fiscomisional schools, religious schools holding an agreement with the government that receives subsidies to pay teacher salaries. Ecuador is also the only country in the region's classification that prohibits for-profit non-subsidized schools.",
+  "findings": [
+   {
+    "t": "Fiscomisional schools are religious schools with a government agreement, subsidized specifically to pay teacher salaries — a second salary-side mechanism in the region alongside Argentina's.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Ecuador is the only country in the IDB's regional classification that bans for-profit non-subsidized private schools. The state regulates the ownership form, not only the funding.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Private enrolment has been stable at about 27% over the decade to 2014.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "since": null,
+  "mechanism": "Fiscomisional schools — subsidized to pay teacher salaries",
+  "code_label": "Subsidy tied to teacher salaries, for-profit barred"
+ },
+ "EGY": {
+  "name": "Egypt",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ERI": {
+  "name": "Eritrea",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ESP": {
+  "name": "Spain",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "EST": {
+  "name": "Estonia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ETH": {
+  "name": "Ethiopia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "FIN": {
+  "name": "Finland",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "FJI": {
+  "name": "Fiji",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "FLK": {
+  "name": "Falkland Islands",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null,
+  "shortlist_reason": "A British overseas territory with a very small school system. Whether UK funding arrangements apply in any portable form was not established. Shortlisted."
+ },
+ "FRA": {
+  "name": "France",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GAB": {
+  "name": "Gabon",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GBR": {
+  "tier": 1,
+  "since": 2010,
+  "mechanism": "Academies + school-led teacher training",
+  "mech_type": "charter",
+  "summary": "England (coded under GBR) is the case that speaks to WMFC's exact institutional question. From 2010 the government deliberately moved initial teacher training away from universities toward schools — treating university-led training as 'the problem' — via School Direct and a target of at least 50% school-led places.",
+  "findings": [
+   {
+    "t": "Relocating credentialing off the university campus suppressed supply: School Direct ran at ~45% of places filled in an early year, projected to yield thousands fewer teachers, as university places were capped faster than school routes filled.",
+    "src": "BBC News / The Conversation",
+    "checked": "Jul 2026"
+   },
+   {
+    "t": "The transferable lesson: decentralizing credentialing does not automatically create throughput, and can reduce it unless deliberately resourced.",
+    "src": "Journal of Education for Teaching",
+    "checked": "Jul 2026"
+   }
+  ],
+  "code": "supply-constrained",
+  "code_label": "Credentialing moved, throughput fell",
+  "name": "United Kingdom"
+ },
+ "GEO": {
+  "name": "Georgia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GHA": {
+  "name": "Ghana",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GIN": {
+  "name": "Guinea",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GMB": {
+  "name": "Gambia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GNB": {
+  "name": "Guinea Bissau",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GNQ": {
+  "name": "Equatorial Guinea",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GRC": {
+  "name": "Greece",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "GRL": {
+  "name": "Greenland",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null,
+  "shortlist_reason": "Greenland runs its own school system under a Danish constitutional framework. Whether Denmark's free-school funding model extends to it was not established. Shortlisted pending a Greenlandic or Danish source."
+ },
+ "GTM": {
+  "name": "Guatemala",
+  "tier": 1,
+  "mech_type": "conditional-subsidy",
+  "summary": "Guatemala funds some non-state provision, but narrowly and on condition. Private schools may be subsidized only where they provide services free, serve low-income populations and pursue quality or pedagogical innovation. Cooperative schools are funded jointly by municipality, parents and ministry.",
+  "findings": [
+   {
+    "t": "Subsidies to qualifying private schools ran to about USD 13.8 million in 2017 — 0.6% of education spending. Non-profit cooperative schools received a further USD 22 million across 1,108 schools, 0.9% of public education spending. Portability exists and is very small.",
+    "src": "UNESCO Education Profiles — Guatemala",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Public education spending has stayed between 2.8% and 3.3% of GDP since 2006, below the UNESCO benchmark of 4–6%. The constraint on this system is the size of the total envelope, not the rules on who may receive it.",
+    "src": "UNESCO Education Profiles — Guatemala",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "conditional",
+  "since": null,
+  "mechanism": "Targeted subsidy conditioned on free provision",
+  "code_label": "Subsidy conditioned on free provision"
+ },
+ "GUF": {
+  "name": "French Guiana",
+  "tier": 1,
+  "mech_type": "contract",
+  "summary": "French Guiana is a French département, so French national education law applies in full. That includes the 1959 Loi Debré contract system, under which private schools contracting with the state teach the national curriculum and have their teachers paid by the state.",
+  "findings": [
+   {
+    "t": "Under the French contract system, schools sous contrat teach the national programme and their teachers are remunerated by the state — a salary-side mechanism rather than a per-pupil voucher, in continuous operation since 1959.",
+    "src": "Loi Debré (1959), French national education law",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Limit, stated plainly.</b> This entry is coded from the metropolitan legal framework that governs the territory, not from a territory-specific reading of provision on the ground in French Guiana. Treat the mechanism as established and the local practice as unverified.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "derived-metropole",
+  "since": 1959,
+  "mechanism": "French contract system (Loi Debré) applied in an overseas département",
+  "code_label": "Metropolitan law, territorial practice unread"
+ },
+ "GUY": {
+  "name": "Guyana",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Guyana is the reversal case. In 1976 the government took over the country's church and private schools — close to 696 of them — abolished fees at every level and made free education a constitutional right. The dual system the rest of the anglophone Caribbean retained was dismantled here.",
+  "findings": [
+   {
+    "t": "Close to 696 schools, most privately financed or owned by church organisations, came under state control in 1976. Universal free education from nursery to university was introduced by constitutional amendment that year and entrenched in the 1980 constitution.",
+    "src": "Stabroek News; Guyana country education histories",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The stated reason was a staffing question.</b> Before 1976 the churches held major influence over who taught in their schools, who attended and what was taught. Nationalization was justified as ending a dual system in which employment and attendance turned on religion — a portable-funding arrangement undone specifically on who-may-teach grounds.",
+    "src": "Stabroek News; Guyana country education histories",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "reversed",
+  "since": null,
+  "mechanism": "Nationalized in 1976; universal free state provision",
+  "code_label": "Portability reversed on staffing grounds"
+ },
+ "HND": {
+  "name": "Honduras",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null,
+  "shortlist_reason": "Private enrolment is roughly 20% and financed mainly by family fees; Honduras does not appear among the subsidizing countries in the IDB regional classification. A Notre Dame Education Law Project country report exists and has not yet been read in full. Shortlisted rather than coded because the funding position is inferred from absence rather than read from a Honduran source."
+ },
+ "HRV": {
+  "name": "Croatia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "HTI": {
+  "name": "Haiti",
+  "tier": 1,
+  "mech_type": "subsidy",
+  "summary": "Haiti is the inverse of every other case in this Atlas. Non-state schools are not an alternative to the state system; they are substantially the system. Subsidies reach private for-profit and non-profit schools, religious and secular.",
+  "findings": [
+   {
+    "t": "Haiti subsidizes private for-profit and non-profit schools, both religious and secular, alongside a large unsubsidized private sector.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Why the direction matters.</b> Elsewhere portable funding is a policy choice layered onto an existing state system. In Haiti non-state provision arose from the absence of state capacity, and subsidy follows that reality rather than creating it. Read as an equilibrium case only with that caveat attached.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "private-by-default",
+  "since": null,
+  "mechanism": "Subsidies into an overwhelmingly non-state system",
+  "code_label": "Non-state by default, not by design"
+ },
+ "HUN": {
+  "name": "Hungary",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "IDN": {
+  "name": "Indonesia",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "IND": {
+  "name": "India",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "IRL": {
+  "name": "Ireland",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "IRN": {
+  "name": "Iran",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "IRQ": {
+  "name": "Iraq",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ISL": {
+  "name": "Iceland",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ISR": {
+  "name": "Israel",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ITA": {
+  "name": "Italy",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "JAM": {
+  "name": "Jamaica",
+  "tier": 1,
+  "mech_type": "grant-aided",
+  "summary": "Jamaica inherited the British colonial dual system and kept it. A substantial share of primary and secondary schools are run by religious denominations — Anglican, Catholic and others — and receive government funding while retaining their religious character.",
+  "findings": [
+   {
+    "t": "Church-run schools frequently receive government funding while keeping their denominational identity. Religious schools receiving public funds must admit students of all faiths and meet ministry standards — funding is conditioned on open admission.",
+    "src": "US State Department, International Religious Freedom Report — Jamaica",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "A separate independent sector, governed by its own boards and funded by fees, endowment and donations, sits outside the funded system.",
+    "src": "Education financing in Jamaica — country overview",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "colonial-dual",
+  "since": null,
+  "mechanism": "Government-funded church schools within the public system",
+  "code_label": "The colonial dual system, retained"
+ },
+ "JOR": {
+  "name": "Jordan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "JPN": {
+  "name": "Japan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "KAZ": {
+  "name": "Kazakhstan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "KEN": {
+  "name": "Kenya",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "KGZ": {
+  "name": "Kyrgyzstan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "KHM": {
+  "name": "Cambodia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "KOR": {
+  "name": "South Korea",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "CS-KM": {
+  "name": "Kosovo",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "KWT": {
+  "name": "Kuwait",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LAO": {
+  "name": "Laos",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LBN": {
+  "name": "Lebanon",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LBR": {
+  "name": "Liberia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LBY": {
+  "name": "Libya",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LKA": {
+  "name": "Sri Lanka",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LSO": {
+  "name": "Lesotho",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LTU": {
+  "name": "Lithuania",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LUX": {
+  "name": "Luxembourg",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "LVA": {
+  "name": "Latvia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MAR": {
+  "name": "Morocco",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MDA": {
+  "name": "Moldova",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MDG": {
+  "name": "Madagascar",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MEX": {
+  "name": "Mexico",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Article 3 of the 1917 Constitution makes the State the provider of free compulsory education. Private entities may operate schools, but only with prior and explicit official recognition of studies, and they teach the national syllabus. Money does not follow the child.",
+  "findings": [
+   {
+    "t": "Mexico does not subsidize private schools. Private enrolment has been stable at about 9% — the lowest share among the larger Latin American systems and flat over the decade to 2014.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Private schools must obtain prior authorization from the education authorities and teach to the same purposes, criteria and syllabus as public schools, including for teacher-training colleges. The regulated variable is permission to operate, not funding.",
+    "src": "Political Constitution of the United Mexican States, Art. 3; Notre Dame Education Law Project, country report",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "authorized-unfunded",
+  "since": null,
+  "mechanism": "Private provision authorized, not publicly funded",
+  "code_label": "Permission to operate, no public money"
+ },
+ "MKD": {
+  "name": "Macedonia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MLI": {
+  "name": "Mali",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MMR": {
+  "name": "Myanmar",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MNE": {
+  "name": "Montenegro",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MNG": {
+  "name": "Mongolia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MOZ": {
+  "name": "Mozambique",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MRT": {
+  "name": "Mauritania",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MWI": {
+  "name": "Malawi",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "MYS": {
+  "name": "Malaysia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "NAM": {
+  "name": "Namibia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "NCL": {
+  "name": "New Caledonia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "NER": {
+  "name": "Niger",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "NGA": {
+  "name": "Nigeria",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "NIC": {
+  "name": "Nicaragua",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null,
+  "shortlist_reason": "No national subsidy mechanism was identified and Nicaragua does not appear in the IDB regional classification. No Notre Dame country report is published. Shortlisted because a null this thin should not be published as a coded finding."
+ },
+ "NLD": {
+  "tier": 1,
+  "since": 1917,
+  "mechanism": "Constitutional equal funding (Article 23)",
+  "mech_type": "constitutional",
+  "summary": "After the century-long <em>Schoolstrijd</em>, the 1917 constitutional settlement funded privately governed schools on equal terms with state schools, subject to central inspection. Roughly 70% of Dutch schools are now run by private boards, all funded equally.",
+  "findings": [
+   {
+    "t": "A century of the most pluralistic provider system in the world did not immunize the teaching workforce: the Netherlands entered a structural teacher shortage (<em>lerarentekort</em>) flagged since 2011, driven partly by workload and teachers' reported lack of autonomy.",
+    "src": "researchgate.net / AOb",
+    "checked": "Jul 2026"
+   },
+   {
+    "t": "Freedom to establish is inseparable from an obligation to be inspected — portability here is anchored by a strong central Inspectorate, not a free market.",
+    "src": "onderwijsinspectie.nl",
+    "checked": "Jul 2026"
+   }
+  ],
+  "code": "separable",
+  "code_label": "Portability ≠ workforce sufficiency",
+  "name": "Netherlands"
+ },
+ "NOR": {
+  "name": "Norway",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "NPL": {
+  "name": "Nepal",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "NZL": {
+  "name": "New Zealand",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "OMN": {
+  "name": "Oman",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "PAK": {
+  "name": "Pakistan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "PAN": {
+  "name": "Panama",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Panama has a substantial private sector of about 17% of enrolment, stable over the last decade, funded by fees. The state does not subsidize it.",
+  "findings": [
+   {
+    "t": "Panama's private schools — for-profit and non-profit, religious and secular — receive no government subsidies. Private enrolment has been flat at roughly 17%.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "unsubsidized",
+  "since": null,
+  "mechanism": "Private schools operate without subsidy",
+  "code_label": "Large private sector, no public money"
+ },
+ "PER": {
+  "name": "Peru",
+  "tier": 1,
+  "mech_type": "deregulation",
+  "summary": "Peru is the deregulation case. A 1998 legal decree promoted private investment in education by loosening constraints on opening schools, permitting for-profit operation and offering tax credits to investors. Supply responded sharply. Public subsidy did not follow.",
+  "findings": [
+   {
+    "t": "The 1998 decree reduced legislative constraints on opening private schools, allowed for-profit operation and offered generous tax credits to investors. Private enrolment rose from 13% in 1998 to 26% in 2014; in Lima non-state participation went from 29% in 2004 to 50% in 2014.",
+    "src": "Balarin, NORRAG; Right to Education Initiative",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "Public money barely follows. Peru subsidizes only the Fe y Alegría chain of Catholic schools, under 2% of total enrolment.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The supply-quality result.</b> In mathematics the share of low-achieving students in the low-fee private sector is about three times the public-sector share, and at secondary level the low-fee private sector is the single private modality performing worse than public schools. Regulatory capacity did not scale with the sector: licences are granted by local authorities that perform no regular supervision.",
+    "src": "OECD, Education and Skills in Peru; Education International",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Read against Chile.</b> Peru deregulated supply without making money portable; Chile made money portable and then re-regulated supply. Both ended up legislating about who may operate.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "deregulated",
+  "since": 1998,
+  "mechanism": "Deregulated private supply, minimal subsidy",
+  "code_label": "Supply deregulated, funding withheld"
+ },
+ "PHL": {
+  "name": "Philippines",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "PNG": {
+  "name": "Papua New Guinea",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "POL": {
+  "name": "Poland",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "PRI": {
+  "name": "Puerto Rico",
+  "tier": 1,
+  "mech_type": "voucher",
+  "summary": "Puerto Rico is the Atlas's clearest example of a court deciding the question twice. Vouchers were ruled unconstitutional in 1994. Act 85 of 2018 created charter-style 'alianza' schools and private-school vouchers, and in 2019 the island's Supreme Court upheld them.",
+  "findings": [
+   {
+    "t": "Act 85 authorized a public charter system capped at 10% of all public schools and private-school vouchers capped at 3% of students from 2019–20. Both caps are unusually explicit; most systems in this Atlas cap nothing.",
+    "src": "EdChoice; CBS News",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "A 1994 ruling had held vouchers unconstitutional. In <i>Asociación de Maestros v. Departamento de Educación</i> (2019) the Supreme Court of Puerto Rico held that they were constitutional, overturning a lower court that had relied on the 1994 decision.",
+    "src": "Education Week",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Operator restriction is the workforce-relevant clause.</b> A ruling limited operation of alianza schools to the University of Puerto Rico and the island's municipalities — a rare case of a system naming a university as an eligible school operator in statute.",
+    "src": "CBS News; National Center for the Study of Privatization in Education",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "court-defined",
+  "since": 2018,
+  "mechanism": "Act 85 of 2018 — charter schools and capped vouchers",
+  "code_label": "Decided by courts, twice, opposite ways"
+ },
+ "PRK": {
+  "name": "North Korea",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "PRT": {
+  "name": "Portugal",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "PRY": {
+  "name": "Paraguay",
+  "tier": 1,
+  "mech_type": "subsidy",
+  "summary": "Paraguay provides state funding to schools run by religious groups. The mechanism is documented in reporting on religious freedom rather than in education-finance literature, which is itself a finding about how visible these arrangements are.",
+  "findings": [
+   {
+    "t": "The government provides state funding for schools run by religious groups.",
+    "src": "US State Department, International Religious Freedom Report — Paraguay",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Limit.</b> Scale, start year and funding formula were not established in this pass, and Paraguay's Notre Dame country report is listed but not yet published. The existence of the mechanism is documented; its size is not.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "documented-unsized",
+  "since": null,
+  "mechanism": "State funding for religious-group schools",
+  "code_label": "Mechanism documented, scale unknown"
+ },
+ "QAT": {
+  "name": "Qatar",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ROU": {
+  "name": "Romania",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "RUS": {
+  "name": "Russia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "RWA": {
+  "name": "Rwanda",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ESH": {
+  "name": "Western Sahara",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SAU": {
+  "name": "Saudi Arabia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SDN": {
+  "name": "Sudan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SSD": {
+  "name": "South Sudan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SEN": {
+  "name": "Senegal",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SLB": {
+  "name": "Solomon Islands",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SLE": {
+  "name": "Sierra Leone",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SLV": {
+  "name": "El Salvador",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "El Salvador has a stable private sector of about 17% of enrolment which the state does not fund. The country is better known in this literature for EDUCO, which decentralized management of state schools to community associations without making the money portable.",
+  "findings": [
+   {
+    "t": "Private enrolment has been stagnant at about 17% over the decade to 2014, and El Salvador does not appear among the countries subsidizing private schools in the IDB's regional classification.",
+    "src": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The distinction worth carrying.</b> Community management of public schools is not portable funding. EDUCO moved control of hiring and oversight to parent associations while the schools remained public — a governance reform, not a choice reform.",
+    "src": "WMFC coding, Aug 2026; Notre Dame Education Law Project, country report",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "governance-not-funding",
+  "since": null,
+  "mechanism": "Unsubsidized private sector alongside state provision",
+  "code_label": "Management devolved, money did not move"
+ },
+ "SOM": {
+  "name": "Somalia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SRB": {
+  "name": "Republic of Serbia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SUR": {
+  "name": "Suriname",
+  "tier": 2,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null,
+  "shortlist_reason": "Suriname inherited the Dutch bijzonder onderwijs model, which would make it one of the more interesting cases in the hemisphere given the Netherlands entry. No Surinamese source was located in this pass. Shortlisted and flagged as a priority."
+ },
+ "SVK": {
+  "name": "Slovakia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SVN": {
+  "name": "Slovenia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SWE": {
+  "tier": 1,
+  "since": 1992,
+  "mechanism": "Universal voucher, for-profit free schools (friskolor)",
+  "mech_type": "voucher",
+  "summary": "A 1992 reform let independent 'free schools' — including for-profit chains, some stock-market-listed — open with light requirements, charge no tuition, follow the national curriculum, and draw equal per-student funding. Free schools now enroll roughly 18% of students.",
+  "findings": [
+   {
+    "t": "The incentive structure reached teachers' own professional judgment: researchers and center-right politicians debate a documented grade-inflation pattern as a competitive response to enrollment-based funding.",
+    "src": "Institute of Economic Affairs",
+    "checked": "Jul 2026"
+   },
+   {
+    "t": "By 2025 the government's own inquiry proposed barring new operators from extracting profit for five years and giving municipal schools more per-student funding for their duty to staff places for every child.",
+    "src": "The Local Sweden",
+    "checked": "Jul 2026"
+   }
+  ],
+  "code": "re-regulating",
+  "code_label": "Re-regulating the provider side",
+  "name": "Sweden"
+ },
+ "SWZ": {
+  "name": "Swaziland",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "SYR": {
+  "name": "Syria",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TCD": {
+  "name": "Chad",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TGO": {
+  "name": "Togo",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "THA": {
+  "name": "Thailand",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TJK": {
+  "name": "Tajikistan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TKM": {
+  "name": "Turkmenistan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TLS": {
+  "name": "East Timor",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TTO": {
+  "name": "Trinidad and Tobago",
+  "tier": 1,
+  "mech_type": "concordat",
+  "summary": "Signed on 22 December 1960, the Concordat between the State and the denominational boards is one of the longest continuously running portable-funding arrangements in the Americas — sixty-six years. The state pays; the denominations own, manage and, within limits, select.",
+  "findings": [
+   {
+    "t": "Under the Concordat the state pays salaries and a share of upkeep at denominational schools, which became known as 'government assisted' schools. Ownership and the right of direct control and management remained with the denominations. The arrangement is known locally as the dual system.",
+    "src": "Concordat Watch; Trinidad and Tobago Newsday",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The staffing clause is the point.</b> Teachers are selected by both government and denominational boards, and a denominational authority may request the removal of a teacher found unsatisfactory on moral or religious grounds. Denominational schools may also fill 20% of first-form places at their own discretion, the state filling the other 80% by examination.",
+    "src": "Concordat Watch — text of the 1960 Concordat",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>What sixty-six years has produced.</b> The arrangement remains politically live: national debate continues over equity in the school system and whether the 20% discretionary intake should survive. Duration has not settled the question.",
+    "src": "Trinidad and Tobago Newsday; Global Voices",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "concordat",
+  "since": 1960,
+  "mechanism": "The Concordat of 1960 — state-funded denominational schools",
+  "code_label": "Sixty-six years, still contested"
+ },
+ "TUN": {
+  "name": "Tunisia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TUR": {
+  "name": "Turkey",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TWN": {
+  "name": "Taiwan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "TZA": {
+  "name": "United Republic of Tanzania",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "UGA": {
+  "name": "Uganda",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "UKR": {
+  "name": "Ukraine",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "URY": {
+  "name": "Uruguay",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Uruguay built early and thoroughly on free public provision. Education is free at primary, secondary and most higher levels, financed mainly from public funds, with a small private sector alongside it.",
+  "findings": [
+   {
+    "t": "The system is mainly financed by public funds, with household contributions, a small private sector and some international aid. No national portable-funding mechanism was identified.",
+    "src": "Education financing in Uruguay — country overview",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Limit.</b> Uruguay's Notre Dame Education Law Project country report is listed but not yet published, and no Uruguay-specific subsidy category appears in the IDB regional classification. Coded as none found rather than none possible.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "state-provision",
+  "since": null,
+  "mechanism": "Predominantly public financing; small private sector",
+  "code_label": "Public financing, no portability found"
+ },
+ "USA": {
+  "name": "United States of America",
+  "tier": 1,
+  "mech_type": "voucher",
+  "summary": "The young case. Milwaukee's 1990 voucher programme was the first modern instance; thirty states now fund students rather than systems and eighteen do so universally. The United States has moved faster than any country in this Atlas and has had the least time to discover what the mature systems already show.",
+  "findings": [
+   {
+    "t": "Roughly 750,000 American children learn in microschools, and more than 70% of the people running them are current or former licensed teachers — the sector is staffed by the preparation system's own graduates.",
+    "src": "WMFC Readiness Index, 2026 Baseline",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "87% of teachers report feeling prepared to teach in a district school; 34% for a microschool. The 53-point gap has not moved since 2023.",
+    "src": "EdChoice survey data, via the WMFC Readiness Index",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>The institutional response.</b> Across 39 coded institutions in 9 states, exactly one preparation programme built for the sector was found — Central Michigan's Charter School Leadership M.A. Where universities have entered, they have done it by authorizing or operating schools, not by building degrees. Completing Michigan's eight university authorizers produced no further programmes.",
+    "src": "WMFC Readiness Index, 2026 Baseline",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "young-case",
+  "since": 1990,
+  "mechanism": "State vouchers, tax-credit scholarships and education savings accounts",
+  "code_label": "Fastest adoption, least workforce answer"
+ },
+ "UZB": {
+  "name": "Uzbekistan",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "VEN": {
+  "name": "Venezuela",
+  "tier": 1,
+  "mech_type": "none",
+  "summary": "Venezuela's private schools operate under a state that has repeatedly asserted the power to close or take over schools that decline its curriculum and inspection regime. The governing question here is control of content and continued permission to operate, not funding.",
+  "findings": [
+   {
+    "t": "All schools, public and private, must admit state inspectors and adopt the government's educational system or face closure and nationalization, a position asserted publicly by the government during the curriculum reforms of the late 2000s.",
+    "src": "NBC News; Fox News reporting",
+    "checked": "Aug 2026"
+   },
+   {
+    "t": "<b>Limit.</b> Venezuela does not appear in the IDB's regional classification of subsidized private-school categories, and no current national subsidy mechanism was identified. Current administrative practice was not verified from primary Venezuelan sources in this pass.",
+    "src": "WMFC coding, Aug 2026",
+    "checked": "Aug 2026"
+   }
+  ],
+  "code": "state-control",
+  "since": null,
+  "mechanism": "Private schools under state curricular control",
+  "code_label": "Permission to operate is the live variable"
+ },
+ "VNM": {
+  "name": "Vietnam",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "VUT": {
+  "name": "Vanuatu",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "PSE": {
+  "name": "West Bank",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "YEM": {
+  "name": "Yemen",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ZAF": {
+  "name": "South Africa",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ZMB": {
+  "name": "Zambia",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ },
+ "ZWE": {
+  "name": "Zimbabwe",
+  "tier": 3,
+  "mech_type": "unknown",
+  "summary": "",
+  "findings": [],
+  "code": null
+ }
+}
