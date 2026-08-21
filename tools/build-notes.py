@@ -38,7 +38,6 @@ HEAD = """<!DOCTYPE html>
     <a href="/method/">Method</a>
     <a href="/about/">About</a>
   </nav>
-  <a class="btn" href="/#join">Become a member</a>
 </div></header>
 """
 
@@ -157,7 +156,7 @@ def index_page(notes):
   </div>
 """ % (note["tag"], note["slug"], note["title"], note["standfirst"], note["n"], note["date"])
 
-    html += """  <p class="fine" style="margin-top:24px">Field Notes are free. Members receive them by email as they publish &mdash; <a href="/#join">sign up</a>.</p>
+    html += """  <p class="fine" style="margin-top:24px">Field Notes are free to read, quote and cite. Every one carries its sources and the date each was checked.</p>
 </div></section>
 """
     return html + FOOT
