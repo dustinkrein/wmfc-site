@@ -13,14 +13,14 @@ Before any handoff: `python3 tools/check.py` must exit clean.
 
 ## Where the research stands
 
-*Last updated: 25 August 2026*
+*Last updated: 26 August 2026*
 
 | | Coverage |
 |---|---|
 | **Readiness Index** | 39 rows · 9 states · 34 single institutions, 5 summary rows · 11 Tier 1, 8 Tier 2, 7 Tier 3, 13 Tier 0 |
 | **Index coverage depth** | 2 systematic passes (Florida, Michigan) · 1 partial (Ohio) · 6 placeholders |
 | **Portable-Funding Atlas** | 175 countries · 29 coded, 12 shortlisted, 134 not yet coded |
-| **Field Notes** | 07 published |
+| **Field Notes** | 09 published |
 | **Corrections** | 02 published, both on the front page |
 
 Index coverage is uneven and the site now says so on the page. `scan-2026.json` carries a
@@ -96,6 +96,64 @@ The membership offer was removed sitewide (commit `8d64af7`), which also removed
 broken `FORM_ACTION_URL` form. There is currently **no way for a reader to subscribe.**
 Decide whether that's intentional. If not, a Buttondown or Mailchimp account is needed
 before any form goes back.
+
+---
+
+## Field Notes 08 and 09 — districts as a secondary line of inquiry
+
+Published 26 August 2026. Both carry the same date and extend the project into a
+**secondary research question**: how do school districts respond when the money moves?
+The primary question is unchanged and postsecondary.
+
+- **08 · Institutions** — *Three-quarters of Florida districts now sell to students they
+  do not enroll.* Florida's a-la-carte adoption curve (roughly 1-in-3 to about 75% of 67
+  districts in twelve months), set against Texas districts declining a $1,500-per-activity
+  state allotment and a West Virginia near-zero.
+- **09 · The seam** — *A Florida district needed a school model. It bought one from a
+  microschool operator.* Polk County contracted WonderHere; Elizabeth City-Pasquotank
+  built its design from visits to private microschools. Set against the Index's Florida
+  finding of no education-school program built for the sector.
+
+**Why the counter-cases are load-bearing.** Note 08 leads with Florida adaptation and then
+spends three paragraphs on districts that refused. That is deliberate: adaptation reads as
+a finding rather than advocacy precisely because it did not happen everywhere. Do not trim
+the Texas and West Virginia material to tighten the note.
+
+**Two open limits are stated in-text and should be closed, not quietly dropped.**
+The West Virginia figure is a *near*-zero — the Hope provider directory was read across the
+school block from roughly M through Y only, because the directory's search box is a
+JavaScript postback that cannot be queried programmatically. Five minutes in a browser
+resolves it. And no Florida district has published a-la-carte revenue, so Note 08's opening
+limit stands until district Annual Financial Reports or records requests produce a number.
+
+### Follow-on research queue
+
+1. **Florida's enrolled 2026 GAA and implementing bill.** An enrollment-decline
+   stabilisation supplement passed, but it is named three different ways across three
+   sources — "Educational Enrollment Stabilization" (Senate), "Family Empowerment
+   Scholarship Stabilization" (House implementing bill), "Public School Enrollment
+   Stabilization Fund" (FEA). One name points at districts, another at the scholarship
+   programme. If Florida has begun insulating districts from portability, it weakens the
+   competitive premise underlying Note 08. **Highest value open item.**
+2. **South Carolina ESTF legislative history.** Secondary sourcing suggests homeschool
+   organisations requested their own exclusion from the programme to preserve regulatory
+   independence. If primary sources confirm it, that is a Field Note on its own: portable
+   funding declined by its intended beneficiaries. Do not publish on the tracker alone.
+3. **Federal scholarship tax credit, effective 1 January 2027.** $1,700, routed through
+   scholarship organisations rather than family accounts, states opt in. Because SFOs are
+   the institutions that built Florida's district channel, this could export the Florida
+   model to states with no Florida-style ESA. Nothing on the site covers it yet.
+4. **Source-link resolution** for the 14 URLs in Notes 08 and 09. Not yet run.
+
+Six background research memos supporting these notes were produced in the 15 August thread
+and live outside the repo. They are internal-facing — they narrate hypothesis revision and
+carry "what to check next" sections — and are not publishable without rewriting.
+
+### Scope decision deferred
+
+The Index and Atlas are postsecondary-only. District findings currently live in Field Notes.
+If the district corpus keeps growing, decide whether it earns its own section rather than
+straining the Field Notes format.
 
 ---
 
