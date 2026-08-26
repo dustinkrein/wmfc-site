@@ -118,6 +118,16 @@ Things settled once, easy to reopen by accident.
   "the site is broken" reports twice.
 - **Never hand over a ZIP.** Windows 8.3 extraction once mangled the repo into
   `INDEX~1.HTM`. Edit in the clone. The preflight guards against `~` in filenames.
+- **Don't run `git` against this clone from a Claude session.** The working tree is on
+  OneDrive, which blocks the sandbox from deleting files git creates. A `git status` on
+  25 Aug 2026 left `.git/index.lock` behind and GitHub Desktop refused to commit with
+  *"A lock file already exists in the repository."* Read the tree, edit files, run the
+  preflight — but leave git itself to GitHub Desktop. If the error appears anyway, delete
+  `.git/index.lock` (hidden folder; enable **View → Hidden items**). Always safe when no
+  git operation is actually running.
+- **One thread edits at a time.** Every thread in this project opens the same clone, and
+  nothing isolates them. Two threads editing in parallel silently overwrite each other.
+  Finish and commit one piece of work before starting another elsewhere.
 
 ---
 
