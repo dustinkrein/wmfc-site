@@ -63,6 +63,8 @@
        fl.tier2         Florida institutions naming the sector
        fl.tier1         Florida Tier 1 institutions
        mi.total         Michigan rows
+       aggregates       rows summarizing a group, not one institution
+       institutions     rows naming a single institution
 
      NOT derived, and deliberately so:
        "Programs built for the sector" and "Operating & authorizing
@@ -93,7 +95,12 @@
         "fl.total": count(function (r) { return r.state === "Florida"; }),
         "fl.tier2": count(function (r) { return r.state === "Florida" && r.tier === "Tier 2"; }),
         "fl.tier1": count(function (r) { return r.state === "Florida" && r.tier === "Tier 1"; }),
-        "mi.total": count(function (r) { return r.state === "Michigan"; })
+        "mi.total": count(function (r) { return r.state === "Michigan"; }),
+        /* Five rows summarize a group rather than naming one institution
+           ("California institutions", "Ohio public universities"). Counting
+           them as institutions overstates what was read. */
+        aggregates: count(function (r) { return r.scope === "aggregate"; }),
+        institutions: count(function (r) { return r.scope !== "aggregate"; })
       };
       Array.prototype.forEach.call(nodes, function (el) {
         var key = el.dataset.derive;

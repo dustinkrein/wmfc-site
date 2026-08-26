@@ -153,6 +153,12 @@ tr.ex:focus{outline:2px solid var(--oxt);outline-offset:-2px}
 .p2{background:none;color:var(--ox);border:1px solid var(--ox)}
 .p3{background:var(--bg2);color:var(--ink2);border:1px solid var(--lined)}
 .p0{background:none;color:var(--ink3);border:1px dashed var(--lined)}
+/* Coverage depth — how much of a state was read. Same oxblood vocabulary as the
+   tier pills, deliberately in its own table with its own legend: depth describes
+   our work, tiers describe institutions. They must never be read as one scale. */
+.d1{background:var(--ox);color:#fff}
+.d2{background:none;color:var(--ox);border:1px solid var(--ox)}
+.d3{background:none;color:var(--ink3);border:1px dashed var(--lined)}
 
 /* ---------- Controls ---------- */
 .ctrl{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}

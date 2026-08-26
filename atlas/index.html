@@ -444,7 +444,7 @@ footer .inner{
   <div class="coverage-inner">
     <div class="cov-stat"><div class="n ox" id="statCoded">29</div><div class="l">Countries fully coded<br>(coded · workforce lens)</div></div>
     <div class="cov-stat"><div class="n" id="statTotal">175</div><div class="l">Countries on the map<br>(clickable, ISO-coded)</div></div>
-    <div class="cov-stat"><div class="n zero" id="statPending">146</div><div class="l">Not yet coded<br>(honest blanks, for now)</div></div>
+    <div class="cov-stat"><div class="n zero" id="statPending">134</div><div class="l">Not yet coded<br>(honest blanks, for now)</div></div>
     <div class="cov-stat"><div class="n">1</div><div class="l">Data spine<br>(one file grows all of it)</div></div>
   </div>
 </div>
@@ -503,7 +503,9 @@ function boot(){
   document.getElementById('ct3').textContent = t3;
   document.getElementById('statCoded').textContent = t1;
   document.getElementById('statTotal').textContent = Object.keys(DATA).length;
-  document.getElementById('statPending').textContent = t2+t3;
+  /* Must match the filter legend above, which reserves "Not yet coded" for tier 3 alone.
+     Shortlisted countries have been read and given a stated reason; they are not blanks. */
+  document.getElementById('statPending').textContent = t3;
 })();
 
 function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }

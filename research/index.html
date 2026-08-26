@@ -25,7 +25,7 @@
   <h1>Who trains the teachers when the money moves?</h1>
   <p class="lede">Thirty states fund students instead of systems. <b>750,000+</b> children learn in microschools, and over <b>70%</b> of the people running them are licensed teachers — trained by institutions that have built almost nothing for the sector they left for. This is what universities have actually done.</p>
   <div class="strip">
-    <div><div class="n" data-count="39" data-derive="total">0</div><div class="l">Institutions coded across <span data-derive="states">9</span> states</div></div>
+    <div><div class="n" data-count="39" data-derive="total">0</div><div class="l">Coded rows across <span data-derive="states">9</span> states — <span data-derive="institutions">34</span> single institutions, <span data-derive="aggregates">5</span> summary rows</div></div>
     <div><div class="n hot" data-count="34" data-suffix="%">0</div><div class="l">Teachers who feel prepared for microschools</div></div>
     <div><div class="n" data-count="8">0</div><div class="l">Michigan public universities that authorize charter schools — all eight now coded</div></div>
     <div><div class="n" data-count="1">0</div><div class="l">Preparation programs built for the sector found among them</div></div>
@@ -62,9 +62,20 @@
   <p style="margin-top:14px"><b>The second refinement, new this edition:</b> completing Michigan was designed to test whether holding schools produces programs. It does not. The three institutions whose engagement reaches the education college reach it in every way except curriculum — Oakland houses its authorizing office <i>inside</i> the education school and still offers only generic building-level leadership degrees; Saginaw Valley State discounts existing degrees by 50–75% for academy staff without altering a single course; Northern Michigan uses its nine academies as practicum sites for conventional licensure, so the sector trains teachers for the system rather than the reverse. Proximity, subsidy and access were each present without producing a program. Whatever explains Central Michigan, it is not simply having the schools.</p>
 </div></section>
 
+<section id="coverage"><div class="w">
+  <h2>What has actually been scanned</h2>
+  <p class="sub">Coverage is uneven, and a state total read without its depth will mislead you. Two states have had a systematic pass; six carry a placeholder row. <b>This table is the honest denominator for everything below it.</b></p>
+  <div class="tw"><table>
+    <thead><tr><th>State</th><th>Depth</th><th>Rows</th><th>What was covered</th></tr></thead>
+    <tbody id="cov"><tr><td colspan="4" style="padding:22px">Loading coverage…</td></tr></tbody>
+  </table></div>
+  <h3>How depth is assigned</h3>
+  <div class="tw"><table><tbody id="depths"></tbody></table></div>
+</div></section>
+
 <section id="evidence"><div class="w">
   <h2>The coded scan</h2>
-  <p class="sub">Click any row for the evidence and source. <b>"Nothing found" is not the same as "nothing there"</b> — always read it against the Checked column.</p>
+  <p class="sub">Click any row for the evidence and source. <b>"Nothing found" is not the same as "nothing there"</b> — always read it against the Checked column and against the coverage depth above.</p>
   <div class="ctrl">
     <input id="q" placeholder="Search institutions, findings, evidence…" aria-label="Search">
     <select id="fs" aria-label="Filter by state"><option value="">All states</option></select>
@@ -73,7 +84,10 @@
       <option value="Tier 2">Names the sector</option>
       <option value="Tier 3">Incidental / district-aligned</option>
       <option value="Tier 0">Nothing found</option></select>
+    <button class="btn ghost" id="clr" hidden>Clear filters</button>
   </div>
+  <p class="sub" id="cnt" style="margin:-4px 0 10px"></p>
+  <div class="note" id="covnote" hidden style="margin:0 0 14px"></div>
   <div class="tw"><table>
     <thead><tr><th>Institution</th><th>State</th><th>Category</th><th>Checked</th></tr></thead>
     <tbody id="tb"><tr><td colspan="4" style="padding:22px">Loading the dataset…</td></tr></tbody>
@@ -164,6 +178,29 @@ function render(){
   document.getElementById("fs").innerHTML='<option value="">All states</option>'+
     opts.map(function(o){return '<option>'+esc(o)+'</option>';}).join("");
 
+  /* coverage — how much of each state was actually read.
+     Published because a state total read without its depth misleads: Florida's
+     21 rows and Arizona's 1 are not the same kind of claim. */
+  var cov=DATA.coverage||{}, dep=DATA.depths||{};
+  var order={complete:0,partial:1,placeholder:2};
+  var states=opts.slice().sort(function(a,b){
+    var da=(cov[a]||{}).depth, db=(cov[b]||{}).depth;
+    var oa=(da in order)?order[da]:9, ob=(db in order)?order[db]:9;
+    if(oa!==ob) return oa-ob;
+    return countState(b)-countState(a);
+  });
+  document.getElementById("cov").innerHTML = states.map(function(s){
+    var c=cov[s]||{}, d=dep[c.depth]||{label:"Not recorded",class:"d3"};
+    return '<tr><td class="b">'+esc(s)+'</td>'+
+      '<td><span class="pill '+d.class+'">'+esc(d.label)+'</span></td>'+
+      '<td class="dte">'+countState(s)+'</td>'+
+      '<td>'+esc(c.note||"Coverage not recorded.")+'</td></tr>';
+  }).join("");
+  document.getElementById("depths").innerHTML = Object.keys(dep).map(function(k){
+    var d=dep[k];
+    return '<tr><td style="width:190px"><span class="pill '+d.class+'">'+esc(d.label)+'</span></td><td>'+esc(d.def)+'</td></tr>';
+  }).join("");
+
   /* gaps */
   document.getElementById("gaps").innerHTML = DATA.gaps.map(function(g){
     return '<details style="background:#fff;border:1px solid var(--line);margin-bottom:11px">'+
@@ -185,18 +222,24 @@ function render(){
   }).join("");
   window.wmfcWireRows("#hyp");
 
+  applyHash();
   draw();
+}
+
+function countState(s){
+  return DATA.institutions.filter(function(r){return r.state===s;}).length;
 }
 
 function draw(){
   if(!DATA) return;
   var q=document.getElementById("q").value.toLowerCase(),
       s=document.getElementById("fs").value,
-      t=document.getElementById("ft").value, h="";
+      t=document.getElementById("ft").value, h="", n=0;
   DATA.institutions.forEach(function(r){
     if(s&&r.state!==s)return;
     if(t&&r.tier!==t)return;
     if(q&&((r.name+r.evidence).toLowerCase().indexOf(q)<0))return;
+    n++;
     var c=DATA.categories[r.tier]||{label:r.tier,class:"p0"};
     h+='<tr class="ex" tabindex="0"><td class="b">'+esc(r.name)+'</td><td>'+esc(r.state)+'</td>'+
        '<td><span class="pill '+c.class+'">'+esc(c.label)+'</span></td><td class="dte">'+esc(r.checked)+'</td></tr>'+
@@ -206,12 +249,58 @@ function draw(){
   });
   document.getElementById("tb").innerHTML=h||'<tr><td colspan="4" style="padding:22px;text-align:center">No rows match.</td></tr>';
   window.wmfcWireRows("#tb");
+
+  /* Say how much of the dataset is in view. A filtered table that does not
+     state its own denominator invites the reader to mistake a slice for the whole. */
+  var total=DATA.institutions.length, filtered=(q||s||t);
+  document.getElementById("cnt").textContent =
+    filtered ? "Showing "+n+" of "+total+" coded rows." : total+" coded rows.";
+  document.getElementById("clr").hidden = !filtered;
+
+  /* When a single state is in view, its coverage depth travels with it —
+     otherwise filtering to Arizona shows one row and no reason for the one. */
+  var note=document.getElementById("covnote"), c=(DATA.coverage||{})[s], d=(DATA.depths||{})[(c||{}).depth];
+  if(s&&c&&d){
+    note.hidden=false;
+    note.innerHTML='<b class="h">'+esc(s)+' — '+esc(d.label)+'</b><p>'+esc(c.note)+'</p>';
+  } else { note.hidden=true; note.innerHTML=""; }
+
+  syncHash(q,s,t);
+}
+
+/* Filter state lives in the URL, so a view can be cited or sent to someone. */
+function syncHash(q,s,t){
+  var p=[];
+  if(s) p.push("state="+encodeURIComponent(s));
+  if(t) p.push("cat="+encodeURIComponent(t));
+  if(q) p.push("q="+encodeURIComponent(q));
+  var h=p.length?"#"+p.join("&"):"";
+  if(h!==location.hash) history.replaceState(null,"",location.pathname+location.search+h);
+}
+
+function applyHash(){
+  var h=location.hash.replace(/^#/,""); if(!h) return;
+  var p={};
+  h.split("&").forEach(function(kv){
+    var i=kv.indexOf("="); if(i<0) return;
+    p[kv.slice(0,i)]=decodeURIComponent(kv.slice(i+1).replace(/\+/g," "));
+  });
+  if(p.state) document.getElementById("fs").value=p.state;
+  if(p.cat)   document.getElementById("ft").value=p.cat;
+  if(p.q)     document.getElementById("q").value=p.q;
 }
 
 ["q","fs","ft"].forEach(function(id){
   var e=document.getElementById(id);
   e[id==="q"?"oninput":"onchange"]=draw;
 });
+
+document.getElementById("clr").onclick=function(){
+  document.getElementById("q").value="";
+  document.getElementById("fs").value="";
+  document.getElementById("ft").value="";
+  draw();
+};
 
 document.getElementById("csv").onclick=function(){
   if(!DATA) return;
