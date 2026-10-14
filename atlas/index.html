@@ -14,6 +14,16 @@
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/wmfc.css">
 <script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+.fams{display:grid;grid-template-columns:repeat(3,1fr);gap:16px 24px;margin-top:20px}
+.fam .fh{display:flex;align-items:center;gap:8px;margin-bottom:8px}
+.fam .fh i{width:12px;height:12px;border-radius:2px;display:inline-block;flex:none}
+.fam .fh b{font:17px var(--f);font-weight:400}.fam .fh span{margin-left:auto;font:17px var(--f);color:var(--ink3)}
+.fam .fl{display:flex;flex-wrap:wrap;gap:4px}
+.fam .fl button{font:12.5px var(--s);color:var(--ink2);background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:4px 9px;cursor:pointer}
+.fam .fl button:hover{border-color:var(--ox);color:var(--ox)}
+@media (max-width:860px){.fams{grid-template-columns:1fr 1fr}}@media (max-width:560px){.fams{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 <div class="bar"></div>
@@ -61,9 +71,9 @@ svg.worldmap{width:100%;height:auto;display:block}
   <p class="lead2">Other countries made funding portable decades ago. Each coded country is read through one lens: who is allowed to operate schools, and who trains and pays the people who staff them.</p>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
   <div class="ledger" id="ledger">
-    <div><div class="big hot" id="statCoded">29</div><p>countries coded through the workforce lens</p></div>
+    <div><div class="big hot" id="statCoded">97</div><p>countries coded through the workforce lens</p></div>
     <div><div class="big" id="statTotal">175</div><p>countries on the map</p></div>
-    <div><div class="big" id="statPending">134</div><p>not yet coded, shown as honest blanks</p></div>
+    <div><div class="big" id="statPending">57</div><p>not yet coded, shown as honest blanks</p></div>
     <div><div class="big" data-n="109" data-suf=" yrs">109 yrs</div><p>the Netherlands has funded every school equally, since 1917</p></div>
   </div>
 </div></div>
@@ -263,9 +273,16 @@ svg.worldmap{width:100%;height:auto;display:block}
   </div>
 </div></section>
 
+<section class="alt" id="moves"><div class="w">
+  <div class="sh"><div class="num">01</div><div><h2>How the money moves</h2><p>Every coded country, sorted by what public money pays for when it reaches a non-state school. Tap a country to open it on the map.</p></div></div>
+  <div class="card" id="fig-moves"><div class="lb"><div class="seg" id="famseg" style="height:42px"></div></div><div class="fams" id="fams"></div></div>
+  <p class="callout" style="margin-top:26px" id="famline">Where public money reaches non-state schools, it very often pays the <em>teachers</em>, not the pupil.</p>
+  <p style="color:var(--ink2);max-width:700px;margin:0">That is the supply side, funded directly. France, Austria, Ireland, Bangladesh, Ghana and New Zealand pay the people; the United States, Sweden and Chile pay per pupil and leave staffing to the school.</p>
+</div></section>
+
 <section><div class="w">
-  <div class="sh"><div class="num">01</div><div><h2>How long the money has followed</h2><p>Coded countries with a verified start year, and the one-line finding for each. Tap a dot to open it on the map.</p></div></div>
-  <div class="card"><svg class="chart" id="since" viewBox="0 0 900 200" role="img" aria-label="Start year of portable funding by country"></svg>
+  <div class="sh"><div class="num">02</div><div><h2>How long the money has followed</h2><p>Coded countries with a verified start year, and the one-line finding for each. Tap a dot to open it on the map.</p></div></div>
+  <div class="card"><svg class="chart" id="since" viewBox="0 0 900 250" role="img" aria-label="Start year of portable funding by country"></svg>
     <div id="sd" class="limit" style="min-height:48px" aria-live="polite">Tap a dot.</div></div>
   <p class="callout" style="margin-top:26px">Portability does not create a <em>workforce</em>. Long-running systems kept re-regulating who may run schools and who may teach.</p>
   <a class="more" href="/research/international-precedents/">Read the international precedents</a>
@@ -353,7 +370,7 @@ function renderCountry(iso){
     html+='<div class="panel-mech">'+esc(d.mechanism)+'</div>';
     html+='<p class="panel-summary">'+rich(d.summary)+'</p>';
     html+='<p class="findings-lbl">Workforce &amp; institution findings</p>';
-    d.findings.forEach(f=>{ html+='<div class="finding">'+rich(f.t)+'<span class="meta">Source: '+esc(f.src)+' · Checked '+esc(f.checked)+'</span></div>'; });
+    d.findings.forEach(f=>{ html+='<div class="finding">'+rich(f.t)+'<span class="meta">Source: '+(f.url?'<a href="'+esc(f.url)+'" rel="noopener">'+esc(f.src)+'</a>':esc(f.src))+' · Checked '+esc(f.checked)+'</span></div>'; });
     if(d.code_label){ html+='<div class="panel-code"><span class="cl">Coded observation</span><span class="cv">'+esc(d.code_label)+'</span></div>'; }
   } else {
     html+='<div class="empty">';
@@ -412,20 +429,44 @@ fetch('/data/world-choice-2026.json')
 var W=window.WMFC,esc=W.esc;
 W.countUp(document.getElementById("ledger"));
 window.atlasReady=function(DATA,select){
+
+  /* 01 how the money moves */
+  var FAM=[["teacher","Pays the teachers","var(--ox)"],["pupil","Follows the pupil","var(--ox2)"],["contract","Buys a service by contract","var(--ink3)"],["subsidy","A subsidy, form varies","var(--ox3)"],["none","No public money for non-state schools","none"],["state","State provision only","state"]];
+  var coded=Object.keys(DATA).map(function(k){var d=DATA[k];d.iso=k;return d;}).filter(function(d){return d.tier===1;});
+  var seg=document.getElementById("famseg"),fams=document.getElementById("fams"),rows=[];
+  FAM.forEach(function(f){
+    var g=coded.filter(function(d){return d.family===f[0];}).sort(function(a,b){return a.name.localeCompare(b.name);});if(!g.length)return;
+    var c=W.el("div",f[0]==="none"?"none":"",String(g.length));c.style.flexGrow=g.length;
+    if(f[2]==="state"){c.style.background="var(--ink)";c.style.color="var(--bg)";}else if(f[2]!=="none")c.style.background=f[2];
+    if(f[0]==="subsidy")c.style.color="var(--ink)";
+    c.title=f[1]+": "+g.length;seg.appendChild(c);
+    var box=W.el("div","fam");
+    box.innerHTML='<div class="fh"><i style="'+(f[2]==="none"?"border:1.5px dashed var(--lined)":f[2]==="state"?"background:var(--ink)":"background:"+f[2])+'"></i><b>'+esc(f[1])+'</b><span>'+g.length+'</span></div>';
+    var list=W.el("div","fl");
+    g.forEach(function(d){var b=W.el("button","",esc(d.name));b.type="button";b.title=d.code_label||"";b.addEventListener("click",function(){select(d.iso);document.getElementById("panel").scrollIntoView({behavior:"smooth",block:"center"});});list.appendChild(b);rows.push([f[1],d.name,d.mechanism||"",d.code_label||""]);});
+    box.appendChild(list);fams.appendChild(box);
+  });
+  var nT=coded.filter(function(d){return d.family==="teacher";}).length,nP=coded.filter(function(d){return d.family==="pupil";}).length,nAny=coded.filter(function(d){return ["teacher","pupil","contract","subsidy"].indexOf(d.family)>-1;}).length;
+  document.getElementById("famline").innerHTML="Public money reaches non-state schools in "+nAny+" of "+coded.length+" coded countries. In <em>"+nT+"</em> it pays the teachers; in "+nP+" it follows the pupil.";
+  W.growStack(seg);
+  W.figTools(document.getElementById("fig-moves"),{title:"How the money moves: what public money pays for in non-state schools, by country",cols:["Family","Country","Mechanism","Coded observation"],rows:rows,file:"wmfc-atlas-families"});
   var rows=Object.keys(DATA).map(function(k){var d=DATA[k];d.iso=k;return d;}).filter(function(d){return d.tier===1&&d.since;}).sort(function(a,b){return a.since-b.since;});
   var svg=document.getElementById("since"),ns="http://www.w3.org/2000/svg",sd=document.getElementById("sd");
-  var sm=svg.parentNode.clientWidth<600,VW=sm?460:900;svg.setAttribute("viewBox","0 0 "+VW+" 200");
+  var sm=svg.parentNode.clientWidth<600,VW=sm?460:900;svg.setAttribute("viewBox","0 0 "+VW+" 250");
   function s(t,a,txt){var e=document.createElementNS(ns,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e;}
-  var y0=1910,y1=2030,L=16,R=VW-16,X=function(y){return L+(R-L)*(y-y0)/(y1-y0);},base=150;
+  var y0=1910,y1=2030,L=16,R=VW-16,X=function(y){return L+(R-L)*(y-y0)/(y1-y0);},base=210;
   s("line",{x1:L,x2:R,y1:base,y2:base,stroke:"var(--lined)"});
   (sm?[1920,1960,2000]:[1920,1940,1960,1980,2000,2020]).forEach(function(y){s("text",{x:X(y),y:base+24,"text-anchor":"middle","font-size":12,fill:"var(--ink3)"},y);s("line",{x1:X(y),x2:X(y),y1:base-4,y2:base+4,stroke:"var(--lined)"});});
-  var lastX=-99,lvl=0;
+  var ends=[];
   rows.forEach(function(d){
-    var x=X(d.since);lvl=(x-lastX<(sm?40:70))?lvl+1:0;lastX=x;
+    var x=X(d.since),need=sm?18:(d.name.length*6.6+24),lvl=0;
+    while(lvl<7&&ends[lvl]!=null&&x<ends[lvl])lvl++;
+    if(lvl>=7)lvl=6;
+    ends[lvl]=x+need;
     var y=base-18-lvl*26;
     s("line",{x1:x,x2:x,y1:y,y2:base,stroke:"var(--line)"});
     var c=s("circle",{cx:x,cy:y,r:7,fill:d.iso==="USA"?"var(--ox)":"var(--ox2)",stroke:"var(--card)","stroke-width":2,tabindex:0});c.style.cursor="pointer";
-    if(!sm)s("text",{x:x+11,y:y+4,"font-size":12,fill:"var(--ink2)"},d.name);
+    if(!sm){var flip=x+need>VW;s("text",{x:flip?x-11:x+11,y:y+4,"font-size":12,"text-anchor":flip?"end":"start",fill:"var(--ink2)"},d.name);}
     function show(){sd.innerHTML="<b>"+esc(d.name)+", since "+d.since+".</b> "+esc(d.code_label||"")+". "+esc(d.mechanism||"");select(d.iso);}
     c.addEventListener("mousemove",function(e){W.tip("<b>"+esc(d.name)+" · "+d.since+"</b>"+esc(d.code_label||""),e);});
     c.addEventListener("mouseleave",function(){W.tip(null);});

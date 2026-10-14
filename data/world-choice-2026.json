@@ -16,20 +16,42 @@
   "code": null
  },
  "ALB": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "No public funding found for private schools",
+  "mech_type": "none",
+  "summary": "The Eurydice description of Albania's private education names public money only for private higher education scholarships and research, and none for private pre-university schools.",
+  "findings": [
+   {
+    "t": "Public funding is described only for private higher education (scholarships, research grants).",
+    "src": "Eurydice — Albania",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/albania/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
   "name": "Albania",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "ARE": {
+  "tier": 1,
+  "since": 2018,
+  "mechanism": "Abu Dhabi charter schools: publicly funded, privately run",
+  "mech_type": "charter",
+  "summary": "Abu Dhabi's education department launched charter schools in 2018: government schools funded publicly and run by private operators. By 2022 there were 31 schools with 46,500 places.",
+  "findings": [
+   {
+    "t": "Charter schools 'are publicly funded but privately run'; 22 were open in July 2022 with nine more due that September.",
+    "src": "Abu Dhabi Media Office, Jul 2022",
+    "url": "https://www.mediaoffice.abudhabi/en/government-affairs/khaled-bin-mohamed-bin-zayed-endorses-expansion-of-charter-schools-programme/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "governance-not-funding",
+  "code_label": "Management devolved, money did not move",
   "name": "United Arab Emirates",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "contract"
  },
  "ARG": {
   "name": "Argentina",
@@ -61,7 +83,8 @@
   "code": "salary-subsidy",
   "since": null,
   "mechanism": "State subsidy of private-school teacher salaries",
-  "code_label": "The money follows the teacher, not the child"
+  "code_label": "The money follows the teacher, not the child",
+  "family": "teacher"
  },
  "ARM": {
   "name": "Armenia",
@@ -80,20 +103,42 @@
   "code": null
  },
  "AUS": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Commonwealth funds non-government schools at 80% of a standard",
+  "mech_type": "per-pupil",
+  "summary": "Under the Australian Education Act 2013, the Commonwealth funds non-government schools at a set share of each school's Schooling Resource Standard: at least 80% in 2025. Catholic and independent schools receive about A$19 billion a year.",
+  "findings": [
+   {
+    "t": "2025 estimates: A$10.4 billion for Catholic schools and A$8.7 billion for independent schools; payments go to approved bodies.",
+    "src": "Australian Government, Department of Education",
+    "url": "https://www.education.gov.au/node/247",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Australia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "AUT": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "The state pays teachers in denominational schools",
+  "mech_type": "salary-subsidy",
+  "summary": "Austria grants 100% of teacher personnel costs in denominational private schools; other private schools may be subsidised but are not entitled. About 10% of students attend roughly 600 private institutions, half of them denominational.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> Denominational private schools have 100% of teacher personnel costs paid by the state (Private Schools Act §17); non-denominational schools have no such entitlement (§21).",
+    "src": "Eurydice — Austria",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/austria/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers, the church runs the schools",
   "name": "Austria",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "AZE": {
   "name": "Azerbaijan",
@@ -112,12 +157,23 @@
   "code": null
  },
  "BEL": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Grant-aided 'free' schools enrol the majority",
+  "mech_type": "grant-aided",
+  "summary": "In Flanders, grant-aided private (mostly Catholic) schools enrol 68% of elementary and secondary pupils. They are subsidised, recognised and inspected by the state on the same footing as official schools.",
+  "findings": [
+   {
+    "t": "68% of Flemish elementary and secondary pupils attend grant-aided private schools, subsidised, recognised and inspected by the state.",
+    "src": "Eurydice — Belgium (Flemish Community)",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/belgium-flemish-community/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "majority-private",
+  "code_label": "Most pupils in publicly funded private schools",
   "name": "Belgium",
-  "tier": 2,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "subsidy"
  },
  "BEN": {
   "name": "Benin",
@@ -136,20 +192,42 @@
   "code": null
  },
  "BGD": {
+  "tier": 1,
+  "since": 1980,
+  "mechanism": "The state pays non-government teachers' salaries (MPO)",
+  "mech_type": "salary-subsidy",
+  "summary": "Bangladesh's Monthly Pay Order pays teachers at non-government schools, colleges and madrasas from the state payroll. It began in 1980 at half a government teacher's basic salary and has covered the full basic salary since 2006.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> The MPO supports over 27,000 institutions and more than 500,000 educators.",
+    "src": "Wikipedia — Monthly Pay Order",
+    "url": "https://en.wikipedia.org/wiki/Monthly_Pay_Order",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The money follows the teacher, not the child",
   "name": "Bangladesh",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "BGR": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Per-pupil state standards, with a free-places condition",
+  "mech_type": "per-pupil",
+  "summary": "Bulgarian private schools in state financing receive budget funds by a per-pupil standard, on condition that at least 20% of pupils are educated free of charge.",
+  "findings": [
+   {
+    "t": "Schools must educate 'not less than 20 per cent' of enrolled pupils free of charge; managing bodies hire teachers and appoint directors.",
+    "src": "Eurydice — Bulgaria",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/bulgaria/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "conditional",
+  "code_label": "Subsidy conditioned on free places",
   "name": "Bulgaria",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "BHS": {
   "name": "The Bahamas",
@@ -170,11 +248,12 @@
  },
  "BLR": {
   "name": "Belarus",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. No reliable source on public funding of private general schools was found."
  },
  "BLZ": {
   "name": "Belize",
@@ -201,7 +280,8 @@
   "code": "salary-subsidy",
   "since": null,
   "mechanism": "Church–state grant-aided schools; the state pays the teachers",
-  "code_label": "The state pays the teachers, the church runs the schools"
+  "code_label": "The state pays the teachers, the church runs the schools",
+  "family": "teacher"
  },
  "BOL": {
   "name": "Bolivia",
@@ -228,7 +308,8 @@
   "code": "training-nationalized",
   "since": null,
   "mechanism": "Church–state convenio schools; teacher training nationalized",
-  "code_label": "Schools plural, teacher training nationalized"
+  "code_label": "Schools plural, teacher training nationalized",
+  "family": "teacher"
  },
  "BRA": {
   "name": "Brazil",
@@ -255,7 +336,8 @@
   "code": "public-only",
   "since": null,
   "mechanism": "FUNDEB funds public enrolment only",
-  "code_label": "Per-pupil funding that is not portable"
+  "code_label": "Per-pupil funding that is not portable",
+  "family": "none"
  },
  "BRN": {
   "name": "Brunei",
@@ -314,15 +396,27 @@
   "code": "subnational",
   "since": 1994,
   "mechanism": "Provincial charter and independent-school funding",
-  "code_label": "Portability is provincial, not national"
+  "code_label": "Portability is provincial, not national",
+  "family": "subsidy"
  },
  "CHE": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Cantonal choice: little public money for private schools",
+  "mech_type": "subnational",
+  "summary": "Switzerland leaves private schooling to the cantons. Some support private schools or contribute to fees, but 93.7% of compulsory-school pupils attend state schools.",
+  "findings": [
+   {
+    "t": "Private schools must be approved and supervised; approval requires teaching standards, including teachers, comparable to state schools.",
+    "src": "Eurydice — Switzerland",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/switzerland/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "subnational",
+  "code_label": "Portability is cantonal, not national",
   "name": "Switzerland",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "subsidy"
  },
  "CHL": {
   "tier": 1,
@@ -344,39 +438,80 @@
   ],
   "code": "re-regulating",
   "code_label": "Re-regulating the provider side",
-  "name": "Chile"
+  "name": "Chile",
+  "family": "pupil"
  },
  "CHN": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private compulsory schooling curbed by design",
+  "mech_type": "state-control",
+  "summary": "China's 2021 revision of its private-education regulations barred public schools from running private branches and closed the door to foreign and acquisition-based control of compulsory-level private schools. Provinces then capped or froze private primary and middle schools.",
+  "findings": [
+   {
+    "t": "From 1 September 2021, public schools may not take part in organizing private schools; foreign-controlled entities may not run compulsory-level private schools; boards must be Chinese nationals and foreign teaching materials are barred.",
+    "src": "British Council",
+    "url": "https://education-services.britishcouncil.org/news/market-news/china-issues-revised-regulations-private-education-sector",
+    "checked": "Oct 2026"
+   },
+   {
+    "t": "In 2021 Hunan and Jiangsu planned to cap private primary and secondary enrolment below 5%; Sichuan stopped approving new private schools and barred expansion.",
+    "src": "Sixth Tone",
+    "url": "https://www.sixthtone.com/news/1007860",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "reversed",
+  "code_label": "Portability reversed: private supply capped",
   "name": "China",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "state"
  },
  "CIV": {
   "name": "Ivory Coast",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. World Bank work analyses public subsidies to private schools, but the readable summary did not state the mechanism or scale."
  },
  "CMR": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Annual subsidy to secular and religious private schools",
+  "mech_type": "subsidy",
+  "summary": "Cameroon pays an annual subsidy to private secular and religious schools; in 2020 it released CFAF 6.5 billion as the balance of its 2019 envelope.",
+  "findings": [
+   {
+    "t": "The subsidy aims at 'alleviating the costs of running private secular and religious institutions'; what it covers, including teacher pay, is not specified.",
+    "src": "Business in Cameroon, Jun 2020",
+    "url": "https://www.businessincameroon.com/education/1106-10412-cameroon-government-releases-cfaf6-5-bln-to-subsidize-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy, scale unknown",
   "name": "Cameroon",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "subsidy"
  },
  "COD": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Church networks run most public schools; parents pay most costs",
+  "mech_type": "grant-aided",
+  "summary": "In the DRC, religious networks, mostly Catholic, manage about 75% of public schools under agreements with the state. Despite a constitutional promise of free education, parents still finance about 80% of schooling costs.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Churches press the state to 'pay all teachers decently'; free primary education has not been effectively financed.",
+    "src": "Brown Political Review",
+    "url": "https://brownpoliticalreview.org/immaculate-citizenship-school-kinshasa-2/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "colonial-dual",
+  "code_label": "The colonial dual system, retained",
   "name": "Democratic Republic of the Congo",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "COG": {
   "name": "Republic of the Congo",
@@ -416,7 +551,8 @@
   "code": "discontinued",
   "since": 1991,
   "mechanism": "PACES vouchers (1991–98), then concession schools and subsidies",
-  "code_label": "The best-measured voucher, discontinued"
+  "code_label": "The best-measured voucher, discontinued",
+  "family": "pupil"
  },
  "CRI": {
   "name": "Costa Rica",
@@ -438,7 +574,8 @@
   "code": "state-provision",
   "since": null,
   "mechanism": "Free compulsory state provision since 1869",
-  "code_label": "Universal state provision, no portability found"
+  "code_label": "Universal state provision, no portability found",
+  "family": "state"
  },
  "CUB": {
   "name": "Cuba",
@@ -460,31 +597,71 @@
   "code": "state-monopoly",
   "since": null,
   "mechanism": "State monopoly; private education prohibited",
-  "code_label": "The hemisphere's zero point"
+  "code_label": "The hemisphere's zero point",
+  "family": "state"
  },
  "CYP": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Targeted fee support only",
+  "mech_type": "targeted",
+  "summary": "Cyprus helps pay private-school fees for Turkish Cypriot and minority religious children and subsidises some kindergartens; most private schooling is fee-funded and ministry-supervised.",
+  "findings": [
+   {
+    "t": "The ministry approves private schools' curricula and fees; fee support is limited to specific groups of children.",
+    "src": "Eurydice — Cyprus",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/cyprus/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
   "name": "Cyprus",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "subsidy"
  },
  "CZE": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private and church schools funded per pupil",
+  "mech_type": "per-pupil",
+  "summary": "Czech private schools receive public subsidies under the 1999 Act on subsidies to private schools; denominational schools are funded on the same basis as ministry schools. Private schools enrol 16% of upper secondary pupils but about 3% at basic level.",
+  "findings": [
+   {
+    "t": "2024/25 private-school shares: 4.3% of nursery, 3.2% of basic and 16.1% of upper secondary pupils. Schools must be registered to receive state funding and are inspected as public schools are.",
+    "src": "Eurydice — Czechia",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/czechia/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Czech Republic",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "DEU": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Constitutional right to found private schools, with a right to public funding",
+  "mech_type": "constitutional",
+  "summary": "Germany's Basic Law (Art. 7.4) guarantees the right to establish private schools, and approved substitute schools have a right to funding from the Länder, benchmarked on per-pupil spending in state schools, usually after a two- to three-year wait.",
+  "findings": [
+   {
+    "t": "<b>Approval depends on the workforce.</b> A substitute school is approved only if the economic and legal status of its teachers is secured: written contracts, sufficient pay and pension rights. Teachers need qualifications comparable to the state system; most completed state teacher training.",
+    "src": "Eurydice — Germany",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/germany/organisation-private-education",
+    "checked": "Oct 2026"
+   },
+   {
+    "t": "Private primary schools are allowed only under strict conditions, such as a special pedagogical interest.",
+    "src": "Eurydice — Germany",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/germany/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "teacher-secured",
+  "code_label": "Funding conditioned on how teachers are treated",
   "name": "Germany",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "DJI": {
   "name": "Djibouti",
@@ -495,12 +672,23 @@
   "code": null
  },
  "DNK": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Free schools funded per pupil",
+  "mech_type": "grant-aided",
+  "summary": "Danish free private primary and lower secondary schools receive state operating grants calculated mainly on pupil numbers, and parents pay a modest fee on top. Public schools remain the majority.",
+  "findings": [
+   {
+    "t": "Teaching in private schools must meet what is normally required in the municipal folkeskole; grants follow pupil numbers and reported activity.",
+    "src": "Eurydice — Denmark",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/denmark/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Denmark",
-  "tier": 2,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "DOM": {
   "name": "Dominican Republic",
@@ -522,7 +710,8 @@
   "code": "subsidized-stable",
   "since": null,
   "mechanism": "Subsidies to private schools, religious and secular",
-  "code_label": "Large subsidized sector, flat share"
+  "code_label": "Large subsidized sector, flat share",
+  "family": "subsidy"
  },
  "DZA": {
   "name": "Algeria",
@@ -557,15 +746,27 @@
   "code": "salary-subsidy",
   "since": null,
   "mechanism": "Fiscomisional schools — subsidized to pay teacher salaries",
-  "code_label": "Subsidy tied to teacher salaries, for-profit barred"
+  "code_label": "Subsidy tied to teacher salaries, for-profit barred",
+  "family": "teacher"
  },
  "EGY": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "A private-share target, without public money",
+  "mech_type": "deregulation",
+  "summary": "Egypt's national plan targets a larger private-school share by 2030, from about 12.7% today, through easier licensing rather than public funding of private schools.",
+  "findings": [
+   {
+    "t": "No direct public funding for private schools is described; the state eases licensing for private nurseries and early-childhood classrooms.",
+    "src": "Enterprise, Feb 2026",
+    "url": "https://enterpriseam.com/egypt/blackboards/the-state-sets-a-20-market-share-target-for-private-schools-by-2030-in-its-national-narrative-for-comprehensive-development/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "deregulated",
+  "code_label": "Supply deregulated, funding withheld",
   "name": "Egypt",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "ERI": {
   "name": "Eritrea",
@@ -576,36 +777,86 @@
   "code": null
  },
  "ESP": {
+  "tier": 1,
+  "since": 1985,
+  "mechanism": "Conciertos: publicly funded agreements with private schools",
+  "mech_type": "convenio",
+  "summary": "Spain funds private schools through 'educational agreements' (conciertos) set in the state budget, covering salaries and maintenance. A third of general schools are private, and most of those receive public money.",
+  "findings": [
+   {
+    "t": "Of 9,385 private general schools in 2023/24, 5,854 received public funds through agreements. General agreements fully fund compulsory education.",
+    "src": "Eurydice — Spain",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/spain/organisation-private-education",
+    "checked": "Oct 2026"
+   },
+   {
+    "t": "<b>Workforce.</b> Agreement amounts include staff salaries, and teacher selection in publicly funded private schools is subject to public oversight. Legal basis: Constitution Art. 27.6 (1978) and the LODE (1985).",
+    "src": "Eurydice — Spain",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/spain/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "Agreements cover salaries, private bodies hire",
   "name": "Spain",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "EST": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "The state pays private-school teachers' labour costs",
+  "mech_type": "salary-subsidy",
+  "summary": "In Estonia the state budget covers teacher and head labour costs and teaching materials in private general schools. 60 of 474 general schools were private in 2025/26.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> State budget funds private schools' teacher and head labour costs, in-service training and teaching materials. Teachers must make up at least a fifth of a private school's board.",
+    "src": "Eurydice — Estonia",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/estonia/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers",
   "name": "Estonia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "ETH": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools fee-funded; teachers without public benefits",
+  "mech_type": "none",
+  "summary": "Addis Ababa has 1,631 private schools. Only government teachers receive housing allowances, and a 2019 proposal sought transport and housing allowances for private-school teachers.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Private-teacher pay ranged from 3,000 to 10,000 birr, fully taxed, without the allowances public teachers receive.",
+    "src": "Capital Ethiopia, Apr 2019",
+    "url": "https://www.capitalethiopia.com/capital/transport-housing-allowances-proposed-for-private-school-teachers/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "unsubsidized",
+  "code_label": "Private sector, no public money",
   "name": "Ethiopia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "FIN": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Licensed, non-profit private schools only",
+  "mech_type": "licensed",
+  "summary": "Finland funds private schools that hold a government licence on the same basis as public schools, but grants licences only where there is an educational need and no profit motive. About 3% of basic schools are private.",
+  "findings": [
+   {
+    "t": "Licences require an educational or cultural need, adequate resources and no 'financial gain' motive; unlicensed schools get no public funding. Private schools follow national curricula and qualification requirements.",
+    "src": "Eurydice — Finland",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/finland/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "gated",
+  "code_label": "Funded, but entry is gated",
   "name": "Finland",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "FJI": {
   "name": "Fiji",
@@ -625,12 +876,29 @@
   "shortlist_reason": "A British overseas territory with a very small school system. Whether UK funding arrangements apply in any portable form was not established. Shortlisted."
  },
  "FRA": {
+  "tier": 1,
+  "since": 1959,
+  "mechanism": "Contract schools: the state pays private-school teachers (loi Debré)",
+  "mech_type": "contract",
+  "summary": "Since 1959, private schools under contract with the state have their teachers paid by the state, while a private body runs the school. About one pupil in six attends private education, almost all of it under contract.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> Under association contracts, teachers are public-sector employees paid by the state but recruited by the school head; under simple contracts the private authority hires and the state pays.",
+    "src": "Eurydice — France",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/france/organisation-private-education",
+    "checked": "Oct 2026"
+   },
+   {
+    "t": "97.9% of private-school pupils attend schools under contract. Local authorities may not fund private primary schools' running costs, but must contribute to contract collèges and lycées.",
+    "src": "Eurydice — France",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/france/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers, a private body runs the school",
   "name": "France",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "GAB": {
   "name": "Gabon",
@@ -660,23 +928,36 @@
   ],
   "code": "supply-constrained",
   "code_label": "Credentialing moved, throughput fell",
-  "name": "United Kingdom"
+  "name": "United Kingdom",
+  "family": "contract"
  },
  "GEO": {
   "name": "Georgia",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Georgia's per-capita financing is often cited as reaching private schools, but no source read confirmed it."
  },
  "GHA": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Government-assisted mission schools: the state pays the staff",
+  "mech_type": "grant-aided",
+  "summary": "Ghana's mission schools are government-assisted: the state provides staff, salaries and grants, while churches claim ownership. Who governs them is now openly contested.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> The state provides staff, salaries, subventions and grants-in-aid, but payments are often delayed, so churches, PTAs and alumni fill gaps. The Attorney General says Wesley Girls' is 'owned by the Methodist Church and not the state'.",
+    "src": "Africa Is a Country, Feb 2026",
+    "url": "https://africasacountry.com/2026/02/who-owns-ghanas-mission-schools/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "colonial-dual",
+  "code_label": "The state pays, the church owns",
   "name": "Ghana",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "GIN": {
   "name": "Guinea",
@@ -711,12 +992,23 @@
   "code": null
  },
  "GRC": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools fully privately funded",
+  "mech_type": "none",
+  "summary": "Greek private primary and secondary schools receive full private funding, with no state funding described. They sit in the same school types as public schools under Law 682/1977.",
+  "findings": [
+   {
+    "t": "Private schools 'receive full private funding'. Teachers' qualification and pay rules are not set out separately.",
+    "src": "Eurydice — Greece",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/greece/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "authorized-unfunded",
+  "code_label": "Permission to operate, no public money",
   "name": "Greece",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "GRL": {
   "name": "Greenland",
@@ -747,7 +1039,8 @@
   "code": "conditional",
   "since": null,
   "mechanism": "Targeted subsidy conditioned on free provision",
-  "code_label": "Subsidy conditioned on free provision"
+  "code_label": "Subsidy conditioned on free provision",
+  "family": "subsidy"
  },
  "GUF": {
   "name": "French Guiana",
@@ -769,7 +1062,8 @@
   "code": "derived-metropole",
   "since": 1959,
   "mechanism": "French contract system (Loi Debré) applied in an overseas département",
-  "code_label": "Metropolitan law, territorial practice unread"
+  "code_label": "Metropolitan law, territorial practice unread",
+  "family": "teacher"
  },
  "GUY": {
   "name": "Guyana",
@@ -791,7 +1085,8 @@
   "code": "reversed",
   "since": null,
   "mechanism": "Nationalized in 1976; universal free state provision",
-  "code_label": "Portability reversed on staffing grounds"
+  "code_label": "Portability reversed on staffing grounds",
+  "family": "state"
  },
  "HND": {
   "name": "Honduras",
@@ -803,12 +1098,23 @@
   "shortlist_reason": "Private enrolment is roughly 20% and financed mainly by family fees; Honduras does not appear among the subsidizing countries in the IDB regional classification. A Notre Dame Education Law Project country report exists and has not yet been read in full. Shortlisted rather than coded because the funding position is inferred from absence rather than read from a Honduran source."
  },
  "HRV": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools founder-funded",
+  "mech_type": "none",
+  "summary": "Croatian private schools are funded by their founders, who must pay salaries and running costs; state co-financing reaches private kindergartens, not schools.",
+  "findings": [
+   {
+    "t": "For private schools the founder funds salaries and running costs; the state co-finances private kindergartens, where founders set staff pay.",
+    "src": "Eurydice — Croatia",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/croatia/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
   "name": "Croatia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "HTI": {
   "name": "Haiti",
@@ -830,47 +1136,109 @@
   "code": "private-by-default",
   "since": null,
   "mechanism": "Subsidies into an overwhelmingly non-state system",
-  "code_label": "Non-state by default, not by design"
+  "code_label": "Non-state by default, not by design",
+  "family": "subsidy"
  },
  "HUN": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Public education contracts with church and private schools",
+  "mech_type": "contract",
+  "summary": "Hungarian church and private schools can take on public education tasks under a contract with the minister; education is then free and admission follows state-school rules.",
+  "findings": [
+   {
+    "t": "Contracted providers must meet national curriculum requirements, staff qualification rules and facility standards, and are scrutinised by government agencies.",
+    "src": "Eurydice — Hungary",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/hungary/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "contract",
+  "code_label": "Public tasks by contract",
   "name": "Hungary",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "contract"
  },
  "IDN": {
+  "tier": 1,
+  "since": 2005,
+  "mechanism": "Per-student school grants reach private schools and madrasahs",
+  "mech_type": "per-pupil",
+  "summary": "Indonesia's BOS block grant, running since 2005, pays a per-student amount to all public and private primary and junior secondary schools, including madrasahs.",
+  "findings": [
+   {
+    "t": "BOS 'supports all public and private primary and junior secondary schools', including madrasahs; 2012 rates were Rp 580,000 per primary and Rp 710,000 per junior secondary student.",
+    "src": "World Bank",
+    "url": "https://www.worldbank.org/en/news/press-release/2012/07/13/BOS-transforms-lves-of-children",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Indonesia",
-  "tier": 2,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "IND": {
+  "tier": 1,
+  "since": 2009,
+  "mechanism": "A 25% free-seat quota in private schools, reimbursed by the state",
+  "mech_type": "quota",
+  "summary": "India's Right to Education Act requires private unaided schools to reserve 25% of entry-class seats for disadvantaged children, admitted free by lottery; the state reimburses the school per child at a state-fixed rate.",
+  "findings": [
+   {
+    "t": "Schools are reimbursed per child at a state-fixed rate, claimed half-yearly (Manipur notification, 2022).",
+    "src": "Govt. of Manipur, Education (S)",
+    "url": "https://manipureducation.gov.in/wp-content/uploads/2025/01/Notification-25-percent-admission-reservation.pdf",
+    "checked": "Oct 2026"
+   },
+   {
+    "t": "Karnataka proposed reimbursing schools 'up to Rs 13,000 per child' (2011).",
+    "src": "Deccan Herald",
+    "url": "https://www.deccanherald.com/india/karnataka/govt-to-reimburse-schools-at-rs-13000-per-child-for-rte-151133.html",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "quota",
+  "code_label": "The seat is portable, by quota",
   "name": "India",
-  "tier": 2,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "IRL": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "State-funded staffing for denominational and fee-charging schools",
+  "mech_type": "grant-aided",
+  "summary": "Most Irish schools are privately owned, mostly by churches, and publicly funded. Schools in the Free Education Scheme receive funding for staffing and running costs and may not charge fees; 56 fee-charging private schools still receive reduced staffing funding.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> The Department funds staffing in Free Education Scheme schools and gives reduced staffing funding to fee-charging private schools, about 25,000 pupils or 6.7% of post-primary enrolment.",
+    "src": "Eurydice — Ireland",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/ireland/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state funds the staff, owners run the schools",
   "name": "Ireland",
-  "tier": 2,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "IRN": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Non-state schools without state support",
+  "mech_type": "none",
+  "summary": "About 12% of Iranian pupils attend non-state schools. The state 'is unable to help the non-state education sector', and non-profit schools select their own teachers under state rules.",
+  "findings": [
+   {
+    "t": "1.8 million of 14 million pupils were in non-state schools in 2018–19; non-profit schools select teachers 'applying the rules defined by the State'.",
+    "src": "UNESCO, 2022",
+    "url": "https://unesdoc.unesco.org/ark:/48223/pf0000383516",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "unsubsidized",
+  "code_label": "Private sector, no public money",
   "name": "Iran",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "IRQ": {
   "name": "Iraq",
@@ -881,28 +1249,61 @@
   "code": null
  },
  "ISL": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Municipal funds of at least 75% per pupil",
+  "mech_type": "per-pupil",
+  "summary": "Accredited private compulsory schools in Iceland receive municipal funds for resident pupils covering at least 75% of the average per-pupil operating cost (Act 91/2008).",
+  "findings": [
+   {
+    "t": "Private compulsory schools follow the same rules as municipal ones and the National Curriculum Guide.",
+    "src": "Eurydice — Iceland",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/iceland/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Iceland",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "ISR": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Partial funding tied to partial core curriculum",
+  "mech_type": "conditional-subsidy",
+  "summary": "Israel funds Haredi 'recognized but unofficial' schools at 75% of public-school budgets on condition they teach 75% of core subjects, and 'exempt' institutions at 55% for 55% of core hours.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Teachers in these schools need not hold academic degrees, and 76% of schools do not give the ministry full staff details.",
+    "src": "Israel Democracy Institute, Jun 2023",
+    "url": "https://en.idi.org.il/articles/49956",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "conditional",
+  "code_label": "Money in proportion to curriculum",
   "name": "Israel",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "ITA": {
+  "tier": 1,
+  "since": 2000,
+  "mechanism": "Parity schools: recognized, mostly indirect public money",
+  "mech_type": "partial",
+  "summary": "Italian 'parity' private schools are recognized as part of the national system under Law 62/2000, but public money reaches them mostly indirectly, through family grants and tax breaks, with direct funding at primary and preschool level.",
+  "findings": [
+   {
+    "t": "Parity schools must employ qualified teachers on individual contracts aligned with national collective agreements. Families receive student grants and tax breaks; regions may add funds.",
+    "src": "Eurydice — Italy",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/italy/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "indirect",
+  "code_label": "Recognition without full funding",
   "name": "Italy",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "subsidy"
  },
  "JAM": {
   "name": "Jamaica",
@@ -924,39 +1325,90 @@
   "code": "colonial-dual",
   "since": null,
   "mechanism": "Government-funded church schools within the public system",
-  "code_label": "The colonial dual system, retained"
+  "code_label": "The colonial dual system, retained",
+  "family": "teacher"
  },
  "JOR": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools fee-funded; the workforce question is pay",
+  "mech_type": "none",
+  "summary": "Jordan's private schools are fee-funded. The documented policy action is on the workforce: private-school teachers, 88% of them women, were paid below the minimum wage until a 2014 collective contract and inspections.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> A 41.6% gender pay gap and pay below the 190 JD minimum wage prompted a 2014 collective contract on summer salaries, leave and minimum pay.",
+    "src": "ILO, Oct 2015",
+    "url": "https://www.ilo.org/resource/article/giving-private-sector-teachers-jordan-voice",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "unsubsidized",
+  "code_label": "Private sector, no public money",
   "name": "Jordan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "JPN": {
+  "tier": 1,
+  "since": 2026,
+  "mechanism": "Tuition support follows the student to private high schools",
+  "mech_type": "voucher",
+  "summary": "From fiscal 2026 Japan is making high school largely tuition-free, with subsidies of up to ¥457,200 a year per student at full-time private high schools. The money follows the student, public or private.",
+  "findings": [
+   {
+    "t": "Draft budget: subsidies of 'up to 457,200 yen per student' a year at full-time private high schools from fiscal 2026.",
+    "src": "Nippon.com / Jiji",
+    "url": "https://www.nippon.com/en/news/yjj2026010300141",
+    "checked": "Oct 2026"
+   },
+   {
+    "t": "<b>The workforce worry is on the public side.</b> Public high-school educators fear the narrower cost gap will pull students to private schools and speed consolidation of public schools; the ministry plans support to make public schools more attractive.",
+    "src": "Nippon.com / Jiji",
+    "url": "https://www.nippon.com/en/news/yjj2026010300141",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "young-case",
+  "code_label": "Newest portability, public-side worry",
   "name": "Japan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "KAZ": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Per-capita state funding for private schools",
+  "mech_type": "per-pupil",
+  "summary": "Kazakhstan pays private schools per student through state contracts: 789 schools in 2026, about 78.7 billion tenge. Audits found students moved between schools 5 to 12 times and schools enrolling twice their capacity.",
+  "findings": [
+   {
+    "t": "Contracts signed with 789 private schools (845 in 2025); 206 previously funded institutions did not meet requirements, and the Prime Minister ordered the funding mechanism reviewed.",
+    "src": "Prime Minister of Kazakhstan, Jan 2026",
+    "url": "https://primeminister.kz/en/news/olzhas-bektenov-instructs-to-review-funding-mechanisms-for-private-educational-and-medical-institutions-30935",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "re-regulating",
+  "code_label": "Re-regulating the provider side",
   "name": "Kazakhstan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "KEN": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools fill gaps, with little public support",
+  "mech_type": "none",
+  "summary": "In parts of Nairobi, children attend private schools because no public school exists nearby. Private and alternative schools 'enjoy little or no government support', and regulation reaches about one in eight institutions a year.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> 'Unqualified teachers' are named as a key challenge in informal-settlement private schools.",
+    "src": "International Commission of Jurists, Jul 2024",
+    "url": "https://www.icj.org/kenya-authorities-should-build-more-public-schools-and-ensure-the-effective-regulation-of-private-schools/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "private-by-default",
+  "code_label": "Non-state by default, not by design",
   "name": "Kenya",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "KGZ": {
   "name": "Kyrgyzstan",
@@ -976,11 +1428,12 @@
  },
  "KOR": {
   "name": "South Korea",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Korean private secondary schools are widely described as state-financed under the equalization policy, but no source read stated who pays private-school teachers. Needs a Korean ministry or KEDI source."
  },
  "CS-KM": {
   "name": "Kosovo",
@@ -1007,20 +1460,42 @@
   "code": null
  },
  "LBN": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Per-pupil grants to 'free private' schools, paid late",
+  "mech_type": "per-pupil",
+  "summary": "About two-thirds of Lebanese pupils attend private schools. 'Free private' schools, 14% of pupils, receive a state grant per pupil, about $100 million a year, but payments have been incomplete since 2012.",
+  "findings": [
+   {
+    "t": "Free schools enrol 14% and fee-charging private schools 52% of pupils; the state grant per pupil has been paid incompletely since 2012.",
+    "src": "Lebanese Center for Policy Studies, 2023",
+    "url": "https://lebanesestudies.com/wp-content/uploads/2023/11/ENG_education_report_may23.pdf",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil, when it is paid",
   "name": "Lebanon",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "LBR": {
+  "tier": 1,
+  "since": 2016,
+  "mechanism": "Public schools outsourced to private operators",
+  "mech_type": "ppp",
+  "summary": "Since 2016 Liberia has contracted private operators to manage public schools (Partnership Schools for Liberia, now LEAP). The pilot covered 93 schools and eight operators.",
+  "findings": [
+   {
+    "t": "After three years, test scores rose 0.21 SD in math and 0.16 SD in English, with results varying by operator; dropout rose. Teachers remained government civil servants.",
+    "src": "Innovations for Poverty Action",
+    "url": "https://poverty-action.org/study/impact-outsourcing-school-management-liberia",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "governance-not-funding",
+  "code_label": "Management outsourced, teachers stayed public",
   "name": "Liberia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "contract"
  },
  "LBY": {
   "name": "Libya",
@@ -1031,68 +1506,126 @@
   "code": null
  },
  "LKA": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Church schools nationalised in 1960",
+  "mech_type": "none",
+  "summary": "In 1960 Sri Lanka nationalised private schools, taking over about 690 Catholic schools without compensation. Teachers became government employees; few institutions chose to stay private and self-funded.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Teachers in nationalised schools are now government employees; Apostolic Carmel keeps only one of its 20 schools private.",
+    "src": "Global Sisters Report",
+    "url": "https://www.globalsistersreport.org/65-years-after-nationalization-sister-run-schools-sri-lanka-retain-catholic-spirit",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "state-provision",
+  "code_label": "Church schools absorbed into the state",
   "name": "Sri Lanka",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "state"
  },
  "LSO": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Churches own most schools; the state pays the teachers",
+  "mech_type": "salary-subsidy",
+  "summary": "Churches own and operate 83% of Lesotho's primary schools and 66% of secondary schools. The Ministry of Education pays and certifies all teachers at government-funded schools, including religious ones.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> 'The Ministry of Education pays and certifies all teachers at government-funded schools, including religious schools.'",
+    "src": "US State Dept., 2022 Religious Freedom Report",
+    "url": "https://www.ecoi.net/de/dokument/2092364.html",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers, the church runs the schools",
   "name": "Lesotho",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "LTU": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "The 'pupil's basket' follows the pupil",
+  "mech_type": "per-pupil",
+  "summary": "Lithuania funds non-state schools per pupil (the 'pupil's basket') and per class, the same mechanism as for state schools. Non-state schools are about 10% of general schools.",
+  "findings": [
+   {
+    "t": "Non-state schools receive state or municipal funds per pupil and per class; they must employ staff with legally required qualifications.",
+    "src": "Eurydice — Lithuania",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/lithuania/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Lithuania",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "LUX": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "State subsidies to curriculum-following private schools",
+  "mech_type": "subsidy",
+  "summary": "Luxembourg subsidises private schools that teach national or their own curricula under a 2003 law; international private schools receive nothing. About 9% of primary and 19% of secondary pupils attend private schools.",
+  "findings": [
+   {
+    "t": "Private schools following national or their own curricula receive state subsidies; private international schools receive none (law of 13 June 2003).",
+    "src": "Eurydice — Luxembourg",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/luxembourg/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy for some private schools",
   "name": "Luxembourg",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "subsidy"
  },
  "LVA": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "State funds private-school teacher salaries",
+  "mech_type": "salary-subsidy",
+  "summary": "Accredited private general schools in Latvia can receive state funds for teaching staff salaries, and may agree per-pupil funding with local authorities. Private schools are 14% of general schools.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> State funds cover teaching staff salaries in accredited private general schools; per-pupil amounts are set centrally by the Cabinet of Ministers.",
+    "src": "Eurydice — Latvia",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/latvia/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers",
   "name": "Latvia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "MAR": {
   "name": "Morocco",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Reports describe teachers leaving private schools for the public sector; the source on scale could not be opened."
  },
  "MDA": {
   "name": "Moldova",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Moldova uses per-student financing, but no source read said whether it reaches private schools; the private sector 'plays a minimal role'."
  },
  "MDG": {
   "name": "Madagascar",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. The key source on community-paid (FRAM) teachers and private schools could not be opened."
  },
  "MEX": {
   "name": "Mexico",
@@ -1114,15 +1647,17 @@
   "code": "authorized-unfunded",
   "since": null,
   "mechanism": "Private provision authorized, not publicly funded",
-  "code_label": "Permission to operate, no public money"
+  "code_label": "Permission to operate, no public money",
+  "family": "none"
  },
  "MKD": {
   "name": "Macedonia",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Eurydice's page on private education in North Macedonia could not be opened in October 2026."
  },
  "MLI": {
   "name": "Mali",
@@ -1141,12 +1676,23 @@
   "code": null
  },
  "MNE": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "No public funding found for private schools",
+  "mech_type": "none",
+  "summary": "Montenegro funds private institutions only for higher-education programmes of public interest that no public institution offers.",
+  "findings": [
+   {
+    "t": "State funds reach private higher education only for 'study programmes of public interest'.",
+    "src": "Eurydice — Montenegro",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/montenegro/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
   "name": "Montenegro",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "MNG": {
   "name": "Mongolia",
@@ -1173,20 +1719,32 @@
   "code": null
  },
  "MWI": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Grant-aided church schools staffed with public funds",
+  "mech_type": "grant-aided",
+  "summary": "Religious bodies in Malawi typically run 'grant-aided' schools: privately run but staffed with public funds. In return the government selects a large share of pupils.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> At grant-aided schools 'their teaching staffs are paid by the government'.",
+    "src": "US State Dept., 2022 Religious Freedom Report",
+    "url": "https://www.ecoi.net/de/dokument/2092372.html",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers, the church runs the schools",
   "name": "Malawi",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "MYS": {
   "name": "Malaysia",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Mission schools claim a legal right to grants-in-aid under the Education Act 1996; who pays their teachers was not stated in sources read."
  },
  "NAM": {
   "name": "Namibia",
@@ -1213,12 +1771,23 @@
   "code": null
  },
  "NGA": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Most Lagos children in private schools, by default",
+  "mech_type": "none",
+  "summary": "In Lagos State, research found about 70% of children aged 5 to 14 in private schools, most of them low-fee. They emerged without public funding.",
+  "findings": [
+   {
+    "t": "A 2010 census counted 12,098 private schools in Lagos with 1.4 million pupils; estimates now exceed 16,000 schools.",
+    "src": "Institute of Economic Affairs, Oct 2018",
+    "url": "https://iea.org.uk/?p=28904",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "private-by-default",
+  "code_label": "Non-state by default, not by design",
   "name": "Nigeria",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "NIC": {
   "name": "Nicaragua",
@@ -1249,31 +1818,65 @@
   ],
   "code": "separable",
   "code_label": "Portability ≠ workforce sufficiency",
-  "name": "Netherlands"
+  "name": "Netherlands",
+  "family": "pupil"
  },
  "NOR": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Grants of about 85% for approved alternatives only",
+  "mech_type": "gated",
+  "summary": "Norway's approved independent schools receive about 85% of their costs as public grants, but approval is limited to religious or recognised pedagogical alternatives, international curricula, special needs and elite sport.",
+  "findings": [
+   {
+    "t": "Approval grounds are restricted to a religious alternative, a recognised pedagogical alternative or an internationally certified curriculum, among a few others. Most pupils attend municipal schools.",
+    "src": "Eurydice — Norway",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/norway/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "gated",
+  "code_label": "Funded, but entry is gated",
   "name": "Norway",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "NPL": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools grow with no public money; the fight is over teacher pay",
+  "mech_type": "none",
+  "summary": "Nepal's private 'institutional' schools receive no government funding, yet enrolment in them rose 47.55% in five years while public enrolment fell 20.14%. Kathmandu now requires private schools to pay teachers on par with community schools.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Kathmandu's mayor said private schools must pay teachers the same as community-school teachers or face closure (2023).",
+    "src": "Samriddhi / Nepallivetoday, Jul 2023",
+    "url": "https://samriddhi.org/?p=9517",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "unsubsidized",
+  "code_label": "Private sector, no public money",
   "name": "Nepal",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "NZL": {
+  "tier": 1,
+  "since": 1975,
+  "mechanism": "State integration: the state funds teaching, owners keep character",
+  "mech_type": "contract",
+  "summary": "Since the Private Schools Conditional Integration Act 1975, about 330 mostly Catholic schools have been 'integrated' into the state system: the government funds teaching and operating costs, while proprietors own the land and buildings and charge attendance dues.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> The government funds boards for 'the teaching and operating costs'; proprietors keep the property and their special character.",
+    "src": "Office of the Auditor-General NZ, 2014",
+    "url": "https://ao.parliament.nz/2014/school-audits/part5.htm",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers, the church keeps the character",
   "name": "New Zealand",
-  "tier": 2,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "OMN": {
   "name": "Oman",
@@ -1284,12 +1887,23 @@
   "code": null
  },
  "PAK": {
+  "tier": 1,
+  "since": 2006,
+  "mechanism": "Vouchers to low-fee private schools (Punjab)",
+  "mech_type": "voucher",
+  "summary": "Punjab's Education Foundation has run an Education Voucher Scheme since 2006, letting children from low-income areas attend partner private schools free; families choose the school. Education is a provincial matter, so this is not national.",
+  "findings": [
+   {
+    "t": "About 0.5 million children use vouchers in more than 1,780 partner schools across 36 districts.",
+    "src": "Punjab Education Foundation",
+    "url": "https://pef.edu.pk/EducationVoucherScheme/Overview",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "subnational",
+  "code_label": "Portability is provincial, not national",
   "name": "Pakistan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "PAN": {
   "name": "Panama",
@@ -1306,7 +1920,8 @@
   "code": "unsubsidized",
   "since": null,
   "mechanism": "Private schools operate without subsidy",
-  "code_label": "Large private sector, no public money"
+  "code_label": "Large private sector, no public money",
+  "family": "none"
  },
  "PER": {
   "name": "Peru",
@@ -1338,15 +1953,27 @@
   "code": "deregulated",
   "since": 1998,
   "mechanism": "Deregulated private supply, minimal subsidy",
-  "code_label": "Supply deregulated, funding withheld"
+  "code_label": "Supply deregulated, funding withheld",
+  "family": "none"
  },
  "PHL": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Vouchers and contracts with private schools at scale",
+  "mech_type": "voucher",
+  "summary": "The Philippines subsidises private schooling through Education Service Contracting at junior high and the Senior High School Voucher Program. Together they target over 2.4 million learners in 2026–27.",
+  "findings": [
+   {
+    "t": "About 990,000 junior high students through ESC and 1.47 million senior high students through the voucher program, school year 2026–27.",
+    "src": "Inquirer / PNA, May 2026",
+    "url": "https://newsinfo.inquirer.net/?p=2222048",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "voucher",
+  "code_label": "Vouchers at national scale",
   "name": "Philippines",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "PNG": {
   "name": "Papua New Guinea",
@@ -1357,12 +1984,23 @@
   "code": null
  },
  "POL": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Per-pupil grant at least equal to public schools",
+  "mech_type": "per-pupil",
+  "summary": "Non-public schools in Poland receive at least the per-pupil amount local governments get for public schools, and much more for pupils with disabilities. About 7.5% of primary pupils attend non-public schools.",
+  "findings": [
+   {
+    "t": "Non-public schools must employ teachers with qualifications set by the education minister. Funding: 2017 Act on Financing School Education Tasks.",
+    "src": "Eurydice — Poland",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/poland/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Poland",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "PRI": {
   "name": "Puerto Rico",
@@ -1389,23 +2027,46 @@
   "code": "court-defined",
   "since": 2018,
   "mechanism": "Act 85 of 2018 — charter schools and capped vouchers",
-  "code_label": "Decided by courts, twice, opposite ways"
+  "code_label": "Decided by courts, twice, opposite ways",
+  "family": "pupil"
  },
  "PRK": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "State-run schooling, no private schools",
+  "mech_type": "none",
+  "summary": "Education in North Korea is universal and state-funded; the only privately funded institution identified is a university.",
+  "findings": [
+   {
+    "t": "Schooling is 'universal and state-funded'; Pyongyang University of Science and Technology is 'the country's only privately funded university'.",
+    "src": "Wikipedia — Education in North Korea",
+    "url": "https://en.wikipedia.org/wiki/Education_in_North_Korea",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "state-monopoly",
+  "code_label": "State monopoly",
   "name": "North Korea",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "state"
  },
  "PRT": {
+  "tier": 1,
+  "since": 1979,
+  "mechanism": "State contracts with private schools",
+  "mech_type": "contract",
+  "summary": "Portugal funds private schools through several state contracts: family support, association contracts in underserved areas, sponsorship and cooperation for severe disabilities. The legal basis dates to Law 9/79.",
+  "findings": [
+   {
+    "t": "Private schools manage their own staff under pedagogical autonomy; the ministry encourages teacher qualification and continuing education.",
+    "src": "Eurydice — Portugal",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/portugal/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "contract",
+  "code_label": "Public tasks by contract",
   "name": "Portugal",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "contract"
  },
  "PRY": {
   "name": "Paraguay",
@@ -1427,39 +2088,74 @@
   "code": "documented-unsized",
   "since": null,
   "mechanism": "State funding for religious-group schools",
-  "code_label": "Mechanism documented, scale unknown"
+  "code_label": "Mechanism documented, scale unknown",
+  "family": "subsidy"
  },
  "QAT": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Education vouchers for Qatari children at private schools",
+  "mech_type": "voucher",
+  "summary": "Qatar's ministry pays an education voucher of QR 28,000 a year for Qatari students at approved private schools; in 2026 it offered 3,793 fully covered places at 17 schools and dropped the income limit.",
+  "findings": [
+   {
+    "t": "Parents pay no tuition beyond the voucher; schools absorb fees above QR 28,000. The former income cap was removed in 2026.",
+    "src": "Gulf Times, Aug 2026",
+    "url": "https://www.gulf-times.com/article/731109/community/education/moehe-offers-3793-fully-covered-places-for-qatari-students-at-17-private-schools-under-education-voucher-initiative",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "voucher",
+  "code_label": "A voucher for citizens",
   "name": "Qatar",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "ROU": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Per-pupil basic funding for accredited private schools",
+  "mech_type": "per-pupil",
+  "summary": "Romania gives accredited private and confessional schools 'basic funding per student', with fees covering the rest.",
+  "findings": [
+   {
+    "t": "Private-school staff are employed under each school's own rules; pay is negotiated with the founding body's board.",
+    "src": "Eurydice — Romania",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/romania/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Romania",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "RUS": {
+  "tier": 1,
+  "since": 2012,
+  "mechanism": "Regional per-pupil subsidies reach private schools",
+  "mech_type": "per-pupil",
+  "summary": "Russia's 2012 education law requires regions to subsidise private organisations providing basic general education, using the same regional per-pupil standards as public schools, which include teacher pay.",
+  "findings": [
+   {
+    "t": "Article 99 of Federal Law 273-FZ: subsidies to private general-education organisations come from regional budgets at regional per-pupil standards; program financing includes teacher pay tied to average salary levels.",
+    "src": "Federal Law No. 273-FZ, Art. 99",
+    "url": "https://rulaws.ru/amp/laws/Federalnyy-zakon-ot-29.12.2012-N-273-FZ/Statya-99/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Russia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "RWA": {
   "name": "Rwanda",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. The government 'subsidizes some schools affiliated with religious groups', but scale and teacher pay are not stated."
  },
  "ESH": {
   "name": "Western Sahara",
@@ -1470,12 +2166,23 @@
   "code": null
  },
  "SAU": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Support tied to Saudi teachers' pay",
+  "mech_type": "salary-subsidy",
+  "summary": "Saudi Arabia's School Support Agreement, run with the Human Resource Development Fund, gives private schools state money tied to the salaries of Saudi teachers, about SR70 million a year across some 3,000 schools (2013).",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> The ministry required private schools to submit teachers' monthly salary data or lose the support; schools must answer for delayed teacher pay.",
+    "src": "Arab News, Sept 2013",
+    "url": "https://www.arabnews.com/news/464453",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "Support tied to national teachers' pay",
   "name": "Saudi Arabia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "SDN": {
   "name": "Sudan",
@@ -1495,11 +2202,12 @@
  },
  "SEN": {
   "name": "Senegal",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Catholic private schools are prominent and debated, but no source read stated a state subsidy or teacher-pay arrangement."
  },
  "SLB": {
   "name": "Solomon Islands",
@@ -1510,12 +2218,23 @@
   "code": null
  },
  "SLE": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Most schools are government-assisted mission and community schools",
+  "mech_type": "grant-aided",
+  "summary": "Only 13.8% of Sierra Leone's schools are government-owned. Government-assisted non-state schools, mostly mission schools, provide 70% of education; another 16.2% are fully private.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Government support can cover teacher salaries in assisted schools, which must fund at least 20% of running costs; community teachers are paid through fees and informal contributions.",
+    "src": "UNESCO GEM via WATHI, Jan 2023",
+    "url": "https://www.wathi.org/wathinote-education-sierra-leone-2023/sierra-leone-non-state-actors-in-education-global-education-monitoring-report-january-2023/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "colonial-dual",
+  "code_label": "The colonial dual system, retained",
   "name": "Sierra Leone",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "SLV": {
   "name": "El Salvador",
@@ -1537,7 +2256,8 @@
   "code": "governance-not-funding",
   "since": null,
   "mechanism": "Unsubsidized private sector alongside state provision",
-  "code_label": "Management devolved, money did not move"
+  "code_label": "Management devolved, money did not move",
+  "family": "contract"
  },
  "SOM": {
   "name": "Somalia",
@@ -1548,12 +2268,23 @@
   "code": null
  },
  "SRB": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "No public funding found for private schools",
+  "mech_type": "none",
+  "summary": "Serbia's private schools must show funds for a year of operation and meet staffing and facility requirements; the Eurydice description names no public funding.",
+  "findings": [
+   {
+    "t": "Founders must show funds for a year's operation and provide prescribed teachers, equipment and facilities.",
+    "src": "Eurydice — Serbia",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/serbia/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
   "name": "Republic of Serbia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "SUR": {
   "name": "Suriname",
@@ -1565,20 +2296,42 @@
   "shortlist_reason": "Suriname inherited the Dutch bijzonder onderwijs model, which would make it one of the more interesting cases in the hemisphere given the Netherlands entry. No Surinamese source was located in this pass. Shortlisted and flagged as a priority."
  },
  "SVK": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Equal per-pupil funding for private and church schools",
+  "mech_type": "per-pupil",
+  "summary": "Slovak private and church schools receive the same per-pupil normative funding as state schools, covering salaries, operations, assistants, textbooks and transport. About 9% of basic-school pupils attend them.",
+  "findings": [
+   {
+    "t": "Private and church schools are co-financed by the state at the same per-pupil normative as state schools (Act on financing schools, 597/2003).",
+    "src": "Eurydice — Slovakia",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/slovakia/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Slovakia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "SVN": {
+  "tier": 1,
+  "since": 1996,
+  "mechanism": "85% of public funding for private schools",
+  "mech_type": "per-pupil",
+  "summary": "Slovenian private schools receive 85% of the funding for the equivalent public programme, or 100% if accredited before 1996. Only about 1% of basic-school pupils attend them.",
+  "findings": [
+   {
+    "t": "Funding rule set by the 1996 Organisation and Financing of Education Act; private higher vocational colleges must meet public-equivalent staffing requirements.",
+    "src": "Eurydice — Slovenia",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/slovenia/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Slovenia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "SWE": {
   "tier": 1,
@@ -1600,7 +2353,8 @@
   ],
   "code": "re-regulating",
   "code_label": "Re-regulating the provider side",
-  "name": "Sweden"
+  "name": "Sweden",
+  "family": "pupil"
  },
  "SWZ": {
   "name": "Swaziland",
@@ -1636,11 +2390,12 @@
  },
  "THA": {
   "name": "Thailand",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Sources conflict: a private-school association says government 'has never helped a private school', while ministry budgets mention per-student subsidies. Needs the Office of the Private Education Commission's own figures."
  },
  "TJK": {
   "name": "Tajikistan",
@@ -1691,7 +2446,8 @@
   "code": "concordat",
   "since": 1960,
   "mechanism": "The Concordat of 1960 — state-funded denominational schools",
-  "code_label": "Sixty-six years, still contested"
+  "code_label": "Sixty-six years, still contested",
+  "family": "teacher"
  },
  "TUN": {
   "name": "Tunisia",
@@ -1702,44 +2458,79 @@
   "code": null
  },
  "TUR": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Fee-funded private schools, SEN support only",
+  "mech_type": "none",
+  "summary": "Turkish private schools are generally funded by tuition; public money reaches them only through support payments for special educational needs. Private schools must educate at least 3% of students free.",
+  "findings": [
+   {
+    "t": "Private institutions are funded through fees; support education payments under the Law on Private Education Institutions cover special-needs centres.",
+    "src": "Eurydice — Türkiye",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/turkiye/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
   "name": "Turkey",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "TWN": {
   "name": "Taiwan",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Tuition subsidies for private high schools are reported in news coverage, but no source read stated the mechanism and amounts precisely enough to code."
  },
  "TZA": {
   "name": "United Republic of Tanzania",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Research documents low-cost private secondary schools with spare capacity; public funding arrangements were not stated in sources read."
  },
  "UGA": {
+  "tier": 1,
+  "since": 2007,
+  "mechanism": "Per-student payments to low-cost private secondary schools",
+  "mech_type": "ppp",
+  "summary": "When Uganda introduced Universal Secondary Education in 2007, it also paid participating low-cost private schools a fixed amount per student to take USE students: 47,000 shillings a term in 2011.",
+  "findings": [
+   {
+    "t": "An evaluation of 101 schools found higher enrolment and test-score gains, and 'a higher proportion of teachers in PPP schools were present during unannounced school visits'.",
+    "src": "J-PAL",
+    "url": "https://povertyactionlab.org/node/2607979",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
   "name": "Uganda",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "pupil"
  },
  "UKR": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Per-pupil subvention can pay private-school teachers",
+  "mech_type": "salary-subsidy",
+  "summary": "Private Ukrainian schools providing full general secondary education may receive the state educational subvention, transferred to local budgets and used to pay teachers' salaries, by a per-pupil formula.",
+  "findings": [
+   {
+    "t": "<b>The money follows the teacher.</b> The subvention is used for teachers' salaries; private general secondary schools were 3.6% of institutions in 2023/24.",
+    "src": "Eurydice — Ukraine",
+    "url": "https://eurydice.eacea.ec.europa.eu/national-education-systems/ukraine/organisation-private-education",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The state pays the teachers",
   "name": "Ukraine",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "URY": {
   "name": "Uruguay",
@@ -1761,7 +2552,8 @@
   "code": "state-provision",
   "since": null,
   "mechanism": "Predominantly public financing; small private sector",
-  "code_label": "Public financing, no portability found"
+  "code_label": "Public financing, no portability found",
+  "family": "state"
  },
  "USA": {
   "name": "United States of America",
@@ -1788,7 +2580,8 @@
   "code": "young-case",
   "since": 1990,
   "mechanism": "State vouchers, tax-credit scholarships and education savings accounts",
-  "code_label": "Fastest adoption, least workforce answer"
+  "code_label": "Fastest adoption, least workforce answer",
+  "family": "pupil"
  },
  "UZB": {
   "name": "Uzbekistan",
@@ -1818,15 +2611,27 @@
   "code": "state-control",
   "since": null,
   "mechanism": "Private schools under state curricular control",
-  "code_label": "Permission to operate is the live variable"
+  "code_label": "Permission to operate is the live variable",
+  "family": "state"
  },
  "VNM": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "'Socialisation': incentives to invest, not money per pupil",
+  "mech_type": "deregulation",
+  "summary": "Vietnam's 2019 Resolution 35 set targets for non-public schools, 13.5% of institutions by 2025, supported by tax incentives and investment rules rather than per-pupil public funding.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Non-public K–12 teachers must hold pedagogy degrees, the same as public teachers; incentives are a 10% corporate income tax rate and VAT relief.",
+    "src": "Vietnam Briefing, Nov 2024",
+    "url": "https://www.vietnam-briefing.com/news/foreign-investment-scope-in-vietnams-school-education-sector.html/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "deregulated",
+  "code_label": "Supply encouraged, funding withheld",
   "name": "Vietnam",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "none"
  },
  "VUT": {
   "name": "Vanuatu",
@@ -1853,27 +2658,50 @@
   "code": null
  },
  "ZAF": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Fee-scaled subsidies for independent schools",
+  "mech_type": "subsidy",
+  "summary": "South Africa's Schools Act allows provinces to subsidise independent schools, with lower-fee schools eligible for more. In Gauteng, 279 of 1,083 independent schools are subsidised, about R1.13 billion in 2026/27.",
+  "findings": [
+   {
+    "t": "Gauteng's independent sector serves 379,727 pupils; only 279 schools qualify for subsidies, which scale down as fees rise.",
+    "src": "TimesLIVE, Sept 2026",
+    "url": "https://www.timeslive.co.za/news/south-africa/2026-09-13-gauteng-to-spend-r113bn-subsidising-qualifying-independent-schools/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy scaled to need",
   "name": "South Africa",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "subsidy"
  },
  "ZMB": {
+  "tier": 1,
+  "since": null,
+  "mechanism": "Grant-aided church schools strained by free education",
+  "mech_type": "grant-aided",
+  "summary": "Zambia's grant-aided church schools operate in partnership with government. After free education was introduced in 2022, rising enrolment forced them to hire contract teachers whose pay had come from fees and parent associations.",
+  "findings": [
+   {
+    "t": "<b>Workforce.</b> Catholic bishops: 'Subsidies from the government are not enough and are usually restrictive'; contract-teacher pay lost its funding source.",
+    "src": "CISA News, Nov 2022",
+    "url": "https://cisanewsafrica.com/2022/11/zambia-bishops-poke-holes-in-president-hichilemas-free-education-policy/",
+    "checked": "Oct 2026"
+   }
+  ],
+  "code": "colonial-dual",
+  "code_label": "The colonial dual system, under strain",
   "name": "Zambia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "family": "teacher"
  },
  "ZWE": {
   "name": "Zimbabwe",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Churches run about 12% of secondary schools and some are moving to private status; who pays mission-school teachers was not stated in sources read."
  }
 }
