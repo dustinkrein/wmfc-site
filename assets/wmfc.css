@@ -319,3 +319,14 @@ footer .fwm{font:19px/1.2 var(--f);color:var(--ink);margin-bottom:8px}
 .answer p{margin:8px 0 0;color:var(--ink2);font-size:15px}
 .tries{font-size:13px;color:var(--ink3);margin-top:10px}
 .tries button{background:none;border:0;color:var(--ox);font:inherit;text-decoration:underline;text-underline-offset:3px;cursor:pointer;padding:0 2px}
+
+/* educator roles × pathway */
+.roles{display:grid;grid-template-columns:1fr 1fr;gap:0 28px}
+.role{display:grid;grid-template-columns:18px 1fr auto;gap:10px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.role .rm{width:14px;height:14px;border-radius:3px}
+.role.doc .rm{background:var(--ox)}.role.none .rm{border:1.5px dashed var(--lined)}.role.unchk .rm{border:1px solid var(--line);background:var(--bg2)}
+.role .rn{font-family:var(--f);font-size:16px}
+.role.none .rn{color:var(--ox)}
+.role .rx{font-size:12.5px;color:var(--ink3);text-align:right}
+.role .rx a{color:var(--ink3)}
+@media (max-width:760px){.roles{grid-template-columns:1fr}.role{grid-template-columns:18px 1fr}.role .rx{grid-column:2;text-align:left}}

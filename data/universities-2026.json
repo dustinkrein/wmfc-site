@@ -12,7 +12,7 @@
   },
   "innovative": {
    "label": "U.S. News Most Innovative",
-   "def": "The 2027 Most Innovative National Universities list, published September 2026. 26 of about 50 places confirmed from the universities' own announcements."
+   "def": "All 74 universities on the U.S. News 2027 Most Innovative National Universities list, published September 2026."
   }
  },
  "note": "Two codings of the same 71 AAU member institutions. (1) Innovation: each institution's two strongest education initiatives, each scored 2×Novelty + Scale + Evidence (0–5 each, max 20); portfolio = mean of the top two, a missing second counts as 0. (2) Response to portable funding: direction (compete / supply / fortify / evidence / none) and which of four lenses showed a verified signal. Source: public university pages and news, 2025–2026. 'none' means not found in this scan, not proven absent. Most Innovative rows not in the AAU are coded for response only; their initiatives are not yet scored.",
@@ -134,8 +134,10 @@
    "rank": 3,
    "state": "IL",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "34",
    "scored": true
   },
   {
@@ -171,8 +173,10 @@
    "state": "FL",
    "lists": [
     "aau",
+    "innovative",
     "florida"
    ],
+   "innov_rank": "16",
    "scored": true
   },
   {
@@ -355,8 +359,10 @@
    "rank": 9,
    "state": "CT",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "30",
    "scored": true
   },
   {
@@ -461,8 +467,10 @@
    "rank": 12,
    "state": "RI",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "34",
    "scored": true
   },
   {
@@ -498,7 +506,7 @@
     "aau",
     "innovative"
    ],
-   "innov_rank": "Top 5",
+   "innov_rank": "5",
    "scored": true
   },
   {
@@ -533,8 +541,10 @@
    "rank": 14,
    "state": "MA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "18",
    "scored": true
   },
   {
@@ -786,8 +796,10 @@
    "rank": 21,
    "state": "TX",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "22",
    "scored": true
   },
   {
@@ -857,8 +869,10 @@
    "rank": 22,
    "state": "NY",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "19",
    "scored": true
   },
   {
@@ -894,8 +908,10 @@
    "rank": 22,
    "state": "IL",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "26",
    "scored": true
   },
   {
@@ -996,8 +1012,10 @@
    "rank": 26,
    "state": "OH",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "50",
    "scored": true
   },
   {
@@ -1035,7 +1053,7 @@
     "aau",
     "innovative"
    ],
-   "innov_rank": "Top 5",
+   "innov_rank": "4",
    "scored": true
   },
   {
@@ -1068,8 +1086,10 @@
    "rank": 26,
    "state": "UT",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "42",
    "scored": true
   },
   {
@@ -1104,8 +1124,10 @@
    "rank": 30,
    "state": "PA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "65",
    "scored": true
   },
   {
@@ -1210,8 +1232,10 @@
    "rank": 33,
    "state": "TX",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "50",
    "scored": true
   },
   {
@@ -1317,8 +1341,10 @@
    "rank": 36,
    "state": "CA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "30",
    "scored": true
   },
   {
@@ -1491,8 +1517,10 @@
    "rank": 41,
    "state": "MA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "19",
    "scored": true
   },
   {
@@ -1525,8 +1553,10 @@
    "rank": 41,
    "state": "NY",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "34",
    "scored": true
   },
   {
@@ -1559,8 +1589,10 @@
    "rank": 41,
    "state": "NC",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "12",
    "scored": true
   },
   {
@@ -1629,8 +1661,10 @@
    "rank": 41,
    "state": "NC",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "34",
    "scored": true
   },
   {
@@ -1663,8 +1697,10 @@
    "rank": 41,
    "state": "CA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "65",
    "scored": true
   },
   {
@@ -1700,8 +1736,10 @@
    "rank": 41,
    "state": "TN",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "14",
    "scored": true
   },
   {
@@ -1734,8 +1772,10 @@
    "rank": 41,
    "state": "WA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "42",
    "scored": true
   },
   {
@@ -1802,8 +1842,10 @@
    "rank": 50,
    "state": "CA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "17",
    "scored": true
   },
   {
@@ -1906,8 +1948,10 @@
    "rank": 52,
    "state": "MD",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "50",
    "scored": true
   },
   {
@@ -2149,8 +2193,10 @@
    "rank": 60,
    "state": "MA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "50",
    "scored": true
   },
   {
@@ -2183,8 +2229,10 @@
    "rank": 60,
    "state": "IL",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "34",
    "scored": true
   },
   {
@@ -2446,8 +2494,10 @@
    "rank": 69,
    "state": "CA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "10",
    "scored": true
   },
   {
@@ -2473,8 +2523,10 @@
    "rank": 70,
    "state": "NH",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "26",
    "scored": true
   },
   {
@@ -2492,8 +2544,10 @@
    "rank": 71,
    "state": "GA",
    "lists": [
-    "aau"
+    "aau",
+    "innovative"
    ],
+   "innov_rank": "65",
    "scored": true
   },
   {
@@ -2513,7 +2567,7 @@
    "lists": [
     "innovative"
    ],
-   "innov_rank": "Top 7",
+   "innov_rank": "7",
    "scored": false
   },
   {
@@ -2557,7 +2611,7 @@
     "innovative",
     "florida"
    ],
-   "innov_rank": "13",
+   "innov_rank": "26",
    "scored": false
   },
   {
@@ -2703,6 +2757,434 @@
     "innovative"
    ],
    "innov_rank": "50",
+   "scored": false
+  },
+  {
+   "name": "Northeastern",
+   "state": "MA",
+   "sector": "private",
+   "unit": "Graduate School of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "6",
+   "scored": false
+  },
+  {
+   "name": "Elon",
+   "state": "NC",
+   "sector": "private",
+   "unit": "School of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "8",
+   "scored": false
+  },
+  {
+   "name": "UT San Antonio",
+   "state": "TX",
+   "sector": "public",
+   "unit": "College of Education and Human Development",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "22",
+   "scored": false
+  },
+  {
+   "name": "UMBC",
+   "state": "MD",
+   "sector": "public",
+   "unit": "Department of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "24",
+   "scored": false
+  },
+  {
+   "name": "Howard",
+   "state": "DC",
+   "sector": "private",
+   "unit": "School of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "34",
+   "scored": false
+  },
+  {
+   "name": "Rensselaer Polytechnic",
+   "state": "NY",
+   "sector": "private",
+   "unit": "No school of education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "34",
+   "scored": false
+  },
+  {
+   "name": "Florida International",
+   "state": "FL",
+   "sector": "public",
+   "unit": "College of Arts, Sciences & Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative",
+    "florida"
+   ],
+   "innov_rank": "42",
+   "scored": false
+  },
+  {
+   "name": "Georgetown",
+   "state": "DC",
+   "sector": "private",
+   "unit": "No school of education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "42",
+   "scored": false
+  },
+  {
+   "name": "University of Tennessee",
+   "state": "TN",
+   "sector": "public",
+   "unit": "College of Education, Health, and Human Sciences",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "42",
+   "scored": false
+  },
+  {
+   "name": "Boston College",
+   "state": "MA",
+   "sector": "private",
+   "unit": "Lynch School of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "supply",
+   "lenses": [
+    1
+   ],
+   "response": "The Roche Center for Catholic Education supports and prepares leaders and teachers for Catholic schools.",
+   "response_url": "https://www.bc.edu/content/bc-web/schools/lynch-school/sites/roche/About.html",
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "50",
+   "scored": false
+  },
+  {
+   "name": "Colorado School of Mines",
+   "state": "CO",
+   "sector": "public",
+   "unit": "No school of education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "50",
+   "scored": false
+  },
+  {
+   "name": "Florida A&M",
+   "state": "FL",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": "Runs FAMU Developmental Research School, a public K–12 lab school. No response to portable funding found.",
+   "response_url": "https://coe.famu.edu/future-of-famu/famu-drs.php",
+   "rank": null,
+   "lists": [
+    "innovative",
+    "florida"
+   ],
+   "innov_rank": "50",
+   "scored": false
+  },
+  {
+   "name": "UMass Amherst",
+   "state": "MA",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "50",
+   "scored": false
+  },
+  {
+   "name": "Worcester Polytechnic",
+   "state": "MA",
+   "sector": "private",
+   "unit": "No school of education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "50",
+   "scored": false
+  },
+  {
+   "name": "Abilene Christian",
+   "state": "TX",
+   "sector": "private",
+   "unit": "College of Education and Human Services",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "65",
+   "scored": false
+  },
+  {
+   "name": "American University",
+   "state": "DC",
+   "sector": "private",
+   "unit": "School of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "65",
+   "scored": false
+  },
+  {
+   "name": "Marquette",
+   "state": "WI",
+   "sector": "private",
+   "unit": "College of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "supply",
+   "lenses": [
+    1
+   ],
+   "response": "An educational leadership program for aspiring Catholic school leaders, in the home city of the nation's oldest voucher program.",
+   "response_url": "https://www2.mu.edu/education/graduate/catholic-school-leaders.php",
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "65",
+   "scored": false
+  },
+  {
+   "name": "The New School",
+   "state": "NY",
+   "sector": "private",
+   "unit": "No school of education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "65",
+   "scored": false
+  },
+  {
+   "name": "Santa Clara",
+   "state": "CA",
+   "sector": "private",
+   "unit": "School of Education and Counseling Psychology",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "supply",
+   "lenses": [
+    1
+   ],
+   "response": "A Catholic Master of Arts in Teaching that prepares teachers for Catholic schools.",
+   "response_url": "https://www.scu.edu/ecp/programs/teaching-program/excellence-in-catholic-education-and-leadership-excel/catholic-master-of-arts-in-teaching-program-catmat/",
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "65",
+   "scored": false
+  },
+  {
+   "name": "Syracuse",
+   "state": "NY",
+   "sector": "private",
+   "unit": "School of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "65",
+   "scored": false
+  },
+  {
+   "name": "University of Houston",
+   "state": "TX",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": null,
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": null,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": null,
+   "lists": [
+    "innovative"
+   ],
+   "innov_rank": "65",
    "scored": false
   }
  ]

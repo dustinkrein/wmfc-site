@@ -102,7 +102,7 @@
     <li><b>Cases were found by searching for engagement.</b> That samples on the outcome and biases every explanation offered.</li>
     <li><b>Coverage is uneven.</b> Florida and Michigan are complete. Six states carry a single placeholder row. Read every state total against its depth.</li>
     <li><b>Published text only.</b> Coding rests on program pages, catalogs and news, not interviews. An institution that considered a program and declined looks the same as one that never considered it.</li>
-    <li><b>The university scan is a first pass.</b> 81 universities, public sources from 2025–2026. "None observed" means not found in that scan. Only 26 of about 50 Most Innovative places are confirmed, because U.S. News blocks automated reading; ten of them are coded for response but not yet scored.</li>
+    <li><b>The university scan is a first pass.</b> 102 universities, public sources from 2025–2026. "None observed" means not found in that scan. The 31 Most Innovative universities outside the AAU are coded for response but not yet scored.</li>
     <li><b>Florida's state colleges are not yet scanned.</b> 25 of the 28 Florida College System institutions remain unread.</li>
     <li><b>Single points in time.</b> This field moves fast. Every row carries the date it was checked.</li>
   </ul></div>
@@ -146,7 +146,7 @@ function calc(){var n=+rn.value,s=+rs.value,e=+re.value;on.textContent=n;os.text
 var rn=document.getElementById("rn"),rs=document.getElementById("rs"),re=document.getElementById("re"),on=document.getElementById("on"),os=document.getElementById("os"),oe=document.getElementById("oe"),score=document.getElementById("score");
 [rn,rs,re].forEach(function(x){x.addEventListener("input",calc);});calc();
 var DS=[
- ["The university scan","/data/universities-2026.json","81 universities on three lists: Florida, AAU and U.S. News Most Innovative. Direction, lenses and scores","institutions","/universities/"],
+ ["The university scan","/data/universities-2026.json","102 universities on three lists: Florida, AAU and U.S. News Most Innovative. Direction, lenses and scores","institutions","/universities/"],
  ["The Readiness Index","/data/scan-2026.json","Institutions coded by what they built, with evidence and check dates","institutions","/research/"],
  ["Florida placement survey","/data/placement-2026.json","Ten programs' clinical-placement policies","programs","/research/"],
  ["District response","/data/districts-2026.json","Florida vendor curve, six response types, verified cases","examples","/districts/"],
