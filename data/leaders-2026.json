@@ -1,0 +1,213 @@
+{
+ "edition": "Leaders, 2026",
+ "updated": "2026-10-13",
+ "note": "People and institutions doing the work of responding, not narrating it. Each entry has a source. 'year' is when the work began, where verified.",
+ "types": {
+  "institution": "Institutions",
+  "practitioner": "Practitioners",
+  "district": "Districts",
+  "researcher": "Researchers"
+ },
+ "leaders": [
+  {
+   "type": "institution",
+   "name": "Arizona State University",
+   "org": "ASU Prep / ASU Prep Digital",
+   "state": "AZ",
+   "year": 2017,
+   "direction": "compete",
+   "what": "Runs university-owned K–12 schools and an online school that accepts Arizona ESA funds; expanding into Texas.",
+   "url": "https://asuprepdigital.org/blog/own-your-learning-with-asu-prep-digital-and-an-empowerment-scholarship-account"
+  },
+  {
+   "type": "institution",
+   "name": "University of Notre Dame",
+   "org": "Alliance for Catholic Education",
+   "state": "IN · FL · AZ",
+   "year": 2010,
+   "direction": "compete",
+   "what": "Manages a network of Catholic K–8 schools, including in the Diocese of St. Petersburg, and staffs Catholic schools through ACE Teaching Fellows.",
+   "url": "https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school"
+  },
+  {
+   "type": "institution",
+   "name": "Florida Virtual School",
+   "org": "State virtual school",
+   "state": "FL",
+   "year": 1997,
+   "direction": "supply",
+   "what": "Hosts certification internships for 30+ partner institutions. Non-district clinical placement already works at scale.",
+   "url": "https://www.flvs.net/about-us/who-we-are/careers/internships"
+  },
+  {
+   "type": "institution",
+   "name": "University of Florida",
+   "org": "Lastinger Center for Learning",
+   "state": "FL",
+   "year": null,
+   "direction": "fortify",
+   "what": "Vetted and evaluated private tutoring vendors for the state's public-school tutoring program; runs statewide literacy programs.",
+   "url": "https://lastinger.ufl.edu/wp-content/uploads/2026/04/uf-lastinger-center-fta-pilot-spring-2025-aug-2025-remediated.pdf"
+  },
+  {
+   "type": "institution",
+   "name": "Tallahassee State College",
+   "org": "Charter authorizer",
+   "state": "FL",
+   "year": 2023,
+   "direction": "compete",
+   "what": "First Florida College System institution approved to authorize charter schools; founded Tallahassee Collegiate Academy.",
+   "url": "https://www.wctv.tv/2023/01/31/tcc-is-first-college-florida-approved-by-fdoe-charter-school-authorizer/"
+  },
+  {
+   "type": "institution",
+   "name": "Central Michigan University",
+   "org": "Charter School Leadership M.A.",
+   "state": "MI",
+   "year": null,
+   "direction": "supply",
+   "what": "The only preparation program built for the sector across all eight Michigan university charter authorizers.",
+   "url": "https://www.cmich.edu/academics/colleges/college-education-human-services/departments/counseling-educational-leadership-higher-education/educational-leadership-pk-12"
+  },
+  {
+   "type": "institution",
+   "name": "University of Pennsylvania",
+   "org": "Independent School Teaching Residency",
+   "state": "PA",
+   "year": null,
+   "direction": "supply",
+   "what": "A two-year residency placing fellows in 21 independent boarding and day schools.",
+   "url": "https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed"
+  },
+  {
+   "type": "institution",
+   "name": "Rio Salado College",
+   "org": "Dual enrollment",
+   "state": "AZ",
+   "year": 2025,
+   "direction": "supply",
+   "what": "9,700 dual-enrollment students; half its 408 associate degrees go to one charter network.",
+   "url": "https://www.riosalado.edu/news/2025/400-high-school-students-track-earn-college-degrees-rio-salado-celebrates-record-dual-enrollment"
+  },
+  {
+   "type": "institution",
+   "name": "University of Central Florida",
+   "org": "Center for Community Schools",
+   "state": "FL",
+   "year": 2014,
+   "direction": "fortify",
+   "what": "43 Community Partnership Schools inside existing public schools; state funding nearly doubled in 2024.",
+   "url": "https://www.ucf.edu/news/state-funding-increase-to-drive-growth-in-community-partnership-schools/"
+  },
+  {
+   "type": "practitioner",
+   "name": "Julie Young",
+   "org": "Florida Virtual School, then ASU Prep",
+   "state": "FL · AZ",
+   "year": 1997,
+   "direction": "compete",
+   "what": "Founded Florida Virtual School, then led ASU Prep. One career carried a portable model across two states.",
+   "url": "https://search.asu.edu/profile/3127527"
+  },
+  {
+   "type": "practitioner",
+   "name": "Keith Parker",
+   "org": "Superintendent, Elizabeth City-Pasquotank",
+   "state": "NC",
+   "year": 2025,
+   "direction": "compete",
+   "what": "Opened a 26-student public microschool designed after visits to 40+ schools, including private microschools.",
+   "url": "https://www.edsurge.com/news/2025-09-22-at-this-rural-microschool-students-will-study-with-ai-and-run-an-airbnb"
+  },
+  {
+   "type": "district",
+   "name": "Polk County Public Schools",
+   "org": "Contract with WonderHere",
+   "state": "FL",
+   "year": 2025,
+   "direction": "compete",
+   "what": "Bought a microschool model from a private operator founded by two former Polk teachers.",
+   "url": "https://fee.org/articles/why-one-school-district-is-launching-new-microschool-inspired-classrooms/"
+  },
+  {
+   "type": "district",
+   "name": "Miami-Dade County Public Schools",
+   "org": "Part-time classes",
+   "state": "FL",
+   "year": 2026,
+   "direction": "supply",
+   "what": "Opened 95+ classes to scholarship students it does not enroll.",
+   "url": "https://www.city-journal.org/article/florida-school-choice-education"
+  },
+  {
+   "type": "district",
+   "name": "St. Vrain Valley Schools",
+   "org": "APEX homeschool program",
+   "state": "CO",
+   "year": 2026,
+   "direction": "supply",
+   "what": "District-run part-time program for homeschoolers; Colorado funds about 18,700 such students.",
+   "url": "https://go.boarddocs.com/co/cde/Board.nsf/files/DQD82R1C3A03/$file/2026.01.13%20January%20Bd%20Mtg%20Part-Time%20Programs%20Presentation.pdf"
+  },
+  {
+   "type": "district",
+   "name": "Indiana Microschool Collaborative",
+   "org": "District-led network",
+   "state": "IN",
+   "year": 2025,
+   "direction": "compete",
+   "what": "A district-led network of public microschools, targeting 10+ schools by 2030.",
+   "url": "https://hechingerreport.org/are-microschools-a-solution-to-falling-public-school-enrollment-one-district-thinks-so/"
+  },
+  {
+   "type": "researcher",
+   "name": "Douglas Harris",
+   "org": "Tulane University · REACH and ERA-New Orleans",
+   "state": "LA",
+   "year": 2018,
+   "direction": "evidence",
+   "what": "Among the leaders of REACH, a $10M federally funded national center for research on school choice.",
+   "url": "https://news.tulane.edu/pr/tulane-university-awarded-10-million-grant-launch-national-school-choice-research-center"
+  },
+  {
+   "type": "researcher",
+   "name": "Paul E. Peterson",
+   "org": "Harvard · PEPG and Education Next",
+   "state": "MA",
+   "year": null,
+   "direction": "evidence",
+   "what": "Hosts Education Next's podcast, which covers ESAs and their effect on public schools.",
+   "url": "https://www.educationnext.org/education-exchange-impact-education-savings-accounts-in-arizona"
+  },
+  {
+   "type": "researcher",
+   "name": "Kevin Welner",
+   "org": "CU Boulder · National Education Policy Center",
+   "state": "CO",
+   "year": null,
+   "direction": "evidence",
+   "what": "Directs NEPC, which publishes critical reviews of school-choice research.",
+   "url": "https://nepc.colorado.edu/publication/nepc-director"
+  },
+  {
+   "type": "researcher",
+   "name": "Christopher Lubienski",
+   "org": "Indiana University · CEEP",
+   "state": "IN",
+   "year": null,
+   "direction": "evidence",
+   "what": "Among the most cited critical scholars of school choice.",
+   "url": "https://education.indiana.edu/news/2026/jan-jun/2026-01-12-lubienski-ranks-among-most-influential-scholars.html"
+  },
+  {
+   "type": "researcher",
+   "name": "Angela R. Watson",
+   "org": "Johns Hopkins · Homeschool Research Lab",
+   "state": "MD",
+   "year": null,
+   "direction": "evidence",
+   "what": "Leads research on homeschooling, one of the fastest-growing sectors portable funds reach.",
+   "url": "https://education.jhu.edu/directory/angela-r-watson-phd"
+  }
+ ]
+}

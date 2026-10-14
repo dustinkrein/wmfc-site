@@ -1,0 +1,767 @@
+{
+ "edition": "Chronology, 2026",
+ "updated": "2026-10-13",
+ "note": "Five tracks of events from 1642 to today. A null src means the event is standard history not yet linked to a primary source.",
+ "tracks": {
+  "law": "Law & courts",
+  "leg": "Legislation & programs",
+  "dist": "District response",
+  "post": "Postsecondary response",
+  "rhet": "Rhetoric & argument"
+ },
+ "eras": [
+  [
+   "Common school",
+   1642,
+   1874
+  ],
+  [
+   "Blaine & consolidation",
+   1875,
+   1953
+  ],
+  [
+   "Desegregation",
+   1954,
+   1989
+  ],
+  [
+   "Vouchers & charters",
+   1990,
+   2010
+  ],
+  [
+   "Portability",
+   2011,
+   2030
+  ]
+ ],
+ "events": [
+  {
+   "y": 1642,
+   "t": "leg",
+   "j": "MA",
+   "h": "Massachusetts school laws (1642, 1647)",
+   "x": "The first colonial requirements that towns provide schooling.",
+   "src": null,
+   "id": "e000"
+  },
+  {
+   "y": 1792,
+   "t": "rhet",
+   "j": "US",
+   "h": "Thomas Paine, Rights of Man II",
+   "x": "Proposes paying poor families per child on condition of school attendance.",
+   "src": null,
+   "id": "e001"
+  },
+  {
+   "y": 1840,
+   "t": "rhet",
+   "j": "NY",
+   "h": "Bishop John Hughes",
+   "x": "Demands public school funds reach Catholic schools. He loses; the loss builds the parochial system.",
+   "src": null,
+   "id": "e002"
+  },
+  {
+   "y": 1859,
+   "t": "rhet",
+   "j": "UK",
+   "h": "John Stuart Mill, On Liberty",
+   "x": "The state may require education without monopolizing its supply.",
+   "src": null,
+   "id": "e003"
+  },
+  {
+   "y": 1869,
+   "t": "leg",
+   "j": "VT · ME",
+   "h": "Town tuitioning",
+   "x": "Vermont (1869) and Maine (1873) towns without schools pay tuition elsewhere — the oldest working voucher in America.",
+   "src": null,
+   "id": "e004"
+  },
+  {
+   "y": 1875,
+   "t": "law",
+   "j": "US",
+   "h": "The Blaine Amendment",
+   "x": "A proposed federal amendment barring aid to “sectarian” schools fails; versions enter roughly 37 state constitutions.",
+   "src": null,
+   "id": "e005"
+  },
+  {
+   "y": 1917,
+   "t": "leg",
+   "j": "Netherlands",
+   "h": "The Pacification",
+   "x": "The Dutch constitution funds every school equally, public and private. Portable funding as a peace treaty.",
+   "src": null,
+   "atlas": "NLD",
+   "id": "e006"
+  },
+  {
+   "y": 1925,
+   "t": "law",
+   "j": "US",
+   "h": "Pierce v. Society of Sisters",
+   "x": "The Supreme Court strikes Oregon's compulsory public-school law. Choice becomes a right — an unfunded one.",
+   "src": null,
+   "id": "e007"
+  },
+  {
+   "y": 1954,
+   "t": "law",
+   "j": "US",
+   "h": "Brown v. Board of Education",
+   "x": "Ends de jure school segregation.",
+   "src": null,
+   "id": "e008"
+  },
+  {
+   "y": 1955,
+   "t": "rhet",
+   "j": "US",
+   "h": "Milton Friedman",
+   "x": "Separates financing education from operating schools.",
+   "src": null,
+   "id": "e009"
+  },
+  {
+   "y": 1968,
+   "t": "law",
+   "j": "US",
+   "h": "Green v. New Kent County",
+   "x": "Ends “freedom of choice” plans used to evade Brown.",
+   "src": null,
+   "id": "e010"
+  },
+  {
+   "y": 1968,
+   "t": "rhet",
+   "j": "US",
+   "h": "Kenneth B. Clark",
+   "x": "Argues Black children in northern cities are trapped in a monopoly with no incentive to serve them.",
+   "src": null,
+   "id": "e011"
+  },
+  {
+   "y": 1970,
+   "t": "rhet",
+   "j": "US",
+   "h": "Christopher Jencks",
+   "x": "Designs the federal voucher demonstration run in Alum Rock, California, through 1976.",
+   "src": null,
+   "id": "e012"
+  },
+  {
+   "y": 1990,
+   "t": "leg",
+   "j": "WI",
+   "h": "Milwaukee Parental Choice Program",
+   "x": "The first publicly funded private-school voucher in the U.S., authored by Rep. Annette “Polly” Williams.",
+   "src": [
+    "Education Week",
+    "https://www.edweek.org/policy-politics/q-a-with-howard-fuller-on-the-mother-of-school-choice-annette-polly-williams/2014/11"
+   ],
+   "id": "e013"
+  },
+  {
+   "y": 1990,
+   "t": "rhet",
+   "j": "Wisconsin State Assembly, Milwaukee",
+   "h": "Annette “Polly” Williams — legislation",
+   "x": "Authored and passed the Milwaukee Parental Choice Program, the first publicly funded private-school voucher program in the United States, assembling a coalition of Black Democrats and Republicans to do it.",
+   "src": [
+    "Education Week (Q&A with Howard Fuller)",
+    "https://www.edweek.org/policy-politics/q-a-with-howard-fuller-on-the-mother-of-school-choice-annette-polly-williams/2014/11"
+   ],
+   "tag": "Democratic record",
+   "id": "e014"
+  },
+  {
+   "y": 1995,
+   "t": "post",
+   "j": "MI",
+   "h": "SVSU School/University Partnership Office",
+   "x": "Saginaw Valley State's board creates an office serving charter academies.",
+   "src": [
+    "SVSU",
+    "https://www.svsu.edu/supo/opportunities/psateacherleaderscholarships/"
+   ],
+   "id": "e015"
+  },
+  {
+   "y": 1996,
+   "t": "dist",
+   "j": "FL",
+   "h": "Liberty City Charter School opens",
+   "x": "Florida's first charter school.",
+   "src": [
+    "StateImpact / NPR",
+    "https://stateimpact.npr.org/florida/2011/09/28/from-minnesota-to-miami-the-history-of-florida-charter-schools"
+   ],
+   "id": "e016"
+  },
+  {
+   "y": 1996,
+   "t": "leg",
+   "j": "FL",
+   "h": "Florida authorizes charter schools",
+   "x": "Districts become the primary authorizers — a choice that shapes twenty years of district behavior.",
+   "src": [
+    "OPPAGA",
+    "https://oppaga.fl.gov/ProgramSummary/ProgramDetail?programNumber=2118"
+   ],
+   "id": "e017"
+  },
+  {
+   "y": 1996,
+   "t": "rhet",
+   "j": "President of the United States",
+   "h": "Bill Clinton — statement",
+   "x": "I challenge every state to give all parents the right to choose which public school their children will attend.",
+   "src": [
+    "Clinton White House Archives",
+    "https://clintonwhitehouse4.archives.gov/textonly/WH/New/other/sotu.html"
+   ],
+   "tag": "Democratic record",
+   "id": "e018"
+  },
+  {
+   "y": 1996,
+   "t": "rhet",
+   "j": "First Lady of the United States",
+   "h": "Hillary Clinton — statement",
+   "x": "I find their argument persuasive and I favor promoting choice among public schools.",
+   "src": [
+    "Washington Post (quoting It Takes a Village)",
+    "https://www.washingtonpost.com/news/answer-sheet/wp/2015/11/08/hillary-clinton-most-charter-schools-dont-take-the-hardest-to-teach-kids-or-if-they-do-they-dont-keep-them/"
+   ],
+   "tag": "Democratic record",
+   "id": "e019"
+  },
+  {
+   "y": 1997,
+   "t": "post",
+   "j": "FL",
+   "h": "Florida Virtual School founded",
+   "x": "Julie Young starts FLVS from a $200,000 state grant; in 2003 it becomes the first school funded on successful completions.",
+   "src": [
+    "Florida Virtual School",
+    "https://en.wikipedia.org/wiki/Florida_Virtual_School"
+   ],
+   "id": "e020"
+  },
+  {
+   "y": 1997,
+   "t": "rhet",
+   "j": "President of the United States",
+   "h": "Bill Clinton — statement",
+   "x": "…so that parents will have even more choices in sending their children to the best schools.",
+   "src": [
+    "Clinton White House Archives",
+    "https://clintonwhitehouse3.archives.gov/WH/SOU97/"
+   ],
+   "tag": "Democratic record",
+   "id": "e021"
+  },
+  {
+   "y": 1998,
+   "t": "rhet",
+   "j": "President of the United States",
+   "h": "Bill Clinton — statement",
+   "x": "Across our nation, public school choice, and in particular, charter schools, are renewing public education with their energy and new ideas.",
+   "src": [
+    "Clinton White House Archives",
+    "https://clintonwhitehouse4.archives.gov/textonly/WH/Work/072498.html"
+   ],
+   "tag": "Democratic record",
+   "id": "e022"
+  },
+  {
+   "y": 1999,
+   "t": "leg",
+   "j": "FL",
+   "h": "A+ Plan and Opportunity Scholarships",
+   "x": "Accountability, competition and choice arrive as one package.",
+   "src": [
+    "Shanker Institute",
+    "https://www.shankerinstitute.org/resource/evidence-florida-formula-education-reform"
+   ],
+   "id": "e023"
+  },
+  {
+   "y": 1999,
+   "t": "rhet",
+   "j": "First Lady of the United States",
+   "h": "Hillary Clinton — statement",
+   "x": "I stand behind the charter school/public school movement, because parents do deserve greater choice.",
+   "src": [
+    "OnTheIssues (secondary compilation — needs primary confirmation)",
+    "https://ontheissues.org/Social/Hillary_Clinton_Education.htm"
+   ],
+   "tag": "Democratic record",
+   "id": "e024"
+  },
+  {
+   "y": 2000,
+   "t": "rhet",
+   "j": "Newark City Council, New Jersey",
+   "h": "Cory Booker — statement",
+   "x": "Being outcome-focused started to change my view in favor of options like charter schools, contract schools and, yes, vouchers.",
+   "src": [
+    "Manhattan Institute, Civic Bulletin No. 25 (full text)",
+    "https://media4.manhattan-institute.org/pdf/cb_25.pdf"
+   ],
+   "tag": "Democratic record",
+   "id": "e025"
+  },
+  {
+   "y": 2002,
+   "t": "law",
+   "j": "US",
+   "h": "Zelman v. Simmons-Harris",
+   "x": "Upholds Cleveland's voucher program under the Establishment Clause.",
+   "src": null,
+   "id": "e026"
+  },
+  {
+   "y": 2004,
+   "t": "post",
+   "j": "FL",
+   "h": "FAU High School opens",
+   "x": "A university-governed public high school on a university campus.",
+   "src": [
+    "FAU High",
+    "https://fauhigh.fau.edu/aboutus/index.php"
+   ],
+   "id": "e027"
+  },
+  {
+   "y": 2004,
+   "t": "rhet",
+   "j": "Mayor of Washington, D.C.",
+   "h": "Anthony A. Williams — official act",
+   "x": "Backed the creation of the D.C. Opportunity Scholarship Program, the first federally funded K–12 voucher program, providing tuition grants for low-income District students.",
+   "src": [
+    "DCVote / Washington Post",
+    "https://www.dcvote.org/news/full-article-boehner-lieberman-aim-revive-dc-voucher-program"
+   ],
+   "tag": "Democratic record",
+   "id": "e028"
+  },
+  {
+   "y": 2006,
+   "t": "law",
+   "j": "FL",
+   "h": "Bush v. Holmes",
+   "x": "Florida Supreme Court strikes the Opportunity Scholarship program; litigation becomes a district strategy.",
+   "src": null,
+   "id": "e029"
+  },
+  {
+   "y": 2007,
+   "t": "rhet",
+   "j": "Council of the District of Columbia, 1993–2005",
+   "h": "Kevin P. Chavous — statement",
+   "x": "When Democratic politicians start moving up the ranks, they have to compromise on choice, on teacher pay for performance, on charters.",
+   "src": [
+    "Philanthropy Roundtable / DFER",
+    "https://dfer.org/2007/06/20/democrats-for-education-reform-a-new-grassroots-lobbying-group-plans-to-shake-up-its-partys-positions-on-education/"
+   ],
+   "tag": "Democratic record",
+   "id": "e030"
+  },
+  {
+   "y": 2008,
+   "t": "rhet",
+   "j": "U.S. Senator and presidential candidate",
+   "h": "Barack Obama — statement",
+   "x": "Let’s see if the experiment works… If it does, whatever my preconception, you do what’s best for kids.",
+   "src": [
+    "National Affairs (quoting the Milwaukee Journal Sentinel)",
+    "https://www.nationalaffairs.com/publications/detail/the-real-obama-education-legacy"
+   ],
+   "tag": "Democratic record",
+   "id": "e031"
+  },
+  {
+   "y": 2009,
+   "t": "rhet",
+   "j": "President of the United States",
+   "h": "Barack Obama — statement",
+   "x": "I call on states to reform their charter rules, and lift caps on the number of allowable charter schools.",
+   "src": [
+    "Obama White House Archives",
+    "https://obamawhitehouse.archives.gov/the-press-office/remarks-president-united-states-hispanic-chamber-commerce"
+   ],
+   "tag": "Democratic record",
+   "id": "e032"
+  },
+  {
+   "y": 2010,
+   "t": "rhet",
+   "j": "Sens. Dianne Feinstein (CA), Bill Nelson (FL), Mark Warner (VA)",
+   "h": "Feinstein, Nelson & Warner — roll-call vote",
+   "x": "Voted for the Lieberman amendment to reauthorize the D.C. Opportunity Scholarship Program. They were the only three Democrats to do so; the amendment failed 42–55.",
+   "src": [
+    "Education Next",
+    "https://www.educationnext.org/lieberman-was-a-leader-for-school-choice-in-the-democratic-party/"
+   ],
+   "tag": "Democratic record",
+   "id": "e033"
+  },
+  {
+   "y": 2011,
+   "t": "leg",
+   "j": "AZ",
+   "h": "Arizona creates the first ESA",
+   "x": "Education savings accounts begin, later expanding to universal eligibility.",
+   "src": null,
+   "id": "e034"
+  },
+  {
+   "y": 2011,
+   "t": "rhet",
+   "j": "Elected as D — U.S. Senator, Connecticut (Independent from 2006)",
+   "h": "Joe Lieberman — legislation",
+   "x": "Authored the Senate companion to the SOAR Act with Speaker John Boehner, reauthorizing and expanding the D.C. Opportunity Scholarship Program. Lieberman had introduced the original D.C. scholarship bill in 1997.",
+   "src": [
+    "Washington Post, D.C. Wire",
+    "http://voices.washingtonpost.com/dc/2011/01/in_the_clearest_sign_yet.html"
+   ],
+   "tag": "Democratic record",
+   "id": "e035"
+  },
+  {
+   "y": 2013,
+   "t": "dist",
+   "j": "FL",
+   "h": "495 magnet schools",
+   "x": "Florida districts serve about 562,000 students in magnets — decades of running choice before facing competitors.",
+   "src": [
+    "Ballotpedia",
+    "https://ballotpedia.org/School_choice_in_Florida"
+   ],
+   "id": "e036"
+  },
+  {
+   "y": 2014,
+   "t": "post",
+   "j": "FL",
+   "h": "UCF Center for Community Schools",
+   "x": "A university builds capacity to strengthen existing public schools.",
+   "src": [
+    "UCF",
+    "https://ccie.ucf.edu/communityschools/about/"
+   ],
+   "id": "e037"
+  },
+  {
+   "y": 2016,
+   "t": "leg",
+   "j": "FL",
+   "h": "HB 7029 — controlled open enrollment",
+   "x": "Any Florida parent may enroll a child in any public school with capacity. Capacity becomes a district-controlled variable.",
+   "src": [
+    "FLDOE — HB 7029",
+    "https://www.fldoe.org/core/fileparse.php/7513/urlt/7029-16.pdf"
+   ],
+   "id": "e038"
+  },
+  {
+   "y": 2017,
+   "t": "leg",
+   "j": "FL",
+   "h": "HB 7069 — Schools of Hope",
+   "x": "Creates the only statutory carve-out from teacher certification, tied to a school type rather than an educator.",
+   "src": [
+    "PolitiFact review of § 1002.33",
+    "https://politifact.com/factchecks/2018/aug/15/gwen-graham/graham-misspeaks-charter-school-teacher-certificat/"
+   ],
+   "id": "e039"
+  },
+  {
+   "y": 2017,
+   "t": "post",
+   "j": "AZ",
+   "h": "ASU Prep Digital opens",
+   "x": "A university-run online K–12 school that later accepts Arizona ESA funds.",
+   "src": [
+    "ASU Prep Digital",
+    "https://en.wikipedia.org/wiki/ASU_Prep_Digital"
+   ],
+   "id": "e040"
+  },
+  {
+   "y": 2020,
+   "t": "law",
+   "j": "US",
+   "h": "Espinoza v. Montana",
+   "x": "A state that funds private schooling cannot exclude religious schools.",
+   "src": null,
+   "id": "e041"
+  },
+  {
+   "y": 2021,
+   "t": "leg",
+   "j": "FL",
+   "h": "Florida colleges may sponsor charters",
+   "x": "Statutory change lets Florida College System institutions authorize charter schools.",
+   "src": [
+    "Florida Charter Institute",
+    "https://flcharterinstitute.org/authorize/hei/"
+   ],
+   "id": "e042"
+  },
+  {
+   "y": 2022,
+   "t": "law",
+   "j": "US",
+   "h": "Carson v. Makin",
+   "x": "Extends Espinoza to Maine's town-tuitioning program.",
+   "src": null,
+   "id": "e043"
+  },
+  {
+   "y": 2022,
+   "t": "rhet",
+   "j": "Governor of Colorado",
+   "h": "Jared Polis — statement",
+   "x": "Public school choice is an asset to improve all public schools.",
+   "src": [
+    "Reason",
+    "https://reason.com/podcast/2022/04/25/jared-polis-the-most-libertarian-governor-in-america/"
+   ],
+   "tag": "Democratic record",
+   "id": "e044"
+  },
+  {
+   "y": 2022,
+   "t": "rhet",
+   "j": "Attorney General of Pennsylvania, candidate for Governor",
+   "h": "Josh Shapiro — statement",
+   "x": "I think we can invest in public education and empower parents to put their kids in the best opportunity for them to succeed.",
+   "src": [
+    "CNHI Pennsylvania",
+    "https://www.ncnewsonline.com/cnhi_network/shapiro-on-support-for-school-choice-it-s-what-i-believe/article_7d72903b-a7ce-5887-8cbb-d8489a0cb278.html"
+   ],
+   "tag": "Democratic record",
+   "id": "e045"
+  },
+  {
+   "y": 2023,
+   "t": "leg",
+   "j": "FL",
+   "h": "HB 1 — universal eligibility",
+   "x": "Every Florida K–12 student becomes eligible; the Personalized Education Program makes non-enrolled students fundable.",
+   "src": null,
+   "id": "e046"
+  },
+  {
+   "y": 2023,
+   "t": "post",
+   "j": "FL",
+   "h": "Tallahassee college becomes a charter authorizer",
+   "x": "First Florida College System institution approved to authorize; founds Tallahassee Collegiate Academy the same year.",
+   "src": [
+    "WCTV",
+    "https://www.wctv.tv/2023/01/31/tcc-is-first-college-florida-approved-by-fdoe-charter-school-authorizer/"
+   ],
+   "id": "e047"
+  },
+  {
+   "y": 2024,
+   "t": "rhet",
+   "j": "Louisiana House of Representatives, New Orleans",
+   "h": "Jason Hughes — roll-call vote",
+   "x": "I know the political ramifications for me for voting for this bill.",
+   "src": [
+    "Fox News / The 74",
+    "https://www.the74million.org/article/democratic-debate-over-private-school-choice-reveals-post-election-tensions/"
+   ],
+   "tag": "Democratic record",
+   "id": "e048"
+  },
+  {
+   "y": 2025,
+   "t": "dist",
+   "j": "FL",
+   "h": "Districts join the ESA marketplace",
+   "x": "About one in three Florida districts sign on to sell part-time services through Contracted Public Schools.",
+   "src": [
+    "Next Steps",
+    "https://nextstepsblog.org/2025/06/charter-schools-usa-and-step-up-for-students-join-forces-to-expand-options-for-florida-students/"
+   ],
+   "id": "e049"
+  },
+  {
+   "y": 2025,
+   "t": "dist",
+   "j": "FL",
+   "h": "Polk County contracts WonderHere",
+   "x": "A district buys a microschool model from a private operator founded by two of its former teachers.",
+   "src": [
+    "FEE",
+    "https://fee.org/articles/why-one-school-district-is-launching-new-microschool-inspired-classrooms/"
+   ],
+   "id": "e050"
+  },
+  {
+   "y": 2025,
+   "t": "dist",
+   "j": "NC",
+   "h": "Elizabeth City-Pasquotank microschool",
+   "x": "A rural district opens a 26-student microschool modeled on private designs.",
+   "src": [
+    "EdSurge",
+    "https://www.edsurge.com/news/2025-09-22-at-this-rural-microschool-students-will-study-with-ai-and-run-an-airbnb"
+   ],
+   "id": "e051"
+  },
+  {
+   "y": 2025,
+   "t": "leg",
+   "j": "TX",
+   "h": "Texas SB 2 — ESAs",
+   "x": "Written from day one to let districts sell fee-for-service offerings to non-enrolled ESA students.",
+   "src": [
+    "TEA letter",
+    "https://tea.texas.gov/taa-letters/senate-bill-2-education-savings-accounts-and-children-disabilities"
+   ],
+   "id": "e052"
+  },
+  {
+   "y": 2025,
+   "t": "post",
+   "j": "AZ",
+   "h": "Rio Salado's record dual-enrollment year",
+   "x": "408 high-school students on track for associate degrees; half from one charter network.",
+   "src": [
+    "Rio Salado",
+    "https://www.riosalado.edu/news/2025/400-high-school-students-track-earn-college-degrees-rio-salado-celebrates-record-dual-enrollment"
+   ],
+   "id": "e053"
+  },
+  {
+   "y": 2026,
+   "t": "dist",
+   "j": "FL",
+   "h": "Orange County closes seven schools",
+   "x": "After losing about 6,600–7,000 students in a year; no new campuses until 2031.",
+   "src": [
+    "Spectrum News 13",
+    "https://mynews13.com/fl/orlando/news/2026/08/05/students-in-central-florida-go-back-to-school-amid-districts-seeing-lower-enrollment-numbers"
+   ],
+   "id": "e054"
+  },
+  {
+   "y": 2026,
+   "t": "dist",
+   "j": "FL",
+   "h": "53 of 67 districts are vendors",
+   "x": "Approved or in process to sell to scholarship students they do not enroll.",
+   "src": [
+    "Next Steps",
+    "https://nextstepsblog.org/2026/07/panel-shares-florida-a-la-carte-learning-story-with-lawmakers-from-across-america/"
+   ],
+   "id": "e055"
+  },
+  {
+   "y": 2026,
+   "t": "leg",
+   "j": "CO",
+   "h": "Colorado SB 26-023",
+   "x": "Re-regulates part-time homeschool programs after the market matured; districts limited to their own boundaries.",
+   "src": [
+    "Chalkbeat Colorado",
+    "https://www.chalkbeat.org/colorado/2026/05/19/lawmakers-make-homeschool-enrichment-changes-but-not-to-funding-rate/"
+   ],
+   "id": "e056"
+  },
+  {
+   "y": 2026,
+   "t": "post",
+   "j": "IN",
+   "h": "Purdue Polytechnic closes a campus",
+   "x": "University-affiliated K–12 is not a guaranteed win.",
+   "src": [
+    "Chalkbeat Indiana",
+    "https://www.chalkbeat.org/indiana/2026/02/10/purdue-polytechnic-high-school-close-south-bend-campus/"
+   ],
+   "id": "e057"
+  },
+  {
+   "y": 2026,
+   "t": "rhet",
+   "j": "FL",
+   "h": "Jeb Bush on the “supply side”",
+   "x": "Calls for attention to the supply side of school choice — the prompt for WMFC's educator-pipeline work.",
+   "src": null,
+   "id": "e058"
+  },
+  {
+   "y": 2026,
+   "t": "rhet",
+   "j": "Democratic political organization",
+   "h": "Democrats for Education Reform — op-ed",
+   "x": "Published “Democrats, It’s Time to Embrace School Choice” in the New York Times, arguing the country is in a decade-long education depression and that families with the means to leave are already leaving.",
+   "src": [
+    "Democrats for Education Reform",
+    "https://dfer.org/2026/02/17/democrats-its-time-to-embrace-school-choice/"
+   ],
+   "tag": "Democratic record",
+   "id": "e059"
+  },
+  {
+   "y": 2026,
+   "t": "rhet",
+   "j": "Governor of Colorado",
+   "h": "Jared Polis — official act",
+   "x": "I’m proud that Colorado is the first Democratic state to come online.",
+   "src": [
+    "Colorado Springs Gazette / Colorado Newsline",
+    "https://coloradonewsline.com/2026/02/11/other-democratic-governors-are-wary-of-new-trump-school-funding-program-not-polis/"
+   ],
+   "tag": "Democratic record",
+   "id": "e060"
+  },
+  {
+   "y": 2026,
+   "t": "rhet",
+   "j": "Mayor of Providence 2015–2023; CEO, Democrats for Education Reform",
+   "h": "Jorge Elorza — statement",
+   "x": "Public education is a goal. It’s not a particular set of institutions.",
+   "src": [
+    "Fox News Digital",
+    "https://www.foxnews.com/media/former-democratic-mayor-goes-against-grain-backing-school-choice-calls-party-embrace.amp"
+   ],
+   "tag": "Democratic record",
+   "id": "e061"
+  },
+  {
+   "y": 2026,
+   "t": "rhet",
+   "j": "Pennsylvania House Majority Leader and caucus members",
+   "h": "Matt Bradford & PA House Democrats — legislative shift",
+   "x": "Bradford — who killed the 2023 scholarship program — called some uses of the new federal tax credits “intriguing.” A June 2025 letter signed by ten House Democrats, including five Philadelphians and the head of the Pennsylvania Legislative Black Caucus, asked leadership to expand tax-credit scholarships for students in the lowest-achieving districts.",
+   "src": [
+    "Philadelphia Inquirer",
+    "https://www.inquirer.com/politics/pennsylvania/school-choice-state-federal-funding-pennsylvania-democrats-josh-shapiro-20260628.html"
+   ],
+   "tag": "Democratic record",
+   "id": "e062"
+  },
+  {
+   "y": 2027,
+   "t": "leg",
+   "j": "US",
+   "h": "Federal scholarship tax credit takes effect",
+   "x": "Effective January 2027.",
+   "src": null,
+   "id": "e063"
+  }
+ ]
+}

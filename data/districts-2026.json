@@ -1,0 +1,180 @@
+{
+ "edition": "District response, 2026",
+ "updated": "2026-10-13",
+ "vendor_curve": [
+  {
+   "d": "Jun 2025",
+   "v": 33,
+   "lab": "about 1 in 3",
+   "url": "https://nextstepsblog.org/2025/06/charter-schools-usa-and-step-up-for-students-join-forces-to-expand-options-for-florida-students/"
+  },
+  {
+   "d": "Nov 2025",
+   "v": 51,
+   "lab": "more than half",
+   "url": "https://nextstepsblog.org/2025/10/florida-school-districts-usher-in-the-future-with-options-for-part-time-public-school-students/"
+  },
+  {
+   "d": "Apr 2026",
+   "v": 75,
+   "lab": "50 of 67 approved",
+   "url": "https://www.city-journal.org/article/florida-school-choice-education"
+  },
+  {
+   "d": "Jul 2026",
+   "v": 79,
+   "lab": "53 approved or in process",
+   "url": "https://nextstepsblog.org/2026/07/panel-shares-florida-a-la-carte-learning-story-with-lawmakers-from-across-america/"
+  }
+ ],
+ "types": [
+  {
+   "name": "Defend",
+   "what": "Retention marketing, litigation, lobbying for eligibility limits",
+   "example": "Des Moines hired a marketing firm to win students back",
+   "url": null
+  },
+  {
+   "name": "Absorb",
+   "what": "Charter conversion, magnet expansion, in-district choice",
+   "example": "495 Florida magnet schools by 2013–14",
+   "url": "https://ballotpedia.org/School_choice_in_Florida"
+  },
+  {
+   "name": "Unbundle",
+   "what": "À la carte courses, part-time enrollment, homeschool support",
+   "example": "Colorado part-time programs; St. Vrain APEX",
+   "url": "https://go.boarddocs.com/co/cde/Board.nsf/files/DQD82R1C3A03/$file/2026.01.13%20January%20Bd%20Mtg%20Part-Time%20Programs%20Presentation.pdf"
+  },
+  {
+   "name": "Become a vendor",
+   "what": "Register on the ESA marketplace; sell to non-enrolled students",
+   "example": "53 of 67 Florida districts",
+   "url": "https://nextstepsblog.org/2026/07/panel-shares-florida-a-la-carte-learning-story-with-lawmakers-from-across-america/"
+  },
+  {
+   "name": "Restructure",
+   "what": "Closure, consolidation, portfolio governance",
+   "example": "Orange County closed seven schools; construction paused to 2031",
+   "url": "https://mynews13.com/fl/orlando/news/2026/08/05/students-in-central-florida-go-back-to-school-amid-districts-seeing-lower-enrollment-numbers"
+  },
+  {
+   "name": "No observable response",
+   "what": "Coded explicitly — an absence someone looked for",
+   "example": "West Virginia: zero districts selling into Hope Scholarship",
+   "url": null
+  }
+ ],
+ "examples": [
+  {
+   "name": "Florida districts as ESA vendors",
+   "who": "district",
+   "state": "FL",
+   "year": 2026,
+   "dir": "supply",
+   "what": "53 of 67 districts sell part-time services to scholarship students they don't enroll.",
+   "src": [
+    [
+     "Next Steps, July 2026",
+     "https://nextstepsblog.org/2026/07/panel-shares-florida-a-la-carte-learning-story-with-lawmakers-from-across-america/"
+    ],
+    [
+     "Step Up For Students — Contracted Public Schools",
+     "https://www.stepupforstudents.org/contracted-public-schools/"
+    ]
+   ],
+   "lib": "district-responses",
+   "link": "#research/districts"
+  },
+  {
+   "name": "Miami-Dade County Public Schools",
+   "who": "district",
+   "state": "FL",
+   "year": 2026,
+   "dir": "supply",
+   "what": "Opened 95+ classes to students it doesn't enroll.",
+   "src": [
+    [
+     "City Journal",
+     "https://www.city-journal.org/article/florida-school-choice-education"
+    ]
+   ],
+   "lib": "district-responses"
+  },
+  {
+   "name": "Polk County Public Schools × WonderHere",
+   "who": "district",
+   "state": "FL",
+   "year": 2025,
+   "dir": "compete",
+   "what": "Bought a microschool model from a private operator founded by two former Polk teachers.",
+   "src": [
+    [
+     "FEE",
+     "https://fee.org/articles/why-one-school-district-is-launching-new-microschool-inspired-classrooms/"
+    ]
+   ],
+   "lib": "district-responses"
+  },
+  {
+   "name": "Elizabeth City-Pasquotank Public Schools",
+   "who": "district",
+   "state": "NC",
+   "year": 2025,
+   "dir": "compete",
+   "what": "Opened a 26-student public microschool modeled on private ones.",
+   "src": [
+    [
+     "EdSurge",
+     "https://www.edsurge.com/news/2025-09-22-at-this-rural-microschool-students-will-study-with-ai-and-run-an-airbnb"
+    ]
+   ],
+   "lib": "district-responses"
+  },
+  {
+   "name": "Indiana Microschool Collaborative",
+   "who": "district",
+   "state": "IN",
+   "year": 2025,
+   "dir": "compete",
+   "what": "A district-led network of public microschools, targeting 10+ schools by 2030.",
+   "src": [
+    [
+     "Hechinger Report",
+     "https://hechingerreport.org/are-microschools-a-solution-to-falling-public-school-enrollment-one-district-thinks-so/"
+    ]
+   ],
+   "lib": "district-responses"
+  },
+  {
+   "name": "St. Vrain Valley — APEX",
+   "who": "district",
+   "state": "CO",
+   "year": 2026,
+   "dir": "supply",
+   "what": "District-run part-time program for homeschoolers; Colorado funds ~18,700 such students.",
+   "src": [
+    [
+     "CDE board presentation, Jan 2026",
+     "https://go.boarddocs.com/co/cde/Board.nsf/files/DQD82R1C3A03/$file/2026.01.13%20January%20Bd%20Mtg%20Part-Time%20Programs%20Presentation.pdf"
+    ]
+   ],
+   "lib": "district-responses"
+  },
+  {
+   "name": "North Carolina DPI — “Find Your Fit”",
+   "who": "district",
+   "state": "NC",
+   "year": 2026,
+   "dir": "fortify",
+   "what": "A state agency marketing the full menu of choices inside public education.",
+   "src": [
+    [
+     "NC DPI",
+     "https://www.dpi.nc.gov/blog/2026/01/27/find-your-fit-build-your-future-nc-public-schools"
+    ]
+   ],
+   "lib": "district-responses"
+  }
+ ]
+}

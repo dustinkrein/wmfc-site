@@ -4,193 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>When Money Follows the Child</title>
-<meta name="description" content="Independent research on how colleges, universities and school districts respond when K–12 funding follows the student.">
+<meta name="description" content="When K–12 funding follows the student, how do colleges and universities respond? And who is leading?">
 <meta property="og:title" content="When Money Follows the Child">
 <meta property="og:description" content="Families got options. Educators mostly didn't. We track what colleges and universities do about it.">
 <meta property="og:type" content="website">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<style>
-:root{
-  --ox:#6E1F2C;--ox2:#A35A66;--ox3:#D9B4BB;--oxt:#F5EAEC;
-  --ink:#1A1A1C;--ink2:#44444A;--ink3:#6E6E76;
-  --bg:#FFFFFF;--bg2:#F6F6F4;--card:#FFFFFF;--line:#E2E2DE;--lined:#C9C9C3;--onox:#FFFFFF;
-  --f:Georgia,"Times New Roman",serif;
-  --s:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --ox:#D07A88;--ox2:#9C4C59;--ox3:#5A2A33;--oxt:#2A1A1E;
-  --ink:#EDEBE8;--ink2:#C9C7C3;--ink3:#9C9A95;
-  --bg:#141315;--bg2:#1B1A1D;--card:#1E1D20;--line:#323036;--lined:#4A4750;--onox:#141315;}}
-:root[data-theme="dark"]{
-  --ox:#D07A88;--ox2:#9C4C59;--ox3:#5A2A33;--oxt:#2A1A1E;
-  --ink:#EDEBE8;--ink2:#C9C7C3;--ink3:#9C9A95;
-  --bg:#141315;--bg2:#1B1A1D;--card:#1E1D20;--line:#323036;--lined:#4A4750;--onox:#141315;}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 var(--s)}
-a{color:var(--ox);text-underline-offset:3px}
-a:hover{text-decoration-thickness:2px}
-.w{max-width:1080px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:var(--f);font-weight:400;line-height:1.15;margin:0}
-.f{color:var(--ox);font-style:italic}
-.kick{font:600 12px/1.2 var(--s);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
-.src{font-size:12.5px;color:var(--ink3)}
-.src a{color:var(--ink3)}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
-
-/* masthead */
-.bar{height:4px;background:var(--ox)}
-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header .w{display:flex;align-items:center;gap:18px;min-height:58px}
-.wm{font:19px/1.1 var(--f);color:var(--ink);text-decoration:none;white-space:nowrap}
-nav{display:flex;gap:2px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
-nav::-webkit-scrollbar{display:none}
-nav a{font-size:14px;color:var(--ink2);text-decoration:none;padding:8px 10px;border-radius:6px;white-space:nowrap}
-nav a:hover{background:var(--bg2);color:var(--ink)}
-.tog{border:1px solid var(--line);background:var(--card);color:var(--ink2);width:36px;height:36px;border-radius:50%;cursor:pointer;flex:none;display:grid;place-items:center}
-.tog:hover{border-color:var(--lined)}
-@media (max-width:760px){header .w{flex-wrap:wrap;gap:6px 12px;padding-top:10px}nav{order:3;width:100%;margin:0 -10px;padding-bottom:4px}.tog{margin-left:auto}}
-
-/* hero */
-.hero{padding:64px 0 40px}
-.hero h1{font-size:clamp(40px,7vw,76px);letter-spacing:-.01em;margin:14px 0 18px}
-.lede{font-size:clamp(17px,2.1vw,20px);color:var(--ink2);max-width:660px;margin:0}
-.q{margin-top:28px;border-left:3px solid var(--ox);padding:4px 0 4px 18px;max-width:760px}
-.q b{display:block;font:600 12px/1.2 var(--s);letter-spacing:.12em;text-transform:uppercase;color:var(--ox);margin-bottom:6px}
-.q p{margin:0;font:clamp(18px,2.2vw,22px)/1.4 var(--f)}
-
-/* stat ledger */
-.ledger{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);margin-top:44px}
-.ledger>div{padding:18px 18px 4px 0;border-right:1px solid var(--line)}
-.ledger>div:last-child{border-right:0}
-.ledger>div+div{padding-left:18px}
-.big{font:clamp(38px,5vw,58px)/1 var(--f);color:var(--ink)}
-.big.hot{color:var(--ox)}
-.ledger p{margin:8px 0 6px;font-size:14px;color:var(--ink2);line-height:1.4}
-.side{font:600 11px/1 var(--s);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-top:44px;display:flex;gap:10px;align-items:center}
-.side span{flex:1;height:1px;background:var(--line)}
-@media (max-width:760px){.ledger{grid-template-columns:1fr 1fr}.ledger>div{border-right:0;border-bottom:1px solid var(--line);padding:16px 0 10px!important}.ledger>div:nth-child(odd){padding-right:14px!important;border-right:1px solid var(--line)}.ledger>div:nth-child(even){padding-left:14px!important}}
-
-/* sections */
-section{padding:72px 0;border-top:1px solid var(--line)}
-section.alt{background:var(--bg2)}
-.sh{display:grid;grid-template-columns:72px 1fr;gap:0 20px;margin-bottom:34px}
-.num{font:44px/1 var(--f);color:var(--ox3)}
-.sh h2{font-size:clamp(28px,3.6vw,40px)}
-.sh p{margin:10px 0 0;color:var(--ink2);max-width:640px}
-@media (max-width:760px){.sh{grid-template-columns:1fr}.num{font-size:28px;margin-bottom:6px}section{padding:56px 0}}
-.grid2{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
-@media (max-width:860px){.grid2{grid-template-columns:1fr;gap:30px}}
-.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px}
-.callout{font:clamp(22px,2.6vw,28px)/1.3 var(--f);margin:0 0 12px}
-.callout em{color:var(--ox)}
-.more{display:inline-block;margin-top:18px;font-weight:600;font-size:15px;text-decoration:none}
-.more:after{content:" →"}
-
-/* bars */
-.bars{display:grid;gap:12px}
-.br{display:grid;grid-template-columns:118px 1fr 44px;align-items:center;gap:12px;font-size:14px}
-.br .t{height:26px;background:var(--bg2);border-radius:3px;overflow:hidden}
-.alt .br .t{background:var(--card)}
-.br .fi{height:100%;background:var(--lined);border-radius:3px;transition:width 900ms cubic-bezier(.2,.7,.2,1)}
-.br.hl .fi{background:var(--ox)}
-.br .v{font:20px/1 var(--f);text-align:right}
-.br.hl .v,.br.hl .l{color:var(--ox);font-weight:600}
-.gapnote{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:14px;color:var(--ink2)}
-.gapnote b{font:28px/1 var(--f);color:var(--ox);font-weight:400}
-
-/* direction legend + chips */
-.dirs{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;margin-bottom:26px}
-@media (max-width:860px){.dirs{grid-template-columns:1fr 1fr}}
-.dir{border:1px solid var(--line);background:var(--card);border-radius:10px;padding:14px;cursor:pointer;text-align:left;color:var(--ink);font:inherit;transition:border-color .15s}
-.dir:hover{border-color:var(--lined)}
-.dir[aria-pressed="true"]{border-color:var(--ox);box-shadow:inset 0 0 0 1px var(--ox)}
-.dir .sw{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:7px;vertical-align:-1px}
-.dir b{font:18px/1.2 var(--f);font-weight:400}
-.dir small{display:block;color:var(--ink3);font-size:12.5px;line-height:1.35;margin-top:6px}
-.dir .c{float:right;font:18px/1.2 var(--f);color:var(--ink3)}
-.sw.compete{background:var(--ox)}.sw.supply{background:var(--ox2)}.sw.fortify{background:var(--ink3)}.sw.open{background:var(--card);border:2px solid var(--ox)}.sw.evidence{background:var(--ox3)}.sw.none{background:transparent;border:1.5px dashed var(--lined)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
-@media (max-width:900px){.cards{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.cards{grid-template-columns:1fr}}
-.rc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:8px}
-.rc .m{display:flex;gap:8px;align-items:center;font-size:12px;color:var(--ink3);letter-spacing:.04em;text-transform:uppercase;font-weight:600}
-.rc h3{font-size:18px}
-.rc p{margin:0;font-size:14px;color:var(--ink2)}
-.rc a{font-size:13px;margin-top:auto}
-.rc[hidden],.dir[hidden]{display:none}
-
-/* waffle */
-.waffle{display:grid;grid-template-columns:repeat(12,1fr);gap:5px;max-width:420px}
-.cell{aspect-ratio:1;border-radius:3px;position:relative}
-.cell.compete{background:var(--ox)}.cell.supply{background:var(--ox2)}.cell.fortify{background:var(--ink3)}.cell.evidence{background:var(--ox3)}.cell.none{border:1.5px dashed var(--lined)}
-.cell:hover,.cell:focus{outline:2px solid var(--ink);outline-offset:1px}
-.wtip{min-height:44px;margin-top:14px;font-size:14px;color:var(--ink2)}
-.wtip b{font-family:var(--f);font-weight:400;font-size:18px;color:var(--ink)}
-.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--ink2);margin-top:14px}
-.legend span{display:inline-flex;align-items:center;gap:6px}
-.legend i{width:12px;height:12px;border-radius:2px;display:inline-block}
-
-/* stacked bar */
-.stack{display:flex;height:42px;border-radius:4px;overflow:hidden;gap:2px;margin:6px 0 10px}
-.stack>div{display:flex;align-items:center;justify-content:center;font:600 14px var(--s);color:var(--onox);min-width:0;transition:flex-grow 900ms cubic-bezier(.2,.7,.2,1)}
-.stack .t1{background:var(--ox)}.stack .t2{background:var(--ox2)}.stack .t3{background:var(--ox3);color:var(--ink)}.stack .t0{background:transparent;border:1.5px dashed var(--lined);color:var(--ink3)}
-.dots{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 6px}
-.dot{width:22px;height:22px;border-radius:50%}
-.dot.t1{background:var(--ox)}.dot.t2{background:var(--ox2)}.dot.t3{background:var(--ox3)}.dot.t0{border:1.5px dashed var(--lined)}
-.tierkey{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
-@media (max-width:640px){.tierkey{grid-template-columns:1fr 1fr}}
-.tierkey div{font-size:13px;color:var(--ink2);line-height:1.35}
-.tierkey b{display:flex;gap:6px;align-items:center;font-family:var(--f);font-weight:400;font-size:16px;color:var(--ink);margin-bottom:3px}
-
-/* line chart */
-svg text{font-family:var(--s)}
-.chart{width:100%;height:auto;display:block;overflow:visible}
-
-/* heatmap */
-.heat{display:grid;grid-template-columns:150px repeat(5,1fr);gap:4px;font-size:13px}
-.heat .h{color:var(--ink3);font-size:12px;text-align:center;line-height:1.25;padding-bottom:4px}
-.heat .r{color:var(--ink2);display:flex;align-items:center}
-.heat .r.pl{color:var(--ox);font-weight:600}
-.heat .c{height:38px;border-radius:3px;display:grid;place-items:center;font:15px var(--f)}
-.heat .c.z{border:1.5px dashed var(--lined);color:var(--ink3)}
-@media (max-width:640px){.heat{grid-template-columns:96px repeat(5,1fr);font-size:12px}.heat .h{font-size:10px}}
-
-/* atlas bar + notes */
-.cols3{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
-@media (max-width:900px){.cols3{grid-template-columns:1fr 1fr}}
-@media (max-width:560px){.cols3{grid-template-columns:1fr}}
-.col{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;display:flex;flex-direction:column}
-.col .k{font:600 11px/1 var(--s);letter-spacing:.12em;text-transform:uppercase;color:var(--ox)}
-.col h3{font-size:18px;margin:10px 0 8px}
-.col h3 a{color:var(--ink);text-decoration:none}
-.col h3 a:hover{color:var(--ox)}
-.col p{margin:0 0 12px;font-size:14px;color:var(--ink2);display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
-.col .d{margin-top:auto;font-size:12px;color:var(--ink3)}
-.corr{border:1px solid var(--ox3);background:var(--oxt);border-radius:10px;padding:20px 22px}
-.corr .kick{color:var(--ox)}
-.corr h3{font-size:20px;margin:8px 0}
-.corr p{margin:0;font-size:14.5px;color:var(--ink2)}
-
-/* principles + footer */
-.pr{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
-@media (max-width:860px){.pr{grid-template-columns:1fr 1fr}}
-.pr h3{font-size:18px;margin-bottom:6px}
-.pr p{margin:0;font-size:14px;color:var(--ink2)}
-footer{border-top:1px solid var(--line);padding:36px 0 48px;font-size:14px;color:var(--ink3)}
-footer .w{display:flex;flex-wrap:wrap;gap:12px 28px;justify-content:space-between}
-footer a{color:var(--ink2)}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
-@media print{header,.tog{display:none}section{break-inside:avoid}}
-</style>
+<link rel="stylesheet" href="/assets/wmfc.css">
+<script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
 <div class="bar"></div>
 <header><div class="w">
   <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
-  <nav aria-label="Sections">
-    <a href="#gap">The gap</a><a href="#response">Who's moving</a><a href="#universities">Universities</a><a href="#index">Readiness Index</a><a href="#history">History</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a>
-  </nav>
+  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
   <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
   </button>
@@ -198,63 +24,68 @@ footer a{color:var(--ink2)}
 
 <main>
 <div class="hero"><div class="w">
-  <div class="kick">Independent research · Florida first · Updated October 2026</div>
   <h1>Families got options.<br>Educators mostly <span class="f">didn't</span>.</h1>
   <p class="lede">An entire field measures what families do with portable school funding. We measure what the institutions that prepare and employ educators do about it.</p>
-  <div class="q"><b>The question</b><p>When K–12 funding follows the student, how do colleges, universities and school districts respond, and who is leading?</p></div>
+  <div class="q"><b>The question</b><p>When K–12 funding follows the student, how do colleges and universities respond? And who is leading?</p></div>
 
-  <div class="side">The demand side moved<span></span>The supply side didn't</div>
+  <div class="side">Where families went<span></span>Public money, new kinds of school</div>
   <div class="ledger" id="ledger">
     <div><div class="big" data-n="53" data-suf="%">53%</div><p>of Florida K–12 students use an option other than their assigned school, 2025–26</p><div class="src"><a href="https://www.yahoo.com/news/politics/articles/florida-school-choice-redefining-public-160001588.html">Yahoo News</a></div></div>
-    <div><div class="big" data-n="750" data-suf="K+">750K+</div><p>U.S. students in microschools, 2025</p><div class="src">National Microschooling Center</div></div>
-    <div><div class="big hot" data-n="34" data-suf="%">34%</div><p>of teachers feel prepared to teach in a microschool</p><div class="src"><a href="https://www.edchoice.org/wp-content/uploads/2023/10/Surfing-the-Pipeline.pdf">EdChoice, 2023</a></div></div>
+    <div><div class="big">420K</div><p>Florida students on the state's two largest scholarship programs</p><div class="src"><a href="https://www.edchoice.org/2026-edchoice-participation-rankings/">EdChoice, 2026</a></div></div>
+    <div><div class="big">93K</div><p>Florida homeschool students projected to be funded through the PEP scholarship, 2025–26</p><div class="src"><a href="https://www.wlrn.org/education/2026-08-13/some-florida-homeschool-parents-are-denied-state-funding-but-why">WLRN, 2026</a></div></div>
+    <div><div class="big" data-n="750" data-suf="K+">750K+</div><p>U.S. students in microschools, 2025</p><div class="src"><a href="https://www.the74million.org/article/exclusive-report-as-movement-grows-microschools-arent-so-micro-anymore/">The 74, citing RAND</a></div></div>
+  </div>
+  <div class="side">Who prepares their teachers<span></span>The supply side didn't move</div>
+  <div class="ledger" id="ledger2">
+    <div><div class="big hot">11 of 11</div><p>Florida certification routes end in a district, charter or charter network</p><div class="src"><a href="https://www.fldoe.org/teaching/certification/pathways-routes/">FLDOE</a></div></div>
+    <div><div class="big hot" data-n="34" data-suf="%">34%</div><p>of teachers feel prepared to teach in a microschool, against 87% for a district school</p><div class="src"><a href="https://www.edchoice.org/wp-content/uploads/2023/10/Surfing-the-Pipeline.pdf">EdChoice, 2023</a></div></div>
     <div><div class="big hot">0.7%</div><p>of Arizona ESA spending reaches colleges, though the law allows it</p><div class="src"><a href="https://www.azed.gov/sites/default/files/2026/06/ESA%20FY26%20Q3%20Executive%20_%20%20Legislative%20Report.pdf">AZ Dept. of Education</a></div></div>
+    <div><div class="big hot">0 of 81</div><p>universities prepare educators for microschools, hybrid schools or homeschool support</p><div class="src"><a href="/universities/">The university scan</a></div></div>
   </div>
 </div></div>
 
 <section id="gap" class="alt"><div class="w">
-  <div class="sh"><div class="num">01</div><div><h2>The preparedness cliff</h2><p>Teachers feel ready for the schools that are shrinking and unready for the ones that are growing.</p></div></div>
+  <div class="sh"><div class="num">01</div><div><h2>Teachers are ready for one kind of school</h2><p>Families now choose private, charter, religious, virtual, hybrid and home-based options. Teacher readiness falls with each step away from the district school.</p></div></div>
   <div class="grid2">
-    <div class="card">
+    <div class="card" id="fig-prep">
       <div class="kick" style="margin-bottom:14px">Teachers who feel prepared to teach in each setting</div>
       <div class="bars" id="prep" role="img" aria-label="Public district 87%, private 74%, charter 67%, religious 49%, microschools 34%"></div>
       <div class="gapnote"><b>53</b><span>point drop from the district school to the microschool</span></div>
       <div class="src" style="margin-top:12px">Source: <a href="https://www.edchoice.org/wp-content/uploads/2023/10/Surfing-the-Pipeline.pdf">EdChoice, <i>Surfing the Pipeline</i> (2023)</a>, survey of teachers.</div>
     </div>
     <div>
-      <p class="callout">In Florida, <em>11 of 11</em> certification routes end in a district, charter or CMO.</p>
-      <p class="src" style="margin-top:0"><a href="https://www.fldoe.org/teaching/certification/pathways-routes/">FLDOE certification routes</a></p>
+      <p class="callout">The fastest-growing options are the ones <em>no one</em> prepares teachers for.</p>
+      <p style="color:var(--ink2);font-size:15px;margin-top:0">Microschools, hybrid schools, homeschool co-ops, online schools and ESA-funded tutors and providers. The survey asked about microschools; the other settings were not measured at all.</p>
       <p class="callout" style="margin-top:28px">U.S. teacher-prep enrollment is down <em>a third</em> since 2010–11.</p>
       <p class="src" style="margin-top:0">Title II data via CEEPA / NCTQ</p>
       <p class="callout" style="margin-top:28px"><em>0 of 5</em> major choice research groups track how teacher-prep institutions respond.</p>
-      <p class="src" style="margin-top:0">EdChoice, ExcelinEd, Heritage, Center for Education Reform, Cato. <a href="/about/">Where WMFC fits</a></p>
+      <p class="src" style="margin-top:0">EdChoice, ExcelinEd, Heritage, Center for Education Reform, Cato. <a href="/method/#about">Where WMFC fits</a></p>
     </div>
   </div>
 </div></section>
 
-<section id="response"><div class="w">
-  <div class="sh"><div class="num">02</div><div><h2>Who's moving, and which way</h2><p>Every response gets one direction. Tap a direction to filter. Each card links to its source.</p></div></div>
+<section id="universities"><div class="w">
+  <div class="sh"><div class="num">02</div><div><h2>81 universities, three lists, one answer</h2><p>Florida first, then the 71 AAU research universities and the U.S. News Most Innovative. Each bar splits one list by how its universities respond.</p></div></div>
+  <div class="grid2">
+    <div class="card" id="fig-lists"><div class="lbars" id="lbars"><p class="src">Loading…</p></div></div>
+    <div>
+      <p class="callout">On every list, <em>more than half</em> show no response we could find.</p>
+      <p style="color:var(--ink2);font-size:15px">Where universities do respond, it is mostly outside the education school: university-run online schools like <a href="https://www.asuprepdigital.org/about/">ASU Prep Digital</a>, which takes Arizona ESA funds, or <a href="https://www.revenue.alabama.gov/wp-content/uploads/2024/12/CHOOSE-Act-Alabama-ESPs.pdf">Auburn</a>, a registered Alabama ESA provider.</p>
+      <div class="look" style="margin-top:22px"><label class="kick" for="look" style="display:block;margin-bottom:8px">Look up a university</label><input id="look" type="search" placeholder="Type a university or state, e.g. Purdue or FL" autocomplete="off"><div class="sugg" id="sugg" hidden></div></div>
+      <div class="tries" id="tries">Try <button type="button">Arizona State</button> <button type="button">UCF</button> <button type="button">MIT</button> <button type="button">Notre Dame</button></div>
+    </div>
+  </div>
+  <div id="answer" aria-live="polite"></div>
+  <a class="more" href="/universities/">Explore every university</a>
+</div></section>
+
+<section id="response" class="alt"><div class="w">
+  <div class="sh"><div class="num">03</div><div><h2>Who's moving, and which way</h2><p>Every response gets one direction. Tap a direction to filter. Each card links to its source.</p></div></div>
   <div class="dirs" id="dirs"></div>
   <div class="cards" id="cards"></div>
   <button class="dir" id="showall" type="button" style="margin-top:12px;text-align:center;width:auto;padding:10px 18px">Show all</button>
   <p class="src" style="margin-top:18px">Verified examples only. A card records what an institution did, not whether it was a good idea.</p>
-</div></section>
-
-<section id="universities" class="alt"><div class="w">
-  <div class="sh"><div class="num">03</div><div><h2>71 research universities, one question</h2><p>We scanned the education schools of every AAU member for responses to portable funding. Hover or tap a square.</p></div></div>
-  <div class="grid2">
-    <div class="card">
-      <div class="waffle" id="waffle" role="img" aria-label="71 AAU universities by direction of response"></div>
-      <div class="wtip" id="wtip" aria-live="polite">Each square is one university.</div>
-      <div class="legend" id="wleg"></div>
-    </div>
-    <div>
-      <p class="callout"><em>47 of 71</em> showed no response we could find. Most of the rest are strengthening public schools or selling to states.</p>
-      <p style="color:var(--ink2);font-size:15px">The universities that compete for portable funds mostly do it outside the education school, through university-run schools like <a href="https://asuprepdigital.org/blog/own-your-learning-with-asu-prep-digital-and-an-empowerment-scholarship-account">ASU Prep Digital</a>, an approved vendor for Arizona ESA funds. Teacher prep for non-public schools exists, but it serves older sectors: Catholic (<a href="https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school">Notre Dame ACE</a>) and independent (<a href="https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed">Penn's residency</a>).</p>
-      <p class="callout" style="margin-top:22px">None prepares educators for <em>microschools</em> or hybrid schools.</p>
-      <p class="src">Limit: a first-pass scan of public university sources, October 2026. "None observed" means not found in that scan, not proven absent.</p>
-    </div>
-  </div>
+  <a class="more" href="/leaders/">See who is leading</a>
 </div></section>
 
 <section id="index"><div class="w">
@@ -281,16 +112,16 @@ footer a{color:var(--ink2)}
       <p class="callout">Where Florida institutions engage, they <em>sponsor schools</em>. They do not build programs.</p>
       <p style="color:var(--ink2);font-size:15px">All four Florida Tier 1 rows are charter sponsors: one university and three state colleges. UF and FSU run lab schools, but neither uses them to prepare educators for this sector.</p>
       <p class="callout" style="margin-top:22px">Holding a license is the line. <em>Nothing</em> in the Index serves the unlicensed slice.</p>
-      <p style="color:var(--ink2);font-size:15px">That slice is microschools, homeschool co-ops and ESA vendors, where 750,000 students now learn.</p>
+      <p style="color:var(--ink2);font-size:15px">That slice is microschools, hybrid schools, homeschool co-ops and ESA providers: the fastest-growing part of the market.</p>
       <a class="more" href="/research/">Open the full Index</a>
     </div>
   </div>
 </div></section>
 
 <section class="alt"><div class="w">
-  <div class="sh"><div class="num">05</div><div><h2>Districts moved faster than universities</h2><p>Florida districts that sell part-time services to scholarship students they do not enroll.</p></div></div>
+  <div class="sh"><div class="num">05</div><div><h2>The comparison: districts moved faster</h2><p>Districts lose enrollment directly, so they are the benchmark. The share of Florida districts that sell part-time services to scholarship students they do not enroll:</p></div></div>
   <div class="grid2">
-    <div class="card">
+    <div class="card" id="fig-curve">
       <svg class="chart" id="curve" viewBox="0 0 560 280" role="img" aria-label="Share of Florida districts selling to scholarship students: about 33% in June 2025, 51% in November 2025, 75% in April 2026, 79% in July 2026"></svg>
       <div class="src">Sources: <a href="https://nextstepsblog.org/2025/06/charter-schools-usa-and-step-up-for-students-join-forces-to-expand-options-for-florida-students/">Jun 2025</a> · <a href="https://nextstepsblog.org/2025/10/florida-school-districts-usher-in-the-future-with-options-for-part-time-public-school-students/">Nov 2025</a> · <a href="https://www.city-journal.org/article/florida-school-choice-education">Apr 2026</a> · <a href="https://nextstepsblog.org/2026/07/panel-shares-florida-a-la-carte-learning-story-with-lawmakers-from-across-america/">Jul 2026</a></div>
     </div>
@@ -298,15 +129,15 @@ footer a{color:var(--ink2)}
       <p class="callout"><em>53 of 67</em> Florida districts sell to students they don't enroll.</p>
       <p style="color:var(--ink2);font-size:15px">They went from about one in three to about three in four in a year. Over the same period, the Index found no Florida education-school program built for this sector.</p>
       <p class="callout" style="margin-top:22px">One district <em>bought</em> its microschool model from two former teachers.</p>
-      <a class="more" href="/notes/09/">Read Field Note 09</a>
+      <a class="more" href="/districts/">How districts respond</a> &nbsp; <a class="more" href="/notes/09/">Field Note 09</a>
     </div>
   </div>
 </div></section>
 
 <section id="history"><div class="w">
-  <div class="sh"><div class="num">06</div><div><h2>Four lanes of highway. One never paved.</h2><p>384 years of school-funding history in five tracks. Darker means more recorded events. The postsecondary lane stays empty until 1995.</p></div></div>
+  <div class="sh"><div class="num">06</div><div><h2>Four lanes of highway. One never paved.</h2><p>384 years of school-funding history in five tracks. Darker means more recorded events. Tap a cell to see what happened.</p></div></div>
   <div class="card"><div class="heat" id="heat" role="img" aria-label="Events per era and track. Postsecondary response: none before 1990, 3 from 1990 to 2010, 5 since 2011."></div></div>
-  <a class="more" href="/workbench.html#research/chronology">Explore the full chronology</a>
+  <div id="heatd" class="limit" style="min-height:48px" aria-live="polite">Tap a shaded cell to see its events.</div>
 </div></section>
 
 <section class="alt"><div class="w">
@@ -372,10 +203,20 @@ footer a{color:var(--ink2)}
 </div></section>
 </main>
 
-<footer><div class="w">
-  <div>When Money <span class="f">Follows</span> the Child · Independent research by Dustin J. Krein, Ed.D.</div>
-  <div><a href="/about/">About</a> · <a href="/data/">Data</a> · <a href="/method/">Method</a> · <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a></div>
-</div></footer>
+<footer><div class="w"><div class="cols">
+  <div>
+    <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
+    <p style="margin:0 0 8px;max-width:40ch">Research on how colleges and universities respond when K–12 funding follows the student.</p>
+    <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
+  </div>
+  <div><div class="fh">How universities respond</div>
+    <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
+  </div>
+  <div><div class="fh">The comparison and the record</div>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+  </div>
+</div></div></footer>
+<script src="/assets/wmfc.js"></script>
 
 <script>
 window.WMFC_HOME={
@@ -385,15 +226,13 @@ window.WMFC_HOME={
 {"n":"ASU Prep Digital","s":"AZ","d":"compete","w":"Arizona State runs an online K–12 school that accepts Arizona ESA funds.","u":"https://www.asuprepdigital.org/about/"},
 {"n":"Julie Young","s":"FL · AZ","d":"compete","w":"Founded Florida Virtual School, then built ASU Prep. One career carried the model across two states.","u":"https://search.asu.edu/profile/3127527"},
 {"n":"Notre Dame ACE Academies","s":"FL · AZ","d":"compete","w":"A university-managed network of Catholic schools, including in the Diocese of St. Petersburg, drawing on parental-choice programs.","u":"https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school"},
+{"n":"Auburn University","s":"AL","d":"compete","w":"A registered provider under Alabama's CHOOSE Act ESA, listed as an online K–12 private school.","u":"https://www.revenue.alabama.gov/wp-content/uploads/2024/12/CHOOSE-Act-Alabama-ESPs.pdf"},
 {"n":"FAU High School","s":"FL","d":"compete","w":"University-run high school; graduates leave with about three years of college credit.","u":"https://fauhigh.fau.edu/aboutus/index.php"},
-{"n":"Polk County × WonderHere","s":"FL","d":"compete","w":"A district bought a microschool model from a private operator founded by two former Polk teachers.","u":"https://fee.org/articles/why-one-school-district-is-launching-new-microschool-inspired-classrooms/"},
-{"n":"Indiana Microschool Collaborative","s":"IN","d":"compete","w":"A district-led network of public microschools, targeting 10+ schools by 2030.","u":"https://hechingerreport.org/are-microschools-a-solution-to-falling-public-school-enrollment-one-district-thinks-so/"},
 {"n":"Purdue Polytechnic High School","s":"IN","d":"compete","w":"Closing its South Bend campus: 112 students against a planned 500.","u":"https://www.chalkbeat.org/indiana/2026/02/10/purdue-polytechnic-high-school-close-south-bend-campus/"},
-{"n":"Florida districts as ESA vendors","s":"FL","d":"supply","w":"53 of 67 districts sell part-time services to scholarship students they don't enroll.","u":"https://nextstepsblog.org/2026/07/panel-shares-florida-a-la-carte-learning-story-with-lawmakers-from-across-america/"},
 {"n":"Florida Virtual School","s":"FL","d":"supply","w":"Hosts certification internships for 30+ partner institutions. Non-district placement already works at scale.","u":"https://www.flvs.net/about-us/who-we-are/careers/internships"},
 {"n":"Rio Salado College","s":"AZ","d":"supply","w":"9,700 dual-enrollment students; half its 408 associate degrees go to one charter network.","u":"https://www.riosalado.edu/news/2025/400-high-school-students-track-earn-college-degrees-rio-salado-celebrates-record-dual-enrollment"},
+{"n":"George Mason University","s":"VA","d":"supply","w":"An online M.Ed. concentration in Independent School Leadership, for leaders in independent, charter or private schools.","u":"https://cehd.gmu.edu/education-leadership/med-isl-concentration"},
 {"n":"Penn Independent School Teaching Residency","s":"PA","d":"supply","w":"A two-year residency staffing 21 independent boarding and day schools.","u":"https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed"},
-{"n":"St. Vrain Valley APEX","s":"CO","d":"supply","w":"District-run part-time program for homeschoolers; Colorado funds about 18,700 such students.","u":"https://go.boarddocs.com/co/cde/Board.nsf/files/DQD82R1C3A03/$file/2026.01.13%20January%20Bd%20Mtg%20Part-Time%20Programs%20Presentation.pdf"},
 {"n":"UF Lastinger Center","s":"FL","d":"fortify","w":"Vetted and evaluated private tutoring vendors for the state's public-school tutoring program.","u":"https://lastinger.ufl.edu/wp-content/uploads/2026/04/uf-lastinger-center-fta-pilot-spring-2025-aug-2025-remediated.pdf"},
 {"n":"UCF Center for Community Schools","s":"FL","d":"fortify","w":"43 Community Partnership Schools inside existing public schools; state funding nearly doubled in 2024.","u":"https://www.ucf.edu/news/state-funding-increase-to-drive-growth-in-community-partnership-schools/"},
 {"n":"Miami Dade College","s":"FL","d":"fortify","w":"Hosts a district-run dual-enrollment high school on five campuses.","u":"https://mdc.edu/schoolforadvancedstudies/"},
@@ -401,14 +240,6 @@ window.WMFC_HOME={
 {"n":"Southeastern University","s":"FL","d":"open","w":"Places candidates in public or private schools. The most permissive provider surveyed.","u":"https://library.seu.edu/sites/default/files/2023-10/COE%20Policy%20Handbook%202023%20pdf.pdf"},
 {"n":"Valencia College EPI","s":"FL","d":"open","w":"Field experience allowed in approved private schools.","u":"https://valenciacollege.edu/academics/programs/educator-preparation-institute/field-experience.php"}
 ],
-"aau":{
-"compete":["Arizona State","Notre Dame","Stanford","Indiana","Missouri"],
-"supply":["Pennsylvania","Columbia","Vanderbilt","Brandeis","George Washington","Northwestern","Johns Hopkins","Iowa","Kansas","Wisconsin–Madison","Oregon","Rice"],
-"fortify":["Florida","Chicago","Michigan","Michigan State"],
-"evidence":["Tulane","Colorado Boulder","Harvard"],
-"none":["Boston University","Brown","Buffalo","Caltech","Carnegie Mellon","Case Western Reserve","Cornell","Dartmouth","Duke","Emory","Georgia Tech","Illinois Urbana-Champaign","Maryland","McGill","Miami","Minnesota","MIT","North Carolina","NYU","Ohio State","Penn State","Pittsburgh","Princeton","Purdue","Rochester","Rutgers","South Florida","Southern California","Stony Brook","Texas A&M","Texas at Austin","Toronto","Tufts","UC Berkeley","UC Davis","UC Irvine","UCLA","UC Riverside","UC San Diego","UC Santa Barbara","UC Santa Cruz","Arizona","Utah","Virginia","Washington","Washington University","Yale"]
-},
-"aauLabels":{"compete":"Compete","supply":"Supply","fortify":"Fortify","evidence":"Studies or debates it","none":"None observed"},
 "fl":[["t1",4],["t2",3],["t3",4],["t0",10]],
 "curve":[["Jun 2025",33,"about 1 in 3"],["Nov 2025",51,"more than half"],["Apr 2026",75,"50 of 67"],["Jul 2026",79,"53 approved or in process"]],
 "eras":["1642–1874","1875–1953","1954–1989","1990–2010","2011–today"],
@@ -423,14 +254,7 @@ var reduced=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").ma
 function el(t,c,h){var e=document.createElement(t);if(c)e.className=c;if(h!=null)e.innerHTML=h;return e;}
 function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
 
-/* theme */
-var root=document.documentElement;
-try{var saved=localStorage.getItem("wmfc-theme");if(saved)root.setAttribute("data-theme",saved);}catch(e){}
-document.getElementById("tog").onclick=function(){
-  var dark=root.getAttribute("data-theme")?root.getAttribute("data-theme")==="dark":matchMedia("(prefers-color-scheme: dark)").matches;
-  var next=dark?"light":"dark";root.setAttribute("data-theme",next);
-  try{localStorage.setItem("wmfc-theme",next);}catch(e){}
-};
+
 
 /* once-only arrival animation; content is fully drawn without it */
 function onSee(node,fn){
@@ -486,18 +310,56 @@ function render(){
 }
 render();
 
-/* AAU waffle */
-var wf=document.getElementById("waffle"),tip=document.getElementById("wtip"),leg=document.getElementById("wleg");
-var order=["compete","supply","fortify","evidence","none"],sw={compete:"var(--ox)",supply:"var(--ox2)",fortify:"var(--ink3)",evidence:"var(--ox3)"};
-order.forEach(function(k){
-  var list=D.aau[k];
-  var s=el("span");s.innerHTML='<i class="'+(k==="none"?"":"")+'" style="'+(k==="none"?"border:1.5px dashed var(--lined)":"background:"+sw[k])+'"></i>'+esc(D.aauLabels[k])+" "+list.length;leg.appendChild(s);
-  list.forEach(function(name){
-    var c=el("div","cell "+k);c.tabIndex=0;c.setAttribute("aria-label",name+": "+D.aauLabels[k]);c.title=name+" — "+D.aauLabels[k];
-    c.onmouseenter=c.onfocus=c.onclick=function(){tip.innerHTML="<b>"+esc(name)+"</b><br>"+esc(D.aauLabels[k]);};
-    wf.appendChild(c);
+
+/* figure tools */
+var W=window.WMFC;
+W.countUp(document.getElementById("ledger2"));
+W.figTools(document.getElementById("fig-prep"),{title:"Teachers who feel prepared to teach in each setting",cols:["Setting","Teachers who feel prepared (%)"],rows:D.prep.map(function(r){return [r[0],r[1]];}),file:"wmfc-preparedness"});
+W.figTools(document.getElementById("fig-curve"),{title:"Florida districts selling part-time services to scholarship students",cols:["Date","Share of districts (%)","Count"],rows:D.curve.map(function(c){return [c[0],c[1],c[2]];}),file:"wmfc-district-vendors"});
+
+/* three lists + lookup */
+var LAB={compete:"Compete",supply:"Supply",fortify:"Fortify",evidence:"Studies or debates it",none:"None observed"},ORD=["compete","supply","fortify","evidence","none"];
+var LENS={1:"Prep beyond public schools",2:"Services to non-public students",3:"Market & vendor",4:"Campus debate"};
+var LN={florida:"Florida",aau:"AAU",innovative:"U.S. News Most Innovative"};
+W.json("/data/universities-2026.json").then(function(U){
+  var ALL=U.institutions,lb=document.getElementById("lbars"),rows=[];lb.innerHTML="";
+  [["florida","Florida"],["aau","AAU research universities"],["innovative","U.S. News Most Innovative"]].forEach(function(L){
+    var set=ALL.filter(function(r){return r.lists.indexOf(L[0])>-1;}),n=set.length,resp=set.filter(function(r){return r.direction!=="none";}).length;
+    var box=el("div","lb");box.innerHTML='<div class="lh"><b>'+esc(L[1])+'</b><span>'+n+' universities · '+Math.round(100*resp/n)+'% respond</span></div>';
+    var seg=el("div","seg");
+    ORD.forEach(function(d){var g=set.filter(function(r){return r.direction===d;});if(!g.length)return;
+      var c=el("div",d,String(g.length));c.style.flexGrow=g.length;
+      var html="<b>"+esc(L[1])+" · "+esc(LAB[d])+" ("+g.length+")</b>"+esc(g.map(function(r){return r.name;}).join(", "));
+      c.addEventListener("mousemove",function(e){W.tip(html,e);});c.addEventListener("mouseleave",function(){W.tip(null);});
+      seg.appendChild(c);rows.push([L[1],LAB[d],g.length,g.map(function(r){return r.name;}).join("; ")]);});
+    box.appendChild(seg);lb.appendChild(box);W.growStack(seg);
   });
-});
+  var lg=el("div","legend");ORD.forEach(function(d){lg.innerHTML+='<span><i class="sw d-'+d+'"></i>'+esc(LAB[d])+'</span>';});lb.appendChild(lg);
+  W.figTools(document.getElementById("fig-lists"),{title:"Three lists, one answer: how universities respond to portable K–12 funding",cols:["List","Response","Universities","Names"],rows:rows,file:"wmfc-three-lists"});
+
+  var inp=document.getElementById("look"),sg=document.getElementById("sugg"),ans=document.getElementById("answer");
+  function show(r){
+    sg.hidden=true;inp.value=r.name;
+    var lens=[1,2,3,4].map(function(l){return '<span class="'+(r.lenses.indexOf(l)>-1?"on":"")+'">'+(r.lenses.indexOf(l)>-1?"● ":"○ ")+esc(LENS[l])+'</span>';}).join("");
+    var lists=r.lists.map(function(l){return LN[l]+(l==="innovative"&&r.innov_rank?" (No. "+r.innov_rank+")":"");}).join(" · ");
+    var top=r.initiatives&&r.initiatives[0];
+    ans.innerHTML='<div class="answer"><div class="m" style="display:flex;gap:8px;align-items:center;font:600 12px var(--s);letter-spacing:.06em;text-transform:uppercase;color:var(--ink3)"><span class="sw d-'+r.direction+'"></span>'+esc(LAB[r.direction])+' · '+esc(r.state)+'</div><h3>'+esc(r.name)+'</h3><div style="font-size:13.5px;color:var(--ink3)">'+esc(lists)+' · '+esc(r.unit)+'</div><div class="ln">'+lens+'</div>'+
+      '<p><b>Response to portable funding:</b> '+(r.response?esc(r.response)+" "+(r.response_url?W.link(r.response_url,"Source"):""):"None observed in this scan. That means not found, not proven absent.")+'</p>'+
+      (top?'<p><b>Strongest education work:</b> '+esc(top.name)+(r.portfolio!=null?' · innovation score '+r.portfolio.toFixed(1)+' of 20':'')+'</p>':'')+
+      '<p style="margin-top:12px"><a href="/universities/?list='+(r.lists.indexOf("florida")>-1?"florida":r.lists[0])+'#all">See it alongside the rest</a></p></div>';
+  }
+  function suggest(){
+    var t=inp.value.trim().toLowerCase();if(!t){sg.hidden=true;return;}
+    var hit=ALL.filter(function(r){return r.name.toLowerCase().indexOf(t)>-1||r.state.toLowerCase()===t;}).slice(0,8);
+    sg.innerHTML=hit.map(function(r,i){return '<button type="button" data-i="'+ALL.indexOf(r)+'">'+esc(r.name)+'<small>'+esc(r.state)+' · '+esc(LAB[r.direction])+'</small></button>';}).join("")||'<button type="button" disabled>No match yet. Not every university is coded.</button>';
+    sg.hidden=false;
+    Array.prototype.forEach.call(sg.querySelectorAll("button[data-i]"),function(b){b.addEventListener("click",function(){show(ALL[+b.dataset.i]);});});
+  }
+  inp.addEventListener("input",suggest);
+  inp.addEventListener("keydown",function(e){if(e.key==="Enter"){var b=sg.querySelector("button[data-i]");if(b){e.preventDefault();b.click();}}if(e.key==="Escape")sg.hidden=true;});
+  document.addEventListener("click",function(e){if(!e.target.closest(".look"))sg.hidden=true;});
+  Array.prototype.forEach.call(document.querySelectorAll("#tries button"),function(b){b.addEventListener("click",function(){var r=ALL.filter(function(x){return x.name===b.textContent;})[0];if(r)show(r);});});
+}).catch(function(){document.getElementById("lbars").innerHTML='<p class="src">Could not load the university data.</p>';});
 
 /* Florida dots */
 var fd=document.getElementById("fldots");
@@ -528,6 +390,15 @@ onSee(svg,function(reset){
 });
 
 /* history heatmap */
+var CHR=null,TK={"Law & courts":"law","Legislation":"leg","Rhetoric":"rhet","District response":"dist","Postsecondary response":"post"};
+function showCell(tr,i,cell){
+  var hd=document.getElementById("heatd");
+  Array.prototype.forEach.call(document.querySelectorAll("#heat .c"),function(x){x.style.outline="";});cell.style.outline="2px solid var(--ink)";
+  function draw(){var yr=D.eras[i].split(/[–-]/),a=+yr[0],b=yr[1]==="today"?2100:+yr[1];
+    var ev=CHR.events.filter(function(e){return e.t===TK[tr[0]]&&e.y>=a&&e.y<=b;});
+    hd.innerHTML="<b>"+esc(tr[0])+", "+esc(D.eras[i])+"</b><ul style=\"margin:6px 0 0;padding-left:18px\">"+ev.map(function(e){return "<li><b>"+e.y+"</b> "+esc(e.h)+(e.src?" · "+window.WMFC.link(e.src[1],e.src[0]):"")+"</li>";}).join("")+"</ul>";}
+  if(CHR)draw();else window.WMFC.json("/data/chronology-2026.json").then(function(d){CHR=d;draw();});
+}
 var hm=document.getElementById("heat"),max=12;
 hm.appendChild(el("div","h",""));
 D.eras.forEach(function(e){hm.appendChild(el("div","h",esc(e)));});
@@ -537,18 +408,12 @@ D.tracks.forEach(function(tr){
     var c=el("div","c"+(v?"":" z"),v?String(v):"0");
     if(v){var a=.18+.82*Math.min(v/max,1);c.style.background="color-mix(in srgb,var(--ox) "+Math.round(a*100)+"%,var(--card))";c.style.color=a>.5?"var(--onox)":"var(--ink)";}
     c.title=tr[0]+", "+D.eras[i]+": "+v+" recorded events";
+    if(v){c.style.cursor="pointer";c.tabIndex=0;c.addEventListener("click",function(){showCell(tr,i,c);});c.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();showCell(tr,i,c);}});}
     hm.appendChild(c);
   });
 });
 
-/* derived numbers from the Index data (HTML ships correct fallbacks) */
-var dn=document.querySelectorAll("[data-derive]");
-if(dn.length&&window.fetch){fetch("/data/scan-2026.json").then(function(r){return r.ok?r.json():null;}).then(function(d){
-  if(!d||!d.institutions)return;var I=d.institutions,st={};I.forEach(function(r){st[r.state]=1;});
-  function n(f){return I.filter(f).length;}
-  var v={total:I.length,states:Object.keys(st).length,tier1:n(function(r){return r.tier==="Tier 1";}),tier2:n(function(r){return r.tier==="Tier 2";}),tier3:n(function(r){return r.tier==="Tier 3";}),tier0:n(function(r){return r.tier==="Tier 0";})};
-  Array.prototype.forEach.call(dn,function(e){var k=e.dataset.derive;if(k in v){e.textContent=String(v[k]);var p=e.parentNode;if(p&&p.parentNode===stack)p.style.flexGrow=p.dataset.g=v[k];}});
-}).catch(function(){});}
+
 })();
 </script>
 </body>

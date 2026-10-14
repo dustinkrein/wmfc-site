@@ -3,68 +3,21 @@
 
 Usage, from the repo root:   python3 tools/build-notes.py
 
-Add a note to data/field-notes.json (newest first), rerun, commit, push.
-Nothing else in the site needs editing — the homepage reads the same JSON at load.
+Add a note to the top of data/field-notes.json (newest first), rerun, add the
+new /notes/NN/ URL to sitemap.xml, commit, push. The page shell (masthead,
+navigation, footer) comes from tools/shell.py, shared with every page.
 """
 import json, os, sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from shell import page, question_line  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC = os.path.join(ROOT, "data", "field-notes.json")
 SITE = "https://www.whenmoneyfollowsthechild.org"
 
-HEAD = """<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>{title}</title>
-<meta name="description" content="{desc}">
-<link rel="canonical" href="{canonical}">
-<meta property="og:title" content="{ogtitle}">
-<meta property="og:description" content="{desc}">
-<meta property="og:type" content="{ogtype}">
-<meta property="og:url" content="{canonical}">
-<meta property="og:site_name" content="When Money Follows the Child">
-<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="/assets/wmfc.css">
-</head><body>
-
-<div class="rule"></div>
-<header><div class="w">
-  <a class="wm" href="/">WM<span class="f">F</span>C</a>
-  <span class="wmsub">When Money Follows the Child</span>
-  <nav>
-    <a href="/research/">Readiness Index</a><a href="/atlas/">Atlas</a>
-    <a href="/notes/"{notecur}>Field Notes</a>
-    <a href="/method/">Method</a>
-    <a href="/about/">About</a>
-  </nav>
-</div></header>
-"""
-
-FOOT = """
-<footer>
-  <div class="rule"></div>
-  <div class="w">
-    <div>
-      <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
-      <p>Independent, nonpartisan research on how postsecondary institutions respond as K-12 education funding becomes portable.</p>
-      <p><a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a></p>
-    </div>
-    <div><div class="h">Research</div>
-      <a href="/research/">Readiness Index</a>
-      <a href="/atlas/">Portable-Funding Atlas</a><a href="/research/international-precedents/">International Precedents</a><a href="/notes/">Field Notes</a><a href="/data/">Data &amp; downloads</a>
-      <a href="/method/#corrections">Corrections</a>
-    </div>
-    <div><div class="h">About</div>
-      <a href="/method/">Method</a>
-      <a href="/about/#independence">Funding &amp; independence</a>
-      <a href="/about/#contact">Contact</a>
-    </div>
-  </div>
-</footer>
-<script src="/assets/wmfc.js"></script>
-</body></html>
-"""
+# Which part of the site's question each tag speaks to
+PART = {}  # every note answers the respond part of the question
 
 
 def esc_attr(s):
@@ -85,81 +38,88 @@ def strip_tags(s):
 
 
 def note_page(note, prev_note, next_note):
-    desc = esc_attr(strip_tags(note["standfirst"]))[:300]
     canonical = "%s/notes/%s/" % (SITE, note["slug"])
-    html = HEAD.format(
-        title="Field Note %s — %s" % (note["n"], esc_attr(strip_tags(note["title"]))),
-        desc=desc,
-        canonical=canonical,
-        ogtitle=esc_attr(strip_tags(note["title"])),
-        ogtype="article",
-        notecur="",
-    )
-    html += """
-<div class="hero short"><div class="w-narrow" style="padding:0">
-  <div class="kick">Field Note %s &middot; %s</div>
-  <h1>%s</h1>
-  <p class="lede">%s</p>
+    body = """
+<div class="hero sm"><div class="w">
+  <div class="crumb"><a href="/notes/">Field Notes</a></div>
+  <h1 style="font-size:clamp(30px,4.4vw,48px);max-width:900px">%s</h1>
+  <p class="lead2">%s</p>
+  %s
 </div></div>
 
-<section><div class="w-narrow" style="padding:0">
-""" % (note["n"], note["date"], note["title"], note["standfirst"])
+<section><div class="w"><div class="prose">
+""" % (note["title"], note["standfirst"], question_line("respond"))
 
     for para in note["body"]:
-        html += "  <p>%s</p>\n" % para
+        body += "  <p>%s</p>\n" % para
 
-    html += "\n  <h2>Sources</h2>\n  <ul>\n"
+    body += '\n  <h2>Sources</h2>\n  <ul class="srcs">\n'
     for s in note["sources"]:
-        html += '    <li><a href="%s">%s</a></li>\n' % (s["url"], s["label"])
-    html += "  </ul>\n"
+        body += '    <li><a href="%s">%s</a></li>\n' % (s["url"], s["label"])
+    body += "  </ul>\n"
+    body += ('\n  <p class="fine" style="margin-top:22px">Cite as: When Money Follows the Child. '
+             '<i>%s</i> Field Note %s, %s. %s Accessed [date].</p>\n'
+             % (strip_tags(note["title"]).rstrip("."), note["n"], note["date"], canonical))
 
-    html += ('\n  <p class="fine">Cite as: When Money Follows the Child. '
-             '<i>%s.</i> Field Note %s, %s. %s Accessed [date].</p>\n'
-             % (strip_tags(note["title"]), note["n"], note["date"], canonical))
-
-    html += '\n  <p style="margin-top:26px">'
     links = []
-    if next_note:
-        links.append('<a href="/notes/%s/">&larr; Field Note %s</a>' % (next_note["slug"], next_note["n"]))
+    links.append('<a href="/notes/%s/">&larr; Field Note %s</a>' % (next_note["slug"], next_note["n"])
+                 if next_note else "<span></span>")
     links.append('<a href="/notes/">All Field Notes</a>')
-    if prev_note:
-        links.append('<a href="/notes/%s/">Field Note %s &rarr;</a>' % (prev_note["slug"], prev_note["n"]))
-    html += " &nbsp;&middot;&nbsp; ".join(links)
-    html += "</p>\n</div></section>\n"
-    return html + FOOT
+    links.append('<a href="/notes/%s/">Field Note %s &rarr;</a>' % (prev_note["slug"], prev_note["n"])
+                 if prev_note else "<span></span>")
+    body += '  <div class="notenav">%s</div>\n</div></div></section>\n' % "".join(links)
+
+    return page("Field Note %s — %s" % (note["n"], strip_tags(note["title"])),
+                strip_tags(note["standfirst"])[:300],
+                "/notes/%s/" % note["slug"], "/notes/", body, ogtype="article")
 
 
 def index_page(notes):
-    html = HEAD.format(
-        title="Field Notes — When Money Follows the Child",
-        desc="Short findings published between editions of the WMFC Readiness Index. Each one is a single number, institution or pattern, with its evidence.",
-        canonical="%s/notes/" % SITE,
-        ogtitle="Field Notes",
-        ogtype="website",
-        notecur=' aria-current="page"',
-    )
-    html += """
-<div class="hero short"><div class="w-narrow" style="padding:0">
-  <div class="kick">Field Notes</div>
-  <h1>Short findings, between editions.</h1>
-  <p class="lede">A single number, institution or pattern, with its evidence and its limits. Every note has a permanent address so it can be cited, checked and argued with.</p>
+    tags = []
+    for n in notes:
+        if n["tag"] not in tags:
+            tags.append(n["tag"])
+    chips = '<button class="chip" type="button" data-k="all" aria-pressed="true">All <span class="n">%d</span></button>' % len(notes)
+    for t in tags:
+        chips += ('<button class="chip" type="button" data-k="%s" aria-pressed="false">%s <span class="n">%d</span></button>'
+                  % (esc_attr(t), t, sum(1 for n in notes if n["tag"] == t)))
+    cards = ""
+    for n in notes:
+        cards += """    <div class="col" data-tag="%s"><div class="k">%s</div>
+      <h3><a href="/notes/%s/">%s</a></h3>
+      <p>%s</p>
+      <div class="d">Field Note %s &middot; %s</div></div>
+""" % (esc_attr(n["tag"]), n["tag"], n["slug"], n["title"], n["standfirst"], n["n"], n["date"])
+
+    body = """
+<div class="hero sm"><div class="w">
+  <h1>Short findings, <span class="f">between</span> editions.</h1>
+  <p class="lead2">One number, institution or pattern, with its evidence and its limits. Every note has a permanent address so it can be cited, checked and argued with.</p>
+  %s
 </div></div>
 
-<section><div class="w-narrow" style="padding:0">
-"""
-    for note in notes:
-        html += """  <div class="note" style="margin-bottom:18px">
-    <div class="k">%s</div>
-    <h3 style="margin:6px 0 8px"><a href="/notes/%s/">%s</a></h3>
-    <p>%s</p>
-    <div class="d">Field Note %s &middot; %s</div>
-  </div>
-""" % (note["tag"], note["slug"], note["title"], note["standfirst"], note["n"], note["date"])
-
-    html += """  <p class="fine" style="margin-top:24px">Field Notes are free to read, quote and cite. Every one carries its sources and the date each was checked.</p>
+<section class="alt"><div class="w">
+  <div class="tools" id="tags">%s</div>
+  <div class="cols3" id="notes" style="grid-template-columns:repeat(3,1fr)">
+%s  </div>
 </div></section>
+""" % (question_line("respond"), chips, cards)
+
+    scripts = """<script>
+(function(){
+"use strict";
+var chips=document.querySelectorAll("#tags .chip"),cards=document.querySelectorAll("#notes .col");
+Array.prototype.forEach.call(chips,function(c){c.addEventListener("click",function(){
+  Array.prototype.forEach.call(chips,function(x){x.setAttribute("aria-pressed",String(x===c));});
+  Array.prototype.forEach.call(cards,function(n){n.hidden=c.dataset.k!=="all"&&n.dataset.tag!==c.dataset.k;});
+});});
+})();
+</script>
+<style>@media (max-width:900px){#notes{grid-template-columns:1fr 1fr!important}}@media (max-width:560px){#notes{grid-template-columns:1fr!important}}#notes .col[hidden]{display:none}</style>
 """
-    return html + FOOT
+    return page("Field Notes — When Money Follows the Child",
+                "Short findings published between editions: one number, institution or pattern, with its evidence and limits.",
+                "/notes/", "/notes/", body, scripts)
 
 
 def homepage_block(notes):
@@ -208,7 +168,7 @@ def main():
 
     written = []
     for i, note in enumerate(notes):
-        prev_note = notes[i - 1] if i > 0 else None          # newer
+        prev_note = notes[i - 1] if i > 0 else None               # newer
         next_note = notes[i + 1] if i + 1 < len(notes) else None  # older
         d = os.path.join(ROOT, "notes", note["slug"])
         os.makedirs(d, exist_ok=True)
@@ -216,7 +176,6 @@ def main():
         open(p, "w", encoding="utf-8", newline="\n").write(note_page(note, prev_note, next_note))
         written.append(p)
 
-    os.makedirs(os.path.join(ROOT, "notes"), exist_ok=True)
     p = os.path.join(ROOT, "notes", "index.html")
     open(p, "w", encoding="utf-8", newline="\n").write(index_page(notes))
     written.append(p)

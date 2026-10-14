@@ -1,316 +1,187 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>The WMFC Readiness Index — 2026 Baseline</title>
-<meta name="description" content="State-by-state: does the educator workforce exist to staff what portable-funding policy enables? 39 institutions coded across 9 states, including all eight Michigan university charter authorizers.">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Readiness Index — When Money Follows the Child</title>
+<meta name="description" content="Institution by institution: has anyone built the educator workforce that portable K–12 funding needs? The 2026 baseline, Florida and Michigan in full.">
+<link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/research/">
+<meta property="og:title" content="The Readiness Index — When Money Follows the Child">
+<meta property="og:description" content="Institution by institution: has anyone built the educator workforce that portable K–12 funding needs? The 2026 baseline, Florida and Michigan in full.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/research/">
+<meta property="og:site_name" content="When Money Follows the Child">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/wmfc.css">
-</head><body>
-
-<div class="rule"></div>
+<script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<div class="bar"></div>
 <header><div class="w">
-  <a class="wm" href="/">WM<span class="f">F</span>C</a>
-  <span class="wmsub">When Money Follows the Child</span>
-  <nav>
-    <a href="/research/" aria-current="page">Readiness Index</a><a href="/atlas/">Atlas</a>
-    <a href="/notes/">Field Notes</a>
-    <a href="/method/">Method</a>
-    <a href="/about/">About</a>
-  </nav>
+  <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
+  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/" aria-current="page">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
+  <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
 </div></header>
+<main>
 
-<div class="hero"><div class="w">
-  <div class="kick">The Readiness Index · <span id="edition">2026 Baseline</span></div>
-  <h1>Who trains the teachers when the money moves?</h1>
-  <p class="lede">Thirty states fund students instead of systems. <b>750,000+</b> children learn in microschools, and over <b>70%</b> of the people running them are licensed teachers — trained by institutions that have built almost nothing for the sector they left for. This is what universities have actually done.</p>
-  <div class="strip">
-    <div><div class="n" data-count="39" data-derive="total">0</div><div class="l">Coded rows across <span data-derive="states">9</span> states — <span data-derive="institutions">34</span> single institutions, <span data-derive="aggregates">5</span> summary rows</div></div>
-    <div><div class="n hot" data-count="34" data-suffix="%">0</div><div class="l">Teachers who feel prepared for microschools</div></div>
-    <div><div class="n" data-count="8">0</div><div class="l">Michigan public universities that authorize charter schools — all eight now coded</div></div>
-    <div><div class="n" data-count="1">0</div><div class="l">Preparation programs built for the sector found among them</div></div>
+<div class="hero sm"><div class="w">
+  <h1>Who trains the teachers when the money <span class="f">moves</span>?</h1>
+  <p class="lead2">Institution by institution, state by state: has anyone built the educator workforce that portable funding needs? Florida and Michigan are coded in full.</p>
+  <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
+  <div class="ledger" id="ledger">
+    <div><div class="big"><span data-derive="total">39</span></div><p>coded rows across <span data-derive="states">9</span> states</p></div>
+    <div><div class="big"><span data-derive="tier1">11</span></div><p>built for the sector, almost all by running or authorizing schools</p></div>
+    <div><div class="big hot">1</div><p>preparation program built for the sector: Central Michigan's charter leadership M.A.</p></div>
+    <div><div class="big hot">0</div><p>serve the unlicensed slice: microschools, co-ops, ESA vendors</p></div>
   </div>
 </div></div>
 
-<section><div class="w">
-  <div class="note">
-    <b class="h">New this edition · Michigan is complete</b>
-    <p><b>All eight Michigan public universities that authorize charter schools are now coded.</b> The six added in August 2026 — Oakland, Saginaw Valley State, Northern Michigan, Eastern Michigan, Ferris State and Lake Superior State — hold roughly 80 more academies between them. <b>Not one has built a preparation program for the sector.</b> Central Michigan's Charter School Leadership M.A. remains the only one in the scan.</p>
-    <p style="margin-top:10px">The state was the strongest available test of a simple proposition: hold schools long enough and the education college will build for them. Eight institutions, thirty-one years, one program. <b>Proximity is not the mechanism.</b></p>
-  </div>
-
-  <h2>The finding that starts everything</h2>
-  <p class="sub">EdChoice's own survey data — the clearest statement of the problem anyone has published. Teachers were asked how prepared they felt to teach in each kind of school.</p>
-  <div id="prep" style="max-width:640px;margin:22px 0"></div>
-  <p>A <b>53-point fall</b> between the school type preparation programs are built around and the fastest-growing one.</p>
-</div></section>
-
-<section class="gray"><div class="w">
-  <h2>Florida vs. Michigan: the natural experiment</h2>
-  <p class="sub">The two states now anchor the whole argument.</p>
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">01</div><div><h2>Florida and Michigan, side by side</h2><p>The two states coded in full. One dot per institution, colored by what it has built. Hover or tap a dot.</p></div></div>
   <div class="grid2">
-    <div class="panel-b" style="border-top-color:var(--ox)">
-      <div class="n" style="font-size:52px;color:var(--ox);line-height:1">0</div>
-      <p style="margin-top:10px"><b>Florida</b> — the most choice money in America (~1.4M students in some option). Programs built for the sector: none. UF's full undergraduate course list contains no choice-related course. But a second pathway opened in 2021 and is moving fast: four Florida institutions now sponsor charter schools — Tallahassee State, Miami Dade, Pasco-Hernando and the University of West Florida — every one of them from an office outside the college of education.</p>
+    <div class="card" id="states"></div>
+    <div>
+      <p class="callout">Where institutions engage, they <em>authorize schools</em>. They do not build programs.</p>
+      <p style="color:var(--ink2);font-size:15px">Florida's Tier 1 rows are all charter sponsors. Michigan's eight university authorizers hold well over 200 schools between them, some since 1994. Across all of them: one preparation program.</p>
+      <p class="callout" style="margin-top:22px">Holding schools did not produce programs.</p>
+      <p style="color:var(--ink2);font-size:15px">Proximity, subsidy and access were each present in Michigan without a single new course.</p>
     </div>
-    <div class="panel-b">
-      <div class="n" style="font-size:52px;line-height:1">1</div>
-      <p style="margin-top:10px"><b>Michigan</b> — all eight public universities that authorize charters are now coded, holding well over 200 schools between them, some since 1994. Across all eight education units: <b>one</b> program built for the sector, Central Michigan's Charter School Leadership M.A.</p>
-    </div>
   </div>
-  <p style="margin-top:20px"><b>The first refinement:</b> Michigan's engagement stops at the licensed boundary. Charter schools employ licensed teachers and licensed administrators — a Charter School Leadership degree maps cleanly onto existing credentials. Microschools, homeschool co-ops and ESA vendors do not. Even in the deepest university-charter state in the country, there is still nothing for the unlicensed slice of the sector — which is where the 750,000 microschool students actually are.</p>
-  <p style="margin-top:14px"><b>The second refinement, new this edition:</b> completing Michigan was designed to test whether holding schools produces programs. It does not. The three institutions whose engagement reaches the education college reach it in every way except curriculum — Oakland houses its authorizing office <i>inside</i> the education school and still offers only generic building-level leadership degrees; Saginaw Valley State discounts existing degrees by 50–75% for academy staff without altering a single course; Northern Michigan uses its nine academies as practicum sites for conventional licensure, so the sector trains teachers for the system rather than the reverse. Proximity, subsidy and access were each present without producing a program. Whatever explains Central Michigan, it is not simply having the schools.</p>
-</div></section>
-
-<section id="coverage"><div class="w">
-  <h2>What has actually been scanned</h2>
-  <p class="sub">Coverage is uneven, and a state total read without its depth will mislead you. Two states have had a systematic pass; six carry a placeholder row. <b>This table is the honest denominator for everything below it.</b></p>
-  <div class="tw"><table>
-    <thead><tr><th>State</th><th>Depth</th><th>Rows</th><th>What was covered</th></tr></thead>
-    <tbody id="cov"><tr><td colspan="4" style="padding:22px">Loading coverage…</td></tr></tbody>
-  </table></div>
-  <h3>How depth is assigned</h3>
-  <div class="tw"><table><tbody id="depths"></tbody></table></div>
-</div></section>
-
-<section id="evidence"><div class="w">
-  <h2>The coded scan</h2>
-  <p class="sub">Click any row for the evidence and source. <b>"Nothing found" is not the same as "nothing there"</b> — always read it against the Checked column and against the coverage depth above.</p>
-  <div class="ctrl">
-    <input id="q" placeholder="Search institutions, findings, evidence…" aria-label="Search">
-    <select id="fs" aria-label="Filter by state"><option value="">All states</option></select>
-    <select id="ft" aria-label="Filter by category"><option value="">All categories</option>
-      <option value="Tier 1">Built for the sector</option>
-      <option value="Tier 2">Names the sector</option>
-      <option value="Tier 3">Incidental / district-aligned</option>
-      <option value="Tier 0">Nothing found</option></select>
-    <button class="btn ghost" id="clr" hidden>Clear filters</button>
-  </div>
-  <p class="sub" id="cnt" style="margin:-4px 0 10px"></p>
-  <div class="note" id="covnote" hidden style="margin:0 0 14px"></div>
-  <div class="tw"><table>
-    <thead><tr><th>Institution</th><th>State</th><th>Category</th><th>Checked</th></tr></thead>
-    <tbody id="tb"><tr><td colspan="4" style="padding:22px">Loading the dataset…</td></tr></tbody>
-  </table></div>
-  <button class="btn ghost" id="csv">Download CSV</button>
-  <a class="btn ghost" href="/data/scan-2026.json" download>Download JSON</a>
-
-  <h3>How categories are assigned</h3>
-  <div class="tw"><table><tbody id="cats"></tbody></table></div>
-</div></section>
-
-<section class="gray"><div class="w">
-  <h2>Nine gaps in how this is being studied</h2>
-  <p class="sub">Named honestly, including where the strongest organizations in the field stopped short. Offered as openings, not criticisms — most are the natural result of each organization doing its own job well.</p>
-  <div id="gaps"></div>
-  <div class="note">
-    <b class="h">The pattern underneath all nine</b>
-    <p>Every organization measures its own side of the ledger, and measures it well. <b>Nobody owns the seam</b> — whether the workforce exists to staff what the policy enabled. Every gap on this list lives there.</p>
-  </div>
+  <div class="tierkey" id="tierkey" style="margin-top:22px"></div>
 </div></section>
 
 <section><div class="w">
-  <h2>Four competing explanations</h2>
-  <p class="sub">Why have education colleges built so little? The evidence does not yet separate these. Click any row for detail.</p>
-  <div class="tw"><table>
-    <thead><tr><th style="width:44px"></th><th>Explanation</th><th style="width:200px">Status</th></tr></thead>
-    <tbody id="hyp"></tbody>
-  </table></div>
+  <div class="sh"><div class="num">02</div><div><h2>Can a student teacher work in a private school?</h2><p>We read the published clinical-placement policy of ten Florida preparation programs.</p></div></div>
+  <div class="card"><div id="place"></div>
+    <div id="pd" class="limit" style="min-height:44px" aria-live="polite">Tap a program for its policy document.</div></div>
+  <p class="callout" style="margin-top:26px"><em>3 of 10</em> explicitly allow a private-school placement. Most never mention the option.</p>
 </div></section>
 
-<footer>
-  <div class="rule"></div>
-  <div class="w">
-    <div>
-      <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
-      <p>Independent, nonpartisan research on how postsecondary institutions respond as K-12 education funding becomes portable.</p>
-    </div>
-    <div><div class="h">Research</div>
-      <a href="/research/">Readiness Index</a>
-      <a href="/atlas/">Portable-Funding Atlas</a><a href="/research/international-precedents/">International Precedents</a><a href="/notes/">Field Notes</a><a href="/data/">Data &amp; downloads</a>
-      <a href="/method/#corrections">Corrections</a>
-    </div>
-    <div><div class="h">About</div>
-      <a href="/method/">Method</a>
-      <a href="/about/#independence">Funding &amp; independence</a>
-      <a href="/about/#contact">Contact</a>
-    </div>
-  </div>
-</footer>
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">03</div><div><h2>What has actually been read</h2><p>Coverage is uneven. Read any state total against how deeply that state was scanned.</p></div></div>
+  <div class="cards" id="cov"></div>
+</div></section>
 
+<section id="scan"><div class="w">
+  <div class="sh"><div class="num">04</div><div><h2>The coded scan</h2><p>Every row with its evidence, source and the date a person read it. Tap a row.</p></div></div>
+  <div class="tools"><div id="tchips" style="display:contents"></div><select class="search" id="fs" aria-label="Filter by state" style="max-width:190px"></select><span class="count" id="cnt"></span></div>
+  <div class="tblwrap"><table class="tbl" id="tbl">
+    <thead><tr><th>Institution</th><th>State</th><th>Category</th><th>Checked</th></tr></thead>
+    <tbody id="tb"><tr><td colspan="4">Loading the dataset…</td></tr></tbody>
+  </table></div>
+  <p class="src" style="margin-top:12px"><a href="/data/scan-2026.json">Download JSON</a> · <a href="#" id="csv">Download CSV</a></p>
+</div></section>
+
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">05</div><div><h2>Why so little? Four explanations</h2><p>The evidence does not yet separate them. Tap one for the current reading.</p></div></div>
+  <div class="finds" id="hyp"></div>
+  <div class="limit"><b>The limit, first.</b> Cases were found by searching for engagement, which biases every explanation here. Comparison-state nulls are weak and should not be cited. "Nothing found" is never "nothing there." <a href="/method/">Method</a></div>
+</div></section>
+
+</main>
+<footer><div class="w"><div class="cols">
+  <div>
+    <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
+    <p style="margin:0 0 8px;max-width:40ch">Research on how colleges and universities respond when K–12 funding follows the student.</p>
+    <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
+  </div>
+  <div><div class="fh">How universities respond</div>
+    <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
+  </div>
+  <div><div class="fh">The comparison and the record</div>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+  </div>
+</div></div></footer>
 <script src="/assets/wmfc.js"></script>
 <script>
 (function(){
 "use strict";
-var DATA=null;
-function esc(s){return String(s==null?"":s);}
+var W=window.WMFC,esc=W.esc;
+var TC={"Tier 1":"t1","Tier 2":"t2","Tier 3":"t3","Tier 0":"t0"};
+function strip(h){var d=document.createElement("div");d.innerHTML=h;return d.textContent;}
+Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]).then(function(r){
+  var S=r[0],P=r[1],I=S.institutions,CAT=S.categories;
 
-fetch("/data/scan-2026.json")
-  .then(function(r){ if(!r.ok) throw new Error("HTTP "+r.status); return r.json(); })
-  .then(function(d){ DATA=d; render(); })
-  .catch(function(e){
-    document.getElementById("tb").innerHTML =
-      '<tr><td colspan="4" style="padding:22px">Could not load the dataset. '+
-      'If you are viewing this file directly from disk, run a local server '+
-      '(<code>npx serve</code>) — browsers block local file requests.</td></tr>';
+  /* tier key */
+  document.getElementById("tierkey").innerHTML=["Tier 1","Tier 2","Tier 3","Tier 0"].map(function(k){
+    return '<div><b><i class="dot '+TC[k]+'" style="width:12px;height:12px"></i>'+esc(CAT[k].label)+'</b>'+esc(CAT[k].def)+'</div>';}).join("");
+
+  /* 01 two-state dot rows */
+  var box=document.getElementById("states");
+  ["Florida","Michigan"].forEach(function(st){
+    var rows=I.filter(function(x){return x.state===st&&x.scope!=="aggregate";}).sort(function(a,b){return ["Tier 1","Tier 2","Tier 3","Tier 0"].indexOf(a.tier)-["Tier 1","Tier 2","Tier 3","Tier 0"].indexOf(b.tier);});
+    var t1=rows.filter(function(x){return x.tier==="Tier 1";}).length;
+    var h=W.el("div","",'<div class="kick" style="margin:6px 0 8px">'+st+' · '+rows.length+' institutions · '+t1+' built for the sector</div>');
+    var dots=W.el("div","dots");
+    rows.forEach(function(x){
+      var d=W.el("span","dot "+TC[x.tier]);d.tabIndex=0;d.style.cursor="pointer";d.setAttribute("aria-label",strip(x.name)+": "+CAT[x.tier].label);
+      var html="<b>"+x.name+"</b>"+esc(CAT[x.tier].label);
+      d.addEventListener("mousemove",function(e){W.tip(html,e);});d.addEventListener("mouseleave",function(){W.tip(null);});
+      d.addEventListener("click",function(e){W.tip(html,e);});
+      dots.appendChild(d);
+    });
+    h.appendChild(dots);box.appendChild(h);
   });
 
-function render(){
-  document.getElementById("edition").textContent = DATA.edition;
-
-  /* preparedness bars */
-  document.getElementById("prep").innerHTML = DATA.preparedness.map(function(p){
-    return '<div class="row" style="padding:0;border:none;margin-bottom:9px;grid-template-columns:160px 1fr 52px">'+
-      '<span class="lab">'+esc(p.label)+'</span>'+
-      '<span class="track" style="height:20px"><span class="fill'+(p.highlight?"":" mut")+'" data-w="'+p.value+'"></span></span>'+
-      '<span class="v">'+p.value+'%</span></div>';
-  }).join("");
-
-  /* categories legend */
-  document.getElementById("cats").innerHTML = Object.keys(DATA.categories).map(function(k){
-    var c=DATA.categories[k];
-    return '<tr><td style="width:190px"><span class="pill '+c.class+'">'+esc(c.label)+'</span></td><td>'+esc(c.def)+'</td></tr>';
-  }).join("");
-
-  /* state filter */
-  var seen={},opts=[];
-  DATA.institutions.forEach(function(r){ if(!seen[r.state]){seen[r.state]=1;opts.push(r.state);} });
-  document.getElementById("fs").innerHTML='<option value="">All states</option>'+
-    opts.map(function(o){return '<option>'+esc(o)+'</option>';}).join("");
-
-  /* coverage — how much of each state was actually read.
-     Published because a state total read without its depth misleads: Florida's
-     21 rows and Arizona's 1 are not the same kind of claim. */
-  var cov=DATA.coverage||{}, dep=DATA.depths||{};
-  var order={complete:0,partial:1,placeholder:2};
-  var states=opts.slice().sort(function(a,b){
-    var da=(cov[a]||{}).depth, db=(cov[b]||{}).depth;
-    var oa=(da in order)?order[da]:9, ob=(db in order)?order[db]:9;
-    if(oa!==ob) return oa-ob;
-    return countState(b)-countState(a);
+  /* 02 placement */
+  var pl=document.getElementById("place"),pd=document.getElementById("pd"),order=["open","practice","district","restrict","silent"];
+  var shade={open:"var(--ox)",practice:"var(--ox2)",district:"var(--ox3)",restrict:"var(--ink3)",silent:"transparent"};
+  order.forEach(function(k){
+    var list=P.programs.filter(function(p){return p.pos===k;});
+    var row=W.el("div","",'<div style="display:flex;justify-content:space-between;gap:10px;font-size:14px;color:var(--ink2);margin-bottom:6px"><span>'+esc(P.postures[k])+'</span><b style="font:18px Georgia,serif;color:var(--ink)">'+list.length+'</b></div>');
+    row.style.marginBottom="14px";
+    var w=W.el("div","");w.style.cssText="display:flex;flex-wrap:wrap;gap:6px";
+    list.forEach(function(p){
+      var b=W.el("button","chip",esc(p.p));b.type="button";
+      b.style.cssText="font-size:12.5px;"+(k==="silent"?"border-style:dashed":"border-left:5px solid "+shade[k]);
+      b.addEventListener("click",function(){pd.innerHTML="<b>"+esc(p.p)+"</b> ("+esc(p.t)+"): "+esc(P.postures[k])+". "+(p.url?W.link(p.url,"Policy document"):"No public policy document found.");});
+      w.appendChild(b);
+    });
+    row.appendChild(w);pl.appendChild(row);
   });
-  document.getElementById("cov").innerHTML = states.map(function(s){
-    var c=cov[s]||{}, d=dep[c.depth]||{label:"Not recorded",class:"d3"};
-    return '<tr><td class="b">'+esc(s)+'</td>'+
-      '<td><span class="pill '+d.class+'">'+esc(d.label)+'</span></td>'+
-      '<td class="dte">'+countState(s)+'</td>'+
-      '<td>'+esc(c.note||"Coverage not recorded.")+'</td></tr>';
-  }).join("");
-  document.getElementById("depths").innerHTML = Object.keys(dep).map(function(k){
-    var d=dep[k];
-    return '<tr><td style="width:190px"><span class="pill '+d.class+'">'+esc(d.label)+'</span></td><td>'+esc(d.def)+'</td></tr>';
-  }).join("");
 
-  /* gaps */
-  document.getElementById("gaps").innerHTML = DATA.gaps.map(function(g){
-    return '<details style="background:#fff;border:1px solid var(--line);margin-bottom:11px">'+
-      '<summary style="padding:16px 20px;cursor:pointer;list-style:none;display:flex;gap:14px;align-items:baseline">'+
-      '<span style="font-family:var(--f);font-size:14px;font-weight:700;color:var(--ox);width:28px;flex:none">'+esc(g.id)+'</span>'+
-      '<span style="font-weight:650;font-size:15px;color:var(--ink);flex:1">'+esc(g.title)+'</span>'+
-      '<span style="font-size:10.5px;font-weight:700;padding:3px 9px;background:var(--bg2);color:var(--ink3);text-transform:uppercase;letter-spacing:.05em;white-space:nowrap">'+esc(g.who)+'</span>'+
-      '</summary><div style="padding:14px 20px 18px 62px;border-top:1px solid var(--line)">'+
-      '<p style="font-size:13.5px;max-width:none">'+g.body+'</p>'+
-      '<div style="font-size:12.5px;color:var(--ink3);border-left:3px solid var(--oxt);padding-left:12px;margin-top:11px">'+esc(g.evidence)+'</div>'+
-      '</div></details>';
-  }).join("");
+  /* 03 coverage */
+  var cov=document.getElementById("cov");
+  Object.keys(S.coverage).forEach(function(st){
+    var c=S.coverage[st],n=I.filter(function(x){return x.state===st;}).length,dp=S.depths[c.depth];
+    var a=W.el("article","rc",'<div class="m"><span class="sw '+(c.depth==="complete"?"t1":c.depth==="partial"?"t2":"t0")+'"></span>'+esc(dp.label)+'</div><h3>'+esc(st)+' <span style="color:var(--ink3);font-size:15px">· '+n+' row'+(n>1?"s":"")+'</span></h3><p>'+esc(c.note)+'</p>');
+    cov.appendChild(a);
+  });
 
-  /* hypotheses */
-  document.getElementById("hyp").innerHTML = DATA.hypotheses.map(function(h){
-    return '<tr class="ex" tabindex="0"><td class="b">'+esc(h.id)+'</td><td class="b">'+esc(h.name)+'</td>'+
-      '<td class="dte">'+esc(h.status)+'</td></tr>'+
-      '<tr class="dt" hidden><td></td><td colspan="2"><div class="in">'+h.detail+'</div></td></tr>';
-  }).join("");
-  window.wmfcWireRows("#hyp");
-
-  applyHash();
+  /* 04 table */
+  var tb=document.getElementById("tb"),fs=document.getElementById("fs"),cnt=document.getElementById("cnt"),tier="all";
+  var states=[];I.forEach(function(x){if(states.indexOf(x.state)<0)states.push(x.state);});
+  fs.innerHTML='<option value="">All states</option>'+states.map(function(s){return "<option>"+esc(s)+"</option>";}).join("");
+  var tc={};I.forEach(function(x){tc[x.tier]=(tc[x.tier]||0)+1;});
+  W.chips(document.getElementById("tchips"),[{key:"all",label:"All",n:I.length}].concat(["Tier 1","Tier 2","Tier 3","Tier 0"].map(function(k){return {key:k,label:CAT[k].label,n:tc[k]||0,sw:TC[k]};})),function(k){tier=k;draw();});
+  fs.addEventListener("change",draw);
+  function draw(){
+    var rows=I.filter(function(x){return (tier==="all"||x.tier===tier)&&(!fs.value||x.state===fs.value);});
+    cnt.textContent=rows.length+" of "+I.length;
+    tb.innerHTML=rows.map(function(x){
+      return '<tr class="ex"><td class="nm">'+x.name+(x.scope==="aggregate"?' <span style="font-weight:400;color:var(--ink3)">(summary row)</span>':"")+'</td><td>'+esc(x.state)+'</td><td><span class="pill"><span class="sw '+TC[x.tier]+'"></span>'+esc(CAT[x.tier].label)+'</span></td><td style="white-space:nowrap">'+esc(x.checked)+'</td></tr>'+
+             '<tr class="dt" hidden><td colspan="4">'+x.evidence+(x.source?" "+W.link(x.source,"Source"):"")+'</td></tr>';
+    }).join("")||'<tr><td colspan="4">No rows match.</td></tr>';
+    W.wireRows(tb);
+  }
   draw();
-}
+  document.getElementById("csv").addEventListener("click",function(e){e.preventDefault();
+    W.csv(I.map(function(x){return {name:strip(x.name),state:x.state,tier:x.tier,category:CAT[x.tier].label,checked:x.checked,evidence:strip(x.evidence),source:x.source};}),["name","state","tier","category","checked","evidence","source"],"wmfc-readiness-index-2026.csv");});
 
-function countState(s){
-  return DATA.institutions.filter(function(r){return r.state===s;}).length;
-}
-
-function draw(){
-  if(!DATA) return;
-  var q=document.getElementById("q").value.toLowerCase(),
-      s=document.getElementById("fs").value,
-      t=document.getElementById("ft").value, h="", n=0;
-  DATA.institutions.forEach(function(r){
-    if(s&&r.state!==s)return;
-    if(t&&r.tier!==t)return;
-    if(q&&((r.name+r.evidence).toLowerCase().indexOf(q)<0))return;
-    n++;
-    var c=DATA.categories[r.tier]||{label:r.tier,class:"p0"};
-    h+='<tr class="ex" tabindex="0"><td class="b">'+esc(r.name)+'</td><td>'+esc(r.state)+'</td>'+
-       '<td><span class="pill '+c.class+'">'+esc(c.label)+'</span></td><td class="dte">'+esc(r.checked)+'</td></tr>'+
-       '<tr class="dt" hidden><td colspan="4"><div class="in">'+r.evidence+
-       (r.source?'<div style="margin-top:9px"><a href="'+esc(r.source)+'" target="_blank" rel="noopener">Open source ↗</a></div>':'')+
-       '</div></td></tr>';
+  /* 05 hypotheses */
+  var hy=document.getElementById("hyp");
+  S.hypotheses.forEach(function(h){
+    var st=h.status.toLowerCase(),mark=st.indexOf("rejected")===0?"Rejected":st.indexOf("weakened")===0?"Weakened":st.indexOf("strengthened")===0?"Strengthened":"Untested";
+    var c=W.el("div","fc",'<div class="kick">'+esc(h.id)+' · '+mark+'</div><h3>'+esc(h.name)+'</h3><p style="color:var(--ink3);font-size:13.5px">'+esc(h.status)+'</p><button class="chip" type="button" style="margin-top:12px">Read the evidence</button><p class="hd" hidden style="margin-top:12px">'+h.detail+'</p>');
+    if(mark==="Strengthened")c.style.borderColor="var(--ox)";
+    var b=c.querySelector("button"),d=c.querySelector(".hd");
+    b.addEventListener("click",function(){d.hidden=!d.hidden;b.textContent=d.hidden?"Read the evidence":"Hide";});
+    hy.appendChild(c);
   });
-  document.getElementById("tb").innerHTML=h||'<tr><td colspan="4" style="padding:22px;text-align:center">No rows match.</td></tr>';
-  window.wmfcWireRows("#tb");
-
-  /* Say how much of the dataset is in view. A filtered table that does not
-     state its own denominator invites the reader to mistake a slice for the whole. */
-  var total=DATA.institutions.length, filtered=(q||s||t);
-  document.getElementById("cnt").textContent =
-    filtered ? "Showing "+n+" of "+total+" coded rows." : total+" coded rows.";
-  document.getElementById("clr").hidden = !filtered;
-
-  /* When a single state is in view, its coverage depth travels with it —
-     otherwise filtering to Arizona shows one row and no reason for the one. */
-  var note=document.getElementById("covnote"), c=(DATA.coverage||{})[s], d=(DATA.depths||{})[(c||{}).depth];
-  if(s&&c&&d){
-    note.hidden=false;
-    note.innerHTML='<b class="h">'+esc(s)+' — '+esc(d.label)+'</b><p>'+esc(c.note)+'</p>';
-  } else { note.hidden=true; note.innerHTML=""; }
-
-  syncHash(q,s,t);
-}
-
-/* Filter state lives in the URL, so a view can be cited or sent to someone. */
-function syncHash(q,s,t){
-  var p=[];
-  if(s) p.push("state="+encodeURIComponent(s));
-  if(t) p.push("cat="+encodeURIComponent(t));
-  if(q) p.push("q="+encodeURIComponent(q));
-  var h=p.length?"#"+p.join("&"):"";
-  if(h!==location.hash) history.replaceState(null,"",location.pathname+location.search+h);
-}
-
-function applyHash(){
-  var h=location.hash.replace(/^#/,""); if(!h) return;
-  var p={};
-  h.split("&").forEach(function(kv){
-    var i=kv.indexOf("="); if(i<0) return;
-    p[kv.slice(0,i)]=decodeURIComponent(kv.slice(i+1).replace(/\+/g," "));
-  });
-  if(p.state) document.getElementById("fs").value=p.state;
-  if(p.cat)   document.getElementById("ft").value=p.cat;
-  if(p.q)     document.getElementById("q").value=p.q;
-}
-
-["q","fs","ft"].forEach(function(id){
-  var e=document.getElementById(id);
-  e[id==="q"?"oninput":"onchange"]=draw;
-});
-
-document.getElementById("clr").onclick=function(){
-  document.getElementById("q").value="";
-  document.getElementById("fs").value="";
-  document.getElementById("ft").value="";
-  draw();
-};
-
-document.getElementById("csv").onclick=function(){
-  if(!DATA) return;
-  var q=function(v){return '"'+String(v).replace(/<[^>]+>/g,"").replace(/&amp;/g,"&").replace(/"/g,'""')+'"';};
-  var csv="institution,state,category,checked,evidence,source\n"+
-    DATA.institutions.map(function(r){return [r.name,r.state,r.tier,r.checked,r.evidence,r.source].map(q).join(",");}).join("\n");
-  var b=new Blob([csv],{type:"text/csv"}),u=URL.createObjectURL(b),a=document.createElement("a");
-  a.href=u;a.download="wmfc-readiness-index-2026.csv";a.click();
-  setTimeout(function(){URL.revokeObjectURL(u);},400);
-};
+}).catch(function(){document.getElementById("tb").innerHTML='<tr><td colspan="4">Could not load the dataset.</td></tr>';});
 })();
 </script>
-</body></html>
+</body>
+</html>

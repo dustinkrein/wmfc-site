@@ -1,0 +1,75 @@
+{
+ "edition": "Florida placement survey, 2026",
+ "updated": "2026-09-16",
+ "n": 10,
+ "question": "Does the program's published clinical-placement policy allow a student teacher to be placed in a private school?",
+ "postures": {
+  "open": "Explicitly open to private schools",
+  "practice": "Open in practice — named non-district partners",
+  "district": "District-framed — names only districts",
+  "restrict": "Restrictive via mentor definition",
+  "silent": "Silent or not public"
+ },
+ "programs": [
+  {
+   "p": "University of Central Florida",
+   "t": "public",
+   "pos": "open",
+   "url": "https://ccie.ucf.edu/wp-content/uploads/sites/8/2017/09/StudentTeachingHandbook.pdf"
+  },
+  {
+   "p": "Valencia College (EPI)",
+   "t": "public",
+   "pos": "open",
+   "url": "https://valenciacollege.edu/academics/programs/educator-preparation-institute/field-experience.php"
+  },
+  {
+   "p": "Southeastern University",
+   "t": "private",
+   "pos": "open",
+   "url": "https://library.seu.edu/sites/default/files/2023-10/COE%20Policy%20Handbook%202023%20pdf.pdf"
+  },
+  {
+   "p": "University of North Florida",
+   "t": "public",
+   "pos": "practice",
+   "url": "https://www.unf.edu/fie/partners.html"
+  },
+  {
+   "p": "Florida Atlantic University",
+   "t": "public",
+   "pos": "district",
+   "url": "https://www.fau.edu/education/students/school-engagement/programs/studentteaching/"
+  },
+  {
+   "p": "Florida International University",
+   "t": "public",
+   "pos": "district",
+   "url": "https://case.fiu.edu/opportunities/internships-jobs/clinical-experiences/educator-preparation-internships/"
+  },
+  {
+   "p": "St. Petersburg College",
+   "t": "public",
+   "pos": "district",
+   "url": null
+  },
+  {
+   "p": "University of South Florida",
+   "t": "public",
+   "pos": "restrict",
+   "url": "https://www.usf.edu/education/documents/academics/internship-requirements/coedu-handbook-for-final-internship.pdf"
+  },
+  {
+   "p": "Florida State University",
+   "t": "public",
+   "pos": "silent",
+   "url": null
+  },
+  {
+   "p": "University of West Florida",
+   "t": "public",
+   "pos": "silent",
+   "url": "https://uwf.edu/soe/resources/office-of-clinical-placements-and-partnerships/student-teaching-and-internship/"
+  }
+ ]
+}

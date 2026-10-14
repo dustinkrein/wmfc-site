@@ -1,8 +1,104 @@
 {
   "edition": "2026",
-  "updated": "2026-08-08",
+  "updated": "2026-10-13",
   "note": "Source of truth for Field Notes. Add an entry here, then run tools/build-notes.py to regenerate /notes/ and each permalink page.",
   "notes": [
+    {
+      "n": "09",
+      "slug": "09",
+      "tag": "The seam",
+      "date": "August 2026",
+      "iso": "2026-08-15",
+      "title": "A Florida district needed a school model. It bought one from a microschool operator.",
+      "standfirst": "Polk County contracted a private microschool founded by two teachers who had left a Polk County public school. The Index has coded 21 Florida institutions and found no education-school program built for this sector. Both facts describe the same state in the same year.",
+      "body": [
+        "This Index's Florida finding is an absence: the most portable education money in America, and no education-school program built for the sector it funds. This note records what filled that absence in one district.",
+        "In 2025 the Polk County school board unanimously approved a two-year contract with <b>WonderHere</b> to bring its microschool model into Philip O'Brien Elementary. WonderHere was founded in 2016 by two teachers who had left a Polk County public school. It now runs a state-approved private school of roughly 120 full-time students, plus about 300 students in weekly homeschool enrichment, with additional locations in Florida and South Carolina. Its founders have said since the beginning that their aim was to influence public education.",
+        "<b>A public district bought instructional design and staff training from a private microschool operator.</b> It did not buy them from a college of education, a state research arm, or a regional service agency.",
+        "The sourcing pattern is not confined to Florida. <b>Elizabeth City-Pasquotank Public Schools</b> in North Carolina — about 4,800 students, roughly 70% economically disadvantaged — opened a 26-student middle-grades microschool where students help run an Airbnb and learn with AI tutoring. The design came from visits to more than 40 schools, including private microschools in Texas. The staffing arithmetic is why design was the binding problem: three teachers and one support staffer are meant eventually to cover four grade levels and about 65 students. Superintendent Keith Parker put it plainly — three people are not going to be able to teach four grade levels.",
+        "<b>The limit, before the conclusion.</b> One contract and one out-of-state case are not a pattern. We have not established that any Florida college of education declined this work, was approached, or knew it was available. We have established only where two districts went. Neither school has achievement data, and this note makes no claim about whether either model works. Florida is a systematic pass in the 2026 baseline, but <a href=\"/notes/06/\">Field Note 06</a> records that 25 Florida state colleges remain unscanned. A program could exist that we have not found.",
+        "<b>What it does establish is a dated demand signal.</b> Districts in the state with the most portable funding in the country are purchasing school-model design on the open market. Somebody is being trained and paid to do that work. Identifying who — and whether any postsecondary institution is among them — is a supply-and-workforce question rather than a program-catalog one, which is the seam this Index was built to watch."
+      ],
+      "sources": [
+        {
+          "label": "FEE — Why one school district is launching new microschool-inspired classrooms",
+          "url": "https://fee.org/articles/why-one-school-district-is-launching-new-microschool-inspired-classrooms/"
+        },
+        {
+          "label": "EdSurge — At this rural microschool, students will study with AI and run an Airbnb",
+          "url": "https://www.edsurge.com/news/2025-09-22-at-this-rural-microschool-students-will-study-with-ai-and-run-an-airbnb"
+        },
+        {
+          "label": "EdTech Magazine — Rural school districts embrace artificial intelligence",
+          "url": "https://edtechmagazine.com/k12/article/2025/12/rural-school-districts-embrace-artificial-intelligence"
+        },
+        {
+          "label": "Getting Smart, Learner-Centered Collaborative & Transcend — The Public Microschool Playbook",
+          "url": "https://www.gettingsmart.com/2025/05/14/the-public-microschool-playbook-a-new-actionable-guide-for-system-leaders/"
+        },
+        {
+          "label": "WMFC Field Note 06 — Florida built a second door, and we walked past it",
+          "url": "/notes/06/"
+        }
+      ]
+    },
+    {
+      "n": "08",
+      "slug": "08",
+      "tag": "Institutions",
+      "date": "August 2026",
+      "iso": "2026-08-15",
+      "title": "Three-quarters of Florida districts now sell to students they do not enroll",
+      "standfirst": "District participation in Florida's part-time scholarship marketplace went from roughly one in three to about 75% of 67 districts in twelve months. Texas districts, offered state money for a comparable arrangement, mostly declined. The contrast is the finding.",
+      "body": [
+        "<b>The limit, before the conclusion.</b> These are participation counts, not revenue. No Florida district has published what it earns from this channel, and a district can be an approved provider with two listed courses and no students. Until district Annual Financial Reports separate the line, “districts are becoming vendors” is a behavioural claim and not a financial one.",
+        "Florida's Step Up For Students operates a <b>Contracted Public Schools</b> channel that lets districts and charter schools sell part-time services — courses, tutoring, therapy, assessments — directly to scholarship families, paid from scholarship funds. One administrative detail makes it work: a student receiving contracted services is not considered enrolled in the public school for scholarship-eligibility purposes. A district can sell instruction to a child it does not enroll and does not count.",
+        "The adoption curve is dated and public. Roughly one in three of Florida's 67 districts by the August 2025 school-year start. More than half by October 2025, including Miami-Dade, Orange, Hillsborough and Duval. Fifty of 67 approved as providers by April 2026. About 75% by May 2026, with 52 partnered including Hillsborough, Pinellas and Pasco. Fifty-three approved or in process by July 2026. Miami-Dade opened more than 95 classes to students not enrolled in the district.",
+        "The surrounding context is a state where roughly 53% of K-12 students — about 1.9 million children — use an education option other than their assigned district school, and where districts are closing buildings. Orange County closed seven schools at the end of 2025-26 after a single-year enrollment decline of roughly 6,600 to 7,000 students, redirected $211 million to scholarships in 2025-26 against $152 million the prior year, and will open no new campuses until 2031 after opening 28 in ten years. Broward is down about 37,000 students over a decade. Escambia projected losing about 7,000 students to scholarships heading into 2026-27.",
+        "<b>The behaviour is not universal, and the exceptions are what give it meaning.</b> Texas has paid districts a Foundation School Program allotment of $1,500 per University Interscholastic League activity for each participating non-enrolled homeschool student since 2023. Under the original opt-in rule, 45 districts participated in 2024-25 — about 4% of districts statewide. When a 2025 law flipped the default to automatic participation, Dallas, Fort Worth, Arlington and Katy opted out anyway. A Katy trustee's stated reason was that non-district students participating could take opportunities away from enrolled students.",
+        "West Virginia is a third case. Its Hope Scholarship pays every student the same base amount regardless of setting, and state law lists individual classes and extracurricular activities provided by a public school district among qualifying expenses. Joining as a provider is free. Reading the state's participating-provider directory as of 10 August 2026, we found no county school district listed across the school block from roughly M through Y. <b>That is a near-zero, not a verified zero.</b> The directory's search function could not be queried programmatically, and a district could in principle be registered elsewhere in the list. We record it as unfinished rather than settled.",
+        "Three states, three outcomes, and the variation tracks policy design rather than district disposition. Florida pays the same amount regardless of setting, permits sales to non-enrolled students, and has a scholarship funding organisation actively recruiting districts as providers. Texas tiers its homeschool award far below its private-school award. West Virginia has both the funding parity and the statutory permission but, as far as we can find, no organisation selling districts on selling.",
+        "<b>Why this sits in a postsecondary index.</b> Districts in one state have spent a year learning to price, list and staff part-time instruction for families they do not enroll. That is new work, and someone is preparing the people who do it. This note records the demand. It does not yet identify the supply."
+      ],
+      "sources": [
+        {
+          "label": "Step Up For Students — Contracted Public Schools",
+          "url": "https://www.stepupforstudents.org/contracted-public-schools/"
+        },
+        {
+          "label": "NextSteps — More Florida districts take the lead in developing learning options for part-time public school students",
+          "url": "https://nextstepsblog.org/2026/05/more-florida-districts-take-the-lead-in-developing-learning-options-for-part-time-public-school-students/"
+        },
+        {
+          "label": "NextSteps — Panel shares Florida à la carte learning story with lawmakers from across America",
+          "url": "https://nextstepsblog.org/2026/07/panel-shares-florida-a-la-carte-learning-story-with-lawmakers-from-across-america/"
+        },
+        {
+          "label": "Yahoo News — Florida school choice is redefining public education",
+          "url": "https://www.yahoo.com/news/politics/articles/florida-school-choice-redefining-public-160001588.html"
+        },
+        {
+          "label": "Yahoo News — Central Florida school districts brace for enrollment declines",
+          "url": "https://www.yahoo.com/news/articles/central-florida-school-districts-brace-100000829.html"
+        },
+        {
+          "label": "Texas Legislature — HB 3708 bill analysis, 88th Legislature",
+          "url": "https://capitol.texas.gov/tlodocs/88R/analysis/pdf/HB03708H.pdf"
+        },
+        {
+          "label": "The Texan — Prominent Texas school districts opt out of homeschool participation in UIL events",
+          "url": "https://thetexan.news/issues/education/prominent-texas-school-districts-opt-out-of-homeschool-participation-in-uil-athletic-academic-events/article_9f598392-291a-4c1b-b6b0-4b50535f9613.html"
+        },
+        {
+          "label": "Covering Katy — Katy ISD opts out, Lamar CISD opts in for homeschool UIL participation",
+          "url": "https://coveringkaty.com/news/fort-bend/katy-isd-opts-out-lamar-cisd-opts-in-for-homeschool-uil-part/"
+        },
+        {
+          "label": "WV State Treasurer — Hope Scholarship participating schools and service providers",
+          "url": "https://hopescholarshipwv.gov/Home/Schools/Participating-Schools"
+        }
+      ]
+    },
     {
       "n": "07",
       "slug": "07",
@@ -22,10 +118,22 @@
         "<b>The limit.</b> Six countries — Honduras, Nicaragua, the Bahamas, Suriname, Greenland and the Falkland Islands — are shortlisted rather than coded, each with a stated reason on its panel. Suriname is the one to watch: it inherited the Dutch <i>bijzonder onderwijs</i> model, which would make it a direct sibling of the Netherlands entry, and no Surinamese source was located in this pass."
       ],
       "sources": [
-        {"label": "The Portable-Funding Atlas — Americas, coded August 2026", "url": "/atlas/"},
-        {"label": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America", "url": "https://publications.iadb.org/publications/english/document/Private-Schooling-in-Latin-America-Trends-and-Public-Policies.pdf"},
-        {"label": "Notre Dame Education Law Project — Latin America country reports", "url": "https://educationalpluralism.nd.edu/about/international-education/research-reports/"},
-        {"label": "Concordat Watch — text of the 1960 Trinidad and Tobago Concordat", "url": "https://www.concordatwatch.eu/showtopic.php?org_id=911&kb_header_id=40771"}
+        {
+          "label": "The Portable-Funding Atlas — Americas, coded August 2026",
+          "url": "/atlas/"
+        },
+        {
+          "label": "IDB — Elacqua, Iribarren & Santos, Private Schooling in Latin America",
+          "url": "https://publications.iadb.org/publications/english/document/Private-Schooling-in-Latin-America-Trends-and-Public-Policies.pdf"
+        },
+        {
+          "label": "Notre Dame Education Law Project — Latin America country reports",
+          "url": "https://educationalpluralism.nd.edu/about/international-education/research-reports/"
+        },
+        {
+          "label": "Concordat Watch — text of the 1960 Trinidad and Tobago Concordat",
+          "url": "https://www.concordatwatch.eu/showtopic.php?org_id=911&kb_header_id=40771"
+        }
       ]
     },
     {
@@ -46,9 +154,18 @@
         "<b>The limit worth carrying.</b> Twenty-five Florida state colleges are not sponsors and their education units remain unscanned. A college can build a program without ever holding a charter, so the coverage gap has narrowed and changed shape rather than closed. And for Miami Dade and Pasco-Hernando, this note codes the authorizing move only — neither education unit has been enumerated to our standard, and we make no claim about their teaching programs in either direction."
       ],
       "sources": [
-        {"label": "FLDOE — Directory of Charter School Sponsoring Entities", "url": "https://web01.fldoe.org/CSA/PostToWeb/CharterSchoolSponsoringEntities"},
-        {"label": "Florida Charter Institute — HEI Authorizers", "url": "https://flcharterinstitute.org/authorize/hei/"},
-        {"label": "WMFC Method — Correction 02", "url": "/method/#corrections"}
+        {
+          "label": "FLDOE — Directory of Charter School Sponsoring Entities",
+          "url": "https://web01.fldoe.org/CSA/PostToWeb/CharterSchoolSponsoringEntities"
+        },
+        {
+          "label": "Florida Charter Institute — HEI Authorizers",
+          "url": "https://flcharterinstitute.org/authorize/hei/"
+        },
+        {
+          "label": "WMFC Method — Correction 02",
+          "url": "/method/#corrections"
+        }
       ]
     },
     {
@@ -195,8 +312,8 @@
           "url": "https://www.edchoice.org/wp-content/uploads/2023/10/Surfing-the-Pipeline.pdf"
         },
         {
-          "label": "National Microschooling Center — sector size",
-          "url": "/data/"
+          "label": "The 74 — microschools serve about 750,000 students (estimate citing RAND)",
+          "url": "https://www.the74million.org/article/exclusive-report-as-movement-grows-microschools-arent-so-micro-anymore/"
         }
       ]
     }

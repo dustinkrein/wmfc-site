@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Leaders — When Money Follows the Child</title>
+<meta name="description" content="Who is leading the response when K–12 funding follows the student: institutions, practitioners, districts and researchers, each with a source.">
+<link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/leaders/">
+<meta property="og:title" content="Leaders — When Money Follows the Child">
+<meta property="og:description" content="Who is leading the response when K–12 funding follows the student: institutions, practitioners, districts and researchers, each with a source.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/leaders/">
+<meta property="og:site_name" content="When Money Follows the Child">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/wmfc.css">
+<script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="w">
+  <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
+  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/" aria-current="page">Leaders</a><a href="/districts/">Districts</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
+  <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</div></header>
+<main>
+
+<div class="hero sm"><div class="w">
+  <h1>Who is <span class="f">leading</span>?</h1>
+  <p class="lead2">The institutions, practitioners, districts and researchers whose response to portable funding is on the record. Each one links to its source.</p>
+  <div class="qline"><b>The question</b><span>When K–12 funding follows the student, how do colleges and universities respond? <span style="color:var(--ox)">And who is leading?</span></span></div>
+</div></div>
+
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">01</div><div><h2>The map of leadership</h2><p>Rows are kinds of leader. Columns are the direction of their response. Tap a name for the evidence.</p></div></div>
+  <div class="tblwrap"><div id="grid" style="min-width:620px"></div></div>
+  <div id="gd" class="limit" aria-live="polite" style="min-height:52px">Tap a name.</div>
+  <p class="callout" style="margin-top:26px">Almost no one is leading on the <em>workforce</em>: preparing the educators who staff the new options.</p>
+  <p style="color:var(--ink2);max-width:680px;margin:0">The clearest workforce leaders are Notre Dame, Penn and Central Michigan, and all three serve sectors that existed long before ESAs.</p>
+</div></section>
+
+<section><div class="w">
+  <div class="sh"><div class="num">02</div><div><h2>When they started</h2><p>Leaders with a verified start year. Hover or tap a dot.</p></div></div>
+  <div class="card"><svg class="chart" id="tl" viewBox="0 0 900 170" role="img" aria-label="Timeline of when leaders began their work"></svg>
+    <div id="tld" class="limit" style="min-height:48px;margin-top:6px" aria-live="polite">Hover or tap a dot.</div></div>
+</div></section>
+
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">03</div><div><h2>The directory</h2></div></div>
+  <div class="tools" id="chips"></div>
+  <div class="cards" id="cards"></div>
+  <div class="limit"><b>The limit, first.</b> A leader here is someone whose response is documented, not someone we endorse. The list grows as the research does. Know someone missing? <a href="mailto:info@whenmoneyfollowsthechild.org">Tell us, with a source</a>.</div>
+</div></section>
+
+</main>
+<footer><div class="w"><div class="cols">
+  <div>
+    <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
+    <p style="margin:0 0 8px;max-width:40ch">Research on how colleges and universities respond when K–12 funding follows the student.</p>
+    <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
+  </div>
+  <div><div class="fh">How universities respond</div>
+    <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
+  </div>
+  <div><div class="fh">The comparison and the record</div>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+  </div>
+</div></div></footer>
+<script src="/assets/wmfc.js"></script>
+<script>
+(function(){
+"use strict";
+var W=window.WMFC,esc=W.esc;
+var DIR=["compete","supply","fortify","evidence"],DL={compete:"Compete",supply:"Supply",fortify:"Fortify",evidence:"Studies it"};
+W.json("/data/leaders-2026.json").then(function(D){
+  var Lr=D.leaders,TY=Object.keys(D.types);
+  /* 01 grid */
+  var g=document.getElementById("grid"),gd=document.getElementById("gd");
+  var narrow=g.parentNode.clientWidth<640;
+  function pick(l,b){Array.prototype.forEach.call(g.querySelectorAll(".chip"),function(x){x.setAttribute("aria-pressed","false");});b.setAttribute("aria-pressed","true");
+    gd.innerHTML="<b>"+esc(l.name)+"</b> · "+esc(l.org)+" ("+esc(l.state)+"). "+esc(l.what)+" "+W.link(l.url,"Source");}
+  if(narrow){g.style.minWidth="0";
+    DIR.forEach(function(d){var box=W.el("div","",'<div class="pill" style="margin-bottom:8px"><span class="sw d-'+d+'"></span>'+DL[d]+'</div>');box.style.cssText="padding:14px;border-bottom:1px solid var(--line)";
+      var wrap=W.el("div","");wrap.style.cssText="display:flex;flex-wrap:wrap;gap:6px";
+      Lr.filter(function(l){return l.direction===d;}).forEach(function(l){var b=W.el("button","chip",esc(l.name)+' <span class="n" style="font-size:11px">'+esc(D.types[l.type].replace(/s$/,""))+"</span>");b.type="button";b.style.fontSize="12.5px";b.addEventListener("click",function(){pick(l,b);});wrap.appendChild(b);});
+      box.appendChild(wrap);g.appendChild(box);});
+  } else {
+  g.style.display="grid";g.style.gridTemplateColumns="130px repeat(4,1fr)";
+  function cell(html,cls,st){var c=W.el("div",cls||"",html);c.style.cssText="padding:12px;border-bottom:1px solid var(--line);"+(st||"");g.appendChild(c);return c;}
+  cell("","");
+  DIR.forEach(function(d){cell('<span class="pill"><span class="sw d-'+d+'"></span>'+DL[d]+"</span>","","background:var(--bg2)");});
+  TY.forEach(function(t){
+    cell('<b style="font-family:Georgia,serif;font-weight:400;font-size:16px">'+esc(D.types[t])+"</b>","","");
+    DIR.forEach(function(d){
+      var c=cell("","","display:flex;flex-wrap:wrap;gap:6px;align-content:flex-start;border-left:1px solid var(--line)");
+      var list=Lr.filter(function(l){return l.type===t&&l.direction===d;});
+      if(!list.length){c.innerHTML='<span style="color:var(--ink3);font-size:13px">—</span>';}
+      list.forEach(function(l){
+        var b=W.el("button","chip",esc(l.name));b.type="button";b.style.fontSize="12.5px";b.style.padding="7px 10px";
+        b.addEventListener("click",function(){pick(l,b);});
+        c.appendChild(b);
+      });
+    });
+  });
+  }
+  /* 02 timeline */
+  var svg=document.getElementById("tl"),ns="http://www.w3.org/2000/svg",td=document.getElementById("tld");
+  var sm=svg.parentNode.clientWidth<600,VW=sm?460:900;svg.setAttribute("viewBox","0 0 "+VW+" 170");
+  function s(tg,a,txt){var e=document.createElementNS(ns,tg);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e;}
+  var y0=1994,y1=2027,L=20,R=VW-20,X=function(y){return L+(R-L)*(y-y0)/(y1-y0);},base=120;
+  s("line",{x1:L,x2:R,y1:base,y2:base,stroke:"var(--lined)"});
+  (sm?[1995,2005,2015,2025]:[1995,2000,2005,2010,2015,2020,2025]).forEach(function(y){s("line",{x1:X(y),x2:X(y),y1:base-4,y2:base+4,stroke:"var(--lined)"});s("text",{x:X(y),y:base+24,"text-anchor":"middle","font-size":12,fill:"var(--ink3)"},y);});
+  var seen={};
+  Lr.filter(function(l){return l.year;}).sort(function(a,b){return a.year-b.year;}).forEach(function(l){
+    var n=seen[l.year]=(seen[l.year]||0)+1,cy=base-14-(n-1)*17;
+    var col={compete:"var(--ox)",supply:"var(--ox2)",fortify:"var(--ink3)",evidence:"var(--ox3)"}[l.direction];
+    var c=s("circle",{cx:X(l.year),cy:cy,r:sm?9:7,fill:col,stroke:"var(--card)","stroke-width":2,tabindex:0});c.style.cursor="pointer";
+    var html="<b>"+l.year+" · "+esc(l.name)+"</b>"+esc(l.org);
+    function show(){td.innerHTML="<b>"+l.year+" · "+esc(l.name)+".</b> "+esc(l.what)+" "+W.link(l.url,"Source");}
+    c.addEventListener("mousemove",function(e){W.tip(html,e);});c.addEventListener("mouseleave",function(){W.tip(null);});
+    c.addEventListener("click",show);c.addEventListener("focus",show);
+  });
+  /* 03 cards */
+  var cards=document.getElementById("cards");
+  var cnt={};Lr.forEach(function(l){cnt[l.type]=(cnt[l.type]||0)+1;});
+  W.chips(document.getElementById("chips"),[{key:"all",label:"All",n:Lr.length}].concat(TY.map(function(t){return {key:t,label:D.types[t],n:cnt[t]};})),function(k){
+    Array.prototype.forEach.call(cards.children,function(c){c.hidden=k!=="all"&&c.dataset.t!==k;});
+  });
+  Lr.forEach(function(l){
+    var a=W.el("article","rc",'<div class="m"><span class="sw d-'+l.direction+'"></span>'+esc(D.types[l.type].replace(/s$/,""))+" · "+esc(l.state)+(l.year?" · since "+l.year:"")+'</div><h3>'+esc(l.name)+'</h3><p style="color:var(--ink);font-size:13.5px">'+esc(l.org)+'</p><p>'+esc(l.what)+'</p>'+W.link(l.url,"Source"));
+    a.dataset.t=l.type;cards.appendChild(a);
+  });
+}).catch(function(){});
+})();
+</script>
+</body>
+</html>

@@ -5,8 +5,23 @@
     {
       "source": "/data/(.*)",
       "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
       ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/data/",
+      "destination": "/method/#data",
+      "permanent": true
+    },
+    {
+      "source": "/workbench.html",
+      "destination": "/",
+      "permanent": false
     }
   ]
 }

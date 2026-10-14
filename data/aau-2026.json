@@ -1,0 +1,2096 @@
+{
+ "edition": "AAU scan, October 2026",
+ "updated": "2026-10-13",
+ "note": "Two codings of the same 71 AAU member institutions. (1) Innovation: each institution's two strongest education initiatives, each scored 2×Novelty + Scale + Evidence (0–5 each, max 20); portfolio = mean of the top two, a missing second counts as 0. (2) Response to portable funding: direction (compete / supply / fortify / evidence / none) and which of four lenses showed a verified signal. Source: public university pages and news, 2025–2026. 'none' means not found in this scan, not proven absent.",
+ "directions": {
+  "compete": "Builds or runs an alternative that takes portable funds",
+  "supply": "Sells services or preparation to whoever is buying, including non-public schools",
+  "fortify": "Strengthens the existing public system",
+  "evidence": "Studies or debates the policy rather than acting in the market",
+  "none": "No response observed in this scan"
+ },
+ "lenses": {
+  "1": "Teacher preparation beyond traditional public schools",
+  "2": "K–12 services offered to non-public students",
+  "3": "Market and vendor behavior",
+  "4": "Campus discussion and debate"
+ },
+ "institutions": [
+  {
+   "name": "Georgia Tech",
+   "sector": "public",
+   "unit": "No education school; AI-ALOE institute",
+   "notable": "Jill Watson and six other AI tools across 360+ classes and 30,000+ learners",
+   "notable_url": "https://aialoe.org/?p=4915",
+   "initiatives": [
+    {
+     "name": "OMSCS online master's (~19,000 students)",
+     "scale": 5,
+     "evidence": 3,
+     "novelty": 5,
+     "score": 18
+    },
+    {
+     "name": "AI-ALOE / Jill Watson",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 4,
+     "score": 16
+    }
+   ],
+   "portfolio": 17.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 1
+  },
+  {
+   "name": "Tulane",
+   "sector": "private",
+   "unit": "No education school; Murphy and Cowen Institutes",
+   "notable": "ERA-New Orleans and the REACH school-choice research center",
+   "notable_url": "https://news.tulane.edu/pr/tulane-university-awarded-10-million-grant-launch-national-school-choice-research-center",
+   "initiatives": [
+    {
+     "name": "ERA-New Orleans",
+     "scale": 4,
+     "evidence": 5,
+     "novelty": 4,
+     "score": 17
+    },
+    {
+     "name": "REACH school-choice center",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 4,
+     "score": 16
+    }
+   ],
+   "portfolio": 16.5,
+   "direction": "evidence",
+   "lenses": [
+    4
+   ],
+   "response": "REACH is a $10M federally funded national center for research on school choice.",
+   "response_url": "https://news.tulane.edu/pr/tulane-university-awarded-10-million-grant-launch-national-school-choice-research-center",
+   "rank": 2
+  },
+  {
+   "name": "Chicago",
+   "sector": "private",
+   "unit": "No education school (closed 1997)",
+   "notable": "Education Lab tutoring trials; Consortium on School Research",
+   "notable_url": "https://saga.org/chicago-public-schools-board-of-education-authorizes-new-high-impact-tutoring-agreement-with-saga-education/",
+   "initiatives": [
+    {
+     "name": "Education Lab tutoring RCTs",
+     "scale": 4,
+     "evidence": 5,
+     "novelty": 4,
+     "score": 17
+    },
+    {
+     "name": "Consortium on School Research",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 3,
+     "score": 14
+    }
+   ],
+   "portfolio": 15.5,
+   "direction": "fortify",
+   "lenses": [
+    3
+   ],
+   "response": "Education Lab evidence fed a CPS tutoring contract with Saga Education.",
+   "response_url": "https://saga.org/chicago-public-schools-board-of-education-authorizes-new-high-impact-tutoring-agreement-with-saga-education/",
+   "rank": 3
+  },
+  {
+   "name": "Florida",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "UF Lastinger Center administers Florida Tutoring Advantage and statewide literacy programs",
+   "notable_url": "https://lastinger.ufl.edu/our-work/",
+   "initiatives": [
+    {
+     "name": "New Worlds Reading (Lastinger)",
+     "scale": 5,
+     "evidence": 3,
+     "novelty": 4,
+     "score": 16
+    },
+    {
+     "name": "Florida Tutoring Advantage (Lastinger)",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 4,
+     "score": 15
+    }
+   ],
+   "portfolio": 15.5,
+   "direction": "fortify",
+   "lenses": [
+    3
+   ],
+   "response": "UF Lastinger vetted and evaluated private tutoring vendors for the state's public-school tutoring program.",
+   "response_url": "https://lastinger.ufl.edu/wp-content/uploads/2026/04/uf-lastinger-center-fta-pilot-spring-2025-aug-2025-remediated.pdf",
+   "rank": 4
+  },
+  {
+   "name": "Arizona State",
+   "sector": "public",
+   "unit": "Mary Lou Fulton College for Teaching and Learning Innovation",
+   "notable": "Next Education Workforce: team-based school staffing",
+   "notable_url": "https://workforce.education.asu.edu/blog/format/video/",
+   "initiatives": [
+    {
+     "name": "Next Education Workforce",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 5,
+     "score": 17
+    },
+    {
+     "name": "ASU Prep university-run K-12 schools and online school",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 13
+    }
+   ],
+   "portfolio": 15.0,
+   "direction": "compete",
+   "lenses": [
+    1,
+    2,
+    3
+   ],
+   "response": "ASU Prep Digital is an approved ClassWallet vendor for Arizona ESA funds; ASU Prep is expanding into Texas.",
+   "response_url": "https://asuprepdigital.org/blog/own-your-learning-with-asu-prep-digital-and-an-empowerment-scholarship-account",
+   "rank": 5
+  },
+  {
+   "name": "Kansas",
+   "sector": "public",
+   "unit": "Achievement & Assessment Institute (university-level)",
+   "notable": "Dynamic Learning Maps, a multistate alternate assessment",
+   "notable_url": "https://atlas.ku.edu/",
+   "initiatives": [
+    {
+     "name": "Dynamic Learning Maps",
+     "scale": 5,
+     "evidence": 3,
+     "novelty": 4,
+     "score": 16
+    },
+    {
+     "name": "Strategic Instruction Model (KUCRL)",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 3,
+     "score": 14
+    }
+   ],
+   "portfolio": 15.0,
+   "direction": "supply",
+   "lenses": [
+    3
+   ],
+   "response": "Dynamic Learning Maps is sold to states as an alternate assessment.",
+   "response_url": "https://dynamiclearningmaps.org/presentations",
+   "rank": 6
+  },
+  {
+   "name": "Rice",
+   "sector": "private",
+   "unit": "No education school; Kinder Institute",
+   "notable": "OpenStax; Houston Education Research Consortium",
+   "notable_url": "https://kinderfoundation.org/?p=1575",
+   "initiatives": [
+    {
+     "name": "OpenStax",
+     "scale": 5,
+     "evidence": 3,
+     "novelty": 4,
+     "score": 16
+    },
+    {
+     "name": "Houston Education Research Consortium",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 3,
+     "score": 14
+    }
+   ],
+   "portfolio": 15.0,
+   "direction": "supply",
+   "lenses": [
+    3
+   ],
+   "response": "OpenStax gives free textbooks to any school, public or private.",
+   "response_url": "https://kinderfoundation.org/?p=1575",
+   "rank": 6
+  },
+  {
+   "name": "Colorado Boulder",
+   "sector": "public",
+   "unit": "Institute of Cognitive Science with the School of Education",
+   "notable": "iSAT: AI as a teammate for student groups; NSF renewal 2025",
+   "notable_url": "https://www.colorado.edu/today/2025/07/29/research-institute-building-ai-literate-workforce-future-receives-major-new-grant-0",
+   "initiatives": [
+    {
+     "name": "iSAT student-AI teaming",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 5,
+     "score": 15
+    },
+    {
+     "name": "inquiryHub RPP; led OpenSciEd High School",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 4,
+     "score": 15
+    }
+   ],
+   "portfolio": 15.0,
+   "direction": "evidence",
+   "lenses": [
+    4
+   ],
+   "response": "The National Education Policy Center publishes critical reviews of choice research.",
+   "response_url": "https://nepc.colorado.edu/node/13970",
+   "rank": 8
+  },
+  {
+   "name": "Yale",
+   "sector": "private",
+   "unit": "No education school; Child Study Center",
+   "notable": "RULER in 3,500+ schools; IES efficacy trial of preschool RULER",
+   "notable_url": "https://ycei.org",
+   "initiatives": [
+    {
+     "name": "RULER",
+     "scale": 5,
+     "evidence": 5,
+     "novelty": 3,
+     "score": 16
+    },
+    {
+     "name": "Preschool RULER efficacy trial",
+     "scale": 3,
+     "evidence": 4,
+     "novelty": 3,
+     "score": 13
+    }
+   ],
+   "portfolio": 14.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 9
+  },
+  {
+   "name": "Michigan",
+   "sector": "public",
+   "unit": "Marsal Family School of Education",
+   "notable": "Teaching School at Marygrove; first-year direct-admit teacher prep",
+   "notable_url": "https://marsal.umich.edu/p20/mission",
+   "initiatives": [
+    {
+     "name": "TeachingWorks",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 4,
+     "score": 15
+    },
+    {
+     "name": "Teaching School at Marygrove",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 5,
+     "score": 14
+    }
+   ],
+   "portfolio": 14.5,
+   "direction": "fortify",
+   "lenses": [],
+   "response": "Teaching School at Marygrove strengthens Detroit's public pipeline.",
+   "response_url": "https://marsal.umich.edu/p20/mission",
+   "rank": 10
+  },
+  {
+   "name": "Oregon",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "DIBELS 8 literacy assessment, also licensed through Amplify",
+   "notable_url": "https://dibels.uoregon.edu/",
+   "initiatives": [
+    {
+     "name": "Ballmer Institute child behavioral health (university-level)",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 5,
+     "score": 15
+    },
+    {
+     "name": "DIBELS 8",
+     "scale": 5,
+     "evidence": 5,
+     "novelty": 2,
+     "score": 14
+    }
+   ],
+   "portfolio": 14.5,
+   "direction": "supply",
+   "lenses": [
+    3
+   ],
+   "response": "DIBELS 8 is free to schools and also licensed commercially through Amplify.",
+   "response_url": "https://dibels.amplify.com/training/",
+   "rank": 10
+  },
+  {
+   "name": "Brown",
+   "sector": "private",
+   "unit": "Education department; Annenberg Institute",
+   "notable": "EdWorkingPapers, National Student Support Accelerator, Brown Tutoring Corps",
+   "notable_url": "https://edworkingpapers.com/scope",
+   "initiatives": [
+    {
+     "name": "Annenberg Institute / EdWorkingPapers",
+     "scale": 5,
+     "evidence": 4,
+     "novelty": 3,
+     "score": 15
+    },
+    {
+     "name": "National Student Support Accelerator",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 3,
+     "score": 13
+    }
+   ],
+   "portfolio": 14.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 12
+  },
+  {
+   "name": "Carnegie Mellon",
+   "sector": "private",
+   "unit": "No education school; HCII, Simon Initiative",
+   "notable": "PLUS hybrid tutoring (~5,000 students); Learnvia AI courseware nonprofit",
+   "notable_url": "https://www.cmu.edu/news/stories/archives/2026/january/carnegie-mellon-a-leader-in-learning",
+   "initiatives": [
+    {
+     "name": "PLUS hybrid tutoring",
+     "scale": 3,
+     "evidence": 4,
+     "novelty": 4,
+     "score": 15
+    },
+    {
+     "name": "Learnvia AI courseware nonprofit",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 13
+    }
+   ],
+   "portfolio": 14.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 12
+  },
+  {
+   "name": "Harvard",
+   "sector": "private",
+   "unit": "Graduate School of Education",
+   "notable": "States Leading States for nine states; PEPG and Education Next",
+   "notable_url": "https://cepr.harvard.edu/sls",
+   "initiatives": [
+    {
+     "name": "States Leading States",
+     "scale": 5,
+     "evidence": 1,
+     "novelty": 4,
+     "score": 14
+    },
+    {
+     "name": "EdRedesign Success Planning network",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 13
+    }
+   ],
+   "portfolio": 13.5,
+   "direction": "evidence",
+   "lenses": [
+    4
+   ],
+   "response": "PEPG and Education Next publish regularly on ESAs.",
+   "response_url": "https://www.educationnext.org/the-education-exchange-arkansas-makes-case-for-benefits-of-esas/",
+   "rank": 14
+  },
+  {
+   "name": "Johns Hopkins",
+   "sector": "private",
+   "unit": "School of Education",
+   "notable": "National Research Center on Advanced Education; Homeschool Research Lab",
+   "notable_url": "https://education.jhu.edu/edpolicy/policy-research-initiatives/homeschool-hub/homeschool-research-lab/",
+   "initiatives": [
+    {
+     "name": "National Research Center on Advanced Education",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 3,
+     "score": 14
+    },
+    {
+     "name": "Homeschool Research Lab",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 12
+    }
+   ],
+   "portfolio": 13.0,
+   "direction": "supply",
+   "lenses": [
+    2,
+    4
+   ],
+   "response": "CTY serves students in every sector; the Homeschool Research Lab studies home-based learning.",
+   "response_url": "https://education.jhu.edu/edpolicy/policy-research-initiatives/homeschool-hub/homeschool-research-lab/",
+   "rank": 15
+  },
+  {
+   "name": "MIT",
+   "sector": "private",
+   "unit": "No education school; Media Lab, Open Learning",
+   "notable": "RAISE: App Inventor (24M learners), Day of AI",
+   "notable_url": "https://raise.mit.edu/about-raise/",
+   "initiatives": [
+    {
+     "name": "RAISE (App Inventor, Day of AI)",
+     "scale": 5,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 15
+    },
+    {
+     "name": "Teaching Systems Lab",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 10
+    }
+   ],
+   "portfolio": 12.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 16
+  },
+  {
+   "name": "Michigan State",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "EPIC: state research partner; Research with Consequence Forum on literacy policy",
+   "notable_url": "https://msutoday.msu.edu/news/2026/07/forum-tackles-literacy",
+   "initiatives": [
+    {
+     "name": "EPIC state partnership",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 3,
+     "score": 14
+    },
+    {
+     "name": "GRPS tuition-free community teacher pathway",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 4,
+     "score": 11
+    }
+   ],
+   "portfolio": 12.5,
+   "direction": "fortify",
+   "lenses": [],
+   "response": "A tuition-free teacher pathway with Grand Rapids Public Schools.",
+   "response_url": "https://fox17online.com/news/local-news/msu-grps-partner-to-create-tuition-free-teacher-program",
+   "rank": 17
+  },
+  {
+   "name": "Notre Dame",
+   "sector": "private",
+   "unit": "Institute for Educational Initiatives",
+   "notable": "ACE Teaching Fellows and ACE Academies Catholic schools",
+   "notable_url": "https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school",
+   "initiatives": [
+    {
+     "name": "ACE Teaching Fellows",
+     "scale": 4,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 14
+    },
+    {
+     "name": "Indiana DOE research partnership",
+     "scale": 4,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 11
+    }
+   ],
+   "portfolio": 12.5,
+   "direction": "compete",
+   "lenses": [
+    1,
+    2,
+    4
+   ],
+   "response": "ACE Teaching Fellows staff Catholic schools; ACE Academies manage Catholic schools in Florida and Tucson that draw on parental-choice programs.",
+   "response_url": "https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school",
+   "rank": 17
+  },
+  {
+   "name": "Missouri",
+   "sector": "public",
+   "unit": "College of Education and Human Development",
+   "notable": "Mizzou Academy online K–12 school; $10M AI rural literacy grant",
+   "notable_url": "https://showme.missouri.edu/?p=68124",
+   "initiatives": [
+    {
+     "name": "Mizzou Academy online K-12 school",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 13
+    },
+    {
+     "name": "$10M AI rural literacy grant",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    }
+   ],
+   "portfolio": 12.0,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Mizzou Academy is a Cognia-accredited online K–12 school. MOScholars listing not verified.",
+   "response_url": "https://showme.missouri.edu/?p=68124",
+   "rank": 19
+  },
+  {
+   "name": "UC Irvine",
+   "sector": "public",
+   "unit": "School of Education",
+   "notable": "$1.5M state AI Grand Challenge to scale the PapyrusAI writing coach",
+   "notable_url": "https://education.uci.edu/ai_grand_challenge.html",
+   "initiatives": [
+    {
+     "name": "PapyrusAI / WRITE AI Center",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 3,
+     "score": 12
+    },
+    {
+     "name": "Computing & AI for All; Converse to Learn",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 3,
+     "score": 12
+    }
+   ],
+   "portfolio": 12.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 20
+  },
+  {
+   "name": "Texas at Austin",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "Built Texas's statewide reading academies via the Meadows Center",
+   "notable_url": "https://news.utexas.edu/?p=126057",
+   "initiatives": [
+    {
+     "name": "Statewide reading academies",
+     "scale": 5,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 13
+    },
+    {
+     "name": "$50M college readiness programs",
+     "scale": 4,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 10
+    }
+   ],
+   "portfolio": 11.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 21
+  },
+  {
+   "name": "Iowa",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "Iowa Testing Programs; Belin-Blank Center",
+   "notable_url": "https://education.uiowa.edu/research/research-centers-and-research-initiatives/iowa-testing-programs",
+   "initiatives": [
+    {
+     "name": "Iowa Testing Programs",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 2,
+     "score": 12
+    },
+    {
+     "name": "Belin-Blank Center",
+     "scale": 3,
+     "evidence": 4,
+     "novelty": 2,
+     "score": 11
+    }
+   ],
+   "portfolio": 11.5,
+   "direction": "supply",
+   "lenses": [
+    2,
+    3
+   ],
+   "response": "Belin-Blank and Iowa Testing Programs serve students and schools across sectors.",
+   "response_url": "https://belinblank.education.uiowa.edu/about",
+   "rank": 22
+  },
+  {
+   "name": "NYU",
+   "sector": "private",
+   "unit": "Steinhardt",
+   "notable": "Research Alliance for NYC Schools; NYU Teacher Residency",
+   "notable_url": "https://steinhardt.nyu.edu/ranycs",
+   "initiatives": [
+    {
+     "name": "Research Alliance for NYC Schools",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 2,
+     "score": 12
+    },
+    {
+     "name": "NYU Teacher Residency (Empire State grant)",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    }
+   ],
+   "portfolio": 11.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 22
+  },
+  {
+   "name": "Northwestern",
+   "sector": "private",
+   "unit": "School of Education and Social Policy",
+   "notable": "Center for Talent Development; Collaborative for Applied Research in Education",
+   "notable_url": "https://www.ctd.northwestern.edu/accreditation",
+   "initiatives": [
+    {
+     "name": "Collaborative for Applied Research in Education",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 3,
+     "score": 12
+    },
+    {
+     "name": "Center for Talent Development",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 11
+    }
+   ],
+   "portfolio": 11.5,
+   "direction": "supply",
+   "lenses": [
+    2,
+    3
+   ],
+   "response": "The Center for Talent Development sells gifted courses to students in any sector, the shape of an ESA service provider.",
+   "response_url": "https://www.ctd.northwestern.edu/accreditation",
+   "rank": 22
+  },
+  {
+   "name": "Southern California",
+   "sector": "private",
+   "unit": "Rossier School",
+   "notable": "Pullias Center advises 10,000+ students a year; $58.5M in active grants",
+   "notable_url": "https://rossier.usc.edu/news-insights/news/2026/april/usc-rossier-school-education-fy26-research-highlights",
+   "initiatives": [
+    {
+     "name": "Pullias college advising",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 3,
+     "score": 13
+    },
+    {
+     "name": "CANDLE Innovation Lab",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    }
+   ],
+   "portfolio": 11.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 25
+  },
+  {
+   "name": "McGill",
+   "sector": "canadian",
+   "unit": "Faculty of Education",
+   "notable": "RESST teacher well-being; in-community First Nations and Inuit teacher education",
+   "notable_url": "https://www.mcgill.ca/education/channels_item/8",
+   "initiatives": [
+    {
+     "name": "In-community First Nations and Inuit teacher ed",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 12
+    },
+    {
+     "name": "RESST teacher well-being",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 10
+    }
+   ],
+   "portfolio": 11.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 26
+  },
+  {
+   "name": "Ohio State",
+   "sector": "public",
+   "unit": "College of Education and Human Ecology",
+   "notable": "Crane Center: statewide expansion of Read It Again! early literacy",
+   "notable_url": "https://crane.osu.edu/category/news/page/13/",
+   "initiatives": [
+    {
+     "name": "Crane Center",
+     "scale": 4,
+     "evidence": 4,
+     "novelty": 2,
+     "score": 12
+    },
+    {
+     "name": "Schoenbaum Center / A. Sophie Rogers lab school",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 10
+    }
+   ],
+   "portfolio": 11.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 26
+  },
+  {
+   "name": "Stanford",
+   "sector": "private",
+   "unit": "Graduate School of Education",
+   "notable": "Stanford Online High School; Accelerator for Learning AI seed grants",
+   "notable_url": "https://onlinehighschool.stanford.edu/admissions/apply",
+   "initiatives": [
+    {
+     "name": "AI teaching seed grants",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 3,
+     "score": 12
+    },
+    {
+     "name": "Create+AI Challenge",
+     "scale": 3,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 10
+    }
+   ],
+   "portfolio": 11.0,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Stanford Online High School enrolls students in grades 7–12 for tuition. No ESA link found.",
+   "response_url": "https://onlinehighschool.stanford.edu/admissions/apply",
+   "rank": 26
+  },
+  {
+   "name": "Utah",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "$8M for the first national center on prison education research",
+   "notable_url": "https://education.utah.edu/news/",
+   "initiatives": [
+    {
+     "name": "National prison education research center",
+     "scale": 3,
+     "evidence": 1,
+     "novelty": 4,
+     "score": 12
+    },
+    {
+     "name": "Reading Clinic EIR grant",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 10
+    }
+   ],
+   "portfolio": 11.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 26
+  },
+  {
+   "name": "Pennsylvania",
+   "sector": "private",
+   "unit": "Graduate School of Education",
+   "notable": "Independent School Teaching Residency at 21 partner schools",
+   "notable_url": "https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed",
+   "initiatives": [
+    {
+     "name": "Together for Good; online AI degree",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    },
+    {
+     "name": "McGraw Center; Milken-Penn competition",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    }
+   ],
+   "portfolio": 11.0,
+   "direction": "supply",
+   "lenses": [
+    1
+   ],
+   "response": "The Independent School Teaching Residency places fellows in 21 boarding and day schools.",
+   "response_url": "https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed",
+   "rank": 30
+  },
+  {
+   "name": "Wisconsin–Madison",
+   "sector": "public",
+   "unit": "School of Education; WCER",
+   "notable": "WIDA, the English-learner standards and assessment consortium",
+   "notable_url": "https://wida.wisc.edu/about/mission-history",
+   "initiatives": [
+    {
+     "name": "WIDA (WCER)",
+     "scale": 5,
+     "evidence": 3,
+     "novelty": 3,
+     "score": 14
+    },
+    {
+     "name": "iSAT partner",
+     "scale": 1,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 10.5,
+   "direction": "supply",
+   "lenses": [
+    3
+   ],
+   "response": "WIDA sells English-learner standards and assessments to member states.",
+   "response_url": "https://wida.wisc.edu/about/mission-history",
+   "rank": 31
+  },
+  {
+   "name": "Virginia",
+   "sector": "public",
+   "unit": "School of Education and Human Development",
+   "notable": "$43.4M gift for a community early learning center",
+   "notable_url": "https://www.newswise.com/institutions/newsroom/23217",
+   "initiatives": [
+    {
+     "name": "Statewide early childhood curriculum",
+     "scale": 4,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 12
+    },
+    {
+     "name": "$43.4M early learning center",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    }
+   ],
+   "portfolio": 10.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 32
+  },
+  {
+   "name": "Texas A&M",
+   "sector": "public",
+   "unit": "School of Education and Human Development",
+   "notable": "Early childhood institute running two children's centers as training labs",
+   "notable_url": "https://education.tamu.edu/texas-am-childrens-centers-enhance-commitment-to-serving-families",
+   "initiatives": [
+    {
+     "name": "Education Research Center",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 11
+    },
+    {
+     "name": "Early childhood institute + two centers",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 10
+    }
+   ],
+   "portfolio": 10.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 33
+  },
+  {
+   "name": "Indiana",
+   "sector": "public",
+   "unit": "School of Education",
+   "notable": "CEEP, a self-funded center running 40–60 evaluations a year",
+   "notable_url": "https://education.indiana.edu/ceep",
+   "initiatives": [
+    {
+     "name": "CEEP policy evaluation",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 10
+    },
+    {
+     "name": "HSSSE engagement surveys",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 10
+    }
+   ],
+   "portfolio": 10.0,
+   "direction": "compete",
+   "lenses": [
+    2,
+    4
+   ],
+   "response": "IU High School is an accredited online high school; CEEP faculty publish critical work on choice.",
+   "response_url": "https://blogs.iu.edu/iuhs/?p=1192",
+   "rank": 34
+  },
+  {
+   "name": "Minnesota",
+   "sector": "public",
+   "unit": "College of Education and Human Development",
+   "notable": "Institute of Child Development at 100; paraprofessional training series",
+   "notable_url": "https://brief.umn.edu/feature/cehd-launches-new-training-series-elevate-paraprofessional-practice",
+   "initiatives": [
+    {
+     "name": "Institute of Child Development",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 10
+    },
+    {
+     "name": "Paraprofessional training series",
+     "scale": 3,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 10
+    }
+   ],
+   "portfolio": 10.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 34
+  },
+  {
+   "name": "UC Berkeley",
+   "sector": "public",
+   "unit": "School of Education",
+   "notable": "21CSLA statewide school leadership academy",
+   "notable_url": "https://21cslacenter.berkeley.edu/news/21csla-utk-and-berkeley-school-education-help-expand-early-childhood-education-la-14-million",
+   "initiatives": [
+    {
+     "name": "21CSLA statewide leadership academy",
+     "scale": 4,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 12
+    },
+    {
+     "name": "iSAT partner",
+     "scale": 1,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 36
+  },
+  {
+   "name": "Buffalo",
+   "sector": "public",
+   "unit": "Graduate School of Education",
+   "notable": "Buffalo's first university-assisted community school",
+   "notable_url": "https://ed.buffalo.edu/magazine/issues/fall-2025.html",
+   "initiatives": [
+    {
+     "name": "University-assisted community school",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 4,
+     "score": 11
+    },
+    {
+     "name": "Online school leadership program",
+     "scale": 3,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 8
+    }
+   ],
+   "portfolio": 9.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 37
+  },
+  {
+   "name": "Tufts",
+   "sector": "private",
+   "unit": "Eliot-Pearson Department; CEEO",
+   "notable": "Center for Engineering Education and Outreach",
+   "notable_url": "https://engineering.tufts.edu/departments/ceeo",
+   "initiatives": [
+    {
+     "name": "CEEO engineering education",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    },
+    {
+     "name": "Eliot-Pearson Children's School",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 8
+    }
+   ],
+   "portfolio": 9.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 37
+  },
+  {
+   "name": "Arizona",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "First Arizona supervisor certification for district leaders without teaching backgrounds",
+   "notable_url": "https://education.arizona.edu/news/pioneering-educational-leadership-arizona",
+   "initiatives": [
+    {
+     "name": "Indigenous Teacher Education Program",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 10
+    },
+    {
+     "name": "First Arizona supervisor certification",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    }
+   ],
+   "portfolio": 9.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 39
+  },
+  {
+   "name": "Rutgers",
+   "sector": "public",
+   "unit": "Graduate School of Education",
+   "notable": "$1.28M to build registered apprenticeships at rural minority-serving institutions",
+   "notable_url": "https://gse.rutgers.edu/transformative-work/",
+   "initiatives": [
+    {
+     "name": "Apprenticeships at rural MSIs",
+     "scale": 3,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 10
+    },
+    {
+     "name": "School counselor pipeline ($3.3M)",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    }
+   ],
+   "portfolio": 9.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 39
+  },
+  {
+   "name": "Brandeis",
+   "sector": "private",
+   "unit": "Education program; Mandel Center",
+   "notable": "Mandel Center for Studies in Jewish Education",
+   "notable_url": "https://www.brandeis.edu/mandel/about",
+   "initiatives": [
+    {
+     "name": "Mandel Center Jewish education",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    },
+    {
+     "name": "iSAT partner",
+     "scale": 1,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "supply",
+   "lenses": [
+    1
+   ],
+   "response": "The Mandel Center prepares and studies educators for Jewish day schools.",
+   "response_url": "https://www.brandeis.edu/mandel/about",
+   "rank": 41
+  },
+  {
+   "name": "Cornell",
+   "sector": "private",
+   "unit": "No education school; Cornell Tech",
+   "notable": "K-12 Initiative: districtwide CS and AI strategy with NYC District 29",
+   "notable_url": "https://tech.cornell.edu/k12-initiative",
+   "initiatives": [
+    {
+     "name": "Cornell Tech K-12 CS and AI",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    },
+    {
+     "name": "Agricultural education teacher prep",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 41
+  },
+  {
+   "name": "Duke",
+   "sector": "private",
+   "unit": "Program in Education",
+   "notable": "TeachHouse residential teacher fellows",
+   "notable_url": "https://educationprogram.duke.edu/duke-teachhouse",
+   "initiatives": [
+    {
+     "name": "TeachHouse",
+     "scale": 1,
+     "evidence": 2,
+     "novelty": 4,
+     "score": 11
+    },
+    {
+     "name": "Duke-Durham Public Schools partnership",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 41
+  },
+  {
+   "name": "George Washington",
+   "sector": "private",
+   "unit": "Graduate School of Education and Human Development",
+   "notable": "CASJE Jewish education research; Forum on Democracy and Education",
+   "notable_url": "https://cfr.gwu.edu/node/7621",
+   "initiatives": [
+    {
+     "name": "CASJE Jewish education research",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    },
+    {
+     "name": "Forum on Democracy and Education",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "supply",
+   "lenses": [
+    1
+   ],
+   "response": "CASJE builds the research base for Jewish education.",
+   "response_url": "https://cfr.gwu.edu/node/7621",
+   "rank": 41
+  },
+  {
+   "name": "North Carolina",
+   "sector": "public",
+   "unit": "School of Education",
+   "notable": "Carolina Community Academy, a rural lab school with Person County Schools",
+   "notable_url": "https://careers.insidehighered.com/job/3524851/assistant-principal-lab-school/",
+   "initiatives": [
+    {
+     "name": "Carolina Community Academy lab school",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 4,
+     "score": 11
+    },
+    {
+     "name": "Relaunched elementary ed degree",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 41
+  },
+  {
+   "name": "UC Davis",
+   "sector": "public",
+   "unit": "School of Education",
+   "notable": "Wheelhouse: leadership institute for California community college CEOs",
+   "notable_url": "https://education.ucdavis.edu/wheelhouse",
+   "initiatives": [
+    {
+     "name": "Wheelhouse CC leadership",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    },
+    {
+     "name": "Teller Education Center with LLNL",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 41
+  },
+  {
+   "name": "Vanderbilt",
+   "sector": "private",
+   "unit": "Peabody College",
+   "notable": "Master's for independent-school leaders; IRIS Center",
+   "notable_url": "https://news.vanderbilt.edu/2022/02/23/peabody-alumna-grimes-appointed-director-of-masters-program-for-independent-school-leaders",
+   "initiatives": [
+    {
+     "name": "IRIS Center",
+     "scale": 4,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 11
+    },
+    {
+     "name": "Early Childhood Research Collaborative",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "supply",
+   "lenses": [
+    1,
+    4
+   ],
+   "response": "Peabody runs a master's for independent-school leaders and published an explainer as Tennessee's Education Freedom Scholarships launched.",
+   "response_url": "https://news.vanderbilt.edu/2025/03/19/qa-with-independent-school-expert-carrie-grimes/",
+   "rank": 41
+  },
+  {
+   "name": "Washington",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "District Leadership Design Lab for central-office redesign",
+   "notable_url": "https://education.washington.edu/news/feature?page=8",
+   "initiatives": [
+    {
+     "name": "District Leadership Design Lab",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 11
+    },
+    {
+     "name": "Early childhood policy track",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 9.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 41
+  },
+  {
+   "name": "UC Santa Barbara",
+   "sector": "public",
+   "unit": "Gevirtz School",
+   "notable": "First undergraduate education major (applications fall 2026)",
+   "notable_url": "https://www.independent.com/2026/07/23/uc-santa-barbaras-gevirtz-school-launches-undergraduate-education-major/",
+   "initiatives": [
+    {
+     "name": "Community Fellows grow-your-own",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 3,
+     "score": 10
+    },
+    {
+     "name": "New undergraduate education major",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 8.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 49
+  },
+  {
+   "name": "UCLA",
+   "sector": "public",
+   "unit": "School of Education and Information Studies",
+   "notable": "Center X: IMPACT teacher residencies at 10 years; UCLA Lab School",
+   "notable_url": "https://centerx.gseis.ucla.edu/category/grants/",
+   "initiatives": [
+    {
+     "name": "Center X IMPACT residencies",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 9
+    },
+    {
+     "name": "UCLA Lab School",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 8
+    }
+   ],
+   "portfolio": 8.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 50
+  },
+  {
+   "name": "Pittsburgh",
+   "sector": "public",
+   "unit": "School of Education; LRDC",
+   "notable": "Institute for Learning: ELA partnership across 10 Pittsburgh middle schools",
+   "notable_url": "https://www.pittwire.pitt.edu/index%2Ephp/taxonomy/term/282",
+   "initiatives": [
+    {
+     "name": "LRDC Institute for Learning",
+     "scale": 3,
+     "evidence": 3,
+     "novelty": 2,
+     "score": 10
+    },
+    {
+     "name": "Teacher-faculty AI convenings",
+     "scale": 1,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 6
+    }
+   ],
+   "portfolio": 8.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 51
+  },
+  {
+   "name": "Columbia",
+   "sector": "private",
+   "unit": "Teachers College",
+   "notable": "Klingenstein Center for independent-school leaders; M.A. in Sustainability & Education",
+   "notable_url": "https://klingensteincenter.org/academic-programs/heads-of-schools-program",
+   "initiatives": [
+    {
+     "name": "M.A. Sustainability & Education",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    },
+    {
+     "name": "NYC climate institute for teachers",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 8.0,
+   "direction": "supply",
+   "lenses": [
+    1
+   ],
+   "response": "Teachers College's Klingenstein Center trains heads of independent schools.",
+   "response_url": "https://klingensteincenter.org/academic-programs/heads-of-schools-program",
+   "rank": 52
+  },
+  {
+   "name": "Maryland",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "USM alternative teacher prep for 6,000+ conditionally licensed teachers",
+   "notable_url": "https://education.umd.edu/node/43868",
+   "initiatives": [
+    {
+     "name": "USM alternative teacher prep",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    },
+    {
+     "name": "AI Readiness in Education hub",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 8.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 52
+  },
+  {
+   "name": "South Florida",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "AI graduate certificate for educators; CognetCon on cognitive security",
+   "notable_url": "https://www.usf.edu/education/news/index.aspx",
+   "initiatives": [
+    {
+     "name": "CognetCon cognitive security",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    },
+    {
+     "name": "AI graduate certificate",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 8.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 52
+  },
+  {
+   "name": "UC Santa Cruz",
+   "sector": "public",
+   "unit": "Education department",
+   "notable": "Teacher residencies with state funding",
+   "notable_url": "https://education.ucsc.edu/academics/mac-info/mac-prospective-students/teacher-residencies.html",
+   "initiatives": [
+    {
+     "name": "Teacher residencies",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 3,
+     "score": 9
+    },
+    {
+     "name": "iSAT partner",
+     "scale": 1,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 8.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 52
+  },
+  {
+   "name": "Penn State",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "AI-Aware Faculty Leaders program",
+   "notable_url": "https://www.psu.edu/news/administration/story/faculty-named-2026-27-ai-aware-faculty-leaders-program",
+   "initiatives": [
+    {
+     "name": "Center for Education and Civil Rights",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 8
+    },
+    {
+     "name": "AI-Aware Faculty Leaders",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 7.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 56
+  },
+  {
+   "name": "Purdue",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "Innovation Initiative teacher-ed overhaul; AI in Education certificate",
+   "notable_url": "https://education.purdue.edu//in-an-evolving-world-purdues-college-of-education-innovating-new-paths-to-success-for-k-12-teachers/",
+   "initiatives": [
+    {
+     "name": "Innovation Initiative curriculum",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 8
+    },
+    {
+     "name": "AI in Education certificate",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 7.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 56
+  },
+  {
+   "name": "Toronto (OISE)",
+   "sector": "canadian",
+   "unit": "Ontario Institute for Studies in Education",
+   "notable": "Jackman Institute of Child Study lab school",
+   "notable_url": "https://oise.utoronto.ca/",
+   "initiatives": [
+    {
+     "name": "Jackman Institute of Child Study",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 8
+    },
+    {
+     "name": "UOF partnership",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 7.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 56
+  },
+  {
+   "name": "Washington University",
+   "sector": "private",
+   "unit": "Education department; Institute for School Partnership",
+   "notable": "Summer Teacher Researcher Program and ASSET science",
+   "notable_url": "https://source.washu.edu/app/uploads/2026/04/Record-4-22-26.html",
+   "initiatives": [
+    {
+     "name": "Institute for School Partnership",
+     "scale": 2,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 8
+    },
+    {
+     "name": "+AI initiative",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 7.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 56
+  },
+  {
+   "name": "Boston University",
+   "sector": "private",
+   "unit": "Wheelock College of Education & Human Development",
+   "notable": "New equity-focused undergraduate program",
+   "notable_url": "https://www.bu.edu/wheelock/magazine-article/new-undergraduate-program-emphasizes-equity",
+   "initiatives": [
+    {
+     "name": "iSAT partner",
+     "scale": 1,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "Equity-focused undergraduate program",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 7.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 60
+  },
+  {
+   "name": "Illinois Urbana-Champaign",
+   "sector": "public",
+   "unit": "College of Education",
+   "notable": "Computer science teacher training initiative",
+   "notable_url": "https://newschannel20.com/news/local/new-u-of-i-initiative-will-train-computer-science-teachers",
+   "initiatives": [
+    {
+     "name": "iSAT partner",
+     "scale": 1,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "CS teacher training initiative",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 7.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 60
+  },
+  {
+   "name": "Miami",
+   "sector": "private",
+   "unit": "School of Education and Human Development",
+   "notable": "Simon Fellows competition; sports-technology master's",
+   "notable_url": "https://www.edu.miami.edu/index.html",
+   "initiatives": [
+    {
+     "name": "Sports-tech master's",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "Simon Fellows competition",
+     "scale": 1,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 6
+    }
+   ],
+   "portfolio": 6.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 62
+  },
+  {
+   "name": "Rochester",
+   "sector": "private",
+   "unit": "Warner School",
+   "notable": "$1M for programs serving students with intellectual disability",
+   "notable_url": "https://rbj.net/tag/warner-school-of-education-and-human-development/",
+   "initiatives": [
+    {
+     "name": "Intellectual-disability inclusion programs",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "ROC Reading Partners",
+     "scale": 1,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 6
+    }
+   ],
+   "portfolio": 6.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 62
+  },
+  {
+   "name": "Case Western Reserve",
+   "sector": "private",
+   "unit": "No education school",
+   "notable": "Pre-collegiate tutoring programs in Cleveland schools",
+   "notable_url": "https://case.edu/gcr/pre-collegiate-programs",
+   "initiatives": [
+    {
+     "name": "Cleveland Scholars",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "Pre-collegiate tutoring",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 1,
+     "score": 5
+    }
+   ],
+   "portfolio": 6.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 64
+  },
+  {
+   "name": "Princeton",
+   "sector": "private",
+   "unit": "Program in Teacher Preparation",
+   "notable": "New education studies minor; QUEST summer institute",
+   "notable_url": "https://teacherprep.princeton.edu/program-offerings",
+   "initiatives": [
+    {
+     "name": "QUEST teacher institute",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "Education studies minor",
+     "scale": 1,
+     "evidence": 1,
+     "novelty": 1,
+     "score": 4
+    }
+   ],
+   "portfolio": 5.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 65
+  },
+  {
+   "name": "Stony Brook",
+   "sector": "public",
+   "unit": "No education school",
+   "notable": "Institute for STEM Education; campus AI teaching initiatives",
+   "notable_url": null,
+   "initiatives": [
+    {
+     "name": "Institute for STEM Education",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "Campus AI teaching initiatives",
+     "scale": 1,
+     "evidence": 1,
+     "novelty": 1,
+     "score": 4
+    }
+   ],
+   "portfolio": 5.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 65
+  },
+  {
+   "name": "UC Riverside",
+   "sector": "public",
+   "unit": "School of Education",
+   "notable": "AI programs with CSUSB; civics education grant",
+   "notable_url": null,
+   "initiatives": [
+    {
+     "name": "AI programs with CSUSB",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    },
+    {
+     "name": "Civics education grant",
+     "scale": 1,
+     "evidence": 1,
+     "novelty": 1,
+     "score": 4
+    }
+   ],
+   "portfolio": 5.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 65
+  },
+  {
+   "name": "UC San Diego",
+   "sector": "public",
+   "unit": "Education Studies department",
+   "notable": "CREATE STEM Success Initiative, a decade of K–20 partnerships",
+   "notable_url": "https://create.ucsd.edu/partnerships/index.html",
+   "initiatives": [
+    {
+     "name": "CREATE STEM Success Initiative",
+     "scale": 3,
+     "evidence": 2,
+     "novelty": 2,
+     "score": 9
+    }
+   ],
+   "portfolio": 4.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 68
+  },
+  {
+   "name": "Caltech",
+   "sector": "private",
+   "unit": "No education unit",
+   "notable": "Center for Teaching, Learning & Outreach K–12 outreach",
+   "notable_url": "https://ctlo.caltech.edu/outreach",
+   "initiatives": [
+    {
+     "name": "CTLO K-12 outreach",
+     "scale": 2,
+     "evidence": 1,
+     "novelty": 2,
+     "score": 7
+    }
+   ],
+   "portfolio": 3.5,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 69
+  },
+  {
+   "name": "Dartmouth",
+   "sector": "private",
+   "unit": "Education department",
+   "notable": "Teacher certification program; nothing new surfaced in 2025–2026",
+   "notable_url": "https://educ.dartmouth.edu/undergraduate/careers",
+   "initiatives": [
+    {
+     "name": "Teacher certification program",
+     "scale": 1,
+     "evidence": 1,
+     "novelty": 1,
+     "score": 4
+    }
+   ],
+   "portfolio": 2.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 70
+  },
+  {
+   "name": "Emory",
+   "sector": "private",
+   "unit": "Closed its education division in 2012",
+   "notable": "No education unit",
+   "notable_url": null,
+   "initiatives": [],
+   "portfolio": 0.0,
+   "direction": "none",
+   "lenses": [],
+   "response": null,
+   "response_url": null,
+   "rank": 71
+  }
+ ]
+}

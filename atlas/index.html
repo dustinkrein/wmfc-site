@@ -1,246 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>The Portable-Funding Atlas — When Money Follows the Child</title>
+<meta name="description" content="Where else has public money followed the child, and for how long? 175 countries, coded through who may operate schools and who staffs them.">
 <link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/atlas/">
-<meta name="description" content="Where has education money followed the child, and for how long? An open, growing record of portable-funding systems worldwide.">
-<meta property="og:site_name" content="When Money Follows the Child">
-<meta property="og:title" content="The Portable-Funding Atlas">
-<meta property="og:description" content="Where has education money followed the child, and for how long? An open, growing record of portable-funding systems worldwide.">
+<meta property="og:title" content="The Portable-Funding Atlas — When Money Follows the Child">
+<meta property="og:description" content="Where else has public money followed the child, and for how long? 175 countries, coded through who may operate schools and who staffs them.">
+<meta property="og:type" content="website">
 <meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/atlas/">
-<meta name="twitter:card" content="summary">
+<meta property="og:site_name" content="When Money Follows the Child">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
-<style>
-:root{
-  --ox:#6E1F2C; --oxd:#521622; --oxt:#F5EAEC;
-  --ink:#1A1A1C; --ink2:#44444A; --ink3:#6E6E76;
-  --bg:#FFFFFF; --bg2:#F6F6F4; --line:#E2E2DE; --lined:#C9C9C3;
-  --f:Georgia,"Times New Roman",serif;
-  --s:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-
-  /* Map depth scale — a single-hue coverage ramp, NOT a good/bad ramp.
-     Coded = full oxblood; Shortlisted = muted oxblood tint; Not yet coded = stone (the absence). */
-  --t1:#6E1F2C;
-  --t2:#B98A92;      /* desaturated oxblood tint — reads as "partial", still the one hue */
-  --t3:#ECECE8;      /* stone, the empty track */
-  --t3-stroke:#D6D6D0;
-}
-*{box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{
-  margin:0; background:var(--bg); color:var(--ink);
-  font-family:var(--s); font-size:15px; line-height:1.58;
-  -webkit-font-smoothing:antialiased;
-}
-a{color:var(--ox);}
-:focus-visible{outline:2.5px solid var(--ox); outline-offset:2px;}
-
-/* signature 5px oxblood rule */
-.rule{ height:5px; background:var(--ox); }
-
-/* ---------- Masthead + lockup ---------- */
-.masthead{ border-bottom:1px solid var(--line); }
-.masthead-inner{
-  display:flex; align-items:center; justify-content:space-between;
-  padding:16px 40px; max-width:1280px; margin:0 auto; flex-wrap:wrap; gap:10px;
-}
-.lock{ display:flex; align-items:baseline; gap:13px; flex-wrap:wrap; }
-.lock .mg{ font-family:var(--f); font-weight:700; font-size:23px; letter-spacing:-.01em; color:var(--ink); }
-.lock .mg .f{ color:var(--ox); font-style:italic; }
-.lock .sb{ font-size:10.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--ink3); }
-.masthead-meta{ font-size:13px; color:var(--ink3); }
-
-/* ---------- Title band ---------- */
-.titleband{ max-width:1280px; margin:0 auto; padding:40px 40px 22px; }
-.kick{ font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--ox); margin:0 0 14px; }
-h1{
-  font-family:var(--f); font-weight:700; font-size:clamp(30px,5vw,44px);
-  line-height:1.05; letter-spacing:-.015em; margin:0 0 16px; max-width:20ch;
-}
-h1 .f{ color:var(--ox); font-style:italic; }
-.standfirst{ font-size:16.5px; line-height:1.55; color:var(--ink2); max-width:64ch; margin:0; }
-
-/* ---------- Layout ---------- */
-.stage{
-  max-width:1280px; margin:0 auto; padding:10px 40px 44px;
-  display:grid; grid-template-columns:1fr 384px; gap:30px; align-items:start;
-}
-.map-col{ min-width:0; }
-.map-frame{
-  background:var(--bg2); border:1px solid var(--line); border-top:3px solid var(--lined);
-  padding:12px; position:relative; overflow:hidden;
-}
-svg.worldmap{ width:100%; height:auto; display:block; }
-.cty{ stroke:var(--bg); stroke-width:0.4; cursor:pointer; transition:fill .15s ease, opacity .15s ease; }
-.cty.t1{ fill:var(--t1); }
-.cty.t2{ fill:var(--t2); }
-.cty.t3{ fill:var(--t3); stroke:var(--t3-stroke); }
-.cty:hover{ opacity:0.78; }
-.cty.selected{ stroke:var(--ink); stroke-width:1.1; }
-.cty.dimmed{ opacity:0.3; }
-
-/* Legend */
-.legend{
-  display:flex; gap:22px; flex-wrap:wrap; align-items:center;
-  padding:16px 4px 2px; font-size:13px; color:var(--ink2);
-}
-.legend .lead{ font-weight:700; color:var(--ink); }
-.legend button{
-  display:inline-flex; align-items:center; gap:9px; background:none; border:none;
-  font:inherit; color:inherit; cursor:pointer; padding:4px 5px;
-}
-.legend button[aria-pressed="true"]{ background:var(--bg2); color:var(--ink); font-weight:700; }
-.legend .sw{ width:15px; height:15px; flex:none; border:1px solid var(--line); }
-.sw.t1{ background:var(--t1); border-color:var(--t1); }
-.sw.t2{ background:var(--t2); border-color:var(--t2); }
-.sw.t3{ background:var(--t3); border-color:var(--t3-stroke); }
-.legend .count{ font-family:var(--f); font-weight:700; color:var(--ox); font-variant-numeric:tabular-nums; }
-
-.map-note{
-  font-size:13px; color:var(--ink3); line-height:1.55;
-  margin-top:14px; padding-top:14px; border-top:1px solid var(--line); max-width:74ch;
-}
-.map-note b{ color:var(--ink2); font-weight:650; }
-
-/* ---------- Detail panel ---------- */
-.panel{
-  position:sticky; top:18px; border:1px solid var(--line); border-top:4px solid var(--ox);
-  background:var(--bg); overflow:hidden; min-height:440px; display:flex; flex-direction:column;
-}
-.panel-head{ padding:22px 24px 18px; border-bottom:1px solid var(--line); }
-.panel-tier{
-  font-size:10.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
-  padding:4px 9px; display:inline-block; margin-bottom:13px; border:1px solid var(--line);
-}
-.panel-tier.tt1{ background:var(--oxt); color:var(--ox); border-color:var(--oxt); }
-.panel-tier.tt2{ background:var(--bg2); color:var(--ink2); }
-.panel-tier.tt3{ background:var(--bg2); color:var(--ink3); }
-.panel-country{ font-family:var(--f); font-weight:700; font-size:29px; line-height:1.08; margin:0; letter-spacing:-.01em; }
-.panel-since{ font-size:13px; color:var(--ink2); margin-top:8px; }
-.panel-since b{ font-family:var(--f); font-size:17px; color:var(--ox); font-variant-numeric:tabular-nums; }
-.panel-body{ padding:20px 24px 24px; overflow-y:auto; flex:1; }
-.panel-mech{
-  font-size:13px; color:var(--ink); background:var(--bg2); border-left:3px solid var(--lined);
-  padding:10px 13px; margin:0 0 18px;
-}
-.panel-summary{ font-size:15px; line-height:1.6; margin:0 0 22px; color:var(--ink2); }
-.panel-summary b{ color:var(--ink); font-weight:650; }
-.findings-lbl{
-  font-size:11px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;
-  color:var(--ink3); margin:0 0 12px; padding-top:4px;
-}
-.finding{
-  border-left:3px solid var(--ox); padding:2px 0 2px 15px; margin:0 0 18px;
-  font-size:14px; line-height:1.58; color:var(--ink2);
-}
-.finding b{ color:var(--ink); font-weight:650; }
-.finding .meta{ font-size:13px; color:var(--ink3); margin-top:7px; display:block; }
-/* coded observation — expressed in the type system, not a second color */
-.panel-code{
-  margin-top:6px; padding:12px 14px; background:var(--bg2); border-left:3px solid var(--ox);
-}
-.panel-code .cl{ font-size:10.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--ink3); display:block; margin-bottom:5px; }
-.panel-code .cv{ font-family:var(--f); font-weight:700; font-size:17px; color:var(--ox); }
-
-/* empty state */
-.empty .big{ font-family:var(--f); font-size:19px; font-weight:700; line-height:1.35; color:var(--ink); margin:0 0 15px; }
-.empty .method{
-  font-size:14px; line-height:1.6; color:var(--ink2); border-left:3px solid var(--lined);
-  padding-left:15px; margin:0 0 18px;
-}
-.empty .method b{ color:var(--ink); font-weight:650; }
-.empty .method.queued{ border-left-color:var(--ox); }
-.empty .cta{ font-size:13px; color:var(--ink3); line-height:1.55; }
-
-.panel-placeholder{ padding:66px 26px; text-align:center; color:var(--ink3); }
-.panel-placeholder .ph-mark{ font-family:var(--f); font-weight:700; font-size:20px; color:var(--ink); margin-bottom:9px; }
-.panel-placeholder p{ font-size:14px; line-height:1.55; margin:0; }
-
-/* ---------- Coverage strip ---------- */
-.coverage{ max-width:1280px; margin:0 auto; padding:6px 40px 48px; }
-.coverage-inner{
-  border-top:1px solid var(--line); padding-top:26px;
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:26px;
-}
-.cov-stat .n{ font-family:var(--f); font-size:52px; font-weight:700; line-height:1; color:var(--ink); font-variant-numeric:tabular-nums; letter-spacing:-.02em; }
-.cov-stat .n.ox{ color:var(--ox); }
-.cov-stat .n.zero{ color:var(--ink3); }
-.cov-stat .l{ font-size:13px; color:var(--ink2); margin-top:10px; line-height:1.45; }
-
-/* ---------- Method note ---------- */
-.method-note{ max-width:1280px; margin:0 auto; padding:0 40px 44px; }
-.method-note .inner{ background:var(--ink); color:#fff; padding:34px 38px; }
-.method-note h2{ font-family:var(--f); font-weight:700; font-size:23px; margin:0 0 16px; letter-spacing:-.01em; }
-.method-note p{ color:#D4D4D6; font-size:14.5px; line-height:1.62; margin:0 0 13px; max-width:78ch; }
-.method-note p:last-child{ margin-bottom:0; }
-.method-note b{ color:#fff; font-weight:650; }
-.method-note a{ color:#C86A78; }
-
-/* correction/provenance box — the signature oxblood box */
-.rulebox{ background:var(--oxt); border-left:4px solid var(--ox); padding:17px 22px; margin:0 0 26px; }
-.rulebox b{ font-size:10.5px; font-weight:700; letter-spacing:.12em; text-transform:uppercase; color:var(--ox); display:block; margin-bottom:7px; }
-.rulebox p{ color:var(--ink); margin:0; max-width:none; font-size:14px; line-height:1.55; }
-
-footer .inner{
-  max-width:1280px; margin:0 auto; padding:26px 40px 56px;
-  display:flex; flex-direction:column; gap:9px;
-}
-.foot-lock{ display:flex; align-items:baseline; gap:12px; flex-wrap:wrap; }
-.foot-lock .mg{ font-family:var(--f); font-weight:700; font-size:19px; }
-.foot-lock .mg .f{ color:var(--ox); font-style:italic; }
-.foot-lock .sb{ font-size:10px; font-weight:700; letter-spacing:.14em; text-transform:uppercase; color:var(--ink3); }
-.foot-line{ font-size:13px; color:var(--ink2); max-width:62ch; }
-.foot-meta{ font-size:12px; color:var(--ink3); margin-top:4px; }
-.tag{ font-family:var(--f); font-style:italic; color:var(--ox); font-size:14px; }
-
-@media (max-width:960px){
-  .stage{ grid-template-columns:1fr; }
-  .panel{ position:relative; top:0; }
-}
-@media (max-width:560px){
-  .masthead-inner, .titleband, .stage, .coverage, .method-note, footer .inner{ padding-left:20px; padding-right:20px; }
-}
-@media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} .cty{ transition:none; } }
-
-/* --- site integration --- */
-.sitenav{display:flex;gap:22px;font-size:13.5px;font-weight:600}
-.sitenav a{color:var(--ink2);text-decoration:none}
-.sitenav a:hover{color:var(--ox)}
-.sitenav a[aria-current="page"]{color:var(--ox)}
-.sitefoot{background:var(--ink);color:#ABABB1;font-size:13.5px;margin-top:0}
-.sitefoot .rule{background:var(--ox)}
-.sitefoot .inner{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px;max-width:1060px;margin:0 auto;padding:40px 28px 56px}
-.sitefoot .fwm{font-family:var(--f);font-size:18px;color:#fff;margin-bottom:9px;font-weight:700}
-.sitefoot .fwm .f{color:#C86A78;font-style:italic}
-.sitefoot p{margin:0;max-width:38ch;color:#ABABB1}
-.sitefoot a{color:#D8D8DC;display:block;margin-bottom:7px;text-decoration:none}
-.sitefoot .h{font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#74747A;margin-bottom:11px}
-@media(max-width:820px){.sitenav{display:none}.sitefoot .inner{grid-template-columns:1fr}}
-</style>
+<link rel="stylesheet" href="/assets/wmfc.css">
+<script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
-<div class="rule"></div>
+<div class="bar"></div>
+<header><div class="w">
+  <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
+  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/atlas/" aria-current="page">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
+  <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</div></header>
+<main>
+<style>
+.stage{display:grid;grid-template-columns:1fr 380px;gap:22px;align-items:start}
+@media (max-width:960px){.stage{grid-template-columns:1fr}}
+.map-frame{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;overflow:hidden}
+svg.worldmap{width:100%;height:auto;display:block}
+.cty{stroke:var(--card);stroke-width:.4;cursor:pointer;transition:opacity .15s}
+.cty.t1{fill:var(--ox)}.cty.t2{fill:var(--ox3)}.cty.t3{fill:var(--bg2);stroke:var(--line)}
+.cty:hover{opacity:.75}.cty.selected{stroke:var(--ink);stroke-width:1.2}.cty.dimmed{opacity:.25}
+.alegend{display:flex;gap:6px 14px;flex-wrap:wrap;align-items:center;margin-top:12px;font-size:13px;color:var(--ink2)}
+.alegend button{display:inline-flex;align-items:center;gap:8px;background:var(--card);border:1px solid var(--line);border-radius:999px;font:inherit;color:inherit;cursor:pointer;padding:7px 12px}
+.alegend button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.alegend .count{font-family:var(--f)}
+.asw{width:12px;height:12px;border-radius:2px}.asw.t1{background:var(--ox)}.asw.t2{background:var(--ox3)}.asw.t3{background:var(--bg2);box-shadow:inset 0 0 0 1px var(--lined)}
+.panel{background:var(--card);border:1px solid var(--line);border-top:3px solid var(--ox);border-radius:10px;overflow:hidden;position:sticky;top:76px;max-height:calc(100vh - 96px);display:flex;flex-direction:column}
+@media (max-width:960px){.panel{position:relative;top:0;max-height:none}}
+.panel-head{padding:18px 20px 14px;border-bottom:1px solid var(--line)}
+.panel-tier{font:600 11px/1 var(--s);letter-spacing:.1em;text-transform:uppercase;color:var(--ox);display:inline-block;margin-bottom:10px}
+.panel-tier.tt2,.panel-tier.tt3{color:var(--ink3)}
+.panel-country{font:28px/1.1 var(--f);margin:0}
+.panel-since{font-size:13px;color:var(--ink2);margin-top:6px}.panel-since b{font:18px var(--f);color:var(--ox);font-weight:400}
+.panel-body{padding:16px 20px 20px;overflow-y:auto}
+.panel-mech{font-size:13px;background:var(--bg2);border-left:3px solid var(--lined);padding:9px 12px;margin:0 0 14px;color:var(--ink)}
+.panel-summary{font-size:14.5px;line-height:1.6;color:var(--ink2);margin:0 0 16px}
+.findings-lbl{font:600 11px/1 var(--s);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin:0 0 10px}
+.finding{border-left:3px solid var(--ox);padding:2px 0 2px 12px;margin:0 0 14px;font-size:13.5px;line-height:1.55;color:var(--ink2)}
+.finding .meta{display:block;font-size:12px;color:var(--ink3);margin-top:5px}
+.panel-code{padding:10px 12px;background:var(--oxt);border-radius:6px}.panel-code .cl{display:block;font:600 10.5px/1 var(--s);letter-spacing:.1em;text-transform:uppercase;color:var(--ink3);margin-bottom:5px}.panel-code .cv{font:17px var(--f);color:var(--ox)}
+.empty .big{font:19px/1.35 var(--f);margin:0 0 12px}.empty .method{font-size:14px;color:var(--ink2);border-left:3px solid var(--lined);padding-left:12px;margin:0 0 14px}.empty .method.queued{border-left-color:var(--ox)}.empty .cta{font-size:13px;color:var(--ink3)}
+.panel-placeholder{padding:50px 22px;text-align:center;color:var(--ink3)}.panel-placeholder .ph-mark{font:20px var(--f);color:var(--ink);margin-bottom:8px}
+</style>
 
-<div class="masthead">
-  <div class="masthead-inner">
-    <span class="lock"><span class="mg">WM<span class="f">F</span>C</span><span class="sb">When Money Follows the Child</span></span>
-    <nav class="sitenav"><a href="/research/">Readiness Index</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
-    <span class="masthead-meta">The Portable-Funding Atlas · Baseline · July 2026</span>
+<div class="hero sm"><div class="w">
+  <h1>Where else has the money <span class="f">followed</span> the child?</h1>
+  <p class="lead2">Other countries made funding portable decades ago. Each coded country is read through one lens: who is allowed to operate schools, and who trains and pays the people who staff them.</p>
+  <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
+  <div class="ledger" id="ledger">
+    <div><div class="big hot" id="statCoded">29</div><p>countries coded through the workforce lens</p></div>
+    <div><div class="big" id="statTotal">175</div><p>countries on the map</p></div>
+    <div><div class="big" id="statPending">134</div><p>not yet coded, shown as honest blanks</p></div>
+    <div><div class="big" data-n="109" data-suf=" yrs">109 yrs</div><p>the Netherlands has funded every school equally, since 1917</p></div>
   </div>
-</div>
+</div></div>
 
-<div class="titleband">
-  <p class="kick">An open, growing record</p>
-  <h1>Where has the money <span class="f">followed</span> the child — and for how long?</h1>
-  <p class="standfirst">Click any country. Where WMFC has coded the history, you get the workforce story: what portability did to the people who teach and the institutions that train them. Where we haven't yet, you get an honest blank — coverage you can watch fill in, not a confident guess.</p>
-</div>
-
-<div class="stage">
-  <div class="map-col">
-    <div class="map-frame">
-      <svg class="worldmap" viewBox="0 0 1000 394" role="img" aria-label="World map. Countries shaded by depth of WMFC research coverage. Click a country for its portable-funding history.">
+<section class="alt" style="padding-top:44px"><div class="w">
+  <div class="stage">
+    <div>
+      <div class="map-frame"><svg class="worldmap" viewBox="0 0 1000 394" role="img" aria-label="World map. Countries shaded by depth of WMFC research coverage. Click a country for its portable-funding history.">
 <path id="c-AFG" class="cty t3" d="M670,134.3L672.9,135.4L675,135L675.5,133.7L677.7,133.3L679.3,132.5L679.9,130.2L682.2,129.7L682.6,128.7L683.9,129.5L686.3,129.6L688.4,130.2L691.3,129.6L693.1,128.9L694.8,128.9L695.5,127.4L696.7,126.4L698.2,127.1L698.7,128L698.5,130.4L699.6,131.3L701.8,130.4L703.5,129.2L705.4,129.4L708.3,129.4L707.2,130.5L705.7,131L702.6,131.3L699.6,131.9L698,133.1L698.6,134.3L698.9,135.7L697.5,136.9L697.7,137.9L696.9,138.9L694.3,138.8L695.3,140.7L693.6,141.4L692.4,143.1L692.5,144.7L691.5,145.5L690.4,145.2L688.3,145.6L685.9,146.4L684.4,147.9L684.3,150.3L680.7,151.5L678.8,151.2L676.5,151.5L673.7,151.9L669.1,150.5L671.6,148L671.4,146.2L669.3,145.7L669.1,143.9L668.2,141.7L669.3,140.2L668.1,139.8L668.9,137.8L670,134.3Z" data-iso="AFG"><title>Afghanistan</title></path>
 <path id="c-AGO" class="cty t3" d="M545.4,249.7L546,251.7L546.8,253.4L548.5,255.7L550.4,255.5L552.8,255.5L553.9,253.2L555.7,253.1L557.2,252.6L557,253.6L560.4,253.6L560.4,255.3L561,256.4L560.6,258.1L560.8,259.8L561.7,260.8L561.5,264.1L563.4,263.9L565.2,263.5L566.4,263.7L566.4,265.9L566.9,267.2L566.5,268.2L560.9,269.2L560.8,278L562.7,280.3L564.5,282L559.4,283.1L552.7,282.7L550.7,281.4L539.5,281.5L537.4,280.5L535.6,280.4L533.9,280.9L532.6,281.4L532.3,279.6L532.7,277.2L533.7,274.7L533.8,273.5L534.7,271L535.4,269.8L537,268L537.9,266.8L538.2,264.7L538,263.1L537.2,262.1L536.4,260.5L535.8,258.8L536.8,257.1L535.9,254.4L535.4,252.6L534,250.8L535.4,249.9L537.2,249.6L545.4,249.7ZM534.5,249.1L533.1,247.3L534.2,246.1L536.1,246.6L535.1,247.2L534.5,249.1Z" data-iso="AGO"><title>Angola</title></path>
 <path id="c-ALB" class="cty t3" d="M557.2,117.1L557.2,119.2L558.4,119.9L557.4,121L556,123.3L553.9,121.5L553.7,120.2L553.9,118.3L553.8,117L554.8,114.8L556.3,115.8L557.2,117.1Z" data-iso="ALB"><title>Albania</title></path>
@@ -416,59 +247,45 @@ footer .inner{
 <path id="c-ZAF" class="cty t3" d="M587.6,314.6L585.8,316.4L585.1,317.8L583.5,319.8L580.3,322.7L578.4,324.4L576.3,325.6L573.4,326.7L572,326.9L569.9,327.2L568.5,327.7L565.5,327.2L563.9,327.5L562.7,327.4L559.8,328.5L557.5,328.9L555.8,330L554.5,330.1L553.3,329.1L551.2,327.8L550.7,325.8L549.8,323.9L550.6,321.3L548.8,318.7L547.4,316.3L545.4,312.7L546.7,311.3L547.8,312.1L548.3,313.3L549.5,313.5L551.3,314L552.8,313.8L555.3,312.4L555.3,302.1L557.7,305.2L557.4,306.9L558,307.9L560,307.6L561.4,306.3L562.7,305.5L563.4,304.2L564.8,303.5L565.9,303.9L567.3,304.6L569.5,304.8L571.3,304.1L572.1,301.9L573.6,301.7L574.4,300.7L575.3,298.8L577.8,296.7L581.8,294.7L582.9,294.7L584.2,295.2L586.6,295.1L588,299.1L588.7,301L588.2,304.1L588.4,305.1L587,304.6L586,305.6L585.2,306.7L586.9,309.1L588.5,308.8L589.1,307.6L591.2,307.6L590.5,309.6L590.2,311.9L589.5,313.2L587.6,314.6ZM580.5,313.8L579.3,312.9L578,313.5L576.5,314.6L575,316.3L577.1,318.5L578.1,318.2L580.1,316.9L581.5,314.6L580.5,313.8Z" data-iso="ZAF"><title>South Africa</title></path>
 <path id="c-ZMB" class="cty t3" d="M591,259L592.3,260.2L593,262.6L592,265.6L592.5,267.9L590.8,271.4L592.3,272.1L583.8,274.4L584.1,276.4L582,276.8L580.4,277.9L579.1,279.1L576.7,281.4L575.1,283.2L573.3,282.9L570.2,282.6L568.6,281.5L566.8,281.4L564.5,282L562.7,280.3L560.8,278L560.9,269.2L566.7,269.2L566.9,267.2L566.4,265.9L566.7,264.5L568.8,264.6L570.6,264.8L571.5,266.1L573.8,266.5L575.5,265.6L576.1,267L578.2,267.4L579.2,268.6L580.4,270.1L582.5,270.2L582.3,267.2L579.6,266.6L579.2,263.3L579.6,260L579,258.8L579.8,257L584.3,256.2L585.4,256.5L586.5,257.2L587.7,257.7L589.4,258.1L591,259Z" data-iso="ZMB"><title>Zambia</title></path>
 <path id="c-ZWE" class="cty t3" d="M586.6,295.1L585.2,294.9L582.9,294.7L581.8,294.7L580,293.4L577.8,293L577,291.3L577,290.3L575.8,290L572.7,286.9L571.8,285.3L570.2,282.6L573.3,282.9L575.1,283.2L576.7,281.4L579.1,279.1L580.1,278.9L582,276.8L584.1,276.4L584.3,277.4L586.6,277.4L587.9,278L589.8,278.9L591.2,279.8L591.2,283.3L590.7,285.2L590.6,287.3L590.7,289.7L589.6,292L586.6,295.1Z" data-iso="ZWE"><title>Zimbabwe</title></path>
-</svg>
+</svg></div>
+      <div class="alegend" id="legend">
+        <span style="font-weight:600;color:var(--ink)">Coverage:</span>
+        <button data-tier="1" aria-pressed="false"><span class="asw t1"></span>Coded <span class="count" id="ct1"></span></button>
+        <button data-tier="2" aria-pressed="false"><span class="asw t2"></span>Shortlisted <span class="count" id="ct2"></span></button>
+        <button data-tier="3" aria-pressed="false"><span class="asw t3"></span>Not yet coded <span class="count" id="ct3"></span></button>
+      </div>
+      <p class="src" style="margin-top:12px">Shading shows how far our research has got, not a judgment about any country's policy. Tap a country.</p>
     </div>
-
-    <div class="legend" id="legend">
-      <span class="lead">Coding depth:</span>
-      <button data-tier="1" aria-pressed="false"><span class="sw t1"></span>Coded <span class="count" id="ct1"></span></button>
-      <button data-tier="2" aria-pressed="false"><span class="sw t2"></span>Shortlisted <span class="count" id="ct2"></span></button>
-      <button data-tier="3" aria-pressed="false"><span class="sw t3"></span>Not yet coded <span class="count" id="ct3"></span></button>
-    </div>
-
-    <p class="map-note"><b>Coverage depth, not Readiness Index categories.</b> The shading here records how far <i>our</i> research has got in each country. It is unrelated to the <a href="/research/">Readiness Index</a> categories, which code individual institutions. The four European and Chilean equilibrium cases are written up in full in <a href="/research/international-precedents/">International Precedents</a>; the Americas were coded in August 2026 and live in the panel only.<br><br>
-      Shading encodes <b>how deeply WMFC has researched a country</b> — a fact about our coverage, not a judgment about the country's policy. It is deliberately not a "more choice / less choice" scale, and uses one hue only. The stone countries are the empty track: the absence read against the coded ones. England is recorded under the United Kingdom. Equirectangular projection; geometry simplified for file size.
-    </p>
+    <aside class="panel" id="panel" aria-live="polite">
+      <div class="panel-placeholder" id="placeholder"><div class="ph-mark">Select a country</div><p>Tap any country on the map.</p></div>
+      <div id="panelContent" style="display:none;"></div>
+    </aside>
   </div>
+</div></section>
 
-  <aside class="panel" id="panel" aria-live="polite">
-    <div class="panel-placeholder" id="placeholder">
-      <div class="ph-mark">Select a country</div>
-      <p>Four countries are fully coded to start: the Netherlands, Sweden, Chile, and the United Kingdom. Everything else is on the map, waiting to be researched.</p>
-    </div>
-    <div id="panelContent" style="display:none;"></div>
-  </aside>
-</div>
+<section><div class="w">
+  <div class="sh"><div class="num">01</div><div><h2>How long the money has followed</h2><p>Coded countries with a verified start year, and the one-line finding for each. Tap a dot to open it on the map.</p></div></div>
+  <div class="card"><svg class="chart" id="since" viewBox="0 0 900 200" role="img" aria-label="Start year of portable funding by country"></svg>
+    <div id="sd" class="limit" style="min-height:48px" aria-live="polite">Tap a dot.</div></div>
+  <p class="callout" style="margin-top:26px">Portability does not create a <em>workforce</em>. Long-running systems kept re-regulating who may run schools and who may teach.</p>
+  <a class="more" href="/research/international-precedents/">Read the international precedents</a>
+</div></section>
 
-<div class="coverage">
-  <div class="coverage-inner">
-    <div class="cov-stat"><div class="n ox" id="statCoded">29</div><div class="l">Countries fully coded<br>(coded · workforce lens)</div></div>
-    <div class="cov-stat"><div class="n" id="statTotal">175</div><div class="l">Countries on the map<br>(clickable, ISO-coded)</div></div>
-    <div class="cov-stat"><div class="n zero" id="statPending">134</div><div class="l">Not yet coded<br>(honest blanks, for now)</div></div>
-    <div class="cov-stat"><div class="n">1</div><div class="l">Data spine<br>(one file grows all of it)</div></div>
+</main>
+<footer><div class="w"><div class="cols">
+  <div>
+    <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
+    <p style="margin:0 0 8px;max-width:40ch">Research on how colleges and universities respond when K–12 funding follows the student.</p>
+    <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
   </div>
-</div>
-
-<div class="method-note">
-  <div class="inner">
-    <h2>How to read this atlas</h2>
-    <p><b>This is a baseline, not a finished map.</b> It ships mostly empty on purpose. A country shaded stone means "no WMFC entry yet" — <b>absence of evidence, not evidence of absence</b>. The map's value is that it shows its own coverage honestly rather than papering over the gaps with thin summaries. The empty track beside the coded countries is the finding.</p>
-    <p>Every coded finding carries a source and the month it was checked, and every entry is read through one lens only: <b>supply and workforce</b> — who is allowed to operate, and who is trained and paid to staff it. The coded observations describe observable policy behavior, so either side of the choice debate can cite the same country.</p>
-    <p style="margin-top:10px"><b>New in August 2026: North and South America.</b> Every country in both continents has been read and classified — 26 coded, 6 shortlisted with a stated reason for each. Coding a country is not the same as finding portability in it: Cuba, Mexico, Brazil, Uruguay, Costa Rica, El Salvador, Panama and Venezuela are coded entries recording that public money does <i>not</i> follow the child. A null that has been checked is a finding; a blank is not.</p>
-    <p>The durable asset here is the data spine, not the picture. Each country is one record — coded observation, founding year, mechanism, sourced findings, checked dates — so the map, the country briefs, and a future downloadable dataset all read from the same file. Coverage grows by adding records, never by rebuilding the map.</p>
+  <div><div class="fh">How universities respond</div>
+    <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
   </div>
-</div>
-
-<footer>
-  <div class="rule"></div>
-  <div class="inner">
-    <span class="foot-lock"><span class="mg">WM<span class="f">F</span>C</span><span class="sb">When Money Follows the Child</span></span>
-    <span class="foot-line">Independent, nonpartisan research on how institutions and the educator workforce respond as K-12 education funding becomes portable.</span>
-    <span class="tag">The money moved. We track what follows.</span>
-    <span class="foot-meta">The Portable-Funding Atlas · Baseline coded July 2026 · 175 countries drawn · Geometry: Natural Earth via world.geo.json · Corrections: info@whenmoneyfollowsthechild.org</span>
+  <div><div class="fh">The comparison and the record</div>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
   </div>
-</footer>
-
+</div></div></footer>
+<script src="/assets/wmfc.js"></script>
 <script>
 let DATA = {};
 const svg = document.querySelector('svg.worldmap');
@@ -575,6 +392,7 @@ document.querySelectorAll('#legend button').forEach(btn=>{
   });
 });
 select('NLD');
+if(window.atlasReady)window.atlasReady(DATA,select);
 }
 
 
@@ -588,29 +406,34 @@ fetch('/data/world-choice-2026.json')
     if (el) el.insertAdjacentHTML('afterbegin',
       '<p style="padding:14px;color:#6E6E76">Could not load the atlas dataset.</p>');
   });
+</script><script>
+(function(){
+"use strict";
+var W=window.WMFC,esc=W.esc;
+W.countUp(document.getElementById("ledger"));
+window.atlasReady=function(DATA,select){
+  var rows=Object.keys(DATA).map(function(k){var d=DATA[k];d.iso=k;return d;}).filter(function(d){return d.tier===1&&d.since;}).sort(function(a,b){return a.since-b.since;});
+  var svg=document.getElementById("since"),ns="http://www.w3.org/2000/svg",sd=document.getElementById("sd");
+  var sm=svg.parentNode.clientWidth<600,VW=sm?460:900;svg.setAttribute("viewBox","0 0 "+VW+" 200");
+  function s(t,a,txt){var e=document.createElementNS(ns,t);for(var k in a)e.setAttribute(k,a[k]);if(txt!=null)e.textContent=txt;svg.appendChild(e);return e;}
+  var y0=1910,y1=2030,L=16,R=VW-16,X=function(y){return L+(R-L)*(y-y0)/(y1-y0);},base=150;
+  s("line",{x1:L,x2:R,y1:base,y2:base,stroke:"var(--lined)"});
+  (sm?[1920,1960,2000]:[1920,1940,1960,1980,2000,2020]).forEach(function(y){s("text",{x:X(y),y:base+24,"text-anchor":"middle","font-size":12,fill:"var(--ink3)"},y);s("line",{x1:X(y),x2:X(y),y1:base-4,y2:base+4,stroke:"var(--lined)"});});
+  var lastX=-99,lvl=0;
+  rows.forEach(function(d){
+    var x=X(d.since);lvl=(x-lastX<(sm?40:70))?lvl+1:0;lastX=x;
+    var y=base-18-lvl*26;
+    s("line",{x1:x,x2:x,y1:y,y2:base,stroke:"var(--line)"});
+    var c=s("circle",{cx:x,cy:y,r:7,fill:d.iso==="USA"?"var(--ox)":"var(--ox2)",stroke:"var(--card)","stroke-width":2,tabindex:0});c.style.cursor="pointer";
+    if(!sm)s("text",{x:x+11,y:y+4,"font-size":12,fill:"var(--ink2)"},d.name);
+    function show(){sd.innerHTML="<b>"+esc(d.name)+", since "+d.since+".</b> "+esc(d.code_label||"")+". "+esc(d.mechanism||"");select(d.iso);}
+    c.addEventListener("mousemove",function(e){W.tip("<b>"+esc(d.name)+" · "+d.since+"</b>"+esc(d.code_label||""),e);});
+    c.addEventListener("mouseleave",function(){W.tip(null);});
+    c.addEventListener("click",function(){show();document.getElementById("panel").scrollIntoView({behavior:"smooth",block:"nearest"});});
+    c.addEventListener("focus",show);
+  });
+};
+})();
 </script>
-
-<footer class="sitefoot">
-  <div class="rule"></div>
-  <div class="inner">
-    <div>
-      <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
-      <p>Independent, nonpartisan research on how postsecondary institutions respond as K-12 education funding becomes portable.</p>
-      <p style="margin-top:10px"><a href="mailto:info@whenmoneyfollowsthechild.org" style="display:inline">info@whenmoneyfollowsthechild.org</a></p>
-    </div>
-    <div><div class="h">Research</div>
-      <a href="/research/">Readiness Index</a>
-      <a href="/atlas/">Portable-Funding Atlas</a>
-      <a href="/research/international-precedents/">International Precedents</a>
-      <a href="/notes/">Field Notes</a>
-      <a href="/data/">Data &amp; downloads</a>
-    </div>
-    <div><div class="h">About</div>
-      <a href="/method/">Method</a>
-      <a href="/about/#independence">Funding &amp; independence</a>
-      <a href="/about/#contact">Contact</a>
-    </div>
-  </div>
-</footer>
 </body>
 </html>
