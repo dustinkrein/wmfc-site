@@ -219,3 +219,18 @@
     Array.prototype.forEach.call(document.querySelectorAll("tr.dt[hidden]"), function (d) { d.removeAttribute("hidden"); });
   });
 })();
+/* ARCHIVE:START — 'N years ago' stamps, the current year, and a slow zoom as photographs come into view. */
+(function () {
+  var now = new Date().getFullYear();
+  Array.prototype.forEach.call(document.querySelectorAll("[data-ago]"), function (e) {
+    var y = +e.getAttribute("data-ago"); if (y) e.textContent = (now - y) + " years ago";
+  });
+  Array.prototype.forEach.call(document.querySelectorAll("[data-now]"), function (e) { e.textContent = now; });
+  var els = document.querySelectorAll(".arch,.tn,.archclose");
+  if (!("IntersectionObserver" in window)) { Array.prototype.forEach.call(els, function (e) { e.classList.add("seen"); }); return; }
+  var io = new IntersectionObserver(function (es) {
+    es.forEach(function (x) { if (x.isIntersecting) { x.target.classList.add("seen"); io.unobserve(x.target); } });
+  }, { threshold: 0.25 });
+  Array.prototype.forEach.call(els, function (e) { io.observe(e); });
+})();
+/* ARCHIVE:END */

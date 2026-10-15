@@ -96,6 +96,7 @@ def index_page(notes):
   <h1>Short findings, <span class="f">between</span> editions.</h1>
   <p class="lead2">One number, institution or pattern, with its evidence and its limits. Every note has a permanent address so it can be cited, checked and argued with.</p>
   %s
+  <figure class="arch" data-year="1945"><img src="/images/bw-reading-room-1945.jpg" alt="The children&#x27;s reading room, Allentown Free Library, 1945." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1945</span><span class="arch-ago" data-ago="1945"></span></div><figcaption class="arch-then">The children's reading room, Allentown Free Library, 1945.</figcaption><p class="arch-now"><b>Now</b>A Florida school district bought its microschool model from two former teachers.</p></div></figure>
 </div></div>
 
 <section class="alt"><div class="w">
