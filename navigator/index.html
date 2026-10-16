@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Navigator — When Money Follows the Child</title>
+<meta name="description" content="Four short questions. What the record shows for your role and your state, every row with its source, and a one-page brief to keep.">
+<link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/navigator/">
+<meta property="og:title" content="Navigator — When Money Follows the Child">
+<meta property="og:description" content="Four short questions. What the record shows for your role and your state, every row with its source, and a one-page brief to keep.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/navigator/">
+<meta property="og:site_name" content="When Money Follows the Child">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/wmfc.css">
+<script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+/* Navigator — page-local layout only. Colour, type and geometry come from wmfc.css. */
+.nv{max-width:860px}
+.nv .card{padding:26px}
+.prog{height:4px;background:var(--line);border-radius:2px;margin:0 0 22px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--ox);transition:width .3s}
+.stepk{font:600 12px/1.2 var(--s);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin:0 0 8px}
+.nv h2.q{font-size:clamp(24px,3vw,32px);margin:0 0 6px}
+.nv .qsub{color:var(--ink2);margin:0 0 18px;font-size:15px}
+.nv label.ql{display:block;font:600 14px/1.3 var(--s);color:var(--ink2);margin:22px 0 8px}
+.nv .chips{display:flex;flex-wrap:wrap;gap:8px}
+.nv .chip{font-size:14px;line-height:1.25;padding:10px 14px}
+.nv textarea,.nv select{width:100%;font:16px/1.45 var(--s);padding:12px 14px;border:1.5px solid var(--lined);border-radius:10px;background:var(--card);color:var(--ink)}
+.nv textarea{resize:vertical;min-height:70px}
+.nv textarea:focus,.nv select:focus,.nv .chip:focus-visible,.nv .btn:focus-visible{outline:2px solid var(--ox);outline-offset:2px}
+.nv .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;align-items:center}
+.nv .btn{border:0;cursor:pointer;font-family:var(--s)}
+.nv .btn.line{background:transparent;color:var(--ox);border:1.5px solid var(--ox);padding:11.5px 18.5px}
+.nv .btn.sm{font-size:13.5px;padding:9px 14px}
+.nv .btn.line.sm{padding:7.5px 12.5px}
+.nv .btn[hidden],.nv [hidden]{display:none!important}
+.res > .card{margin-bottom:16px}
+.res h2{font-size:clamp(24px,3vw,30px);margin:0 0 8px}
+.res h3{font-size:19px;margin:0 0 4px}
+.stat{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:16px 0 4px}
+.stat div{border-top:3px solid var(--ox);padding-top:10px}
+.stat b{display:block;font:clamp(32px,4.4vw,46px)/1 var(--f);font-weight:400;font-variant-numeric:tabular-nums}
+.stat span{font-size:13px;color:var(--ink2)}
+.stat .z{border-top-color:var(--lined)}
+@media (max-width:600px){.stat{grid-template-columns:repeat(2,1fr)}}
+.tmap{width:100%;max-width:620px;height:auto;display:block;margin:6px 0 4px}
+.tmap g{cursor:pointer}
+.tmap rect{stroke:var(--card);stroke-width:2}
+.tmap .t0{fill:var(--bg2)}.tmap .t1{fill:var(--ox3)}.tmap .t2{fill:var(--ox2)}.tmap .t3{fill:var(--ox)}
+.tmap .me rect{stroke:var(--ink);stroke-width:3}
+.tmap text{font:600 11px var(--s);text-anchor:middle;pointer-events:none;fill:var(--ink2)}
+.tmap .t2 + text,.tmap .t3 + text{fill:var(--onox)}
+.mkey{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:var(--ink2);margin-top:6px}
+.mkey i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.rows{display:grid;gap:10px;margin-top:14px}
+.ir{border:1px solid var(--line);border-radius:10px;padding:14px 16px;background:var(--card)}
+.ir .m{display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center;font-size:13px;color:var(--ink3);margin-bottom:6px}
+.ir p{margin:6px 0 0;font-size:14.5px;color:var(--ink2)}
+.ir .src{font-size:13px;margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center}
+.tp{display:inline-block;font:600 11px/1 var(--s);letter-spacing:.04em;text-transform:uppercase;padding:5px 7px;border-radius:4px}
+.tp.T1{background:var(--ox);color:var(--onox)}.tp.T2{background:var(--ox2);color:var(--onox)}.tp.T3{background:var(--oxt);color:var(--ox)}.tp.T0{background:var(--bg2);color:var(--ink3);border:1px dashed var(--lined)}
+.cmpb{display:inline-flex;gap:6px;align-items:center;font-size:13px;color:var(--ink2);cursor:pointer;margin-left:auto}
+.cmpw{border:1.5px solid var(--ox);border-radius:10px;padding:14px;margin:12px 0}
+.cmpw table{border-collapse:collapse;width:100%;min-width:480px;font-size:13.5px}
+.cmpw th,.cmpw td{text-align:left;vertical-align:top;padding:8px 6px;border-bottom:1px solid var(--line)}
+.cmpw th{font-weight:600;color:var(--ink2)}
+.cmpw .sc{overflow-x:auto}
+.ql2{margin:8px 0 0;padding-left:20px}.ql2 li{margin:7px 0}
+.pq{margin:10px 0 0;padding:10px 14px;border-left:3px solid var(--ox);background:var(--oxt);font-style:italic;color:var(--ink)}
+.hint{font-size:13px;color:var(--ink3);margin:8px 0 0}
+.cgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px;margin-top:12px}
+.cgrid a{display:block;border:1px solid var(--line);border-radius:10px;padding:14px;text-decoration:none;color:var(--ink);background:var(--card)}
+.cgrid a b{display:block;color:var(--ox);font-weight:600}
+.cgrid a span{font-size:13.5px;color:var(--ink2)}
+.cgrid a:hover{border-color:var(--ox)}
+.ctry{border-left:3px solid var(--ox);padding:4px 0 4px 14px;margin-top:10px}
+.ctry .since{font:18px/1.3 var(--f);margin:0 0 6px}
+.brief{border-top:4px solid var(--ox)}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="w">
+  <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
+  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
+  <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</div></header>
+<main>
+
+<div class="hero sm"><div class="w">
+  <h1>Navigate the <span class="f">record</span></h1>
+  <p class="lead2">Four short questions. You get what the record shows for your role and your state, every row with its source, and a one-page brief to keep.</p>
+  <div class="qline"><b>The question</b><span>When K–12 funding follows the student, how do colleges and universities respond? And who is leading?</span></div>
+</div></div>
+
+<section class="alt"><div class="w nv">
+  <div id="app" aria-live="polite"><div class="card"><p>Loading the record…</p></div></div>
+  <div class="limit"><b>The limit, first.</b> This tool reads WMFC's published data and nothing else. It does not rate schools, rank institutions or give advice. A row is a coded observation with a date and a source. Where we have coded nothing, the tool says so: nothing found is not the same as nothing there.</div>
+</div></section>
+
+</main>
+<footer><div class="w"><div class="cols">
+  <div>
+    <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
+    <p style="margin:0 0 8px;max-width:40ch">Research on how colleges and universities respond when K–12 funding follows the student.</p>
+    <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
+  </div>
+  <div><div class="fh">How universities respond</div>
+    <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
+  </div>
+  <div><div class="fh">The comparison and the record</div>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+  </div>
+</div></div></footer>
+<script src="/assets/wmfc.js"></script>
+<script>
+(function(){
+"use strict";
+var W=window.WMFC,esc=W.esc,app=document.getElementById("app");
+var MAIL="info@whenmoneyfollowsthechild.org",SITE="https://www.whenmoneyfollowsthechild.org";
+
+/* ---------- vocabulary ---------- */
+var ROLES={
+  educator:"Teacher or aspiring teacher",
+  founder:"School founder or operator",
+  family:"Parent or family",
+  univ:"University leader or faculty",
+  district:"School district leader",
+  policy:"Policymaker or staff",
+  press:"Journalist or researcher",
+  funder:"Funder or philanthropy",
+  other:"Something else"
+};
+var WANTS={
+  programs:"Programs that prepare educators for schools outside the district system",
+  universities:"How major universities are responding",
+  leaders:"Who is leading",
+  districts:"How school districts are responding",
+  placement:"Whether student teachers can be placed in private schools (Florida)",
+  intl:"How other countries handle it",
+  notes:"The latest Field Notes"
+};
+var DEFAULTS={
+  educator:["programs","placement","leaders"],founder:["programs","districts","leaders"],family:["programs","districts"],
+  univ:["programs","universities","placement","leaders"],district:["districts","leaders","programs"],policy:["programs","districts","intl"],
+  press:["programs","universities","leaders","districts","notes"],funder:["leaders","programs","universities"],other:["programs","notes"]
+};
+var NOTETAG={educator:"Workforce",founder:"The seam",family:"Workforce",univ:"Institutions",district:"Institutions",policy:"The seam",press:"",funder:"The seam",other:""};
+var ASK={
+  educator:["Does the program prepare me for settings outside district schools, or only name them?","Can my student teaching be placed in a private, charter or microschool?","Will the credential be recognized by the schools I want to work in?","Who supervises and pays for a placement outside the district?"],
+  founder:["Which institutions near me authorize, operate or supply schools like mine?","Where will my teachers be trained, and by whom?","Is the local district a buyer, a partner or a competitor?","What does the state require of staff in my setting?"],
+  family:["Who trained the teachers at the schools we are considering?","Does the school require certification, and from where?","How does the school support teachers who are new to this setting?","Who can answer our questions independently of the school?"],
+  univ:["Do our programs prepare candidates for settings outside district schools, or only mention them?","Does our clinical-placement policy allow private or microschool placements?","Do we operate, authorize or supply any K–12 schools?","Which peer institutions have moved, and how?"],
+  district:["Which services could we offer to students we do not enroll?","Where are families going, and why?","Which local institutions prepare educators for our competitors and partners?","What have other districts tried, and with what results?"],
+  policy:["Who is preparing the educator workforce the new options need?","Do placement and certification rules assume a district setting?","Which institutions authorize or operate schools in the state?","What happened elsewhere once money followed the child?"],
+  press:["What is coded, and what is only not yet coded?","When was each source last checked?","Which findings would a supporter and a skeptic of choice policy both cite?","Where has WMFC corrected itself?"],
+  funder:["Where is the workforce gap largest?","Which efforts were built and then stopped, and why?","Who is doing the work, not narrating it?","What evidence would change the finding?"]
+};
+ASK.other=ASK.press;
+var STATES={AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",DC:"District of Columbia",FL:"Florida",GA:"Georgia",HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming"};
+var ABBR={};Object.keys(STATES).forEach(function(k){ABBR[STATES[k]]=k;});
+/* tile grid: [abbr,row,col] — a schematic, not geography */
+var TILES=[["AK",0,0],["ME",0,10],["VT",1,9],["NH",1,10],["WA",2,0],["ID",2,1],["MT",2,2],["ND",2,3],["MN",2,4],["IL",2,5],["WI",2,6],["MI",2,7],["NY",2,8],["RI",2,9],["MA",2,10],
+["OR",3,0],["NV",3,1],["WY",3,2],["SD",3,3],["IA",3,4],["IN",3,5],["OH",3,6],["PA",3,7],["NJ",3,8],["CT",3,9],["CA",4,0],["UT",4,1],["CO",4,2],["NE",4,3],["MO",4,4],["KY",4,5],["WV",4,6],["VA",4,7],["MD",4,8],["DE",4,9],
+["AZ",5,1],["NM",5,2],["KS",5,3],["AR",5,4],["TN",5,5],["NC",5,6],["SC",5,7],["DC",5,8],["OK",6,3],["LA",6,4],["MS",6,5],["AL",6,6],["GA",6,7],["HI",7,0],["TX",7,3],["FL",7,8]];
+
+/* ---------- state ---------- */
+var D=null,step=0,cmp=[];
+var A={role:"",roleText:"",place:"",country:"",wants:[],notes:{s1:"",s2:"",s3:"",concerns:""}};
+function roleLabel(){return A.role==="other"&&A.roleText.trim()?A.roleText.trim():(ROLES[A.role]||"Reader");}
+function placeLabel(){return A.place==="INTL"?(A.country&&D.world[A.country]?D.world[A.country].name:"Outside the United States"):(STATES[A.place]||"All states");}
+function tierKey(t){return "T"+String(t).replace("Tier ","");}
+function tierLabel(t){var c=D.scan.categories[t];return c?c.label:t;}
+var RANK={"Tier 1":1,"Tier 2":2,"Tier 3":3,"Tier 0":4};
+function byTier(a,b){return (RANK[a.tier]-RANK[b.tier])||a.name.localeCompare(b.name);}
+function inState(s,ab){return !!s&&String(s).split(/\s*·\s*/).indexOf(ab)>-1;}
+
+/* ---------- data ---------- */
+Promise.all(["scan-2026","universities-2026","leaders-2026","districts-2026","placement-2026","world-choice-2026","field-notes"].map(function(f){return W.json("/data/"+f+".json");}))
+.then(function(r){D={scan:r[0],uni:r[1],lead:r[2],dist:r[3],place:r[4],world:r[5],notes:r[6]};render();})
+.catch(function(){app.innerHTML='<div class="card"><p>The data did not load. Reload the page, or read the <a href="/research/">Readiness Index</a> directly.</p></div>';});
+
+/* ---------- shared bits ---------- */
+function chips(group,dict,single){
+  return '<div class="chips">'+Object.keys(dict).map(function(k){
+    var on=single?A[group]===k:A[group].indexOf(k)>-1;
+    return '<button type="button" class="chip" data-g="'+group+'" data-k="'+k+'"'+(single?' data-single="1"':"")+' aria-pressed="'+on+'">'+esc(dict[k])+'</button>';
+  }).join("")+'</div>';
+}
+function noteBox(k,label){return '<label class="ql" for="n_'+k+'">'+(label||"Anything to add? (optional)")+'</label><textarea id="n_'+k+'" data-note="'+k+'" rows="2" placeholder="In your own words">'+esc(A.notes[k])+'</textarea>';}
+function frame(n,body,nav){return '<div class="card"><div class="prog"><i style="width:'+(n/4*100)+'%"></i></div><p class="stepk">Question '+n+' of 4</p>'+body+(nav||"")+'</div>';}
+function navRow(back,nextLabel,nextId){return '<div class="row">'+(back?'<button type="button" class="btn line" id="bk">Back</button>':"")+'<button type="button" class="btn" id="'+(nextId||"nx")+'">'+(nextLabel||"Next")+'</button></div>';}
+function wire(){
+  Array.prototype.forEach.call(app.querySelectorAll("[data-note]"),function(t){t.addEventListener("input",function(){A.notes[t.dataset.note]=t.value;});});
+  Array.prototype.forEach.call(app.querySelectorAll(".chip[data-g]"),function(b){b.addEventListener("click",function(){
+    var g=b.dataset.g,k=b.dataset.k;
+    if(b.dataset.single){A[g]=A[g]===k?"":k;if(g==="role"&&A.role&&!A.touched)A.wants=DEFAULTS[A.role].slice();}
+    else{A.touched=true;var i=A[g].indexOf(k);if(i>-1)A[g].splice(i,1);else A[g].push(k);}
+    render();
+  });});
+  function top(){var r=app.getBoundingClientRect();if(r.top<0||r.top>innerHeight*.6)app.scrollIntoView({block:"start",behavior:W.reduced?"auto":"smooth"});}
+  var bk=document.getElementById("bk");if(bk)bk.addEventListener("click",function(){step--;render();top();});
+  var nx=document.getElementById("nx");if(nx)nx.addEventListener("click",function(){step++;render();top();});
+}
+
+/* ---------- render ---------- */
+function render(){
+  if(!D)return;
+  if(step===0){
+    app.innerHTML='<div class="card"><h2 class="q">Where do <span class="f">you</span> fit?</h2><p class="qsub">Tell us who you are and where you work. We show you the rows that matter to you, with their sources, and you leave with a one-page brief.</p><div class="row"><button type="button" class="btn" id="nx">Start</button></div></div>';
+  } else if(step===1){
+    app.innerHTML=frame(1,'<h2 class="q">What best describes you?</h2><p class="qsub">Pick one. If none fits, choose Something else and describe your role.</p>'+chips("role",ROLES,true)+
+      (A.role==="other"?'<label class="ql" for="rt">Describe your role</label><textarea id="rt" rows="1" placeholder="For example: board member, school counselor, graduate student">'+esc(A.roleText)+'</textarea>':"")+noteBox("s1"),navRow(true));
+    var rt=document.getElementById("rt");if(rt)rt.addEventListener("input",function(){A.roleText=rt.value;});
+  } else if(step===2){
+    var opts='<option value="">All states</option>'+Object.keys(STATES).sort(function(a,b){return STATES[a]<STATES[b]?-1:1;}).map(function(k){return '<option value="'+k+'"'+(A.place===k?" selected":"")+'>'+STATES[k]+'</option>';}).join("")+'<option value="INTL"'+(A.place==="INTL"?" selected":"")+'>Outside the United States</option>';
+    var c=Object.keys(D.world).filter(function(k){return D.world[k].tier===1;}).sort(function(a,b){return D.world[a].name<D.world[b].name?-1:1;});
+    var copts='<option value="">Choose a country</option>'+c.map(function(k){return '<option value="'+k+'"'+(A.country===k?" selected":"")+'>'+esc(D.world[k].name)+'</option>';}).join("");
+    app.innerHTML=frame(2,'<h2 class="q">Where do you work or live?</h2><p class="qsub">The Index is deepest in Florida and Michigan. Other states have fewer rows, or none yet.</p><label class="ql" for="pl">State</label><select id="pl">'+opts+'</select>'+
+      (A.place==="INTL"?'<label class="ql" for="ct">Country (coded countries in the Atlas)</label><select id="ct">'+copts+'</select>':"")+noteBox("s2"),navRow(true));
+    document.getElementById("pl").addEventListener("change",function(e){A.place=e.target.value;if(A.place==="INTL"&&A.wants.indexOf("intl")<0)A.wants.push("intl");render();});
+    var ct=document.getElementById("ct");if(ct)ct.addEventListener("change",function(e){A.country=e.target.value;});
+  } else if(step===3){
+    if(!A.wants.length&&A.role)A.wants=DEFAULTS[A.role].slice();
+    app.innerHTML=frame(3,'<h2 class="q">What do you want to know?</h2><p class="qsub">Pick any. We pre-selected what people in your role usually ask about.</p>'+chips("wants",WANTS,false)+noteBox("s3"),navRow(true));
+  } else if(step===4){
+    app.innerHTML=frame(4,'<h2 class="q">Anything else you are trying to figure out?</h2><p class="qsub">A question, a decision you are weighing, something you think we have missed.</p><textarea data-note="concerns" rows="5" placeholder="In your own words">'+esc(A.notes.concerns)+'</textarea>',navRow(true,"None. Show me the record."));
+  } else {
+    results();return;
+  }
+  wire();
+}
+
+/* ---------- results ---------- */
+function stateRows(){return A.place&&A.place!=="INTL"?D.scan.institutions.filter(function(r){return ABBR[r.state]===A.place;}):[];}
+function tiles(){
+  var cnt={};D.scan.institutions.forEach(function(r){var a=ABBR[r.state];if(a)cnt[a]=(cnt[a]||0)+1;});
+  var s=46,g='';
+  TILES.forEach(function(t){var n=cnt[t[0]]||0,cl=n===0?"t0":n<3?"t1":n<10?"t2":"t3";
+    g+='<g data-st="'+t[0]+'" class="'+(A.place===t[0]?"me":"")+'" tabindex="0" role="button" aria-label="'+STATES[t[0]]+': '+n+' coded"><rect class="'+cl+'" x="'+(t[2]*s)+'" y="'+(t[1]*s)+'" width="'+(s-2)+'" height="'+(s-2)+'" rx="3"/><text x="'+(t[2]*s+22)+'" y="'+(t[1]*s+27)+'">'+t[0]+'</text></g>';});
+  return '<svg class="tmap" viewBox="0 0 '+(11*s)+' '+(8*s)+'" role="img" aria-label="States by number of coded institutions">'+g+'</svg>'+
+    '<div class="mkey"><span><i style="background:var(--bg2);border:1px solid var(--line)"></i>Not yet coded</span><span><i style="background:var(--ox3)"></i>1–2 rows</span><span><i style="background:var(--ox2)"></i>3–9</span><span><i style="background:var(--ox)"></i>10 or more</span></div>'+
+    '<p class="hint">Each square is a state, not its shape. Tap one to see its rows.</p>';
+}
+function irow(r,i){
+  var k=tierKey(r.tier),on=cmp.indexOf(r.name)>-1;
+  return '<article class="ir"><div class="m"><span class="tp '+k+'">'+esc(tierLabel(r.tier))+'</span><span>'+esc(r.state)+(r.scope==="aggregate"?" · summary row":"")+'</span><label class="cmpb"><input type="checkbox" data-cmp="'+esc(r.name)+'"'+(on?" checked":"")+'> Compare</label></div><h3>'+esc(r.name)+'</h3><p>'+r.evidence+'</p><div class="src">'+W.link(r.source,"Source")+'<span>Checked '+esc(r.checked)+'</span></div></article>';
+}
+function cmpTable(){
+  if(cmp.length<2)return '<p class="hint">Tick Compare on two or three rows to set them side by side.</p>';
+  var rows=D.scan.institutions.filter(function(r){return cmp.indexOf(r.name)>-1;});
+  function cells(f){return rows.map(function(r){return "<td>"+f(r)+"</td>";}).join("");}
+  return '<div class="cmpw"><div class="row" style="margin:0 0 8px;justify-content:space-between"><h3>Side by side</h3><button type="button" class="btn line sm" id="cmpClear">Clear</button></div><div class="sc"><table>'+
+    '<tr><th></th>'+rows.map(function(r){return "<th>"+esc(r.name)+"</th>";}).join("")+'</tr>'+
+    '<tr><th>Tier</th>'+cells(function(r){return '<span class="tp '+tierKey(r.tier)+'">'+esc(tierLabel(r.tier))+'</span>';})+'</tr>'+
+    '<tr><th>State</th>'+cells(function(r){return esc(r.state);})+'</tr>'+
+    '<tr><th>Checked</th>'+cells(function(r){return esc(r.checked);})+'</tr>'+
+    '<tr><th>Source</th>'+cells(function(r){return W.link(r.source,"Open");})+'</tr></table></div></div>';
+}
+function want(k){return A.wants.indexOf(k)>-1;}
+function results(){
+  var rows=stateRows(),ab=A.place,intl=A.place==="INTL",all=!A.place;
+  var cov=!intl&&!all?D.scan.coverage[STATES[ab]]:null;
+  var t=function(x){return rows.filter(function(r){return r.tier===x;}).length;};
+  var h='';
+  /* 1 · header */
+  h+='<div class="card"><p class="stepk">What the record shows</p><h2>For a '+esc(roleLabel().toLowerCase())+' '+(intl?"outside the United States":all?"anywhere in the country":"in "+esc(STATES[ab]))+'</h2>'+
+     '<p class="qsub" style="margin:0">Index edition: '+esc(D.scan.edition)+', updated '+esc(D.scan.updated)+'. Every row below links to the page a person read, and the date they read it.</p></div>';
+  /* 2 · your state */
+  if(!intl){
+    var sr=all?D.scan.institutions:rows,tt=function(x){return sr.filter(function(r){return r.tier===x;}).length;};
+    h+='<div class="card"><h2>'+(all?"The Index at a glance":esc(STATES[ab])+" at a glance")+'</h2>';
+    if(sr.length){
+      h+='<div class="stat"><div><b>'+sr.length+'</b><span>rows coded</span></div><div><b>'+tt("Tier 1")+'</b><span>built for the sector</span></div><div><b>'+tt("Tier 2")+'</b><span>name the sector</span></div><div class="z"><b>'+tt("Tier 0")+'</b><span>nothing found</span></div></div>';
+      if(cov)h+='<p class="hint">Coverage here is <b>'+esc(cov.depth)+'</b>. '+esc(cov.note)+'</p>';
+    } else {
+      h+='<p>We have not coded any institution in '+esc(STATES[ab])+' yet. That is a gap in our coverage, not a finding about '+esc(STATES[ab])+'. If you know of a program, an authorizer or an operating move we should read, <a href="mailto:'+MAIL+'">send it with a source</a>.</p>';
+    }
+    h+=tiles()+'</div>';
+  }
+  /* 3 · programs (Index rows) */
+  if(want("programs")&&!intl){
+    var show=rows.length?rows:D.scan.institutions.filter(function(r){return r.tier==="Tier 1";});
+    show=show.slice().sort(byTier);
+    h+='<div class="card"><h2>'+(rows.length?"Institutions coded in "+esc(STATES[ab]):"Built for the sector, wherever coded")+'</h2><p class="qsub" style="margin:0">'+
+      (rows.length?"Tier is an observable institutional behavior, never a grade.":"Nothing is coded in your state yet, so these are the rows, anywhere, whose stated purpose is to prepare or support education outside district-run schools.")+'</p>'+
+      cmpTable()+'<div class="rows">'+show.map(irow).join("")+'</div></div>';
+  }
+  /* 4 · universities */
+  if(want("universities")&&!intl){
+    var U=D.uni.institutions.filter(function(u){return all?u.response:inState(u.state,ab);}).slice(0,8);
+    h+='<div class="card"><h2>Major universities'+(all?" with a documented response":" in "+esc(STATES[ab]))+'</h2>';
+    if(U.length)h+='<div class="rows">'+U.map(function(u){return '<article class="ir"><div class="m"><span>'+esc(u.state)+' · '+esc(u.sector)+'</span>'+(u.direction&&u.direction!=="none"&&D.uni.directions[u.direction]?'<span class="tp T3">'+esc(u.direction)+'</span>':"")+'</div><h3>'+esc(u.name)+'</h3><p>'+esc(u.unit||"")+'</p>'+(u.response?'<p>'+esc(u.response)+'</p>':'')+'<div class="src">'+(u.response_url?W.link(u.response_url,"Source"):u.notable_url?W.link(u.notable_url,"Source"):"")+'</div></article>';}).join("")+'</div>';
+    else h+='<p>None of the universities in our scan are in '+esc(STATES[ab])+'.</p>';
+    h+='<p class="hint"><a href="/universities/">See the full university scan</a></p></div>';
+  }
+  /* 5 · placement (Florida) */
+  if(want("placement")&&(ab==="FL"||all)){
+    h+='<div class="card"><h2>Can a student teacher be placed in a private school?</h2><p class="qsub" style="margin:0">'+esc(D.place.question)+' Florida, '+D.place.n+' programs.</p><div class="rows">'+
+      D.place.programs.map(function(p){return '<article class="ir"><div class="m"><span>'+esc(p.t)+'</span></div><h3>'+esc(p.p)+'</h3><p>'+esc(D.place.postures[p.pos]||p.pos)+'</p><div class="src">'+W.link(p.url,"Source")+'</div></article>';}).join("")+'</div></div>';
+  } else if(want("placement")&&!intl){
+    h+='<div class="card"><h2>Student-teaching placements</h2><p>Our placement survey covers Florida only. We have not read placement policies in '+esc(STATES[ab]||"your state")+'.</p></div>';
+  }
+  /* 6 · leaders */
+  if(want("leaders")){
+    var Ls=D.lead.leaders.filter(function(l){return !ab||intl||inState(l.state,ab);});var natl=false;
+    if(!Ls.length){Ls=D.lead.leaders.slice(0,5);natl=true;}
+    h+='<div class="card"><h2>Who is leading'+(natl||all||intl?"":" in "+esc(STATES[ab]))+'</h2>'+(natl?'<p class="qsub" style="margin:0">No leader on the record is in '+esc(STATES[ab])+' yet. These are from elsewhere.</p>':"")+
+      '<div class="rows">'+Ls.slice(0,6).map(function(l){return '<article class="ir"><div class="m"><span>'+esc(D.lead.types[l.type]||l.type)+' · '+esc(l.state)+(l.year?" · since "+l.year:"")+'</span></div><h3>'+esc(l.name)+'</h3><p>'+esc(l.org)+'. '+esc(l.what)+'</p><div class="src">'+W.link(l.url,"Source")+'</div></article>';}).join("")+'</div><p class="hint"><a href="/leaders/">All leaders on the record</a></p></div>';
+  }
+  /* 7 · districts */
+  if(want("districts")&&!intl){
+    var Ds=D.dist.examples.filter(function(d){return !ab||all||d.state===ab;});var dn=false;
+    if(!Ds.length){Ds=D.dist.examples.slice(0,3);dn=true;}
+    h+='<div class="card"><h2>How school districts are responding'+(dn||all?"":" in "+esc(STATES[ab]))+'</h2>'+(dn?'<p class="qsub" style="margin:0">No district example on the record is in '+esc(STATES[ab])+'. These are from elsewhere.</p>':"")+
+      '<div class="rows">'+Ds.map(function(d){var s=(d.src||[])[0];return '<article class="ir"><div class="m"><span>'+esc(d.state)+(d.year?" · "+d.year:"")+'</span></div><h3>'+esc(d.name)+'</h3><p>'+esc(d.what)+'</p><div class="src">'+(s?W.link(s[1],s[0]):"")+'</div></article>';}).join("")+'</div><p class="hint"><a href="/districts/">The district comparison</a></p></div>';
+  }
+  /* 8 · international */
+  if(want("intl")||intl){
+    var keys=intl&&A.country?[A.country]:["NLD","SWE","CHL","GBR"].filter(function(k){return D.world[k];});
+    h+='<div class="card"><h2>'+(intl&&A.country?esc(D.world[A.country].name)+" in the Atlas":"How other countries handle it")+'</h2>'+keys.map(function(k){var c=D.world[k];
+      var line=c.since?"Money has followed the child since "+c.since:c.mech_type==="none"?"No portable-funding mechanism identified":"Public money reaches non-state schools · start year not established";
+      return '<div class="ctry"><h3>'+esc(c.name)+'</h3><p class="since">'+line+'</p><p style="margin:0;color:var(--ink2);font-size:14.5px">'+esc(c.summary||"")+'</p></div>';}).join("")+
+      '<p class="hint"><a href="/atlas/">Open the Atlas</a> · <a href="/research/international-precedents/">Read the international brief</a></p></div>';
+  }
+  /* 9 · field notes */
+  var tag=NOTETAG[A.role]||"",N=D.notes.notes.filter(function(n){return !tag||n.tag===tag;});if(N.length<2)N=D.notes.notes;N=N.slice(0,3);
+  h+='<div class="card"><h2>Field Notes to read next</h2><div class="cgrid">'+N.map(function(n){return '<a href="/notes/'+esc(n.slug)+'/"><b>'+esc(n.tag)+' · '+esc(n.date)+'</b>'+esc(n.title)+'</a>';}).join("")+'</div></div>';
+  /* 10 · questions */
+  h+='<div class="card"><h2>Suggested questions to ask</h2><p class="qsub" style="margin:0">These are the questions the record raises most often for people in your role. Weigh them against your own situation. Unsure? <a href="#contact">Write to us</a>.</p><ol class="ql2">'+(ASK[A.role]||ASK.press).map(function(q){return "<li>"+esc(q)+"</li>";}).join("")+'</ol></div>';
+  /* 11 · your words */
+  var said=["s1","s2","s3","concerns"].filter(function(k){return A.notes[k].trim();});
+  if(said.length)h+='<div class="card"><h2>In your own words</h2><p class="qsub" style="margin:0">Kept on this page and in your brief. Nothing you type is sent anywhere.</p>'+said.map(function(k){return '<blockquote class="pq">'+esc(A.notes[k])+'</blockquote>';}).join("")+'</div>';
+  /* 12 · brief */
+  h+='<div class="card brief"><h2>Your brief</h2><p class="qsub">One page: your role and place, the rows that matter to you, their sources and the questions to ask. Save it, email it or print it.</p>'+
+     '<button type="button" class="btn" id="pdf">Get my brief (PDF)</button><div id="pdfOut" hidden><p style="margin:0 0 10px"><b>Your brief is ready.</b></p><div class="row" style="margin:0"><button type="button" class="btn sm" id="pDl">Download PDF</button><button type="button" class="btn line sm" id="pSh">Share or email</button><button type="button" class="btn line sm" id="pPr">Print</button></div></div></div>';
+  /* 13 · contact */
+  h+='<div class="card" id="contact"><h2>Still have a question?</h2><p class="qsub" style="margin:0">We read every message. If you think we have something wrong, say so and send the source; corrections run on the front page.</p><div class="cgrid">'+
+     '<a href="mailto:'+MAIL+'"><b>Write to us</b><span>'+MAIL+'</span></a><a href="/method/"><b>How we code</b><span>Method, limits and the corrections log</span></a><a href="/research/"><b>The full Index</b><span>Every row, every source</span></a></div>'+
+     (A.role==="family"?'<p style="margin:18px 0 0;color:var(--ink2)"><b>Choosing a school?</b> WMFC studies institutions; it does not help families choose. Your state department of education lists every public option. '+(ab==="FL"?'In Florida, <a href="https://www.stepupforstudents.org/" rel="noopener">Step Up For Students</a> administers the state scholarships. ':"")+'<a href="https://www.edchoice.org/" rel="noopener">EdChoice</a> tracks programs in every state.</p>':"")+'</div>';
+  h+='<div class="row" style="margin-top:4px"><button type="button" class="btn line" id="again">Start over</button></div>';
+  app.innerHTML='<div class="res">'+h+'</div>';
+  /* wiring */
+  Array.prototype.forEach.call(app.querySelectorAll(".tmap g[data-st]"),function(g){function go(){A.place=g.dataset.st;cmp=[];results();var m=app.querySelector(".tmap");if(m)m.scrollIntoView({block:"center"});}
+    g.addEventListener("click",go);g.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});});
+  Array.prototype.forEach.call(app.querySelectorAll("[data-cmp]"),function(c){c.addEventListener("change",function(){var n=c.dataset.cmp;cmp=cmp.indexOf(n)>-1?cmp.filter(function(x){return x!==n;}):cmp.concat([n]).slice(-3);var y=window.scrollY;results();window.scrollTo(0,y);});});
+  var cc=document.getElementById("cmpClear");if(cc)cc.addEventListener("click",function(){var y=window.scrollY;cmp=[];results();window.scrollTo(0,y);});
+  document.getElementById("again").addEventListener("click",function(){A={role:"",roleText:"",place:"",country:"",wants:[],notes:{s1:"",s2:"",s3:"",concerns:""}};cmp=[];step=0;render();app.scrollIntoView();});
+  wireBrief();
+}
+
+/* ---------- the brief (PDF) ---------- */
+var pdfLib=null;
+function loadPdf(){if(window.jspdf)return Promise.resolve();if(pdfLib)return pdfLib;
+  pdfLib=new Promise(function(ok,no){var s=document.createElement("script");s.src="/assets/vendor/jspdf.umd.min.js";s.onload=ok;s.onerror=no;document.head.appendChild(s);});return pdfLib;}
+function plain(h){var d=document.createElement("div");d.innerHTML=h;return (d.textContent||"").replace(/\s+/g," ").trim();}
+function briefData(){
+  var rows=stateRows(),ab=A.place,intl=ab==="INTL";
+  var pick=cmp.length?D.scan.institutions.filter(function(r){return cmp.indexOf(r.name)>-1;}):(rows.length?rows:D.scan.institutions.filter(function(r){return r.tier==="Tier 1";}));
+  pick=pick.slice().sort(byTier).slice(0,6);
+  var L=D.lead.leaders.filter(function(l){return ab&&!intl&&inState(l.state,ab);}).slice(0,3);
+  var Ds=D.dist.examples.filter(function(d){return ab&&d.state===ab;}).slice(0,2);
+  var tag=NOTETAG[A.role]||"",N=D.notes.notes.filter(function(n){return !tag||n.tag===tag;});if(N.length<2)N=D.notes.notes;
+  return {role:roleLabel(),place:placeLabel(),rows:rows,pick:pick,fromState:!!rows.length&&!cmp.length,leaders:L,districts:Ds,notes:N.slice(0,3),
+    ctry:intl&&A.country?D.world[A.country]:null,ask:ASK[A.role]||ASK.press,
+    words:["s1","s2","s3","concerns"].map(function(k){return A.notes[k].trim();}).filter(Boolean).join(" / ")};
+}
+function buildPdf(){
+  var B=briefData(),doc=new window.jspdf.jsPDF({unit:"pt",format:"letter"});
+  var Wd=612,M=54,CW=Wd-2*M,OX=[110,31,44],INK=[26,26,28],INK2=[68,68,74],INK3=[110,110,118],y;
+  function foot(){doc.setDrawColor(226,226,222);doc.line(M,752,Wd-M,752);doc.setFont("helvetica","normal");doc.setFontSize(7.5);doc.setTextColor.apply(doc,INK3);
+    doc.text(doc.splitTextToSize("Generated from WMFC data ("+D.scan.edition+", updated "+D.scan.updated+"). Every row links to the page a person read and the date they read it. A tier is an observable institutional behavior, not a grade. "+SITE+"/method/",CW),M,764);}
+  function need(h){if(y+h>738){foot();doc.addPage();doc.setFillColor.apply(doc,OX);doc.rect(0,0,Wd,4,"F");y=50;}}
+  function head(t){need(34);y+=8;doc.setFont("times","normal");doc.setFontSize(15);doc.setTextColor.apply(doc,INK);doc.text(t,M,y);y+=6;doc.setDrawColor.apply(doc,OX);doc.setLineWidth(1.2);doc.line(M,y,M+28,y);doc.setLineWidth(.5);y+=14;}
+  function para(t,o){o=o||{};doc.setFont(o.font||"helvetica",o.style||"normal");doc.setFontSize(o.size||9.5);doc.setTextColor.apply(doc,o.color||INK2);
+    var ls=doc.splitTextToSize(t,CW-(o.indent||0));need(ls.length*(o.lh||12));doc.text(ls,M+(o.indent||0),y);y+=ls.length*(o.lh||12)+(o.after==null?3:o.after);}
+  /* masthead: When Money *Follows* the Child */
+  doc.setFillColor.apply(doc,OX);doc.rect(0,0,Wd,4,"F");
+  doc.setFont("times","normal");doc.setFontSize(13);doc.setTextColor.apply(doc,INK);var x=M;doc.text("When Money ",x,40);x+=doc.getTextWidth("When Money ");
+  doc.setFont("times","italic");doc.setTextColor.apply(doc,OX);doc.text("Follows",x,40);x+=doc.getTextWidth("Follows");doc.setFont("times","normal");doc.setTextColor.apply(doc,INK);doc.text(" the Child",x,40);
+  doc.setFont("helvetica","normal");doc.setFontSize(8.5);doc.setTextColor.apply(doc,INK3);doc.text(new Date().toLocaleDateString("en-US",{year:"numeric",month:"long",day:"numeric"}),Wd-M,40,{align:"right"});
+  doc.setFont("times","normal");doc.setFontSize(26);doc.setTextColor.apply(doc,INK);doc.text("Navigator brief",M,78);
+  doc.setFont("helvetica","normal");doc.setFontSize(10.5);doc.setTextColor.apply(doc,INK2);doc.text(doc.splitTextToSize("For: "+B.role+"  ·  "+B.place,CW),M,96);
+  y=114;para("The limit, first. This brief reads WMFC's published data and nothing else. It does not rate schools, rank institutions or give advice. Where we have coded nothing, nothing found is not the same as nothing there.",{size:8.5,color:INK3,lh:11,after:4});
+  if(A.place&&A.place!=="INTL"){head(STATES[A.place]+" in the Readiness Index");
+    if(B.rows.length){var c=function(t){return B.rows.filter(function(r){return r.tier===t;}).length;};
+      para(B.rows.length+" rows coded  ·  "+c("Tier 1")+" built for the sector  ·  "+c("Tier 2")+" name the sector  ·  "+c("Tier 3")+" incidental  ·  "+c("Tier 0")+" nothing found",{size:10,color:INK});
+      var cv=D.scan.coverage[STATES[A.place]];if(cv)para("Coverage: "+cv.depth+". "+cv.note,{size:8.5,color:INK3,lh:11});}
+    else para("No institution in "+STATES[A.place]+" is coded yet. That is a gap in our coverage, not a finding about the state.");}
+  if(B.ctry){head(B.ctry.name+" in the Atlas");para(B.ctry.since?"Money has followed the child since "+B.ctry.since+".":B.ctry.mech_type==="none"?"No portable-funding mechanism identified.":"Public money reaches non-state schools; start year not established.",{color:INK});para(B.ctry.summary||"");}
+  if(!B.ctry){head(cmp.length?"Rows you compared":B.fromState?"Institutions to look at":"Built for the sector, wherever coded");
+    B.pick.forEach(function(r){need(30);para(r.name+"  ("+tierLabel(r.tier)+")",{style:"bold",size:9.5,color:INK,after:0,lh:12});para(r.source+"  ·  checked "+r.checked,{size:8,color:OX,lh:10,after:5});});}
+  if(B.leaders.length||B.districts.length){head("Who is leading nearby");B.leaders.forEach(function(l){para(l.name+", "+l.org+". "+l.url,{size:8.5,lh:11});});B.districts.forEach(function(d){var s=(d.src||[])[0];para(d.name+". "+(s?s[1]:""),{size:8.5,lh:11});});}
+  head("Suggested questions to ask");B.ask.forEach(function(q,i){para((i+1)+".  "+q,{indent:2,lh:12,after:2});});
+  if(B.words){head("In your own words");para("“"+(B.words.length>300?B.words.slice(0,297)+"…":B.words)+"”",{style:"italic",color:INK2});}
+  head("Read next");B.notes.forEach(function(n){para("Field Note "+n.n+": "+n.title+"  "+SITE+"/notes/"+n.slug+"/",{size:8.5,lh:11});});
+  need(30);y+=6;para("Questions, or a row we have wrong? Write to "+MAIL+" with a source. Corrections run on the front page.",{size:9,color:INK});
+  foot();return doc;
+}
+function briefText(){var B=briefData(),o=["When Money Follows the Child — Navigator brief","For: "+B.role+" · "+B.place,""];
+  B.pick.forEach(function(r){o.push("- "+r.name+" ("+tierLabel(r.tier)+") "+r.source);});o.push("","Questions to ask:");B.ask.forEach(function(q,i){o.push((i+1)+". "+q);});
+  o.push("","More: "+SITE+"/navigator/");return o.join("\n");}
+function wireBrief(){
+  var b=document.getElementById("pdf");if(!b)return;var name="WMFC-Navigator-brief.pdf";
+  function get(){return loadPdf().then(buildPdf);}
+  b.addEventListener("click",function(){b.disabled=true;get().then(function(doc){doc.save(name);b.hidden=true;document.getElementById("pdfOut").hidden=false;}).catch(function(){b.disabled=false;b.textContent="The PDF tool did not load. Try again.";});});
+  document.getElementById("pDl").addEventListener("click",function(){get().then(function(d){d.save(name);});});
+  document.getElementById("pPr").addEventListener("click",function(){get().then(function(d){d.autoPrint();var w=window.open(d.output("bloburl"),"_blank");if(!w)d.save(name);});});
+  document.getElementById("pSh").addEventListener("click",function(){get().then(function(d){
+    try{var f=new File([d.output("blob")],name,{type:"application/pdf"});
+      if(navigator.canShare&&navigator.canShare({files:[f]})){return navigator.share({files:[f],title:"WMFC Navigator brief"}).catch(function(){});}}catch(e){}
+    location.href="mailto:?subject="+encodeURIComponent("WMFC Navigator brief")+"&body="+encodeURIComponent(briefText());});});
+}
+})();
+</script>
+</body>
+</html>
