@@ -16,6 +16,7 @@ NAV = [
     ("/districts/", "Districts"),
     ("/atlas/", "Atlas"),
     ("/notes/", "Field Notes"),
+    ("/navigator/", "Navigator"),
     ("/method/", "Method"),
     ("/about/", "About"),
 ]
@@ -75,7 +76,7 @@ def footer():
     <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
   </div>
   <div><div class="fh">The comparison and the record</div>
-    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
   </div>
 </div></div></footer>
 <script src="/assets/wmfc.js"></script>
