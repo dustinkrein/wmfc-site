@@ -1,10 +1,10 @@
 {
  "edition": "University scan, October 2026",
- "updated": "2026-10-14",
+ "updated": "2026-10-27",
  "lists": {
   "florida": {
    "label": "Florida",
-   "def": "Universities in Florida, the state furthest along. All 21 Florida institutions are coded in the Readiness Index."
+   "def": "The 7 of the 102 located in Florida, the state furthest along. Not a separate list. The Readiness Index covers 21 Florida institutions in depth, including state colleges."
   },
   "aau": {
    "label": "AAU research universities",
@@ -210,6 +210,8 @@
    ],
    "response": "ASU Prep Digital is an approved ClassWallet vendor for Arizona ESA funds; ASU Prep is expanding into Texas.",
    "response_url": "https://asuprepdigital.org/blog/own-your-learning-with-asu-prep-digital-and-an-empowerment-scholarship-account",
+   "response2": "ASU Prep Global runs a Microschool Entrepreneur Fellowship that trains parents, educators and school leaders to open microschools.",
+   "response2_url": "https://www.asuprepglobal.org/microschool-fellowship/",
    "rank": 5,
    "state": "AZ",
    "lists": [
@@ -217,7 +219,8 @@
     "innovative"
    ],
    "innov_rank": "1",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-27"
   },
   {
    "name": "University of Kansas",

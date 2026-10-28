@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Universities — When Money Follows the Child</title>
-<meta name="description" content="How 102 universities on three lists respond when K–12 funding follows the student: Florida, AAU and U.S. News Most Innovative.">
+<meta name="description" content="How 102 universities respond when K–12 funding follows the student: every AAU member and every U.S. News Most Innovative university.">
 <link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/universities/">
 <meta property="og:title" content="Universities — When Money Follows the Child">
-<meta property="og:description" content="How 102 universities on three lists respond when K–12 funding follows the student: Florida, AAU and U.S. News Most Innovative.">
+<meta property="og:description" content="How 102 universities respond when K–12 funding follows the student: every AAU member and every U.S. News Most Innovative university.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/universities/">
 <meta property="og:site_name" content="When Money Follows the Child">
@@ -28,15 +28,15 @@
 
 <div class="hero sm"><div class="w">
   <h1>Most universities are innovating. Few are <span class="f">responding</span>.</h1>
-  <p class="lead2">102 universities on three lists: Florida, the 71 AAU research universities, and all 74 U.S. News Most Innovative. For each one: its strongest education work, and any response to portable K–12 funding.</p>
+  <p class="lead2">102 universities: all 71 AAU research universities and all 74 U.S. News Most Innovative. 43 are on both; 7 are in Florida. For each one: its strongest education work, and any response to portable K–12 funding.</p>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
   <div class="ledger" id="ledger">
-    <div><div class="big" data-n="102">102</div><p>universities on three lists</p></div>
+    <div><div class="big" data-n="102">102</div><p>universities: every AAU member and every Most Innovative</p></div>
     <div><div class="big" data-n="32">32</div><p>show a verified response to portable funding</p></div>
     <div><div class="big hot" data-n="6">6</div><p>compete for portable funds, mostly through university-run schools</p></div>
     <div><div class="big hot">0</div><p>prepare educators for microschools, hybrid schools or homeschool support</p></div>
   </div>
-  <figure class="arch" data-year="1906"><img src="/images/bw-tuskegee-math-1906.jpg" alt="Mathematics class, Tuskegee Institute, 1906." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1906</span><span class="arch-ago" data-ago="1906"></span></div><figcaption class="arch-then">Mathematics class, Tuskegee Institute, 1906.</figcaption><p class="arch-now"><b>Now</b>0 of 102 universities prepare educators for microschools, hybrid schools or homeschool support.</p></div></figure>
+  <figure class="arch" data-year="1906"><img src="/images/bw-tuskegee-math-1906.jpg" alt="Mathematics class, Tuskegee Institute, 1906." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1906</span><span class="arch-ago" data-ago="1906"></span></div><figcaption class="arch-then">Mathematics class, Tuskegee Institute, 1906.</figcaption><p class="arch-now"><b>Now</b>1 of 102 universities trains people to open or teach in a microschool: Arizona State, outside its education school.</p></div></figure>
 </div></div>
 
 <section class="alt" id="lists"><div class="w">
@@ -46,7 +46,7 @@
     <div>
       <p class="callout">On every list, about <em>two in three</em> show no response we could find.</p>
       <p style="color:var(--ink2);font-size:15px">Being ranked for innovation does not predict a response: 30% of the Most Innovative respond, against 34% of the AAU. Four of the 74 compete for portable funds: Arizona State, Stanford, Indiana University and Auburn. Three prepare educators for Catholic schools: Boston College, Marquette and Santa Clara.</p>
-      <p class="callout" style="margin-top:22px">Florida first: <em>21</em> Florida institutions are coded in full in the Readiness Index.</p>
+      <p class="callout" style="margin-top:22px">Seven of the 102 are in Florida. The <a href="/research/">Readiness Index</a> goes deeper there: <em>21</em> Florida institutions, program by program, including state colleges.</p>
       <a class="more" href="/research/">Open the Readiness Index</a>
     </div>
   </div>
@@ -117,7 +117,7 @@ W.countUp(document.getElementById("ledger"));
 var DIR=["compete","supply","fortify","evidence","none"];
 var LAB={compete:"Compete",supply:"Supply",fortify:"Fortify",evidence:"Studies or debates it",none:"None observed"};
 var COL={compete:"var(--ox)",supply:"var(--ox2)",fortify:"var(--ink3)",evidence:"var(--ox3)",none:"transparent"};
-var LISTS=[["all","All three lists"],["florida","Florida"],["aau","AAU"],["innovative","Most Innovative"]];
+var LISTS=[["all","All 102"],["florida","Florida (7)"],["aau","AAU"],["innovative","Most Innovative"]];
 var TAG={florida:'<span class="tag fl">Florida</span>',aau:'<span class="tag">AAU</span>',innovative:'<span class="tag">Innovative</span>'};
 var LIST=(new URLSearchParams(location.search).get("list"))||"all";
 if(!LISTS.some(function(l){return l[0]===LIST;}))LIST="all";
@@ -127,7 +127,7 @@ W.json("/data/universities-2026.json").then(function(D){
 
   /* 01 three-list bars */
   var lb=document.getElementById("lbars"),rows=[];
-  [["florida","Florida"],["aau","AAU research universities"],["innovative","U.S. News Most Innovative"]].forEach(function(L){
+  [["florida","Florida (7 of the 102)"],["aau","AAU research universities"],["innovative","U.S. News Most Innovative"]].forEach(function(L){
     var set=ALL.filter(function(r){return r.lists.indexOf(L[0])>-1;}),n=set.length;
     var box=W.el("div","lb"),resp=set.filter(function(r){return r.direction!=="none";}).length;
     box.innerHTML='<div class="lh"><b>'+esc(L[1])+'</b><span>'+n+' universities · '+Math.round(100*resp/n)+'% respond</span></div>';
@@ -187,7 +187,7 @@ W.json("/data/universities-2026.json").then(function(D){
       cells.forEach(function(c){c.style.cursor="pointer";c.addEventListener("click",function(){
         Array.prototype.forEach.call(m.querySelectorAll(".row-hl"),function(x){x.classList.remove("row-hl");});
         cells.forEach(function(x){x.classList.add("row-hl");});
-        det.innerHTML="<b>"+esc(r.name)+" · "+esc(LAB[r.direction])+".</b> "+esc(r.response||"")+" "+(r.response_url?W.link(r.response_url,"Source"):"");
+        det.innerHTML="<b>"+esc(r.name)+" · "+esc(LAB[r.direction])+".</b> "+esc(r.response||"")+" "+(r.response_url?W.link(r.response_url,"Source"):"")+(r.response2?" "+esc(r.response2)+" "+(r.response2_url?W.link(r.response2_url,"Source"):""):"");
       });m.appendChild(c);});
       nm.tabIndex=0;nm.addEventListener("keydown",function(e){if(e.key==="Enter"||e.key===" "){e.preventDefault();nm.click();}});
     });
@@ -210,7 +210,7 @@ W.json("/data/universities-2026.json").then(function(D){
       var top=r.initiatives[0];
       h+='<tr class="ex"><td class="nm">'+esc(r.name)+'<div style="font-weight:400;font-size:12.5px;color:var(--ink3)">'+esc(r.state)+" · "+esc(r.unit)+'</div></td><td>'+r.lists.map(function(l){return TAG[l];}).join("")+(r.innov_rank?'<div style="font-size:12px;color:var(--ink3);margin-top:3px">Innovative No. '+esc(r.innov_rank)+'</div>':"")+'</td><td>'+(top?esc(top.name):r.scored?"<i>None found</i>":'<i style="color:var(--ink3)">Not yet scored</i>')+'</td><td class="num">'+(r.portfolio!=null?'<span class="mini" style="width:'+Math.round(r.portfolio*4)+'px"></span>'+r.portfolio.toFixed(1):"—")+'</td><td><span class="pill"><span class="sw d-'+r.direction+'"></span>'+esc(LAB[r.direction])+'</span></td></tr>';
       var ini=r.initiatives.map(function(i){return "<li>"+esc(i.name)+" — <b>"+i.score+"</b> <span style=\"color:var(--ink3)\">(scale "+i.scale+", evidence "+i.evidence+", novelty "+i.novelty+")</span></li>";}).join("")||(r.scored?"<li>None found</li>":"<li>Not yet scored</li>");
-      h+='<tr class="dt" hidden><td colspan="5"><b>Initiatives scored</b><ul style="margin:6px 0 10px;padding-left:18px">'+ini+'</ul>'+(r.notable?(r.notable_url?"<b>Notable:</b> "+W.link(r.notable_url,r.notable)+"<br>":"<b>Notable:</b> "+esc(r.notable)+"<br>"):"")+(r.response?'<b>Response to portable funding:</b> '+esc(r.response)+" "+(r.response_url?W.link(r.response_url,"Source"):""):'<b>Response to portable funding:</b> none observed in this scan.')+'</td></tr>';
+      h+='<tr class="dt" hidden><td colspan="5"><b>Initiatives scored</b><ul style="margin:6px 0 10px;padding-left:18px">'+ini+'</ul>'+(r.notable?(r.notable_url?"<b>Notable:</b> "+W.link(r.notable_url,r.notable)+"<br>":"<b>Notable:</b> "+esc(r.notable)+"<br>"):"")+(r.response?'<b>Response to portable funding:</b> '+esc(r.response)+" "+(r.response_url?W.link(r.response_url,"Source"):"")+(r.response2?" "+esc(r.response2)+" "+(r.response2_url?W.link(r.response2_url,"Source"):""):""):'<b>Response to portable funding:</b> none observed in this scan.')+'</td></tr>';
     });
     tb.innerHTML=h||'<tr><td colspan="5">No universities match.</td></tr>';
     W.wireRows(tb);
