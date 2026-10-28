@@ -1,0 +1,205 @@
+{
+ "edition": "Campus research centers, October 2026",
+ "updated": "2026-10-28",
+ "note": "Centers at colleges and universities that study school choice or the new schools it pays for. Each activity is marked only where the center's own page or a primary source documents it. A blank means not documented, not proven absent. Funders are listed where the source names them.",
+ "columns": [
+  [
+   "studies",
+   "Studies"
+  ],
+  [
+   "data",
+   "Publishes data"
+  ],
+  [
+   "convenes",
+   "Convenes"
+  ],
+  [
+   "trains_researchers",
+   "Trains researchers"
+  ],
+  [
+   "prepares_educators",
+   "Prepares educators"
+  ],
+  [
+   "runs_schools",
+   "Runs schools"
+  ]
+ ],
+ "centers": [
+  {
+   "name": "National Hybrid Schools Project",
+   "univ": "Kennesaw State University",
+   "unit": "Coles College of Business, Education Economics Center",
+   "in_scan": false,
+   "since": null,
+   "topic": "Hybrid schools and microschools",
+   "does": {
+    "studies": true,
+    "data": true,
+    "convenes": true,
+    "trains_researchers": false,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Documents and analyzes hybrid schools and microschools, publishes original data, and convenes founders, researchers and policymakers at an annual national conference; the sixth is planned for Atlanta in April 2027.",
+   "funders": null,
+   "url": "https://campus.kennesaw.edu/colleges-departments/coles/centers/education-economics-center/national-hybrid-schools-project/index.php"
+  },
+  {
+   "name": "Homeschool Hub and Homeschool Research Lab",
+   "univ": "Johns Hopkins University",
+   "unit": "School of Education, Institute for Education Policy",
+   "in_scan": true,
+   "since": null,
+   "topic": "Homeschooling",
+   "does": {
+    "studies": true,
+    "data": true,
+    "convenes": true,
+    "trains_researchers": false,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Publishes homeschool participation data for 39 states and state-by-state legal summaries; the lab curates research and convenes researchers. States that it is not an advocacy project.",
+   "funders": "Partly funded by EdChoice",
+   "url": "https://education.jhu.edu/edpolicy/policy-research-initiatives/homeschool-hub/"
+  },
+  {
+   "name": "Center on Reinventing Public Education (CRPE)",
+   "univ": "Arizona State University",
+   "unit": "Mary Lou Fulton College for Teaching and Learning Innovation, since 2022",
+   "in_scan": true,
+   "since": 2022,
+   "topic": "School choice and new school models",
+   "does": {
+    "studies": true,
+    "data": true,
+    "convenes": false,
+    "trains_researchers": false,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Joined ASU in February 2022. Tracked 372 district- and community-run learning pods through 2020–21 and studies school choice and new school models.",
+   "funders": "$9M Walton Family Foundation grant, 2022",
+   "url": "https://crpe.org/crpe-at-asu/",
+   "url2": "https://crpe.org/crpe-receives-9m-walton-grant-to-boost-research/"
+  },
+  {
+   "name": "REACH: National Center for Research on Education Access and Choice",
+   "univ": "Tulane University",
+   "unit": "Lead institution, with Michigan State and others",
+   "in_scan": true,
+   "since": 2018,
+   "topic": "Charter schools and school choice",
+   "does": {
+    "studies": true,
+    "data": true,
+    "convenes": false,
+    "trains_researchers": false,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Ran 48 studies, mostly on charter schools, and built the National Longitudinal School Database. The federal award closed in August 2025; data and publications remain public.",
+   "funders": "$10M Institute of Education Sciences award, 2018–2025",
+   "url": "https://ies.ed.gov/use-work/awards/national-center-research-education-access-and-choice"
+  },
+  {
+   "name": "Program on Education Policy and Governance (PEPG)",
+   "univ": "Harvard University",
+   "unit": "Kennedy School, Taubman Center",
+   "in_scan": true,
+   "since": 1996,
+   "topic": "School choice and reform",
+   "does": {
+    "studies": true,
+    "data": false,
+    "convenes": true,
+    "trains_researchers": true,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Publishes research and helped establish Education Next; hosts national conferences including on school choice; has trained graduate and postdoctoral researchers since 2002.",
+   "funders": "EdChoice listed as affiliate and donor",
+   "url": "https://www.hks.harvard.edu/centers/taubman/programs-research/pepg/about-pepg"
+  },
+  {
+   "name": "National Education Policy Center (NEPC)",
+   "univ": "University of Colorado Boulder",
+   "unit": "School of Education",
+   "in_scan": true,
+   "since": 2010,
+   "topic": "Reviews of choice and reform research",
+   "does": {
+    "studies": true,
+    "data": false,
+    "convenes": false,
+    "trains_researchers": false,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Publishes policy briefs and third-party reviews of think tank reports, many on school choice.",
+   "funders": "Funders include the NEA, AFT, Ford Foundation and Great Lakes Center",
+   "url": "https://en.wikipedia.org/wiki/National_Education_Policy_Center"
+  },
+  {
+   "name": "Department of Education Reform",
+   "univ": "University of Arkansas",
+   "unit": "College of Education and Health Professions",
+   "in_scan": false,
+   "since": 2005,
+   "topic": "School choice evaluation",
+   "does": {
+    "studies": true,
+    "data": false,
+    "convenes": false,
+    "trains_researchers": true,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Sponsors school choice research and evaluations and funds ten doctoral fellowships.",
+   "funders": "$10M Windgate Charitable Foundation gift, matched by the Walton Family Foundation",
+   "url": "https://www.philanthropyroundtable.org/almanac/university-of-arkansas-department-of-education-reform/"
+  },
+  {
+   "name": "Center for Research on Education Outcomes (CREDO)",
+   "univ": "Stanford University",
+   "unit": "Founded 1999 at the University of Rochester",
+   "in_scan": true,
+   "since": 1999,
+   "topic": "Charter school outcomes",
+   "does": {
+    "studies": true,
+    "data": false,
+    "convenes": false,
+    "trains_researchers": false,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Produces the national charter school outcome studies (16 states in 2009, 26 in 2013).",
+   "funders": null,
+   "url": "https://www.philanthropyroundtable.org/almanac/center-for-research-on-education-outcomes/"
+  },
+  {
+   "name": "Education Policy Innovation Collaborative (EPIC)",
+   "univ": "Michigan State University",
+   "unit": "College of Education",
+   "in_scan": true,
+   "since": 2017,
+   "topic": "Michigan policy; was a REACH partner",
+   "does": {
+    "studies": true,
+    "data": false,
+    "convenes": false,
+    "trains_researchers": false,
+    "prepares_educators": false,
+    "runs_schools": false
+   },
+   "what": "Was a partner in the federal REACH school choice center. Since 2025 its stated focus is the educator workforce: shortages, turnover, Grow Your Own programs and pay.",
+   "funders": null,
+   "url": "https://education.msu.edu/new-educator/2026/01/ead-epic-bold-new-era"
+  }
+ ]
+}

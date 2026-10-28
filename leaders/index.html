@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Leaders — When Money Follows the Child</title>
-<meta name="description" content="Who is leading the response when K–12 funding follows the student: institutions, practitioners, districts and researchers, each with a source.">
+<meta name="description" content="Who is leading the response when K–12 funding follows the student: institutions, practitioners, districts, researchers and the campus centers that study it, each with a source.">
 <link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/leaders/">
 <meta property="og:title" content="Leaders — When Money Follows the Child">
-<meta property="og:description" content="Who is leading the response when K–12 funding follows the student: institutions, practitioners, districts and researchers, each with a source.">
+<meta property="og:description" content="Who is leading the response when K–12 funding follows the student: institutions, practitioners, districts, researchers and the campus centers that study it, each with a source.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/leaders/">
 <meta property="og:site_name" content="When Money Follows the Child">
@@ -52,6 +52,24 @@
   <div class="tools" id="chips"></div>
   <div class="cards" id="cards"></div>
   <div class="limit"><b>The limit, first.</b> A leader here is someone whose response is documented, not someone we endorse. The list grows as the research does. Know someone missing? <a href="mailto:info@whenmoneyfollowsthechild.org">Tell us, with a source</a>.</div>
+</div></section>
+
+<section><div class="w">
+  <div class="sh"><div class="num">04</div><div><h2>Who studies it</h2><p>Campus centers that study school choice and the new schools it pays for. Nine centers, six things a center can do. Tap a row for what it does and who funds it.</p></div></div>
+  <div class="grid2">
+    <div>
+      <p class="callout"><em>9 of 9</em> study the new schools. <em>0 of 9</em> prepare the people who teach in them.</p>
+      <p style="color:var(--ink2);font-size:15px;margin-top:0">Research on hybrid schools, homeschooling and microschools now has a home on campus. Preparing the educators those schools hire does not.</p>
+    </div>
+    <div>
+      <p class="callout">The hybrid-school center sits in a <em>business school</em>.</p>
+      <p style="color:var(--ink2);font-size:15px;margin-top:0">Kennesaw State's National Hybrid Schools Project is part of its Coles College of Business, not its education college.</p>
+    </div>
+  </div>
+    <div class="card" id="fig-centers" style="padding:0;overflow:hidden;margin-top:28px">
+      <div class="tblwrap" style="border:0;border-radius:0"><table class="tbl" id="ctbl" style="min-width:760px"><thead></thead><tbody></tbody></table></div>
+    </div>
+<div class="limit"><b>The limit, first.</b> A filled dot means the center's own page or a primary source documents that activity. A blank means not documented, not proven absent. Funders appear where the source names them, on every side of the debate. Two of the nine, Kennesaw State and Arkansas, are outside the 102-university scan. <a href="/data/centers-2026.json">Data</a></div>
 </div></section>
 
 </main>
@@ -133,6 +151,22 @@ W.json("/data/leaders-2026.json").then(function(D){
     a.dataset.t=l.type;cards.appendChild(a);
   });
 }).catch(function(){});
+})();
+
+/* campus research centers */
+(function(){
+var W=window.WMFC;if(!W)return;var esc=W.esc,tb=document.getElementById("ctbl");if(!tb)return;
+W.json("/data/centers-2026.json").then(function(d){
+  var cols=d.columns;
+  tb.tHead.innerHTML="<tr><th>Center</th>"+cols.map(function(c){return '<th style="text-align:center;white-space:normal;min-width:62px">'+esc(c[1])+"</th>";}).join("")+"</tr>";
+  tb.tBodies[0].innerHTML=d.centers.map(function(c){
+    var cells=cols.map(function(k){var on=c.does[k[0]];return '<td style="text-align:center;vertical-align:middle" aria-label="'+esc(k[1])+": "+(on?"documented":"not documented")+'"><span style="display:inline-block;width:12px;height:12px;border-radius:50%;'+(on?"background:var(--ox)":"border:1.5px dashed var(--lined)")+'"></span></td>';}).join("");
+    return '<tr class="ex"><td class="nm" style="min-width:240px">'+esc(c.univ)+'<div style="font-weight:400;font-size:12.5px;color:var(--ink3)">'+esc(c.name)+"</div></td>"+cells+"</tr>"+
+      '<tr class="dt" hidden><td colspan="'+(cols.length+1)+'">'+esc(c.what)+"<br><b>Home:</b> "+esc(c.unit)+(c.since?" · <b>Since</b> "+c.since:"")+(c.funders?"<br><b>Funding:</b> "+esc(c.funders):"")+"<br>"+W.link(c.url,"Source")+(c.url2?" · "+W.link(c.url2,"Funding source"):"")+(c.in_scan?"":" · Not in the 102-university scan")+"</td></tr>";
+  }).join("");
+  W.wireRows(tb);
+  W.figTools(document.getElementById("fig-centers"),{title:"Campus research centers on school choice and new school models",cols:["University","Center"].concat(cols.map(function(c){return c[1];})).concat(["Funding","Source"]),rows:d.centers.map(function(c){return [c.univ,c.name].concat(cols.map(function(k){return c.does[k[0]]?"yes":""})).concat([c.funders||"",c.url]);}),file:"wmfc-campus-research-centers"});
+}).catch(function(){tb.insertAdjacentHTML("beforebegin","<p class=\"src\" style=\"padding:14px\">Data did not load.</p>");});
 })();
 </script>
 </body>
