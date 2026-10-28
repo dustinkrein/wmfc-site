@@ -1,0 +1,350 @@
+{
+ "edition": "Florida educator supply, October 2026",
+ "updated": "2026-10-28",
+ "question": "Who prepares Florida's new teachers, and has that changed as funding became portable?",
+ "limit": "Title II counts people who finish a Florida state-approved program that leads to a teaching certificate. It does not count teachers in private schools or microschools who need no certificate, or Floridians certified through out-of-state online programs. IPEDS counts education degrees (CIP 13), many of which do not lead to a certificate. Neither source records where completers go on to teach.",
+ "sources": {
+  "titleii": {
+   "label": "U.S. Department of Education, Title II state report data files, Florida, report years 2012–2025",
+   "url": "https://title2.ed.gov/Public/Home.aspx",
+   "note": "Report year minus two is the academic year of the completers: the 2025 file covers 2023–24. 'Program completers' column, summed by provider."
+  },
+  "ipeds": {
+   "label": "NCES IPEDS Completions files C2012_A to C2024_A, Florida institutions (HD file STABBR = FL), CIP 13, first majors",
+   "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx",
+   "note": "Revised (_rv) files used where published. C2024_A is the provisional release."
+  }
+ },
+ "groups": {
+  "state_universities": "State University System of Florida (12 universities and branch campuses)",
+  "state_colleges": "Florida College System, traditional and Educator Preparation Institute routes",
+  "private_colleges": "Private colleges and universities, including out-of-state institutions approved in Florida",
+  "district_charter": "District Alternative Certification Program, renamed Professional Learning Certification Program; run by districts, charter schools and charter management organizations",
+  "private_noncollege": "Private providers outside colleges: Teachers of Tomorrow, iteach, Noble Education Initiative"
+ },
+ "years": [
+  {
+   "year": "2010–11",
+   "report": 2012,
+   "state_universities": 4428,
+   "state_colleges": 1969,
+   "private_colleges": 1009,
+   "district_charter": 652,
+   "private_noncollege": 0,
+   "colleges_total": 7406,
+   "total": 8058
+  },
+  {
+   "year": "2011–12",
+   "report": 2013,
+   "state_universities": 4133,
+   "state_colleges": 1583,
+   "private_colleges": 934,
+   "district_charter": 486,
+   "private_noncollege": 0,
+   "colleges_total": 6650,
+   "total": 7136
+  },
+  {
+   "year": "2012–13",
+   "report": 2014,
+   "state_universities": 4007,
+   "state_colleges": 1541,
+   "private_colleges": 892,
+   "district_charter": 645,
+   "private_noncollege": 0,
+   "colleges_total": 6440,
+   "total": 7085
+  },
+  {
+   "year": "2013–14",
+   "report": 2015,
+   "state_universities": 3682,
+   "state_colleges": 1416,
+   "private_colleges": 759,
+   "district_charter": 561,
+   "private_noncollege": 0,
+   "colleges_total": 5857,
+   "total": 6418
+  },
+  {
+   "year": "2014–15",
+   "report": 2016,
+   "state_universities": 3280,
+   "state_colleges": 1379,
+   "private_colleges": 705,
+   "district_charter": 835,
+   "private_noncollege": 0,
+   "colleges_total": 5364,
+   "total": 6199
+  },
+  {
+   "year": "2015–16",
+   "report": 2017,
+   "state_universities": 3155,
+   "state_colleges": 1233,
+   "private_colleges": 493,
+   "district_charter": 740,
+   "private_noncollege": 0,
+   "colleges_total": 4881,
+   "total": 5621
+  },
+  {
+   "year": "2016–17",
+   "report": 2018,
+   "excluded": "The federal file for this year repeats each provider's completers under every route it runs, so totals are inflated. Left out rather than estimated."
+  },
+  {
+   "year": "2017–18",
+   "report": 2019,
+   "state_universities": 2754,
+   "state_colleges": 970,
+   "private_colleges": 716,
+   "district_charter": 952,
+   "private_noncollege": 0,
+   "colleges_total": 4440,
+   "total": 5392
+  },
+  {
+   "year": "2018–19",
+   "report": 2020,
+   "state_universities": 2264,
+   "state_colleges": 1018,
+   "private_colleges": 424,
+   "district_charter": 1074,
+   "private_noncollege": 10,
+   "colleges_total": 3706,
+   "total": 4790
+  },
+  {
+   "year": "2019–20",
+   "report": 2021,
+   "state_universities": 2370,
+   "state_colleges": 1007,
+   "private_colleges": 440,
+   "district_charter": 714,
+   "private_noncollege": 24,
+   "colleges_total": 3817,
+   "total": 4555
+  },
+  {
+   "year": "2020–21",
+   "report": 2022,
+   "state_universities": 2045,
+   "state_colleges": 1058,
+   "private_colleges": 427,
+   "district_charter": 1140,
+   "private_noncollege": 101,
+   "colleges_total": 3530,
+   "total": 4771
+  },
+  {
+   "year": "2021–22",
+   "report": 2023,
+   "state_universities": 2335,
+   "state_colleges": 1043,
+   "private_colleges": 394,
+   "district_charter": 1072,
+   "private_noncollege": 72,
+   "colleges_total": 3772,
+   "total": 4916
+  },
+  {
+   "year": "2022–23",
+   "report": 2024,
+   "state_universities": 2294,
+   "state_colleges": 813,
+   "private_colleges": 346,
+   "district_charter": 774,
+   "private_noncollege": 100,
+   "colleges_total": 3453,
+   "total": 4327
+  },
+  {
+   "year": "2023–24",
+   "report": 2025,
+   "state_universities": 1746,
+   "state_colleges": 796,
+   "private_colleges": 416,
+   "district_charter": 657,
+   "private_noncollege": 162,
+   "colleges_total": 2958,
+   "total": 3777
+  }
+ ],
+ "titleii_routes": {
+  "2010–11": {
+   "traditional": 5813,
+   "alternative_college": 1593,
+   "alternative_noncollege": 652
+  },
+  "2023–24": {
+   "traditional": 2418,
+   "alternative_college": 540,
+   "alternative_noncollege": 819
+  }
+ },
+ "top_2023_24": [
+  [
+   "Professional Learning Certification Program (districts and charters)",
+   "district_charter",
+   657
+  ],
+  [
+   "University of Central Florida",
+   "state_universities",
+   392
+  ],
+  [
+   "University of South Florida",
+   "state_universities",
+   338
+  ],
+  [
+   "University of West Florida, both routes",
+   "state_universities",
+   278
+  ],
+  [
+   "Florida Atlantic University",
+   "state_universities",
+   179
+  ],
+  [
+   "Florida State University",
+   "state_universities",
+   163
+  ],
+  [
+   "University of North Florida",
+   "state_universities",
+   120
+  ],
+  [
+   "Noble Education Initiative",
+   "private_noncollege",
+   116
+  ],
+  [
+   "University of Florida, both routes",
+   "state_universities",
+   106
+  ]
+ ],
+ "ipeds_degrees": [
+  {
+   "year": "2011–12",
+   "file": "C2012_A",
+   "bachelors": 5581,
+   "masters": 5284,
+   "public_bachelors": 4506,
+   "public_masters": 2708
+  },
+  {
+   "year": "2012–13",
+   "file": "C2013_A",
+   "bachelors": 5309,
+   "masters": 4328,
+   "public_bachelors": 4380,
+   "public_masters": 2560
+  },
+  {
+   "year": "2013–14",
+   "file": "C2014_A",
+   "bachelors": 5146,
+   "masters": 4697,
+   "public_bachelors": 4359,
+   "public_masters": 2708
+  },
+  {
+   "year": "2014–15",
+   "file": "C2015_A",
+   "bachelors": 4728,
+   "masters": 4363,
+   "public_bachelors": 3853,
+   "public_masters": 2600
+  },
+  {
+   "year": "2015–16",
+   "file": "C2016_A",
+   "bachelors": 4708,
+   "masters": 4043,
+   "public_bachelors": 3881,
+   "public_masters": 2564
+  },
+  {
+   "year": "2016–17",
+   "file": "C2017_A",
+   "bachelors": 4579,
+   "masters": 3999,
+   "public_bachelors": 3733,
+   "public_masters": 2594
+  },
+  {
+   "year": "2017–18",
+   "file": "C2018_A",
+   "bachelors": 4262,
+   "masters": 3757,
+   "public_bachelors": 3449,
+   "public_masters": 2540
+  },
+  {
+   "year": "2018–19",
+   "file": "C2019_A",
+   "bachelors": 4368,
+   "masters": 3284,
+   "public_bachelors": 3591,
+   "public_masters": 2228
+  },
+  {
+   "year": "2019–20",
+   "file": "C2020_A",
+   "bachelors": 4385,
+   "masters": 3485,
+   "public_bachelors": 3615,
+   "public_masters": 2440
+  },
+  {
+   "year": "2020–21",
+   "file": "C2021_A",
+   "bachelors": 4271,
+   "masters": 3781,
+   "public_bachelors": 3459,
+   "public_masters": 2562
+  },
+  {
+   "year": "2021–22",
+   "file": "C2022_A",
+   "bachelors": 4000,
+   "masters": 3916,
+   "public_bachelors": 3215,
+   "public_masters": 2684
+  },
+  {
+   "year": "2022–23",
+   "file": "C2023_A",
+   "bachelors": 3565,
+   "masters": 3790,
+   "public_bachelors": 2847,
+   "public_masters": 2726
+  },
+  {
+   "year": "2023–24",
+   "file": "C2024_A",
+   "bachelors": 3549,
+   "masters": 3482,
+   "public_bachelors": 2849,
+   "public_masters": 2480,
+   "provisional": true
+  }
+ ],
+ "degree_vs_certificate_2023_24": {
+  "institution": "Florida International University",
+  "education_bachelors": 433,
+  "teacher_program_completers": 65
+ },
+ "context_url": {
+  "noble": "https://flcharterschool.org/marketplace_listing/noble-education-initiative/",
+  "plcp": "https://www.fldoe.org/teaching/preparation/plcp.stml"
+ }
+}

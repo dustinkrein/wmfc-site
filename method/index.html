@@ -149,7 +149,8 @@ function calc(){var n=+rn.value,s=+rs.value,e=+re.value;on.textContent=n;os.text
 var rn=document.getElementById("rn"),rs=document.getElementById("rs"),re=document.getElementById("re"),on=document.getElementById("on"),os=document.getElementById("os"),oe=document.getElementById("oe"),score=document.getElementById("score");
 [rn,rs,re].forEach(function(x){x.addEventListener("input",calc);});calc();
 var DS=[
- ["The university scan","/data/universities-2026.json","102 universities on three lists: Florida, AAU and U.S. News Most Innovative. Direction, lenses and scores","institutions","/universities/"],
+ ["Florida educator supply","/data/supply-florida-2026.json","Teacher-program completers by provider type, 2010–11 to 2023–24 (Title II), and Florida education degrees (IPEDS CIP 13)","years","/#supply"],
+ ["The university scan","/data/universities-2026.json","102 universities: every AAU member and every U.S. News Most Innovative. Direction, lenses and scores","institutions","/universities/"],
  ["The Readiness Index","/data/scan-2026.json","Institutions coded by what they built, with evidence and check dates","institutions","/research/"],
  ["Florida placement survey","/data/placement-2026.json","Ten programs' clinical-placement policies","programs","/research/"],
  ["District response","/data/districts-2026.json","Florida vendor curve, six response types, verified cases","examples","/districts/"],
