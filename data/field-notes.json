@@ -1,8 +1,296 @@
 {
   "edition": "2026",
-  "updated": "2026-10-13",
+  "updated": "2026-10-28",
   "note": "Source of truth for Field Notes. Add an entry here, then run tools/build-notes.py to regenerate /notes/ and each permalink page.",
   "notes": [
+    {
+      "n": "17",
+      "slug": "17",
+      "tag": "Workforce",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "On January 1, a federal tax credit starts paying for tutoring. No university prepares tutors for it.",
+      "standfirst": "The new federal scholarship tax credit can cover tutoring and after-school programs for public school students, not only private tuition. Thirty-one states have opted in. The workforce it pays for has no degree path.",
+      "body": [
+        "The federal scholarship tax credit created in 2025 takes effect on 1 January 2027. Taxpayers get a dollar-for-dollar federal credit of up to $1,700, or $3,400 for married couples, for donating to scholarship-granting organizations. As of 14 October, 31 states had opted in, three governors had declined and 16 governors plus the mayor of the District of Columbia had not decided.",
+        "<b>The scholarships are not only for private tuition.</b> They can also cover public school students' expenses such as tutoring and after-school programs. The IRS projects the program could reach $26 billion in 2030 in the 30 states that opted in before 1 October, serving at least 2 million students. Michigan State's Josh Cowen, a critic of the program, estimates about $3.2 billion of it could reach public school students.",
+        "That money pays tutors, coaches and after-school staff: the roughly 4 million people Arizona State's education college now calls the youth-serving workforce. In the 102-university scan, ASU's push to build credentials for that workforce is the only one we found.",
+        "<b>The limit, first.</b> The IRS has not published the final list of allowable expenses and calls it a high priority. How much of the money reaches tutoring, rather than tuition, is unknown until donors give and organizations spend. This note records a new funding stream and an empty preparation pipeline, not a shortage.",
+        "<b>What to watch.</b> Whether any college of education builds a tutoring or youth-work credential aimed at scholarship-funded providers in 2027, and whether scholarship organizations set any qualifications for the tutors they pay."
+      ],
+      "sources": [
+        {
+          "label": "Education Week — Democratic holdouts still aren't committing to the federal program (14 Oct 2026)",
+          "url": "https://www.edweek.org/policy-politics/democratic-holdouts-still-arent-committing-to-trumps-school-choice-program/2026/10"
+        },
+        {
+          "label": "ASU — The youth-serving workforce report (Sept 2026)",
+          "url": "https://education.asu.edu/about/news/youth-serving-workforce-economic-engine-communities-across-country"
+        }
+      ]
+    },
+    {
+      "n": "16",
+      "slug": "16",
+      "tag": "Workforce",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "Who prepares the teachers of microschools, classical schools and Christian schools? Mostly organizations that publish no counts.",
+      "standfirst": "We found twelve organizations preparing educators for the schools portable funding pays for. Three publish a number of people prepared. One reports to a state.",
+      "body": [
+        "Our Florida supply data counts only people who finish a state-approved program. Teachers in private schools and microschools usually need no state certificate, so their preparation is invisible to the state, to Title II and to IPEDS. We went looking for it directly.",
+        "<b>Microschools.</b> The Micro Schools Network sells a $3,500 leadership certificate that bundles Harvard's general Instructional Leadership Certificate with its own microschool course. ASU Prep runs a Microschool Entrepreneur Fellowship. KaiPod Catalyst's first founder cohort had 17 people from 13 states, 80% of them former classroom teachers. The National Microschooling Center launched a training institute in 2026. Prenda said in 2021 that about 30% of its guides were certified teachers; its Florida page now says about half. Acton Academy reported 250+ affiliate schools in 2021 and publishes no guide-training figures.",
+        "<b>Classical schools.</b> Hillsdale College's Graduate School of Classical Education opened in 2022 with 11 master's students and aimed for 15–20 a year. Great Hearts runs an Academy for Classical Teachers and publishes no counts.",
+        "<b>Christian and Montessori schools.</b> ACSI certifies Christian-school teachers with a bachelor's degree in any field plus Bible and philosophy-of-education requirements; it publishes no count of holders. Florida's FACCS certification &ldquo;stands alongside&rdquo; state certification. The National Center for Montessori in the Public Sector now has 11 affiliated teacher education programs.",
+        "<b>Only one provider appears in a state count:</b> Noble Education Initiative, whose online program finished 116 Florida teachers in 2023–24 because it is state-approved.",
+        "<b>The limit, first.</b> This is a list, not a census. Absence of a published count is not absence of training. The finding is narrower: the preparation that serves this sector is real, scattered, mostly outside universities, and mostly uncounted."
+      ],
+      "sources": [
+        {
+          "label": "Micro Schools Network — Certificate in Micro School Leadership",
+          "url": "https://microschools.com/training/"
+        },
+        {
+          "label": "Business Wire — KaiPod Catalyst starts with 17 founders (2023)",
+          "url": "https://www.businesswire.com/news/home/20230315005736/en/KaiPod-Catalyst-starts-accelerator-for-entrepreneurial-educators-to-launch-their-own-microschools-with-17-founders-from-13-states"
+        },
+        {
+          "label": "Step Up For Students — Prenda guides (2021)",
+          "url": "https://www.stepupforstudents.org/blog/prenda-microschools-provide-education-choice-opportunities-for-educators-as-well-as-students/"
+        },
+        {
+          "label": "National Microschooling Center — Training (Dec 2025)",
+          "url": "https://microschoolingcenter.org/news-blog/training"
+        },
+        {
+          "label": "Hillsdale Collegian — Classical education master's begins with 11 students (2022)",
+          "url": "https://hillsdalecollegian.com/2022/09/classical-education-masters-program-begins-this-year-with-11-students/"
+        },
+        {
+          "label": "ACSI — Certification",
+          "url": "https://www.acsi.org/certification"
+        },
+        {
+          "label": "NCMPS — Teacher education programs jump to 11 (Apr 2026)",
+          "url": "https://www.montessoripublic.org/2026/04/teacher-education-programs-ncmps-three-new/"
+        },
+        {
+          "label": "Acton Academy (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/Acton_Academy"
+        },
+        {
+          "label": "Prenda — Florida",
+          "url": "https://www.prenda.com/states/florida"
+        },
+        {
+          "label": "FACCS — Certification program",
+          "url": "https://faccs.org/certification-program-info/"
+        }
+      ]
+    },
+    {
+      "n": "15",
+      "slug": "15",
+      "tag": "Institutions",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "On the ESA vendor lists, universities are a rounding error.",
+      "standfirst": "Texas lists 5,648 approved vendors for its new ESA program. About ten belong to colleges, and most of those are campus child-care centers.",
+      "body": [
+        "We searched every public ESA provider list we could find for colleges and universities: Texas, Alabama and Utah. Arizona and Florida keep their marketplaces behind a login.",
+        "<b>Texas.</b> The Education Freedom Accounts vendor finder lists 5,648 entries across eight vendor types. College-linked entries: UT Austin's online UT High School, campus child-development centers at UT Austin, UT Rio Grande Valley and SMU, community-college early childhood centers, and Stephen F. Austin State University for enrichment.",
+        "<b>Alabama.</b> The CHOOSE Act provider list, dated 23 October 2026, has about 1,400 entries. Roughly ten are colleges. Auburn appears as an online K–12 private school and a course provider; the University of South Alabama offers dual enrollment and a literacy center.",
+        "<b>Utah and Arizona.</b> BYU's independent-study high school courses take Utah Fits All funds. In Arizona, ASU Prep Digital is an approved vendor, and about 0.7% of ESA spending reaches any postsecondary institution.",
+        "<b>The limit, first.</b> A vendor listing shows availability, not spending. We could not see how much ESA money any college received, except Arizona's aggregate. Universities may also be paid indirectly, through dual enrollment arranged by a school.",
+        "<b>What it shows.</b> Where universities sell directly to ESA families, they sell K–12 schooling, courses and pre-K child care. None of the listings is a preparation program for educators."
+      ],
+      "sources": [
+        {
+          "label": "Texas TEFA Vendor Finder",
+          "url": "https://finder.educationfreedom.texas.gov/"
+        },
+        {
+          "label": "Alabama Department of Revenue — CHOOSE Act education service providers",
+          "url": "https://www.revenue.alabama.gov/wp-content/uploads/2024/12/CHOOSE-Act-Alabama-ESPs.pdf"
+        },
+        {
+          "label": "BYU — Utah Fits All options",
+          "url": "https://is.ce2.byu.edu/ufa-options"
+        },
+        {
+          "label": "Arizona Department of Education — ESA FY26 Q3 report",
+          "url": "https://www.azed.gov/sites/default/files/2026/06/ESA%20FY26%20Q3%20Executive%20_%20%20Legislative%20Report.pdf"
+        }
+      ]
+    },
+    {
+      "n": "14",
+      "slug": "14",
+      "tag": "The seam",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "Nine campus centers study the new schools. None prepares their teachers.",
+      "standfirst": "Research on hybrid schools, homeschooling and microschools now has a home on campus. Preparing the people who teach in them does not.",
+      "body": [
+        "We checked nine university centers that study school choice or the schools it pays for, against six things a center can do: study, publish data, convene, train researchers, prepare educators, and run schools.",
+        "All nine study. Four publish data. Three convene. Two train researchers: Harvard's PEPG and Arkansas's Department of Education Reform. <b>None prepares educators, and none runs a school.</b>",
+        "The newest models get studied from unexpected places. Kennesaw State's National Hybrid Schools Project sits in its business school, not its education college. Johns Hopkins's Homeschool Hub publishes participation data for 39 states. Tulane's federally funded choice center closed when its award ended in August 2025. Michigan State's EPIC, once a partner in that center, now studies the educator workforce instead of choice.",
+        "<b>The limit, first.</b> Nine centers is a starting set, not a census. A blank means the activity was not documented, not that it never happens. Funders appear on every side: EdChoice, Walton and Windgate for some centers; the NEA and AFT for Colorado's NEPC.",
+        "The full table, with each center's funding and source, is on the <a href=\"/leaders/\">Leaders page</a>."
+      ],
+      "sources": [
+        {
+          "label": "Kennesaw State — National Hybrid Schools Project",
+          "url": "https://campus.kennesaw.edu/colleges-departments/coles/centers/education-economics-center/national-hybrid-schools-project/index.php"
+        },
+        {
+          "label": "Johns Hopkins — Homeschool Hub",
+          "url": "https://education.jhu.edu/edpolicy/policy-research-initiatives/homeschool-hub/"
+        },
+        {
+          "label": "IES — REACH award record",
+          "url": "https://ies.ed.gov/use-work/awards/national-center-research-education-access-and-choice"
+        },
+        {
+          "label": "Michigan State — EPIC's new direction (Jan 2026)",
+          "url": "https://education.msu.edu/new-educator/2026/01/ead-epic-bold-new-era"
+        }
+      ]
+    },
+    {
+      "n": "13",
+      "slug": "13",
+      "tag": "The seam",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "Arizona funds families to choose private schools. Its teacher scholarship does not count private-school teaching.",
+      "standfirst": "More than 100,000 students use Arizona's ESA. The state's own tuition-free teacher program requires graduates to teach in a public or charter school.",
+      "body": [
+        "Arizona's Empowerment Scholarship Account program served 102,891 students in early 2026. Families can spend it on private tuition, tutoring and more.",
+        "The Arizona Teachers Academy waives tuition for future teachers at ASU, Northern Arizona, the University of Arizona and community colleges, about $15 million a year from the general fund. Recipients must &ldquo;teach in an Arizona public or charter school&rdquo; for each year of support. <b>Private-school teaching does not count.</b>",
+        "So the state pays for families to choose private schools, and pays for teachers on the condition that they do not work in one. Our October pass of Arizona's universities found the same shape: UA and NAU build preparation with districts, and ASU's choice-sector work sits in its K–12 arm, not its education college.",
+        "<b>The limit, first.</b> A scholarship rule does not determine where teachers go after their service ends, and private schools in Arizona can hire uncertified teachers. This note records a design choice in two state programs, not its effect.",
+        "<b>Why it matters.</b> Arizona has the largest universal ESA in the country. Its teacher pipeline policy was written before the money became portable, and it has not changed."
+      ],
+      "sources": [
+        {
+          "label": "Maricopa Community Colleges — Arizona Teachers Academy scholarship",
+          "url": "https://www.maricopa.edu/students/scholarships/arizona-teachers-academy-ata"
+        },
+        {
+          "label": "JLBC — Arizona Teachers Academy program summary",
+          "url": "https://www.azjlbc.gov/units/psuniversitiesteachersacademy.pdf"
+        },
+        {
+          "label": "Arizona Department of Education — ESA FY26 Q3 report",
+          "url": "https://www.azed.gov/sites/default/files/2026/06/ESA%20FY26%20Q3%20Executive%20_%20%20Legislative%20Report.pdf"
+        }
+      ]
+    },
+    {
+      "n": "12",
+      "slug": "12",
+      "tag": "Institutions",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "A university-run school that turns down the voucher money.",
+      "standfirst": "Nova Southeastern's own PreK–12 school says state scholarships would limit its independence. It is the first documented refusal in the Index.",
+      "body": [
+        "NSU University School, a PreK–12 school of about 1,850 students in Davie, describes itself as &ldquo;an academic center of Nova Southeastern University.&rdquo; Its tuition page states: &ldquo;NSU University School does not participate in any state scholarship, grant, or voucher programs. These programs make the school vulnerable to restrictions and reporting requirements that limit operational independence.&rdquo;",
+        "Florida has the largest scholarship programs in the country. A university that already runs a private school chose not to take that money, and said why.",
+        "The same university once built a charter-school master's degree and no longer offers it. The Index records both as Tier 0: an institution that built for the sector and stopped, and one that runs a school and declines the funding.",
+        "<b>The limit, first.</b> A school that refuses scholarships still serves families who chose it, and the decision belongs to the school, not the education college. We have not asked NSU when the policy began or whether it has been debated.",
+        "<b>Why it matters.</b> Most of this Index records absence. This is a documented choice, with a stated reason, by a university in the state that funds choice most."
+      ],
+      "sources": [
+        {
+          "label": "NSU University School — Tuition and financial aid",
+          "url": "https://www.uschool.nova.edu/admissions/tuition-and-financial-aid"
+        },
+        {
+          "label": "NSU University School (Wikipedia)",
+          "url": "https://en.wikipedia.org/wiki/NSU_University_School"
+        }
+      ]
+    },
+    {
+      "n": "11",
+      "slug": "11",
+      "tag": "Institutions",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "We said 70 universities showed no response. We had searched the wrong building in 17 of them.",
+      "standfirst": "A second search, outside the education schools, found universities running, founding or authorizing K–12 schools. The share with no response fell from about two in three to about half.",
+      "body": [
+        "Our first pass of the 102 universities read mostly education-school pages. Correction 03 showed that misses what universities do elsewhere, so we searched every &ldquo;none&rdquo; row again: K–12 units, online schools, charter offices, lab schools and outreach centers.",
+        "<b>Seventeen of 70 had a documented response.</b> Twelve run, founded or authorize schools. UT Austin runs a 24-campus charter district and UT High School, an online public high school of 6,000+ students that now sells courses to Texas ESA families. UC San Diego operates the Preuss School. USC's Hybrid High grew into a six-school charter network. WashU authorizes KIPP St. Louis. Rutgers–Camden's LEAP Academy serves about 1,500 children. UNC–Chapel Hill runs its own lab school as its own school district.",
+        "Four more work with districts: Rochester ran East High for the city district until June 2025; UVA and JMU run new lab schools with their districts; Arizona builds teacher pathways with Sunnyside. One, RIT, partners with a charter high school.",
+        "<b>What changed.</b> No response found is now 46% of AAU members and 55% of the Most Innovative. We also withdrew our claim that responses sit mostly outside education schools; the recoded schools are split. Each recoded row is marked in the data, and the change is logged as Correction 04.",
+        "<b>What did not change.</b> None of the 17 prepares educators for microschools, hybrid schools or homeschool co-ops. The most common university response is still running or authorizing a school, not preparing anyone to teach in one.",
+        "<b>The limit, first.</b> UC Davis, Howard and Miami remain unresolved, and the first pass coded district partnerships unevenly; that needs its own pass."
+      ],
+      "sources": [
+        {
+          "label": "UT Austin College of Education — UT Public Schools",
+          "url": "https://education.utexas.edu/about/ut-public-schools/"
+        },
+        {
+          "label": "Preuss School at a glance",
+          "url": "https://preuss.ucsd.edu/about-preuss/preuss-at-a-glance.html"
+        },
+        {
+          "label": "USC Rossier — Hybrid High turns 10",
+          "url": "https://rossier.usc.edu/news-insights/news/usc-hybrid-high-turns-10"
+        },
+        {
+          "label": "WashU — Charter school sponsorship",
+          "url": "https://stlouis.washu.edu/washu-charter-school-sponsorship/"
+        },
+        {
+          "label": "Rutgers Magazine — LEAP Academy",
+          "url": "https://magazine.rutgers.edu/insights/a-big-step-forward"
+        },
+        {
+          "label": "Daily Tar Heel — Carolina Community Academy",
+          "url": "https://dailytarheel.com/article/2022/08/university-carolina-community-academy"
+        }
+      ]
+    },
+    {
+      "n": "10",
+      "slug": "10",
+      "tag": "Workforce",
+      "date": "October 2026",
+      "iso": "2026-10-28",
+      "title": "Florida's largest teacher preparer is not a university.",
+      "standfirst": "Florida's colleges and universities finished 60% fewer new teachers in 2023–24 than in 2010–11. District and charter programs held steady, and now finish more than any single university.",
+      "body": [
+        "Federal Title II data count everyone who finishes a Florida state-approved program leading to a teaching certificate. In 2010–11, colleges and universities finished 7,406. In 2023–24 they finished 2,958. The State University System alone fell from 4,428 to 1,746.",
+        "<b>District and charter programs did not fall.</b> The state's Professional Learning Certification Program, run by districts, charter schools and charter management organizations, finished 652 teachers in 2010–11 and 657 in 2023–24. That makes it Florida's largest single preparer. The largest university, UCF, finished 392.",
+        "Private providers outside colleges went from none to 162. One of them, Noble Education Initiative, which serves more than 100 charter schools, finished 116 Florida teachers. The University of Florida finished 106. Programs outside colleges now produce 22% of Florida's new teachers, up from 8%.",
+        "<b>Degrees fell less than certificates.</b> Florida education bachelor's degrees fell 36% from 2011–12 to 2023–24. FIU awarded 433 education bachelor's degrees in 2023–24; 65 people finished its teacher program.",
+        "<b>The limit, first.</b> These counts include only programs leading to a Florida certificate. Private-school and microschool teachers who need no certificate, and Floridians trained by out-of-state online programs, do not appear. Neither source records where completers go on to teach. The 2016–17 federal file double-counts and is left out.",
+        "The chart and data are on the <a href=\"/#supply\">homepage</a>."
+      ],
+      "sources": [
+        {
+          "label": "U.S. Department of Education — Title II state data files, Florida",
+          "url": "https://title2.ed.gov/Public/Home.aspx"
+        },
+        {
+          "label": "NCES — IPEDS completions data files",
+          "url": "https://nces.ed.gov/ipeds/datacenter/DataFiles.aspx"
+        },
+        {
+          "label": "FLDOE — Professional Learning Certification Programs",
+          "url": "https://www.fldoe.org/teaching/preparation/plcp.stml"
+        },
+        {
+          "label": "Florida Charter School Alliance — Noble Education Initiative",
+          "url": "https://flcharterschool.org/marketplace_listing/noble-education-initiative/"
+        }
+      ]
+    },
     {
       "n": "09",
       "slug": "09",
@@ -35,10 +323,6 @@
         {
           "label": "Getting Smart, Learner-Centered Collaborative & Transcend — The Public Microschool Playbook",
           "url": "https://www.gettingsmart.com/2025/05/14/the-public-microschool-playbook-a-new-actionable-guide-for-system-leaders/"
-        },
-        {
-          "label": "WMFC Field Note 06 — Florida built a second door, and we walked past it",
-          "url": "/notes/06/"
         }
       ]
     },

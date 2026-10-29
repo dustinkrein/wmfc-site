@@ -1,0 +1,128 @@
+{
+ "edition": "University ESA vendor cross-match, October 2026",
+ "updated": "2026-10-28",
+ "question": "Which colleges and universities appear on public ESA provider lists?",
+ "limit": "Only states with a public, searchable provider list could be checked. Arizona's ClassWallet marketplace and Florida's Step Up marketplace are not public; Arizona's state report shows about 0.7% of ESA spending reaching postsecondary institutions but names none.",
+ "states": [
+  {
+   "state": "Texas",
+   "program": "Education Freedom Accounts (TEFA)",
+   "listings": 5648,
+   "checked": "2026-10-28",
+   "source": "https://finder.educationfreedom.texas.gov/",
+   "higher_ed": [
+    [
+     "UT Austin",
+     "UT High School, online courses (classes)"
+    ],
+    [
+     "UT Austin",
+     "Three campus child development centers (pre-K)"
+    ],
+    [
+     "UT Rio Grande Valley",
+     "Campus child development center (pre-K)"
+    ],
+    [
+     "SMU",
+     "Campus child care center (pre-K)"
+    ],
+    [
+     "Stephen F. Austin State University",
+     "Enrichment"
+    ],
+    [
+     "San Antonio College",
+     "Early childhood center (pre-K)"
+    ],
+    [
+     "South Texas College",
+     "Child development center (pre-K)"
+    ],
+    [
+     "Texas Southmost College",
+     "Early childhood center (pre-K)"
+    ],
+    [
+     "Southwest Texas Junior College",
+     "Child development center (pre-K)"
+    ]
+   ],
+   "note": "Listings counted across eight vendor types; an organization in several types counts more than once."
+  },
+  {
+   "state": "Alabama",
+   "program": "CHOOSE Act ESA",
+   "listings": 1402,
+   "checked": "2026-10-28",
+   "source": "https://www.revenue.alabama.gov/wp-content/uploads/2024/12/CHOOSE-Act-Alabama-ESPs.pdf",
+   "higher_ed": [
+    [
+     "Auburn University",
+     "Online K–12 private school; online courses"
+    ],
+    [
+     "Auburn University at Montgomery",
+     "Online courses; exams"
+    ],
+    [
+     "Jacksonville State University",
+     "Online courses; curriculum"
+    ],
+    [
+     "University of South Alabama",
+     "Dual enrollment; literacy center tutoring"
+    ],
+    [
+     "Troy University",
+     "Early college courses"
+    ],
+    [
+     "University of Mobile",
+     "Online courses"
+    ],
+    [
+     "University of Montevallo",
+     "Community school of music"
+    ],
+    [
+     "Lurleen B. Wallace Community College",
+     "Dual enrollment"
+    ],
+    [
+     "Marian University (Indiana)",
+     "Online preparatory school"
+    ]
+   ],
+   "note": "Provider list dated 23 October 2026; entry count is approximate and includes repeats across categories."
+  },
+  {
+   "state": "Utah",
+   "program": "Utah Fits All",
+   "listings": null,
+   "checked": "2026-10-28",
+   "source": "https://is.ce2.byu.edu/ufa-options",
+   "higher_ed": [
+    [
+     "Brigham Young University",
+     "Independent Study high school courses and BYU Online High School, payable with UFA funds"
+    ]
+   ],
+   "note": "No public full list; BYU's own page confirms participation."
+  },
+  {
+   "state": "Arizona",
+   "program": "Empowerment Scholarship Accounts",
+   "listings": null,
+   "checked": "2026-10-28",
+   "source": "https://www.azed.gov/sites/default/files/2026/06/ESA%20FY26%20Q3%20Executive%20_%20%20Legislative%20Report.pdf",
+   "higher_ed": [
+    [
+     "Arizona State University",
+     "ASU Prep Digital, approved ClassWallet vendor"
+    ]
+   ],
+   "note": "About $1.64 million, roughly 0.7% of Q3 FY26 spending, went to postsecondary tuition, textbooks or fees; institutions are not named."
+  }
+ ]
+}

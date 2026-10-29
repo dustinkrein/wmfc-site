@@ -1,6 +1,6 @@
 {
  "edition": "University scan, October 2026",
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "lists": {
   "florida": {
    "label": "Florida",
@@ -15,7 +15,7 @@
    "def": "All 74 universities on the U.S. News 2027 Most Innovative National Universities list, published September 2026."
   }
  },
- "note": "Two codings of the same 71 AAU member institutions. (1) Innovation: each institution's two strongest education initiatives, each scored 2×Novelty + Scale + Evidence (0–5 each, max 20); portfolio = mean of the top two, a missing second counts as 0. (2) Response to portable funding: direction (compete / supply / fortify / evidence / none) and which of four lenses showed a verified signal. Source: public university pages and news, 2025–2026. 'none' means not found in this scan, not proven absent. Most Innovative rows not in the AAU are coded for response only; their initiatives are not yet scored. 'since' is the verified start year of the work cited; it is absent where no source states one.",
+ "note": "Two codings of the same 71 AAU member institutions. (1) Innovation: each institution's two strongest education initiatives, each scored 2×Novelty + Scale + Evidence (0–5 each, max 20); portfolio = mean of the top two, a missing second counts as 0. (2) Response to portable funding: direction (compete / supply / fortify / evidence / none) and which of four lenses showed a verified signal. Source: public university pages and news, 2025–2026. 'none' means not found in this scan, not proven absent. Most Innovative rows not in the AAU are coded for response only; their initiatives are not yet scored. 'since' is the verified start year of the work cited; it is absent where no source states one. Recheck of 28 Oct 2026: the 70 'none' rows were searched beyond the education school (K–12, online, charter, lab-school and outreach units); 17 were recoded, each marked 'recoded'.",
  "directions": {
   "compete": "Builds or runs an alternative that takes portable funds",
   "supply": "Sells services or preparation to whoever is buying, including non-public schools",
@@ -805,10 +805,12 @@
     }
    ],
    "portfolio": 11.5,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "UT Austin runs three K–12 public schools: UT Elementary (operated by the university, 2003), the UT University Charter School (a 24-campus charter district, 1999) and UT High School, an accredited public online high school with 6,000+ students.",
+   "response_url": "https://education.utexas.edu/about/ut-public-schools/",
    "rank": 21,
    "state": "TX",
    "lists": [
@@ -816,7 +818,12 @@
     "innovative"
    ],
    "innov_rank": "22",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 1999,
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "response2": "UT High School is an approved vendor in Texas's new Education Freedom Accounts program (2026–27).",
+   "response2_url": "https://finder.educationfreedom.texas.gov/"
   },
   {
    "name": "University of Iowa",
@@ -955,16 +962,21 @@
     }
    ],
    "portfolio": 11.0,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "USC Hybrid High was developed under the USC Rossier School of Education and opened in 2012; it became the first school of Ednovate, now a six-school charter network.",
+   "response_url": "https://rossier.usc.edu/news-insights/news/usc-hybrid-high-turns-10",
    "rank": 25,
    "state": "CA",
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2012,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "McGill",
@@ -1211,16 +1223,19 @@
     }
    ],
    "portfolio": 10.5,
-   "direction": "none",
+   "direction": "fortify",
    "lenses": [],
-   "response": null,
-   "response_url": null,
+   "response": "Co-designed the UVA Buford Lab School with Charlottesville City Schools under Virginia's state-funded lab school program.",
+   "response_url": "https://news.virginia.edu/node/359251",
    "rank": 32,
    "state": "VA",
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2023,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Texas A&M",
@@ -1355,10 +1370,12 @@
     }
    ],
    "portfolio": 9.5,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Co-designed and helps run the California College Preparatory Academy (Cal Prep), a charter school, with Aspire Public Schools.",
+   "response_url": "https://cep.berkeley.edu/cal-prep",
    "rank": 36,
    "state": "CA",
    "lists": [
@@ -1366,7 +1383,10 @@
     "innovative"
    ],
    "innov_rank": "30",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2005,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "University at Buffalo",
@@ -1459,10 +1479,10 @@
     }
    ],
    "portfolio": 9.5,
-   "direction": "none",
+   "direction": "fortify",
    "lenses": [],
-   "response": null,
-   "response_url": null,
+   "response": "Pathways to Teaching is built with the Sunnyside Unified School District; Arizona's state teacher scholarship counts service only in public or charter schools.",
+   "response_url": "https://www.kold.com/2020/01/10/how-sunnyside-uarizona-hope-train-keep-teachers-tucson",
    "rank": 39,
    "state": "AZ",
    "lists": [
@@ -1470,7 +1490,10 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2020,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Rutgers",
@@ -1495,16 +1518,21 @@
     }
    ],
    "portfolio": 9.5,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "LEAP Academy, a K–12 charter network serving about 1,500 children, operates under Rutgers–Camden's Community Leadership Center.",
+   "response_url": "https://magazine.rutgers.edu/insights/a-big-step-forward",
    "rank": 39,
    "state": "NJ",
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 1997,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Brandeis",
@@ -1676,10 +1704,12 @@
     }
    ],
    "portfolio": 9.0,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Runs Carolina Community Academy, a K–2 laboratory school under North Carolina's lab-school law. The school is a unit of the university, its teachers are UNC employees, and UNC is its school district.",
+   "response_url": "https://dailytarheel.com/article/2022/08/university-carolina-community-academy",
    "rank": 41,
    "state": "NC",
    "lists": [
@@ -1687,7 +1717,10 @@
     "innovative"
    ],
    "innov_rank": "34",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2022,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "UC Davis",
@@ -1857,10 +1890,12 @@
     }
    ],
    "portfolio": 8.5,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "UCLA Lab School, ages 4–12, charges tuition ($37,903 for new students in 2026–27) “approved by UCLA.” A research school that families pay for.",
+   "response_url": "https://www.labschool.ucla.edu/admissions",
    "rank": 50,
    "state": "CA",
    "lists": [
@@ -1868,7 +1903,9 @@
     "innovative"
    ],
    "innov_rank": "17",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "University of Pittsburgh",
@@ -1893,16 +1930,21 @@
     }
    ],
    "portfolio": 8.0,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Falk Laboratory School is “a K-8 private school affiliated with the School of Education at the University of Pittsburgh.”",
+   "response_url": "https://falkschool.pitt.edu/about-falk/about-falk-laboratory-school",
    "rank": 51,
    "state": "PA",
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 1931,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Columbia",
@@ -1964,10 +2006,12 @@
     }
    ],
    "portfolio": 8.0,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "College Park Academy, a public charter school, launched in 2013 with university support; two College of Education deans have served on its board.",
+   "response_url": "https://today.umd.edu/one-books-umd-supported-charter-school-15e84c27-6666-4fbd-8bda-16b7a44ed4ad",
    "rank": 52,
    "state": "MD",
    "lists": [
@@ -1975,7 +2019,10 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2013,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "University of South Florida",
@@ -2175,16 +2222,21 @@
     }
    ],
    "portfolio": 7.5,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Authorizes charter schools under Missouri law: WashU is the sponsor of KIPP St. Louis, six schools from pre-K to grade 12.",
+   "response_url": "https://stlouis.washu.edu/washu-charter-school-sponsorship/",
    "rank": 56,
    "state": "MO",
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2009,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Boston University",
@@ -2209,10 +2261,12 @@
     }
    ],
    "portfolio": 7.0,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Operates Boston University Academy, a private high school whose juniors and seniors take BU courses for credit.",
+   "response_url": "https://en.wikipedia.org/wiki/Boston_University_Academy",
    "rank": 60,
    "state": "MA",
    "lists": [
@@ -2220,7 +2274,10 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 1993,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Illinois Urbana-Champaign",
@@ -2316,16 +2373,20 @@
     }
    ],
    "portfolio": 6.5,
-   "direction": "none",
+   "direction": "fortify",
    "lenses": [],
-   "response": null,
-   "response_url": null,
+   "response": "Ran East High School for the Rochester City School District as an Educational Partnership Organization.",
+   "response_url": "https://warner.rochester.edu/blog/thank-you-East-community",
    "rank": 62,
    "state": "NY",
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 2015,
+   "status": "Ended June 2025",
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Case Western Reserve",
@@ -2481,10 +2542,12 @@
     }
    ],
    "portfolio": 4.5,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Operates the Preuss School, a grades 6–12 charter school on campus: “Chartered by the San Diego Unified School District and operated by the University of California, San Diego.”",
+   "response_url": "https://preuss.ucsd.edu/about-preuss/preuss-at-a-glance.html",
    "rank": 68,
    "state": "CA",
    "lists": [
@@ -2492,7 +2555,10 @@
     "innovative"
    ],
    "innov_rank": "19",
-   "scored": true
+   "scored": true,
+   "response_checked": "2026-10-28",
+   "since": 1999,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Caltech",
@@ -2668,16 +2734,21 @@
    "notable_url": null,
    "initiatives": [],
    "portfolio": null,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "supply",
+   "lenses": [
+    2
+   ],
+   "response": "Partners with Uncommon Schools' Rochester Prep charter high school: its students use RIT facilities and RIT students tutor them.",
+   "response_url": "https://www.rit.edu/news/uncommon-partnership-frequently-asked-questions",
    "rank": null,
    "lists": [
     "innovative"
    ],
    "innov_rank": "32",
-   "scored": false
+   "scored": false,
+   "response_checked": "2026-10-28",
+   "since": 2014,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Drexel",
@@ -2774,16 +2845,19 @@
    "notable_url": null,
    "initiatives": [],
    "portfolio": null,
-   "direction": "none",
+   "direction": "fortify",
    "lenses": [],
-   "response": null,
-   "response_url": null,
+   "response": "Runs the JMU Lab School for Innovation & Career Exploration with Rockingham County Public Schools and Blue Ridge Community College.",
+   "response_url": "https://www.jmu.edu/coe/initiatives/lab-school/index.shtml",
    "rank": null,
    "lists": [
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": false
+   "scored": false,
+   "response_checked": "2026-10-28",
+   "since": 2024,
+   "recoded": "2026-10-28: was 'none' in the first pass"
   },
   {
    "name": "Northeastern",
@@ -3203,16 +3277,22 @@
    "notable_url": null,
    "initiatives": [],
    "portfolio": null,
-   "direction": "none",
-   "lenses": [],
-   "response": null,
-   "response_url": null,
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Operated the University of Houston Charter School, a K–5 campus school, from 1997 until it closed in 2021.",
+   "response_url": "https://en.wikipedia.org/wiki/University_of_Houston_Charter_School",
    "rank": null,
    "lists": [
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": false
+   "scored": false,
+   "response_checked": "2026-10-28",
+   "since": 1997,
+   "status": "Closed 2021",
+   "recoded": "2026-10-28: was 'none' in the first pass"
   }
  ]
 }

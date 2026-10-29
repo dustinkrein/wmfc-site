@@ -88,6 +88,14 @@ for the comparison and currently rest on a single institution each.
 state's official charter sponsor/authorizer registry. A program roster cannot tell you
 what a board of trustees has authorized. This is how we got one wrong.
 
+### University scan — open leads after Correction 04 (28 Oct 2026)
+
+17 of 70 "none" rows recoded after searching beyond education schools. Unresolved: **UC Davis**
+(Early College Prep charter, documented only to 2009), **Howard** (on-campus charter MS², governance
+link unverified), **Miami** (Global Academy status), **Toronto** (ICS lab school; Canada, not coded).
+Also open: a separate **fortify** pass. The first pass coded district partnerships unevenly
+(e.g. UCLA IMPACT residencies, Tennessee community schools, UTSA CAST Tech remain uncoded).
+
 ### 4. Atlas — Europe next
 
 Denmark, Belgium and Ireland are already shortlisted and are the strongest uncoded cases:
