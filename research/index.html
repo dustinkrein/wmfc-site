@@ -31,7 +31,7 @@
   <p class="lead2">Institution by institution, state by state: has anyone built the educator workforce that portable funding needs? Florida and Michigan are coded in full.</p>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
   <div class="ledger" id="ledger">
-    <div><div class="big"><span data-derive="total">39</span></div><p>coded rows across <span data-derive="states">9</span> states</p></div>
+    <div><div class="big"><span data-derive="total">43</span></div><p>coded rows across <span data-derive="states">9</span> states</p></div>
     <div><div class="big"><span data-derive="tier1">11</span></div><p>built for the sector, almost all by running or authorizing schools</p></div>
     <div><div class="big hot">1</div><p>preparation program built for the sector: Central Michigan's charter leadership M.A.</p></div>
     <div><div class="big hot">0</div><p>serve the unlicensed slice: microschools, co-ops, ESA vendors</p></div>
@@ -46,6 +46,7 @@
     <div>
       <p class="callout">Where institutions engage, they <em>authorize schools</em>. They do not build programs.</p>
       <p style="color:var(--ink2);font-size:15px">Florida's Tier 1 rows are all charter sponsors. Michigan's eight university authorizers hold well over 200 schools between them, some since 1994. Across all of them: one preparation program.</p>
+      <p class="src" id="howline" style="margin-top:6px"></p>
       <p class="callout" style="margin-top:22px">Holding schools did not produce programs.</p>
       <p style="color:var(--ink2);font-size:15px">Proximity, subsidy and access were each present in Michigan without a single new course.</p>
     </div>
@@ -69,7 +70,7 @@
   <div class="sh"><div class="num">04</div><div><h2>The coded scan</h2><p>Every row with its evidence, source and the date a person read it. Tap a row.</p></div></div>
   <div class="tools"><div id="tchips" style="display:contents"></div><select class="search" id="fs" aria-label="Filter by state" style="max-width:190px"></select><span class="count" id="cnt"></span></div>
   <div class="tblwrap"><table class="tbl" id="tbl">
-    <thead><tr><th>Institution</th><th>State</th><th>Category</th><th>Checked</th></tr></thead>
+    <thead><tr><th>Institution</th><th>State</th><th>Category</th><th>How</th><th>Checked</th></tr></thead>
     <tbody id="tb"><tr><td colspan="4">Loading the dataset…</td></tr></tbody>
   </table></div>
   <p class="src" style="margin-top:12px"><a href="/data/scan-2026.json">Download JSON</a> · <a href="#" id="csv">Download CSV</a></p>
@@ -152,24 +153,27 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
   });
 
   /* 04 table */
+  (function(){var t1=I.filter(function(x){return x.tier==="Tier 1";}),ao=t1.filter(function(x){return (x.engagement||[]).some(function(k){return k==="authorizes"||k==="operates";});}),pg=t1.filter(function(x){return (x.engagement||[]).indexOf("program")>-1;});
+    var el=document.getElementById("howline");if(el)el.textContent="Across every state coded: "+ao.length+" of "+t1.length+" Tier 1 rows authorize or run schools. "+pg.length+" built a preparation program"+(pg.length===1?" ("+strip(pg[0].name)+").":".");})();
   var tb=document.getElementById("tb"),fs=document.getElementById("fs"),cnt=document.getElementById("cnt"),tier="all";
   var states=[];I.forEach(function(x){if(states.indexOf(x.state)<0)states.push(x.state);});
   fs.innerHTML='<option value="">All states</option>'+states.map(function(s){return "<option>"+esc(s)+"</option>";}).join("");
   var tc={};I.forEach(function(x){tc[x.tier]=(tc[x.tier]||0)+1;});
   W.chips(document.getElementById("tchips"),[{key:"all",label:"All",n:I.length}].concat(["Tier 1","Tier 2","Tier 3","Tier 0"].map(function(k){return {key:k,label:CAT[k].label,n:tc[k]||0,sw:TC[k]};})),function(k){tier=k;draw();});
   fs.addEventListener("change",draw);
+  function HOW(x){var L={authorizes:"Authorizes schools",operates:"Runs schools",program:"Program",other:"Partnership or service"};return (x.engagement&&x.engagement.length)?x.engagement.map(function(k){return L[k]||k;}).join(" · "):"—";}
   function draw(){
     var rows=I.filter(function(x){return (tier==="all"||x.tier===tier)&&(!fs.value||x.state===fs.value);});
     cnt.textContent=rows.length+" of "+I.length;
     tb.innerHTML=rows.map(function(x){
-      return '<tr class="ex"><td class="nm">'+x.name+(x.scope==="aggregate"?' <span style="font-weight:400;color:var(--ink3)">(summary row)</span>':"")+'</td><td>'+esc(x.state)+'</td><td><span class="pill"><span class="sw '+TC[x.tier]+'"></span>'+esc(CAT[x.tier].label)+'</span></td><td style="white-space:nowrap">'+esc(x.checked)+'</td></tr>'+
-             '<tr class="dt" hidden><td colspan="4">'+x.evidence+(x.source?" "+W.link(x.source,"Source"):"")+'</td></tr>';
-    }).join("")||'<tr><td colspan="4">No rows match.</td></tr>';
+      return '<tr class="ex"><td class="nm">'+x.name+(x.scope==="aggregate"?' <span style="font-weight:400;color:var(--ink3)">(summary row)</span>':"")+'</td><td>'+esc(x.state)+'</td><td><span class="pill"><span class="sw '+TC[x.tier]+'"></span>'+esc(CAT[x.tier].label)+'</span></td><td style="font-size:13px;color:var(--ink2)">'+esc(HOW(x))+'</td><td style="white-space:nowrap">'+esc(x.checked)+'</td></tr>'+
+             '<tr class="dt" hidden><td colspan="5">'+x.evidence+(x.source?" "+W.link(x.source,"Source"):"")+'</td></tr>';
+    }).join("")||'<tr><td colspan="5">No rows match.</td></tr>';
     W.wireRows(tb);
   }
   draw();
   document.getElementById("csv").addEventListener("click",function(e){e.preventDefault();
-    W.csv(I.map(function(x){return {name:strip(x.name),state:x.state,tier:x.tier,category:CAT[x.tier].label,checked:x.checked,evidence:strip(x.evidence),source:x.source};}),["name","state","tier","category","checked","evidence","source"],"wmfc-readiness-index-2026.csv");});
+    W.csv(I.map(function(x){return {name:strip(x.name),state:x.state,tier:x.tier,category:CAT[x.tier].label,how:(x.engagement||[]).join(" "),checked:x.checked,evidence:strip(x.evidence),source:x.source};}),["name","state","tier","category","how","checked","evidence","source"],"wmfc-readiness-index-2026.csv");});
 
   /* 05 hypotheses */
   var hy=document.getElementById("hyp");

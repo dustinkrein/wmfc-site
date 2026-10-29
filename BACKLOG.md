@@ -17,8 +17,8 @@ Before any handoff: `python3 tools/check.py` must exit clean.
 
 | | Coverage |
 |---|---|
-| **Readiness Index** | 39 rows · 9 states · 34 single institutions, 5 summary rows · 11 Tier 1, 8 Tier 2, 7 Tier 3, 13 Tier 0 |
-| **Index coverage depth** | 2 systematic passes (Florida, Michigan) · 1 partial (Ohio) · 6 placeholders |
+| **Readiness Index** | 43 rows · 9 states · 11 Tier 1, 9 Tier 2, 11 Tier 3, 12 Tier 0 · every row carries `engagement` |
+| **Index coverage depth** | 2 systematic passes (Florida, Michigan) · 2 partial (Ohio, Arizona) · 5 placeholders |
 | **Portable-Funding Atlas** | 175 countries · 29 coded, 12 shortlisted, 134 not yet coded |
 | **Field Notes** | 09 published |
 | **Corrections** | 02 published, both on the front page |
@@ -53,7 +53,11 @@ coded. Do not backfill these from memory: a plausible-sounding invented rational
 worse than the blank, because it looks accountable and isn't. `tools/check.py` warns on
 this until it's closed.
 
-### 2. The schema can't tell a built program from an operating move
+### 2. ~~The schema can't tell a built program from an operating move~~ — done 28 Oct 2026
+
+Every row now carries `engagement` (`authorizes` / `operates` / `program` / `other`; empty for Tier 0). Result: all 11 Tier 1 rows authorize or run schools; one (Central Michigan) also built a program. The Index page derives this line from the data.
+
+_Original note:_
 
 `scan-2026.json` has `tier`, and tier alone cannot distinguish *"this university built a
 preparation program"* from *"this university authorizes charter schools."* Both can be
@@ -71,8 +75,12 @@ all 11 Tier 1 rows, so it's a real pass, not a patch.
 Six states read `Placeholder` on the Index. That's honest, but it's also a public list of
 what's undone, which raises the cost of leaving it undone.
 
-Indiana, Arizona, Arkansas, West Virginia, California and New York are one row each.
-Arizona is the highest value — the largest ESA program in the country and only ASU coded.
+Indiana, Arkansas, West Virginia, California and New York are one row each. Arizona moved to a
+partial pass on 28 Oct 2026 (ASU, UA, NAU, GCU, Rio Salado); other Maricopa colleges and Pima remain.
+
+**Correction 03 recheck of Florida Tier 0 rows:** done for Nova Southeastern, UNF (recoded Tier 3) and
+Miami (UM Global Academy status unverified). Still to recheck under the K–12/online/outreach rule: UF, FSU,
+USF, FIU, FAMU, New College, Stetson.
 California and New York matter as low-choice controls: their Tier 0 rows are load-bearing
 for the comparison and currently rest on a single institution each.
 
