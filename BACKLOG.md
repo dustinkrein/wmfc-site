@@ -96,6 +96,14 @@ link unverified), **Miami** (Global Academy status), **Toronto** (ICS lab school
 Also open: a separate **fortify** pass. The first pass coded district partnerships unevenly
 (e.g. UCLA IMPACT residencies, Tennessee community schools, UTSA CAST Tech remain uncoded).
 
+### Atlas — tier 3 cleared (28 Oct 2026)
+
+All 57 "not yet coded" countries resolved: 55 coded, mostly from UNESCO GEM PEER non-state-actor
+profiles (2021–2026 editions; each finding carries the profile's last-modified date), plus New Caledonia
+(Gouvernement NC, 2023) and Kosovo (BIRN, 2020). French Southern and Antarctic Lands and Western Sahara
+moved to shortlisted with named reasons. Atlas now: 152 coded, 23 shortlisted, 0 not yet coded.
+PEER profiles are dated; a refresh pass against the new PEER site (unesco.org/gem-report/en/peer) is open.
+
 ### 4. Atlas — Europe next
 
 Denmark, Belgium and Ireland are already shortlisted and are the strongest uncoded cases:

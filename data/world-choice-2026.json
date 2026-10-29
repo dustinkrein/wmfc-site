@@ -1,19 +1,41 @@
 {
  "AFG": {
   "name": "Afghanistan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Non-state provision includes fee-charging private schools, fee-free private religious schools and community- or home-based schools. The profile found no state-funded non-state schools, no contracted schools and no vouchers.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Afghanistan (last modified 21/04/2022)",
+    "url": "https://education-profiles.org/central-and-southern-asia/afghanistan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The profile found no state-funded non-state schools, no contracted schools and no vouchers."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "AGO": {
   "name": "Angola",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Law permits state co-financing of private schools",
+  "mech_type": "subsidy",
+  "summary": "Angola's education law lets the state co-finance private institutions where there is public or strategic interest. Private schools enrolled 14% of primary pupils in 2015; no use of the co-financing power was documented.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Angola (last modified 25/11/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/angola/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Article 57 of the Lei de Bases do Sistema de Educação says the state “may co-finance private institutions” of public or strategic interest. No contracted schools were found."
+   }
+  ],
+  "code": "documented-unsized",
+  "code_label": "Mechanism documented, scale unknown",
+  "family": "subsidy"
  },
  "ALB": {
   "tier": 1,
@@ -88,19 +110,31 @@
  },
  "ARM": {
   "name": "Armenia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Non-state schools are financed mainly by tuition. Community schools run on government and local budgets, but they are set up by community leaders as non-commercial community organizations, not as private schools.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Armenia (last modified 07/03/2023)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/armenia/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Community schools run on government and local budgets, but they are set up by community leaders as non-commercial community organizations, not as private schools."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "ATF": {
   "name": "French Southern and Antarctic Lands",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "No permanent population: about 150–310 military, official and research staff are present at a time, and no school system was found to code (Wikipedia, checked Oct 2026)."
  },
  "AUS": {
   "tier": 1,
@@ -142,19 +176,41 @@
  },
  "AZE": {
   "name": "Azerbaijan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Private schools are funded by private actors under contracts with parents. The only public money found for non-state providers is at pre-school level, where a 2017 law lets municipal and private preschools receive funding to enrol children.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Azerbaijan (last modified 24/03/2023)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/azerbaijan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The only public money found for non-state providers is at pre-school level, where a 2017 law lets municipal and private preschools receive funding to enrol children."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "BDI": {
   "name": "Burundi",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Tax relief and cheap loans, no contracts",
+  "mech_type": "partial",
+  "summary": "Fewer than 2% of primary pupils but more than half of post-basic pupils attend private schools in Burundi. Private schools are not under contract; the state supports them through customs and tax exemptions and subsidized loans.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Burundi (dernière modification 17/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/burundi/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Private schools “peuvent compter sur l’aide de l’État et bénéficier d’exonérations douanières et fiscales et de prêts à un taux bonifié”. They are not “conventionnées”."
+   }
+  ],
+  "code": "indirect",
+  "code_label": "Recognition without full funding",
+  "family": "subsidy"
  },
  "BEL": {
   "tier": 1,
@@ -177,19 +233,41 @@
  },
  "BEN": {
   "name": "Benin",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Law allows subsidies; confessional schools under contract",
+  "mech_type": "subsidy",
+  "summary": "Benin's law and constitution let private schools receive state subsidies on terms set by decree. Catholic and Methodist schools operate under contract with the state.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Bénin (dernière modification 17/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/benin/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Under Law 2003-17, Decree 2007-279 and the 1990 Constitution, “les écoles privées peuvent bénéficier des subventions de l’État”."
+   }
+  ],
+  "code": "documented-unsized",
+  "code_label": "Mechanism documented, scale unknown",
+  "family": "subsidy"
  },
  "BFA": {
   "name": "Burkina Faso",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "State pays private schools to reach 10% of pupils",
+  "mech_type": "subsidy",
+  "summary": "Burkina Faso has a policy of supporting private schools so they enrol at least 10% of pupils, funding confessional and community schools through subsidies or per-pupil aid. Private schools must sign a convention with the state.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Burkina Faso (dernière modification 17/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/burkina-faso/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The state funds confessional and community private schools “par des paiements directs (subventions ou aides par élève)”."
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy, scale unknown",
+  "family": "subsidy"
  },
  "BGD": {
   "tier": 1,
@@ -240,11 +318,22 @@
  },
  "BIH": {
   "name": "Bosnia and Herzegovina",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Private schools are a small share of the system (4 of 40 listed high schools in one canton). The profile found no state-funded non-state schools and no contracted schools.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Bosnia and Herzegovina (last modified 02/12/2021)",
+    "url": "https://education-profiles.org/europe-and-northern-america/bosnia-and-herzegovina/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The profile found no state-funded non-state schools and no contracted schools."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "BLR": {
   "name": "Belarus",
@@ -341,35 +430,79 @@
  },
  "BRN": {
   "name": "Brunei",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "One private school fully funded by the Sultan",
+  "mech_type": "targeted",
+  "summary": "Private schools in Brunei are independent and self-funded. The exception is Al-Falaah, a private school fully funded by the Sultan to model Qur'anic and academic excellence.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Brunei Darussalam (last modified 22/11/2021)",
+    "url": "https://education-profiles.org/eastern-and-south-eastern-asia/brunei-darussalam/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Al-Falaah school is a private school fully funded by His Majesty the Sultan.” No contracted non-state schools were found."
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "BTN": {
   "name": "Bhutan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "State funds monastic education institutes",
+  "mech_type": "targeted",
+  "summary": "Private schools in Bhutan are independent. The state funds monastic education institutes, which are owned and governed by the Zhung Dratshang, the constitutionally recognized monastic body, with their own curriculum and exams.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Bhutan (last modified 18/11/2021)",
+    "url": "https://education-profiles.org/central-and-southern-asia/bhutan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The state “funds and supports the establishment of state monastic education institutes”, which are independently regulated by the Zhung Dratshang."
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "BWA": {
   "name": "Botswana",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "A few mission schools receive recurrent state grants",
+  "mech_type": "grant-aided",
+  "summary": "Most private schools in Botswana are for-profit and unaided. A few Catholic and Congregational mission schools are aided: maintained wholly or partly by recurrent state grants, with fees and curriculum set by the ministry. Aided schools were about 1% of schools in 2017.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Botswana (last modified 22/11/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/botswana/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Aided schools are “maintained wholly or partially through recurrent state grants or loans” and charge fees set by the ministry."
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "CAF": {
   "name": "Central African Republic",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "All accredited private schools eligible for subsidy",
+  "mech_type": "subsidy",
+  "summary": "In the Central African Republic, all private schools that meet state criteria and are accredited are eligible for state subsidies, with additional subsidies for schools taking AIDS orphans. The number funded is unknown.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — République centrafricaine (dernière modification 22/07/2024)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/republique-centrafricaine/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Tous les établissements privés sont éligibles à des subventions de l’État” if accredited."
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy, scale unknown",
+  "family": "subsidy"
  },
  "CAN": {
   "name": "Canada",
@@ -515,11 +648,22 @@
  },
  "COG": {
   "name": "Republic of the Congo",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Contracted private schools, under 3% of establishments",
+  "mech_type": "targeted",
+  "summary": "Congo's contracted private schools (types 1 and 2) can receive state funding; they were 2.82% of establishments in 2015. Private specialized schools also receive continued support.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Congo (dernière modification 10/02/2023)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/congo/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Les établissements conventionnés de types 1 et 2 peuvent recevoir un financement de l’État. Ils constituent 2,82 % des établissements en 2015.”"
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "COL": {
   "name": "Colombia",
@@ -665,11 +809,22 @@
  },
  "DJI": {
   "name": "Djibouti",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Recognized private schools may receive state aid",
+  "mech_type": "subsidy",
+  "summary": "Recognized private schools associated with public education in Djibouti can receive state financial aid; at pre-school level, access to subsidies depends on performance indicators. Madrasas are funded by parents.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Djibouti (dernière modification 24/07/2023)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/djibouti/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Les établissements privés reconnus, associés à l’enseignement public, peuvent recevoir une aide financière de l’État.”"
+   }
+  ],
+  "code": "documented-unsized",
+  "code_label": "Mechanism documented, scale unknown",
+  "family": "subsidy"
  },
  "DNK": {
   "tier": 1,
@@ -715,11 +870,22 @@
  },
  "DZA": {
   "name": "Algeria",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Algeria authorizes private schools, but the profile found no information on public funding for them.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Algérie (dernière modification 16/07/2024)",
+    "url": "https://education-profiles.org/fr/afrique-du-nord-et-asie-occidentale/algerie/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The section on state-funded non-state schools records that no information was found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "ECU": {
   "name": "Ecuador",
@@ -770,11 +936,22 @@
  },
  "ERI": {
   "name": "Eritrea",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Non-government schools are established, managed and financed by non-state actors, and only a few students attend them. No public funding of non-state schools was found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Eritrea (last modified 09/02/2026)",
+    "url": "https://education-profiles.org/sub-saharan-africa/eritrea/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> No public funding of non-state schools was found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "ESP": {
   "tier": 1,
@@ -860,11 +1037,22 @@
  },
  "FJI": {
   "name": "Fiji",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "96% of schools are non-state and state-funded",
+  "mech_type": "grant-aided",
+  "summary": "96% of Fiji's schools are government-aided committee schools run by faith-based organizations and communities, financed mainly by per-pupil state grants covering infrastructure, staffing, textbooks and management. Independent private schools are about 3%.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Fiji (last modified 30/11/2021)",
+    "url": "https://education-profiles.org/oceania/fiji/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Government-aided schools are “primarily financed by the state through per-pupil grants covering costs in infrastructure, staffing, textbooks, and management.”"
+   }
+  ],
+  "code": "majority-private",
+  "code_label": "Most pupils in publicly funded private schools",
+  "family": "subsidy"
  },
  "FLK": {
   "name": "Falkland Islands",
@@ -902,11 +1090,22 @@
  },
  "GAB": {
   "name": "Gabon",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "State subsidizes confessional schools and pays much of their staff",
+  "mech_type": "salary-subsidy",
+  "summary": "Gabon subsidizes recognized confessional private schools and pays the salaries of a large share of their staff. In 2015, subsidized private schools enrolled 90% of private secondary pupils, 27% of all secondary pupils, and 77% of private primary pupils.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Gabon (dernière modification 09/12/2022)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/gabon/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> The state “prend aussi en charge les salaires d’une bonne franche de leurs personnels”."
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The money follows the teacher, not the child",
+  "family": "teacher"
  },
  "GBR": {
   "tier": 1,
@@ -961,35 +1160,79 @@
  },
  "GIN": {
   "name": "Guinea",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Recognized private schools may receive subsidies",
+  "mech_type": "subsidy",
+  "summary": "Approved and recognized private schools in Guinea may receive state subsidies; the types were not documented. Until 2016 the state paid private universities directly for state-scholarship students.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Guinée (dernière modification 30/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/guinee/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Recognized private schools “peuvent recevoir des subventions”; no other information on the type of subsidy was found."
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy, scale unknown",
+  "family": "subsidy"
  },
  "GMB": {
   "name": "Gambia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Grant-aided religious and charitable schools",
+  "mech_type": "grant-aided",
+  "summary": "The Gambia's grant-aided schools are run by religious, charitable or philanthropic bodies, financed mainly by state grants and often treated as part of the state system. They must be non-profit and accept state rules on admissions and fees.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Gambia (last modified 01/12/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/gambia/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Grant-aided schools “are primarily financed by the state through grants, and often considered part of the state school system”."
+   }
+  ],
+  "code": "colonial-dual",
+  "code_label": "The colonial dual system, retained",
+  "family": "teacher"
  },
  "GNB": {
   "name": "Guinea Bissau",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Independent non-state schools sit mainly in urban areas. The profile found no state-funded or contracted non-state schools and no information on subsidies.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Guinea-Bissau (last modified 30/11/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/guinea-bissau/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The profile found no state-funded or contracted non-state schools and no information on subsidies."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "GNQ": {
   "name": "Equatorial Guinea",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Concertado schools funded by convenio, mostly Catholic",
+  "mech_type": "convenio",
+  "summary": "Equatorial Guinea's 2007 General Education Law creates concertado schools: non-state schools that receive state funding, in staff or money, under a convenio setting obligations on staff and pupils. Most are Catholic.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Guinea Ecuatorial (última modificación 21/07/2022)",
+    "url": "https://education-profiles.org/es/node/902",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Los centros docentes concertados son centros educativos no estales que reciben financiamiento por parte del Estado”; most are Catholic schools receiving state subsidy."
+   }
+  ],
+  "code": "contract",
+  "code_label": "Public tasks by contract",
+  "family": "contract"
  },
  "GRC": {
   "tier": 1,
@@ -1242,11 +1485,22 @@
  },
  "IRQ": {
   "name": "Iraq",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Private and international schools are owned by individuals and enterprises and charge fees. No state-funded or contracted non-state schools were found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Iraq (last modified 03/12/2021)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/iraq/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> No state-funded or contracted non-state schools were found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "ISL": {
   "tier": 1,
@@ -1412,19 +1666,41 @@
  },
  "KGZ": {
   "name": "Kyrgyzstan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools operate without public subsidy",
+  "mech_type": "none",
+  "summary": "Private schools in Kyrgyzstan operate without subsidies from national, regional or local governments. Private pre-schools receive tax exemptions instead.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Kyrgyzstan (last modified 09/12/2021)",
+    "url": "https://education-profiles.org/central-and-southern-asia/kyrgyzstan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Private schools in Kyrgyzstan operate without subsidies from national, regional or local governments.”"
+   }
+  ],
+  "code": "unsubsidized",
+  "code_label": "Private sector, no public money",
+  "family": "none"
  },
  "KHM": {
   "name": "Cambodia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Private schools are established, funded and managed by individuals, NGOs or associations. Public money reaches community preschools, which can receive monthly per-teacher state subsidies, but no state-funded non-state schools were found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Cambodia (last modified 26/11/2021)",
+    "url": "https://education-profiles.org/eastern-and-south-eastern-asia/cambodia/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Public money reaches community preschools, which can receive monthly per-teacher state subsidies, but no state-funded non-state schools were found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "KOR": {
   "name": "South Korea",
@@ -1437,27 +1713,60 @@
  },
  "CS-KM": {
   "name": "Kosovo",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Government pays one Jesuit school, contested",
+  "mech_type": "targeted",
+  "summary": "Kosovo's government has funded the Loyola Gymnasium in Prizren since 2005 under a memorandum making the ministry responsible for staff salaries. Auditors and former ministers call the payments unlawful; other private schools receive nothing.",
+  "findings": [
+   {
+    "src": "Prishtina Insight (BIRN), Jan 2020",
+    "url": "https://prishtinainsight.com/public-money-for-private-schools-mag/",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> A 2004 memorandum states “MEST shall be responsible for the salaries of the staff and teachers”; the government paid €658,858 in 2018. The National Audit Office contests the legal basis."
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "KWT": {
   "name": "Kuwait",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools subsidized, not fully funded",
+  "mech_type": "subsidy",
+  "summary": "Kuwait subsidizes private education without fully funding it: government funds, land for school construction and textbooks. The number of subsidized schools is not published.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Kuwait (last modified 07/12/2021)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/kuwait/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “The government does not fully fund private education, although it is subsidised.” No statistics on the number of subsidized schools were found."
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy, scale unknown",
+  "family": "subsidy"
  },
  "LAO": {
   "name": "Laos",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "State supports Buddhist monk schools",
+  "mech_type": "targeted",
+  "summary": "Private schools in Lao PDR are self-funded. Buddhist monk schools are recognized as part of the national system and supported by the government through infrastructure, budget and staffing.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Lao PDR (last modified 10/03/2026)",
+    "url": "https://education-profiles.org/eastern-and-south-eastern-asia/lao-peoples-democratic-republic/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The government “supports these schools through infrastructure, budget, and staffing.”"
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "LBN": {
   "tier": 1,
@@ -1499,11 +1808,22 @@
  },
  "LBY": {
   "name": "Libya",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Independent schools follow the national curriculum in Arabic. No state-funded or contracted non-state schools were found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Libya (last modified 19/11/2021)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/libya/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> No state-funded or contracted non-state schools were found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "LKA": {
   "tier": 1,
@@ -1661,19 +1981,41 @@
  },
  "MLI": {
   "name": "Mali",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Exceptional subsidies for public-utility private schools",
+  "mech_type": "targeted",
+  "summary": "In Mali, private schools recognized as of public utility can receive exceptional subsidies (half-bursaries and fees), mainly for fields the state does not offer.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Mali (dernière modification 26/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/mali/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Recognized public-utility private schools “peuvent recevoir des subventions « exceptionnelles » de l’État”, prioritized for fields absent from state schools."
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "MMR": {
   "name": "Myanmar",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Monastic schools receive subsidies including teacher pay",
+  "mech_type": "salary-subsidy",
+  "summary": "Myanmar's monastic schools follow the national curriculum under the religious affairs ministry, and the state subsidized them, including teachers' salaries, under the 2016–21 strategic plan. In 2017/18 there were 909 monastic primary, 646 middle and 2 high schools.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Myanmar (last modified 09/06/2023)",
+    "url": "https://education-profiles.org/eastern-and-south-eastern-asia/myanmar/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> “The state provides subsidies to these types of schools including teachers’ salaries payments.” Status after the 2021 coup was not checked."
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The money follows the teacher, not the child",
+  "family": "teacher"
  },
  "MNE": {
   "tier": 1,
@@ -1696,27 +2038,60 @@
  },
  "MNG": {
   "name": "Mongolia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools entitled to per-student state funding",
+  "mech_type": "per-pupil",
+  "summary": "Mongolia's Law on Education entitles private schools to state per-student funding on top of their own financing; a 2016 government decree sets the amount.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Mongolia (last modified 07/12/2021)",
+    "url": "https://education-profiles.org/eastern-and-south-eastern-asia/mongolia/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Private schools are entitled to state financing through per student funding mechanism based on the amount of tuition fee.”"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
+  "family": "pupil"
  },
  "MOZ": {
   "name": "Mozambique",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Some community schools receive state-posted teachers",
+  "mech_type": "salary-subsidy",
+  "summary": "Private schools are Mozambique's main form of non-state provision and are fee-funded. Some community schools receive government support, mainly teacher postings, and charge no fees.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Mozambique (last modified 03/12/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/mozambique/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> “Some community schools receive support from the government, mainly in the form of teacher postings.”"
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "MRT": {
   "name": "Mauritania",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Funded community schools at public per-pupil rates",
+  "mech_type": "per-pupil",
+  "summary": "State-funded private schools in Mauritania are mostly community schools, many with a cultural or religious mission. The government sets their curriculum, and their academic operating budgets equal per-pupil amounts in public schools.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Mauritanie (dernière modification 17/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/mauritanie/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Les budgets de fonctionnement académique sont équivalents aux montants par élève dans les écoles publiques.”"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
+  "family": "pupil"
  },
  "MWI": {
   "tier": 1,
@@ -1748,27 +2123,60 @@
  },
  "NAM": {
   "name": "Namibia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Aided non-profit private schools",
+  "mech_type": "grant-aided",
+  "summary": "Namibia's aided private schools are non-profit schools that receive state subsidies, staff or materials. For-profit private schools are unaided.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Namibia (last modified 30/11/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/namibia/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Aided private schools are non-profit private schools in Namibia which are granted different forms of aid by the state (in the form of subsidies, provision of staff and/or material).”"
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy, scale unknown",
+  "family": "subsidy"
  },
  "NCL": {
   "name": "New Caledonia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "The French state pays private-school teachers",
+  "mech_type": "contract",
+  "summary": "In New Caledonia, 24.3% of pupils attend private schools, mostly religious networks under contract. The French state pays their teachers (about 13 billion XPF in 2022); New Caledonia, provinces and communes pay running costs. A 2023 resolution set a legal basis for the rest.",
+  "findings": [
+   {
+    "src": "Gouvernement de la Nouvelle-Calédonie, press release on private-school funding, 13 Sep 2023",
+    "url": "https://gouv.nc/sites/default/files/atoms/files/2023.09.13_cp_financement_enseignement_prive.pdf",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> Teacher salaries are paid by the State; contracted secondary schools receive about 2.1 billion XPF and primary schools about 300 million XPF a year in running costs."
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The money follows the teacher, not the child",
+  "family": "teacher"
  },
  "NER": {
   "name": "Niger",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "State may pay private-school teachers",
+  "mech_type": "salary-subsidy",
+  "summary": "Niger's state may give private schools, though not Qur'anic schools, subsidies, teacher salaries, seconded teachers and materials. How many schools receive support is not known.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Niger (dernière modification 09/12/2022)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/niger/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> The state may grant “des subventions financières, une prise en charge des salaires des enseignants, une mise à disposition de personnel enseignant”."
+   }
+  ],
+  "code": "documented-unsized",
+  "code_label": "Mechanism documented, scale unknown",
+  "family": "subsidy"
  },
  "NGA": {
   "tier": 1,
@@ -1880,11 +2288,22 @@
  },
  "OMN": {
   "name": "Oman",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "About 30% of students attended private schools in 2019, yet no public funding of private schooling was found at basic level. Royal Decree 67 of 2000 subsidizes private higher education only.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Oman (last modified 07/01/2022)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/oman/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Royal Decree 67 of 2000 subsidizes private higher education only."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "PAK": {
   "tier": 1,
@@ -1977,11 +2396,22 @@
  },
  "PNG": {
   "name": "Papua New Guinea",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Government–church partnership since the 1970s",
+  "mech_type": "grant-aided",
+  "summary": "About 46% of schools in Papua New Guinea are church agency schools, owned and run by churches and funded by the state under a government–church partnership that unified the two systems in the 1970s.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Papua New Guinea (last modified 30/11/2021)",
+    "url": "https://education-profiles.org/oceania/papua-new-guinea/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Church agency schools “receive funding from the state based on a long standing Government-Church Partnership established in the 1970s.”"
+   }
+  ],
+  "code": "colonial-dual",
+  "code_label": "The colonial dual system, retained",
+  "family": "teacher"
  },
  "POL": {
   "tier": 1,
@@ -2159,11 +2589,12 @@
  },
  "ESH": {
   "name": "Western Sahara",
-  "tier": 3,
+  "tier": 2,
   "mech_type": "unknown",
   "summary": "",
   "findings": [],
-  "code": null
+  "code": null,
+  "shortlist_reason": "Searched October 2026. Schools in the Moroccan-administered territory run under Morocco's regional academy (AREF Laâyoune–Sakia El Hamra), and Morocco itself is shortlisted; schools in the Sahrawi refugee camps are run by the Polisario Front with foreign aid. Coding waits on Morocco."
  },
  "SAU": {
   "tier": 1,
@@ -2186,19 +2617,41 @@
  },
  "SDN": {
   "name": "Sudan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Non-state fee-charging schools include international, NGO-managed and other private schools. No state-funded or contracted non-state schools were found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Sudan (last modified 22/11/2021)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/sudan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> No state-funded or contracted non-state schools were found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "SSD": {
   "name": "South Sudan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Capitation grants to all non-profit schools",
+  "mech_type": "per-pupil",
+  "summary": "Most non-state schools in South Sudan are community and faith-based schools run on a non-profit basis. All of them receive state capitation grants and cash transfers for running costs. For-profit private schools are under 5%.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — South Sudan (last modified 30/11/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/south-sudan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “All non-profit schools in South Sudan are funded by the state through capitation grants and cash transfers to cover operational costs.”"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
+  "family": "pupil"
  },
  "SEN": {
   "name": "Senegal",
@@ -2211,11 +2664,22 @@
  },
  "SLB": {
   "name": "Solomon Islands",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Per-capita grants to every non-state school",
+  "mech_type": "per-pupil",
+  "summary": "Under the Solomon Islands' Fee-Free Basic Education Policy, all non-state schools, run by church, community, private and independent education authorities, receive annual per-capita grants, with extra for remote schools.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Solomon Islands (last modified 30/11/2021)",
+    "url": "https://education-profiles.org/oceania/solomon-islands/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “All non-state schools receive annual per capita grants as part of the government’s commitment to operationalize the Fee-Free Basic Education Policy.”"
+   }
+  ],
+  "code": "per-pupil",
+  "code_label": "The grant follows the pupil",
+  "family": "pupil"
  },
  "SLE": {
   "tier": 1,
@@ -2261,11 +2725,22 @@
  },
  "SOM": {
   "name": "Somalia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Government cannot subsidize private or community schools",
+  "mech_type": "none",
+  "summary": "The federal government is unable to subsidize private or community schools, and Puntland's Education Act defines private schools as schools that receive no grants. Qur'anic schools are funded mainly by communities and private foundations.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Somalia (last modified 29/11/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/somalia/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “The Federal Government is currently unable to subsidize private or community schools to reduce the burden of school fees on poor families.” Government funding goes to schools managed at least partly by the state."
+   }
+  ],
+  "code": "unsubsidized",
+  "code_label": "Private sector, no public money",
+  "family": "none"
  },
  "SRB": {
   "tier": 1,
@@ -2358,35 +2833,85 @@
  },
  "SWZ": {
   "name": "Swaziland",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Government employs and pays mission-school teachers",
+  "mech_type": "grant-aided",
+  "summary": "Mission schools are the main non-state provider in Eswatini (29%). They are owned by religious organizations, run on a non-profit basis, and the government employs and pays their teachers.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Eswatini (last modified 07/12/2021)",
+    "url": "https://education-profiles.org/sub-saharan-africa/eswatini/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> Faith-based government-aided schools are run by religious organizations, “with the government employing and paying their teachers.”"
+   }
+  ],
+  "code": "colonial-dual",
+  "code_label": "The colonial dual system, retained",
+  "family": "teacher"
  },
  "SYR": {
   "name": "Syria",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Sharia schools part-funded by the state and the Zakat fund",
+  "mech_type": "targeted",
+  "summary": "About 220 Sharia schools received some government funding in 2013, with much of their money from the government-managed Zakat fund. Private institutions otherwise receive no financial aid.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Syrian Arab Republic (last modified 22/11/2021)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/syrian-arab-republic/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “While Sharia schools receive some funding from the government, much of their funding comes from the government-managed Zakat fund.”"
+   }
+  ],
+  "code": "targeted",
+  "code_label": "Public money for a few",
+  "family": "subsidy"
  },
  "TCD": {
   "name": "Chad",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Contracted private schools receive staff and textbooks",
+  "mech_type": "salary-subsidy",
+  "summary": "Chad's contracted private schools must be accredited and sign an administrative, financial and pedagogical convention with the ministry. They receive subsidies in the form of staff allocations and textbooks.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Tchad (dernière modification 09/12/2022)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/tchad/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> “Les écoles privées conventionnées bénéficient des subventions sous forme d’allocation en personnel et de dotation en manuels scolaires.”"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The money follows the teacher, not the child",
+  "family": "teacher"
  },
  "TGO": {
   "name": "Togo",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "The state pays the director of community schools",
+  "mech_type": "partial",
+  "summary": "Togo's local-initiative schools (JEDIL, EDIL, CEGIL, LYDIL) are community-built, mostly rural, and supported by NGOs. The state pays each school's director and bans fees. Policy aims to absorb them into the public system.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Togo (dernière modification 30/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/togo/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “Le directeur est rémunéré sur le budget de l'État et le droit de perception des frais de l'école est interdit.” JEDIL enrolled 6.5% of pupils in 2020."
+   },
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Togo (dernière modification 30/11/2021)",
+    "url": "https://education-profiles.org/fr/afrique-sub-saharienne/togo/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>Reversal planned.</b> The 2020–30 sector plan aims to phase out the EDIL by 2025 by integrating them into public schools."
+   }
+  ],
+  "code": "indirect",
+  "code_label": "Recognition without full funding",
+  "family": "subsidy"
  },
  "THA": {
   "name": "Thailand",
@@ -2399,27 +2924,60 @@
  },
  "TJK": {
   "name": "Tajikistan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Religious bodies may open independent schools. The state funds about 30 NGO-run daycare centres set up to keep children out of residential institutions, but no public funding of non-state schools was found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Tajikistan (last modified 26/11/2021)",
+    "url": "https://education-profiles.org/central-and-southern-asia/tajikistan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> The state funds about 30 NGO-run daycare centres set up to keep children out of residential institutions, but no public funding of non-state schools was found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "TKM": {
   "name": "Turkmenistan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "No non-state schools found",
+  "mech_type": "none",
+  "summary": "The profile found no information on any non-state education institutions operating in Turkmenistan.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Turkmenistan (last modified 05/04/2023)",
+    "url": "https://education-profiles.org/central-and-southern-asia/turkmenistan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Provision.</b> “No information was found on the existence of non-state education institutions in Turkmenistan.”"
+   }
+  ],
+  "code": "state-provision",
+  "code_label": "Universal state provision, no portability found",
+  "family": "state"
  },
  "TLS": {
   "name": "East Timor",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "School grants extend to private schools",
+  "mech_type": "subsidy",
+  "summary": "Timor-Leste's 2008 Education Law commits the state to support private and cooperative education pedagogically, technically and financially, and the school grants policy since 2004/05 covers private schools. Private schools enrolled 14.2% of primary and 32.6% of secondary pupils in 2019.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Timor-Leste (last modified 26/11/2021)",
+    "url": "https://education-profiles.org/eastern-and-south-eastern-asia/timor-leste/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> “The school grants policy was introduced in 2004/05 and applies to public and private schools at primary, secondary, and technical/professional levels.”"
+   }
+  ],
+  "code": "subsidy",
+  "code_label": "Subsidy, scale unknown",
+  "family": "subsidy"
  },
  "TTO": {
   "name": "Trinidad and Tobago",
@@ -2451,11 +3009,22 @@
  },
  "TUN": {
   "name": "Tunisia",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Subsidies up to 25% of Tunisian teachers' salaries",
+  "mech_type": "salary-subsidy",
+  "summary": "Private schools in Tunisia that follow the public curriculum can receive land, investment premiums, tax exemptions and subsidies of up to 25% of the salaries owed to their Tunisian teachers. About 7% of primary pupils were in private schools in 2018.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Tunisie (dernière modification 09/12/2022)",
+    "url": "https://education-profiles.org/fr/afrique-du-nord-et-asie-occidentale/tunisie/~acteurs-non-etatiques-dans-leducation",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> The state offers “des subventions (dans la limite de 25 % des salaires dus aux enseignants tunisiens)”."
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The money follows the teacher, not the child",
+  "family": "teacher"
  },
  "TUR": {
   "tier": 1,
@@ -2585,11 +3154,22 @@
  },
  "UZB": {
   "name": "Uzbekistan",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Private schools are established, operated and financed by non-state actors. Public support for private providers was found only at pre-school level, through public-private partnerships.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Uzbekistan (last modified 03/03/2023)",
+    "url": "https://education-profiles.org/central-and-southern-asia/uzbekistan/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> Public support for private providers was found only at pre-school level, through public-private partnerships."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "VEN": {
   "name": "Venezuela",
@@ -2635,27 +3215,60 @@
  },
  "VUT": {
   "name": "Vanuatu",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Church schools funded for salaries and running costs",
+  "mech_type": "salary-subsidy",
+  "summary": "Most non-state schools in Vanuatu are government-assisted church schools: 31% of primary and 39% of secondary schools. Regular state grants cover teacher salaries and operating costs under funding agreements.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Vanuatu (last modified 01/12/2021)",
+    "url": "https://education-profiles.org/oceania/vanuatu/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>The money follows the teacher.</b> These schools “receive regular grants from the state which cover teacher salaries and operational costs based on a funding agreement with the government.”"
+   }
+  ],
+  "code": "salary-subsidy",
+  "code_label": "The money follows the teacher, not the child",
+  "family": "teacher"
  },
  "PSE": {
   "name": "West Bank",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Private schools, including international schools, were 14.3% of schools in 2020. No state-funded or contracted non-state schools were found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Palestine (last modified 10/03/2026)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/palestine/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> No state-funded or contracted non-state schools were found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "YEM": {
   "name": "Yemen",
-  "tier": 3,
-  "mech_type": "unknown",
-  "summary": "",
-  "findings": [],
-  "code": null
+  "tier": 1,
+  "since": null,
+  "mechanism": "Private schools permitted; no public funding found",
+  "mech_type": "none",
+  "summary": "Private schools are 2–5% of schools; in 2007/08, 3% of primary and secondary schools were non-state. No state-funded or contracted non-state schools were found.",
+  "findings": [
+   {
+    "src": "UNESCO GEM Report, PEER profile: Non-state actors in education — Yemen (last modified 02/12/2021)",
+    "url": "https://education-profiles.org/northern-africa-and-western-asia/yemen/~non-state-actors-in-education",
+    "checked": "Oct 2026",
+    "t": "<b>Funding.</b> No state-funded or contracted non-state schools were found."
+   }
+  ],
+  "code": "no-funding-found",
+  "code_label": "Private schools allowed, no public funding found",
+  "family": "none"
  },
  "ZAF": {
   "tier": 1,
