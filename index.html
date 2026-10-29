@@ -108,11 +108,11 @@
 </div></section>
 
 <section id="response" class="alt"><div class="w">
-  <div class="sh"><div class="num">04</div><div><h2>Who's moving, and which way</h2><p>Every response gets one direction. Tap a direction to filter. Each card links to its source.</p></div></div>
-  <div class="dirs" id="dirs"></div>
+  <div class="sh"><div class="num">04</div><div><h2>Who's moving, and which way</h2><p>Every response the university scan found, newest first, plus the Florida programs that open student teaching beyond districts. Tap a direction to filter.</p></div></div>
+  <div class="dirs" id="dirs" style="grid-template-columns:repeat(auto-fit,minmax(150px,1fr))"></div>
   <div class="cards" id="cards"></div>
   <button class="dir" id="showall" type="button" style="margin-top:12px;text-align:center;width:auto;padding:10px 18px">Show all</button>
-  <p class="src" style="margin-top:18px">Verified examples only. A card records what an institution did, not whether it was a good idea.</p>
+  <p class="src" style="margin-top:18px">Verified examples only. A card records what an institution did, not whether it was a good idea. Counts match the 102-university scan above.</p>
   <a class="more" href="/leaders/">See who is leading</a>
 </div></section>
 
@@ -255,37 +255,9 @@
 <script>
 window.WMFC_HOME={
 "prep":[["Public district",87],["Private",74],["Charter",67],["Religious",49],["Microschools",34,1]],
-"dirs":{"compete":["Compete","Builds an alternative that takes portable funds"],"supply":["Supply","Sells services to whoever is buying"],"fortify":["Fortify","Strengthens the existing public system"],"open":["Open door","Removes a barrier for educators headed outside districts"]},
-"cards":[
-{"n":"ASU Prep Digital","s":"AZ","d":"compete","w":"Arizona State runs an online K–12 school that accepts Arizona ESA funds.","u":"https://www.asuprepdigital.org/about/"},
-{"n":"Julie Young","s":"FL · AZ","d":"compete","w":"Founded Florida Virtual School, then built ASU Prep. One career carried the model across two states.","u":"https://search.asu.edu/profile/3127527"},
-{"n":"Notre Dame ACE Academies","s":"FL · AZ","d":"compete","w":"A university-managed network of Catholic schools, including in the Diocese of St. Petersburg, drawing on parental-choice programs.","u":"https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school"},
-{"n":"Auburn University","s":"AL","d":"compete","w":"A registered provider under Alabama's CHOOSE Act ESA, listed as an online K–12 private school.","u":"https://www.revenue.alabama.gov/wp-content/uploads/2024/12/CHOOSE-Act-Alabama-ESPs.pdf"},
-{"n":"FAU High School","s":"FL","d":"compete","w":"University-run high school; graduates leave with about three years of college credit.","u":"https://fauhigh.fau.edu/aboutus/index.php"},
-{"n":"Purdue Polytechnic High School","s":"IN","d":"compete","w":"Closing its South Bend campus: 112 students against a planned 500.","u":"https://www.chalkbeat.org/indiana/2026/02/10/purdue-polytechnic-high-school-close-south-bend-campus/"},
-{"n":"Florida Virtual School","s":"FL","d":"supply","w":"Hosts certification internships for 30+ partner institutions. Non-district placement already works at scale.","u":"https://www.flvs.net/about-us/who-we-are/careers/internships"},
-{"n":"Rio Salado College","s":"AZ","d":"supply","w":"9,700 dual-enrollment students; half its 408 associate degrees go to one charter network.","u":"https://www.riosalado.edu/news/2025/400-high-school-students-track-earn-college-degrees-rio-salado-celebrates-record-dual-enrollment"},
-{"n":"George Mason University","s":"VA","d":"supply","w":"An online M.Ed. concentration in Independent School Leadership, for leaders in independent, charter or private schools.","u":"https://cehd.gmu.edu/education-leadership/med-isl-concentration"},
-{"n":"Penn Independent School Teaching Residency","s":"PA","d":"supply","w":"A two-year residency staffing 21 independent boarding and day schools.","u":"https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed"},
-{"n":"UF Lastinger Center","s":"FL","d":"fortify","w":"Vetted and evaluated private tutoring vendors for the state's public-school tutoring program.","u":"https://lastinger.ufl.edu/wp-content/uploads/2026/04/uf-lastinger-center-fta-pilot-spring-2025-aug-2025-remediated.pdf"},
-{"n":"UCF Center for Community Schools","s":"FL","d":"fortify","w":"43 Community Partnership Schools inside existing public schools; state funding nearly doubled in 2024.","u":"https://www.ucf.edu/news/state-funding-increase-to-drive-growth-in-community-partnership-schools/"},
-{"n":"Miami Dade College","s":"FL","d":"fortify","w":"Hosts a district-run dual-enrollment high school on five campuses.","u":"https://mdc.edu/schoolforadvancedstudies/"},
-{"n":"University of Central Florida","s":"FL","d":"open","w":"Student teaching may be placed in a private or charter school.","u":"https://ccie.ucf.edu/wp-content/uploads/sites/8/2017/09/StudentTeachingHandbook.pdf"},
-{"n":"Southeastern University","s":"FL","d":"open","w":"Places candidates in public or private schools. The most permissive provider surveyed.","u":"https://library.seu.edu/sites/default/files/2023-10/COE%20Policy%20Handbook%202023%20pdf.pdf"},
-{"n":"Valencia College EPI","s":"FL","d":"open","w":"Field experience allowed in approved private schools.","u":"https://valenciacollege.edu/academics/programs/educator-preparation-institute/field-experience.php"}
-],
+"dirs":{"compete":["Compete","Builds an alternative that takes portable funds"],"supply":["Supply","Sells services to whoever is buying"],"fortify":["Fortify","Strengthens the existing public system"],"evidence":["Studies it","Studies or debates the policy rather than acting in the market"],"open":["Open door","Florida programs that let student teachers train outside districts"]},
 "fl":[["t1",4],["t2",3],["t3",4],["t0",10]],
-"roles":[
-["District classroom teacher","doc","Every education school coded","/research/"],
-["Charter school teacher","doc","Residencies at Drexel, Michigan and others","https://drexel.edu/academics/grad-professional-programs/education/teaching-certification"],
-["Catholic and religious school teacher","doc","Notre Dame ACE, Boston College, Santa Clara","https://ace.nd.edu/news/ace-teaching-fellows-serve-columbus"],
-["Independent school teacher or leader","doc","Penn residency, George Mason, Vanderbilt","https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed"],
-["Tutor","doc","ASU tutoring micro-credential","https://education.asu.edu/about/news/youth-serving-workforce-economic-engine-communities-across-country"],
-["Coach, mentor, afterschool staff","doc","ASU Community Educator Learning Hub","https://education.asu.edu/youth-serving-workforce"],
-["Online school teacher","unchk","Not yet checked",null],
-["Microschool founder","doc","ASU Prep Microschool Entrepreneur Fellowship","https://www.asuprepglobal.org/microschool-fellowship/"],
-["Hybrid school or homeschool co-op teacher","none","None found in 102 universities","/universities/"]
-],
+"roles":[["District classroom teacher","doc","Every education school coded","/research/"],["Charter school teacher","doc","Residencies at Drexel, Michigan and others","https://drexel.edu/academics/grad-professional-programs/education/teaching-certification"],["Catholic and religious school teacher","doc","Notre Dame ACE, Boston College, Santa Clara","https://ace.nd.edu/news/ace-teaching-fellows-serve-columbus"],["Independent school teacher or leader","doc","Penn residency, George Mason, Vanderbilt","https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed"],["Tutor","doc","ASU tutoring micro-credential","https://education.asu.edu/about/news/youth-serving-workforce-economic-engine-communities-across-country"],["Coach, mentor, afterschool staff","doc","ASU Community Educator Learning Hub","https://education.asu.edu/youth-serving-workforce"],["Online school teacher","unchk","Not yet checked",null],["Microschool founder","doc","ASU Prep Microschool Entrepreneur Fellowship","https://www.asuprepglobal.org/microschool-fellowship/"],["Hybrid school or homeschool co-op teacher","none","None found in 102 universities","/universities/"]],
 "curve":[["Jun 2025",33,"about 1 in 3"],["Nov 2025",51,"more than half"],["Apr 2026",75,"50 of 67"],["Jul 2026",79,"53 approved or in process"]],
 "eras":["1642–1874","1875–1953","1954–1989","1990–2010","2011–today"],
 "tracks":[["Law & courts",[0,2,2,2,2]],["Legislation",[2,1,0,3,8]],["Rhetoric",[3,0,3,12,9]],["District response",[0,0,0,1,6]],["Postsecondary response",[0,0,0,3,5],1]]
@@ -329,31 +301,38 @@ D.prep.forEach(function(r){
 onSee(prep,function(reset){Array.prototype.forEach.call(prep.querySelectorAll(".fi"),function(f,i){
   if(reset){f.dataset.w=f.style.width;f.style.width="0";}else setTimeout(function(){f.style.width=f.dataset.w;},i*110);});});
 
-/* directions + cards */
-var dirs=document.getElementById("dirs"),cards=document.getElementById("cards"),active=null;
-var counts={};D.cards.forEach(function(c){counts[c.d]=(counts[c.d]||0)+1;});
+/* directions + cards: built from the university scan and the Florida placement survey */
+var dirs=document.getElementById("dirs"),cards=document.getElementById("cards"),active=null,expanded=false,sa=document.getElementById("showall"),ALLC=[];
 function btn(key,label,desc,n){
   var b=el("button","dir");b.type="button";b.setAttribute("aria-pressed","false");b.dataset.k=key;
   b.innerHTML='<span class="c">'+n+'</span><b><span class="sw '+key+'"></span>'+esc(label)+'</b><small>'+esc(desc)+'</small>';
   b.onclick=function(){active=(active===key||key==="all")?null:key;render();};
   dirs.appendChild(b);
 }
-btn("all","All","Every verified response",D.cards.length);
-Object.keys(D.dirs).forEach(function(k){btn(k,D.dirs[k][0],D.dirs[k][1],counts[k]||0);});
-D.cards.forEach(function(c){
-  var a=el("article","rc");a.dataset.d=c.d;
-  a.innerHTML='<div class="m"><span class="sw '+c.d+'" style="width:10px;height:10px;display:inline-block;border-radius:2px"></span>'+esc(D.dirs[c.d][0])+' · '+esc(c.s)+'</div><h3>'+esc(c.n)+'</h3><p>'+esc(c.w)+'</p><a href="'+esc(c.u)+'" rel="noopener">Source</a>';
-  cards.appendChild(a);
-});
-var expanded=false,sa=document.getElementById("showall");
-sa.onclick=function(){expanded=true;render();};
 function render(){
   Array.prototype.forEach.call(dirs.children,function(b){b.setAttribute("aria-pressed",String(b.dataset.k===(active||"all")));});
   var shown=0;
   Array.prototype.forEach.call(cards.children,function(c){var on=!active||c.dataset.d===active;if(on&&!active&&!expanded&&shown>=6)on=false;if(on)shown++;c.hidden=!on;});
-  sa.hidden=!!active||expanded;sa.textContent="Show all "+D.cards.length;
+  sa.hidden=!!active||expanded;sa.textContent="Show all "+ALLC.length;
 }
-render();
+sa.onclick=function(){expanded=true;render();};
+Promise.all([window.WMFC.json("/data/universities-2026.json"),window.WMFC.json("/data/placement-2026.json")]).then(function(r){
+  r[0].institutions.forEach(function(u){if(u.direction==="none")return;
+    ALLC.push({n:u.name,s:u.state,d:u.direction,w:u.response+(u.response2?" "+u.response2:""),u:u.response_url,y:u.since||null,st:u.status||null});});
+  r[1].programs.forEach(function(p){if(p.pos!=="open")return;
+    ALLC.push({n:p.p,s:"FL",d:"open",w:"Published placement policy lets student teachers train in a private school.",u:p.url,y:null,st:null,survey:true});});
+  ALLC.sort(function(a,b){return (b.y||0)-(a.y||0);});
+  var counts={};ALLC.forEach(function(c){counts[c.d]=(counts[c.d]||0)+1;});
+  btn("all","All","Every response in the scan, plus Florida placement policies",ALLC.length);
+  Object.keys(D.dirs).forEach(function(k){btn(k,D.dirs[k][0],D.dirs[k][1],counts[k]||0);});
+  ALLC.forEach(function(c){
+    var a=el("article","rc");a.dataset.d=c.d;
+    var when=c.survey?"Placement survey, 2026":(c.y?"Since "+c.y:"Start year not verified");
+    a.innerHTML='<div class="m"><span class="sw '+c.d+'" style="width:10px;height:10px;display:inline-block;border-radius:2px"></span>'+esc(D.dirs[c.d][0])+' · '+esc(c.s)+'</div><h3>'+esc(c.n)+'</h3><p>'+esc(c.w)+'</p><div class="src">'+esc(when)+(c.st?' · <b style="color:var(--ox)">'+esc(c.st)+'</b>':'')+'</div>'+(c.u?'<a href="'+esc(c.u)+'" rel="noopener">Source</a>':'');
+    cards.appendChild(a);
+  });
+  render();
+}).catch(function(){cards.innerHTML='<p class="src">Responses did not load.</p>';sa.hidden=true;});
 
 
 /* figure tools */
