@@ -282,6 +282,8 @@ def derived_values(inst):
         "total": len(inst),
         "states": len(st),
         "tier1": count(lambda r: r.get("tier") == "Tier 1"),
+        "tier1.prep": count(lambda r: r.get("tier") == "Tier 1" and "program" in (r.get("engagement") or [])),
+        "tier1.ops": count(lambda r: r.get("tier") == "Tier 1" and "program" not in (r.get("engagement") or [])),
         "tier2": count(lambda r: r.get("tier") == "Tier 2"),
         "tier3": count(lambda r: r.get("tier") == "Tier 3"),
         "tier0": count(lambda r: r.get("tier") == "Tier 0"),
@@ -351,6 +353,83 @@ def check_fallbacks(inst, atlas_counts, html_files):
             fail(b)
     else:
         ok("published numbers match the data spine")
+
+
+# --------------------------------------------------------------------
+# 5b. University scan: headline numbers on any page must match the data
+# --------------------------------------------------------------------
+U_RE = re.compile(r"<(\w+)([^>]*\sdata-u=\"([^\"]+)\"[^>]*)>([^<]*)</\1>")
+WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven": 7}
+
+
+def check_universities(html_files):
+    """Added 31 Oct 2026: the Universities page shipped '32 respond / 6
+    compete' for weeks after Correction 04 made it 49 / 18. Nothing here
+    caught it because this file only checked the Readiness Index."""
+    U = load(os.path.join("data", "universities-2026.json"))
+    if not U:
+        return
+    R = U.get("institutions", [])
+    fl = [r for r in R if r.get("state") == "FL"]
+    vals = {
+        "total": len(R),
+        "respond": sum(1 for r in R if r.get("direction") != "none"),
+        "compete": sum(1 for r in R if r.get("direction") == "compete"),
+        "none": sum(1 for r in R if r.get("direction") == "none"),
+        "fl.none": sum(1 for r in fl if r.get("direction") == "none"),
+    }
+    bad = []
+    for path in html_files:
+        src = read(path)
+        if not src:
+            continue
+        for tag, attrs, key, inner in U_RE.findall(src):
+            if key not in vals:
+                bad.append("%s: data-u=\"%s\" is not a known key" % (path, key))
+                continue
+            m = re.search(r"data-n=\"([^\"]*)\"", attrs)
+            for shown in ([m.group(1)] if m else []) + [inner.strip()]:
+                if shown != str(vals[key]):
+                    bad.append("%s: data-u=\"%s\" shows %r, data says %d" % (path, key, shown, vals[key]))
+        # Prose claims that are easy to leave stale.
+        if "show no response we could find" in src and "About <em>half</em>" in src:
+            share = vals["none"] / float(vals["total"] or 1)
+            if not 0.42 <= share <= 0.58:
+                bad.append("%s: says 'about half' show no response; data says %.0f%%" % (path, 100 * share))
+        m = re.search(r"In Florida, (\w+) of seven", src)
+        if m and WORDS.get(m.group(1).lower()) != vals["fl.none"]:
+            bad.append("%s: says %s of seven Florida universities show none; data says %d" % (path, m.group(1), vals["fl.none"]))
+    if bad:
+        for b in bad:
+            fail(b)
+    else:
+        ok("University scan: %d institutions, %d respond, %d compete — pages agree" % (vals["total"], vals["respond"], vals["compete"]))
+
+
+def check_supply():
+    """Added 31 Oct 2026 with the timing fix on the Florida supply chart:
+    every derived percentage in that section is recomputed here."""
+    d = load(os.path.join("data", "supply-florida-2026.json"))
+    src = read("index.html") or ""
+    if not d:
+        return
+    Y = {r["year"]: r for r in d["years"] if not r.get("excluded")}
+    a, z, pre = Y["2010–11"], Y["2023–24"], Y["2022–23"]
+    nc = lambda r: r["district_charter"] + r["private_noncollege"]
+    claims = {
+        "60% fewer": round(100 * (1 - z["colleges_total"] / a["colleges_total"])) == 60,
+        "That is 89% of the total drop": round(100 * (a["colleges_total"] - pre["colleges_total"]) / (a["colleges_total"] - z["colleges_total"])) == 89,
+        "pipeline fell 53%": round(100 * (1 - z["total"] / a["total"])) == 53,
+        "from 652 to 819": (nc(a), nc(z)) == (652, 819),
+        "from 8% of new teachers to 22%": (round(100 * nc(a) / a["total"]), round(100 * nc(z) / z["total"])) == (8, 22),
+        "to 3,453 by 2022–23": pre["colleges_total"] == 3453,
+    }
+    bad = [k for k, v in claims.items() if k in src and not v] + [k for k in claims if k not in src]
+    if bad:
+        for b in bad:
+            fail("index.html supply section: %r is missing or no longer matches the data" % b)
+    else:
+        ok("Florida supply section: %d derived figures match the data" % len(claims))
 
 
 # --------------------------------------------------------------------
@@ -460,6 +539,8 @@ def main():
     atlas_counts = check_atlas(world)
     check_notes(fn, sitemap)
     check_fallbacks(inst, atlas_counts, html_files)
+    check_universities(html_files)
+    check_supply()
     check_html(html_files)
     check_js(html_files)
 

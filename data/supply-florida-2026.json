@@ -1,6 +1,6 @@
 {
  "edition": "Florida educator supply, October 2026",
- "updated": "2026-10-28",
+ "updated": "2026-10-31",
  "question": "Who prepares Florida's new teachers, and has that changed as funding became portable?",
  "limit": "Title II counts people who finish a Florida state-approved program that leads to a teaching certificate. It does not count teachers in private schools or microschools who need no certificate, or Floridians certified through out-of-state online programs. IPEDS counts education degrees (CIP 13), many of which do not lead to a certificate. Neither source records where completers go on to teach.",
  "sources": {
@@ -346,5 +346,20 @@
  "context_url": {
   "noble": "https://flcharterschool.org/marketplace_listing/noble-education-initiative/",
   "plcp": "https://www.fldoe.org/teaching/preparation/plcp.stml"
- }
+ },
+ "policy_markers": [
+  {
+   "year": "2014–15",
+   "label": "First ESA",
+   "detail": "SB 850 (2014) creates Personal Learning Scholarship Accounts, later the Gardiner Scholarship.",
+   "url": "https://www.flsenate.gov/Session/Bill/2014/850"
+  },
+  {
+   "year": "2023–24",
+   "label": "Universal eligibility",
+   "detail": "HB 1 (2023), approved March 27, 2023, effective July 1, 2023, makes every Florida K–12 student eligible.",
+   "url": "https://www.flsenate.gov/Session/Bill/2023/1"
+  }
+ ],
+ "timing_note": "Colleges fell from 7,406 completers (2010–11) to 3,453 (2022–23), the last year before universal eligibility: 89% of their total decline. The whole pipeline fell 53%. Programs outside colleges rose from 652 to 819; their share grew mainly because colleges shrank. The timing does not support reading the college decline as a response to portable funding."
 }

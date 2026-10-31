@@ -124,10 +124,10 @@ section.alt{background:var(--bg2)}
 /* stacked bar */
 .stack{display:flex;height:42px;border-radius:4px;overflow:hidden;gap:2px;margin:6px 0 10px}
 .stack>div{display:flex;align-items:center;justify-content:center;font:600 14px var(--s);color:var(--onox);min-width:0;transition:flex-grow 900ms cubic-bezier(.2,.7,.2,1)}
-.stack .t1{background:var(--ox)}.stack .t2{background:var(--ox2)}.stack .t3{background:var(--ox3);color:var(--ink)}.stack .t0{background:transparent;border:1.5px dashed var(--lined);color:var(--ink3)}
+.stack .t1{background:var(--ox)}.stack .t1o{background:repeating-linear-gradient(135deg,var(--ox) 0 5px,var(--ox2) 5px 10px)}.stack .t2{background:var(--ox2)}.stack .t3{background:var(--ox3);color:var(--ink)}.stack .t0{background:transparent;border:1.5px dashed var(--lined);color:var(--ink3)}
 .dots{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 6px}
 .dot{width:22px;height:22px;border-radius:50%}
-.dot.t1{background:var(--ox)}.dot.t2{background:var(--ox2)}.dot.t3{background:var(--ox3)}.dot.t0{border:1.5px dashed var(--lined)}
+.tierkey .dot{flex:none}.dot.t1{background:var(--ox)}.dot.t1o{background:repeating-linear-gradient(135deg,var(--ox) 0 3px,var(--ox2) 3px 6px)}.dot.t2{background:var(--ox2)}.dot.t3{background:var(--ox3)}.dot.t0{border:1.5px dashed var(--lined)}
 .tierkey{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:16px}
 @media (max-width:640px){.tierkey{grid-template-columns:1fr 1fr}}
 .tierkey div{font-size:13px;color:var(--ink2);line-height:1.35}
@@ -197,7 +197,7 @@ nav a[aria-current="page"]{color:var(--ox);font-weight:600}
 
 /* sw swatches usable anywhere */
 .sw{display:inline-block;width:12px;height:12px;border-radius:2px;flex:none}
-.sw.t1{background:var(--ox)}.sw.t2{background:var(--ox2)}.sw.t3{background:var(--ox3)}.sw.t0{border:1.5px dashed var(--lined)}
+.sw.t1{background:var(--ox)}.sw.t1o{background:repeating-linear-gradient(135deg,var(--ox) 0 3px,var(--ox2) 3px 6px)}.sw.t2{background:var(--ox2)}.sw.t3{background:var(--ox3)}.sw.t0{border:1.5px dashed var(--lined)}
 
 /* data table */
 .tblwrap{border:1px solid var(--line);border-radius:10px;overflow:auto;background:var(--card)}

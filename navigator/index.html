@@ -271,10 +271,10 @@ function results(){
      '<p class="qsub" style="margin:0">Index edition: '+esc(D.scan.edition)+', updated '+esc(D.scan.updated)+'. Every row below links to the page a person read, and the date they read it.</p></div>';
   /* 2 · your state */
   if(!intl){
-    var sr=all?D.scan.institutions:rows,tt=function(x){return sr.filter(function(r){return r.tier===x;}).length;};
+    var sr=all?D.scan.institutions:rows,tt=function(x){return sr.filter(function(r){return r.tier===x;}).length;},tp=function(p){return sr.filter(function(r){return r.tier==="Tier 1"&&((r.engagement||[]).indexOf("program")>-1)===p;}).length;};
     h+='<div class="card"><h2>'+(all?"The Index at a glance":esc(STATES[ab])+" at a glance")+'</h2>';
     if(sr.length){
-      h+='<div class="stat"><div><b>'+sr.length+'</b><span>rows coded</span></div><div><b>'+tt("Tier 1")+'</b><span>built for the sector</span></div><div><b>'+tt("Tier 2")+'</b><span>name the sector</span></div><div class="z"><b>'+tt("Tier 0")+'</b><span>nothing found</span></div></div>';
+      h+='<div class="stat"><div><b>'+sr.length+'</b><span>rows coded</span></div><div><b>'+tp(true)+'</b><span>prepare educators for the sector</span></div><div><b>'+tp(false)+'</b><span>run or authorize schools</span></div><div><b>'+tt("Tier 2")+'</b><span>name the sector</span></div><div class="z"><b>'+tt("Tier 0")+'</b><span>nothing found</span></div></div>';
       if(cov)h+='<p class="hint">Coverage here is <b>'+esc(cov.depth)+'</b>. '+esc(cov.note)+'</p>';
     } else {
       h+='<p>We have not coded any institution in '+esc(STATES[ab])+' yet. That is a gap in our coverage, not a finding about '+esc(STATES[ab])+'. If you know of a program, an authorizer or an operating move we should read, <a href="mailto:'+MAIL+'">send it with a source</a>.</p>';
@@ -386,8 +386,8 @@ function buildPdf(){
   doc.setFont("helvetica","normal");doc.setFontSize(10.5);doc.setTextColor.apply(doc,INK2);doc.text(doc.splitTextToSize("For: "+B.role+"  ·  "+B.place,CW),M,96);
   y=114;para("The limit, first. This brief reads WMFC's published data and nothing else. It does not rate schools, rank institutions or give advice. Where we have coded nothing, nothing found is not the same as nothing there.",{size:8.5,color:INK3,lh:11,after:4});
   if(A.place&&A.place!=="INTL"){head(STATES[A.place]+" in the Readiness Index");
-    if(B.rows.length){var c=function(t){return B.rows.filter(function(r){return r.tier===t;}).length;};
-      para(B.rows.length+" rows coded  ·  "+c("Tier 1")+" built for the sector  ·  "+c("Tier 2")+" name the sector  ·  "+c("Tier 3")+" incidental  ·  "+c("Tier 0")+" nothing found",{size:10,color:INK});
+    if(B.rows.length){var c=function(t){return B.rows.filter(function(r){return r.tier===t;}).length;},cp=function(p){return B.rows.filter(function(r){return r.tier==="Tier 1"&&((r.engagement||[]).indexOf("program")>-1)===p;}).length;};
+      para(B.rows.length+" rows coded  ·  "+cp(true)+" prepare educators for the sector  ·  "+cp(false)+" run or authorize schools  ·  "+c("Tier 2")+" name the sector  ·  "+c("Tier 3")+" incidental  ·  "+c("Tier 0")+" nothing found",{size:10,color:INK});
       var cv=D.scan.coverage[STATES[A.place]];if(cv)para("Coverage: "+cv.depth+". "+cv.note,{size:8.5,color:INK3,lh:11});}
     else para("No institution in "+STATES[A.place]+" is coded yet. That is a gap in our coverage, not a finding about the state.");}
   if(B.ctry){head(B.ctry.name+" in the Atlas");para(B.ctry.since?"Money has followed the child since "+B.ctry.since+".":B.ctry.mech_type==="none"?"No portable-funding mechanism identified.":"Public money reaches non-state schools; start year not established.",{color:INK});para(B.ctry.summary||"");}
