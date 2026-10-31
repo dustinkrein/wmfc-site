@@ -17,7 +17,7 @@ Before any handoff: `python3 tools/check.py` must exit clean.
 
 | | Coverage |
 |---|---|
-| **Readiness Index** | 43 rows · 9 states · 11 Tier 1, 9 Tier 2, 11 Tier 3, 12 Tier 0 · every row carries `engagement` |
+| **Preparation Index** | 43 rows · 9 states · 11 Tier 1, 9 Tier 2, 11 Tier 3, 12 Tier 0 · every row carries `engagement` |
 | **Index coverage depth** | 2 systematic passes (Florida, Michigan) · 2 partial (Ohio, Arizona) · 5 placeholders |
 | **Portable-Funding Atlas** | 175 countries · 29 coded, 12 shortlisted, 134 not yet coded |
 | **Field Notes** | 09 published |
@@ -185,7 +185,7 @@ straining the Field Notes format.
 
 Things settled once, easy to reopen by accident.
 
-- **Two tier systems, no shared meaning.** Readiness Index tiers code *institutions* by
+- **Two tier systems, no shared meaning.** Preparation Index tiers code *institutions* by
   what they built. Atlas tiers code *our coverage depth* by country. Never write "Tier N"
   in an Atlas context — use Coded / Shortlisted / Not yet coded.
 - **A checked null is a finding; a blank is not.** Cuba, Mexico, Brazil, Uruguay, Costa

@@ -11,7 +11,7 @@ QUESTION = ("When K–12 funding follows the student, how do colleges and univer
 # (href, label) — every item answers part of the question
 NAV = [
     ("/universities/", "Universities"),
-    ("/research/", "Readiness Index"),
+    ("/research/", "Preparation Index"),
     ("/leaders/", "Leaders"),
     ("/districts/", "Districts"),
     ("/atlas/", "Atlas"),
@@ -73,7 +73,7 @@ def footer():
     <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
   </div>
   <div><div class="fh">How universities respond</div>
-    <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
+    <a href="/universities/">Universities</a><a href="/research/">Preparation Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
   </div>
   <div><div class="fh">The comparison and the record</div>
     <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>

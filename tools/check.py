@@ -95,7 +95,7 @@ def check_filenames():
 
 
 # --------------------------------------------------------------------
-# 2. Readiness Index rows
+# 2. Preparation Index rows
 # --------------------------------------------------------------------
 VALID_TIERS = {"Tier 0", "Tier 1", "Tier 2", "Tier 3"}
 
@@ -365,7 +365,7 @@ WORDS = {"one": 1, "two": 2, "three": 3, "four": 4, "five": 5, "six": 6, "seven"
 def check_universities(html_files):
     """Added 31 Oct 2026: the Universities page shipped '32 respond / 6
     compete' for weeks after Correction 04 made it 49 / 18. Nothing here
-    caught it because this file only checked the Readiness Index."""
+    caught it because this file only checked the Preparation Index."""
     U = load(os.path.join("data", "universities-2026.json"))
     if not U:
         return
