@@ -4,15 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>The Readiness Index — When Money Follows the Child</title>
-<meta name="description" content="Institution by institution: has anyone built the educator workforce that portable K–12 funding needs? The 2026 baseline, Florida and Michigan in full.">
+<meta name="description" content="Institution by institution: has anyone built the educator workforce that portable K–12 funding needs? Florida in full, and the other universal-ESA states flagship-first.">
 <link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/research/">
 <meta property="og:title" content="The Readiness Index — When Money Follows the Child">
-<meta property="og:description" content="Institution by institution: has anyone built the educator workforce that portable K–12 funding needs? The 2026 baseline, Florida and Michigan in full.">
+<meta property="og:description" content="Institution by institution: has anyone built the educator workforce that portable K–12 funding needs? Florida in full, and the other universal-ESA states flagship-first.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.whenmoneyfollowsthechild.org/research/">
 <meta property="og:site_name" content="When Money Follows the Child">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/wmfc.css">
+<style>.esarow{display:grid;grid-template-columns:minmax(150px,210px) 1fr;gap:4px 18px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}@media (max-width:560px){.esarow{grid-template-columns:1fr;gap:6px}}</style>
 <script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
@@ -28,27 +29,30 @@
 
 <div class="hero sm"><div class="w">
   <h1>Who trains the teachers when the money <span class="f">moves</span>?</h1>
-  <p class="lead2">Institution by institution, state by state: has anyone built the educator workforce that portable funding needs? Florida and Michigan are coded in full.</p>
+  <p class="lead2">Institution by institution, state by state: has anyone built the educator workforce that portable funding needs? Florida is coded in full. Nine more states with universal or near-universal ESAs are coded flagship-first.</p>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
   <div class="ledger" id="ledger">
-    <div><div class="big"><span data-derive="total">43</span></div><p>coded rows across <span data-derive="states">9</span> states</p></div>
-    <div><div class="big"><span data-derive="tier1">11</span></div><p>built for the sector, almost all by running or authorizing schools</p></div>
-    <div><div class="big hot">1</div><p>preparation program built for the sector: Central Michigan's charter leadership M.A.</p></div>
-    <div><div class="big hot">0</div><p>serve the unlicensed slice: microschools, co-ops, ESA vendors</p></div>
+    <div><div class="big"><span data-derive="total">61</span></div><p>coded rows across <span data-derive="states">15</span> states</p></div>
+    <div><div class="big"><span data-derive="tier1">17</span></div><p>built for the sector, almost all by running or authorizing schools</p></div>
+    <div><div class="big hot">2</div><p>preparation programs built for the sector: Central Michigan's charter leadership M.A. and Vanderbilt's independent-school leadership M.Ed.</p></div>
+    <div><div class="big hot">0</div><p>prepare educators for the unlicensed slice: microschools, co-ops, ESA vendors</p></div>
   </div>
-  <figure class="arch" data-year="1899"><img src="/images/bw-normal-school-birds-1899.jpg" alt="Future teachers at the Washington Normal School, 1899." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1899</span><span class="arch-ago" data-ago="1899"></span></div><figcaption class="arch-then">Future teachers at the Washington Normal School, 1899.</figcaption><p class="arch-now"><b>Now</b>1 preparation program in the Index is built for the new sector. 0 serve microschools, co-ops or ESA vendors.</p></div></figure>
+  <figure class="arch" data-year="1899"><img src="/images/bw-normal-school-birds-1899.jpg" alt="Future teachers at the Washington Normal School, 1899." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1899</span><span class="arch-ago" data-ago="1899"></span></div><figcaption class="arch-then">Future teachers at the Washington Normal School, 1899.</figcaption><p class="arch-now"><b>Now</b>2 preparation programs in the Index are built for the new sector. 0 prepare educators for microschools, co-ops or ESA vendors.</p></div></figure>
 </div></div>
 
 <section class="alt"><div class="w">
-  <div class="sh"><div class="num">01</div><div><h2>Florida and Michigan, side by side</h2><p>The two states coded in full. One dot per institution, colored by what it has built. Hover or tap a dot.</p></div></div>
-  <div class="grid2">
-    <div class="card" id="states"></div>
+  <div class="sh"><div class="num">01</div><div><h2>Florida and the other ESA states</h2><p>Ten states where K&ndash;12 money now follows the student to private options for all or nearly all families. One dot per institution, colored by what it has built. Hover or tap a dot.</p></div></div>
+  <div class="card" id="states"></div>
+  <p class="src" style="margin-top:10px">Florida is coded in full. In the other nine: the flagship and the original state normal school, plus any institution found on the state&rsquo;s charter-authorizer list or ESA provider list. Page-level reads, October 2026. A ringed dot sells courses or schooling to ESA families.</p>
+  <div class="grid2" style="margin-top:26px">
     <div>
-      <p class="callout">Where institutions engage, they <em>authorize schools</em>. They do not build programs.</p>
-      <p style="color:var(--ink2);font-size:15px">Florida's Tier 1 rows are all charter sponsors. Michigan's eight university authorizers hold well over 200 schools between them, some since 1994. Across all of them: one preparation program.</p>
+      <p class="callout">In the ESA states, universities show up as <em>sellers</em>, not trainers.</p>
+      <p style="color:var(--ink2);font-size:15px" id="sellline">Several sell courses or online schooling to ESA families. What they sell is K&ndash;12 instruction. None of it is educator preparation.</p>
+    </div>
+    <div>
+      <p class="callout">Outside Michigan, <em>one</em> program was built for the sector.</p>
+      <p style="color:var(--ink2);font-size:15px">Vanderbilt&rsquo;s M.Ed. in Independent School Leadership, running since 2014, eleven years before Tennessee passed its ESA. It leads to no license and serves established private schools.</p>
       <p class="src" id="howline" style="margin-top:6px"></p>
-      <p class="callout" style="margin-top:22px">Holding schools did not produce programs.</p>
-      <p style="color:var(--ink2);font-size:15px">Proximity, subsidy and access were each present in Michigan without a single new course.</p>
     </div>
   </div>
   <div class="tierkey" id="tierkey" style="margin-top:22px"></div>
@@ -79,6 +83,7 @@
 <section class="alt"><div class="w">
   <div class="sh"><div class="num">05</div><div><h2>Why so little? Four explanations</h2><p>The evidence does not yet separate them. Tap one for the current reading.</p></div></div>
   <div class="finds" id="hyp"></div>
+  <p class="src" style="margin:18px 0 0">Michigan was the test case for H2: eight universities authorize charter schools there, and holding schools did not produce programs. Michigan&rsquo;s constitution bars public money for private schools, so it sits outside the ESA comparison. <a href="/notes/04/">Field Note 04</a></p>
   <div class="limit"><b>The limit, first.</b> Cases were found by searching for engagement, which biases every explanation here. Comparison-state nulls are weak and should not be cited. "Nothing found" is never "nothing there." <a href="/method/">Method</a></div>
 </div></section>
 
@@ -110,22 +115,38 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
   document.getElementById("tierkey").innerHTML=["Tier 1","Tier 2","Tier 3","Tier 0"].map(function(k){
     return '<div><b><i class="dot '+TC[k]+'" style="width:12px;height:12px"></i>'+esc(CAT[k].label)+'</b>'+esc(CAT[k].def)+'</div>';}).join("");
 
-  /* 01 two-state dot rows */
-  var box=document.getElementById("states");
-  ["Florida","Michigan"].forEach(function(st){
-    var rows=I.filter(function(x){return x.state===st&&x.scope!=="aggregate";}).sort(function(a,b){return ["Tier 1","Tier 2","Tier 3","Tier 0"].indexOf(a.tier)-["Tier 1","Tier 2","Tier 3","Tier 0"].indexOf(b.tier);});
-    var t1=rows.filter(function(x){return x.tier==="Tier 1";}).length;
-    var h=W.el("div","",'<div class="kick" style="margin:6px 0 8px">'+st+' · '+rows.length+' institutions · '+t1+' built for the sector</div>');
-    var dots=W.el("div","dots");
-    rows.forEach(function(x){
-      var d=W.el("span","dot "+TC[x.tier]);d.tabIndex=0;d.style.cursor="pointer";d.setAttribute("aria-label",strip(x.name)+": "+CAT[x.tier].label);
-      var html="<b>"+x.name+"</b>"+esc(CAT[x.tier].label);
-      d.addEventListener("mousemove",function(e){W.tip(html,e);});d.addEventListener("mouseleave",function(){W.tip(null);});
-      d.addEventListener("click",function(e){W.tip(html,e);});
-      dots.appendChild(d);
+  /* 01 ESA states, grouped by wave */
+  var box=document.getElementById("states"),ORD=["Tier 1","Tier 2","Tier 3","Tier 0"],ESA=S.esa_states||[],WV=S.esa_waves||{};
+  var HL={authorizes:"Authorizes schools",operates:"Runs schools",program:"Program",vendor:"Sells to ESA families",other:"Partnership or service"};
+  function hw(x){return (x.engagement||[]).map(function(k){return HL[k]||k;}).join(" · ");}
+  [["anchor","Coded in full"],["first","First wave"],["second","Second wave"]].forEach(function(g){
+    var list=ESA.filter(function(e){return e.wave===g[0];});if(!list.length)return;
+    var head=W.el("div","",'<div class="kick" style="margin:'+(g[0]==="anchor"?"0":"26px")+' 0 4px">'+g[1]+'</div>'+(WV[g[0]]?'<p class="src" style="margin:0 0 6px">'+esc(WV[g[0]])+'</p>':""));
+    box.appendChild(head);
+    list.forEach(function(e){
+      var rows=I.filter(function(x){return x.state===e.state&&x.scope!=="aggregate";}).sort(function(a,b){return ORD.indexOf(a.tier)-ORD.indexOf(b.tier);});
+      var agg=I.filter(function(x){return x.state===e.state&&x.scope==="aggregate";}).length;
+      var t1=rows.filter(function(x){return x.tier==="Tier 1";}).length;
+      var r=W.el("div","esarow");
+      r.appendChild(W.el("div","",'<div style="font:18px/1.2 var(--f);color:var(--ink)">'+esc(e.state)+'</div><div class="src" style="margin-top:3px">'+W.link(e.source,e.status)+'</div>'));
+      var right=W.el("div","");
+      var dots=W.el("div","dots");dots.style.margin="2px 0 4px";
+      rows.forEach(function(x){
+        var d=W.el("span","dot "+TC[x.tier]);d.tabIndex=0;d.style.cursor="pointer";
+        if((x.engagement||[]).indexOf("vendor")>-1)d.style.boxShadow="0 0 0 2px var(--card),0 0 0 4px var(--ink)";
+        d.setAttribute("aria-label",strip(x.name)+": "+CAT[x.tier].label+(hw(x)?". "+hw(x):""));
+        var html="<b>"+x.name+"</b>"+esc(CAT[x.tier].label)+(hw(x)?"<br>"+esc(hw(x)):"");
+        d.addEventListener("mousemove",function(ev){W.tip(html,ev);});d.addEventListener("mouseleave",function(){W.tip(null);});
+        d.addEventListener("click",function(ev){W.tip(html,ev);});
+        dots.appendChild(d);
+      });
+      right.appendChild(dots);
+      right.appendChild(W.el("div","src",rows.length?(rows.length+" institution"+(rows.length>1?"s":"")+" · "+t1+" built for the sector"):(agg?"One summary row only, not yet read institution by institution":"Not yet coded")));
+      r.appendChild(right);box.appendChild(r);
     });
-    h.appendChild(dots);box.appendChild(h);
   });
+  (function(){var st=ESA.filter(function(e){return e.wave!=="anchor";}).map(function(e){return e.state;}),rows=I.filter(function(x){return st.indexOf(x.state)>-1&&x.scope!=="aggregate";}),v=rows.filter(function(x){return (x.engagement||[]).indexOf("vendor")>-1;});
+    var el=document.getElementById("sellline");if(el&&rows.length)el.textContent=v.length+" of the "+rows.length+" institutions coded in the nine states outside Florida sell courses or online schooling to ESA families: "+v.map(function(x){return strip(x.name);}).join(", ")+". What they sell is K–12 instruction. None of it is educator preparation.";})();
 
   /* 02 placement */
   var pl=document.getElementById("place"),pd=document.getElementById("pd"),order=["open","practice","district","restrict","silent"];
@@ -161,7 +182,7 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
   var tc={};I.forEach(function(x){tc[x.tier]=(tc[x.tier]||0)+1;});
   W.chips(document.getElementById("tchips"),[{key:"all",label:"All",n:I.length}].concat(["Tier 1","Tier 2","Tier 3","Tier 0"].map(function(k){return {key:k,label:CAT[k].label,n:tc[k]||0,sw:TC[k]};})),function(k){tier=k;draw();});
   fs.addEventListener("change",draw);
-  function HOW(x){var L={authorizes:"Authorizes schools",operates:"Runs schools",program:"Program",other:"Partnership or service"};return (x.engagement&&x.engagement.length)?x.engagement.map(function(k){return L[k]||k;}).join(" · "):"—";}
+  function HOW(x){var L={authorizes:"Authorizes schools",operates:"Runs schools",program:"Program",vendor:"Sells to ESA families",other:"Partnership or service"};return (x.engagement&&x.engagement.length)?x.engagement.map(function(k){return L[k]||k;}).join(" · "):"—";}
   function draw(){
     var rows=I.filter(function(x){return (tier==="all"||x.tier===tier)&&(!fs.value||x.state===fs.value);});
     cnt.textContent=rows.length+" of "+I.length;

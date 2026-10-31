@@ -219,7 +219,7 @@ function render(){
     var opts='<option value="">All states</option>'+Object.keys(STATES).sort(function(a,b){return STATES[a]<STATES[b]?-1:1;}).map(function(k){return '<option value="'+k+'"'+(A.place===k?" selected":"")+'>'+STATES[k]+'</option>';}).join("")+'<option value="INTL"'+(A.place==="INTL"?" selected":"")+'>Outside the United States</option>';
     var c=Object.keys(D.world).filter(function(k){return D.world[k].tier===1;}).sort(function(a,b){return D.world[a].name<D.world[b].name?-1:1;});
     var copts='<option value="">Choose a country</option>'+c.map(function(k){return '<option value="'+k+'"'+(A.country===k?" selected":"")+'>'+esc(D.world[k].name)+'</option>';}).join("");
-    app.innerHTML=frame(2,'<h2 class="q">Where do you work or live?</h2><p class="qsub">The Index is deepest in Florida and Michigan. Other states have fewer rows, or none yet.</p><label class="ql" for="pl">State</label><select id="pl">'+opts+'</select>'+
+    app.innerHTML=frame(2,'<h2 class="q">Where do you work or live?</h2><p class="qsub">The Index is deepest in Florida, then the other states with universal ESAs. Other states have fewer rows, or none yet.</p><label class="ql" for="pl">State</label><select id="pl">'+opts+'</select>'+
       (A.place==="INTL"?'<label class="ql" for="ct">Country (coded countries in the Atlas)</label><select id="ct">'+copts+'</select>':"")+noteBox("s2"),navRow(true));
     document.getElementById("pl").addEventListener("change",function(e){A.place=e.target.value;if(A.place==="INTL"&&A.wants.indexOf("intl")<0)A.wants.push("intl");render();});
     var ct=document.getElementById("ct");if(ct)ct.addEventListener("change",function(e){A.country=e.target.value;});
