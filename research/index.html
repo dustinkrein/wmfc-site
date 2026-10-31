@@ -13,7 +13,7 @@
 <meta property="og:site_name" content="When Money Follows the Child">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="stylesheet" href="/assets/wmfc.css">
-<style>.esarow{display:grid;grid-template-columns:minmax(150px,210px) 1fr;gap:4px 18px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}@media (max-width:560px){.esarow{grid-template-columns:1fr;gap:6px}}</style>
+<style>.esadet{margin:10px 0 4px;padding:14px 16px;border-left:3px solid var(--ox);background:var(--oxt);border-radius:0 8px 8px 0;font-size:14.5px;line-height:1.5;color:var(--ink2)}.esadet b.n{display:block;font:18px/1.25 var(--f);color:var(--ink);margin-bottom:2px}.esadet .meta{font-size:12.5px;color:var(--ink3);margin:2px 0 8px}.dot.on{outline:2px solid var(--ink);outline-offset:3px}.esarow{display:grid;grid-template-columns:minmax(150px,210px) 1fr;gap:4px 18px;align-items:start;padding:10px 0;border-top:1px solid var(--line)}@media (max-width:560px){.esarow{grid-template-columns:1fr;gap:6px}}</style>
 <script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
 </head>
 <body>
@@ -41,9 +41,9 @@
 </div></div>
 
 <section class="alt"><div class="w">
-  <div class="sh"><div class="num">01</div><div><h2>Florida and the other ESA states</h2><p>Ten states where K&ndash;12 money now follows the student to private options for all or nearly all families. One dot per institution, colored by what it has built. Hover or tap a dot.</p></div></div>
+  <div class="sh"><div class="num">01</div><div><h2>Florida, the ESA states, and the contrast</h2><p>Ten states where K&ndash;12 money follows the student to private options through an ESA, then voucher-only states and states where it does not follow at all. One dot per institution, colored by what it has built. Tap a dot to see why it is there.</p></div></div>
   <div class="card" id="states"></div>
-  <p class="src" style="margin-top:10px">Florida is coded in full. In the other nine: the flagship and the original state normal school, plus any institution found on the state&rsquo;s charter-authorizer list or ESA provider list. Page-level reads, October 2026. A ringed dot sells courses or schooling to ESA families.</p>
+  <p class="src" style="margin-top:10px">Florida is coded in full. In the other nine: the flagship and the original state normal school, plus any institution found on the state&rsquo;s charter-authorizer list or ESA provider list. Page-level reads, October 2026. A ringed dot sells courses or schooling to ESA families. A square is a summary row standing for several institutions not yet read one by one.</p>
   <div class="grid2" style="margin-top:26px">
     <div>
       <p class="callout">In the ESA states, universities show up as <em>sellers</em>, not trainers.</p>
@@ -83,7 +83,7 @@
 <section class="alt"><div class="w">
   <div class="sh"><div class="num">05</div><div><h2>Why so little? Four explanations</h2><p>The evidence does not yet separate them. Tap one for the current reading.</p></div></div>
   <div class="finds" id="hyp"></div>
-  <p class="src" style="margin:18px 0 0">Michigan was the test case for H2: eight universities authorize charter schools there, and holding schools did not produce programs. Michigan&rsquo;s constitution bars public money for private schools, so it sits outside the ESA comparison. <a href="/notes/04/">Field Note 04</a></p>
+  <p class="src" style="margin:18px 0 0">Michigan was the test case for H2: eight universities authorize charter schools there, and holding schools did not produce programs. Michigan&rsquo;s constitution bars public money for private schools, so it appears in Section 01 as a contrast state, not an ESA state. <a href="/notes/04/">Field Note 04</a></p>
   <div class="limit"><b>The limit, first.</b> Cases were found by searching for engagement, which biases every explanation here. Comparison-state nulls are weak and should not be cited. "Nothing found" is never "nothing there." <a href="/method/">Method</a></div>
 </div></section>
 
@@ -119,33 +119,46 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
   var box=document.getElementById("states"),ORD=["Tier 1","Tier 2","Tier 3","Tier 0"],ESA=S.esa_states||[],WV=S.esa_waves||{};
   var HL={authorizes:"Authorizes schools",operates:"Runs schools",program:"Program",vendor:"Sells to ESA families",other:"Partnership or service"};
   function hw(x){return (x.engagement||[]).map(function(k){return HL[k]||k;}).join(" · ");}
-  [["anchor","Coded in full"],["first","First wave"],["second","Second wave"]].forEach(function(g){
+  var GROUPS=[["anchor","Coded in full"],["first","First wave"],["second","Second wave"],["voucher","Contrast: vouchers, no ESA"],["none","Contrast: no private-school choice"]];
+  GROUPS.forEach(function(g){
     var list=ESA.filter(function(e){return e.wave===g[0];});if(!list.length)return;
     var head=W.el("div","",'<div class="kick" style="margin:'+(g[0]==="anchor"?"0":"26px")+' 0 4px">'+g[1]+'</div>'+(WV[g[0]]?'<p class="src" style="margin:0 0 6px">'+esc(WV[g[0]])+'</p>':""));
     box.appendChild(head);
     list.forEach(function(e){
-      var rows=I.filter(function(x){return x.state===e.state&&x.scope!=="aggregate";}).sort(function(a,b){return ORD.indexOf(a.tier)-ORD.indexOf(b.tier);});
-      var agg=I.filter(function(x){return x.state===e.state&&x.scope==="aggregate";}).length;
+      var all=I.filter(function(x){return x.state===e.state;}).sort(function(a,b){return (a.scope==="aggregate")-(b.scope==="aggregate")||ORD.indexOf(a.tier)-ORD.indexOf(b.tier);});
+      var rows=all.filter(function(x){return x.scope!=="aggregate";}),agg=all.length-rows.length;
       var t1=rows.filter(function(x){return x.tier==="Tier 1";}).length;
       var r=W.el("div","esarow");
       r.appendChild(W.el("div","",'<div style="font:18px/1.2 var(--f);color:var(--ink)">'+esc(e.state)+'</div><div class="src" style="margin-top:3px">'+W.link(e.source,e.status)+'</div>'));
       var right=W.el("div","");
       var dots=W.el("div","dots");dots.style.margin="2px 0 4px";
-      rows.forEach(function(x){
-        var d=W.el("span","dot "+TC[x.tier]);d.tabIndex=0;d.style.cursor="pointer";
+      var det=W.el("div","esadet");det.hidden=true;det.setAttribute("aria-live","polite");
+      var cur=null;
+      all.forEach(function(x){
+        var d=W.el("span","dot "+TC[x.tier]);d.tabIndex=0;d.setAttribute("role","button");d.style.cursor="pointer";
+        if(x.scope==="aggregate")d.style.borderRadius="4px";
         if((x.engagement||[]).indexOf("vendor")>-1)d.style.boxShadow="0 0 0 2px var(--card),0 0 0 4px var(--ink)";
-        d.setAttribute("aria-label",strip(x.name)+": "+CAT[x.tier].label+(hw(x)?". "+hw(x):""));
-        var html="<b>"+x.name+"</b>"+esc(CAT[x.tier].label)+(hw(x)?"<br>"+esc(hw(x)):"");
-        d.addEventListener("mousemove",function(ev){W.tip(html,ev);});d.addEventListener("mouseleave",function(){W.tip(null);});
-        d.addEventListener("click",function(ev){W.tip(html,ev);});
+        d.setAttribute("aria-label",strip(x.name)+": "+CAT[x.tier].label+(hw(x)?". "+hw(x):"")+". Show why.");
+        var tip="<b>"+x.name+"</b>"+esc(CAT[x.tier].label)+(hw(x)?"<br>"+esc(hw(x)):"")+'<br><span style="opacity:.75">Click for why it is here</span>';
+        d.addEventListener("mousemove",function(ev){W.tip(tip,ev);});d.addEventListener("mouseleave",function(){W.tip(null);});
+        function show(){
+          W.tip(null);
+          if(cur===d){det.hidden=true;d.classList.remove("on");cur=null;return;}
+          if(cur)cur.classList.remove("on");cur=d;d.classList.add("on");
+          det.innerHTML='<b class="n">'+x.name+(x.scope==="aggregate"?' <span style="font-size:14px;color:var(--ink3)">(summary row)</span>':"")+'</b><div class="meta">'+esc(CAT[x.tier].label)+(hw(x)?" · "+esc(hw(x)):"")+" · checked "+esc(x.checked)+'</div>'+x.evidence+(x.source?' <span class="src">'+W.link(x.source,"Source")+'</span>':"");
+          det.hidden=false;
+        }
+        d.addEventListener("click",show);
+        d.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();show();}});
         dots.appendChild(d);
       });
       right.appendChild(dots);
-      right.appendChild(W.el("div","src",rows.length?(rows.length+" institution"+(rows.length>1?"s":"")+" · "+t1+" built for the sector"):(agg?"One summary row only, not yet read institution by institution":"Not yet coded")));
+      right.appendChild(W.el("div","src",rows.length?(rows.length+" institution"+(rows.length>1?"s":"")+" · "+t1+" built for the sector"+(agg?" · plus a summary row":"")):(agg?"Summary row only, not yet read institution by institution":"Not yet coded")));
+      right.appendChild(det);
       r.appendChild(right);box.appendChild(r);
     });
   });
-  (function(){var st=ESA.filter(function(e){return e.wave!=="anchor";}).map(function(e){return e.state;}),rows=I.filter(function(x){return st.indexOf(x.state)>-1&&x.scope!=="aggregate";}),v=rows.filter(function(x){return (x.engagement||[]).indexOf("vendor")>-1;});
+  (function(){var st=ESA.filter(function(e){return e.wave==="first"||e.wave==="second";}).map(function(e){return e.state;}),rows=I.filter(function(x){return st.indexOf(x.state)>-1&&x.scope!=="aggregate";}),v=rows.filter(function(x){return (x.engagement||[]).indexOf("vendor")>-1;});
     var el=document.getElementById("sellline");if(el&&rows.length)el.textContent=v.length+" of the "+rows.length+" institutions coded in the nine states outside Florida sell courses or online schooling to ESA families: "+v.map(function(x){return strip(x.name);}).join(", ")+". What they sell is K–12 instruction. None of it is educator preparation.";})();
 
   /* 02 placement */
@@ -167,9 +180,12 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
 
   /* 03 coverage */
   var cov=document.getElementById("cov");
-  Object.keys(S.coverage).forEach(function(st){
+  var GL={anchor:"ESA · coded in full",first:"ESA · first wave",second:"ESA · second wave",voucher:"Contrast · vouchers, no ESA",none:"Contrast · no private-school choice"},GW={};
+  ESA.forEach(function(e){GW[e.state]=e.wave;});
+  var ord=ESA.map(function(e){return e.state;}).filter(function(x){return S.coverage[x];}).concat(Object.keys(S.coverage).filter(function(x){return !(x in GW);}));
+  ord.forEach(function(st){
     var c=S.coverage[st],n=I.filter(function(x){return x.state===st;}).length,dp=S.depths[c.depth];
-    var a=W.el("article","rc",'<div class="m"><span class="sw '+(c.depth==="complete"?"t1":c.depth==="partial"?"t2":"t0")+'"></span>'+esc(dp.label)+'</div><h3>'+esc(st)+' <span style="color:var(--ink3);font-size:15px">· '+n+' row'+(n>1?"s":"")+'</span></h3><p>'+esc(c.note)+'</p>');
+    var a=W.el("article","rc",'<div class="m"><span class="sw '+(c.depth==="complete"?"t1":c.depth==="partial"?"t2":"t0")+'"></span>'+esc(dp.label)+'</div>'+(GW[st]?'<div class="kick" style="margin:2px 0 6px;font-size:11px">'+esc(GL[GW[st]])+'</div>':'')+'<h3>'+esc(st)+' <span style="color:var(--ink3);font-size:15px">· '+n+' row'+(n>1?"s":"")+'</span></h3><p>'+esc(c.note)+'</p>');
     cov.appendChild(a);
   });
 

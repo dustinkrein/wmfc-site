@@ -144,10 +144,17 @@
     {"state":"Louisiana","wave":"second","program":"LA GATOR","status":"Enacted 2024, funds since 2025–26, capped by appropriation","source":"https://louisianabelieves.com/schools/la-gator-scholarship-program"},
     {"state":"Tennessee","wave":"second","program":"Education Freedom Scholarships","status":"Enacted 2025, 20,000 scholarships","source":"https://news.vanderbilt.edu/2025/03/19/qa-with-independent-school-expert-carrie-grimes/"},
     {"state":"West Virginia","wave":"second","program":"Hope Scholarship","status":"Enacted 2021, universal from 2026–27","source":"https://wvtreasury.gov/About/Press-Releases/details/treasurer-pack-celebrates-start-of-hope-scholarship-universal-eligibility"},
-    {"state":"Texas","wave":"second","program":"Texas Education Freedom Accounts","status":"Enacted 2025, first funds July 2026, $1 billion cap","source":"https://comptroller.texas.gov/about/media-center/news/20260630-nearly-73000-texas-education-freedom-accounts-to-receive-initial-funding-july-1-1782833580152"}
+    {"state":"Texas","wave":"second","program":"Texas Education Freedom Accounts","status":"Enacted 2025, first funds July 2026, $1 billion cap","source":"https://comptroller.texas.gov/about/media-center/news/20260630-nearly-73000-texas-education-freedom-accounts-to-receive-initial-funding-july-1-1782833580152"},
+    {"state":"Ohio","wave":"voucher","program":"EdChoice Scholarship","status":"Universal voucher since 2023, no ESA","source":"https://www.edchoice.org/ohio-makes-voucher-program-universal/"},
+    {"state":"Indiana","wave":"voucher","program":"Choice Scholarship","status":"Universal voucher from 2026–27, no ESA","source":"https://indianacapitalchronicle.com/2026/08/21/braun-touts-start-of-universal-school-choice-in-indiana/"},
+    {"state":"Michigan","wave":"none","program":"None","status":"Constitution bars public money for private schools","source":"https://bridgemi.com/michigan-government/gov-whitmer-gop-clash-michigan-ban-public-funds-private-schools/"},
+    {"state":"California","wave":"none","program":"None","status":"No private-school choice program","source":"https://www.edchoice.org/school-choice/state/california/"},
+    {"state":"New York","wave":"none","program":"None","status":"No state program; opted into the federal tax credit","source":"https://edsource.org/2026/newsoms-dilemma-join-or-spurn-new-federal-school-choice-program/768689?amp=1"}
   ],
   "esa_waves": {
     "first": "Enacted 2022–23. Money has moved for two years or more.",
-    "second": "Enacted 2024–25, or universal only from 2026. Money is new."
+    "second": "Enacted 2024–25, or universal only from 2026. Money is new.",
+    "voucher": "Money follows the student to private schools as a voucher, but there is no ESA.",
+    "none": "Public money does not follow the student to private options. The comparison."
   }
 }
