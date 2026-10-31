@@ -83,7 +83,7 @@
 <div class="bar"></div>
 <header><div class="w">
   <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
-  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/navigator/" aria-current="page">Navigator</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
+  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/">Preparation Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/atlas/">Atlas</a><a href="/notes/">Field Notes</a><a href="/navigator/" aria-current="page">Navigator</a><a href="/method/">Method</a><a href="/about/">About</a></nav>
   <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
   </button>
@@ -109,7 +109,7 @@
     <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
   </div>
   <div><div class="fh">How universities respond</div>
-    <a href="/universities/">Universities</a><a href="/research/">Readiness Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
+    <a href="/universities/">Universities</a><a href="/research/">Preparation Index</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
   </div>
   <div><div class="fh">The comparison and the record</div>
     <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
@@ -181,7 +181,7 @@ function inState(s,ab){return !!s&&String(s).split(/\s*·\s*/).indexOf(ab)>-1;}
 /* ---------- data ---------- */
 Promise.all(["scan-2026","universities-2026","leaders-2026","districts-2026","placement-2026","world-choice-2026","field-notes"].map(function(f){return W.json("/data/"+f+".json");}))
 .then(function(r){D={scan:r[0],uni:r[1],lead:r[2],dist:r[3],place:r[4],world:r[5],notes:r[6]};render();})
-.catch(function(){app.innerHTML='<div class="card"><p>The data did not load. Reload the page, or read the <a href="/research/">Readiness Index</a> directly.</p></div>';});
+.catch(function(){app.innerHTML='<div class="card"><p>The data did not load. Reload the page, or read the <a href="/research/">Preparation Index</a> directly.</p></div>';});
 
 /* ---------- shared bits ---------- */
 function chips(group,dict,single){
@@ -385,7 +385,7 @@ function buildPdf(){
   doc.setFont("times","normal");doc.setFontSize(26);doc.setTextColor.apply(doc,INK);doc.text("Navigator brief",M,78);
   doc.setFont("helvetica","normal");doc.setFontSize(10.5);doc.setTextColor.apply(doc,INK2);doc.text(doc.splitTextToSize("For: "+B.role+"  ·  "+B.place,CW),M,96);
   y=114;para("The limit, first. This brief reads WMFC's published data and nothing else. It does not rate schools, rank institutions or give advice. Where we have coded nothing, nothing found is not the same as nothing there.",{size:8.5,color:INK3,lh:11,after:4});
-  if(A.place&&A.place!=="INTL"){head(STATES[A.place]+" in the Readiness Index");
+  if(A.place&&A.place!=="INTL"){head(STATES[A.place]+" in the Preparation Index");
     if(B.rows.length){var c=function(t){return B.rows.filter(function(r){return r.tier===t;}).length;},cp=function(p){return B.rows.filter(function(r){return r.tier==="Tier 1"&&((r.engagement||[]).indexOf("program")>-1)===p;}).length;};
       para(B.rows.length+" rows coded  ·  "+cp(true)+" prepare educators for the sector  ·  "+cp(false)+" run or authorize schools  ·  "+c("Tier 2")+" name the sector  ·  "+c("Tier 3")+" incidental  ·  "+c("Tier 0")+" nothing found",{size:10,color:INK});
       var cv=D.scan.coverage[STATES[A.place]];if(cv)para("Coverage: "+cv.depth+". "+cv.note,{size:8.5,color:INK3,lh:11});}

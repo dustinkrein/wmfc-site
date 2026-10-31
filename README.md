@@ -98,7 +98,7 @@ Every page answers part of one question: *when K–12 funding follows the studen
 /
 ├── index.html                         Homepage
 ├── universities/index.html            AAU scan: 71 universities (data/aau-2026.json)
-├── research/index.html                The Readiness Index (data/scan-2026.json, data/placement-2026.json)
+├── research/index.html                The Preparation Index (data/scan-2026.json, data/placement-2026.json)
 ├── districts/index.html               District response (data/districts-2026.json, data/chronology-2026.json)
 ├── leaders/index.html                 Who is leading (data/leaders-2026.json)
 ├── atlas/index.html                   World map (data/world-choice-2026.json)

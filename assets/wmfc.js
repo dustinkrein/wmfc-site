@@ -180,7 +180,7 @@
     a.download = name; document.body.appendChild(a); a.click(); a.remove();
   };
 
-  /* ---- derived numbers: [data-derive] from the Readiness Index data.
+  /* ---- derived numbers: [data-derive] from the Preparation Index data.
      The HTML always ships a correct value; this only keeps it from drifting. ---- */
   var dn = document.querySelectorAll("[data-derive]");
   if (dn.length && window.fetch) {
