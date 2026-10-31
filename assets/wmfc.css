@@ -1,10 +1,11 @@
-/* WMFC design system — one stylesheet for every page. Oxblood, Georgia, light and dark. */
+/* WMFC design system — one stylesheet for every page. Oxblood, Libre Franklin + Source Serif 4, light and dark. */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400..900;1,400..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400..700;1,8..60,400..700&display=swap");
 :root{
   --ox:#6E1F2C;--ox2:#A35A66;--ox3:#D9B4BB;--oxt:#F5EAEC;
   --ink:#1A1A1C;--ink2:#44444A;--ink3:#6E6E76;
   --bg:#FFFFFF;--bg2:#F6F6F4;--card:#FFFFFF;--line:#E2E2DE;--lined:#C9C9C3;--onox:#FFFFFF;
-  --f:Georgia,"Times New Roman",serif;
-  --s:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  --f:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --s:"Libre Franklin",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
   --ox:#D07A88;--ox2:#9C4C59;--ox3:#5A2A33;--oxt:#2A1A1E;
@@ -425,3 +426,15 @@ html,body{overflow-x:clip}
 @media (prefers-reduced-motion:reduce){.archhero>img{animation:none;transform:none}.arch img,.tn-then img,.archclose>img{transform:none;transition:none}}
 @media print{.archhero,.archclose,.interlude,.arch{display:none}}
 /* ARCHIVE:END */
+
+/* ── Type: newsroom pairing (Oct 2026) ──
+   Libre Franklin = headlines, big numbers, labels, UI.  Source Serif 4 = reading text, quotes, callouts. */
+h1,h2,h3{font-family:var(--s);font-weight:800;letter-spacing:-.02em;line-height:1.05}
+h3{font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.hero h1,.hero.sm h1,.archhero h1,.archclose h2{letter-spacing:-.03em;line-height:1}
+.wm,.fwm{font-family:var(--s);font-weight:800;letter-spacing:-.01em}
+html :is(.big,.num,.tn-big,.gapnote b,.lc b,.stat b){font-family:var(--s);font-weight:800;letter-spacing:-.02em}
+p,li,.lede{font-family:var(--f)}
+/* inline styles on a few pages still name Georgia; route them to the serif token */
+[style*="Georgia"]{font-family:var(--f)!important}
+
