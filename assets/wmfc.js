@@ -192,6 +192,8 @@
       var v = {
         total: I.length, states: Object.keys(st).length,
         tier1: n(function (r) { return r.tier === "Tier 1"; }),
+        "tier1.prep": n(function (r) { return r.tier === "Tier 1" && (r.engagement || []).indexOf("program") > -1; }),
+        "tier1.ops": n(function (r) { return r.tier === "Tier 1" && (r.engagement || []).indexOf("program") < 0; }),
         tier2: n(function (r) { return r.tier === "Tier 2"; }),
         tier3: n(function (r) { return r.tier === "Tier 3"; }),
         tier0: n(function (r) { return r.tier === "Tier 0"; }),

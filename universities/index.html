@@ -27,13 +27,14 @@
 <main>
 
 <div class="hero sm"><div class="w">
-  <h1>Most universities are innovating. Few are <span class="f">responding</span>.</h1>
+  <h1>About half respond. None prepare educators for the <span class="f">newest</span> schools.</h1>
   <p class="lead2">102 universities: all 71 AAU research universities and all 74 U.S. News Most Innovative. 43 are on both; 7 are in Florida. For each one: its strongest education work, and any response to portable K–12 funding.</p>
+  <div class="limit" style="margin-top:14px"><b>The limit, first.</b> These lists measure research standing and reputation, not teacher production. In Florida, about two in three new certified teachers in 2023–24 came from programs outside both lists: regional universities, state colleges, district routes and private providers. UWF, FAU and UNF alone finished 577 and are on neither list. Nationally, Western Governors University, which calls itself the largest school of education in the nation, is on neither. The <a href="/research/">Readiness Index</a> reads institutions like these one by one. <a href="/method/#limits">Method</a></div>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
   <div class="ledger" id="ledger">
-    <div><div class="big" data-n="102">102</div><p>universities: every AAU member and every Most Innovative</p></div>
-    <div><div class="big" data-n="32">32</div><p>show a verified response to portable funding</p></div>
-    <div><div class="big hot" data-n="6">6</div><p>compete for portable funds, mostly through university-run schools</p></div>
+    <div><div class="big" data-n="102" data-u="total">102</div><p>universities: every AAU member and every Most Innovative</p></div>
+    <div><div class="big" data-n="49" data-u="respond">49</div><p>show a verified response to portable funding</p></div>
+    <div><div class="big hot" data-n="18" data-u="compete">18</div><p>compete for portable funds, mostly through university-run schools</p></div>
     <div><div class="big hot">0</div><p>prepare educators for microschools, hybrid schools or homeschool support</p></div>
   </div>
   <figure class="arch" data-year="1906"><img src="/images/bw-tuskegee-math-1906.jpg" alt="Mathematics class, Tuskegee Institute, 1906." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1906</span><span class="arch-ago" data-ago="1906"></span></div><figcaption class="arch-then">Mathematics class, Tuskegee Institute, 1906.</figcaption><p class="arch-now"><b>Now</b>1 of 102 universities helps people open a microschool: Arizona State, outside its education school.</p></div></figure>
@@ -123,6 +124,9 @@ var LIST=(new URLSearchParams(location.search).get("list"))||"all";
 if(!LISTS.some(function(l){return l[0]===LIST;}))LIST="all";
 W.json("/data/universities-2026.json").then(function(D){
   var ALL=D.institutions;
+  /* ledger: every headline number is computed from the dataset; the HTML ships the same values as a fallback */
+  var UV={total:ALL.length,respond:ALL.filter(function(r){return r.direction!=="none";}).length,compete:ALL.filter(function(r){return r.direction==="compete";}).length};
+  Array.prototype.forEach.call(document.querySelectorAll("[data-u]"),function(e){var v=UV[e.dataset.u];if(v==null)return;e.dataset.n=v;e.textContent=v;});
   function inList(r){return LIST==="all"||r.lists.indexOf(LIST)>-1;}
 
   /* 01 three-list bars */

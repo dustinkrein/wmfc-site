@@ -29,12 +29,12 @@
 
 <div class="hero sm"><div class="w">
   <h1>Who trains the teachers when the money <span class="f">moves</span>?</h1>
-  <p class="lead2">Institution by institution, state by state: has anyone built the educator workforce that portable funding needs? Florida is coded in full. Nine more states with universal or near-universal ESAs are coded flagship-first.</p>
+  <p class="lead2">Institution by institution, state by state: has anyone built the educator workforce that portable funding needs? Florida&rsquo;s universities are coded in full; 3 of its 28 state colleges are read so far. Nine more states with universal or near-universal ESAs are coded flagship-first.</p>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
   <div class="ledger" id="ledger">
-    <div><div class="big"><span data-derive="total">61</span></div><p>coded rows across <span data-derive="states">15</span> states</p></div>
-    <div><div class="big"><span data-derive="tier1">17</span></div><p>built for the sector, almost all by running or authorizing schools</p></div>
-    <div><div class="big hot">2</div><p>preparation programs built for the sector: Central Michigan's charter leadership M.A. and Vanderbilt's independent-school leadership M.Ed.</p></div>
+    <div><div class="big"><span data-derive="total">62</span></div><p>coded rows across <span data-derive="states">15</span> states</p></div>
+    <div><div class="big"><span data-derive="tier1.ops">16</span></div><p>run or authorize schools in the sector. That is not the same as preparing its teachers.</p></div>
+    <div><div class="big hot"><span data-derive="tier1.prep">2</span></div><p>preparation programs built for the sector: Central Michigan's charter leadership M.A. and Vanderbilt's independent-school leadership M.Ed.</p></div>
     <div><div class="big hot">0</div><p>prepare educators for the unlicensed slice: microschools, co-ops, ESA vendors</p></div>
   </div>
   <figure class="arch" data-year="1899"><img src="/images/bw-normal-school-birds-1899.jpg" alt="Future teachers at the Washington Normal School, 1899." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1899</span><span class="arch-ago" data-ago="1899"></span></div><figcaption class="arch-then">Future teachers at the Washington Normal School, 1899.</figcaption><p class="arch-now"><b>Now</b>2 preparation programs in the Index are built for the new sector. 0 prepare educators for microschools, co-ops or ESA vendors.</p></div></figure>
@@ -43,7 +43,7 @@
 <section class="alt"><div class="w">
   <div class="sh"><div class="num">01</div><div><h2>Florida, the ESA states, and the contrast</h2><p>Ten states where K&ndash;12 money follows the student to private options through an ESA, then voucher-only states and states where it does not follow at all. One dot per institution, colored by what it has built. Tap a dot to see why it is there.</p></div></div>
   <div class="card" id="states"></div>
-  <p class="src" style="margin-top:10px">Florida is coded in full. In the other nine: the flagship and the original state normal school, plus any institution found on the state&rsquo;s charter-authorizer list or ESA provider list. Page-level reads, October 2026. A ringed dot sells courses or schooling to ESA families. A square is a summary row standing for several institutions not yet read one by one.</p>
+  <p class="src" style="margin-top:10px">Florida: every state university and major private institution, 3 of 28 state colleges, and every college checked against the state charter sponsor registry. In the other nine: the flagship and the original state normal school, plus any institution found on the state&rsquo;s charter-authorizer list or ESA provider list. Page-level reads, October 2026. A ringed dot sells courses or schooling to ESA families. A square is a summary row standing for several institutions not yet read one by one.</p>
   <div class="grid2" style="margin-top:26px">
     <div>
       <p class="callout">In the ESA states, universities show up as <em>sellers</em>, not trainers.</p>
@@ -107,19 +107,25 @@
 "use strict";
 var W=window.WMFC,esc=W.esc;
 var TC={"Tier 1":"t1","Tier 2":"t2","Tier 3":"t3","Tier 0":"t0"};
+/* Tier 1 is reported in two parts: preparing educators vs. running or authorizing schools. */
+function isPrep(x){return (x.engagement||[]).indexOf("program")>-1;}
+function KEY(x){return x.tier==="Tier 1"?(isPrep(x)?"prep":"ops"):x.tier;}
+function CLS(x){return x.tier==="Tier 1"?(isPrep(x)?"t1":"t1o"):TC[x.tier];}
 function strip(h){var d=document.createElement("div");d.innerHTML=h;return d.textContent;}
 Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]).then(function(r){
-  var S=r[0],P=r[1],I=S.institutions,CAT=S.categories;
+  var S=r[0],P=r[1],I=S.institutions,CAT=S.categories,SP=S.tier1_split;
+  function LAB(x){return x.tier==="Tier 1"?CAT["Tier 1"].label+" · "+SP[KEY(x)].short:CAT[x.tier].label;}
 
   /* tier key */
-  document.getElementById("tierkey").innerHTML=["Tier 1","Tier 2","Tier 3","Tier 0"].map(function(k){
+  document.getElementById("tierkey").innerHTML=[["prep","t1"],["ops","t1o"]].map(function(k){
+    return '<div><b><i class="dot '+k[1]+'" style="width:12px;height:12px"></i>'+esc(CAT["Tier 1"].label)+': '+esc(SP[k[0]].label.toLowerCase())+'</b>'+esc(SP[k[0]].def)+'</div>';}).join("")+["Tier 2","Tier 3","Tier 0"].map(function(k){
     return '<div><b><i class="dot '+TC[k]+'" style="width:12px;height:12px"></i>'+esc(CAT[k].label)+'</b>'+esc(CAT[k].def)+'</div>';}).join("");
 
   /* 01 ESA states, grouped by wave */
   var box=document.getElementById("states"),ORD=["Tier 1","Tier 2","Tier 3","Tier 0"],ESA=S.esa_states||[],WV=S.esa_waves||{};
   var HL={authorizes:"Authorizes schools",operates:"Runs schools",program:"Program",vendor:"Sells to ESA families",other:"Partnership or service"};
   function hw(x){return (x.engagement||[]).map(function(k){return HL[k]||k;}).join(" · ");}
-  var GROUPS=[["anchor","Coded in full"],["first","First wave"],["second","Second wave"],["voucher","Contrast: vouchers, no ESA"],["none","Contrast: no private-school choice"]];
+  var GROUPS=[["anchor","Florida: universities in full, state colleges partly"],["first","First wave"],["second","Second wave"],["voucher","Contrast: vouchers, no ESA"],["none","Contrast: no private-school choice"]];
   GROUPS.forEach(function(g){
     var list=ESA.filter(function(e){return e.wave===g[0];});if(!list.length)return;
     var head=W.el("div","",'<div class="kick" style="margin:'+(g[0]==="anchor"?"0":"26px")+' 0 4px">'+g[1]+'</div>'+(WV[g[0]]?'<p class="src" style="margin:0 0 6px">'+esc(WV[g[0]])+'</p>':""));
@@ -127,7 +133,7 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
     list.forEach(function(e){
       var all=I.filter(function(x){return x.state===e.state;}).sort(function(a,b){return (a.scope==="aggregate")-(b.scope==="aggregate")||ORD.indexOf(a.tier)-ORD.indexOf(b.tier);});
       var rows=all.filter(function(x){return x.scope!=="aggregate";}),agg=all.length-rows.length;
-      var t1=rows.filter(function(x){return x.tier==="Tier 1";}).length;
+      var t1p=rows.filter(function(x){return x.tier==="Tier 1"&&isPrep(x);}).length,t1o=rows.filter(function(x){return x.tier==="Tier 1"&&!isPrep(x);}).length;
       var r=W.el("div","esarow");
       r.appendChild(W.el("div","",'<div style="font:18px/1.2 var(--f);color:var(--ink)">'+esc(e.state)+'</div><div class="src" style="margin-top:3px">'+W.link(e.source,e.status)+'</div>'));
       var right=W.el("div","");
@@ -135,17 +141,17 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
       var det=W.el("div","esadet");det.hidden=true;det.setAttribute("aria-live","polite");
       var cur=null;
       all.forEach(function(x){
-        var d=W.el("span","dot "+TC[x.tier]);d.tabIndex=0;d.setAttribute("role","button");d.style.cursor="pointer";
+        var d=W.el("span","dot "+CLS(x));d.tabIndex=0;d.setAttribute("role","button");d.style.cursor="pointer";
         if(x.scope==="aggregate")d.style.borderRadius="4px";
         if((x.engagement||[]).indexOf("vendor")>-1)d.style.boxShadow="0 0 0 2px var(--card),0 0 0 4px var(--ink)";
-        d.setAttribute("aria-label",strip(x.name)+": "+CAT[x.tier].label+(hw(x)?". "+hw(x):"")+". Show why.");
-        var tip="<b>"+x.name+"</b>"+esc(CAT[x.tier].label)+(hw(x)?"<br>"+esc(hw(x)):"")+'<br><span style="opacity:.75">Click for why it is here</span>';
+        d.setAttribute("aria-label",strip(x.name)+": "+LAB(x)+(hw(x)?". "+hw(x):"")+". Show why.");
+        var tip="<b>"+x.name+"</b>"+esc(LAB(x))+(hw(x)?"<br>"+esc(hw(x)):"")+'<br><span style="opacity:.75">Click for why it is here</span>';
         d.addEventListener("mousemove",function(ev){W.tip(tip,ev);});d.addEventListener("mouseleave",function(){W.tip(null);});
         function show(){
           W.tip(null);
           if(cur===d){det.hidden=true;d.classList.remove("on");cur=null;return;}
           if(cur)cur.classList.remove("on");cur=d;d.classList.add("on");
-          det.innerHTML='<b class="n">'+x.name+(x.scope==="aggregate"?' <span style="font-size:14px;color:var(--ink3)">(summary row)</span>':"")+'</b><div class="meta">'+esc(CAT[x.tier].label)+(hw(x)?" · "+esc(hw(x)):"")+" · checked "+esc(x.checked)+'</div>'+x.evidence+(x.source?' <span class="src">'+W.link(x.source,"Source")+'</span>':"");
+          det.innerHTML='<b class="n">'+x.name+(x.scope==="aggregate"?' <span style="font-size:14px;color:var(--ink3)">(summary row)</span>':"")+'</b><div class="meta">'+esc(LAB(x))+(hw(x)?" · "+esc(hw(x)):"")+" · checked "+esc(x.checked)+'</div>'+x.evidence+(x.source?' <span class="src">'+W.link(x.source,"Source")+'</span>':"");
           det.hidden=false;
         }
         d.addEventListener("click",show);
@@ -153,7 +159,7 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
         dots.appendChild(d);
       });
       right.appendChild(dots);
-      right.appendChild(W.el("div","src",rows.length?(rows.length+" institution"+(rows.length>1?"s":"")+" · "+t1+" built for the sector"+(agg?" · plus a summary row":"")):(agg?"Summary row only, not yet read institution by institution":"Not yet coded")));
+      right.appendChild(W.el("div","src",rows.length?(rows.length+" institution"+(rows.length>1?"s":"")+" · "+t1p+" prepare"+(t1p===1?"s":"")+" educators for the sector · "+t1o+" run"+(t1o===1?"s":"")+" or authorize"+(t1o===1?"s":"")+" schools"+(agg?" · plus a summary row":"")):(agg?"Summary row only, not yet read institution by institution":"Not yet coded")));
       right.appendChild(det);
       r.appendChild(right);box.appendChild(r);
     });
@@ -180,7 +186,7 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
 
   /* 03 coverage */
   var cov=document.getElementById("cov");
-  var GL={anchor:"ESA · coded in full",first:"ESA · first wave",second:"ESA · second wave",voucher:"Contrast · vouchers, no ESA",none:"Contrast · no private-school choice"},GW={};
+  var GL={anchor:"ESA · deepest coverage",first:"ESA · first wave",second:"ESA · second wave",voucher:"Contrast · vouchers, no ESA",none:"Contrast · no private-school choice"},GW={};
   ESA.forEach(function(e){GW[e.state]=e.wave;});
   var ord=ESA.map(function(e){return e.state;}).filter(function(x){return S.coverage[x];}).concat(Object.keys(S.coverage).filter(function(x){return !(x in GW);}));
   ord.forEach(function(st){
@@ -195,22 +201,22 @@ Promise.all([W.json("/data/scan-2026.json"),W.json("/data/placement-2026.json")]
   var tb=document.getElementById("tb"),fs=document.getElementById("fs"),cnt=document.getElementById("cnt"),tier="all";
   var states=[];I.forEach(function(x){if(states.indexOf(x.state)<0)states.push(x.state);});
   fs.innerHTML='<option value="">All states</option>'+states.map(function(s){return "<option>"+esc(s)+"</option>";}).join("");
-  var tc={};I.forEach(function(x){tc[x.tier]=(tc[x.tier]||0)+1;});
-  W.chips(document.getElementById("tchips"),[{key:"all",label:"All",n:I.length}].concat(["Tier 1","Tier 2","Tier 3","Tier 0"].map(function(k){return {key:k,label:CAT[k].label,n:tc[k]||0,sw:TC[k]};})),function(k){tier=k;draw();});
+  var tc={};I.forEach(function(x){tc[KEY(x)]=(tc[KEY(x)]||0)+1;});
+  W.chips(document.getElementById("tchips"),[{key:"all",label:"All",n:I.length},{key:"prep",label:SP.prep.label,n:tc.prep||0,sw:"t1"},{key:"ops",label:SP.ops.label,n:tc.ops||0,sw:"t1o"}].concat(["Tier 2","Tier 3","Tier 0"].map(function(k){return {key:k,label:CAT[k].label,n:tc[k]||0,sw:TC[k]};})),function(k){tier=k;draw();});
   fs.addEventListener("change",draw);
   function HOW(x){var L={authorizes:"Authorizes schools",operates:"Runs schools",program:"Program",vendor:"Sells to ESA families",other:"Partnership or service"};return (x.engagement&&x.engagement.length)?x.engagement.map(function(k){return L[k]||k;}).join(" · "):"—";}
   function draw(){
-    var rows=I.filter(function(x){return (tier==="all"||x.tier===tier)&&(!fs.value||x.state===fs.value);});
+    var rows=I.filter(function(x){return (tier==="all"||KEY(x)===tier)&&(!fs.value||x.state===fs.value);});
     cnt.textContent=rows.length+" of "+I.length;
     tb.innerHTML=rows.map(function(x){
-      return '<tr class="ex"><td class="nm">'+x.name+(x.scope==="aggregate"?' <span style="font-weight:400;color:var(--ink3)">(summary row)</span>':"")+'</td><td>'+esc(x.state)+'</td><td><span class="pill"><span class="sw '+TC[x.tier]+'"></span>'+esc(CAT[x.tier].label)+'</span></td><td style="font-size:13px;color:var(--ink2)">'+esc(HOW(x))+'</td><td style="white-space:nowrap">'+esc(x.checked)+'</td></tr>'+
+      return '<tr class="ex"><td class="nm">'+x.name+(x.scope==="aggregate"?' <span style="font-weight:400;color:var(--ink3)">(summary row)</span>':"")+'</td><td>'+esc(x.state)+'</td><td><span class="pill"><span class="sw '+CLS(x)+'"></span>'+esc(LAB(x))+'</span></td><td style="font-size:13px;color:var(--ink2)">'+esc(HOW(x))+'</td><td style="white-space:nowrap">'+esc(x.checked)+'</td></tr>'+
              '<tr class="dt" hidden><td colspan="5">'+x.evidence+(x.source?" "+W.link(x.source,"Source"):"")+'</td></tr>';
     }).join("")||'<tr><td colspan="5">No rows match.</td></tr>';
     W.wireRows(tb);
   }
   draw();
   document.getElementById("csv").addEventListener("click",function(e){e.preventDefault();
-    W.csv(I.map(function(x){return {name:strip(x.name),state:x.state,tier:x.tier,category:CAT[x.tier].label,how:(x.engagement||[]).join(" "),checked:x.checked,evidence:strip(x.evidence),source:x.source};}),["name","state","tier","category","how","checked","evidence","source"],"wmfc-readiness-index-2026.csv");});
+    W.csv(I.map(function(x){return {name:strip(x.name),state:x.state,tier:x.tier,category:LAB(x),how:(x.engagement||[]).join(" "),checked:x.checked,evidence:strip(x.evidence),source:x.source};}),["name","state","tier","category","how","checked","evidence","source"],"wmfc-readiness-index-2026.csv");});
 
   /* 05 hypotheses */
   var hy=document.getElementById("hyp");
