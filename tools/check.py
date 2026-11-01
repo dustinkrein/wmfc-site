@@ -399,6 +399,19 @@ def check_universities(html_files):
         m = re.search(r"In Florida, (\w+) of seven", src)
         if m and WORDS.get(m.group(1).lower()) != vals["fl.none"]:
             bad.append("%s: says %s of seven Florida universities show none; data says %d" % (path, m.group(1), vals["fl.none"]))
+    # Evidence states (added 1 Nov 2026): every row carries one, and they agree with direction.
+    from collections import Counter
+    es = Counter(r.get("evidence_state") for r in R)
+    for r in R:
+        st = r.get("evidence_state")
+        if st not in ("documented", "searched", "unresolved", "unchecked"):
+            bad.append("universities-2026.json: %s has no valid evidence_state" % r.get("name"))
+        elif (r.get("direction") != "none") != (st == "documented"):
+            bad.append("universities-2026.json: %s evidence_state %s disagrees with direction %s" % (r.get("name"), st, r.get("direction")))
+    m = read(os.path.join("method", "index.html")) or ""
+    want = "%d documented, %d searched with none found, %d unresolved, %d not yet checked" % (es["documented"], es["searched"], es["unresolved"], es["unchecked"])
+    if "evidence_state" in m and want not in m:
+        bad.append("method/index.html: evidence-state counts do not match the data (%s)" % want)
     if bad:
         for b in bad:
             fail(b)
