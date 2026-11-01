@@ -92,7 +92,7 @@
   </table></div>
   <button class="chip" id="more" type="button" style="margin-top:12px" hidden>Show all</button>
   <p class="src" style="margin-top:12px"><a href="/data/universities-2026.json">Download JSON</a> · <a href="#" id="csv">Download CSV</a></p>
-  <div class="limit"><b>The limit, first.</b> A first-pass scan of public university pages and news, 2025–2026. "None observed" means not found in this scan, not proven absent. Scores rank innovation in education, not quality, and favor work that publishes. The Most Innovative list is the full 2027 list of 74. <a href="/method/#aau">How the scan was scored</a></div>
+  <div class="limit"><b>The limit, first.</b> A first-pass scan of public university pages and news, 2025–2026. Every university was searched at least once. "Searched, none found" means two passes found nothing, not that nothing exists. Three rows (UC Davis, Miami, Howard) are unresolved and count as none until re-checked. Scores rank innovation in education, not quality, and favor work that publishes. The Most Innovative list is the full 2027 list of 74. <a href="/method/#aau">How the scan was scored</a></div>
 </div></section>
 
 </main>
@@ -116,7 +116,7 @@
 var W=window.WMFC,esc=W.esc;
 W.countUp(document.getElementById("ledger"));
 var DIR=["compete","supply","fortify","evidence","none"];
-var LAB={compete:"Compete",supply:"Supply",fortify:"Fortify",evidence:"Studies or debates it",none:"None observed"};
+var LAB={compete:"Compete",supply:"Supply",fortify:"Fortify",evidence:"Studies or debates it",none:"Searched, none found"};
 var COL={compete:"var(--ox)",supply:"var(--ox2)",fortify:"var(--ink3)",evidence:"var(--ox3)",none:"transparent"};
 var LISTS=[["all","All 102"],["florida","Florida (7)"],["aau","AAU"],["innovative","Most Innovative"]];
 var TAG={florida:'<span class="tag fl">Florida</span>',aau:'<span class="tag">AAU</span>',innovative:'<span class="tag">Innovative</span>'};
@@ -161,7 +161,7 @@ W.json("/data/universities-2026.json").then(function(D){
     s("text",{x:R,y:BOT+22,"text-anchor":"end","font-size":12,fill:"var(--ink3)"},"Innovation score →");
     DIR.forEach(function(d,ri){
       var y=YS[ri],list=I.filter(function(r){return r.direction===d;});
-      s("text",{x:0,y:y+5,"font-size":FS,fill:"var(--ink)"},sm&&d==="evidence"?"Studies it":sm&&d==="none"?"None":LAB[d]);
+      s("text",{x:0,y:y+5,"font-size":FS,fill:"var(--ink)"},sm&&d==="evidence"?"Studies it":d==="none"?(sm?"None":"None found"):LAB[d]);
       s("text",{x:L-12,y:y+5,"font-size":FS,"text-anchor":"end",fill:"var(--ink3)","font-family":"Georgia,serif"},list.length);
       var seen={};
       list.forEach(function(r){
@@ -212,9 +212,9 @@ W.json("/data/universities-2026.json").then(function(D){
     var h="",capped=!full&&rows.length>20;more.hidden=!capped;more.textContent="Show all "+rows.length;
     (capped?rows.slice(0,20):rows).forEach(function(r){
       var top=r.initiatives[0];
-      h+='<tr class="ex"><td class="nm">'+esc(r.name)+'<div style="font-weight:400;font-size:12.5px;color:var(--ink3)">'+esc(r.state)+" · "+esc(r.unit)+'</div></td><td>'+r.lists.map(function(l){return TAG[l];}).join("")+(r.innov_rank?'<div style="font-size:12px;color:var(--ink3);margin-top:3px">Innovative No. '+esc(r.innov_rank)+'</div>':"")+'</td><td>'+(top?esc(top.name):r.scored?"<i>None found</i>":'<i style="color:var(--ink3)">Not yet scored</i>')+'</td><td class="num">'+(r.portfolio!=null?'<span class="mini" style="width:'+Math.round(r.portfolio*4)+'px"></span>'+r.portfolio.toFixed(1):"—")+'</td><td><span class="pill"><span class="sw d-'+r.direction+'"></span>'+esc(LAB[r.direction])+'</span></td></tr>';
+      h+='<tr class="ex"><td class="nm">'+esc(r.name)+'<div style="font-weight:400;font-size:12.5px;color:var(--ink3)">'+esc(r.state)+" · "+esc(r.unit)+'</div></td><td>'+r.lists.map(function(l){return TAG[l];}).join("")+(r.innov_rank?'<div style="font-size:12px;color:var(--ink3);margin-top:3px">Innovative No. '+esc(r.innov_rank)+'</div>':"")+'</td><td>'+(top?esc(top.name):r.scored?"<i>None found</i>":'<i style="color:var(--ink3)">Not yet scored</i>')+'</td><td class="num">'+(r.portfolio!=null?'<span class="mini" style="width:'+Math.round(r.portfolio*4)+'px"></span>'+r.portfolio.toFixed(1):"—")+'</td><td><span class="pill"><span class="sw d-'+r.direction+'"></span>'+esc(r.evidence_state==="unresolved"?"Unresolved, counted as none":LAB[r.direction])+'</span></td></tr>';
       var ini=r.initiatives.map(function(i){return "<li>"+esc(i.name)+" — <b>"+i.score+"</b> <span style=\"color:var(--ink3)\">(scale "+i.scale+", evidence "+i.evidence+", novelty "+i.novelty+")</span></li>";}).join("")||(r.scored?"<li>None found</li>":"<li>Not yet scored</li>");
-      h+='<tr class="dt" hidden><td colspan="5"><b>Initiatives scored</b><ul style="margin:6px 0 10px;padding-left:18px">'+ini+'</ul>'+(r.notable?(r.notable_url?"<b>Notable:</b> "+W.link(r.notable_url,r.notable)+"<br>":"<b>Notable:</b> "+esc(r.notable)+"<br>"):"")+(r.response?'<b>Response to portable funding:</b> '+esc(r.response)+" "+(r.response_url?W.link(r.response_url,"Source"):"")+(r.response2?" "+esc(r.response2)+" "+(r.response2_url?W.link(r.response2_url,"Source"):""):""):'<b>Response to portable funding:</b> none observed in this scan.')+'</td></tr>';
+      h+='<tr class="dt" hidden><td colspan="5"><b>Initiatives scored</b><ul style="margin:6px 0 10px;padding-left:18px">'+ini+'</ul>'+(r.notable?(r.notable_url?"<b>Notable:</b> "+W.link(r.notable_url,r.notable)+"<br>":"<b>Notable:</b> "+esc(r.notable)+"<br>"):"")+(r.response?'<b>Response to portable funding:</b> '+esc(r.response)+" "+(r.response_url?W.link(r.response_url,"Source"):"")+(r.response2?" "+esc(r.response2)+" "+(r.response2_url?W.link(r.response2_url,"Source"):""):""):(r.evidence_state==="unresolved"?'<b>Response to portable funding:</b> unresolved. Searched twice; Correction 04 left open questions, so this row counts as none found until re-checked.':'<b>Response to portable funding:</b> searched in two passes, none found.'))+'</td></tr>';
     });
     tb.innerHTML=h||'<tr><td colspan="5">No universities match.</td></tr>';
     W.wireRows(tb);

@@ -1,10 +1,10 @@
 {
  "edition": "University scan, October 2026",
- "updated": "2026-10-28",
+ "updated": "2026-11-01",
  "lists": {
   "florida": {
    "label": "Florida",
-   "def": "The 7 of the 102 located in Florida, the state furthest along. Not a separate list. The Preparation Index covers 21 Florida institutions in depth, including state colleges."
+   "def": "The 7 of the 102 located in Florida, the state furthest along. Not a separate list. The Preparation Index covers 46 Florida institutions in depth, including state colleges."
   },
   "aau": {
    "label": "AAU research universities",
@@ -22,6 +22,12 @@
   "fortify": "Strengthens the existing public system",
   "evidence": "Studies or debates the policy rather than acting in the market",
   "none": "No response observed in this scan"
+ },
+ "evidence_states": {
+  "documented": "A response was found, with a primary source and the date it was read.",
+  "searched": "Searched by the stated method in two passes (education school first, then K-12, online, charter, lab-school and outreach units); nothing found. A finding, not proof of absence.",
+  "unresolved": "Searched, but Correction 04 left open questions about this row. Counted as none found until re-checked.",
+  "unchecked": "Not yet searched. No row in this edition is in this state; all 102 have been searched at least once."
  },
  "lenses": {
   "1": "Teacher preparation beyond traditional public schools",
@@ -64,7 +70,8 @@
     "innovative"
    ],
    "innov_rank": "3",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Tulane University",
@@ -102,7 +109,8 @@
    ],
    "scored": true,
    "since": 2018,
-   "status": "Federal award ended 2025"
+   "status": "Federal award ended 2025",
+   "evidence_state": "documented"
   },
   {
    "name": "University of Chicago",
@@ -141,7 +149,8 @@
    ],
    "innov_rank": "34",
    "scored": true,
-   "since": 2012
+   "since": 2012,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Florida",
@@ -181,7 +190,8 @@
    ],
    "innov_rank": "16",
    "scored": true,
-   "since": 2025
+   "since": 2025,
+   "evidence_state": "documented"
   },
   {
    "name": "Arizona State",
@@ -226,7 +236,8 @@
    "scored": true,
    "response_checked": "2026-10-27",
    "since": 2017,
-   "status": "Expanding"
+   "status": "Expanding",
+   "evidence_state": "documented"
   },
   {
    "name": "University of Kansas",
@@ -263,7 +274,8 @@
     "aau"
    ],
    "scored": true,
-   "since": 2010
+   "since": 2010,
+   "evidence_state": "documented"
   },
   {
    "name": "Rice University",
@@ -301,7 +313,8 @@
     "innovative"
    ],
    "innov_rank": "24",
-   "scored": true
+   "scored": true,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Colorado Boulder",
@@ -338,7 +351,8 @@
     "aau"
    ],
    "scored": true,
-   "since": 2010
+   "since": 2010,
+   "evidence_state": "documented"
   },
   {
    "name": "Yale",
@@ -374,7 +388,8 @@
     "innovative"
    ],
    "innov_rank": "30",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "University of Michigan",
@@ -411,7 +426,8 @@
    ],
    "innov_rank": "14",
    "scored": true,
-   "since": 2019
+   "since": 2019,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Oregon",
@@ -447,7 +463,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "documented"
   },
   {
    "name": "Brown University",
@@ -483,7 +500,8 @@
     "innovative"
    ],
    "innov_rank": "34",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Carnegie Mellon",
@@ -519,7 +537,8 @@
     "innovative"
    ],
    "innov_rank": "5",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Harvard",
@@ -558,7 +577,8 @@
    ],
    "innov_rank": "18",
    "scored": true,
-   "since": 1996
+   "since": 1996,
+   "evidence_state": "documented"
   },
   {
    "name": "Johns Hopkins",
@@ -598,7 +618,8 @@
    ],
    "innov_rank": "11",
    "scored": true,
-   "since": 1979
+   "since": 1979,
+   "evidence_state": "documented"
   },
   {
    "name": "MIT",
@@ -634,7 +655,8 @@
     "innovative"
    ],
    "innov_rank": "2",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Michigan State",
@@ -669,7 +691,8 @@
     "aau"
    ],
    "scored": true,
-   "since": 2024
+   "since": 2024,
+   "evidence_state": "documented"
   },
   {
    "name": "Notre Dame",
@@ -708,7 +731,8 @@
     "aau"
    ],
    "scored": true,
-   "since": 2010
+   "since": 2010,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Missouri",
@@ -744,7 +768,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "documented"
   },
   {
    "name": "UC Irvine",
@@ -780,7 +805,8 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "UT Austin",
@@ -823,7 +849,8 @@
    "since": 1999,
    "recoded": "2026-10-28: was 'none' in the first pass",
    "response2": "UT High School is an approved vendor in Texas's new Education Freedom Accounts program (2026–27).",
-   "response2_url": "https://finder.educationfreedom.texas.gov/"
+   "response2_url": "https://finder.educationfreedom.texas.gov/",
+   "evidence_state": "documented"
   },
   {
    "name": "University of Iowa",
@@ -861,7 +888,8 @@
     "aau"
    ],
    "scored": true,
-   "since": 1988
+   "since": 1988,
+   "evidence_state": "documented"
   },
   {
    "name": "NYU",
@@ -897,7 +925,8 @@
     "innovative"
    ],
    "innov_rank": "19",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Northwestern",
@@ -937,7 +966,8 @@
    ],
    "innov_rank": "26",
    "scored": true,
-   "since": 1982
+   "since": 1982,
+   "evidence_state": "documented"
   },
   {
    "name": "USC",
@@ -976,7 +1006,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 2012,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "McGill",
@@ -1010,7 +1041,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Ohio State",
@@ -1046,7 +1078,8 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Stanford",
@@ -1085,7 +1118,8 @@
    ],
    "innov_rank": "4",
    "scored": true,
-   "since": 2006
+   "since": 2006,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Utah",
@@ -1121,7 +1155,8 @@
     "innovative"
    ],
    "innov_rank": "42",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "University of Pennsylvania",
@@ -1159,7 +1194,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": true
+   "scored": true,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Wisconsin–Madison",
@@ -1198,7 +1234,8 @@
    ],
    "innov_rank": "50",
    "scored": true,
-   "since": 2006
+   "since": 2006,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Virginia",
@@ -1235,7 +1272,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 2023,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Texas A&M",
@@ -1271,7 +1309,8 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Indiana University",
@@ -1311,7 +1350,8 @@
    ],
    "innov_rank": "26",
    "scored": true,
-   "since": 1999
+   "since": 1999,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Minnesota",
@@ -1345,7 +1385,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "UC Berkeley",
@@ -1386,7 +1427,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 2005,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "University at Buffalo",
@@ -1420,7 +1462,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Tufts",
@@ -1454,7 +1497,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "University of Arizona",
@@ -1493,7 +1537,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 2020,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Rutgers",
@@ -1532,7 +1577,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 1997,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Brandeis",
@@ -1571,7 +1617,8 @@
    ],
    "innov_rank": "19",
    "scored": true,
-   "since": 2002
+   "since": 2002,
+   "evidence_state": "documented"
   },
   {
    "name": "Cornell",
@@ -1607,7 +1654,8 @@
     "innovative"
    ],
    "innov_rank": "34",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Duke University",
@@ -1643,7 +1691,8 @@
     "innovative"
    ],
    "innov_rank": "12",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "George Washington",
@@ -1679,7 +1728,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "documented"
   },
   {
    "name": "UNC Chapel Hill",
@@ -1720,7 +1770,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 2022,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "UC Davis",
@@ -1756,7 +1807,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": true
+   "scored": true,
+   "evidence_state": "unresolved"
   },
   {
    "name": "Vanderbilt",
@@ -1795,7 +1847,8 @@
     "innovative"
    ],
    "innov_rank": "14",
-   "scored": true
+   "scored": true,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Washington",
@@ -1831,7 +1884,8 @@
     "innovative"
    ],
    "innov_rank": "42",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "UC Santa Barbara",
@@ -1865,7 +1919,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "UCLA",
@@ -1905,7 +1960,8 @@
    "innov_rank": "17",
    "scored": true,
    "response_checked": "2026-10-28",
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "University of Pittsburgh",
@@ -1944,7 +2000,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 1931,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Columbia",
@@ -1981,7 +2038,8 @@
     "aau"
    ],
    "scored": true,
-   "since": 1977
+   "since": 1977,
+   "evidence_state": "documented"
   },
   {
    "name": "University of Maryland",
@@ -2022,7 +2080,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 2013,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "University of South Florida",
@@ -2059,7 +2118,8 @@
     "florida"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "UC Santa Cruz",
@@ -2093,7 +2153,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Penn State",
@@ -2127,7 +2188,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Purdue University",
@@ -2163,7 +2225,8 @@
     "innovative"
    ],
    "innov_rank": "8",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "University of Toronto (OISE)",
@@ -2197,7 +2260,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Washington University in St. Louis",
@@ -2236,7 +2300,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 2009,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Boston University",
@@ -2277,7 +2342,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 1993,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Illinois Urbana-Champaign",
@@ -2313,7 +2379,8 @@
     "innovative"
    ],
    "innov_rank": "34",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "University of Miami",
@@ -2348,7 +2415,8 @@
     "aau",
     "florida"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "unresolved"
   },
   {
    "name": "University of Rochester",
@@ -2386,7 +2454,8 @@
    "response_checked": "2026-10-28",
    "since": 2015,
    "status": "Ended June 2025",
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Case Western Reserve",
@@ -2420,7 +2489,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Princeton",
@@ -2454,7 +2524,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Stony Brook",
@@ -2488,7 +2559,8 @@
    "lists": [
     "aau"
    ],
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "UC Riverside",
@@ -2524,7 +2596,8 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "UC San Diego",
@@ -2558,7 +2631,8 @@
    "scored": true,
    "response_checked": "2026-10-28",
    "since": 1999,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Caltech",
@@ -2587,7 +2661,8 @@
     "innovative"
    ],
    "innov_rank": "10",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Dartmouth",
@@ -2616,7 +2691,8 @@
     "innovative"
    ],
    "innov_rank": "26",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Emory",
@@ -2637,7 +2713,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": true
+   "scored": true,
+   "evidence_state": "searched"
   },
   {
    "name": "Georgia State",
@@ -2658,7 +2735,8 @@
    ],
    "innov_rank": "7",
    "scored": false,
-   "since": 2024
+   "since": 2024,
+   "evidence_state": "documented"
   },
   {
    "name": "UCF",
@@ -2682,7 +2760,8 @@
    ],
    "innov_rank": "12",
    "scored": false,
-   "since": 2014
+   "since": 2014,
+   "evidence_state": "documented"
   },
   {
    "name": "Florida State",
@@ -2703,7 +2782,8 @@
     "florida"
    ],
    "innov_rank": "26",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Stevens",
@@ -2723,7 +2803,8 @@
     "innovative"
    ],
    "innov_rank": "32",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "RIT",
@@ -2748,7 +2829,8 @@
    "scored": false,
    "response_checked": "2026-10-28",
    "since": 2014,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Drexel",
@@ -2768,7 +2850,8 @@
     "innovative"
    ],
    "innov_rank": "34",
-   "scored": false
+   "scored": false,
+   "evidence_state": "documented"
   },
   {
    "name": "Virginia Tech",
@@ -2788,7 +2871,8 @@
     "innovative"
    ],
    "innov_rank": "42",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "George Mason",
@@ -2810,7 +2894,8 @@
     "innovative"
    ],
    "innov_rank": "42",
-   "scored": false
+   "scored": false,
+   "evidence_state": "documented"
   },
   {
    "name": "Auburn",
@@ -2834,7 +2919,8 @@
    ],
    "innov_rank": "42",
    "scored": false,
-   "since": 2024
+   "since": 2024,
+   "evidence_state": "documented"
   },
   {
    "name": "James Madison",
@@ -2857,7 +2943,8 @@
    "scored": false,
    "response_checked": "2026-10-28",
    "since": 2024,
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   },
   {
    "name": "Northeastern",
@@ -2877,7 +2964,8 @@
     "innovative"
    ],
    "innov_rank": "6",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Elon",
@@ -2897,7 +2985,8 @@
     "innovative"
    ],
    "innov_rank": "8",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "UT San Antonio",
@@ -2917,7 +3006,8 @@
     "innovative"
    ],
    "innov_rank": "22",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "UMBC",
@@ -2937,7 +3027,8 @@
     "innovative"
    ],
    "innov_rank": "24",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Howard",
@@ -2957,7 +3048,8 @@
     "innovative"
    ],
    "innov_rank": "34",
-   "scored": false
+   "scored": false,
+   "evidence_state": "unresolved"
   },
   {
    "name": "Rensselaer Polytechnic",
@@ -2977,7 +3069,8 @@
     "innovative"
    ],
    "innov_rank": "34",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Florida International",
@@ -2998,7 +3091,8 @@
     "florida"
    ],
    "innov_rank": "42",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Georgetown",
@@ -3018,7 +3112,8 @@
     "innovative"
    ],
    "innov_rank": "42",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "University of Tennessee",
@@ -3038,7 +3133,8 @@
     "innovative"
    ],
    "innov_rank": "42",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Boston College",
@@ -3061,7 +3157,8 @@
    ],
    "innov_rank": "50",
    "scored": false,
-   "since": 2007
+   "since": 2007,
+   "evidence_state": "documented"
   },
   {
    "name": "Colorado School of Mines",
@@ -3081,7 +3178,8 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Florida A&M",
@@ -3102,7 +3200,8 @@
     "florida"
    ],
    "innov_rank": "50",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "UMass Amherst",
@@ -3122,7 +3221,8 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Worcester Polytechnic",
@@ -3142,7 +3242,8 @@
     "innovative"
    ],
    "innov_rank": "50",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Abilene Christian",
@@ -3162,7 +3263,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "American University",
@@ -3182,7 +3284,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Marquette",
@@ -3204,7 +3307,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": false
+   "scored": false,
+   "evidence_state": "documented"
   },
   {
    "name": "The New School",
@@ -3224,7 +3328,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "Santa Clara",
@@ -3246,7 +3351,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": false
+   "scored": false,
+   "evidence_state": "documented"
   },
   {
    "name": "Syracuse",
@@ -3266,7 +3372,8 @@
     "innovative"
    ],
    "innov_rank": "65",
-   "scored": false
+   "scored": false,
+   "evidence_state": "searched"
   },
   {
    "name": "University of Houston",
@@ -3292,7 +3399,8 @@
    "response_checked": "2026-10-28",
    "since": 1997,
    "status": "Closed 2021",
-   "recoded": "2026-10-28: was 'none' in the first pass"
+   "recoded": "2026-10-28: was 'none' in the first pass",
+   "evidence_state": "documented"
   }
  ]
 }
