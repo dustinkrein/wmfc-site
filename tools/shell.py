@@ -14,12 +14,10 @@ NAV = [
     ("/research/", "Preparation Index"),
     ("/leaders/", "Leaders"),
     ("/districts/", "Districts"),
-    ("/atlas/", "Atlas"),
     ("/notes/", "Field Notes"),
-    ("/navigator/", "Navigator"),
     ("/method/", "Method"),
-    ("/about/", "About"),
 ]
+# Atlas, Navigator and About live in the footer (trimmed 1 Nov 2026).
 
 
 def _e(s):
@@ -36,6 +34,7 @@ def head(title, desc, path, ogtype="website"):
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>{title}</title>
 <meta name="description" content="{desc}">
+<meta name="author" content="Dustin J. Krein, Ed.D.">
 <link rel="canonical" href="{canonical}">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
@@ -70,6 +69,7 @@ def footer():
   <div>
     <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
     <p style="margin:0 0 8px;max-width:40ch">Research on how colleges and universities respond when K–12 funding follows the student.</p>
+    <p style="margin:0 0 8px">By <a href="/about/#who">Dustin J. Krein, Ed.D.</a></p>
     <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
   </div>
   <div><div class="fh">How universities respond</div>

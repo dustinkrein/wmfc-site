@@ -445,6 +445,16 @@ def check_supply():
         ok("Florida supply section: %d derived figures match the data" % len(claims))
 
 
+def check_snapshots():
+    """Added 1 Nov 2026: the no-JavaScript table snapshots must match the data."""
+    r = subprocess.run([sys.executable, rel("tools", "build-tables.py"), "--check"],
+                       capture_output=True, text=True)
+    if r.returncode:
+        fail("table snapshot is stale; run python3 tools/build-tables.py (%s)" % r.stdout.strip())
+    else:
+        ok("no-JavaScript table snapshots match the data")
+
+
 # --------------------------------------------------------------------
 # 6. Structural HTML sanity
 # --------------------------------------------------------------------
@@ -554,6 +564,7 @@ def main():
     check_fallbacks(inst, atlas_counts, html_files)
     check_universities(html_files)
     check_supply()
+    check_snapshots()
     check_html(html_files)
     check_js(html_files)
 
