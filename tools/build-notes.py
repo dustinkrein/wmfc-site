@@ -141,13 +141,23 @@ def homepage_block(notes):
 
 
 def write_homepage(notes):
-    p = os.path.join(ROOT, "index.html")
+    # The homepage and /explore/ (the full-evidence page) both carry the block.
+    written = None
+    for rel_path in ("index.html", os.path.join("explore", "index.html")):
+        r = _write_block(os.path.join(ROOT, rel_path), notes)
+        written = written or r
+    return written
+
+
+def _write_block(p, notes):
+    if not os.path.exists(p):
+        return None
     s = open(p, encoding="utf-8").read()
     start = "<!-- FIELD-NOTES:START"
     end = "<!-- FIELD-NOTES:END -->"
     i, j = s.find(start), s.find(end)
     if i == -1 or j == -1:
-        print("  ! homepage markers not found — skipped")
+        print("  ! Field Notes markers not found in %s — skipped" % p)
         return None
     i_end = s.find("-->", i) + 3
     s = s[:i_end] + "\n" + homepage_block(notes) + "\n  " + s[j:]

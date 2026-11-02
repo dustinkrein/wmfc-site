@@ -307,6 +307,7 @@ W.json("/data/universities-2026.json").then(function(D){
   var counts={};ALL.forEach(function(r){counts[r.direction]=(counts[r.direction]||0)+1;});
   W.chips(document.getElementById("chips"),[{key:"all",label:"All responses",n:ALL.length}].concat(DIR.map(function(d){return {key:d,label:LAB[d],n:counts[d]||0,sw:"d-"+d};})),function(k){filt=k;drawTable();});
   q.addEventListener("input",drawTable);
+  var q0=new URLSearchParams(location.search).get("q");if(q0){q.value=q0.slice(0,80);}
   Array.prototype.forEach.call(document.querySelectorAll("#tbl th[data-sort]"),function(th){th.addEventListener("click",function(){var k=th.dataset.sort;asc=sortK===k?!asc:(k!=="portfolio");sortK=k;drawTable();});});
   function drawTable(){
     var t=q.value.trim().toLowerCase();
@@ -326,6 +327,7 @@ W.json("/data/universities-2026.json").then(function(D){
   }
   function drawAll(){drawStrip();drawMatrix();drawTable();}
   drawAll();
+  if(q0){var tbl=document.getElementById("tbl");if(tbl)tbl.scrollIntoView({block:"start"});}
   document.getElementById("csv").addEventListener("click",function(e){e.preventDefault();
     W.csv(ALL.map(function(r){return {name:r.name,state:r.state,lists:r.lists.join(" "),innovative_rank:r.innov_rank||"",sector:r.sector,unit:r.unit,initiative_1:r.initiatives[0]?r.initiatives[0].name:"",score_1:r.initiatives[0]?r.initiatives[0].score:"",initiative_2:r.initiatives[1]?r.initiatives[1].name:"",score_2:r.initiatives[1]?r.initiatives[1].score:"",portfolio:r.portfolio==null?"":r.portfolio,direction:r.direction,lenses:r.lenses.join(" "),response:r.response||"",source:r.response_url||r.notable_url||""};}),["name","state","lists","innovative_rank","sector","unit","initiative_1","score_1","initiative_2","score_2","portfolio","direction","lenses","response","source"],"wmfc-universities-2026.csv");});
 }).catch(function(){document.getElementById("tb").innerHTML='<tr><td colspan="5">Could not load the dataset.</td></tr>';});

@@ -412,6 +412,15 @@ def check_universities(html_files):
     want = "%d documented, %d searched with none found, %d unresolved, %d not yet checked" % (es["documented"], es["searched"], es["unresolved"], es["unchecked"])
     if "evidence_state" in m and want not in m:
         bad.append("method/index.html: evidence-state counts do not match the data (%s)" % want)
+    # Homepage waffle (added 1 Nov 2026): one square per university, and legend counts, must match the data.
+    home = read("index.html") or ""
+    if "home-waffle" in home:
+        for d in ("compete", "supply", "fortify", "evidence", "none"):
+            want = sum(1 for r in R if r.get("direction") == d)
+            got = len(re.findall(r'class="cell %s"' % d, home))
+            m = re.search(r'data-dir="%s">(\d+)<' % d, home)
+            if got != want or (m and int(m.group(1)) != want):
+                bad.append("index.html waffle: %s shows %d squares / legend %s, data says %d" % (d, got, m.group(1) if m else "?", want))
     if bad:
         for b in bad:
             fail(b)
@@ -423,7 +432,9 @@ def check_supply():
     """Added 31 Oct 2026 with the timing fix on the Florida supply chart:
     every derived percentage in that section is recomputed here."""
     d = load(os.path.join("data", "supply-florida-2026.json"))
-    src = read("index.html") or ""
+    # The supply chart moved from the homepage to /explore/ on 1 Nov 2026.
+    src = read(os.path.join("explore", "index.html")) or ""
+    also = read(os.path.join("what-we-know", "index.html")) or ""
     if not d:
         return
     Y = {r["year"]: r for r in d["years"] if not r.get("excluded")}
@@ -438,9 +449,10 @@ def check_supply():
         "to 3,453 by 2022–23": pre["colleges_total"] == 3453,
     }
     bad = [k for k, v in claims.items() if k in src and not v] + [k for k in claims if k not in src]
+    bad += ["what-we-know: " + k for k, v in claims.items() if k in also and not v]
     if bad:
         for b in bad:
-            fail("index.html supply section: %r is missing or no longer matches the data" % b)
+            fail("explore/index.html supply section: %r is missing or no longer matches the data" % b)
     else:
         ok("Florida supply section: %d derived figures match the data" % len(claims))
 
