@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Twelve doors into teaching — When Money Follows the Child</title>
+<meta name="description" content="Families in Florida got a hallway of school options. Future teachers got routes that end in the same building. A record of all 40 public universities and state colleges, and the 2027 rule that standardizes teacher preparation.">
+<meta name="author" content="Dustin J. Krein, Ed.D.">
+<link rel="canonical" href="https://www.whenmoneyfollowsthechild.org/teacher-prep/">
+<meta property="og:title" content="Twelve doors into teaching. Eleven open into the same building.">
+<meta property="og:description" content="What Florida's 40 public universities and state colleges say about training teachers outside district schools, and what the 2027 teacher-preparation rule leaves out.">
+<meta property="og:type" content="article">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="/assets/wmfc.css">
+<script>try{var t=localStorage.getItem("wmfc-theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+/* teacher-prep page */
+.tp-c1{--c:var(--ox)}.tp-c2{--c:var(--ox2)}.tp-c3{--c:var(--ox3)}.tp-c4{--c:var(--ink3)}.tp-c5{--c:transparent}.tp-c6{--c:transparent}
+.quiz{max-width:820px}
+.quiz-q{font:400 clamp(22px,2.8vw,30px)/1.35 var(--f);margin:6px 0 22px;padding-left:18px;border-left:3px solid var(--ox)}
+.quiz-q:before{content:"\201C"}.quiz-q:after{content:"\201D"}
+.quiz-opts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.quiz-opts{grid-template-columns:1fr}}
+.quiz-opts button{font:600 15px/1.3 var(--s);text-align:left;padding:14px 16px;border:1px solid var(--lined);border-radius:8px;background:var(--card);color:var(--ink);cursor:pointer;min-height:52px}
+.quiz-opts button:hover:not(:disabled){border-color:var(--ox)}
+.quiz-opts button:disabled{cursor:default}
+.quiz-opts button.right{background:var(--ox);border-color:var(--ox);color:var(--onox)}
+.quiz-opts button.wrong{border-style:dashed;color:var(--ink3)}
+.quiz-rev{margin-top:18px;min-height:24px;font-size:15px;color:var(--ink2)}
+.quiz-rev b{color:var(--ink)}
+.quiz-bar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:6px}
+.quiz-next{font:600 15px var(--s);padding:12px 18px;border:0;border-radius:8px;background:var(--ink);color:var(--bg);cursor:pointer;margin-top:18px}
+.quiz-next[hidden]{display:none}
+.quiz-end h3{font-size:clamp(26px,3.4vw,38px);margin:4px 0 12px}
+.tp-waffle{display:grid;grid-template-columns:repeat(20,minmax(0,1fr));gap:6px;max-width:760px;margin:8px 0 22px}
+@media (max-width:560px){.tp-waffle{grid-template-columns:repeat(10,minmax(0,1fr))}}
+.tp-waffle button{aspect-ratio:1;border-radius:4px;border:1.5px solid var(--c);background:var(--c);padding:0;cursor:pointer}
+.tp-waffle button.tp-c5,.tp-waffle button.tp-c6{border-color:var(--lined);border-style:dashed}
+.tp-waffle button.tp-c6{background:repeating-linear-gradient(45deg,transparent 0 3px,var(--line) 3px 4px)}
+.tp-waffle button[aria-pressed="true"]{outline:2px solid var(--ink);outline-offset:2px}
+.tp-waffle button.dim{opacity:.18}
+.tp-rows{display:grid;gap:16px}
+.tp-row-h{display:flex;justify-content:space-between;gap:12px;font-size:14px;color:var(--ink2);margin-bottom:7px}
+.tp-row-h b{font:800 20px var(--s);color:var(--ink)}
+.tp-row-h .sw{display:inline-block;width:12px;height:12px;border-radius:3px;background:var(--c);border:1.5px solid var(--c);margin-right:8px;vertical-align:-1px}
+.tp-row-h .tp-c5 .sw,.tp-row-h .sw.tp-c5,.tp-row-h .sw.tp-c6{border:1.5px dashed var(--lined)}
+.tp-chips{display:flex;flex-wrap:wrap;gap:6px}
+.tp-chips .chip{font-size:12.5px;border-left:5px solid var(--c)}
+.tp-chips .chip.tp-c5,.tp-chips .chip.tp-c6{border-left:1px dashed var(--lined);border-style:dashed}
+.tp-chips .chip.pend:after{content:"pending";font:600 10px var(--s);letter-spacing:.08em;text-transform:uppercase;color:var(--ink3);margin-left:4px}
+.tp-panel{min-height:70px}
+.tp-panel q{font-family:var(--f);font-size:17px;display:block;margin:8px 0}
+.paths{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:12px;overflow:hidden;background:var(--card)}
+@media (max-width:820px){.paths{grid-template-columns:1fr}}
+.path{padding:clamp(20px,3vw,32px)}
+.path+.path{border-left:1px solid var(--line)}
+@media (max-width:820px){.path+.path{border-left:0;border-top:1px solid var(--line)}}
+.path h3{font-size:22px;margin:0 0 18px}
+.path ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.path li{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:baseline;padding:12px 14px;border-radius:8px;background:var(--bg2);transition:opacity .5s ease,transform .5s ease}
+.path li b{font:800 22px var(--s);color:var(--ox);white-space:nowrap}
+.path li small{grid-column:1/-1;font-size:12px;color:var(--ink3)}
+.path li small a{color:var(--ink3)}
+.paths.pre .fam li{opacity:0;transform:translateY(10px)}
+.doors12{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin-bottom:16px}
+.doors12 span{aspect-ratio:3/5;border-radius:6px 6px 2px 2px;background:var(--ox);position:relative;transition:transform .5s ease,opacity .5s ease}
+.doors12 span:after{content:"";position:absolute;right:18%;top:52%;width:12%;aspect-ratio:1;border-radius:50%;background:var(--onox);opacity:.8}
+.doors12 span.twelve{background:transparent;border:2px dashed var(--ox)}
+.doors12 span.twelve:after{background:var(--ox)}
+.paths.pre .doors12 span{opacity:0;transform:scaleY(.2)}
+.building{border:2px solid var(--ink);border-radius:8px;padding:14px 16px;font:700 15px/1.35 var(--s)}
+.building small{display:block;font:400 13px var(--s);color:var(--ink3);margin-top:4px}
+.building.alt2{border-style:dashed;border-color:var(--ox);margin-top:10px}
+.clock{display:grid;grid-template-columns:auto 1fr;gap:28px;align-items:center}
+@media (max-width:720px){.clock{grid-template-columns:1fr}}
+.clock-n{font:800 clamp(72px,11vw,132px)/.9 var(--s);letter-spacing:-.04em;color:var(--ox)}
+.clock-l{font:600 12px/1.3 var(--s);letter-spacing:.12em;text-transform:uppercase;color:var(--ink3);margin-top:8px}
+.courses{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.courses li{padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);font-weight:600}
+.courses li span{display:block;font:400 13.5px var(--f);color:var(--ink2);margin-top:3px}
+.zeros{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-top:26px}
+@media (max-width:720px){.zeros{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.zeros div{border-top:2px solid var(--ink);padding-top:10px}
+.zeros b{display:block;font:800 52px/1 var(--s);color:var(--ink)}
+.zeros span{font-size:14px;color:var(--ink2)}
+.post{max-width:640px;border:1px solid var(--lined);border-radius:12px;background:var(--card);overflow:hidden}
+.post-h{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:22px 22px 16px;border-bottom:1px solid var(--line)}
+.post-h h3{font-size:26px;margin:4px 0 2px}
+.post-h p{margin:0;color:var(--ink2);font-size:14.5px}
+.post-tag{font:600 11px/1 var(--s);letter-spacing:.1em;text-transform:uppercase;background:var(--oxt);color:var(--ox);padding:7px 9px;border-radius:4px;white-space:nowrap}
+.post dl{margin:0;padding:8px 22px 18px;display:grid;grid-template-columns:minmax(0,190px) 1fr;gap:12px 18px}
+@media (max-width:560px){.post dl{grid-template-columns:1fr;gap:2px}.post dd{margin-bottom:10px}}
+.post dt{font:600 13px/1.4 var(--s);color:var(--ink3);padding-top:2px}
+.post dd{margin:0;font-family:var(--f);font-size:16px}
+.post dd.big0{font:800 28px/1 var(--s);color:var(--ox)}
+.clauses{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:760px){.clauses{grid-template-columns:1fr}}
+.clauses .card h3{font-size:18px;margin:2px 0 8px}
+.clauses .card p{margin:0;font-size:15px;color:var(--ink2)}
+.clauses .card .kick{color:var(--ox)}
+.tbl-census td{font-size:13.5px;vertical-align:top}
+@media (prefers-reduced-motion:reduce){.paths.pre .fam li,.paths.pre .doors12 span{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div class="bar"></div>
+<header><div class="w">
+  <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
+  <nav aria-label="Site"><a href="/universities/">Universities</a><a href="/research/">Preparation Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a></nav>
+  <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+</div></header>
+
+<main>
+<section class="archhero" data-year="1899"><img src="/images/bw-normal-school-botany-1899.jpg" alt="Students at a normal school, a college for training teachers, in a botany class, 1899" fetchpriority="high" decoding="async"><div class="w archhero-in"><div class="archhero-stamp"><span class="arch-yr">1899</span><span class="arch-ago" data-ago="1899"></span></div><p class="archhero-then">A normal school, the college that trained teachers. It prepared them for the public school down the road.</p><h1>Twelve doors into teaching.<br>Eleven open into the same <span class="f">building</span>.</h1>
+  <p class="lede">Florida families now choose among many kinds of school. This is the record of what Florida's 40 public universities and state colleges tell future teachers about those schools, and what the state's new preparation rule leaves out.</p>
+  <p class="archhero-now"><b>Now</b>About half of Florida students use a school choice option. The three courses Florida will require of every new teacher from August 2027 do not mention one.</p>
+</div></section>
+
+<section><div class="w">
+  <div class="ledger three" id="hook">
+    <div><div class="big">Nearly half</div><p>of Florida K–12 students are in a school choice option, by the state's count</p><div class="src"><a href="https://www.fldoe.org/newsroom/latest-news/florida-continues-record-of-education-excellence-for-the-2025-2026-school-year.stml">FLDOE, July 2026</a></div></div>
+    <div><div class="big"><span data-n="11">11</span> of 12</div><p>Florida certification routes that end in a district, a charter school or a charter network. The twelfth is valid only at a classical school.</p><div class="src"><a href="https://www.fldoe.org/teaching/certification/pathways-routes/">FLDOE pathways</a> · <a href="https://www.fldoe.org/teaching/certification/pathways-routes/classical-edu-teach.stml">Classical certificate</a></div></div>
+    <div><div class="big hot"><span data-n="0">0</span></div><p>Times the 2027 teacher-preparation rule uses the words private, charter, home education, choice or scholarship</p><div class="src"><a href="https://www.fldoe.org/file/20954/9-4.pdf">Rule 6A-5.0661, State Board, July 2026</a></div></div>
+  </div>
+</div></section>
+
+<section class="alt" id="guess"><div class="w">
+  <div class="sh"><div class="num">01</div><div><h2>Guess the college</h2><p>Every quote below comes from a Florida public institution's own teacher-preparation pages. All of them operate under the same statute. Pick who wrote it.</p></div></div>
+  <div class="card quiz" id="quiz" aria-live="polite">
+    <noscript><p>The quiz needs JavaScript. Every quote and its source is in the table at the bottom of this page.</p></noscript>
+    <p class="src" id="quiz-load">Loading the quotes…</p>
+  </div>
+</div></section>
+
+<section id="record"><div class="w">
+  <div class="sh"><div class="num">02</div><div><h2>All 40 public institutions</h2><p>One square per university or state college, colored by what its own teacher-preparation pages say about settings beyond district schools. Tap a square or a name for the exact line and its source.</p></div></div>
+  <div class="tools" id="sys" role="group" aria-label="Filter by system"></div>
+  <div class="tp-waffle" id="waffle" role="img" aria-label="40 Florida public institutions coded by what their teacher-preparation pages say about settings beyond district schools"></div>
+  <div class="card tp-panel" id="panel" aria-live="polite"><p class="src" style="margin:0">Tap any square or name.</p></div>
+  <div class="tp-rows" id="rows" style="margin-top:22px"></div>
+  <p class="callout" style="margin-top:30px" id="rec-line"><em>7 of 40</em> name private schools as a place to train. 14 say nothing we could find. Nothing in the statute explains the difference.</p>
+  <div class="limit"><b>What this can't show.</b> A line on a web page is a policy statement, not a count of where students actually trained. Charter schools, Florida Virtual School and lab schools are public schools under Florida law, so we keep them apart from private schools. "None found" means we searched and found no setting language. A row marked <i>pending</i> quotes a search-index snippet not yet read on the live page; today there are none.</div>
+</div></section>
+
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">03</div><div><h2>Two paths through the same state</h2><p>On the left, where Florida's public money can take a student. On the right, where Florida's certification routes take a teacher.</p></div></div>
+  <div class="paths pre" id="paths">
+    <div class="path fam">
+      <div class="kick">A family's options, 2025–26</div>
+      <h3 style="margin-top:8px">The hallway kept getting longer</h3>
+      <ol>
+        <li><span>Assigned district school</span><b>Default</b></li>
+        <li><span>Public charter school</span><b>408K+</b><small><a href="https://www.fldoe.org/newsroom/latest-news/florida-continues-record-of-education-excellence-for-the-2025-2026-school-year.stml">FLDOE, July 2026</a></small></li>
+        <li><span>State K–12 scholarship, private school or ESA</span><b>530K+</b><small><a href="https://www.fldoe.org/newsroom/latest-news/florida-continues-record-of-education-excellence-for-the-2025-2026-school-year.stml">FLDOE, July 2026</a></small></li>
+        <li><span>Home education funded by an ESA (PEP)</span><b>79K</b><small><a href="https://www.stepupforstudents.org/wp-content/uploads/26.5-PEP.pdf">Step Up For Students, program administrator</a></small></li>
+        <li><span>Registered microschools, 2024</span><b>~250</b><small>Up from one in 2020, per a Sarasota County Schools presentation, <a href="https://www.yourobserver.com/news/2026/jul/16/microschools-sarasota-grow-throughout-florida/">reported by the Observer</a>. No state count found.</small></li>
+      </ol>
+    </div>
+    <div class="path tea">
+      <div class="kick">A future teacher's routes, 2026</div>
+      <h3 style="margin-top:8px">Twelve doors, two rooms</h3>
+      <div class="doors12" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span class="twelve"></span></div>
+      <div class="building">District school · charter school · charter network<small>Where 11 of Florida's 12 certification routes lead</small></div>
+      <div class="building alt2">Classical school only<small>The 12th route: a restricted classical certificate, created in 2024, valid only at a classical school</small></div>
+      <p class="src" style="margin-top:12px"><a href="https://www.fldoe.org/teaching/certification/pathways-routes/">FLDOE certification pathways</a> · <a href="https://www.fldoe.org/teaching/certification/pathways-routes/classical-edu-teach.stml">Classical Education Teaching Certificate</a> · Private schools on state scholarships may hire without a state certificate (<a href="https://www.floridaschoolchoice.org/information/private_schools/teacher_qualification.asp">s. 1002.421(2)</a>); no route is built for them.</p>
+    </div>
+  </div>
+  <figure class="photo sec still" style="margin-top:28px;max-width:760px" data-year="1916"><div class="still-ph"><img src="/images/bw-practice-teaching-1916.jpg" alt="Student teachers at the blackboard, Ohio State Normal College, 1916." loading="lazy" decoding="async"><span class="still-yr">1916</span></div><figcaption>Practice teaching, Ohio State Normal College, 1916. Under Florida's 2027 rule, a student teacher is still evaluated with the district's tools.</figcaption></figure>
+</div></section>
+
+<section id="clock"><div class="w">
+  <div class="sh"><div class="num">04</div><div><h2>The rule for 2027</h2><p>A 2025 law, HB 875, told the state to rebuild the core of every teacher-preparation program. The State Board took up the rule on 22 July 2026. Its required courses start on 1 August 2027.</p></div></div>
+  <div class="clock">
+    <div><div class="clock-n" id="days">Aug 2027</div><div class="clock-l" id="days-l">Required courses begin 1 August 2027</div></div>
+    <div>
+      <div class="kick" style="margin-bottom:10px">Every new Florida teacher must take</div>
+      <ol class="courses">
+        <li>Introduction to Education<span>The cognitive science of learning: memory, attention, retrieval practice</span></li>
+        <li>Impact Teaching and Classroom Management<span>High-impact teaching strategies</span></li>
+        <li>Foundations of Civil Discourse, American Exceptionalism, and Western Civilization<span>Founding principles and constitutional history</span></li>
+      </ol>
+    </div>
+  </div>
+  <div class="zeros" id="zeros" aria-label="Times each word appears in the rule">
+    <div><b data-n="0">0</b><span>private</span></div>
+    <div><b data-n="0">0</b><span>charter</span></div>
+    <div><b data-n="0">0</b><span>home education</span></div>
+    <div><b data-n="0">0</b><span>choice</span></div>
+    <div><b data-n="0">0</b><span>scholarship</span></div>
+  </div>
+  <p class="callout" style="margin-top:30px">The rule names one setting by its tools: student teachers are evaluated with <em>tools aligned to the district instructional personnel evaluation system</em>.</p>
+  <p class="src" style="margin-top:4px"><a href="https://www.fldoe.org/file/20954/9-4.pdf">Rule 6A-5.0661 text</a> · <a href="https://www.fldoe.org/file/20954/9-1.pdf">State Board action item, 22 July 2026</a> · <a href="https://laws.flrules.org/2025/107">Chapter 2025-107 (HB 875)</a></p>
+  <div class="limit"><b>What this can't show.</b> We read the rule text posted with the 22 July 2026 State Board agenda and have not compared it with the final filed text. A rule sets a floor. Programs may still teach about school choice in other courses; we have not read syllabi. Today's introductory course, EDF 2005, often covers "governance and finance of education" and "educational policies" (<a href="https://palmbeachstate.smartcatalogiq.com/en/2021-2022/catalog/courses/edf-education/2000/edf2005">Palm Beach State</a>). Whether that content survives the change is the open question.</div>
+</div></section>
+
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">05</div><div><h2>A paid education job no program prepares for</h2><p>Florida's home-education ESA pays for a role that did not exist before 2023.</p></div></div>
+  <article class="post">
+    <div class="post-h"><div><div class="kick">Florida · paid from a family's ESA</div><h3>Choice Navigator</h3><p>Helps a family plan how to use its education savings account</p></div><span class="post-tag">Since 2023</span></div>
+    <dl>
+      <dt>What the state says it is</dt><dd>&ldquo;An optional service provider intended to help guide parents through the myriad of choices that will become available to them through an education savings account.&rdquo; <span class="src"><a href="https://www.fldoe.org/core/fileparse.php/18379/urlt/PEP-FAQ.pdf">FLDOE PEP FAQ</a></span></dd>
+      <dt>Families it could serve</dt><dd>78,617 funded PEP students, 2025–26 <span class="src"><a href="https://www.stepupforstudents.org/wp-content/uploads/26.5-PEP.pdf">Step Up For Students</a></span></dd>
+      <dt>Paid to navigators, 2025–26</dt><dd>$923,436 <span class="src"><a href="https://www.stepupforstudents.org/wp-content/uploads/26.5-PEP.pdf">Step Up For Students</a></span></dd>
+      <dt>Programs built for it, among Florida's 40 public institutions</dt><dd class="big0">None found</dd>
+    </dl>
+  </article>
+  <div class="limit"><b>What this can't show.</b> Certified teachers and degree holders can already serve as navigators, so the absence of a program is not a barrier to entry. We read teacher-preparation pages; we did not run a dedicated search for this role at each institution. The finding is about the work, not eligibility: no public institution we read teaches it.</div>
+</div></section>
+
+<section><div class="w">
+  <div class="sh"><div class="num">06</div><div><h2>Where the line is drawn</h2><p>For policymakers and program leaders: the clauses that decide where a Florida teacher can train and who can mentor them. What each says, not what it should say.</p></div></div>
+  <div class="clauses">
+    <div class="card"><div class="kick">s. 1004.04(5)(d), F.S.</div><h3>Who picks the training sites</h3><p>Programs select field sites "in cooperation with district school boards and approved private school associations." Sites must show "commitment to the education of public school students."</p></div>
+    <div class="card"><div class="kick">s. 1004.04(5)(b), F.S.</div><h3>Who may supervise a student teacher</h3><p>A Florida professional certificate, three years of PreK–12 teaching, an effective or highly effective rating on a performance evaluation, and clinical educator training. Those ratings come from district and charter evaluation systems; UCF also accepts &ldquo;or the equivalent.&rdquo;</p></div>
+    <div class="card"><div class="kick">s. 1012.555, F.S.</div><h3>Who may sponsor a teacher apprentice</h3><p>School districts, charter schools and charter management organizations. Private schools that take state scholarships are not on the list.</p></div>
+    <div class="card"><div class="kick">Rule 6A-5.0661, 2027</div><h3>How a student teacher is judged</h3><p>With "tools aligned to the district instructional personnel evaluation system approved by the Department of Education."</p></div>
+  </div>
+  <p class="src" style="margin-top:14px"><a href="https://www.flsenate.gov/Laws/Statutes/2025/1004.04">s. 1004.04</a> · <a href="https://www.flsenate.gov/Laws/Statutes/2025/1012.555">s. 1012.555</a> · <a href="https://www.fldoe.org/file/20954/9-4.pdf">Rule 6A-5.0661</a> · Read with our <a href="/notes/18/">Field Note 18</a> and <a href="/research/">Preparation Index</a>.</p>
+</div></section>
+
+<section class="alt"><div class="w">
+  <div class="sh"><div class="num">07</div><div><h2>The full record</h2><p>Every institution, its code, the exact line and where we read it. Download the <a href="/data/prep-census-2026.json">dataset</a>.</p></div></div>
+  <div class="tblwrap"><table class="tbl tbl-census">
+    <thead><tr><th>Institution</th><th>System</th><th>What its pages say</th><th>The line</th><th>Evidence</th></tr></thead>
+    <tbody id="ctb">
+<!-- SNAPSHOT:START -->
+<tr><td class="nm">Florida State College at Jacksonville</td><td>FCS</td><td>Private schools named for training</td><td>&ldquo;internship at an accredited public or private primary (K-grade 3) school&rdquo; <a href="https://www.fscj.edu/program?pcode=T100">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Palm Beach State College</td><td>FCS</td><td>Private schools named for training</td><td>&ldquo;60 hours of practicum experience in a public, charter or private school setting&rdquo; <a href="https://pbsc.edu/field-observation/information-for-professors.php">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Polk State College</td><td>FCS</td><td>Private schools named for training</td><td>&ldquo;field experiences within an accredited public, charter, or private school&rdquo; <a href="https://catalog.polk.edu/preview_course_nopop.php?catoid=52&amp;coid=84028">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">University of Central Florida</td><td>SUS</td><td>Private schools named for training</td><td>&ldquo;public, private and charter schools, museums, libraries, science centers, hospitals and more&rdquo; <a href="https://ccie.ucf.edu/teachered/internships/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">University of Florida</td><td>SUS</td><td>Private schools named for training</td><td>&ldquo;If you are teaching in a charter or private school, please contact us to see if it is possible to complete student teaching in your context.&rdquo; <a href="https://education.ufl.edu/school-teaching-learning/secondary-teaching-preparation">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">University of West Florida</td><td>SUS</td><td>Private schools named for training</td><td>&ldquo;a minimum of twelve weeks of supervised teaching in a public or private school&rdquo; <a href="https://catalog.uwf.edu/courseinformation/courses/edg/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Valencia College</td><td>FCS</td><td>Private schools named for training</td><td>&ldquo;The 60+ hour field experience takes place in your own classroom or placement in an area public or approved private school.&rdquo; <a href="https://valenciacollege.edu/academics/programs/educator-preparation-institute/field-experience.php">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Daytona State College</td><td>FCS</td><td>Other public options only</td><td>&ldquo;an approved K-12 public school in Flagler County, Volusia County, or Florida Virtual public schools&rdquo; <a href="https://daytonastate.smartcatalogiq.com/en/2024-2025/college-catalog/academic-information/academic-program-information/baccalaureate-studies/education/bsed-completion-requirements">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Florida A&amp;M University</td><td>SUS</td><td>Other public options only</td><td>&ldquo;that extends to our own K-12 Developmental Research School environment&rdquo; <a href="https://coe.famu.edu/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Florida State University</td><td>SUS</td><td>Other public options only</td><td>&ldquo;As a charter school affiliated with Florida State University (FSU),&rdquo; <a href="https://www.fsus.school/about-us">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Pasco-Hernando State College</td><td>FCS</td><td>Other public options only</td><td>&ldquo;The EPI Director will arrange all field experience placements for these individuals at either a Pasco County public school, Hernando County public school, or with Florida Virtual School.&rdquo; <a href="https://educator-prep.phsc.edu/node/29">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Broward College</td><td>FCS</td><td>Named only as workplaces</td><td>&ldquo;but also private and charter schools in the tri-county area&rdquo; <a href="https://www.broward.edu/academics/education/bachelors/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Florida Gateway College</td><td>FCS</td><td>Named only as workplaces</td><td>&ldquo;a Florida public school, charter school, or private school&rdquo; <a href="https://fgc.edu/academics/programs/education/elementary-education">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Lake-Sumter State College</td><td>FCS</td><td>Named only as workplaces</td><td>&ldquo;work with special education students in a charter or private school&rdquo; <a href="https://www.lssc.edu/exceptional-student-education/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Miami Dade College</td><td>FCS</td><td>Named only as workplaces</td><td>&ldquo;This degree leads to multiple teaching opportunities in Early Childhood Centers and public/private schools.&rdquo; <a href="https://www.mdc.edu/earlychildhood/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Eastern Florida State College</td><td>FCS</td><td>Districts only</td><td>&ldquo;in middle or high school classrooms, which requires passing a Brevard Public School background check.&rdquo; <a href="https://www.easternflorida.edu/academics/bachelor-degrees/science-teacher-education/index.php">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Florida Atlantic University</td><td>SUS</td><td>Districts only</td><td>&ldquo;All placements must be arranged through our office.&rdquo; <a href="https://www.fau.edu/education/students/school-engagement/programs/studentteaching/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Florida Gulf Coast University</td><td>SUS</td><td>Districts only</td><td>&ldquo;a cooperating teacher in a local school district&rdquo; <a href="https://www.fgcu.edu/coe/programs/certificateprograms/teacherimmersionprogram/">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Florida International University</td><td>SUS</td><td>Districts only</td><td>&ldquo;at schools with which Florida International University has established affiliation agreements&rdquo; <a href="https://catalog.fiu.edu/programs/ELEMED:BS/requirements-uz47h">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Florida SouthWestern State College</td><td>FCS</td><td>Districts only</td><td>&ldquo;The School of Education model builds partnerships with the local school districts to identify highly-qualified&rdquo; <a href="https://www.fsw.edu/internships/soe">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">Seminole State College of Florida</td><td>FCS</td><td>Districts only</td><td>&ldquo;This course requires 15 hours of field experience in a K-12 public school setting.&rdquo; <a href="https://www.seminolestate.edu/education/courses">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">South Florida State College</td><td>FCS</td><td>Districts only</td><td>&ldquo;Teacher candidates are required to participate in internships within the partnership districts&rdquo; <a href="https://www.southflorida.edu/wp-content/uploads/2019/03/BSEE-Internship-Handbook.pdf">source</a></td><td>Read on the live page, 2026-11-03</td></tr>
+<tr><td class="nm">St. Petersburg College</td><td>FCS</td><td>Districts only</td><td>&ldquo;a full-day, 10-week internship in your final semester that you can finish in any school district in Florida&rdquo; <a href="https://www.spcollege.edu/future-students/degrees-training/education/paths-to-teacher-certification/educator-preparation-institute-certificate">source</a></td><td>Read on the live page in an earlier round, 2026-09-16</td></tr>
+<tr><td class="nm">University of South Florida</td><td>SUS</td><td>Districts only</td><td>&ldquo;at least three years of service in the Florida state school system&rdquo; <a href="https://www.usf.edu/education/documents/academics/internship-requirements/coedu-handbook-for-final-internship.pdf">source</a></td><td>Read on the live page in an earlier round, 2026-09-16</td></tr>
+<tr><td class="nm">Chipola College</td><td>FCS</td><td>None found</td><td><a href="https://www.chipola.edu/archived-course-syllabi/edg4941/EDG-4941.pdf">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">College of Central Florida</td><td>FCS</td><td>None found</td><td><a href="https://www.fldoe.org:443/core/fileparse.php/7721/urlt/0071835-collegeofcentralflorida.pdf">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Gulf Coast State College</td><td>FCS</td><td>None found</td><td><a href="https://gulfcoast.edu/catalog/current/courses/edf">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Hillsborough College</td><td>FCS</td><td>None found</td><td><a href="https://www.hcfl.edu/es/node/372571">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Indian River State College</td><td>FCS</td><td>None found</td><td><a href="https://irsc.edu/program/teacher-education/">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">North Florida College</td><td>FCS</td><td>None found</td><td><a href="https://www.fldoe.org/schools/higher-ed/fl-college-system/about-us/colleges.stml">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Northwest Florida State College</td><td>FCS</td><td>None found</td><td><a href="https://www.nwfsc.edu/academics/degrees-offered/teacher-education/">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Pensacola State College</td><td>FCS</td><td>None found</td><td><a href="https://pensacolastate.edu/academic-programs/child-as/">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Santa Fe College</td><td>FCS</td><td>None found</td><td><a href="https://www.sfcollege.edu/">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">St. Johns River State College</td><td>FCS</td><td>None found</td><td><a href="https://catalog.sjrstate.edu/preview_program.php?catoid=2&amp;poid=148">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">State College of Florida, Manatee-Sarasota</td><td>FCS</td><td>None found</td><td><a href="https://www.scf.edu/programs/elementary-education/">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Tallahassee State College</td><td>FCS</td><td>None found</td><td><a href="https://www.fldoe.org/core/fileparse.php/7721/urlt/Tallahassee-Community-College-Report.pdf">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">The College of the Florida Keys</td><td>FCS</td><td>None found</td><td><a href="https://www.fldoe.org/schools/higher-ed/fl-college-system/about-us/colleges.stml">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">University of North Florida</td><td>SUS</td><td>None found</td><td><a href="https://www.unf.edu/fie/partners.html">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">Florida Polytechnic University</td><td>SUS</td><td>No teacher prep</td><td><a href="https://www.flbog.edu/universities/">source</a></td><td>Searched; no setting language found, 2026-11-03</td></tr>
+<tr><td class="nm">New College of Florida</td><td>SUS</td><td>No teacher prep</td><td><a href="https://classicaldifference.com/classical-education-meets-new-college-of-florida/">source</a></td><td>Read on the live page in an earlier round, 2026-07-24</td></tr>
+<!-- SNAPSHOT:END -->
+    </tbody>
+  </table></div>
+  <p class="fine" style="margin-top:18px">Cite as: When Money Follows the Child. <i>Florida public teacher-preparation census, November 2026.</i> https://www.whenmoneyfollowsthechild.org/teacher-prep/ Accessed [date]. Errors are corrected in the open: see <a href="/method/#correction-08">Correction 08</a>.</p>
+</div></section>
+</main>
+
+<footer><div class="w"><div class="cols">
+  <div>
+    <div class="fwm">When Money <span class="f">Follows</span> the Child</div>
+    <p style="margin:0 0 8px;max-width:40ch">Research on how colleges and universities respond when K–12 funding follows the student.</p>
+    <p style="margin:0 0 8px">By <a href="/about/#who">Dustin J. Krein, Ed.D.</a></p>
+    <a href="mailto:info@whenmoneyfollowsthechild.org">info@whenmoneyfollowsthechild.org</a>
+  </div>
+  <div><div class="fh">How universities respond</div>
+    <a href="/universities/">Universities</a><a href="/research/">Preparation Index</a><a href="/teacher-prep/">Teacher prep in Florida</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
+  </div>
+  <div><div class="fh">The comparison and the record</div>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+  </div>
+</div></div></footer>
+<script src="/assets/wmfc.js"></script>
+<script>
+(function(){
+"use strict";
+var W=window.WMFC,esc=W.esc;
+var CLS={private:"tp-c1",public:"tp-c2",jobs:"tp-c3",district:"tp-c4",none:"tp-c5",noprog:"tp-c6"};
+var EV={live:"Read on the live page",prior:"Read on the live page in an earlier round",pending:"Seen in a search index; live check pending",searched:"Searched; no setting language found"};
+
+/* hook + zeros count up on arrival */
+W.countUp(document.getElementById("hook"));W.countUp(document.getElementById("zeros"));
+
+/* days to 1 August 2027 */
+(function(){var d=Math.ceil((Date.UTC(2027,7,1)-Date.now())/864e5),n=document.getElementById("days"),l=document.getElementById("days-l");
+  if(d>0){n.textContent=d;l.textContent=(d===1?"day":"days")+" until the required courses begin, 1 August 2027";}
+  else{n.textContent="In force";l.textContent="Required courses began 1 August 2027";}})();
+
+/* two paths: reveal once on arrival */
+(function(){var p=document.getElementById("paths");if(W.reduced||!("IntersectionObserver" in window)){p.classList.remove("pre");return;}
+  var lis=p.querySelectorAll(".fam li"),drs=p.querySelectorAll(".doors12 span");
+  Array.prototype.forEach.call(lis,function(x,i){x.style.transitionDelay=(i*.18)+"s";});
+  Array.prototype.forEach.call(drs,function(x,i){x.style.transitionDelay=(.2+i*.06)+"s";});
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){p.classList.remove("pre");io.disconnect();}});},{threshold:.25});io.observe(p);})();
+
+W.json("/data/prep-census-2026.json").then(function(D){
+  var I=D.institutions,C=D.codes,byName={};I.forEach(function(r){byName[r.name]=r;});
+  var order=Object.keys(C).sort(function(a,b){return C[a].order-C[b].order;});
+  function n(code){return I.filter(function(r){return r.code===code;}).length;}
+
+  /* ---------- 01 quiz ---------- */
+  var Q=[
+    {a:"Seminole State College of Florida",o:["Polk State College","Seminole State College of Florida","Valencia College","University of Central Florida"]},
+    {a:"Polk State College",o:["Polk State College","Florida International University","Daytona State College","Seminole State College of Florida"]},
+    {a:"University of Florida",o:["Florida State University","University of South Florida","University of Florida","Florida Atlantic University"]},
+    {a:"University of South Florida",o:["University of Central Florida","University of West Florida","Florida Atlantic University","University of South Florida"]},
+    {a:"Daytona State College",o:["Broward College","Daytona State College","Valencia College","Pasco-Hernando State College"]},
+    {a:"University of West Florida",o:["Florida Atlantic University","Florida Gulf Coast University","University of West Florida","Florida International University"]},
+    {a:"Florida International University",o:["Florida International University","University of North Florida","University of Central Florida","Florida Atlantic University"]},
+    {a:"Palm Beach State College",o:["Eastern Florida State College","Florida SouthWestern State College","Seminole State College of Florida","Palm Beach State College"]}
+  ];
+  var box=document.getElementById("quiz"),qi=0,score=0;
+  function redact(s,name){return s.split(name).join("[the university]");}
+  var SHORT={"Florida State College at Jacksonville":"FSCJ","Seminole State College of Florida":"Seminole State College","State College of Florida, Manatee-Sarasota":"State College of Florida"};
+  function shortN(s){return SHORT[s]||s;}
+  function showQ(){
+    var it=Q[qi],r=byName[it.a];
+    box.innerHTML='<div class="quiz-bar"><span class="kick">Quote '+(qi+1)+' of '+Q.length+'</span><span class="src">Score '+score+'</span></div>'+
+      '<p class="quiz-q">'+esc(redact(r.quote,r.name))+'</p><div class="quiz-opts"></div><div class="quiz-rev"></div><button class="quiz-next" type="button" hidden>'+(qi<Q.length-1?"Next quote":"See what the quotes show")+'</button>';
+    var opts=box.querySelector(".quiz-opts"),rev=box.querySelector(".quiz-rev"),nx=box.querySelector(".quiz-next");
+    it.o.forEach(function(o){var b=W.el("button","",esc(o));b.type="button";
+      b.addEventListener("click",function(){
+        var ok=o===it.a;if(ok)score++;
+        Array.prototype.forEach.call(opts.children,function(x){x.disabled=true;if(x.textContent===it.a)x.classList.add("right");else if(x===b)x.classList.add("wrong");});
+        rev.innerHTML=(ok?"<b>Yes.</b> ":"<b>It was "+esc(it.a)+".</b> ")+esc(C[r.code].label)+". "+W.link(r.url,"Read the source")+(r.note?' <span class="src">'+esc(r.note)+'</span>':"");
+        nx.hidden=false;nx.focus();
+      });opts.appendChild(b);});
+    nx.addEventListener("click",function(){qi++;if(qi<Q.length)showQ();else end();});
+  }
+  function end(){
+    box.innerHTML='<div class="quiz-end"><div class="kick">You matched '+score+' of '+Q.length+'</div><h3>Same law. Same state rules. Different doors.</h3>'+
+      '<p class="lede" style="font-size:18px">Of Florida\'s 40 public universities and state colleges, <b>'+n("private")+'</b> name private schools as a place to train, <b>'+n("district")+'</b> name only districts or public school settings, and <b>'+n("none")+'</b> say nothing we could find. Every one of them operates under s. 1004.04.</p>'+
+      '<a class="more" href="#record">See all 40</a> <button class="quiz-next" type="button" id="again" style="margin-left:18px">Play again</button></div>';
+    document.getElementById("again").addEventListener("click",function(){qi=0;score=0;showQ();});
+  }
+  showQ();
+
+  /* ---------- 02 record ---------- */
+  var waf=document.getElementById("waffle"),rows=document.getElementById("rows"),panel=document.getElementById("panel"),sys="all",btns=[];
+  var sorted=I.slice().sort(function(a,b){return C[a.code].order-C[b.code].order||a.name.localeCompare(b.name);});
+  function pick(r,el){
+    btns.forEach(function(b){b.setAttribute("aria-pressed",String(b.dataset.n===r.name));});
+    panel.innerHTML='<div class="kick">'+esc(r.sys==="SUS"?"State University System":"Florida College System")+' · '+esc(C[r.code].label)+'</div><h3 style="font-size:22px;margin:8px 0 2px">'+esc(r.name)+'</h3>'+
+      (r.quote?'<q>'+esc(r.quote)+'</q>':'<p style="margin:8px 0;color:var(--ink2)">'+esc(r.code==="noprog"?"No state-approved teacher preparation found.":"No line about where candidates train, beyond districts or schools in general.")+'</p>')+
+      (r.note?'<p style="margin:6px 0;color:var(--ink2);font-size:15px">'+esc(r.note)+'</p>':"")+
+      '<p class="src" style="margin:8px 0 0">'+W.link(r.url,"Source")+' · '+esc(EV[r.ev])+(r.checked?", "+esc(r.checked):r.searched?", "+esc(r.searched):"")+'</p>';
+  }
+  sorted.forEach(function(r){var b=W.el("button",CLS[r.code]);b.type="button";b.dataset.n=r.name;b.dataset.s=r.sys;b.title=r.name;b.setAttribute("aria-label",r.name+": "+C[r.code].short);b.setAttribute("aria-pressed","false");b.addEventListener("click",function(){pick(r,b);});waf.appendChild(b);btns.push(b);});
+  order.forEach(function(k){
+    var list=sorted.filter(function(r){return r.code===k;});
+    var row=W.el("div","",'<div class="tp-row-h"><span><span class="sw '+CLS[k]+'"></span>'+esc(C[k].label)+'</span><b>'+list.length+'</b></div>');
+    var w=W.el("div","tp-chips");
+    list.forEach(function(r){var c=W.el("button","chip "+CLS[k]+(r.ev==="pending"?" pend":""),esc(shortN(r.name)));c.type="button";c.dataset.n=r.name;c.dataset.s=r.sys;c.setAttribute("aria-pressed","false");c.addEventListener("click",function(){pick(r,c);});w.appendChild(c);btns.push(c);});
+    row.appendChild(w);rows.appendChild(row);
+  });
+  W.chips(document.getElementById("sys"),[{key:"all",label:"All 40",n:I.length},{key:"SUS",label:"Universities",n:I.filter(function(r){return r.sys==="SUS";}).length},{key:"FCS",label:"State colleges",n:I.filter(function(r){return r.sys==="FCS";}).length}],function(k){
+    sys=k;btns.forEach(function(b){var on=k==="all"||b.dataset.s===k;if(b.parentNode===waf)b.classList.toggle("dim",!on);else b.hidden=!on;});
+  });
+  document.getElementById("rec-line").innerHTML="<em>"+n("private")+" of "+I.length+"</em> name private schools as a place to train. "+n("none")+" say nothing we could find. Nothing in the statute explains the difference.";
+
+  /* ---------- 07 table (replaces the no-JS snapshot) ---------- */
+  document.getElementById("ctb").innerHTML=sorted.map(function(r){
+    return '<tr><td class="nm">'+esc(r.name)+'</td><td>'+esc(r.sys)+'</td><td>'+esc(C[r.code].short)+'</td><td>'+(r.quote?'&ldquo;'+esc(r.quote)+'&rdquo; ':'')+W.link(r.url,"source")+'</td><td>'+esc(EV[r.ev])+(r.checked?", "+esc(r.checked):r.searched?", "+esc(r.searched):"")+'</td></tr>';
+  }).join("");
+}).catch(function(){var q=document.getElementById("quiz-load");if(q)q.textContent="The dataset did not load. The full record is in the table below.";});
+})();
+</script>
+</body>
+</html>

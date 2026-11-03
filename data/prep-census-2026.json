@@ -1,0 +1,469 @@
+{
+ "edition": "Florida public teacher-preparation census, November 2026",
+ "updated": "2026-11-03",
+ "question": "When a Florida public university or state college describes its K–12 teacher preparation, what does it say about places other than district schools?",
+ "scope": "All 12 State University System universities and all 28 Florida College System colleges, as listed by the Board of Governors and the Florida Department of Education.",
+ "limit": "Public web pages, catalogs and handbooks only. No syllabi, no records requests, no interviews. A line on a web page is a policy statement, not a count of where students actually trained. Charter schools, Florida Virtual School and university lab schools are public schools under Florida law. \"None found\" means we searched and found no setting language, not that the institution has none.",
+ "statute": "Every program here operates under the same law, s. 1004.04, Florida Statutes, and the same State Board rules.",
+ "codes": {
+  "private": {
+   "label": "Names private schools as a place to train",
+   "short": "Private schools named for training",
+   "order": 1
+  },
+  "public": {
+   "label": "Names other public options only: FLVS, lab or charter schools",
+   "short": "Other public options only",
+   "order": 2
+  },
+  "jobs": {
+   "label": "Names private or charter schools only as where graduates or students work",
+   "short": "Named only as workplaces",
+   "order": 3
+  },
+  "district": {
+   "label": "Names only districts or public school settings",
+   "short": "Districts only",
+   "order": 4
+  },
+  "none": {
+   "label": "No setting language found",
+   "short": "None found",
+   "order": 5
+  },
+  "noprog": {
+   "label": "No state-approved teacher preparation found",
+   "short": "No teacher prep",
+   "order": 6
+  }
+ },
+ "evidence_states": {
+  "live": "Quote read on the live page on the checked date",
+  "prior": "Quote read on the live page in an earlier WMFC round, on the checked date",
+  "pending": "Quote seen in a search index; not yet read on the live page",
+  "searched": "Searched on the searched date; no setting language found"
+ },
+ "institutions": [
+  {
+   "name": "University of Central Florida",
+   "sys": "SUS",
+   "code": "private",
+   "quote": "public, private and charter schools, museums, libraries, science centers, hospitals and more",
+   "url": "https://ccie.ucf.edu/teachered/internships/",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "University of West Florida",
+   "sys": "SUS",
+   "code": "private",
+   "quote": "a minimum of twelve weeks of supervised teaching in a public or private school",
+   "url": "https://catalog.uwf.edu/courseinformation/courses/edg/",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Recoded from silent in Correction 08."
+  },
+  {
+   "name": "University of Florida",
+   "sys": "SUS",
+   "code": "private",
+   "quote": "If you are teaching in a charter or private school, please contact us to see if it is possible to complete student teaching in your context.",
+   "url": "https://education.ufl.edu/school-teaching-learning/secondary-teaching-preparation",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Secondary Teaching Preparation certificate only, and case by case."
+  },
+  {
+   "name": "Valencia College",
+   "sys": "FCS",
+   "code": "private",
+   "quote": "The 60+ hour field experience takes place in your own classroom or placement in an area public or approved private school.",
+   "url": "https://valenciacollege.edu/academics/programs/educator-preparation-institute/field-experience.php",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Educator Preparation Institute. FLVS is also a named partner."
+  },
+  {
+   "name": "Polk State College",
+   "sys": "FCS",
+   "code": "private",
+   "quote": "field experiences within an accredited public, charter, or private school",
+   "url": "https://catalog.polk.edu/preview_course_nopop.php?catoid=52&coid=84028",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Educator Preparation Institute. Its BS handbook limits placements to public, charter and private schools in Polk County."
+  },
+  {
+   "name": "Palm Beach State College",
+   "sys": "FCS",
+   "code": "private",
+   "quote": "60 hours of practicum experience in a public, charter or private school setting",
+   "url": "https://pbsc.edu/field-observation/information-for-professors.php",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Educator Preparation Institute."
+  },
+  {
+   "name": "Florida State College at Jacksonville",
+   "sys": "FCS",
+   "code": "private",
+   "quote": "internship at an accredited public or private primary (K-grade 3) school",
+   "url": "https://www.fscj.edu/program?pcode=T100",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "B.S. in Early Childhood Education."
+  },
+  {
+   "name": "Daytona State College",
+   "sys": "FCS",
+   "code": "public",
+   "quote": "an approved K-12 public school in Flagler County, Volusia County, or Florida Virtual public schools",
+   "url": "https://daytonastate.smartcatalogiq.com/en/2024-2025/college-catalog/academic-information/academic-program-information/baccalaureate-studies/education/bsed-completion-requirements",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "Pasco-Hernando State College",
+   "sys": "FCS",
+   "code": "public",
+   "quote": "The EPI Director will arrange all field experience placements for these individuals at either a Pasco County public school, Hernando County public school, or with Florida Virtual School.",
+   "url": "https://educator-prep.phsc.edu/node/29",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "Florida State University",
+   "sys": "SUS",
+   "code": "public",
+   "quote": "As a charter school affiliated with Florida State University (FSU),",
+   "url": "https://www.fsus.school/about-us",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "FSU charters its own lab schools (see Correction 05). Its student-teaching placement policy is not published."
+  },
+  {
+   "name": "Florida A&M University",
+   "sys": "SUS",
+   "code": "public",
+   "quote": "that extends to our own K-12 Developmental Research School environment",
+   "url": "https://coe.famu.edu/",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Names its own lab school only."
+  },
+  {
+   "name": "Broward College",
+   "sys": "FCS",
+   "code": "jobs",
+   "quote": "but also private and charter schools in the tri-county area",
+   "url": "https://www.broward.edu/academics/education/bachelors/",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Describes where graduates teach. Field experiences are in Broward County K-12 classrooms."
+  },
+  {
+   "name": "Miami Dade College",
+   "sys": "FCS",
+   "code": "jobs",
+   "quote": "This degree leads to multiple teaching opportunities in Early Childhood Centers and public/private schools.",
+   "url": "https://www.mdc.edu/earlychildhood/",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "Florida Gateway College",
+   "sys": "FCS",
+   "code": "jobs",
+   "quote": "a Florida public school, charter school, or private school",
+   "url": "https://fgc.edu/academics/programs/education/elementary-education",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Describes where graduates can seek jobs."
+  },
+  {
+   "name": "Lake-Sumter State College",
+   "sys": "FCS",
+   "code": "jobs",
+   "quote": "work with special education students in a charter or private school",
+   "url": "https://www.lssc.edu/exceptional-student-education/",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Para-to-teacher tuition support includes paraprofessionals in charter and private schools. Its elementary program cites Lake and Sumter district partnerships."
+  },
+  {
+   "name": "Seminole State College of Florida",
+   "sys": "FCS",
+   "code": "district",
+   "quote": "This course requires 15 hours of field experience in a K-12 public school setting.",
+   "url": "https://www.seminolestate.edu/education/courses",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "Florida International University",
+   "sys": "SUS",
+   "code": "district",
+   "quote": "at schools with which Florida International University has established affiliation agreements",
+   "url": "https://catalog.fiu.edu/programs/ELEMED:BS/requirements-uz47h",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "The catalog names Miami-Dade and Broward County Public Schools as examples."
+  },
+  {
+   "name": "Florida Atlantic University",
+   "sys": "SUS",
+   "code": "district",
+   "quote": "All placements must be arranged through our office.",
+   "url": "https://www.fau.edu/education/students/school-engagement/programs/studentteaching/",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Names six partner districts: Broward, Palm Beach, Indian River, St. Lucie, Martin and Okeechobee."
+  },
+  {
+   "name": "University of South Florida",
+   "sys": "SUS",
+   "code": "district",
+   "quote": "at least three years of service in the Florida state school system",
+   "url": "https://www.usf.edu/education/documents/academics/internship-requirements/coedu-handbook-for-final-internship.pdf",
+   "ev": "prior",
+   "checked": "2026-09-16",
+   "note": "The limit sits in the definition of who may mentor an intern."
+  },
+  {
+   "name": "Eastern Florida State College",
+   "sys": "FCS",
+   "code": "district",
+   "quote": "in middle or high school classrooms, which requires passing a Brevard Public School background check.",
+   "url": "https://www.easternflorida.edu/academics/bachelor-degrees/science-teacher-education/index.php",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "Florida SouthWestern State College",
+   "sys": "FCS",
+   "code": "district",
+   "quote": "The School of Education model builds partnerships with the local school districts to identify highly-qualified",
+   "url": "https://www.fsw.edu/internships/soe",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "South Florida State College",
+   "sys": "FCS",
+   "code": "district",
+   "quote": "Teacher candidates are required to participate in internships within the partnership districts",
+   "url": "https://www.southflorida.edu/wp-content/uploads/2019/03/BSEE-Internship-Handbook.pdf",
+   "ev": "live",
+   "checked": "2026-11-03"
+  },
+  {
+   "name": "St. Petersburg College",
+   "sys": "FCS",
+   "code": "district",
+   "quote": "a full-day, 10-week internship in your final semester that you can finish in any school district in Florida",
+   "url": "https://www.spcollege.edu/future-students/degrees-training/education/paths-to-teacher-certification/educator-preparation-institute-certificate",
+   "ev": "prior",
+   "checked": "2026-09-16"
+  },
+  {
+   "name": "Florida Gulf Coast University",
+   "sys": "SUS",
+   "code": "district",
+   "quote": "a cooperating teacher in a local school district",
+   "url": "https://www.fgcu.edu/coe/programs/certificateprograms/teacherimmersionprogram/",
+   "ev": "live",
+   "checked": "2026-11-03",
+   "note": "Teacher Immersion Program. Its School Counseling M.A., not a teacher program, names private, charter and virtual schools."
+  },
+  {
+   "name": "University of North Florida",
+   "sys": "SUS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.unf.edu/fie/partners.html",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03",
+   "note": "Recoded in Correction 08. The partner list we cited, which includes KIPP Jacksonville, belongs to UNF's Florida Institute of Education, not to student-teaching placement."
+  },
+  {
+   "name": "Chipola College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.chipola.edu/archived-course-syllabi/edg4941/EDG-4941.pdf",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03",
+   "note": "Internship syllabus says only a K-12 classroom."
+  },
+  {
+   "name": "College of Central Florida",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.fldoe.org:443/core/fileparse.php/7721/urlt/0071835-collegeofcentralflorida.pdf",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "Gulf Coast State College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://gulfcoast.edu/catalog/current/courses/edf",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "Hillsborough College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.hcfl.edu/es/node/372571",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03",
+   "note": "EPI says only \"Florida Schools.\""
+  },
+  {
+   "name": "Indian River State College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://irsc.edu/program/teacher-education/",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03",
+   "note": "Says field experience in \"Florida schools.\""
+  },
+  {
+   "name": "North Florida College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.fldoe.org/schools/higher-ed/fl-college-system/about-us/colleges.stml",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03",
+   "note": "Teacher-preparation offering not confirmed."
+  },
+  {
+   "name": "Northwest Florida State College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.nwfsc.edu/academics/degrees-offered/teacher-education/",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "Pensacola State College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://pensacolastate.edu/academic-programs/child-as/",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "Santa Fe College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.sfcollege.edu/",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "State College of Florida, Manatee-Sarasota",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.scf.edu/programs/elementary-education/",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "St. Johns River State College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://catalog.sjrstate.edu/preview_program.php?catoid=2&poid=148",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "Tallahassee State College",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.fldoe.org/core/fileparse.php/7721/urlt/Tallahassee-Community-College-Report.pdf",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  },
+  {
+   "name": "The College of the Florida Keys",
+   "sys": "FCS",
+   "code": "none",
+   "quote": null,
+   "url": "https://www.fldoe.org/schools/higher-ed/fl-college-system/about-us/colleges.stml",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03",
+   "note": "Teacher-preparation offering not confirmed."
+  },
+  {
+   "name": "New College of Florida",
+   "sys": "SUS",
+   "code": "noprog",
+   "quote": null,
+   "url": "https://classicaldifference.com/classical-education-meets-new-college-of-florida/",
+   "ev": "prior",
+   "checked": "2026-07-24",
+   "note": "Matches the Preparation Index row. Standing alert if classical teacher preparation launches."
+  },
+  {
+   "name": "Florida Polytechnic University",
+   "sys": "SUS",
+   "code": "noprog",
+   "quote": null,
+   "url": "https://www.flbog.edu/universities/",
+   "ev": "searched",
+   "checked": null,
+   "searched": "2026-11-03"
+  }
+ ],
+ "rule": {
+  "name": "Rule 6A-5.0661, Teacher Preparation Uniform Core Curricula and Courses",
+  "board": "State Board of Education, 22 July 2026",
+  "effective_courses": "2027-08-01",
+  "url": "https://www.fldoe.org/file/20954/9-4.pdf",
+  "board_url": "https://www.fldoe.org/file/20954/9-1.pdf",
+  "law": "HB 875 (2025), Chapter 2025-107",
+  "law_url": "https://laws.flrules.org/2025/107",
+  "courses": [
+   "Introduction to Education",
+   "Impact Teaching and Classroom Management",
+   "Foundations of Civil Discourse, American Exceptionalism, and Western Civilization"
+  ],
+  "absent_terms": [
+   "private",
+   "charter",
+   "home education",
+   "choice",
+   "scholarship"
+  ],
+  "evaluation": "tools aligned to the district instructional personnel evaluation system",
+  "checked": "2026-11-03",
+  "limit": "Read from the rule text posted with the 22 July 2026 State Board agenda. We have not compared it with the final filed text on flrules.org."
+ }
+}

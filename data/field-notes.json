@@ -1,8 +1,68 @@
 {
   "edition": "2026",
-  "updated": "2026-10-28",
+  "updated": "2026-11-03",
   "note": "Source of truth for Field Notes. Add an entry here, then run tools/build-notes.py to regenerate /notes/ and each permalink page.",
   "notes": [
+    {
+      "n": "18",
+      "slug": "18",
+      "tag": "Workforce",
+      "date": "November 2026",
+      "iso": "2026-11-03",
+      "title": "Florida is rebuilding the core of teacher preparation. The new rule never names the schools half its students now choose.",
+      "standfirst": "From August 2027 every new Florida teacher must take three state-defined courses. The rule that defines them uses the words private, charter, home education, choice and scholarship zero times. Of Florida's 40 public universities and state colleges, 7 name private schools as a place to train.",
+      "body": [
+        "A 2025 law, HB 875, told the State Board of Education to rebuild the uniform core of every state-approved teacher-preparation program. The Board took up the rule, 6A-5.0661, on 22 July 2026. From 1 August 2027 every program must require three courses: Introduction to Education, built on the cognitive science of learning; Impact Teaching and Classroom Management; and Foundations of Civil Discourse, American Exceptionalism, and Western Civilization.",
+        "<b>The rule names one kind of school by its tools.</b> Student teachers are to be evaluated with &ldquo;tools aligned to the district instructional personnel evaluation system.&rdquo; The words private, charter, home education, choice and scholarship do not appear. Florida&rsquo;s own count puts nearly half of its K–12 students in a school choice option.",
+        "We then read what all 40 Florida public universities and state colleges publish about where their candidates train. Seven name private schools as a place to train: UCF, UWF, UF, Valencia, Polk State, Palm Beach State and FSCJ. Four name other public options only, such as Florida Virtual School or a university lab school. Four mention private or charter schools only as places graduates work. Nine name only districts or public school settings. Fourteen say nothing we could find, and two have no teacher preparation. Every one operates under the same statute, s. 1004.04. Nothing in it explains the spread.",
+        "<b>Where school choice does appear on campus.</b> Today&rsquo;s introductory course, EDF 2005, often covers &ldquo;governance and finance of education&rdquo; and &ldquo;educational policies.&rdquo; That is the likeliest place a future teacher meets charters, scholarships or home education, and it is the course the new rule redefines. Beyond it, school choice shows up in educational leadership and policy programs: an FAU governance syllabus assigns Henry Levin&rsquo;s <i>The theory of choice applied to education</i>, and UF&rsquo;s online leadership M.Ed. names private, charter and microschool pathways. The sector also arrives through recruiters: Charter Schools USA, a charter operator, tabled at an FAU College of Education networking event in 2025 alongside two school districts. We found no private school, microschool network or scholarship organization recruiting at a preparation program&rsquo;s event.",
+        "<b>The limit, first.</b> We read the rule text posted with the 22 July agenda, not the final filed text. A rule sets a floor; programs may still teach school choice in other courses, and we have not read syllabi. A line on a web page is a policy statement, not a count of where students actually trained, and charter schools, FLVS and lab schools are public schools under Florida law.",
+        "<b>What follows.</b> Florida built school choice into how its students are funded and not into how its teachers are prepared. The preparation rule rewritten this year does not change that. None of its clauses names the new settings.",
+        "<b>What to watch.</b> Whether redesigned introductory courses keep any governance or policy content after August 2027; whether any Florida program builds a setting-specific endorsement or a clinical placement agreement with a private school association, which s. 1004.04(5)(d) already contemplates; and how the final filed rule reads. The full record is on <a href=\"/teacher-prep/\">Teacher prep in Florida</a>; the coding changes it caused are in <a href=\"/method/#correction-08\">Correction 08</a>."
+      ],
+      "sources": [
+        {
+          "label": "Florida State Board of Education — Rule 6A-5.0661, Teacher Preparation Uniform Core Curricula and Courses (posted with the 22 Jul 2026 agenda)",
+          "url": "https://www.fldoe.org/file/20954/9-4.pdf"
+        },
+        {
+          "label": "Florida State Board of Education — Action item, 22 Jul 2026",
+          "url": "https://www.fldoe.org/file/20954/9-1.pdf"
+        },
+        {
+          "label": "Laws of Florida — Chapter 2025-107 (CS/CS/HB 875, Educator Preparation)",
+          "url": "https://laws.flrules.org/2025/107"
+        },
+        {
+          "label": "FLDOE — Florida continues record of education excellence for the 2025–26 school year (Jul 2026)",
+          "url": "https://www.fldoe.org/newsroom/latest-news/florida-continues-record-of-education-excellence-for-the-2025-2026-school-year.stml"
+        },
+        {
+          "label": "WMFC — Florida public teacher-preparation census, November 2026 (dataset)",
+          "url": "https://www.whenmoneyfollowsthechild.org/data/prep-census-2026.json"
+        },
+        {
+          "label": "Palm Beach State College — EDF 2005 Introduction to the Teaching Profession",
+          "url": "https://palmbeachstate.smartcatalogiq.com/en/2021-2022/catalog/courses/edf-education/2000/edf2005"
+        },
+        {
+          "label": "Florida Atlantic University — EDA 6786 Educational Governance syllabus",
+          "url": "https://webnet.fau.edu/graduate/documents/graduate/faculty-and-staff/programs-committee/docs/100709/EDF_6786_NCP_ALL.pdf"
+        },
+        {
+          "label": "University of Florida — Online M.Ed. in Educational Leadership",
+          "url": "https://education.ufl.edu/educational-leadership/prospective-students/online-m-ed/"
+        },
+        {
+          "label": "FAU College of Education — Office for School Engagement, Did You Know (Nov 2025)",
+          "url": "https://www.fau.edu/education/aboutcoe/publications/did-you-know/documents/2025did-you-know-office-for-school-engagement--november-.pdf"
+        },
+        {
+          "label": "Florida Statutes — s. 1004.04, Public accountability and state approval for teacher preparation programs",
+          "url": "https://www.flsenate.gov/Laws/Statutes/2025/1004.04"
+        }
+      ]
+    },
     {
       "n": "17",
       "slug": "17",

@@ -49,7 +49,23 @@ def university_rows():
     return "\n".join(out)
 
 
-TARGETS = [("research/index.html", index_rows), ("universities/index.html", university_rows)]
+def census_rows():
+    D = json.load(open(os.path.join(ROOT, "data", "prep-census-2026.json"), encoding="utf-8"))
+    C = D["codes"]
+    ev = {"live": "Read on the live page", "prior": "Read on the live page in an earlier round",
+          "pending": "Seen in a search index; live check pending", "searched": "Searched; no setting language found"}
+    rows = sorted(D["institutions"], key=lambda r: (C[r["code"]]["order"], r["name"]))
+    out = []
+    for r in rows:
+        line = ("&ldquo;%s&rdquo; " % esc(r["quote"])) if r.get("quote") else ""
+        when = r.get("checked") or r.get("searched") or ""
+        out.append('<tr><td class="nm">%s</td><td>%s</td><td>%s</td><td>%s<a href="%s">source</a></td><td>%s</td></tr>'
+                   % (esc(r["name"]), r["sys"], esc(C[r["code"]]["short"]), line, html.escape(r["url"]),
+                      esc(ev[r["ev"]]) + (", " + when if when else "")))
+    return "\n".join(out)
+
+
+TARGETS = [("research/index.html", index_rows), ("universities/index.html", university_rows), ("teacher-prep/index.html", census_rows)]
 
 
 def render(src, rows):

@@ -555,6 +555,59 @@ def check_js(html_files):
 
 
 # --------------------------------------------------------------------
+# Florida public teacher-preparation census (teacher-prep page)
+# --------------------------------------------------------------------
+def check_census():
+    D = load(os.path.join("data", "prep-census-2026.json"))
+    if not D:
+        return
+    I, C = D.get("institutions", []), D.get("codes", {})
+    bad = []
+    for r in I:
+        nm = r.get("name", "<unnamed>")
+        if r.get("code") not in C:
+            bad.append("%s: unknown code %r" % (nm, r.get("code")))
+        if not str(r.get("url", "")).startswith("http"):
+            bad.append("%s: no source URL" % nm)
+        ev = r.get("ev")
+        if ev not in ("live", "prior", "pending", "searched"):
+            bad.append("%s: unknown evidence state %r" % (nm, ev))
+        if ev in ("live", "prior"):
+            try:
+                d = datetime.date.fromisoformat(r.get("checked") or "")
+                if d > TODAY:
+                    bad.append("%s: checked in the future" % nm)
+            except ValueError:
+                bad.append("%s: live/prior row without a checked date" % nm)
+        if ev in ("pending", "searched") and r.get("checked"):
+            bad.append("%s: %s row must not carry a checked date" % (nm, ev))
+        if ev in ("pending", "searched") and not r.get("searched"):
+            bad.append("%s: %s row without a searched date" % (nm, ev))
+        if r.get("code") in ("private", "public", "jobs", "district") and not r.get("quote"):
+            bad.append("%s: coded %s without a quote" % (nm, r.get("code")))
+    sus = sum(1 for r in I if r.get("sys") == "SUS")
+    fcs = sum(1 for r in I if r.get("sys") == "FCS")
+    if (sus, fcs) != (12, 28):
+        bad.append("census should hold 12 SUS and 28 FCS institutions, has %d and %d" % (sus, fcs))
+    if len({r.get("name") for r in I}) != len(I):
+        bad.append("duplicate institution names in the census")
+    page = read(os.path.join("teacher-prep", "index.html")) or ""
+    n = lambda k: sum(1 for r in I if r.get("code") == k)
+    want = "<em>%d of %d</em> name private schools as a place to train. %d say nothing we could find." % (n("private"), len(I), n("none"))
+    if want not in page:
+        bad.append("teacher-prep fallback line disagrees with the data; expected: %s" % want)
+    if bad:
+        for b in bad:
+            fail("Census: " + b)
+    else:
+        pend = [r["name"] for r in I if r.get("ev") == "pending"]
+        ok("Census: %d institutions, %d quoted from live pages, %d pending a live check, page agrees"
+           % (len(I), sum(1 for r in I if r.get("ev") in ("live", "prior") and r.get("quote")), len(pend)))
+        if pend:
+            warn("Census: %d row(s) quote a search-index snippet not yet read live: %s" % (len(pend), ", ".join(pend)))
+
+
+# --------------------------------------------------------------------
 def main():
     html_files = []
     for dirpath, dirnames, filenames in os.walk(ROOT):
@@ -576,6 +629,7 @@ def main():
     check_fallbacks(inst, atlas_counts, html_files)
     check_universities(html_files)
     check_supply()
+    check_census()
     check_snapshots()
     check_html(html_files)
     check_js(html_files)

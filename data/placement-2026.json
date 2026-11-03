@@ -1,6 +1,6 @@
 {
  "edition": "Florida placement survey, 2026",
- "updated": "2026-09-16",
+ "updated": "2026-11-03",
  "n": 10,
  "question": "Does the program's published clinical-placement policy allow a student teacher to be placed in a private school?",
  "postures": {
@@ -32,7 +32,7 @@
   {
    "p": "University of North Florida",
    "t": "public",
-   "pos": "practice",
+   "pos": "silent",
    "url": "https://www.unf.edu/fie/partners.html"
   },
   {
@@ -68,8 +68,9 @@
   {
    "p": "University of West Florida",
    "t": "public",
-   "pos": "silent",
-   "url": "https://uwf.edu/soe/resources/office-of-clinical-placements-and-partnerships/student-teaching-and-internship/"
+   "pos": "open",
+   "url": "https://catalog.uwf.edu/courseinformation/courses/edg/"
   }
- ]
+ ],
+ "correction": "Correction 08 (3 November 2026): University of West Florida recoded from silent to open; University of North Florida recoded from open in practice to silent. The full 40-institution census is at /teacher-prep/."
 }
