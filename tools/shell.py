@@ -12,12 +12,12 @@ QUESTION = ("When K–12 funding follows the student, how do colleges and univer
 NAV = [
     ("/universities/", "Universities"),
     ("/research/", "Preparation Index"),
+    ("/atlas/", "Atlas"),
     ("/leaders/", "Leaders"),
-    ("/districts/", "Districts"),
     ("/notes/", "Field Notes"),
     ("/method/", "Method"),
 ]
-# Atlas, Navigator and About live in the footer (trimmed 1 Nov 2026).
+# Districts, Navigator, About and Corrections live in the footer (menu set 10 Nov 2026).
 
 
 def _e(s):
@@ -76,7 +76,7 @@ def footer():
     <a href="/universities/">Universities</a><a href="/research/">Preparation Index</a><a href="/teacher-prep/">Teacher prep in Florida</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
   </div>
   <div><div class="fh">The comparison and the record</div>
-    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/method/#corrections">Corrections</a><a href="/about/">About</a>
   </div>
 </div></div></footer>
 <script src="/assets/wmfc.js"></script>

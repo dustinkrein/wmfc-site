@@ -34,18 +34,47 @@ def index_rows():
 
 
 def university_rows():
+    """The 102 coded universities plus every Florida institution in the Preparation Index,
+    joined the way universities/index.html joins them at load."""
     U = json.load(open(os.path.join(ROOT, "data", "universities-2026.json"), encoding="utf-8"))
+    S = json.load(open(os.path.join(ROOT, "data", "scan-2026.json"), encoding="utf-8"))
+    C = json.load(open(os.path.join(ROOT, "data", "prep-census-2026.json"), encoding="utf-8"))
     lab = {"compete": "Compete", "supply": "Supply", "fortify": "Fortify",
            "evidence": "Studies or debates it", "none": "Searched, none found"}
-    lists = {"aau": "AAU", "innovative": "Most Innovative"}
-    out = []
-    for r in sorted(U["institutions"], key=lambda r: r["name"]):
+    lists = {"aau": "AAU", "innovative": "Most Innovative", "florida": "Florida"}
+    sysl = {"SUS": "State University System", "FCS": "Florida College System", "private": "Private college"}
+    idx = {r["name"]: r for r in S["institutions"]}
+    cat = S["categories"]
+
+    def nk(s):
+        s = re.sub(r"^the |,? of florida$", "", html.unescape(s).lower())
+        return re.sub(r"[^a-z]", "", s)
+
+    def tier(r):
+        return "%s · %s" % (r["tier"], cat[r["tier"]]["label"]) if r else "Not in the Index yet"
+
+    rows = []
+    for r in U["institutions"]:
         top = r["initiatives"][0]["name"] if r["initiatives"] else ("None found" if r.get("scored") else "Not yet scored")
         resp = "Unresolved, counted as none" if r.get("evidence_state") == "unresolved" else lab[r["direction"]]
         score = "%.1f" % r["portfolio"] if r.get("portfolio") is not None else "—"
-        out.append('<tr><td class="nm">%s</td><td>%s</td><td>%s</td><td class="num">%s</td><td>%s</td></tr>'
-                   % (esc(r["name"]) + " (" + esc(r["state"]) + ")", ", ".join(lists[l] for l in r["lists"] if l in lists),
-                      esc(top), score, resp))
+        rows.append((r["name"], r["state"], ", ".join(lists[l] for l in r["lists"] if l in lists),
+                     tier(idx.get(r.get("index"))), top, score, resp))
+    linked = {r["index"] for r in U["institutions"] if r.get("index")}
+    seen = {nk(r[0]) for r in rows} | {nk(n) for n in linked}
+    for r in S["institutions"]:
+        if r["state"] != "Florida" or r["name"] in linked or r.get("scope") == "aggregate":
+            continue
+        rows.append((html.unescape(r["name"]), "FL", "Florida", tier(r), "Not yet scored", "—", "Not yet coded"))
+        seen.add(nk(r["name"]))
+    for r in C["institutions"]:
+        if nk(r["name"]) in seen:
+            continue
+        rows.append((r["name"], "FL", "Florida", "Not in the Index yet", "Not yet scored", "—", "Not yet coded"))
+    out = []
+    for name, st, ls, t, top, score, resp in sorted(rows, key=lambda x: x[0]):
+        out.append('<tr><td class="nm">%s</td><td>%s</td><td>%s</td><td>%s</td><td class="num">%s</td><td>%s</td></tr>'
+                   % (esc(name) + " (" + esc(st) + ")", ls, esc(t), esc(top), score, resp))
     return "\n".join(out)
 
 

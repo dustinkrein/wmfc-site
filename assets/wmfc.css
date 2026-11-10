@@ -504,3 +504,7 @@ a.door:hover{border-color:var(--lined)}
 .wwk .m a{color:var(--ink3)}
 .wwk .m a.go{color:var(--ox);font-weight:600;text-decoration:none}
 .wwk .m a.go:after{content:" →"}
+/* chips honor [hidden]; .chip display otherwise overrides it (10 Nov 2026) */
+.chip[hidden]{display:none}
+/* university search on phones: institution, Preparation Index tier, response */
+@media (max-width:640px){#tbl{min-width:0}#tbl th{white-space:normal}#tbl .pill{white-space:normal;align-items:flex-start;line-height:1.3}#tbl td,#tbl th{padding-left:10px;padding-right:10px}#tbl th:nth-child(2),#tbl th:nth-child(4),#tbl th:nth-child(5),#tbl tbody tr:not(.dt)>td:nth-child(2),#tbl tbody tr:not(.dt)>td:nth-child(4),#tbl tbody tr:not(.dt)>td:nth-child(5){display:none}}

@@ -20,7 +20,7 @@
 <div class="bar"></div>
 <header><div class="w">
   <a class="wm" href="/">When Money <span class="f">Follows</span> the Child</a>
-  <nav aria-label="Site"><a href="/universities/" aria-current="page">Universities</a><a href="/research/">Preparation Index</a><a href="/leaders/">Leaders</a><a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a></nav>
+  <nav aria-label="Site"><a href="/universities/" aria-current="page">Universities</a><a href="/research/">Preparation Index</a><a href="/atlas/">Atlas</a><a href="/leaders/">Leaders</a><a href="/notes/">Field Notes</a><a href="/method/">Method</a></nav>
   <button class="tog" id="tog" type="button" aria-label="Switch light or dark theme" title="Light / dark">
     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
   </button>
@@ -29,7 +29,7 @@
 
 <div class="hero sm"><div class="w">
   <h1>About half respond. None prepare educators for the <span class="f">newest</span> schools.</h1>
-  <p class="lead2">102 universities: all 71 AAU research universities and all 74 U.S. News Most Innovative. 43 are on both; 7 are in Florida. For each one: its strongest education work, and any response to portable K–12 funding.</p>
+  <p class="lead2">102 universities: all 71 AAU research universities and all 74 U.S. News Most Innovative. 43 are on both; 7 are in Florida. For each one: its strongest education work, and any response to portable K–12 funding. The search below also covers every Florida institution in the Preparation Index; their direction of response is not yet coded, and the charts leave them out.</p>
   <div class="limit" style="margin-top:14px"><b>The limit, first.</b> These lists measure research standing and reputation, not teacher production. In Florida, about two in three new certified teachers in 2023–24 came from programs outside both lists: regional universities, state colleges, district routes and private providers. UWF, FAU and UNF alone finished 577 and are on neither list. Nationally, Western Governors University, which calls itself the largest school of education in the nation, is on neither. The <a href="/research/">Preparation Index</a> reads institutions like these one by one. <a href="/method/#limits">Method</a></div>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, <span style="color:var(--ox)">how do colleges and universities respond?</span> And who is leading?</span></div>
   <div class="ledger" id="ledger">
@@ -85,113 +85,153 @@
 </div></section>
 
 <section id="all"><div class="w">
-  <div class="sh"><div class="num">04</div><div><h2>Every university</h2><p>Search by name or state, filter by response, tap a row for initiatives and sources.</p></div></div>
-  <div class="tools"><div id="chips" style="display:contents"></div><input class="search" id="q" type="search" placeholder="Search a university or state" aria-label="Search universities"><span class="count" id="cnt"></span></div>
+  <div class="sh"><div class="num">04</div><div><h2>Every university, and every Florida institution</h2><p>Search by name, abbreviation (USF, ASU) or state. Filter by list or response. Tap a row for its Preparation Index tier, evidence and sources.</p></div></div>
+  <div class="tools"><div id="chips" style="display:contents"></div><input class="search" id="q" type="search" placeholder="Search a name, abbreviation or state" aria-label="Search universities and colleges"><span class="count" id="cnt"></span></div>
   <div class="tblwrap"><table class="tbl" id="tbl">
-    <thead><tr><th data-sort="name">University</th><th>Lists</th><th>Strongest initiative</th><th data-sort="portfolio" style="text-align:right">Score</th><th data-sort="direction">Response</th></tr></thead>
+    <thead><tr><th data-sort="name">Institution</th><th>Lists</th><th data-sort="_t">Preparation Index</th><th>Strongest initiative</th><th data-sort="portfolio" style="text-align:right">Score</th><th data-sort="direction">Response</th></tr></thead>
     <tbody id="tb"><!-- SNAPSHOT:START -->
-<tr><td class="nm">Abilene Christian (TX)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">American University (DC)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Arizona State (AZ)</td><td>AAU, Most Innovative</td><td>Next Education Workforce</td><td class="num">15.0</td><td>Compete</td></tr>
-<tr><td class="nm">Auburn (AL)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Compete</td></tr>
-<tr><td class="nm">Boston College (MA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
-<tr><td class="nm">Boston University (MA)</td><td>AAU, Most Innovative</td><td>iSAT partner</td><td class="num">7.0</td><td>Compete</td></tr>
-<tr><td class="nm">Brandeis (MA)</td><td>AAU, Most Innovative</td><td>Mandel Center Jewish education</td><td class="num">9.0</td><td>Supply</td></tr>
-<tr><td class="nm">Brown University (RI)</td><td>AAU, Most Innovative</td><td>Annenberg Institute / EdWorkingPapers</td><td class="num">14.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Caltech (CA)</td><td>AAU, Most Innovative</td><td>CTLO K-12 outreach</td><td class="num">3.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Carnegie Mellon (PA)</td><td>AAU, Most Innovative</td><td>PLUS hybrid tutoring</td><td class="num">14.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Case Western Reserve (OH)</td><td>AAU</td><td>Cleveland Scholars</td><td class="num">6.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Colorado School of Mines (CO)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Columbia (NY)</td><td>AAU</td><td>M.A. Sustainability &amp; Education</td><td class="num">8.0</td><td>Supply</td></tr>
-<tr><td class="nm">Cornell (NY)</td><td>AAU, Most Innovative</td><td>Cornell Tech K-12 CS and AI</td><td class="num">9.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Dartmouth (NH)</td><td>AAU, Most Innovative</td><td>Teacher certification program</td><td class="num">2.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Drexel (PA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
-<tr><td class="nm">Duke University (NC)</td><td>AAU, Most Innovative</td><td>TeachHouse</td><td class="num">9.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Elon (NC)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Emory (GA)</td><td>AAU, Most Innovative</td><td>None found</td><td class="num">0.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Florida A&amp;M (FL)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Florida International (FL)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Florida State (FL)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">George Mason (VA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
-<tr><td class="nm">George Washington (DC)</td><td>AAU</td><td>CASJE Jewish education research</td><td class="num">9.0</td><td>Supply</td></tr>
-<tr><td class="nm">Georgetown (DC)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Georgia State (GA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
-<tr><td class="nm">Georgia Tech (GA)</td><td>AAU, Most Innovative</td><td>OMSCS online master's (~19,000 students)</td><td class="num">17.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Harvard (MA)</td><td>AAU, Most Innovative</td><td>States Leading States</td><td class="num">13.5</td><td>Studies or debates it</td></tr>
-<tr><td class="nm">Howard (DC)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Unresolved, counted as none</td></tr>
-<tr><td class="nm">Illinois Urbana-Champaign (IL)</td><td>AAU, Most Innovative</td><td>iSAT partner</td><td class="num">7.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Indiana University (IN)</td><td>AAU, Most Innovative</td><td>CEEP policy evaluation</td><td class="num">10.0</td><td>Compete</td></tr>
-<tr><td class="nm">James Madison (VA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
-<tr><td class="nm">Johns Hopkins (MD)</td><td>AAU, Most Innovative</td><td>National Research Center on Advanced Education</td><td class="num">13.0</td><td>Supply</td></tr>
-<tr><td class="nm">MIT (MA)</td><td>AAU, Most Innovative</td><td>RAISE (App Inventor, Day of AI)</td><td class="num">12.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Marquette (WI)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
-<tr><td class="nm">McGill (QC)</td><td>AAU</td><td>In-community First Nations and Inuit teacher ed</td><td class="num">11.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Michigan State (MI)</td><td>AAU</td><td>EPIC state partnership</td><td class="num">12.5</td><td>Fortify</td></tr>
-<tr><td class="nm">NYU (NY)</td><td>AAU, Most Innovative</td><td>Research Alliance for NYC Schools</td><td class="num">11.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Northeastern (MA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Northwestern (IL)</td><td>AAU, Most Innovative</td><td>Collaborative for Applied Research in Education</td><td class="num">11.5</td><td>Supply</td></tr>
-<tr><td class="nm">Notre Dame (IN)</td><td>AAU</td><td>ACE Teaching Fellows</td><td class="num">12.5</td><td>Compete</td></tr>
-<tr><td class="nm">Ohio State (OH)</td><td>AAU, Most Innovative</td><td>Crane Center</td><td class="num">11.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Penn State (PA)</td><td>AAU</td><td>Center for Education and Civil Rights</td><td class="num">7.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Princeton (NJ)</td><td>AAU</td><td>QUEST teacher institute</td><td class="num">5.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Purdue University (IN)</td><td>AAU, Most Innovative</td><td>Innovation Initiative curriculum</td><td class="num">7.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">RIT (NY)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
-<tr><td class="nm">Rensselaer Polytechnic (NY)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Rice University (TX)</td><td>AAU, Most Innovative</td><td>OpenStax</td><td class="num">15.0</td><td>Supply</td></tr>
-<tr><td class="nm">Rutgers (NJ)</td><td>AAU</td><td>Apprenticeships at rural MSIs</td><td class="num">9.5</td><td>Compete</td></tr>
-<tr><td class="nm">Santa Clara (CA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
-<tr><td class="nm">Stanford (CA)</td><td>AAU, Most Innovative</td><td>AI teaching seed grants</td><td class="num">11.0</td><td>Compete</td></tr>
-<tr><td class="nm">Stevens (NJ)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Stony Brook (NY)</td><td>AAU</td><td>Institute for STEM Education</td><td class="num">5.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Syracuse (NY)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Texas A&amp;M (TX)</td><td>AAU, Most Innovative</td><td>Education Research Center</td><td class="num">10.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">The New School (NY)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Tufts (MA)</td><td>AAU</td><td>CEEO engineering education</td><td class="num">9.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Tulane University (LA)</td><td>AAU</td><td>ERA-New Orleans</td><td class="num">16.5</td><td>Studies or debates it</td></tr>
-<tr><td class="nm">UC Berkeley (CA)</td><td>AAU, Most Innovative</td><td>21CSLA statewide leadership academy</td><td class="num">9.5</td><td>Compete</td></tr>
-<tr><td class="nm">UC Davis (CA)</td><td>AAU, Most Innovative</td><td>Wheelhouse CC leadership</td><td class="num">9.0</td><td>Unresolved, counted as none</td></tr>
-<tr><td class="nm">UC Irvine (CA)</td><td>AAU, Most Innovative</td><td>PapyrusAI / WRITE AI Center</td><td class="num">12.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">UC Riverside (CA)</td><td>AAU, Most Innovative</td><td>AI programs with CSUSB</td><td class="num">5.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">UC San Diego (CA)</td><td>AAU, Most Innovative</td><td>CREATE STEM Success Initiative</td><td class="num">4.5</td><td>Compete</td></tr>
-<tr><td class="nm">UC Santa Barbara (CA)</td><td>AAU</td><td>Community Fellows grow-your-own</td><td class="num">8.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">UC Santa Cruz (CA)</td><td>AAU</td><td>Teacher residencies</td><td class="num">8.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">UCF (FL)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
-<tr><td class="nm">UCLA (CA)</td><td>AAU, Most Innovative</td><td>Center X IMPACT residencies</td><td class="num">8.5</td><td>Compete</td></tr>
-<tr><td class="nm">UMBC (MD)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">UMass Amherst (MA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">UNC Chapel Hill (NC)</td><td>AAU, Most Innovative</td><td>Carolina Community Academy lab school</td><td class="num">9.0</td><td>Compete</td></tr>
-<tr><td class="nm">USC (CA)</td><td>AAU</td><td>Pullias college advising</td><td class="num">11.0</td><td>Compete</td></tr>
-<tr><td class="nm">UT Austin (TX)</td><td>AAU, Most Innovative</td><td>Statewide reading academies</td><td class="num">11.5</td><td>Compete</td></tr>
-<tr><td class="nm">UT San Antonio (TX)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University at Buffalo (NY)</td><td>AAU</td><td>University-assisted community school</td><td class="num">9.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University of Arizona (AZ)</td><td>AAU, Most Innovative</td><td>Indigenous Teacher Education Program</td><td class="num">9.5</td><td>Fortify</td></tr>
-<tr><td class="nm">University of Chicago (IL)</td><td>AAU, Most Innovative</td><td>Education Lab tutoring RCTs</td><td class="num">15.5</td><td>Fortify</td></tr>
-<tr><td class="nm">University of Colorado Boulder (CO)</td><td>AAU</td><td>iSAT student-AI teaming</td><td class="num">15.0</td><td>Studies or debates it</td></tr>
-<tr><td class="nm">University of Florida (FL)</td><td>AAU, Most Innovative</td><td>New Worlds Reading (Lastinger)</td><td class="num">15.5</td><td>Fortify</td></tr>
-<tr><td class="nm">University of Houston (TX)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Compete</td></tr>
-<tr><td class="nm">University of Iowa (IA)</td><td>AAU</td><td>Iowa Testing Programs</td><td class="num">11.5</td><td>Supply</td></tr>
-<tr><td class="nm">University of Kansas (KS)</td><td>AAU</td><td>Dynamic Learning Maps</td><td class="num">15.0</td><td>Supply</td></tr>
-<tr><td class="nm">University of Maryland (MD)</td><td>AAU, Most Innovative</td><td>USM alternative teacher prep</td><td class="num">8.0</td><td>Compete</td></tr>
-<tr><td class="nm">University of Miami (FL)</td><td>AAU</td><td>Sports-tech master's</td><td class="num">6.5</td><td>Unresolved, counted as none</td></tr>
-<tr><td class="nm">University of Michigan (MI)</td><td>AAU, Most Innovative</td><td>TeachingWorks</td><td class="num">14.5</td><td>Fortify</td></tr>
-<tr><td class="nm">University of Minnesota (MN)</td><td>AAU</td><td>Institute of Child Development</td><td class="num">10.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University of Missouri (MO)</td><td>AAU</td><td>Mizzou Academy online K-12 school</td><td class="num">12.0</td><td>Compete</td></tr>
-<tr><td class="nm">University of Oregon (OR)</td><td>AAU</td><td>Ballmer Institute child behavioral health (university-level)</td><td class="num">14.5</td><td>Supply</td></tr>
-<tr><td class="nm">University of Pennsylvania (PA)</td><td>AAU, Most Innovative</td><td>Together for Good; online AI degree</td><td class="num">11.0</td><td>Supply</td></tr>
-<tr><td class="nm">University of Pittsburgh (PA)</td><td>AAU</td><td>LRDC Institute for Learning</td><td class="num">8.0</td><td>Compete</td></tr>
-<tr><td class="nm">University of Rochester (NY)</td><td>AAU</td><td>Intellectual-disability inclusion programs</td><td class="num">6.5</td><td>Fortify</td></tr>
-<tr><td class="nm">University of South Florida (FL)</td><td>AAU, Most Innovative</td><td>CognetCon cognitive security</td><td class="num">8.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University of Tennessee (TN)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University of Toronto (OISE) (ON)</td><td>AAU</td><td>Jackman Institute of Child Study</td><td class="num">7.5</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University of Utah (UT)</td><td>AAU, Most Innovative</td><td>National prison education research center</td><td class="num">11.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University of Virginia (VA)</td><td>AAU</td><td>Statewide early childhood curriculum</td><td class="num">10.5</td><td>Fortify</td></tr>
-<tr><td class="nm">University of Washington (WA)</td><td>AAU, Most Innovative</td><td>District Leadership Design Lab</td><td class="num">9.0</td><td>Searched, none found</td></tr>
-<tr><td class="nm">University of Wisconsin–Madison (WI)</td><td>AAU, Most Innovative</td><td>WIDA (WCER)</td><td class="num">10.5</td><td>Supply</td></tr>
-<tr><td class="nm">Vanderbilt (TN)</td><td>AAU, Most Innovative</td><td>IRIS Center</td><td class="num">9.0</td><td>Supply</td></tr>
-<tr><td class="nm">Virginia Tech (VA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Washington University in St. Louis (MO)</td><td>AAU</td><td>Institute for School Partnership</td><td class="num">7.5</td><td>Compete</td></tr>
-<tr><td class="nm">Worcester Polytechnic (MA)</td><td>Most Innovative</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
-<tr><td class="nm">Yale (CT)</td><td>AAU, Most Innovative</td><td>RULER</td><td class="num">14.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Abilene Christian (TX)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">American University (DC)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Arizona State (AZ)</td><td>AAU, Most Innovative</td><td>Tier 1 · Built for sector</td><td>Next Education Workforce</td><td class="num">15.0</td><td>Compete</td></tr>
+<tr><td class="nm">Auburn (AL)</td><td>Most Innovative</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Compete</td></tr>
+<tr><td class="nm">Boston College (MA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
+<tr><td class="nm">Boston University (MA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>iSAT partner</td><td class="num">7.0</td><td>Compete</td></tr>
+<tr><td class="nm">Brandeis (MA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Mandel Center Jewish education</td><td class="num">9.0</td><td>Supply</td></tr>
+<tr><td class="nm">Broward College (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Brown University (RI)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Annenberg Institute / EdWorkingPapers</td><td class="num">14.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Caltech (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>CTLO K-12 outreach</td><td class="num">3.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Carnegie Mellon (PA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>PLUS hybrid tutoring</td><td class="num">14.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Case Western Reserve (OH)</td><td>AAU</td><td>Not in the Index yet</td><td>Cleveland Scholars</td><td class="num">6.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Chipola College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">College of Central Florida (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Colorado School of Mines (CO)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Columbia (NY)</td><td>AAU</td><td>Not in the Index yet</td><td>M.A. Sustainability &amp; Education</td><td class="num">8.0</td><td>Supply</td></tr>
+<tr><td class="nm">Cornell (NY)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Cornell Tech K-12 CS and AI</td><td class="num">9.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Dartmouth (NH)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Teacher certification program</td><td class="num">2.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Daytona State College (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Drexel (PA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
+<tr><td class="nm">Duke University (NC)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>TeachHouse</td><td class="num">9.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Eastern Florida State College (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Elon (NC)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Emory (GA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>None found</td><td class="num">0.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Flagler College (FL)</td><td>Florida</td><td>Tier 2 · Names sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Florida A&amp;M (FL)</td><td>Most Innovative, Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Florida Atlantic University (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Florida Gateway College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Florida Gulf Coast University (FL)</td><td>Florida</td><td>Tier 2 · Names sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Florida International (FL)</td><td>Most Innovative, Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Florida Polytechnic University (FL)</td><td>Florida</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Florida SouthWestern State College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Florida State (FL)</td><td>Most Innovative, Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Florida State College at Jacksonville (FL)</td><td>Florida</td><td>Tier 2 · Names sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">George Mason (VA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
+<tr><td class="nm">George Washington (DC)</td><td>AAU</td><td>Not in the Index yet</td><td>CASJE Jewish education research</td><td class="num">9.0</td><td>Supply</td></tr>
+<tr><td class="nm">Georgetown (DC)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Georgia State (GA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
+<tr><td class="nm">Georgia Tech (GA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>OMSCS online master's (~19,000 students)</td><td class="num">17.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Gulf Coast State College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Harvard (MA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>States Leading States</td><td class="num">13.5</td><td>Studies or debates it</td></tr>
+<tr><td class="nm">Hillsborough College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Howard (DC)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Unresolved, counted as none</td></tr>
+<tr><td class="nm">Illinois Urbana-Champaign (IL)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>iSAT partner</td><td class="num">7.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Indian River State College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Indiana University (IN)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>CEEP policy evaluation</td><td class="num">10.0</td><td>Compete</td></tr>
+<tr><td class="nm">James Madison (VA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
+<tr><td class="nm">Johns Hopkins (MD)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>National Research Center on Advanced Education</td><td class="num">13.0</td><td>Supply</td></tr>
+<tr><td class="nm">Lake-Sumter State College (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">MIT (MA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>RAISE (App Inventor, Day of AI)</td><td class="num">12.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Marquette (WI)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
+<tr><td class="nm">McGill (QC)</td><td>AAU</td><td>Not in the Index yet</td><td>In-community First Nations and Inuit teacher ed</td><td class="num">11.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Miami Dade College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Michigan State (MI)</td><td>AAU</td><td>Not in the Index yet</td><td>EPIC state partnership</td><td class="num">12.5</td><td>Fortify</td></tr>
+<tr><td class="nm">NYU (NY)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Research Alliance for NYC Schools</td><td class="num">11.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">New College of Florida (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">North Florida College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Northeastern (MA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Northwest Florida State College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Northwestern (IL)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Collaborative for Applied Research in Education</td><td class="num">11.5</td><td>Supply</td></tr>
+<tr><td class="nm">Notre Dame (IN)</td><td>AAU</td><td>Not in the Index yet</td><td>ACE Teaching Fellows</td><td class="num">12.5</td><td>Compete</td></tr>
+<tr><td class="nm">Nova Southeastern University (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Ohio State (OH)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Crane Center</td><td class="num">11.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Palm Beach Atlantic University (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Palm Beach State College (FL)</td><td>Florida</td><td>Tier 2 · Names sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Pasco-Hernando State College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Penn State (PA)</td><td>AAU</td><td>Not in the Index yet</td><td>Center for Education and Civil Rights</td><td class="num">7.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Pensacola State College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Polk State College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Princeton (NJ)</td><td>AAU</td><td>Not in the Index yet</td><td>QUEST teacher institute</td><td class="num">5.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Purdue University (IN)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Innovation Initiative curriculum</td><td class="num">7.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">RIT (NY)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
+<tr><td class="nm">Rensselaer Polytechnic (NY)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Rice University (TX)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>OpenStax</td><td class="num">15.0</td><td>Supply</td></tr>
+<tr><td class="nm">Rutgers (NJ)</td><td>AAU</td><td>Not in the Index yet</td><td>Apprenticeships at rural MSIs</td><td class="num">9.5</td><td>Compete</td></tr>
+<tr><td class="nm">Santa Clara (CA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Supply</td></tr>
+<tr><td class="nm">Santa Fe College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Seminole State College (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">South Florida State College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Southeastern University (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">St. Johns River State College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">St. Petersburg College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Stanford (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>AI teaching seed grants</td><td class="num">11.0</td><td>Compete</td></tr>
+<tr><td class="nm">State College of Florida, Manatee-Sarasota (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Stetson University (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Stevens (NJ)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Stony Brook (NY)</td><td>AAU</td><td>Not in the Index yet</td><td>Institute for STEM Education</td><td class="num">5.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Syracuse (NY)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Tallahassee State College (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Texas A&amp;M (TX)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Education Research Center</td><td class="num">10.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">The College of the Florida Keys (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">The New School (NY)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Trinity College of Florida (FL)</td><td>Florida</td><td>Tier 2 · Names sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Tufts (MA)</td><td>AAU</td><td>Not in the Index yet</td><td>CEEO engineering education</td><td class="num">9.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Tulane University (LA)</td><td>AAU</td><td>Not in the Index yet</td><td>ERA-New Orleans</td><td class="num">16.5</td><td>Studies or debates it</td></tr>
+<tr><td class="nm">UC Berkeley (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>21CSLA statewide leadership academy</td><td class="num">9.5</td><td>Compete</td></tr>
+<tr><td class="nm">UC Davis (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Wheelhouse CC leadership</td><td class="num">9.0</td><td>Unresolved, counted as none</td></tr>
+<tr><td class="nm">UC Irvine (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>PapyrusAI / WRITE AI Center</td><td class="num">12.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">UC Riverside (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>AI programs with CSUSB</td><td class="num">5.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">UC San Diego (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>CREATE STEM Success Initiative</td><td class="num">4.5</td><td>Compete</td></tr>
+<tr><td class="nm">UC Santa Barbara (CA)</td><td>AAU</td><td>Not in the Index yet</td><td>Community Fellows grow-your-own</td><td class="num">8.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">UC Santa Cruz (CA)</td><td>AAU</td><td>Not in the Index yet</td><td>Teacher residencies</td><td class="num">8.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">UCF (FL)</td><td>Most Innovative, Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Fortify</td></tr>
+<tr><td class="nm">UCLA (CA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Center X IMPACT residencies</td><td class="num">8.5</td><td>Compete</td></tr>
+<tr><td class="nm">UMBC (MD)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">UMass Amherst (MA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">UNC Chapel Hill (NC)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Carolina Community Academy lab school</td><td class="num">9.0</td><td>Compete</td></tr>
+<tr><td class="nm">USC (CA)</td><td>AAU</td><td>Not in the Index yet</td><td>Pullias college advising</td><td class="num">11.0</td><td>Compete</td></tr>
+<tr><td class="nm">UT Austin (TX)</td><td>AAU, Most Innovative</td><td>Tier 1 · Built for sector</td><td>Statewide reading academies</td><td class="num">11.5</td><td>Compete</td></tr>
+<tr><td class="nm">UT San Antonio (TX)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University at Buffalo (NY)</td><td>AAU</td><td>Not in the Index yet</td><td>University-assisted community school</td><td class="num">9.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University of Arizona (AZ)</td><td>AAU, Most Innovative</td><td>Tier 3 · Incidental</td><td>Indigenous Teacher Education Program</td><td class="num">9.5</td><td>Fortify</td></tr>
+<tr><td class="nm">University of Chicago (IL)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Education Lab tutoring RCTs</td><td class="num">15.5</td><td>Fortify</td></tr>
+<tr><td class="nm">University of Colorado Boulder (CO)</td><td>AAU</td><td>Not in the Index yet</td><td>iSAT student-AI teaming</td><td class="num">15.0</td><td>Studies or debates it</td></tr>
+<tr><td class="nm">University of Florida (FL)</td><td>AAU, Most Innovative, Florida</td><td>Tier 0 · Nothing found</td><td>New Worlds Reading (Lastinger)</td><td class="num">15.5</td><td>Fortify</td></tr>
+<tr><td class="nm">University of Houston (TX)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Compete</td></tr>
+<tr><td class="nm">University of Iowa (IA)</td><td>AAU</td><td>Tier 0 · Nothing found</td><td>Iowa Testing Programs</td><td class="num">11.5</td><td>Supply</td></tr>
+<tr><td class="nm">University of Kansas (KS)</td><td>AAU</td><td>Not in the Index yet</td><td>Dynamic Learning Maps</td><td class="num">15.0</td><td>Supply</td></tr>
+<tr><td class="nm">University of Maryland (MD)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>USM alternative teacher prep</td><td class="num">8.0</td><td>Compete</td></tr>
+<tr><td class="nm">University of Miami (FL)</td><td>AAU, Florida</td><td>Tier 0 · Nothing found</td><td>Sports-tech master's</td><td class="num">6.5</td><td>Unresolved, counted as none</td></tr>
+<tr><td class="nm">University of Michigan (MI)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>TeachingWorks</td><td class="num">14.5</td><td>Fortify</td></tr>
+<tr><td class="nm">University of Minnesota (MN)</td><td>AAU</td><td>Not in the Index yet</td><td>Institute of Child Development</td><td class="num">10.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University of Missouri (MO)</td><td>AAU</td><td>Not in the Index yet</td><td>Mizzou Academy online K-12 school</td><td class="num">12.0</td><td>Compete</td></tr>
+<tr><td class="nm">University of North Florida (FL)</td><td>Florida</td><td>Tier 3 · Incidental</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">University of Oregon (OR)</td><td>AAU</td><td>Not in the Index yet</td><td>Ballmer Institute child behavioral health (university-level)</td><td class="num">14.5</td><td>Supply</td></tr>
+<tr><td class="nm">University of Pennsylvania (PA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>Together for Good; online AI degree</td><td class="num">11.0</td><td>Supply</td></tr>
+<tr><td class="nm">University of Pittsburgh (PA)</td><td>AAU</td><td>Not in the Index yet</td><td>LRDC Institute for Learning</td><td class="num">8.0</td><td>Compete</td></tr>
+<tr><td class="nm">University of Rochester (NY)</td><td>AAU</td><td>Not in the Index yet</td><td>Intellectual-disability inclusion programs</td><td class="num">6.5</td><td>Fortify</td></tr>
+<tr><td class="nm">University of South Florida (FL)</td><td>AAU, Most Innovative, Florida</td><td>Tier 0 · Nothing found</td><td>CognetCon cognitive security</td><td class="num">8.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University of Tennessee (TN)</td><td>Most Innovative</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University of Toronto (OISE) (ON)</td><td>AAU</td><td>Not in the Index yet</td><td>Jackman Institute of Child Study</td><td class="num">7.5</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University of Utah (UT)</td><td>AAU, Most Innovative</td><td>Tier 0 · Nothing found</td><td>National prison education research center</td><td class="num">11.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University of Virginia (VA)</td><td>AAU</td><td>Not in the Index yet</td><td>Statewide early childhood curriculum</td><td class="num">10.5</td><td>Fortify</td></tr>
+<tr><td class="nm">University of Washington (WA)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>District Leadership Design Lab</td><td class="num">9.0</td><td>Searched, none found</td></tr>
+<tr><td class="nm">University of West Florida (FL)</td><td>Florida</td><td>Tier 1 · Built for sector</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">University of Wisconsin–Madison (WI)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>WIDA (WCER)</td><td class="num">10.5</td><td>Supply</td></tr>
+<tr><td class="nm">Valencia College (FL)</td><td>Florida</td><td>Tier 0 · Nothing found</td><td>Not yet scored</td><td class="num">—</td><td>Not yet coded</td></tr>
+<tr><td class="nm">Vanderbilt (TN)</td><td>AAU, Most Innovative</td><td>Tier 1 · Built for sector</td><td>IRIS Center</td><td class="num">9.0</td><td>Supply</td></tr>
+<tr><td class="nm">Virginia Tech (VA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Washington University in St. Louis (MO)</td><td>AAU</td><td>Not in the Index yet</td><td>Institute for School Partnership</td><td class="num">7.5</td><td>Compete</td></tr>
+<tr><td class="nm">Worcester Polytechnic (MA)</td><td>Most Innovative</td><td>Not in the Index yet</td><td>Not yet scored</td><td class="num">—</td><td>Searched, none found</td></tr>
+<tr><td class="nm">Yale (CT)</td><td>AAU, Most Innovative</td><td>Not in the Index yet</td><td>RULER</td><td class="num">14.5</td><td>Searched, none found</td></tr>
 <!-- SNAPSHOT:END --></tbody>
   </table></div>
   <button class="chip" id="more" type="button" style="margin-top:12px" hidden>Show all</button>
@@ -211,7 +251,7 @@
     <a href="/universities/">Universities</a><a href="/research/">Preparation Index</a><a href="/teacher-prep/">Teacher prep in Florida</a><a href="/leaders/">Leaders</a><a href="/atlas/">Atlas</a>
   </div>
   <div><div class="fh">The comparison and the record</div>
-    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/about/">About</a>
+    <a href="/districts/">Districts</a><a href="/notes/">Field Notes</a><a href="/navigator/">Navigator</a><a href="/method/">Method &amp; data</a><a href="/method/#corrections">Corrections</a><a href="/about/">About</a>
   </div>
 </div></div></footer>
 <script src="/assets/wmfc.js"></script>
@@ -223,12 +263,28 @@ W.countUp(document.getElementById("ledger"));
 var DIR=["compete","supply","fortify","evidence","none"];
 var LAB={compete:"Compete",supply:"Supply",fortify:"Fortify",evidence:"Studies or debates it",none:"Searched, none found"};
 var COL={compete:"var(--ox)",supply:"var(--ox2)",fortify:"var(--ink3)",evidence:"var(--ox3)",none:"transparent"};
-var LISTS=[["all","All 102"],["florida","Florida (7)"],["aau","AAU"],["innovative","Most Innovative"]];
+var LISTS=[["all","All"],["florida","Florida"],["aau","AAU"],["innovative","Most Innovative"]];
+var SYS={SUS:"State University System",FCS:"Florida College System",private:"Private college"};
+var ENG={authorizes:"Authorizes schools",operates:"Operates a school",program:"Preparation program",other:"Other offering"};
+var ST={AL:"Alabama",AZ:"Arizona",CA:"California",CO:"Colorado",CT:"Connecticut",DC:"District of Columbia",DE:"Delaware",FL:"Florida",GA:"Georgia",IA:"Iowa",IL:"Illinois",IN:"Indiana",KS:"Kansas",LA:"Louisiana",MA:"Massachusetts",MD:"Maryland",MI:"Michigan",MN:"Minnesota",MO:"Missouri",NC:"North Carolina",NJ:"New Jersey",NY:"New York",OH:"Ohio",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",TN:"Tennessee",TX:"Texas",UT:"Utah",VA:"Virginia",WA:"Washington",WI:"Wisconsin",ON:"Ontario",QC:"Quebec"};
+function nk(s){return plain(s).toLowerCase().replace(/^the |,? of florida$/g,"").replace(/[^a-z]/g,"");}
+function plain(s){var d=document.createElement("textarea");d.innerHTML=String(s||"").replace(/<[^>]+>/g,"");return d.value;}
 var TAG={florida:'<span class="tag fl">Florida</span>',aau:'<span class="tag">AAU</span>',innovative:'<span class="tag">Innovative</span>'};
 var LIST=(new URLSearchParams(location.search).get("list"))||"all";
 if(!LISTS.some(function(l){return l[0]===LIST;}))LIST="all";
-W.json("/data/universities-2026.json").then(function(D){
-  var ALL=D.institutions;
+Promise.all([W.json("/data/universities-2026.json"),W.json("/data/scan-2026.json").catch(function(){return null;}),W.json("/data/prep-census-2026.json").catch(function(){return null;})]).then(function(res){
+  var D=res[0],S=res[1],C=res[2];
+  /* ALL = the 102 coded universities: every chart and headline number reads only these.
+     EVERY = ALL plus each Florida institution in the Preparation Index, for search. Tiers live once, in scan-2026.json. */
+  var ALL=D.institutions,IDX={},CAT=S?S.categories:{},linked={};
+  if(S)S.institutions.forEach(function(r){IDX[r.name]=r;});
+  var EVERY=ALL.map(function(r){var x=Object.assign({},r);x.idx=r.index?IDX[r.index]||null:null;if(r.index)linked[r.index]=1;x.abbr=x.idx&&x.idx.abbr||[];return x;});
+  if(S)S.institutions.forEach(function(r){if(r.state!=="Florida"||linked[r.name]||r.scope==="aggregate")return;
+    EVERY.push({name:plain(r.name),state:"FL",sector:r.system==="private"?"private":"public",unit:SYS[r.system]||"",lists:["florida"],initiatives:[],portfolio:null,scored:false,direction:null,lenses:[],evidence_state:"not_coded",idx:r,abbr:r.abbr||[]});});
+  var seen={};EVERY.forEach(function(x){seen[nk(x.name)]=1;if(x.idx)seen[nk(x.idx.name)]=1;});
+  if(C)C.institutions.forEach(function(r){if(seen[nk(r.name)])return;
+    EVERY.push({name:r.name,state:"FL",sector:"public",unit:SYS[r.sys]||"",lists:["florida"],initiatives:[],portfolio:null,scored:false,direction:null,lenses:[],evidence_state:"not_coded",idx:null,census:{label:C.codes[r.code]?C.codes[r.code].label:r.code,url:r.url,checked:r.checked||r.searched||""},abbr:[]});});
+  EVERY.forEach(function(r){r._t=r.idx?+r.idx.tier.replace(/\D/g,""):9;if(r._t===0)r._t=4;});
   /* ledger: every headline number is computed from the dataset; the HTML ships the same values as a fallback */
   var UV={total:ALL.length,respond:ALL.filter(function(r){return r.direction!=="none";}).length,compete:ALL.filter(function(r){return r.direction==="compete";}).length};
   Array.prototype.forEach.call(document.querySelectorAll("[data-u]"),function(e){var v=UV[e.dataset.u];if(v==null)return;e.dataset.n=v;e.textContent=v;});
@@ -253,7 +309,7 @@ W.json("/data/universities-2026.json").then(function(D){
   W.figTools(document.getElementById("fig-lists"),{title:"Three lists, one answer: how universities respond to portable K–12 funding",cols:["List","Response","Universities","Names"],rows:rows,file:"wmfc-three-lists"});
 
   /* list chips drive sections 02–04 */
-  W.chips(document.getElementById("lchips"),LISTS.map(function(l){return {key:l[0],label:l[1],n:ALL.filter(function(r){return l[0]==="all"||r.lists.indexOf(l[0])>-1;}).length};}),function(k){LIST=k;try{history.replaceState(null,"",k==="all"?location.pathname:"?list="+k);}catch(e){}drawAll();});
+  W.chips(document.getElementById("lchips"),LISTS.map(function(l){return {key:l[0],label:l[1],n:EVERY.filter(function(r){return l[0]==="all"||r.lists.indexOf(l[0])>-1;}).length};}),function(k){LIST=k;try{history.replaceState(null,"",k==="all"?location.pathname:"?list="+k);}catch(e){}drawAll();});
   Array.prototype.forEach.call(document.querySelectorAll("#lchips .chip"),function(c){c.setAttribute("aria-pressed",String(c.dataset.k===LIST));});
 
   var svg=document.getElementById("strip"),ns="http://www.w3.org/2000/svg";
@@ -304,33 +360,48 @@ W.json("/data/universities-2026.json").then(function(D){
 
   var more=document.getElementById("more"),full=false;more.addEventListener("click",function(){full=true;drawTable();});
   var tb=document.getElementById("tb"),q=document.getElementById("q"),cntEl=document.getElementById("cnt"),filt="all",sortK="portfolio",asc=false;
-  var counts={};ALL.forEach(function(r){counts[r.direction]=(counts[r.direction]||0)+1;});
-  W.chips(document.getElementById("chips"),[{key:"all",label:"All responses",n:ALL.length}].concat(DIR.map(function(d){return {key:d,label:LAB[d],n:counts[d]||0,sw:"d-"+d};})),function(k){filt=k;drawTable();});
+  var counts={};EVERY.forEach(function(r){var k=r.direction||"uncoded";counts[k]=(counts[k]||0)+1;});
+  W.chips(document.getElementById("chips"),[{key:"all",label:"All responses",n:EVERY.length}].concat(DIR.map(function(d){return {key:d,label:LAB[d],n:counts[d]||0,sw:"d-"+d};})).concat([{key:"uncoded",label:"Not yet coded",n:counts.uncoded||0}]),function(k){filt=k;drawTable();});
   q.addEventListener("input",drawTable);
   var q0=new URLSearchParams(location.search).get("q");if(q0){q.value=q0.slice(0,80);}
   Array.prototype.forEach.call(document.querySelectorAll("#tbl th[data-sort]"),function(th){th.addEventListener("click",function(){var k=th.dataset.sort;asc=sortK===k?!asc:(k!=="portfolio");sortK=k;drawTable();});});
+  function tierCell(r){
+    if(r.idx){var c=CAT[r.idx.tier]||{},k=r.idx.tier.replace(/\D/g,"");return '<span class="pill"><span class="sw t'+k+'"></span>'+esc(r.idx.tier+" · "+(c.label||""))+"</span>";}
+    return '<i style="color:var(--ink3)">Not in the Index yet</i>';
+  }
+  function indexBlock(r){
+    if(r.census)return '<b>Preparation Index:</b> not yet coded. The Florida teacher-preparation census records: '+esc(r.census.label)+". "+W.link(r.census.url,"Source")+(r.census.checked?" <span style=\"color:var(--ink3)\">(read "+esc(r.census.checked)+")</span>":"")+"<br>";
+    if(!r.idx)return '<b>Preparation Index:</b> not yet coded for this institution.<br>';
+    var x=r.idx,c=CAT[x.tier]||{},eng=x.engagement||[];
+    var moves=eng.filter(function(e){return e==="authorizes"||e==="operates";}).map(function(e){return ENG[e];});
+    var progs=eng.filter(function(e){return e==="program"||e==="other";}).map(function(e){return ENG[e];});
+    return '<b>Preparation Index: '+esc(x.tier+" · "+(c.label||""))+".</b> "+esc(plain(x.evidence))+" "+(x.source?W.link(x.source,"Source"):"")+' <span style="color:var(--ink3)">(read '+esc(x.checked)+")</span>"
+      +(x.tier==="Tier 0"?'<br><span style="color:var(--ink3)">Nothing found is absence of evidence, not evidence of absence.</span>':"")
+      +(moves.length?"<br><b>Operating or authorizing moves:</b> "+esc(moves.join(" · ")):"")
+      +(progs.length?"<br><b>Programs:</b> "+esc(progs.join(" · ")):"")+'<div style="height:10px"></div>';
+  }
   function drawTable(){
     var t=q.value.trim().toLowerCase();
-    var rows=ALL.filter(function(r){return inList(r)&&(filt==="all"||r.direction===filt)&&(!t||(r.name+" "+r.state+" "+(r.notable||"")+" "+r.unit).toLowerCase().indexOf(t)>-1);});
-    rows.sort(function(a,b){var x=a[sortK],y=b[sortK];if(sortK==="direction"){x=DIR.indexOf(x);y=DIR.indexOf(y);}if(sortK==="portfolio"){x=x==null?-1:x;y=y==null?-1:y;}var c=x<y?-1:x>y?1:0;return asc?c:-c;});
+    var rows=EVERY.filter(function(r){return inList(r)&&(filt==="all"||(r.direction||"uncoded")===filt)&&(!t||(" "+r.name+" "+r.state+" "+(ST[r.state]||"")+" "+(r.notable||"")+" "+r.unit+" "+r.abbr.join(" ")+" "+(r.index||"")).toLowerCase().indexOf(t)>-1);});
+    rows.sort(function(a,b){var x=a[sortK],y=b[sortK];if(sortK==="direction"){x=DIR.indexOf(x);y=DIR.indexOf(y);}if(sortK==="portfolio"){x=x==null?-1:x;y=y==null?-1:y;}var c=x<y?-1:x>y?1:0;if(!c)c=a.name<b.name?-1:1;return asc?c:-c;});
     Array.prototype.forEach.call(document.querySelectorAll("#tbl th[data-sort]"),function(th){th.setAttribute("aria-sort",th.dataset.sort===sortK?(asc?"ascending":"descending"):"none");});
-    cntEl.textContent=rows.length+" of "+ALL.length;
+    cntEl.textContent=rows.length+" of "+EVERY.length;
     var h="",capped=!full&&rows.length>20;more.hidden=!capped;more.textContent="Show all "+rows.length;
     (capped?rows.slice(0,20):rows).forEach(function(r){
       var top=r.initiatives[0];
-      h+='<tr class="ex"><td class="nm">'+esc(r.name)+'<div style="font-weight:400;font-size:12.5px;color:var(--ink3)">'+esc(r.state)+" · "+esc(r.unit)+'</div></td><td>'+r.lists.map(function(l){return TAG[l];}).join("")+(r.innov_rank?'<div style="font-size:12px;color:var(--ink3);margin-top:3px">Innovative No. '+esc(r.innov_rank)+'</div>':"")+'</td><td>'+(top?esc(top.name):r.scored?"<i>None found</i>":'<i style="color:var(--ink3)">Not yet scored</i>')+'</td><td class="num">'+(r.portfolio!=null?'<span class="mini" style="width:'+Math.round(r.portfolio*4)+'px"></span>'+r.portfolio.toFixed(1):"—")+'</td><td><span class="pill"><span class="sw d-'+r.direction+'"></span>'+esc(r.evidence_state==="unresolved"?"Unresolved, counted as none":LAB[r.direction])+'</span></td></tr>';
+      h+='<tr class="ex"><td class="nm">'+esc(r.name)+'<div style="font-weight:400;font-size:12.5px;color:var(--ink3)">'+esc(r.state)+" · "+esc(r.unit)+'</div></td><td>'+r.lists.map(function(l){return TAG[l];}).join("")+(r.innov_rank?'<div style="font-size:12px;color:var(--ink3);margin-top:3px">Innovative No. '+esc(r.innov_rank)+'</div>':"")+'</td><td>'+tierCell(r)+'</td><td>'+(top?esc(top.name):r.scored?"<i>None found</i>":'<i style="color:var(--ink3)">Not yet scored</i>')+'</td><td class="num">'+(r.portfolio!=null?'<span class="mini" style="width:'+Math.round(r.portfolio*4)+'px"></span>'+r.portfolio.toFixed(1):"—")+'</td><td>'+(r.direction?'<span class="pill"><span class="sw d-'+r.direction+'"></span>'+esc(r.evidence_state==="unresolved"?"Unresolved, counted as none":LAB[r.direction])+'</span>':'<i style="color:var(--ink3)">Not yet coded</i>')+'</td></tr>';
       var ini=r.initiatives.map(function(i){return "<li>"+esc(i.name)+" — <b>"+i.score+"</b> <span style=\"color:var(--ink3)\">(scale "+i.scale+", evidence "+i.evidence+", novelty "+i.novelty+")</span></li>";}).join("")||(r.scored?"<li>None found</li>":"<li>Not yet scored</li>");
-      h+='<tr class="dt" hidden><td colspan="5"><b>Initiatives scored</b><ul style="margin:6px 0 10px;padding-left:18px">'+ini+'</ul>'+(r.notable?(r.notable_url?"<b>Notable:</b> "+W.link(r.notable_url,r.notable)+"<br>":"<b>Notable:</b> "+esc(r.notable)+"<br>"):"")+(r.response?'<b>Response to portable funding:</b> '+esc(r.response)+" "+(r.response_url?W.link(r.response_url,"Source"):"")+(r.response2?" "+esc(r.response2)+" "+(r.response2_url?W.link(r.response2_url,"Source"):""):""):(r.evidence_state==="unresolved"?'<b>Response to portable funding:</b> unresolved. Searched twice; Correction 04 left open questions, so this row counts as none found until re-checked.':'<b>Response to portable funding:</b> searched in two passes, none found.'))+'</td></tr>';
+      h+='<tr class="dt" hidden><td colspan="6">'+indexBlock(r)+(r.direction==null?'<b>Direction of response:</b> not yet coded. This institution is searchable because it is in Florida; its direction of response and the four lenses have not been read yet. That is a gap in this record, not a finding.':'<b>Initiatives scored</b><ul style="margin:6px 0 10px;padding-left:18px">'+ini+'</ul>'+(r.notable?(r.notable_url?"<b>Notable:</b> "+W.link(r.notable_url,r.notable)+"<br>":"<b>Notable:</b> "+esc(r.notable)+"<br>"):"")+(r.response?'<b>Response to portable funding:</b> '+esc(r.response)+" "+(r.response_url?W.link(r.response_url,"Source"):"")+(r.response2?" "+esc(r.response2)+" "+(r.response2_url?W.link(r.response2_url,"Source"):""):""):(r.evidence_state==="unresolved"?'<b>Response to portable funding:</b> unresolved. Searched twice; Correction 04 left open questions, so this row counts as none found until re-checked.':'<b>Response to portable funding:</b> searched in two passes, none found.')))+'</td></tr>';
     });
-    tb.innerHTML=h||'<tr><td colspan="5">No universities match.</td></tr>';
+    tb.innerHTML=h||'<tr><td colspan="6">No institutions match.</td></tr>';
     W.wireRows(tb);
   }
   function drawAll(){drawStrip();drawMatrix();drawTable();}
   drawAll();
   if(q0){var tbl=document.getElementById("tbl");if(tbl)tbl.scrollIntoView({block:"start"});}
   document.getElementById("csv").addEventListener("click",function(e){e.preventDefault();
-    W.csv(ALL.map(function(r){return {name:r.name,state:r.state,lists:r.lists.join(" "),innovative_rank:r.innov_rank||"",sector:r.sector,unit:r.unit,initiative_1:r.initiatives[0]?r.initiatives[0].name:"",score_1:r.initiatives[0]?r.initiatives[0].score:"",initiative_2:r.initiatives[1]?r.initiatives[1].name:"",score_2:r.initiatives[1]?r.initiatives[1].score:"",portfolio:r.portfolio==null?"":r.portfolio,direction:r.direction,lenses:r.lenses.join(" "),response:r.response||"",source:r.response_url||r.notable_url||""};}),["name","state","lists","innovative_rank","sector","unit","initiative_1","score_1","initiative_2","score_2","portfolio","direction","lenses","response","source"],"wmfc-universities-2026.csv");});
-}).catch(function(){document.getElementById("tb").innerHTML='<tr><td colspan="5">Could not load the dataset.</td></tr>';});
+    W.csv(EVERY.map(function(r){return {name:r.name,state:r.state,lists:r.lists.join(" "),prep_index_tier:r.idx?r.idx.tier:"",prep_index_engagement:r.idx?(r.idx.engagement||[]).join(" "):"",prep_index_source:r.idx?r.idx.source||"":"",prep_index_checked:r.idx?r.idx.checked||"":"",innovative_rank:r.innov_rank||"",sector:r.sector,unit:r.unit,initiative_1:r.initiatives[0]?r.initiatives[0].name:"",score_1:r.initiatives[0]?r.initiatives[0].score:"",initiative_2:r.initiatives[1]?r.initiatives[1].name:"",score_2:r.initiatives[1]?r.initiatives[1].score:"",portfolio:r.portfolio==null?"":r.portfolio,direction:r.direction||"not yet coded",lenses:r.lenses.join(" "),response:r.response||"",source:r.response_url||r.notable_url||""};}),["name","state","lists","prep_index_tier","prep_index_engagement","prep_index_source","prep_index_checked","innovative_rank","sector","unit","initiative_1","score_1","initiative_2","score_2","portfolio","direction","lenses","response","source"],"wmfc-universities-2026.csv");});
+}).catch(function(){document.getElementById("tb").innerHTML='<tr><td colspan="6">Could not load the dataset.</td></tr>';});
 })();
 </script>
 </body>

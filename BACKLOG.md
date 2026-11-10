@@ -13,15 +13,16 @@ Before any handoff: `python3 tools/check.py` must exit clean.
 
 ## Where the research stands
 
-*Last updated: 26 August 2026*
+*Last updated: 10 November 2026*
 
 | | Coverage |
 |---|---|
-| **Preparation Index** | 43 rows · 9 states · 11 Tier 1, 9 Tier 2, 11 Tier 3, 12 Tier 0 · every row carries `engagement` |
-| **Index coverage depth** | 2 systematic passes (Florida, Michigan) · 2 partial (Ohio, Arizona) · 5 placeholders |
-| **Portable-Funding Atlas** | 175 countries · 29 coded, 12 shortlisted, 134 not yet coded |
-| **Field Notes** | 09 published |
-| **Corrections** | 02 published, both on the front page |
+| **Preparation Index** | 87 rows · 15 states · 26 Tier 1, 11 Tier 2, 20 Tier 3, 30 Tier 0 · 5 aggregate rows · every row carries `engagement` |
+| **Index coverage depth** | 1 complete (Michigan) · 10 partial, Florida included · 4 placeholders (Indiana, West Virginia, California, New York) |
+| **University search** | 142 searchable: 102 coded universities + 39 Florida Index rows + Florida Polytechnic · 40 Florida rows have no direction of response yet |
+| **Portable-Funding Atlas** | 175 countries · 152 coded, 23 shortlisted, 0 not yet coded |
+| **Field Notes** | 18 published |
+| **Corrections** | through 08 |
 
 Index coverage is uneven and the site now says so on the page. `scan-2026.json` carries a
 `coverage` block declaring each state's depth — systematic pass, partial pass, or
@@ -87,6 +88,29 @@ for the comparison and currently rest on a single institution each.
 **Standing rule from Correction 02:** before coding any institution Tier 0, check the
 state's official charter sponsor/authorizer registry. A program roster cannot tell you
 what a board of trustees has authorized. This is how we got one wrong.
+
+### University search — Florida joined to the Preparation Index (10 Nov 2026)
+
+The Universities page now searches all 142: the 102 coded universities plus every Florida
+institution in the Preparation Index. Tiers are not copied. `universities-2026.json` rows carry
+`index` (the exact `scan-2026.json` name) and the page joins at load; Florida rows come straight
+from `scan-2026.json`, which now carries `system` (SUS / FCS / private) and `abbr` for search.
+Florida Polytechnic comes from `prep-census-2026.json` (no teacher preparation found) and has no
+Index tier. Charts and headline numbers still read only the 102 coded rows.
+
+Open, in order:
+1. **Direction of response for 40 Florida rows** (39 Index rows + Florida Polytechnic). The search
+   says "Not yet coded" for each. Code direction and the four lenses with the same two-pass method
+   as the national scan. Do not derive direction from tier: running a charter school is not the
+   same as taking portable funds.
+2. **Florida private colleges beyond the seven in the Index.** The instructions say every Florida
+   institution is searchable at launch. Only seven privates are in. Source the full list
+   (e.g. ICUF membership, IPEDS) before adding rows.
+3. **Check dates on national rows.** No `universities-2026.json` row carries a `checked` date,
+   and the instructions require one on every claim. Add dates only from real reads; never
+   backfill from the edition date.
+4. **Tier 0 to Correction 02 standard for the AAU / Most Innovative rows not in the Index.**
+   They show "Not in the Index yet" until coded state by state.
 
 ### University scan — open leads after Correction 04 (28 Oct 2026)
 

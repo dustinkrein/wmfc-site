@@ -191,7 +191,8 @@
    "innov_rank": "16",
    "scored": true,
    "since": 2025,
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "University of Florida"
   },
   {
    "name": "Arizona State",
@@ -237,7 +238,8 @@
    "response_checked": "2026-10-27",
    "since": 2017,
    "status": "Expanding",
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "Arizona State University"
   },
   {
    "name": "University of Kansas",
@@ -850,7 +852,8 @@
    "recoded": "2026-10-28: was 'none' in the first pass",
    "response2": "UT High School is an approved vendor in Texas's new Education Freedom Accounts program (2026–27).",
    "response2_url": "https://finder.educationfreedom.texas.gov/",
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "University of Texas at Austin"
   },
   {
    "name": "University of Iowa",
@@ -889,7 +892,8 @@
    ],
    "scored": true,
    "since": 1988,
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "University of Iowa"
   },
   {
    "name": "NYU",
@@ -1156,7 +1160,8 @@
    ],
    "innov_rank": "42",
    "scored": true,
-   "evidence_state": "searched"
+   "evidence_state": "searched",
+   "index": "University of Utah"
   },
   {
    "name": "University of Pennsylvania",
@@ -1538,7 +1543,8 @@
    "response_checked": "2026-10-28",
    "since": 2020,
    "recoded": "2026-10-28: was 'none' in the first pass",
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "University of Arizona"
   },
   {
    "name": "Rutgers",
@@ -1848,7 +1854,8 @@
    ],
    "innov_rank": "14",
    "scored": true,
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "Vanderbilt University"
   },
   {
    "name": "University of Washington",
@@ -2119,7 +2126,8 @@
    ],
    "innov_rank": "50",
    "scored": true,
-   "evidence_state": "searched"
+   "evidence_state": "searched",
+   "index": "University of South Florida"
   },
   {
    "name": "UC Santa Cruz",
@@ -2416,7 +2424,8 @@
     "florida"
    ],
    "scored": true,
-   "evidence_state": "unresolved"
+   "evidence_state": "unresolved",
+   "index": "University of Miami"
   },
   {
    "name": "University of Rochester",
@@ -2761,7 +2770,8 @@
    "innov_rank": "12",
    "scored": false,
    "since": 2014,
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "University of Central Florida"
   },
   {
    "name": "Florida State",
@@ -2783,7 +2793,8 @@
    ],
    "innov_rank": "26",
    "scored": false,
-   "evidence_state": "searched"
+   "evidence_state": "searched",
+   "index": "Florida State University"
   },
   {
    "name": "Stevens",
@@ -2920,7 +2931,8 @@
    "innov_rank": "42",
    "scored": false,
    "since": 2024,
-   "evidence_state": "documented"
+   "evidence_state": "documented",
+   "index": "Auburn University"
   },
   {
    "name": "James Madison",
@@ -3092,7 +3104,8 @@
    ],
    "innov_rank": "42",
    "scored": false,
-   "evidence_state": "searched"
+   "evidence_state": "searched",
+   "index": "Florida International University"
   },
   {
    "name": "Georgetown",
@@ -3134,7 +3147,8 @@
    ],
    "innov_rank": "42",
    "scored": false,
-   "evidence_state": "searched"
+   "evidence_state": "searched",
+   "index": "University of Tennessee, Knoxville"
   },
   {
    "name": "Boston College",
@@ -3201,7 +3215,8 @@
    ],
    "innov_rank": "50",
    "scored": false,
-   "evidence_state": "searched"
+   "evidence_state": "searched",
+   "index": "Florida A&amp;M University"
   },
   {
    "name": "UMass Amherst",
@@ -3402,5 +3417,6 @@
    "recoded": "2026-10-28: was 'none' in the first pass",
    "evidence_state": "documented"
   }
- ]
+ ],
+ "note_index": "index: the exact name of this institution's row in scan-2026.json (the Preparation Index). The Universities page joins the two at load, so a tier is stored once."
 }
