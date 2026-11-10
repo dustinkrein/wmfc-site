@@ -29,7 +29,7 @@
 
 <div class="hero sm"><div class="w">
   <h1>Who is <span class="f">leading</span>?</h1>
-  <p class="lead2">The institutions, practitioners, districts and researchers whose response to portable funding is on the record. Each one links to its source.</p>
+  <p class="lead2">The institutions, practitioners, districts and researchers whose response to portable funding is on the record, and the policy organizations on every side whose research shapes it. Each one links to its source.</p>
   <div class="qline"><b>The question</b><span>When K–12 funding follows the student, how do colleges and universities respond? <span style="color:var(--ox)">And who is leading?</span></span></div>
   <figure class="arch" data-year="1899"><img src="/images/bw-microscopes-1899.jpg" alt="Science class, Western High School, Washington, D.C., 1899." loading="lazy" decoding="async" onerror="this.closest('figure').remove()"><div class="arch-ov"><div class="arch-top"><span class="arch-yr">1899</span><span class="arch-ago" data-ago="1899"></span></div><figcaption class="arch-then">Science class, Western High School, Washington, D.C., 1899.</figcaption><p class="arch-now"><b>Now</b>Almost no one is leading on the workforce: the educators who staff the new options.</p></div></figure>
 </div></div>
@@ -100,7 +100,7 @@ W.json("/data/leaders-2026.json").then(function(D){
   var g=document.getElementById("grid"),gd=document.getElementById("gd");
   var narrow=g.parentNode.clientWidth<640;
   function pick(l,b){Array.prototype.forEach.call(g.querySelectorAll(".chip"),function(x){x.setAttribute("aria-pressed","false");});b.setAttribute("aria-pressed","true");
-    gd.innerHTML="<b>"+esc(l.name)+"</b> · "+esc(l.org)+" ("+esc(l.state)+"). "+esc(l.what)+" "+W.link(l.url,"Source");}
+    gd.innerHTML="<b>"+esc(l.name)+"</b> · "+esc(l.org)+" ("+esc(l.state)+"). "+esc(l.what)+" "+W.link(l.url,"Source")+(l.checked?' <span style="color:var(--ink3)">(read '+esc(l.checked)+")</span>":"");}
   if(narrow){g.style.minWidth="0";
     DIR.forEach(function(d){var box=W.el("div","",'<div class="pill" style="margin-bottom:8px"><span class="sw d-'+d+'"></span>'+DL[d]+'</div>');box.style.cssText="padding:14px;border-bottom:1px solid var(--line)";
       var wrap=W.el("div","");wrap.style.cssText="display:flex;flex-wrap:wrap;gap:6px";
@@ -138,7 +138,7 @@ W.json("/data/leaders-2026.json").then(function(D){
     var col={compete:"var(--ox)",supply:"var(--ox2)",fortify:"var(--ink3)",evidence:"var(--ox3)"}[l.direction];
     var c=s("circle",{cx:X(l.year),cy:cy,r:sm?9:7,fill:col,stroke:"var(--card)","stroke-width":2,tabindex:0});c.style.cursor="pointer";
     var html="<b>"+l.year+" · "+esc(l.name)+"</b>"+esc(l.org);
-    function show(){td.innerHTML="<b>"+l.year+" · "+esc(l.name)+".</b> "+esc(l.what)+" "+W.link(l.url,"Source");}
+    function show(){td.innerHTML="<b>"+l.year+" · "+esc(l.name)+".</b> "+esc(l.what)+" "+W.link(l.url,"Source")+(l.checked?' <span style="color:var(--ink3)">(read '+esc(l.checked)+")</span>":"");}
     c.addEventListener("mousemove",function(e){W.tip(html,e);});c.addEventListener("mouseleave",function(){W.tip(null);});
     c.addEventListener("click",show);c.addEventListener("focus",show);
   });
@@ -149,7 +149,7 @@ W.json("/data/leaders-2026.json").then(function(D){
     Array.prototype.forEach.call(cards.children,function(c){c.hidden=k!=="all"&&c.dataset.t!==k;});
   });
   Lr.forEach(function(l){
-    var a=W.el("article","rc",'<div class="m"><span class="sw d-'+l.direction+'"></span>'+esc(D.types[l.type].replace(/s$/,""))+" · "+esc(l.state)+(l.year?" · since "+l.year:"")+'</div><h3>'+esc(l.name)+'</h3><p style="color:var(--ink);font-size:13.5px">'+esc(l.org)+'</p><p>'+esc(l.what)+'</p>'+W.link(l.url,"Source"));
+    var a=W.el("article","rc",'<div class="m"><span class="sw d-'+l.direction+'"></span>'+esc(D.types[l.type].replace(/s$/,""))+" · "+esc(l.state)+(l.year?" · since "+l.year:"")+'</div><h3>'+esc(l.name)+'</h3><p style="color:var(--ink);font-size:13.5px">'+esc(l.org)+'</p><p>'+esc(l.what)+'</p>'+W.link(l.url,"Source")+(l.checked?' <span style="color:var(--ink3)">(read '+esc(l.checked)+")</span>":""));
     a.dataset.t=l.type;cards.appendChild(a);
   });
 }).catch(function(){});

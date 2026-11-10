@@ -1,12 +1,13 @@
 {
  "edition": "Leaders, 2026",
  "updated": "2026-10-13",
- "note": "People and institutions doing the work of responding, not narrating it. Each entry has a source. 'year' is when the work began, where verified.",
+ "note": "People, institutions and organizations whose work on portable funding is on the record. Each entry has a source. 'year' is when the work began, where verified. Policy organizations (added 10 Nov 2026) appear for the research and model policy they publish, coded 'studies it' alike; inclusion records a role, not an endorsement.",
  "types": {
   "institution": "Institutions",
   "practitioner": "Practitioners",
   "district": "Districts",
-  "researcher": "Researchers"
+  "researcher": "Researchers",
+  "policy": "Policy organizations"
  },
  "leaders": [
   {
@@ -17,7 +18,8 @@
    "year": 2017,
    "direction": "compete",
    "what": "Runs university-owned K–12 schools and an online school that accepts Arizona ESA funds; expanding into Texas.",
-   "url": "https://asuprepdigital.org/blog/own-your-learning-with-asu-prep-digital-and-an-empowerment-scholarship-account"
+   "url": "https://asuprepdigital.org/blog/own-your-learning-with-asu-prep-digital-and-an-empowerment-scholarship-account",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
@@ -26,8 +28,9 @@
    "state": "IN · FL · AZ",
    "year": 2010,
    "direction": "compete",
-   "what": "Manages a network of Catholic K–8 schools, including in the Diocese of St. Petersburg, and staffs Catholic schools through ACE Teaching Fellows.",
-   "url": "https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school"
+   "what": "Runs Notre Dame ACE Academies, a network of Catholic K–8 schools that includes a school in the Diocese of St. Petersburg, and staffs Catholic schools through ACE Teaching Fellows.",
+   "url": "https://ace.nd.edu/news/notre-dame-ace-academies-welcomes-st-patrick-school",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
@@ -36,18 +39,20 @@
    "state": "FL",
    "year": 1997,
    "direction": "supply",
-   "what": "Hosts certification internships for 30+ partner institutions. Non-district clinical placement already works at scale.",
-   "url": "https://www.flvs.net/about-us/who-we-are/careers/internships"
+   "what": "Hosts teaching internships for students from 40 partner colleges and universities. Non-district clinical placement already works at scale.",
+   "url": "https://www.flvs.net/about-us/who-we-are/careers/internships",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
    "name": "University of Florida",
-   "org": "Lastinger Center for Learning",
+   "org": "College of Education",
    "state": "FL",
    "year": null,
-   "direction": "fortify",
-   "what": "Vetted and evaluated private tutoring vendors for the state's public-school tutoring program; runs statewide literacy programs.",
-   "url": "https://lastinger.ufl.edu/wp-content/uploads/2026/04/uf-lastinger-center-fta-pilot-spring-2025-aug-2025-remediated.pdf"
+   "direction": "compete",
+   "what": "Runs P.K. Yonge Developmental Research School, a public PreK–12 lab school whose teachers are university employees. UF Lastinger also vetted private tutoring vendors for the state's public-school tutoring program.",
+   "url": "https://pkyonge.ufl.edu/?p=2673",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
@@ -57,7 +62,8 @@
    "year": 2023,
    "direction": "compete",
    "what": "First Florida College System institution approved to authorize charter schools; founded Tallahassee Collegiate Academy.",
-   "url": "https://www.wctv.tv/2023/01/31/tcc-is-first-college-florida-approved-by-fdoe-charter-school-authorizer/"
+   "url": "https://www.wctv.tv/2023/01/31/tcc-is-first-college-florida-approved-by-fdoe-charter-school-authorizer/",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
@@ -67,7 +73,8 @@
    "year": null,
    "direction": "supply",
    "what": "The only preparation program built for the sector across all eight Michigan university charter authorizers.",
-   "url": "https://www.cmich.edu/academics/colleges/college-education-human-services/departments/counseling-educational-leadership-higher-education/educational-leadership-pk-12"
+   "url": "https://www.cmich.edu/academics/colleges/college-education-human-services/departments/counseling-educational-leadership-higher-education/educational-leadership-pk-12",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
@@ -76,8 +83,9 @@
    "state": "PA",
    "year": null,
    "direction": "supply",
-   "what": "A two-year residency placing fellows in 21 independent boarding and day schools.",
-   "url": "https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed"
+   "what": "A two-year residency placing fellows in independent schools; 19 boarding and day schools list openings for 2027–28.",
+   "url": "https://www.gse.upenn.edu/academics/independent-school-teaching-residency-msed",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
@@ -86,8 +94,9 @@
    "state": "AZ",
    "year": 2025,
    "direction": "supply",
-   "what": "9,700 dual-enrollment students; half its 408 associate degrees go to one charter network.",
-   "url": "https://www.riosalado.edu/news/2025/400-high-school-students-track-earn-college-degrees-rio-salado-celebrates-record-dual-enrollment"
+   "what": "About 9,700 dual-enrollment students; 200 of the 408 on track for associate degrees attend one charter network, Heritage Academy.",
+   "url": "https://www.riosalado.edu/news/2025/400-high-school-students-track-earn-college-degrees-rio-salado-celebrates-record-dual-enrollment",
+   "checked": "2026-11-10"
   },
   {
    "type": "institution",
@@ -97,7 +106,8 @@
    "year": 2014,
    "direction": "fortify",
    "what": "43 Community Partnership Schools inside existing public schools; state funding nearly doubled in 2024.",
-   "url": "https://www.ucf.edu/news/state-funding-increase-to-drive-growth-in-community-partnership-schools/"
+   "url": "https://www.ucf.edu/news/state-funding-increase-to-drive-growth-in-community-partnership-schools/",
+   "checked": "2026-11-10"
   },
   {
    "type": "practitioner",
@@ -107,7 +117,8 @@
    "year": 1997,
    "direction": "compete",
    "what": "Founded Florida Virtual School, then led ASU Prep. One career carried a portable model across two states.",
-   "url": "https://search.asu.edu/profile/3127527"
+   "url": "https://search.asu.edu/profile/3127527",
+   "checked": "2026-11-10"
   },
   {
    "type": "practitioner",
@@ -117,7 +128,8 @@
    "year": 2025,
    "direction": "compete",
    "what": "Opened a 26-student public microschool designed after visits to 40+ schools, including private microschools.",
-   "url": "https://www.edsurge.com/news/2025-09-22-at-this-rural-microschool-students-will-study-with-ai-and-run-an-airbnb"
+   "url": "https://www.edsurge.com/news/2025-09-22-at-this-rural-microschool-students-will-study-with-ai-and-run-an-airbnb",
+   "checked": "2026-11-10"
   },
   {
    "type": "district",
@@ -127,7 +139,8 @@
    "year": 2025,
    "direction": "compete",
    "what": "Bought a microschool model from a private operator founded by two former Polk teachers.",
-   "url": "https://fee.org/articles/why-one-school-district-is-launching-new-microschool-inspired-classrooms/"
+   "url": "https://fee.org/articles/why-one-school-district-is-launching-new-microschool-inspired-classrooms/",
+   "checked": "2026-11-10"
   },
   {
    "type": "district",
@@ -136,8 +149,9 @@
    "state": "FL",
    "year": 2026,
    "direction": "supply",
-   "what": "Opened 95+ classes to scholarship students it does not enroll.",
-   "url": "https://www.city-journal.org/article/florida-school-choice-education"
+   "what": "Opened more than 95 classes to students it does not enroll.",
+   "url": "https://www.city-journal.org/article/florida-school-choice-education",
+   "checked": "2026-11-10"
   },
   {
    "type": "district",
@@ -146,8 +160,9 @@
    "state": "CO",
    "year": 2026,
    "direction": "supply",
-   "what": "District-run part-time program for homeschoolers; Colorado funds about 18,700 such students.",
-   "url": "https://go.boarddocs.com/co/cde/Board.nsf/files/DQD82R1C3A03/$file/2026.01.13%20January%20Bd%20Mtg%20Part-Time%20Programs%20Presentation.pdf"
+   "what": "Runs a homeschool enrichment program with more than 700 students; about 30 of Colorado's 179 districts offer one.",
+   "url": "https://www.cpr.org/2026/04/16/possible-funding-cuts-stricter-rules-homeschool-erboces/",
+   "checked": "2026-11-10"
   },
   {
    "type": "district",
@@ -156,8 +171,9 @@
    "state": "IN",
    "year": 2025,
    "direction": "compete",
-   "what": "A district-led network of public microschools, targeting 10+ schools by 2030.",
-   "url": "https://hechingerreport.org/are-microschools-a-solution-to-falling-public-school-enrollment-one-district-thinks-so/"
+   "what": "A charter network of public microschools launched by a district superintendent, aiming for at least 10 more schools by 2030.",
+   "url": "https://hechingerreport.org/are-microschools-a-solution-to-falling-public-school-enrollment-one-district-thinks-so/",
+   "checked": "2026-11-10"
   },
   {
    "type": "researcher",
@@ -167,7 +183,8 @@
    "year": 2018,
    "direction": "evidence",
    "what": "Among the leaders of REACH, a $10M federally funded national center for research on school choice.",
-   "url": "https://news.tulane.edu/pr/tulane-university-awarded-10-million-grant-launch-national-school-choice-research-center"
+   "url": "https://news.tulane.edu/pr/tulane-university-awarded-10-million-grant-launch-national-school-choice-research-center",
+   "checked": "2026-11-10"
   },
   {
    "type": "researcher",
@@ -177,7 +194,8 @@
    "year": null,
    "direction": "evidence",
    "what": "Hosts Education Next's podcast, which covers ESAs and their effect on public schools.",
-   "url": "https://www.educationnext.org/education-exchange-impact-education-savings-accounts-in-arizona"
+   "url": "https://www.educationnext.org/education-exchange-impact-education-savings-accounts-in-arizona",
+   "checked": "2026-11-10"
   },
   {
    "type": "researcher",
@@ -186,8 +204,9 @@
    "state": "CO",
    "year": null,
    "direction": "evidence",
-   "what": "Directs NEPC, which publishes critical reviews of school-choice research.",
-   "url": "https://nepc.colorado.edu/publication/nepc-director"
+   "what": "Directs the National Education Policy Center (NEPC), which publishes third-party reviews of think-tank reports, including school-choice studies.",
+   "url": "https://nepc.colorado.edu/reviews",
+   "checked": "2026-11-10"
   },
   {
    "type": "researcher",
@@ -196,8 +215,9 @@
    "state": "IN",
    "year": null,
    "direction": "evidence",
-   "what": "Among the most cited critical scholars of school choice.",
-   "url": "https://education.indiana.edu/news/2026/jan-jun/2026-01-12-lubienski-ranks-among-most-influential-scholars.html"
+   "what": "Studies how schools respond to competition in local education markets; co-author of The Public School Advantage.",
+   "url": "https://education.indiana.edu/about/directory/profiles/lubienski-christopher.html",
+   "checked": "2026-11-10"
   },
   {
    "type": "researcher",
@@ -206,8 +226,130 @@
    "state": "MD",
    "year": null,
    "direction": "evidence",
-   "what": "Leads research on homeschooling, one of the fastest-growing sectors portable funds reach.",
-   "url": "https://education.jhu.edu/directory/angela-r-watson-phd"
+   "what": "Built the Homeschool Hub at Johns Hopkins; researches homeschool and informal learning options.",
+   "url": "https://education.jhu.edu/directory/angela-r-watson-phd",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "EdChoice",
+   "type": "policy",
+   "org": "Nonprofit research and advocacy organization",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Published The Supply Side of ESAs (2025), on how universal programs changed the number of private schools and home-education vendors.",
+   "url": "https://www.edchoice.org/the-growing-supply-side-of-school-choice/",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "ExcelinEd",
+   "type": "policy",
+   "org": "Policy organization",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Publishes model policies on the teacher pipeline, including teacher apprenticeships, educator supply-and-demand dashboards and state-approved “chartered teachers” who contract directly with families.",
+   "url": "https://excelined.org/?p=26347",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Cato Institute, Center for Educational Freedom",
+   "type": "policy",
+   "org": "Think tank research center",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Researches and argues for education choice; says education works best when learners and educators choose freely.",
+   "url": "https://www.cato.org/center-educational-freedom",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Center for Education Reform",
+   "type": "policy",
+   "org": "Advocacy organization",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Works on charter schools and other education choice; founded by Jeanne Allen.",
+   "url": "https://edreform.com/about/",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "National Education Association",
+   "type": "policy",
+   "org": "National teachers' union",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Opposes vouchers, arguing they move public school funding to private schools with less accountability.",
+   "url": "https://www.nea.org/resource-library/vouchers",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "American Federation of Teachers",
+   "type": "policy",
+   "org": "National teachers' union",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Adopted “Keep Public Funds for Public Schools: Oppose Vouchers” on 19 July 2026.",
+   "url": "https://www.aft.org/resolution/keep-public-funds-public-schools-oppose-vouchers",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Learning Policy Institute",
+   "type": "policy",
+   "org": "Nonprofit research organization",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Published a 2024 fiscal analysis of Arizona's universal ESA program, finding a $587.5 million cost in its first universal year.",
+   "url": "https://learningpolicyinstitute.org/product/understanding-cost-universal-vouchers-report",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "Network for Public Education",
+   "type": "policy",
+   "org": "Nonprofit advocacy organization",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Grades all 50 states and D.C. on support for public schools, including private choice programs and teaching conditions (2026 Report Card).",
+   "url": "https://networkforpubliceducation.org/new-report-gives-17-states-failing-grades-for-abandoning-public-schools/",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "AACTE",
+   "type": "policy",
+   "org": "American Association of Colleges for Teacher Education",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "The national association of colleges and universities that prepare teachers, counselors and school leaders: the institutions this site measures.",
+   "url": "https://aacte.org/about-aacte/",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "NCTQ",
+   "type": "policy",
+   "org": "National Council on Teacher Quality",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Reviews teacher preparation programs against published standards in its Teacher Prep Review.",
+   "url": "https://www.nctq.org/about",
+   "checked": "2026-11-10"
+  },
+  {
+   "name": "NACSA",
+   "type": "policy",
+   "org": "National Association of Charter School Authorizers",
+   "state": "National",
+   "direction": "evidence",
+   "year": null,
+   "what": "Works with charter school authorizers, the role several Florida colleges and universities now hold.",
+   "url": "https://qualitycharters.org/about/",
+   "checked": "2026-11-10"
   }
  ]
 }

@@ -89,6 +89,24 @@ for the comparison and currently rest on a single institution each.
 state's official charter sponsor/authorizer registry. A program roster cannot tell you
 what a board of trustees has authorized. This is how we got one wrong.
 
+### Leaders directory balanced; vocabulary cleanup (10 Nov 2026)
+
+`leaders-2026.json` now has 31 entries. Added a `policy` type with 11 organizations, chosen to
+balance the field and described by role and record: EdChoice, ExcelinEd, Cato CEF, Center for
+Education Reform, NEA, AFT, Learning Policy Institute, Network for Public Education, plus the
+field bodies closest to the main question (AACTE, NCTQ, NACSA). All are coded `evidence`
+("studies it") alike, so the grid never maps sides onto compete/fortify. Organizations, not
+their leaders, by decision: organizations outlast job changes. Every entry, old and new, was
+re-read on 10 Nov and carries `checked`; the page shows it. Fixed on re-read: FLVS (40 partner
+institutions, not 30+), Penn (19 schools listed, not 21), Rio Salado (200 of 408 *on track*),
+Notre Dame ("runs", not "manages"), Miami-Dade (classes open to non-enrolled students, not only
+scholarship students), Indiana Microschool Collaborative (charter network launched by a
+superintendent), St. Vrain (re-sourced; the CDE board PDF blocks automated reads), Welner,
+Lubienski and Watson (descriptions their sources did not support), UF (now compete, per
+Correction 09). These are wording fixes to a directory, not findings, so no correction was filed.
+Chile's "voucher scheme" is now "voucher program" (Atlas data and international brief);
+Punjab's "Education Voucher Scheme" is a program name and stays.
+
 ### University search — Florida joined to the Preparation Index (10 Nov 2026)
 
 The Universities page now searches all 142: the 102 coded universities plus every Florida
