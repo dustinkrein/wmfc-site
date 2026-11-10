@@ -439,7 +439,13 @@
    "url": "https://www.flbog.edu/universities/",
    "ev": "searched",
    "checked": null,
-   "searched": "2026-11-03"
+   "searched": "2026-11-03",
+   "direction": "none",
+   "lenses": [],
+   "response": "Dual enrollment and general STEM outreach only; no state-approved teacher preparation.",
+   "response_url": "https://floridapoly.edu/educational-outreach",
+   "response_checked": "2026-11-10",
+   "evidence_state": "searched"
   }
  ],
  "rule": {

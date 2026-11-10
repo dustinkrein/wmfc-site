@@ -65,12 +65,14 @@ def university_rows():
     for r in S["institutions"]:
         if r["state"] != "Florida" or r["name"] in linked or r.get("scope") == "aggregate":
             continue
-        rows.append((html.unescape(r["name"]), "FL", "Florida", tier(r), "Not yet scored", "—", "Not yet coded"))
+        rows.append((html.unescape(r["name"]), "FL", "Florida", tier(r), "Not yet scored", "—",
+                     lab[r["direction"]] if r.get("direction") else "Not yet coded"))
         seen.add(nk(r["name"]))
     for r in C["institutions"]:
         if nk(r["name"]) in seen:
             continue
-        rows.append((r["name"], "FL", "Florida", "Not in the Index yet", "Not yet scored", "—", "Not yet coded"))
+        rows.append((r["name"], "FL", "Florida", "Not in the Index yet", "Not yet scored", "—",
+                     lab[r["direction"]] if r.get("direction") else "Not yet coded"))
     out = []
     for name, st, ls, t, top, score, resp in sorted(rows, key=lambda x: x[0]):
         out.append('<tr><td class="nm">%s</td><td>%s</td><td>%s</td><td>%s</td><td class="num">%s</td><td>%s</td></tr>'

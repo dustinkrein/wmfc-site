@@ -99,10 +99,21 @@ Florida Polytechnic comes from `prep-census-2026.json` (no teacher preparation f
 Index tier. Charts and headline numbers still read only the 102 coded rows.
 
 Open, in order:
-1. **Direction of response for 40 Florida rows** (39 Index rows + Florida Polytechnic). The search
-   says "Not yet coded" for each. Code direction and the four lenses with the same two-pass method
-   as the national scan. Do not derive direction from tier: running a charter school is not the
-   same as taking portable funds.
+1. ~~Direction of response for 40 Florida rows~~ — done 10 Nov 2026. Stored on the Florida rows of
+   `scan-2026.json` (and Florida Polytechnic in `prep-census-2026.json`) as `direction`, `lenses`,
+   `response`, `response_url`, `response_checked`, `evidence_state`. 15 compete, 6 supply, 5 fortify,
+   14 none; every source re-read 10 Nov. Rules applied, from the national scan's precedents: running or
+   authorizing a K–12 school = compete (UCSD Preuss, UNC lab school, WashU); preparing for or selling to
+   non-district schools = supply; built with or for a named district = fortify. Dual enrollment and
+   district collegiate high school programs are required of every Florida college by law (s. 1007.271,
+   s. 1007.273), so they are baseline, not a direction. **Borderline, for review:** New College (hosted
+   private/charter leaders; short microschool project) and Daytona State (sponsored a charter technical
+   career center, 2011–12) are coded none; Stetson's fortify rests on one sentence.
+   **Inconsistency surfaced, needs a correction:** Florida State University is coded "searched, none found"
+   in `universities-2026.json`, but the state registry lists FSU as a charter sponsor three times
+   (FSU LAB LEON, FSU BAY, FSU LAB BRWD) and the Preparation Index codes it authorizes + operates.
+   Under the rule above FSU is compete. The same lab-school rule would reach UF (P.K. Yonge) and FAMU
+   (FAMU DRS). Changing these moves the 49 / 18 headline numbers and needs a front-page correction.
 2. **Florida private colleges beyond the seven in the Index.** The instructions say every Florida
    institution is searchable at launch. Only seven privates are in. Source the full list
    (e.g. ICUF membership, IPEDS) before adding rows.
