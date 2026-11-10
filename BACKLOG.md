@@ -109,15 +109,16 @@ Open, in order:
    s. 1007.273), so they are baseline, not a direction. **Borderline, for review:** New College (hosted
    private/charter leaders; short microschool project) and Daytona State (sponsored a charter technical
    career center, 2011–12) are coded none; Stetson's fortify rests on one sentence.
-   **Inconsistency surfaced, needs a correction:** Florida State University is coded "searched, none found"
-   in `universities-2026.json`, but the state registry lists FSU as a charter sponsor three times
-   (FSU LAB LEON, FSU BAY, FSU LAB BRWD) and the Preparation Index codes it authorizes + operates.
-   Under the rule above FSU is compete. The same lab-school rule would reach UF (P.K. Yonge) and FAMU
-   (FAMU DRS). Changing these moves the 49 / 18 headline numbers and needs a front-page correction.
+   **Correction 09 (10 Nov 2026)** fixed what this pass surfaced: FSU, FAMU and UF recoded compete in
+   `universities-2026.json` (lab schools; FSU also a registered sponsor); Buffalo recoded fortify
+   (university-assisted community school with BPS, fall 2025); three Index rows (NWFSC, Trinity, SFSC)
+   re-sourced or reworded; seven Florida college notes that cited `ECP-InfoReq.pdf` (an email, not data)
+   now cite ss. 1007.273 and 1007.271. Scan now 52 respond / 21 compete / 50 none.
+   Recoded rows carry `response_checked`; the page shows it.
 2. **Florida private colleges beyond the seven in the Index.** The instructions say every Florida
    institution is searchable at launch. Only seven privates are in. Source the full list
    (e.g. ICUF membership, IPEDS) before adding rows.
-3. **Check dates on national rows.** No `universities-2026.json` row carries a `checked` date,
+3. **Check dates on national rows.** Only the four rows recoded in Correction 09 carry `response_checked`;
    and the instructions require one on every claim. Add dates only from real reads; never
    backfill from the edition date.
 4. **Tier 0 to Correction 02 standard for the AAU / Most Innovative rows not in the Index.**

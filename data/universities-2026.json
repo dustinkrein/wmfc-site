@@ -175,12 +175,13 @@
     }
    ],
    "portfolio": 15.5,
-   "direction": "fortify",
+   "direction": "compete",
    "lenses": [
+    2,
     3
    ],
-   "response": "UF Lastinger vetted and evaluated private tutoring vendors for the state's public-school tutoring program.",
-   "response_url": "https://lastinger.ufl.edu/wp-content/uploads/2026/04/uf-lastinger-center-fta-pilot-spring-2025-aug-2025-remediated.pdf",
+   "response": "Runs P.K. Yonge Developmental Research School, a public PreK–12 school affiliated with the College of Education; its teachers are University of Florida employees.",
+   "response_url": "https://pkyonge.ufl.edu/?p=2673",
    "rank": 4,
    "state": "FL",
    "lists": [
@@ -192,7 +193,10 @@
    "scored": true,
    "since": 2025,
    "evidence_state": "documented",
-   "index": "University of Florida"
+   "index": "University of Florida",
+   "response2": "UF Lastinger also vetted and evaluated private tutoring vendors for the state's public-school tutoring program.",
+   "response2_url": "https://lastinger.ufl.edu/wp-content/uploads/2026/04/uf-lastinger-center-fta-pilot-spring-2025-aug-2025-remediated.pdf",
+   "response_checked": "2026-11-10"
   },
   {
    "name": "Arizona State",
@@ -1458,17 +1462,18 @@
     }
    ],
    "portfolio": 9.5,
-   "direction": "none",
+   "direction": "fortify",
    "lenses": [],
-   "response": null,
-   "response_url": null,
+   "response": "With Buffalo Public Schools, opened Buffalo's first university-assisted community school at Research Laboratory High School in fall 2025.",
+   "response_url": "https://ed.buffalo.edu/magazine/issues/fall-2025.html",
    "rank": 37,
    "state": "NY",
    "lists": [
     "aau"
    ],
    "scored": true,
-   "evidence_state": "searched"
+   "evidence_state": "documented",
+   "response_checked": "2026-11-10"
   },
   {
    "name": "Tufts",
@@ -2782,10 +2787,12 @@
    "notable_url": null,
    "initiatives": [],
    "portfolio": null,
-   "direction": "none",
-   "lenses": [],
-   "response": "The education college runs three public K–12 lab schools. No response to portable funding found.",
-   "response_url": "https://news.fsu.edu/news/students-campus-life/2025/07/15/florida-state-universitys-k-12-laboratory-schools-shine-as-beacons-of-academic-excellence/",
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "The state registry lists FSU as a charter sponsor three times (FSU LAB LEON, FSU BAY, FSU LAB BRWD). Its education college runs three K–12 lab schools, in Tallahassee, Panama City and Pembroke Pines.",
+   "response_url": "https://web01.fldoe.org/CSA/PostToWeb/CharterSchoolSponsoringEntities",
    "rank": null,
    "lists": [
     "innovative",
@@ -2793,8 +2800,11 @@
    ],
    "innov_rank": "26",
    "scored": false,
-   "evidence_state": "searched",
-   "index": "Florida State University"
+   "evidence_state": "documented",
+   "index": "Florida State University",
+   "response2": "FSU describes the three as the college's lab schools.",
+   "response2_url": "https://news.fsu.edu/news/students-campus-life/2025/07/15/florida-state-universitys-k-12-laboratory-schools-shine-as-beacons-of-academic-excellence/",
+   "response_checked": "2026-11-10"
   },
   {
    "name": "Stevens",
@@ -3204,9 +3214,11 @@
    "notable_url": null,
    "initiatives": [],
    "portfolio": null,
-   "direction": "none",
-   "lenses": [],
-   "response": "Runs FAMU Developmental Research School, a public K–12 lab school. No response to portable funding found.",
+   "direction": "compete",
+   "lenses": [
+    2
+   ],
+   "response": "Runs FAMU Developmental Research School, an elementary, middle and high school that state law designates a public school district of its own.",
    "response_url": "https://coe.famu.edu/future-of-famu/famu-drs.php",
    "rank": null,
    "lists": [
@@ -3215,8 +3227,9 @@
    ],
    "innov_rank": "50",
    "scored": false,
-   "evidence_state": "searched",
-   "index": "Florida A&amp;M University"
+   "evidence_state": "documented",
+   "index": "Florida A&amp;M University",
+   "response_checked": "2026-11-10"
   },
   {
    "name": "UMass Amherst",
